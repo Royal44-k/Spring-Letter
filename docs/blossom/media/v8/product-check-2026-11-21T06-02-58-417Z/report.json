@@ -1,0 +1,167 @@
+{
+  "scope": "Read-only static product-page review in an isolated Edge profile; not game QA, not human visual review. Actual pointer clicks start both native audio players. Download packages are checked with HEAD, not executed.",
+  "checks": [
+    "desktop first fold starts at exact scrollY zero",
+    "desktop has no horizontal overflow",
+    "desktop all local images decode",
+    "desktop D audio native controls are visible",
+    "desktop D audio time advances after a real control click",
+    "desktop archive section opens",
+    "desktop archive section opens",
+    "desktop archive section opens",
+    "desktop archive section opens",
+    "desktop archive audio native controls are visible",
+    "desktop archive audio time advances after a real control click",
+    "desktop final Windows and browser links exist",
+    "desktop package is present: 下载桌面本地包 ↓",
+    "desktop package is present: 下载浏览器静态包 ↓",
+    "desktop garden anchor navigation works",
+    "desktop expanded archive has no horizontal overflow",
+    "mobile first fold starts at exact scrollY zero",
+    "mobile has no horizontal overflow",
+    "mobile all local images decode",
+    "mobile D audio native controls are visible",
+    "mobile D audio time advances after a real control click",
+    "mobile archive section opens",
+    "mobile archive section opens",
+    "mobile archive section opens",
+    "mobile archive section opens",
+    "mobile archive audio native controls are visible",
+    "mobile archive audio time advances after a real control click",
+    "mobile final Windows and browser links exist",
+    "mobile package is present: 下载桌面本地包 ↓",
+    "mobile package is present: 下载浏览器静态包 ↓",
+    "mobile garden anchor navigation works",
+    "mobile expanded archive has no horizontal overflow",
+    "no local page or resource errors"
+  ],
+  "views": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "scrollY": 0,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "images": [
+        {
+          "src": "http://127.0.0.1:13046/docs/blossom/media/v8/cover.png",
+          "width": 1440,
+          "height": 900,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:13046/docs/blossom/media/v8/rain-board.png",
+          "width": 1440,
+          "height": 900,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:13046/docs/blossom/media/v8/postcard.png",
+          "width": 1440,
+          "height": 1040,
+          "complete": true
+        }
+      ],
+      "audio": [
+        {
+          "time": 0.262583,
+          "duration": 76.104979,
+          "readyState": 4,
+          "paused": false,
+          "advancedTo": 0.987221
+        },
+        {
+          "time": 0.27141,
+          "duration": 55,
+          "readyState": 4,
+          "paused": false,
+          "advancedTo": 0.99338
+        }
+      ],
+      "packages": [
+        {
+          "href": "http://127.0.0.1:13046/spring-letter/releases/spring-letter-0.6.0-windows.zip",
+          "text": "下载桌面本地包 ↓",
+          "status": 200,
+          "bytes": 11880961
+        },
+        {
+          "href": "http://127.0.0.1:13046/spring-letter/releases/spring-letter-0.6.0-browser.zip",
+          "text": "下载浏览器静态包 ↓",
+          "status": 200,
+          "bytes": 11863459
+        }
+      ]
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "images": [
+        {
+          "src": "http://127.0.0.1:13046/docs/blossom/media/v8/cover.png",
+          "width": 1440,
+          "height": 900,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:13046/docs/blossom/media/v8/rain-board.png",
+          "width": 1440,
+          "height": 900,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:13046/docs/blossom/media/v8/postcard.png",
+          "width": 1440,
+          "height": 1040,
+          "complete": true
+        }
+      ],
+      "audio": [
+        {
+          "time": 0.272911,
+          "duration": 76.104979,
+          "readyState": 4,
+          "paused": false,
+          "advancedTo": 0.988407
+        },
+        {
+          "time": 0.272319,
+          "duration": 55,
+          "readyState": 4,
+          "paused": false,
+          "advancedTo": 0.99431
+        }
+      ],
+      "packages": [
+        {
+          "href": "http://127.0.0.1:13046/spring-letter/releases/spring-letter-0.6.0-windows.zip",
+          "text": "下载桌面本地包 ↓",
+          "status": 200,
+          "bytes": 11880961
+        },
+        {
+          "href": "http://127.0.0.1:13046/spring-letter/releases/spring-letter-0.6.0-browser.zip",
+          "text": "下载浏览器静态包 ↓",
+          "status": 200,
+          "bytes": 11863459
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "requests": [],
+  "captures": [
+    "docs/blossom/media/v8/product-check-2026-11-21T06-02-58-417Z/desktop-first-fold.png",
+    "docs/blossom/media/v8/product-check-2026-11-21T06-02-58-417Z/desktop-full-page.png",
+    "docs/blossom/media/v8/product-check-2026-11-21T06-02-58-417Z/mobile-first-fold.png",
+    "docs/blossom/media/v8/product-check-2026-11-21T06-02-58-417Z/mobile-full-page.png"
+  ],
+  "url": "http://127.0.0.1:13046/docs/blossom/index.html",
+  "passed": true,
+  "finished": "2026-11-21T06:03:10.852Z"
+}

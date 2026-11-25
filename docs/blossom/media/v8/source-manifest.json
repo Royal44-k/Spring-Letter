@@ -1,0 +1,58 @@
+{
+  "candidate": "release-d",
+  "entry": "./assets/index-DTQylXTU.js",
+  "style": "./assets/index-BIeE711w.css",
+  "copiedAt": "2026-11-21T04:23:58.735Z",
+  "note": "Unmodified copies. Postcard is the application-generated local PNG, not a promotional render. Audio is the real captured 76-second excerpt at original gain. No listening claim.",
+  "media": [
+    {
+      "file": "cover.png",
+      "source": "spring-letter/evidence/v8/play-2026-11-21T04-16-46-256Z/letters-cover.png",
+      "bytes": 1087586,
+      "sha256": "36de32072fbd6c367ff46fd65f2a856df888f799230d2182ce4b997845193660",
+      "sameAsSource": true
+    },
+    {
+      "file": "rain-board.png",
+      "source": "spring-letter/evidence/v8/play-2026-11-21T04-16-46-256Z/letters-rain-reply.png",
+      "bytes": 1516618,
+      "sha256": "7fcb420e5ccfdf01a853f9e2af292d2777c2d0472b3f6325f2928bdce6a285f1",
+      "sameAsSource": true
+    },
+    {
+      "file": "tide-board.png",
+      "source": "spring-letter/evidence/v8/play-2026-11-21T04-16-46-256Z/letters-tide-reply.png",
+      "bytes": 1210309,
+      "sha256": "2af445592d0044ba344794982a0fee3959cf239e8ed17b035156a080b315b6c2",
+      "sameAsSource": true
+    },
+    {
+      "file": "ending.png",
+      "source": "spring-letter/evidence/v8/play-2026-11-21T04-16-46-256Z/letters-ending.png",
+      "bytes": 405661,
+      "sha256": "c0afef495c5aec7fa588132788eef17f2b8268ed009940fd5679c059f523ac45",
+      "sameAsSource": true
+    },
+    {
+      "file": "postcard.png",
+      "source": "spring-letter/evidence/v8/keepsake-2026-11-21T04-21-18-941Z/postcard.png",
+      "bytes": 1037835,
+      "sha256": "49d9d59bb513a08b524fc2280b2ae641339599c78d169ce6cb074a833d427f3c",
+      "sameAsSource": true
+    },
+    {
+      "file": "mobile-wind.png",
+      "source": "spring-letter/evidence/v8/mobile-2026-11-21T04-19-49.132Z/wind-turn.png",
+      "bytes": 305203,
+      "sha256": "85e7b558b8de93058b35fc638ed2dd096682ebccfdbde349701f025f109f22b3",
+      "sameAsSource": true
+    },
+    {
+      "file": "game-audio.mp3",
+      "source": "spring-letter/evidence/v8-audio/game-audio.mp3",
+      "bytes": 1828268,
+      "sha256": "51d507ba1edf3f4ff3abb54f48aa07a4b2733a257b8aeeb3c2f5552f18667e75",
+      "sameAsSource": true
+    }
+  ]
+}
