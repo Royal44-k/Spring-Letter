@@ -1,0 +1,38 @@
+{
+  "kind": "CPU-only execution of extracted production timing paths",
+  "sourceSha256": "84108e36488ae1fe4545cb9a6e1c148989ad6bd39b9775cd5d28274d4eb1acf5",
+  "synthetic": true,
+  "initializationProbe": {
+    "warmupMs": 9088,
+    "totalMs": 9988,
+    "overlayHiddenMs": 10788,
+    "overlayScheduledDelayMs": 750,
+    "firstFrameBaseline": 0
+  },
+  "animationProbe": {
+    "timestampsMs": [
+      10088,
+      10104,
+      13104,
+      15104
+    ],
+    "recordedFrameTimesMs": [
+      16,
+      3000,
+      2000
+    ],
+    "frameTiming": {
+      "longestMs": 3000,
+      "over50": 2,
+      "over100": 2,
+      "over1000": 2
+    },
+    "frameNumber": 3
+  },
+  "conclusion": "Initialization is measured separately; first RAF sets its baseline; subsequent 3s and 2s frame gaps remain recorded. Synthetic durations are not observed GPU/startup timings.",
+  "boundaries": [
+    "totalMs begins inside init; it excludes module import/evaluation before init",
+    "overlayHiddenMs is callback elapsed time, not proof of a compositor paint",
+    "No rendering or actual startup performance measured"
+  ]
+}

@@ -1,0 +1,2352 @@
+{
+  "kind": "CPU-only deterministic save restore fuzz",
+  "seed": "0x5a17c0de",
+  "prng": "xorshift32",
+  "samples": 10000,
+  "startedAt": "2026-11-19T08:15:43.077Z",
+  "node": "v24.20.0",
+  "sourceSha256": {
+    "game-model.js": "94b7ce4547a47079fdec7a6906241f8efe84499400f90a6ce8951d3883f030a8",
+    "exploration-model.js": "069aadf0c9c6a4e8f387c0a6a624c147568e3174b0714a8e32d36973f5e0418d",
+    "story-model.js": "33700f8129bd477195dc9fb6e902e2f7845cff967fbaaa832be24436df9fbee7"
+  },
+  "categories": {
+    "targeted": 20,
+    "normalization-control": 946,
+    "mixed-fields": 8509,
+    "arbitrary-root": 525
+  },
+  "passed": 8949,
+  "failed": 1051,
+  "violationCounts": {
+    "restore-idempotence": 1051
+  },
+  "firstFailures": [
+    {
+      "index": 0,
+      "category": "targeted",
+      "input": null,
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 1,
+      "category": "targeted",
+      "input": [],
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 2,
+      "category": "targeted",
+      "input": {},
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 3,
+      "category": "targeted",
+      "input": 1,
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 4,
+      "category": "targeted",
+      "input": "saved",
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 5,
+      "category": "targeted",
+      "input": true,
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 6,
+      "category": "targeted",
+      "input": {
+        "version": 2
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 38,
+      "category": "arbitrary-root",
+      "input": 5.15,
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 43,
+      "category": "mixed-fields",
+      "input": {
+        "version": "bridge_mf",
+        "started": true,
+        "bloom": 0.12,
+        "player": {
+          "x": -0.1,
+          "z": 999999,
+          "safe": "finale"
+        },
+        "p1": {
+          "solved": true,
+          "hold": 0,
+          "broken": false,
+          "ink": 0.17211364209651947
+        },
+        "wind": {
+          "x": -3,
+          "z": 2,
+          "vx": 0,
+          "vz": 0,
+          "touched": false,
+          "solved": true,
+          "hold": 0,
+          "returns": 0,
+          "time": 0
+        },
+        "companion": {
+          "trust": 0,
+          "awakened": true
+        },
+        "bridge": {
+          "platform": "M",
+          "support": null,
+          "structure": "shield_rm",
+          "solved": true
+        },
+        "cores": [
+          "memory",
+          "season"
+        ],
+        "deliveryCarried": 3,
+        "ending": "memory+season",
+        "discoveries": [],
+        "story": {
+          "introSeen": false,
+          "branches": {
+            "rhythm": false,
+            "light": false,
+            "memory": false
+          },
+          "motif": [
+            1,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "lightFound": [
+            true,
+            true,
+            true
+          ],
+          "lightHold": [
+            0,
+            0,
+            0
+          ],
+          "memorySeen": [
+            {
+              "travel": [
+                {
+                  "valueOf": "none"
+                },
+                3,
+                true,
+                true,
+                "memory+voyage"
+              ],
+              "stage": 0.5,
+              "mask": 4095,
+              "valueOf": {
+                "toString": null
+              }
+            }
+          ],
+          "memoryHold": {
+            "closed": 0,
+            "open": 0
+          },
+          "memoryBloom": 0.5,
+          "seenChapters": []
+        },
+        "exploration": {
+          "version": 1,
+          "rain": {
+            "done": true,
+            "rounds": 0,
+            "mask": 0,
+            "travel": 0,
+            "lastAngle": null,
+            "gap": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "wind": {
+            "done": false,
+            "rounds": 1,
+            "stage": 0,
+            "seed": {
+              "x": -1.18,
+              "z": 1.05,
+              "vx": 0,
+              "vz": 0
+            },
+            "touched": false,
+            "catching": false,
+            "hold": 0,
+            "rest": 0,
+            "bumps": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "tide": {
+            "done": false,
+            "rounds": 2,
+            "index": 0,
+            "hold": 0,
+            "lastX": null,
+            "lastZ": null,
+            "pulse": 0,
+            "clock": 0,
+            "flash": 0
+          },
+          "seen": []
+        },
+        "settings": {
+          "muted": false,
+          "quality": "balanced",
+          "reducedMotion": false,
+          "autoCamera": true,
+          "flowerForm": false,
+          "flowerSeries": "silver"
+        }
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 55,
+      "category": "mixed-fields",
+      "input": {
+        "version": "hasOwnProperty",
+        "started": true,
+        "bloom": 0.12,
+        "player": {
+          "x": 2,
+          "z": 0.12,
+          "safe": "memory"
+        },
+        "p1": {
+          "solved": true,
+          "hold": 0,
+          "broken": false,
+          "ink": 0.6548404075205326
+        },
+        "wind": {
+          "x": -3,
+          "z": 2,
+          "vx": 0,
+          "vz": 0,
+          "touched": false,
+          "solved": true,
+          "hold": 0,
+          "returns": 0,
+          "time": 0
+        },
+        "companion": {
+          "trust": 0,
+          "awakened": true
+        },
+        "bridge": {
+          "support": {
+            "stage": "1",
+            "valueOf": [
+              true,
+              [
+                3,
+                "__proto__",
+                {
+                  "toString": 1
+                },
+                true
+              ],
+              {
+                "valueOf": false
+              },
+              1,
+              {
+                "solved": true,
+                "stage": 6.2,
+                "valueOf": true
+              },
+              {
+                "travel": 0.12,
+                "solved": "false",
+                "__proto__": [],
+                "valueOf": 1
+              }
+            ]
+          }
+        },
+        "cores": [
+          null,
+          null
+        ],
+        "deliveryCarried": 1,
+        "ending": null,
+        "discoveries": [],
+        "story": {
+          "introSeen": false,
+          "branches": {
+            "rhythm": false,
+            "light": false,
+            "memory": false
+          },
+          "motif": [
+            1,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "lightFound": false,
+          "lightHold": [
+            0,
+            0,
+            0
+          ],
+          "memorySeen": {
+            "closed": true,
+            "open": true
+          },
+          "memoryHold": {
+            "closed": 0,
+            "open": 0
+          },
+          "memoryBloom": true,
+          "seenChapters": []
+        },
+        "exploration": {
+          "version": 1,
+          "rain": {
+            "done": true,
+            "rounds": 4,
+            "mask": 0,
+            "travel": 0,
+            "lastAngle": null,
+            "gap": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "wind": {
+            "done": false,
+            "rounds": 2,
+            "stage": 0,
+            "seed": {
+              "x": -1.18,
+              "z": 1.05,
+              "vx": 0,
+              "vz": 0
+            },
+            "touched": false,
+            "catching": false,
+            "hold": 0,
+            "rest": 0,
+            "bumps": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "tide": {
+            "done": true,
+            "rounds": 2,
+            "index": 2,
+            "hold": 0,
+            "lastX": null,
+            "lastZ": null,
+            "pulse": 0,
+            "clock": 0,
+            "flash": 0
+          },
+          "seen": []
+        },
+        "settings": {
+          "muted": false,
+          "quality": "balanced",
+          "reducedMotion": false,
+          "autoCamera": true,
+          "flowerForm": "lily",
+          "flowerSeries": "silver"
+        }
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 57,
+      "category": "arbitrary-root",
+      "input": 0.8,
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 76,
+      "category": "arbitrary-root",
+      "input": 6.2,
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 94,
+      "category": "mixed-fields",
+      "input": {
+        "version": [
+          "bridge_am"
+        ],
+        "started": true,
+        "bloom": 0.12,
+        "player": {
+          "x": 0.8,
+          "z": [],
+          "safe": false
+        },
+        "p1": {
+          "solved": true,
+          "hold": 0,
+          "broken": true,
+          "ink": 1.152217920217663
+        },
+        "wind": {
+          "x": -3,
+          "z": 2,
+          "vx": 0,
+          "vz": 0,
+          "touched": false,
+          "solved": true,
+          "hold": 0,
+          "returns": 0,
+          "time": 0
+        },
+        "companion": {
+          "trust": 0,
+          "awakened": true
+        },
+        "bridge": {
+          "platform": "R",
+          "support": null,
+          "structure": "bridge_am",
+          "solved": false
+        },
+        "cores": [
+          null,
+          null
+        ],
+        "deliveryCarried": null,
+        "ending": null,
+        "discoveries": [],
+        "story": {
+          "introSeen": false,
+          "branches": true,
+          "motif": [
+            1,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "lightFound": [
+            true,
+            true,
+            true
+          ],
+          "lightHold": [
+            0,
+            0,
+            0
+          ],
+          "memorySeen": {
+            "valueOf": "none"
+          },
+          "memoryHold": {
+            "closed": 0,
+            "open": 0
+          },
+          "memoryBloom": 0.5,
+          "seenChapters": []
+        },
+        "exploration": {
+          "version": 1,
+          "rain": {
+            "done": true,
+            "rounds": 2,
+            "mask": 0,
+            "travel": 0,
+            "lastAngle": null,
+            "gap": 0,
+            "clock": true,
+            "best": 0,
+            "flash": 0
+          },
+          "wind": {
+            "done": 0.8,
+            "rounds": 2,
+            "stage": 2,
+            "seed": {
+              "valueOf": [
+                true,
+                {
+                  "toString": null
+                },
+                [
+                  false,
+                  false
+                ],
+                "null",
+                -1,
+                [
+                  "toString",
+                  [
+                    "memory",
+                    "memory",
+                    "voyage"
+                  ],
+                  1e+308,
+                  false
+                ]
+              ]
+            },
+            "touched": false,
+            "catching": false,
+            "hold": 0,
+            "rest": 0,
+            "bumps": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "tide": {
+            "done": false,
+            "rounds": 4,
+            "index": 3,
+            "hold": 0,
+            "lastX": null,
+            "lastZ": null,
+            "pulse": 0,
+            "clock": 0,
+            "flash": 0
+          },
+          "seen": []
+        },
+        "settings": {
+          "muted": false,
+          "quality": "balanced",
+          "reducedMotion": false,
+          "autoCamera": true,
+          "flowerForm": "lily",
+          "flowerSeries": "silver"
+        }
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 95,
+      "category": "arbitrary-root",
+      "input": null,
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 98,
+      "category": "mixed-fields",
+      "input": {
+        "version": "constructor",
+        "started": true,
+        "bloom": 0.12,
+        "player": {
+          "x": -1e+308,
+          "z": 0.12,
+          "safe": "pool"
+        },
+        "p1": {
+          "solved": true,
+          "hold": 0,
+          "broken": false,
+          "ink": 0.6074066117405891
+        },
+        "wind": {
+          "x": -3,
+          "z": 2,
+          "vx": [
+            [
+              "memory",
+              "memory",
+              "voyage"
+            ],
+            {
+              "mask": "A",
+              "stage": {
+                "0": "hasOwnProperty",
+                "solved": [
+                  "memory",
+                  "memory",
+                  "voyage"
+                ],
+                "travel": 2,
+                "toString": 4095,
+                "__proto__": "memory+voyage"
+              },
+              "done": -1,
+              "__proto__": {
+                "stage": true,
+                "memory": null,
+                "mask": "M"
+              }
+            },
+            1e+308,
+            -0.1
+          ],
+          "vz": 0,
+          "touched": false,
+          "solved": true,
+          "hold": 0,
+          "returns": 0,
+          "time": 0
+        },
+        "companion": {
+          "trust": 0,
+          "awakened": true
+        },
+        "bridge": {
+          "platform": "F",
+          "support": null,
+          "structure": "bridge_mf",
+          "solved": false
+        },
+        "cores": [
+          null,
+          null
+        ],
+        "deliveryCarried": 0,
+        "ending": null,
+        "discoveries": [],
+        "story": {
+          "introSeen": false,
+          "branches": {
+            "rhythm": true,
+            "light": false,
+            "memory": true
+          },
+          "motif": [
+            1,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "lightFound": [
+            true,
+            true,
+            true
+          ],
+          "lightHold": [
+            0,
+            0,
+            0
+          ],
+          "memorySeen": {
+            "closed": true,
+            "open": []
+          },
+          "memoryHold": {
+            "closed": 0,
+            "open": 0
+          },
+          "memoryBloom": 0.5,
+          "seenChapters": []
+        },
+        "exploration": {
+          "version": 1,
+          "rain": {
+            "done": false,
+            "rounds": 4,
+            "mask": 0,
+            "travel": 0,
+            "lastAngle": null,
+            "gap": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "wind": {
+            "done": true,
+            "rounds": 3,
+            "stage": 999999,
+            "seed": {
+              "x": -1.18,
+              "z": 1.05,
+              "vx": 0,
+              "vz": 0
+            },
+            "touched": false,
+            "catching": false,
+            "hold": 0,
+            "rest": 0,
+            "bumps": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "tide": {
+            "done": true,
+            "rounds": 1,
+            "index": 3,
+            "hold": 0,
+            "lastX": null,
+            "lastZ": null,
+            "pulse": 0,
+            "clock": 0,
+            "flash": 0
+          },
+          "seen": []
+        },
+        "settings": {
+          "muted": false,
+          "quality": "balanced",
+          "reducedMotion": false,
+          "autoCamera": true,
+          "flowerForm": "lily",
+          "flowerSeries": "silver"
+        }
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 108,
+      "category": "mixed-fields",
+      "input": {
+        "version": true,
+        "started": true,
+        "bloom": 0.12,
+        "player": {
+          "x": -999999,
+          "z": -999999,
+          "safe": "wind"
+        },
+        "p1": {
+          "solved": false,
+          "hold": 0,
+          "broken": false,
+          "ink": 0.79190066261217
+        },
+        "wind": {
+          "x": -3,
+          "z": 2,
+          "vx": {
+            "0": 1,
+            "__proto__": {
+              "toString": null
+            },
+            "memory": {},
+            "mask": true
+          },
+          "vz": 0,
+          "touched": false,
+          "solved": [
+            6.2,
+            [
+              "memory",
+              "memory",
+              "voyage"
+            ],
+            "A",
+            {
+              "toString": null
+            }
+          ],
+          "hold": 0,
+          "returns": 0,
+          "time": 0
+        },
+        "companion": {
+          "trust": 0,
+          "awakened": false
+        },
+        "bridge": {
+          "platform": "F",
+          "support": null,
+          "structure": "none",
+          "solved": {
+            "done": {}
+          }
+        },
+        "cores": [
+          null,
+          null
+        ],
+        "deliveryCarried": 1,
+        "ending": null,
+        "discoveries": [],
+        "story": {
+          "introSeen": false,
+          "branches": {
+            "rhythm": true,
+            "light": false,
+            "memory": false
+          },
+          "motif": [
+            1,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "lightFound": [
+            true,
+            true,
+            true
+          ],
+          "lightHold": [
+            0,
+            0,
+            0
+          ],
+          "memorySeen": {
+            "closed": true,
+            "open": true
+          },
+          "memoryHold": {
+            "closed": 0,
+            "open": 0
+          },
+          "memoryBloom": 0.5,
+          "seenChapters": []
+        },
+        "exploration": {
+          "version": 1,
+          "rain": {
+            "done": false,
+            "rounds": 1,
+            "mask": 0,
+            "travel": 0,
+            "lastAngle": null,
+            "gap": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "wind": {
+            "done": true,
+            "rounds": 1,
+            "stage": 0,
+            "seed": {
+              "x": -1.18,
+              "z": 1.05,
+              "vx": 0,
+              "vz": 0
+            },
+            "touched": false,
+            "catching": false,
+            "hold": 0,
+            "rest": 0,
+            "bumps": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "tide": {
+            "done": true,
+            "rounds": 1,
+            "index": 2,
+            "hold": 0,
+            "lastX": null,
+            "lastZ": null,
+            "pulse": 0,
+            "clock": 0,
+            "flash": 0
+          },
+          "seen": []
+        },
+        "settings": {
+          "muted": false,
+          "quality": "balanced",
+          "reducedMotion": false,
+          "autoCamera": true,
+          "flowerForm": "lily",
+          "flowerSeries": "silver"
+        }
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 114,
+      "category": "arbitrary-root",
+      "input": true,
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 123,
+      "category": "mixed-fields",
+      "input": {
+        "version": {
+          "memory": true
+        },
+        "started": true,
+        "bloom": 0.12,
+        "player": {
+          "x": 4095,
+          "z": 1,
+          "safe": {
+            "valueOf": [
+              0.12,
+              [
+                "shield_rm",
+                true,
+                false
+              ],
+              {
+                "0": 0.12,
+                "done": -1
+              },
+              {},
+              "shield_rm",
+              "bridge_mf"
+            ],
+            "memory": false
+          }
+        },
+        "p1": {
+          "solved": true,
+          "hold": 0,
+          "broken": true,
+          "ink": 1.0583509937860072
+        },
+        "wind": {
+          "x": -3,
+          "z": false,
+          "vx": 0,
+          "vz": 0,
+          "touched": false,
+          "solved": true,
+          "hold": 0,
+          "returns": 0,
+          "time": 0
+        },
+        "companion": {
+          "trust": 0,
+          "awakened": true
+        },
+        "bridge": {
+          "platform": "M",
+          "support": 1e+308,
+          "structure": "bridge_am",
+          "solved": true
+        },
+        "cores": [
+          null,
+          null
+        ],
+        "deliveryCarried": null,
+        "ending": null,
+        "discoveries": [],
+        "story": {
+          "memorySeen": {
+            "closed": [
+              "memory",
+              "memory",
+              "voyage"
+            ]
+          }
+        },
+        "exploration": {
+          "version": 1,
+          "rain": {
+            "done": false,
+            "rounds": 3,
+            "mask": 0,
+            "travel": 0,
+            "lastAngle": null,
+            "gap": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "wind": {
+            "done": true,
+            "rounds": 1,
+            "stage": 2,
+            "seed": {
+              "x": -1.18,
+              "z": 1.05,
+              "vx": 0,
+              "vz": 0
+            },
+            "touched": false,
+            "catching": false,
+            "hold": 0,
+            "rest": 0,
+            "bumps": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "tide": {
+            "done": false,
+            "rounds": 4,
+            "index": 2,
+            "hold": 0,
+            "lastX": null,
+            "lastZ": null,
+            "pulse": 0,
+            "clock": 0,
+            "flash": 0
+          },
+          "seen": []
+        },
+        "settings": {
+          "muted": false,
+          "quality": "balanced",
+          "reducedMotion": false,
+          "autoCamera": true,
+          "flowerForm": "lily",
+          "flowerSeries": "silver"
+        }
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 133,
+      "category": "arbitrary-root",
+      "input": {
+        "valueOf": {
+          "valueOf": "none"
+        }
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 145,
+      "category": "mixed-fields",
+      "input": {
+        "version": "memory",
+        "started": true,
+        "bloom": 0.12,
+        "player": {
+          "x": -1,
+          "z": 3,
+          "safe": "garden"
+        },
+        "p1": {
+          "solved": true,
+          "hold": 0,
+          "broken": [
+            "memory",
+            "memory",
+            "voyage"
+          ],
+          "ink": 0.3096779499202967
+        },
+        "wind": {
+          "x": {
+            "toString": -0.1,
+            "solved": 1,
+            "__proto__": "true"
+          },
+          "z": false,
+          "vx": 0,
+          "vz": 0,
+          "touched": false,
+          "solved": false,
+          "hold": 0,
+          "returns": 0,
+          "time": 0
+        },
+        "companion": {
+          "trust": 0,
+          "awakened": false
+        },
+        "bridge": {
+          "platform": "A",
+          "support": null,
+          "structure": "shield_rm",
+          "solved": false
+        },
+        "cores": [
+          null,
+          null
+        ],
+        "deliveryCarried": null,
+        "ending": null,
+        "discoveries": [],
+        "story": {
+          "introSeen": false,
+          "branches": {
+            "rhythm": false,
+            "light": false,
+            "memory": true
+          },
+          "motif": [
+            1,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "lightFound": [
+            true,
+            true,
+            true
+          ],
+          "lightHold": [
+            0,
+            0,
+            0
+          ],
+          "memorySeen": {
+            "closed": true,
+            "open": true
+          },
+          "memoryHold": {
+            "closed": 0,
+            "open": 0
+          },
+          "memoryBloom": 0.5,
+          "seenChapters": []
+        },
+        "exploration": {
+          "version": 1,
+          "rain": {
+            "done": false,
+            "rounds": 4,
+            "mask": 0,
+            "travel": 0,
+            "lastAngle": null,
+            "gap": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "wind": {
+            "done": true,
+            "rounds": 1,
+            "stage": 3,
+            "seed": {
+              "x": -1.18,
+              "z": 1.05,
+              "vx": 0,
+              "vz": 0
+            },
+            "touched": false,
+            "catching": false,
+            "hold": 0,
+            "rest": 0,
+            "bumps": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "tide": {
+            "done": true,
+            "rounds": 3,
+            "index": 0,
+            "hold": 0,
+            "lastX": null,
+            "lastZ": null,
+            "pulse": 0,
+            "clock": 0,
+            "flash": 0
+          },
+          "seen": []
+        },
+        "settings": {
+          "muted": false,
+          "quality": "balanced",
+          "reducedMotion": false,
+          "autoCamera": true,
+          "flowerForm": "lily",
+          "flowerSeries": "silver"
+        }
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 151,
+      "category": "mixed-fields",
+      "input": {
+        "version": [],
+        "started": true,
+        "bloom": 0.12,
+        "player": {
+          "x": 1e+308,
+          "z": 0.8,
+          "safe": "finale"
+        },
+        "p1": {
+          "solved": true,
+          "hold": 0,
+          "broken": false,
+          "ink": 0.9340592460706829
+        },
+        "wind": {
+          "x": 999999,
+          "z": 2,
+          "vx": 0,
+          "vz": 0,
+          "touched": false,
+          "solved": true,
+          "hold": 0,
+          "returns": 0,
+          "time": 0
+        },
+        "companion": {
+          "trust": 0,
+          "awakened": true
+        },
+        "bridge": {
+          "platform": "F",
+          "support": null,
+          "structure": "bridge_mf",
+          "solved": true
+        },
+        "cores": [
+          "memory",
+          "voyage"
+        ],
+        "deliveryCarried": null,
+        "ending": "memory+voyage",
+        "discoveries": [],
+        "story": {
+          "introSeen": false,
+          "branches": {
+            "rhythm": false,
+            "light": false,
+            "memory": true
+          },
+          "motif": [
+            1,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "lightFound": [
+            true,
+            true,
+            true
+          ],
+          "lightHold": [
+            0,
+            0,
+            0
+          ],
+          "memorySeen": {
+            "closed": true,
+            "open": true
+          },
+          "memoryHold": {
+            "closed": 0,
+            "open": 0
+          },
+          "memoryBloom": 0.5,
+          "seenChapters": []
+        },
+        "exploration": {
+          "version": 1,
+          "rain": {
+            "done": true,
+            "rounds": 4,
+            "mask": "false",
+            "travel": "pool",
+            "lastAngle": null,
+            "gap": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "wind": {
+            "done": true,
+            "rounds": 2,
+            "stage": 0,
+            "seed": {
+              "x": -1.18,
+              "z": 1.05,
+              "vx": 0,
+              "vz": 0
+            },
+            "touched": false,
+            "catching": false,
+            "hold": 0,
+            "rest": 0,
+            "bumps": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "tide": [
+            false,
+            "bridge_mf",
+            {
+              "toString": [],
+              "valueOf": null
+            },
+            "constructor",
+            true,
+            {
+              "travel": {
+                "toString": 1
+              },
+              "solved": "season+voyage",
+              "valueOf": {
+                "toString": null
+              },
+              "__proto__": "finale"
+            }
+          ],
+          "seen": []
+        },
+        "settings": {
+          "muted": false,
+          "quality": "balanced",
+          "reducedMotion": false,
+          "autoCamera": true,
+          "flowerForm": "lily",
+          "flowerSeries": "silver"
+        }
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 152,
+      "category": "arbitrary-root",
+      "input": {
+        "valueOf": "none"
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 156,
+      "category": "mixed-fields",
+      "input": {
+        "version": {
+          "valueOf": "season",
+          "done": {
+            "0": [
+              2,
+              "bridge_am",
+              [
+                "bridge_am"
+              ],
+              true
+            ],
+            "valueOf": [
+              {
+                "toString": 1
+              },
+              "pool"
+            ],
+            "solved": [
+              1e+308,
+              false
+            ]
+          },
+          "mask": [],
+          "solved": {
+            "toString": null
+          }
+        },
+        "started": [
+          "memory",
+          "memory",
+          "voyage"
+        ],
+        "bloom": true,
+        "player": -1e+308,
+        "p1": {
+          "solved": false,
+          "hold": 0,
+          "broken": true,
+          "ink": 0.9040981921367347
+        },
+        "wind": {
+          "x": -3,
+          "z": 2,
+          "vx": 0,
+          "vz": 0,
+          "touched": false,
+          "solved": false,
+          "hold": 0,
+          "returns": 0,
+          "time": 0
+        },
+        "companion": {
+          "trust": 0,
+          "awakened": [
+            "memory+season",
+            {
+              "travel": 999999
+            },
+            {
+              "mask": [
+                "null",
+                0.5,
+                false
+              ]
+            },
+            {
+              "toString": [],
+              "valueOf": null
+            },
+            -999999
+          ]
+        },
+        "bridge": {
+          "platform": "R",
+          "support": null,
+          "structure": "bridge_mf",
+          "solved": {
+            "toString": [],
+            "valueOf": null
+          }
+        },
+        "cores": [
+          null,
+          null
+        ],
+        "deliveryCarried": null,
+        "ending": null,
+        "discoveries": [],
+        "story": {
+          "introSeen": false,
+          "branches": {
+            "rhythm": false,
+            "light": false,
+            "memory": false
+          },
+          "motif": [
+            1,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "lightFound": [
+            true,
+            true,
+            true
+          ],
+          "lightHold": [
+            0,
+            0,
+            0
+          ],
+          "memorySeen": {
+            "closed": true,
+            "open": -1e+308
+          },
+          "memoryHold": {
+            "closed": 0,
+            "open": 0
+          },
+          "memoryBloom": 0.5,
+          "seenChapters": []
+        },
+        "exploration": {
+          "version": 1,
+          "rain": {
+            "done": true,
+            "rounds": 3,
+            "mask": 0,
+            "travel": 0,
+            "lastAngle": null,
+            "gap": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "wind": {
+            "done": false,
+            "rounds": 1,
+            "stage": 3,
+            "seed": {
+              "x": -1.18,
+              "z": 1.05,
+              "vx": 0,
+              "vz": 0
+            },
+            "touched": false,
+            "catching": false,
+            "hold": 0,
+            "rest": 0,
+            "bumps": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "tide": {
+            "done": false,
+            "rounds": 4,
+            "index": 3,
+            "hold": 0,
+            "lastX": null,
+            "lastZ": null,
+            "pulse": 0,
+            "clock": 0,
+            "flash": 0
+          },
+          "seen": []
+        },
+        "settings": {
+          "muted": false,
+          "quality": "balanced",
+          "reducedMotion": false,
+          "autoCamera": true,
+          "flowerForm": "lily",
+          "flowerSeries": "silver"
+        }
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 167,
+      "category": "mixed-fields",
+      "input": {
+        "version": "memory",
+        "started": true,
+        "bloom": 0.12,
+        "player": {
+          "x": 3,
+          "z": -1e+308,
+          "safe": "finale"
+        },
+        "p1": {
+          "solved": true,
+          "hold": 0,
+          "broken": true,
+          "ink": 4095
+        },
+        "wind": {
+          "x": -3,
+          "z": 2,
+          "vx": 0,
+          "vz": 0,
+          "touched": false,
+          "solved": true,
+          "hold": 0,
+          "returns": 0,
+          "time": 0
+        },
+        "companion": {
+          "trust": 0,
+          "awakened": true
+        },
+        "bridge": {
+          "platform": "R",
+          "support": null,
+          "structure": "shield_rm",
+          "solved": true
+        },
+        "cores": [
+          "memory",
+          "voyage"
+        ],
+        "deliveryCarried": 0,
+        "ending": "memory+voyage",
+        "discoveries": [],
+        "story": {
+          "introSeen": false,
+          "branches": {
+            "rhythm": false,
+            "light": false,
+            "memory": false
+          },
+          "motif": [
+            1,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "lightFound": [
+            true,
+            true,
+            true
+          ],
+          "lightHold": [
+            0,
+            0,
+            0
+          ],
+          "memorySeen": {
+            "closed": true,
+            "open": true
+          },
+          "memoryHold": {
+            "closed": 0,
+            "open": 0
+          },
+          "memoryBloom": 0.5,
+          "seenChapters": []
+        },
+        "exploration": {
+          "version": 1,
+          "rain": {
+            "done": true,
+            "rounds": 4,
+            "mask": 0,
+            "travel": 0,
+            "lastAngle": null,
+            "gap": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "wind": {
+            "done": true,
+            "rounds": 4,
+            "stage": 0,
+            "seed": {
+              "x": -1.18,
+              "z": 1.05,
+              "vx": 0,
+              "vz": 0
+            },
+            "touched": false,
+            "catching": false,
+            "hold": 0,
+            "rest": 0,
+            "bumps": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "tide": {
+            "done": true,
+            "rounds": 4,
+            "index": 2,
+            "hold": 0,
+            "lastX": null,
+            "lastZ": null,
+            "pulse": 0,
+            "clock": 0,
+            "flash": 0
+          },
+          "seen": []
+        },
+        "settings": {
+          "muted": false,
+          "quality": "balanced",
+          "reducedMotion": false,
+          "autoCamera": true,
+          "flowerForm": "lily",
+          "flowerSeries": "silver"
+        }
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 171,
+      "category": "arbitrary-root",
+      "input": false,
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 189,
+      "category": "mixed-fields",
+      "input": {
+        "version": false,
+        "started": true,
+        "bloom": 0.12,
+        "player": {
+          "x": 1,
+          "z": 0.5,
+          "safe": "wind"
+        },
+        "p1": {
+          "solved": true,
+          "hold": 0,
+          "broken": false,
+          "ink": 1.0374913682229816
+        },
+        "wind": {
+          "x": -3,
+          "z": 2,
+          "vx": 0,
+          "vz": 0,
+          "touched": false,
+          "solved": false,
+          "hold": 0,
+          "returns": 0,
+          "time": 0
+        },
+        "companion": {
+          "trust": 0,
+          "awakened": false
+        },
+        "bridge": {
+          "platform": "M",
+          "support": null,
+          "structure": "bridge_mf",
+          "solved": false
+        },
+        "cores": [
+          null,
+          null
+        ],
+        "deliveryCarried": null,
+        "ending": null,
+        "discoveries": [],
+        "story": {
+          "introSeen": false,
+          "branches": {
+            "rhythm": true,
+            "light": false,
+            "memory": false
+          },
+          "motif": [
+            1,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "lightFound": [
+            true,
+            true,
+            true
+          ],
+          "lightHold": [
+            0,
+            0,
+            0
+          ],
+          "memorySeen": {
+            "closed": true,
+            "open": true
+          },
+          "memoryHold": {
+            "closed": 0,
+            "open": 0
+          },
+          "memoryBloom": 0.5,
+          "seenChapters": []
+        },
+        "exploration": {
+          "version": 1,
+          "rain": {
+            "done": false,
+            "rounds": 2,
+            "mask": 0,
+            "travel": 0,
+            "lastAngle": null,
+            "gap": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "wind": {
+            "done": true,
+            "rounds": 0,
+            "stage": 3,
+            "seed": {
+              "x": -1.18,
+              "z": 1.05,
+              "vx": 0,
+              "vz": 0
+            },
+            "touched": false,
+            "catching": false,
+            "hold": 0,
+            "rest": 0,
+            "bumps": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "tide": {
+            "done": false,
+            "rounds": 1,
+            "index": 1,
+            "hold": 0,
+            "lastX": null,
+            "lastZ": null,
+            "pulse": 0,
+            "clock": 0,
+            "flash": 0
+          },
+          "seen": []
+        },
+        "settings": {
+          "muted": false,
+          "quality": "balanced",
+          "reducedMotion": false,
+          "autoCamera": true,
+          "flowerForm": "lily",
+          "flowerSeries": "silver"
+        }
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 190,
+      "category": "arbitrary-root",
+      "input": true,
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 196,
+      "category": "mixed-fields",
+      "input": {
+        "version": "season",
+        "started": true,
+        "bloom": 0.12,
+        "player": {
+          "x": -1,
+          "z": -1e+308,
+          "safe": "wind"
+        },
+        "p1": {
+          "solved": false,
+          "hold": 0,
+          "broken": false,
+          "ink": 0.07188466005027294
+        },
+        "wind": {
+          "x": -3,
+          "z": 2,
+          "vx": 0,
+          "vz": 0,
+          "touched": false,
+          "solved": false,
+          "hold": 0,
+          "returns": 0,
+          "time": 0
+        },
+        "companion": {
+          "trust": 0,
+          "awakened": false
+        },
+        "bridge": {
+          "platform": "A",
+          "support": null,
+          "structure": "shield_rm",
+          "solved": false
+        },
+        "cores": [
+          null,
+          null
+        ],
+        "deliveryCarried": 1,
+        "ending": null,
+        "discoveries": [],
+        "story": {
+          "introSeen": false,
+          "branches": {
+            "rhythm": false,
+            "light": false,
+            "memory": false
+          },
+          "motif": [
+            1,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "lightFound": [
+            true,
+            true,
+            true
+          ],
+          "lightHold": [
+            0,
+            0,
+            0
+          ],
+          "memorySeen": {
+            "closed": true,
+            "open": true
+          },
+          "memoryHold": {
+            "closed": 0,
+            "open": 0
+          },
+          "memoryBloom": 0.5,
+          "seenChapters": []
+        },
+        "exploration": {
+          "version": 1,
+          "rain": {
+            "done": false,
+            "rounds": 0,
+            "mask": 0,
+            "travel": 0,
+            "lastAngle": null,
+            "gap": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "wind": {
+            "done": false,
+            "rounds": 3,
+            "stage": 2,
+            "seed": {
+              "x": -1.18,
+              "z": 1.05,
+              "vx": 0,
+              "vz": 0
+            },
+            "touched": false,
+            "catching": false,
+            "hold": 0,
+            "rest": 0,
+            "bumps": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "tide": {
+            "done": true,
+            "rounds": 1,
+            "index": 3,
+            "hold": 0,
+            "lastX": null,
+            "lastZ": null,
+            "pulse": 0,
+            "clock": 0,
+            "flash": 0
+          },
+          "seen": []
+        },
+        "settings": {
+          "muted": false,
+          "quality": "balanced",
+          "reducedMotion": false,
+          "autoCamera": true,
+          "flowerForm": "lily",
+          "flowerSeries": "finale"
+        }
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 209,
+      "category": "arbitrary-root",
+      "input": 0.12,
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    },
+    {
+      "index": 211,
+      "category": "mixed-fields",
+      "input": {
+        "version": {
+          "solved": 5.15,
+          "valueOf": "",
+          "mask": "M",
+          "done": "memory+voyage"
+        },
+        "started": true,
+        "bloom": 0.12,
+        "player": {
+          "x": 0.8,
+          "z": 5.15,
+          "safe": "garden"
+        },
+        "p1": {
+          "solved": true,
+          "hold": 0,
+          "broken": true,
+          "ink": 0.5996916635893285
+        },
+        "wind": {
+          "x": -3,
+          "z": 2,
+          "vx": 0,
+          "vz": 0,
+          "touched": false,
+          "solved": true,
+          "hold": false,
+          "returns": 0,
+          "time": 0
+        },
+        "companion": {
+          "trust": 0,
+          "awakened": true
+        },
+        "bridge": {
+          "platform": "F",
+          "support": null,
+          "structure": "shield_rm",
+          "solved": true
+        },
+        "cores": false,
+        "deliveryCarried": 0,
+        "ending": "memory+voyage",
+        "discoveries": [],
+        "story": {
+          "introSeen": false,
+          "branches": {
+            "rhythm": true,
+            "light": false,
+            "memory": true
+          },
+          "motif": [
+            1,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "lightFound": [
+            true,
+            true,
+            true
+          ],
+          "lightHold": [
+            0,
+            0,
+            0
+          ],
+          "memorySeen": {
+            "closed": true,
+            "open": true
+          },
+          "memoryHold": {
+            "closed": 0,
+            "open": 0
+          },
+          "memoryBloom": 0.5,
+          "seenChapters": []
+        },
+        "exploration": {
+          "version": 1,
+          "rain": {
+            "done": true,
+            "rounds": 0,
+            "mask": 0,
+            "travel": 0,
+            "lastAngle": null,
+            "gap": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "wind": {
+            "done": true,
+            "rounds": 3,
+            "stage": 2,
+            "seed": {
+              "x": -1.18,
+              "z": 1.05,
+              "vx": 0,
+              "vz": 0
+            },
+            "touched": false,
+            "catching": false,
+            "hold": 0,
+            "rest": 0,
+            "bumps": 0,
+            "clock": 0,
+            "best": 0,
+            "flash": 0
+          },
+          "tide": {
+            "done": false,
+            "rounds": 1,
+            "index": 1,
+            "hold": 0,
+            "lastX": null,
+            "lastZ": null,
+            "pulse": 0,
+            "clock": 0,
+            "flash": 0
+          },
+          "seen": []
+        },
+        "settings": false
+      },
+      "issues": [
+        "restore-idempotence"
+      ],
+      "restoredBridge": {
+        "platform": "A",
+        "support": null,
+        "structure": "none",
+        "solved": false
+      }
+    }
+  ],
+  "coverage": {
+    "acceptedVersion": 8949,
+    "gateStages": [
+      3867,
+      2308,
+      2209,
+      1616
+    ],
+    "restoredEndings": 433,
+    "endingValues": {
+      "memory+season": 129,
+      "season+voyage": 168,
+      "memory+voyage": 136
+    },
+    "restoredCompletedGardens": 9150
+  },
+  "invariants": [
+    "restore → serialize → restore does not throw",
+    "all restored numbers and player/seed coordinates are finite",
+    "exactly two core slots; only known purposes or null; no duplicate purpose",
+    "ending is null or the sorted pair of two distinct known purposes, preserved only from the exact input ending",
+    "wind requires p1; bridge requires wind; ending requires bridge; companion requires wind",
+    "restoration is idempotent after serialization",
+    "bridge structure is a known literal string",
+    "rain cannot retain a qualifying trace consumed by the normal simulation"
+  ],
+  "exclusions": [
+    "No browser, GPU, audio, build or real-time long run",
+    "JSON cannot carry functions, getters, circular references, NaN, or Infinity; finite extreme numbers are included",
+    "A structurally coherent saved ending is retained by design; this is not a tamper-proof authenticity check"
+  ],
+  "elapsedMs": 1841.877,
+  "finishedAt": "2026-11-19T08:15:44.922Z",
+  "sourceUnchanged": true
+}

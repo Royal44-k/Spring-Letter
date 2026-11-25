@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-18",
+  "browser": "Local Edge / Playwright",
+  "files": 7,
+  "missing": [],
+  "errors": [],
+  "pages": [
+    {
+      "file": "design-proposal.html",
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "file": "frame-atlas.html",
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "file": "index.html",
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "file": "knowledge-playbook.html",
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "file": "research-cases.html",
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "file": "resources-architecture.html",
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "file": "video-analysis.html",
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    }
+  ],
+  "frameChecks": [
+    {
+      "button": 0,
+      "loaded": true,
+      "pressed": "true"
+    },
+    {
+      "button": 1,
+      "loaded": true,
+      "pressed": "true"
+    },
+    {
+      "button": 2,
+      "loaded": true,
+      "pressed": "true"
+    },
+    {
+      "button": 3,
+      "loaded": true,
+      "pressed": "true"
+    },
+    {
+      "button": 4,
+      "loaded": true,
+      "pressed": "true"
+    },
+    {
+      "button": 5,
+      "loaded": true,
+      "pressed": "true"
+    },
+    {
+      "button": 6,
+      "loaded": true,
+      "pressed": "true"
+    },
+    {
+      "button": 7,
+      "loaded": true,
+      "pressed": "true"
+    }
+  ],
+  "journeyExpanded": true
+}

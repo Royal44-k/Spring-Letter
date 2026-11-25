@@ -1,0 +1,55 @@
+{
+  "kind": "Independent CPU-only restoration fuzz summary",
+  "seed": "0x5a17c0de",
+  "samples": 10000,
+  "before": {
+    "passed": 9901,
+    "failed": 99,
+    "violations": {
+      "exception:Cannot convert object to primitive value": 77,
+      "known-structure-string": 22
+    },
+    "evidence": "v5-restore-fuzz-before-fix.json"
+  },
+  "after": {
+    "passed": 10000,
+    "failed": 0,
+    "violations": {},
+    "evidence": "v5-restore-fuzz-after-fix.json",
+    "coverage": {
+      "acceptedVersion": 8888,
+      "gateStages": [
+        3984,
+        2255,
+        2221,
+        1540
+      ],
+      "restoredEndings": 431,
+      "endingValues": {
+        "memory+season": 145,
+        "season+voyage": 140,
+        "memory+voyage": 146
+      },
+      "restoredCompletedGardens": 9081
+    },
+    "sourceSha256": {
+      "game-model.js": "699e7df071a062dd19900d744c38ffdc84233d0c718a1c82f13d55db60fb8307",
+      "exploration-model.js": "a29ed6688286bfbbca9778d01bc4a3ac52a24ad1d8e9e0ec439f24d5cee0b3d9",
+      "story-model.js": "33700f8129bd477195dc9fb6e902e2f7845cff967fbaaa832be24436df9fbee7"
+    },
+    "sourceUnchanged": true
+  },
+  "regression": {
+    "command": "npm test",
+    "cwd": "D:/AI Game/spring-letter",
+    "passed": 90,
+    "failed": 0,
+    "addedTests": 3,
+    "redPhase": {
+      "passed": 18,
+      "failed": 2
+    }
+  },
+  "scope": "Only CPU/model tests; no browser, GPU, build, audio listening, or real-time endurance run",
+  "reproduce": "node D:/AI Game/docs/blossom/tools/v5-restore-fuzz.mjs v5-restore-fuzz-after-fix.json"
+}

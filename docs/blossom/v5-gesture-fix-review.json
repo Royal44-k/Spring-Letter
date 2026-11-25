@@ -1,0 +1,579 @@
+{
+  "date": "2026-11-19T04:52:41.944Z",
+  "reviewer": "v5_release_review",
+  "scope": "Independent CPU-only source review and executed VM probes. No browser, GPU, or build was run by this reviewer. Runtime evidence below was read directly from root-run ordinary-input evidence files.",
+  "status": "No new actionable P1/P2 found in the reviewed scalar-motion and Space-chord integrations.",
+  "sourceSha256": {
+    "src/main.js": "5141ef1b7a3cf3ad18856e9d47fe0c715c1961a4e733d7b06604937b3361ba9b",
+    "src/stroke-motion.js": "b280059d647b17baa75573434720b81024b456e7fe1f9cc0d078938ac7798b3b",
+    "tests/stroke-motion.test.js": "d0519a269e46a9ba1a81f360858e9e350bc40b4290d7d6d463f742e88b2fbb31",
+    "src/style.css": "c7602079e87e384121a82de1734510c2402437afcfe97086926c7926fa7eb493"
+  },
+  "rootCause": {
+    "old": "Every render frame derived velocity from the latest pointer position, capped it to 18, then immediately mapped its magnitude to the scatter target. Frames with no new pointer sample mapped to zero; final scatter smoothing preserved the event duty cycle instead of continuous travelled speed.",
+    "controlledExample": "At 60 Hz RAF and 20 Hz pointer sampling, fast movement produced 18,0,0 velocity magnitude and 1,0,0 targets; steady scatter oscillated about 0.3125–0.3547.",
+    "fix": "Integrate the unsigned, uncapped raw distance/dt scalar using exponential rate 8, then clamp the integrated energy to 18. Keep the signed direction vector, particle-force cap, strength, and release decay separate. First-position and dt=0 samples establish the baseline; inactive and cancellation reset energy.",
+    "rejectedAlternatives": "Peak-holding a per-frame speed spike can misclassify genuinely slow sparse input; signed vector averaging cancels direction reversals."
+  },
+  "red": {
+    "command": "node --test tests/stroke-motion.test.js",
+    "baseline": "A valid exported helper implementing the old frame-local capped scalar, not a missing import.",
+    "exitCode": 1,
+    "tests": 10,
+    "pass": 3,
+    "fail": 7,
+    "durationMs": 183.0697,
+    "stdout": "✖ slow and fast strokes stay distinct at 60 Hz rendering (3.4695ms)\n✖ slow and fast strokes stay distinct at 90 Hz rendering (0.5953ms)\n✖ slow and fast strokes stay distinct at 144 Hz rendering (1.3658ms)\n✖ a sparse fast sample retains its travel before the direction vector would be capped (0.3176ms)\n✖ alternating stroke directions keep fast scalar motion instead of cancelling it (0.457ms)\n✔ release and explicit cancellation remove energy before a new slow stroke (0.4548ms)\n✔ invalid speeds decay safely, invalid clocks hold state, and finite extremes stay bounded (0.3201ms)\n✖ continuous motion integrates by elapsed seconds across render rates (0.2875ms)\n✔ independent gestures do not share their temporal energy (0.2255ms)\n✖ regular 5 Hz input remains usable but has little fast-stroke threshold margin (0.5539ms)\nℹ tests 10\nℹ suites 0\nℹ pass 3\nℹ fail 7\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 183.0697\n\n✖ failing tests:\n\ntest at tests\\stroke-motion.test.js:27:32\n✖ slow and fast strokes stay distinct at 60 Hz rendering (3.4695ms)\n  AssertionError [ERR_ASSERTION]: 60/10 Hz slow scatter 0.18094565769316673\n      at TestContext.<anonymous> (file:///D:/AI%20Game/spring-letter/tests/stroke-motion.test.js:30:10)\n      at Test.runInAsyncScope (node:async_hooks:227:14)\n      at Test.run (node:internal/test_runner/test:1397:25)\n      at Test.start (node:internal/test_runner/test:1257:17)\n      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: false,\n    expected: true,\n    operator: '==',\n    diff: 'simple'\n  }\n\ntest at tests\\stroke-motion.test.js:27:32\n✖ slow and fast strokes stay distinct at 90 Hz rendering (0.5953ms)\n  AssertionError [ERR_ASSERTION]: 90/10 Hz slow scatter 0.13077580181619033\n      at TestContext.<anonymous> (file:///D:/AI%20Game/spring-letter/tests/stroke-motion.test.js:30:10)\n      at Test.runInAsyncScope (node:async_hooks:227:14)\n      at Test.run (node:internal/test_runner/test:1397:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)\n      at Test.postRun (node:internal/test_runner/test:1537:19)\n      at Test.run (node:internal/test_runner/test:1462:12)\n      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: false,\n    expected: true,\n    operator: '==',\n    diff: 'simple'\n  }\n\ntest at tests\\stroke-motion.test.js:27:32\n✖ slow and fast strokes stay distinct at 144 Hz rendering (1.3658ms)\n  AssertionError [ERR_ASSERTION]: 144/10 Hz slow scatter 0.08306730237138148\n      at TestContext.<anonymous> (file:///D:/AI%20Game/spring-letter/tests/stroke-motion.test.js:30:10)\n      at Test.runInAsyncScope (node:async_hooks:227:14)\n      at Test.run (node:internal/test_runner/test:1397:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)\n      at Test.postRun (node:internal/test_runner/test:1537:19)\n      at Test.run (node:internal/test_runner/test:1462:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: false,\n    expected: true,\n    operator: '==',\n    diff: 'simple'\n  }\n\ntest at tests\\stroke-motion.test.js:35:1\n✖ a sparse fast sample retains its travel before the direction vector would be capped (0.3176ms)\n  AssertionError [ERR_ASSERTION]: one empty event frame must decay rather than erase the fast stroke\n      at TestContext.<anonymous> (file:///D:/AI%20Game/spring-letter/tests/stroke-motion.test.js:40:9)\n      at Test.runInAsyncScope (node:async_hooks:227:14)\n      at Test.run (node:internal/test_runner/test:1397:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)\n      at Test.postRun (node:internal/test_runner/test:1537:19)\n      at Test.run (node:internal/test_runner/test:1462:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: false,\n    expected: true,\n    operator: '==',\n    diff: 'simple'\n  }\n\ntest at tests\\stroke-motion.test.js:43:1\n✖ alternating stroke directions keep fast scalar motion instead of cancelling it (0.457ms)\n  AssertionError [ERR_ASSERTION]: 60 Hz reversing scatter 0.3124588611373939\n      at TestContext.<anonymous> (file:///D:/AI%20Game/spring-letter/tests/stroke-motion.test.js:46:10)\n      at Test.runInAsyncScope (node:async_hooks:227:14)\n      at Test.run (node:internal/test_runner/test:1397:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)\n      at Test.postRun (node:internal/test_runner/test:1537:19)\n      at Test.run (node:internal/test_runner/test:1462:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: false,\n    expected: true,\n    operator: '==',\n    diff: 'simple'\n  }\n\ntest at tests\\stroke-motion.test.js:72:1\n✖ continuous motion integrates by elapsed seconds across render rates (0.2875ms)\n  AssertionError [ERR_ASSERTION]: 60 Hz produced 10\n      at TestContext.<anonymous> (file:///D:/AI%20Game/spring-letter/tests/stroke-motion.test.js:76:10)\n      at Test.runInAsyncScope (node:async_hooks:227:14)\n      at Test.run (node:internal/test_runner/test:1397:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)\n      at Test.postRun (node:internal/test_runner/test:1537:19)\n      at Test.run (node:internal/test_runner/test:1462:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: false,\n    expected: true,\n    operator: '==',\n    diff: 'simple'\n  }\n\ntest at tests\\stroke-motion.test.js:86:1\n✖ regular 5 Hz input remains usable but has little fast-stroke threshold margin (0.5539ms)\n  AssertionError [ERR_ASSERTION]: 60/5 Hz slow scatter 0.11528383344766815\n      at TestContext.<anonymous> (file:///D:/AI%20Game/spring-letter/tests/stroke-motion.test.js:89:10)\n      at Test.runInAsyncScope (node:async_hooks:227:14)\n      at Test.run (node:internal/test_runner/test:1397:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)\n      at Test.postRun (node:internal/test_runner/test:1537:19)\n      at Test.run (node:internal/test_runner/test:1462:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: false,\n    expected: true,\n    operator: '==',\n    diff: 'simple'\n  }\n"
+  },
+  "green": {
+    "command": "npm test",
+    "exitCode": 0,
+    "tests": 100,
+    "pass": 100,
+    "fail": 0,
+    "durationMs": 3329.64,
+    "helperTests": 10,
+    "requiredCadenceMatrix": {
+      "rafHz": [
+        60,
+        90,
+        144
+      ],
+      "inputHz": [
+        10,
+        20,
+        30,
+        60
+      ],
+      "trueSlowSpeed": 0.8,
+      "trueFastSpeed": 20,
+      "steadyTailSeconds": [
+        4,
+        5
+      ],
+      "slowScatterMaxRequirement": 0.005,
+      "fastScatterMinRequirement": 0.95,
+      "pass": true
+    },
+    "additionalCoverage": [
+      "raw impulse before cap",
+      "direction reversal without scalar cancellation",
+      "release and explicit reset without stale energy",
+      "finite handling",
+      "elapsed-time rate invariance",
+      "independent instances",
+      "regular 5 Hz boundary"
+    ],
+    "stdoutSummary": "ℹ tests 100\nℹ suites 0\nℹ pass 100\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 3329.64"
+  },
+  "cpuNumerics": {
+    "implementedHelper": true,
+    "slow10Hz": [
+      {
+        "rafHz": 60,
+        "intervals": [
+          0.1
+        ],
+        "speed": 0.8,
+        "scatterMin": 0,
+        "scatterMax": 0
+      },
+      {
+        "rafHz": 90,
+        "intervals": [
+          0.1
+        ],
+        "speed": 0.8,
+        "scatterMin": 0.0000020991373297461625,
+        "scatterMax": 0.0000029426446165868537
+      },
+      {
+        "rafHz": 144,
+        "intervals": [
+          0.1
+        ],
+        "speed": 0.8,
+        "scatterMin": 0.000007612594423359796,
+        "scatterMax": 0.000016491926624084106
+      }
+    ],
+    "regular5Hz": [
+      {
+        "rafHz": 60,
+        "intervals": [
+          0.2
+        ],
+        "speed": 0.8,
+        "scatterMin": 0.0017928910983074134,
+        "scatterMax": 0.0033524314571405324
+      },
+      {
+        "rafHz": 60,
+        "intervals": [
+          0.2
+        ],
+        "speed": 20,
+        "scatterMin": 0.965618626458136,
+        "scatterMax": 0.9816919157983354
+      },
+      {
+        "rafHz": 90,
+        "intervals": [
+          0.2
+        ],
+        "speed": 0.8,
+        "scatterMin": 0.0018250983540624406,
+        "scatterMax": 0.0034007256509695806
+      },
+      {
+        "rafHz": 90,
+        "intervals": [
+          0.2
+        ],
+        "speed": 20,
+        "scatterMin": 0.9590495517580211,
+        "scatterMax": 0.977660543442846
+      },
+      {
+        "rafHz": 144,
+        "intervals": [
+          0.2
+        ],
+        "speed": 0.8,
+        "scatterMin": 0.0017948906998951646,
+        "scatterMax": 0.0035420352372538626
+      },
+      {
+        "rafHz": 144,
+        "intervals": [
+          0.2
+        ],
+        "speed": 20,
+        "scatterMin": 0.9513463283179949,
+        "scatterMax": 0.9773611209084877
+      }
+    ],
+    "jitteredAverage5Hz": [
+      {
+        "rafHz": 60,
+        "intervals": [
+          0.16,
+          0.24
+        ],
+        "speed": 0.8,
+        "scatterMin": 0.0017529986457100472,
+        "scatterMax": 0.005137380458209135
+      },
+      {
+        "rafHz": 60,
+        "intervals": [
+          0.16,
+          0.24
+        ],
+        "speed": 20,
+        "scatterMin": 0.9083288967696905,
+        "scatterMax": 0.9740812753110147
+      },
+      {
+        "rafHz": 90,
+        "intervals": [
+          0.16,
+          0.24
+        ],
+        "speed": 0.8,
+        "scatterMin": 0.0017772789852618727,
+        "scatterMax": 0.005199722967017161
+      },
+      {
+        "rafHz": 90,
+        "intervals": [
+          0.16,
+          0.24
+        ],
+        "speed": 20,
+        "scatterMin": 0.900262894455094,
+        "scatterMax": 0.9709751776850173
+      },
+      {
+        "rafHz": 144,
+        "intervals": [
+          0.16,
+          0.24
+        ],
+        "speed": 0.8,
+        "scatterMin": 0.001773054099706697,
+        "scatterMax": 0.005259874090780028
+      },
+      {
+        "rafHz": 144,
+        "intervals": [
+          0.16,
+          0.24
+        ],
+        "speed": 20,
+        "scatterMin": 0.8706474468918504,
+        "scatterMax": 0.965910779501438
+      }
+    ],
+    "scope": "CPU only; irregular intervals are a documented response boundary, not a new tuning change."
+  },
+  "mainIntegration": {
+    "passed": true,
+    "records": [
+      {
+        "name": "first-position-is-baseline",
+        "active": true,
+        "released": false,
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "strength": 0.55,
+        "energy": 0,
+        "target": 0
+      },
+      {
+        "name": "raw-speed-integrated-before-cap",
+        "active": true,
+        "released": false,
+        "velocity": [
+          10.799999999999999,
+          14.4,
+          0
+        ],
+        "strength": 1.1800000000000002,
+        "energy": 18,
+        "target": 1
+      },
+      {
+        "name": "reversal-preserves-direction",
+        "active": true,
+        "released": false,
+        "velocity": [
+          -10.799999999999999,
+          -14.4,
+          0
+        ],
+        "strength": 1.1800000000000002,
+        "energy": 18,
+        "target": 1
+      },
+      {
+        "name": "empty-event-frame-keeps-scalar-energy-only",
+        "active": true,
+        "released": false,
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "strength": 0.55,
+        "energy": 15.753119742773054,
+        "target": 1
+      },
+      {
+        "name": "release-keeps-existing-vector-decay",
+        "active": false,
+        "released": true,
+        "velocity": [
+          1.6464349082820782,
+          2.1952465443761047,
+          0
+        ],
+        "strength": 0.4859820333758385,
+        "energy": 0,
+        "target": 0
+      },
+      {
+        "name": "new-stroke-does-not-inherit-motion",
+        "active": true,
+        "released": false,
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "strength": 0.55,
+        "energy": 0,
+        "target": 0
+      },
+      {
+        "name": "zero-dt-is-safe-baseline",
+        "active": true,
+        "released": false,
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "strength": 0.55,
+        "energy": 0,
+        "target": 0
+      }
+    ],
+    "clearInputReset": true,
+    "zeroDtSafe": true,
+    "directionalImpulseUnchanged": true,
+    "releaseDecayUnchanged": true,
+    "snapshot": {
+      "field": "gesture.motionEnergy",
+      "source": "strokeMotion.value getter",
+      "readOnly": true
+    },
+    "sourceSha256": {
+      "main": "5141ef1b7a3cf3ad18856e9d47fe0c715c1961a4e733d7b06604937b3361ba9b",
+      "helper": "b280059d647b17baa75573434720b81024b456e7fe1f9cc0d078938ac7798b3b",
+      "tests": "d0519a269e46a9ba1a81f360858e9e350bc40b4290d7d6d463f742e88b2fbb31"
+    }
+  },
+  "spaceChord": {
+    "scope": "CPU only. Actual main.js handler/cleanup bodies executed in VM with DOM/event-target stubs; no browser or GPU. Native DOM default behavior is only checked as preventDefault absence, not simulated.",
+    "mainSha256": "5141ef1b7a3cf3ad18856e9d47fe0c715c1961a4e733d7b06604937b3361ba9b",
+    "cases": [
+      {
+        "name": "input to canvas chord preserves native keydown",
+        "pass": true,
+        "state": {
+          "spaceHeld": true,
+          "spaceInKeys": true,
+          "pointerDown": true,
+          "orbiting": false,
+          "energy": 0
+        }
+      },
+      {
+        "name": "select to canvas chord preserves native keydown",
+        "pass": true,
+        "state": {
+          "spaceHeld": true,
+          "spaceInKeys": true,
+          "pointerDown": true,
+          "orbiting": false,
+          "energy": 0
+        }
+      },
+      {
+        "name": "textarea to canvas chord preserves native keydown",
+        "pass": true,
+        "state": {
+          "spaceHeld": true,
+          "spaceInKeys": true,
+          "pointerDown": true,
+          "orbiting": false,
+          "energy": 0
+        }
+      },
+      {
+        "name": "button to canvas chord preserves native keydown",
+        "pass": true,
+        "state": {
+          "spaceHeld": true,
+          "spaceInKeys": true,
+          "pointerDown": true,
+          "orbiting": false,
+          "energy": 0
+        }
+      },
+      {
+        "name": "keyup on form clears modifier and next click orbits",
+        "pass": true,
+        "state": {
+          "spaceHeld": false,
+          "spaceInKeys": false,
+          "pointerDown": true,
+          "orbiting": true,
+          "energy": 0
+        }
+      },
+      {
+        "name": "right button retains orbit priority",
+        "pass": true,
+        "state": {
+          "spaceHeld": true,
+          "spaceInKeys": true,
+          "pointerDown": true,
+          "orbiting": true,
+          "energy": 0
+        }
+      },
+      {
+        "name": "physical repeat can transfer from form without handling native key",
+        "pass": true,
+        "state": {
+          "spaceHeld": true,
+          "spaceInKeys": true,
+          "pointerDown": true,
+          "orbiting": false,
+          "energy": 0
+        }
+      },
+      {
+        "name": "modal opening clears and modal keydown cannot seed stale chord",
+        "pass": true,
+        "state": {
+          "spaceHeld": false,
+          "spaceInKeys": false,
+          "pointerDown": true,
+          "orbiting": true,
+          "energy": 0
+        }
+      },
+      {
+        "name": "presentation reset clears modifier",
+        "pass": true,
+        "state": {
+          "spaceHeld": false,
+          "spaceInKeys": false,
+          "pointerDown": false,
+          "orbiting": false,
+          "energy": 0
+        }
+      },
+      {
+        "name": "pointercancel clears modifier and motion",
+        "pass": true,
+        "state": {
+          "spaceHeld": false,
+          "spaceInKeys": false,
+          "pointerDown": false,
+          "orbiting": false,
+          "energy": 0
+        }
+      },
+      {
+        "name": "blur clears modifier and motion",
+        "pass": true,
+        "state": {
+          "spaceHeld": false,
+          "spaceInKeys": false,
+          "pointerDown": false,
+          "orbiting": false,
+          "energy": 0
+        }
+      },
+      {
+        "name": "visibilitychange clears modifier and motion",
+        "pass": true,
+        "state": {
+          "spaceHeld": false,
+          "spaceInKeys": false,
+          "pointerDown": false,
+          "orbiting": false,
+          "energy": 0
+        }
+      },
+      {
+        "name": "cover canvas cannot transfer modifier",
+        "pass": true,
+        "state": {
+          "spaceHeld": true,
+          "spaceInKeys": false,
+          "pointerDown": false,
+          "orbiting": false,
+          "energy": 0
+        }
+      },
+      {
+        "name": "opening canvas cannot transfer modifier",
+        "pass": true,
+        "state": {
+          "spaceHeld": true,
+          "spaceInKeys": false,
+          "pointerDown": false,
+          "orbiting": false,
+          "energy": 0
+        }
+      }
+    ],
+    "passed": 14,
+    "failed": 0,
+    "clearInputCalls": 17
+  },
+  "runtimeTraceEvidence": {
+    "before": {
+      "file": "spring-letter/evidence/v5-brush-trace-before.json",
+      "date": "2026-11-19T04:33:49.844Z",
+      "build": "/assets/index-BKcuSN5I.js",
+      "summary": {
+        "activeFrames": 131,
+        "zeroVelocityFrames": 29,
+        "fastFrames": 50,
+        "peakScatter": 0.45878306049963885,
+        "inkFrames": 95
+      }
+    },
+    "after": {
+      "file": "spring-letter/evidence/v5-brush-trace-after.json",
+      "date": "2026-11-19T04:44:33.727Z",
+      "build": "/assets/index-ZF6XXQOO.js",
+      "summary": {
+        "activeFrames": 127,
+        "zeroVelocityFrames": 34,
+        "fastFrames": 50,
+        "peakScatter": 0.9995613600552838,
+        "inkFrames": 116
+      }
+    },
+    "scope": "Ordinary real pointer moves, sampled once per RAF using read-only snapshots. No state setters or generated measurements."
+  },
+  "laterRootRuntimeEvidence": {
+    "v5-visual-verification.json": {
+      "date": "2026-11-19T04:47:56.980Z",
+      "url": "http://127.0.0.1:5192",
+      "build": "/assets/index-BNqW-E_H.js",
+      "checks": [
+        "actual game flower disperses under fast strokes with darkened surroundings and returns without a reset button",
+        "thin-film and chase-light controls remain usable in the optional workbench",
+        "three material presets and the natural color variant keep their identity",
+        "three real horizontal wind strokes scatter and naturally reform the same half-open flower",
+        "dust gallery default drag changes view without masquerading as a wind stroke",
+        "photo saves a real local PNG from the composed scene"
+      ],
+      "errors": [],
+      "peaks": [
+        0.9971810397104537,
+        0.9971950584605122,
+        0.9966094064439794
+      ],
+      "worldPeak": 0.9978637514570488,
+      "scope": "Ordinary visible UI and pointer input, read-only snapshots. Screenshots are actual renders; material labels alone are not a photorealism verdict."
+    },
+    "v5-boundary-verification.json": {
+      "date": "2026-11-19T04:48:32.099Z",
+      "checks": [
+        "malformed stored JSON yields usable safe start",
+        "blur pauses and clears held movement; focus does not resume stale key",
+        "low quality reduces actual GPU simulation to 128x128",
+        "default drag visibly rotates dust gallery without scattering",
+        "Escape exits inspection even with range input focused",
+        "graphics context loss shows recoverable reload instruction",
+        "unavailable local storage does not block playing",
+        "object, array and inherited-key bridge shapes recover to a playable safe shape",
+        "emulated touch can enter focus and solve bloom without overflow"
+      ],
+      "errors": [],
+      "scope": "Browser lifecycle and corrupt-storage fixtures are injected deliberately; gameplay controls remain ordinary input.",
+      "build": "/assets/index-BNqW-E_H.js"
+    },
+    "v5-gallery-chord-before.json": {
+      "date": "2026-11-19T04:46:34.087Z",
+      "build": "/assets/index-ZF6XXQOO.js",
+      "script": "scripts/v5-visual-check.cjs",
+      "failedAssertion": "peak>.15, line29",
+      "observed": "After setting the bloom range, Space was pressed while the range still had focus. The keydown guard returned before tracking it; the subsequent canvas drag orbited instead of writing wind.",
+      "scope": "Ordinary-input failed browser run. No synthetic state. Prior world scatter check passed; this is a separate range-to-canvas chord defect."
+    }
+  },
+  "presentationSourceReview": {
+    "heroGestureFieldOpacity": 0.22,
+    "focusHudRule": "body.play.focus #hud{display:none}",
+    "statement": "Source review confirms presentation-only opacity/HUD changes. These values do not feed scalar motion or task progress. Pixel appearance is covered only by root's separate runtime evidence."
+  },
+  "boundaries": [
+    "Regular 5 Hz input barely satisfies the same thresholds; alternating 160/240 ms intervals at average 5 Hz do not: slow scatter peaks about 0.00514–0.00526, and fast minima about 0.871–0.908. This is a documented sparse/irregular input boundary, not an unreported tuning change.",
+    "The helper preserves observed net displacement; it cannot recover motion that reverses entirely between sampled positions.",
+    "VM event targets are stubs. Native browser defaults, pointer capture, and actual focus transfer are not proven by the CPU probe; root's BNqW-E_H visual/boundary evidence separately covers ordinary UI flows.",
+    "The root-run visual file reports 6 completed checks and the boundary file 9, both with empty errors. No human tactile test, first-player comprehension study, subjective sound evaluation, or all-device performance claim is made."
+  ]
+}

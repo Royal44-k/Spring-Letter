@@ -1,0 +1,136 @@
+{
+  "scope": "Static design model only; does not validate gameplay implementation, transitions, collision, timing, input or fun.",
+  "version": "v2.0",
+  "p3_safe_platform_states": 16,
+  "p3_results": [
+    {
+      "start": [
+        "A",
+        "none"
+      ],
+      "all_safe_platforms_reachable": true
+    },
+    {
+      "start": [
+        "A",
+        "bridge_am"
+      ],
+      "all_safe_platforms_reachable": true
+    },
+    {
+      "start": [
+        "A",
+        "bridge_mf"
+      ],
+      "all_safe_platforms_reachable": true
+    },
+    {
+      "start": [
+        "A",
+        "shield_rm"
+      ],
+      "all_safe_platforms_reachable": true
+    },
+    {
+      "start": [
+        "R",
+        "none"
+      ],
+      "all_safe_platforms_reachable": true
+    },
+    {
+      "start": [
+        "R",
+        "bridge_am"
+      ],
+      "all_safe_platforms_reachable": true
+    },
+    {
+      "start": [
+        "R",
+        "bridge_mf"
+      ],
+      "all_safe_platforms_reachable": true
+    },
+    {
+      "start": [
+        "R",
+        "shield_rm"
+      ],
+      "all_safe_platforms_reachable": true
+    },
+    {
+      "start": [
+        "M",
+        "none"
+      ],
+      "all_safe_platforms_reachable": true
+    },
+    {
+      "start": [
+        "M",
+        "bridge_am"
+      ],
+      "all_safe_platforms_reachable": true
+    },
+    {
+      "start": [
+        "M",
+        "bridge_mf"
+      ],
+      "all_safe_platforms_reachable": true
+    },
+    {
+      "start": [
+        "M",
+        "shield_rm"
+      ],
+      "all_safe_platforms_reachable": true
+    },
+    {
+      "start": [
+        "F",
+        "none"
+      ],
+      "all_safe_platforms_reachable": true
+    },
+    {
+      "start": [
+        "F",
+        "bridge_am"
+      ],
+      "all_safe_platforms_reachable": true
+    },
+    {
+      "start": [
+        "F",
+        "bridge_mf"
+      ],
+      "all_safe_platforms_reachable": true
+    },
+    {
+      "start": [
+        "F",
+        "shield_rm"
+      ],
+      "all_safe_platforms_reachable": true
+    }
+  ],
+  "allocation_legal_states": 13,
+  "complete_id_assignments": 6,
+  "distinct_two_purpose_outcomes": [
+    [
+      "memory",
+      "season"
+    ],
+    [
+      "memory",
+      "voyage"
+    ],
+    [
+      "season",
+      "voyage"
+    ]
+  ],
+  "passes": true
+}

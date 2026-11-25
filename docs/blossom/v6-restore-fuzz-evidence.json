@@ -1,0 +1,57 @@
+{
+  "kind": "CPU-only deterministic save restore fuzz",
+  "seed": "0x5a17c0de",
+  "prng": "xorshift32",
+  "samples": 10000,
+  "startedAt": "2026-11-19T08:17:59.291Z",
+  "node": "v24.20.0",
+  "sourceSha256": {
+    "game-model.js": "c37e1931a7de699f96b08c07dd73ec528f1ecaa84deed4e78655818b287d5352",
+    "exploration-model.js": "069aadf0c9c6a4e8f387c0a6a624c147568e3174b0714a8e32d36973f5e0418d",
+    "story-model.js": "33700f8129bd477195dc9fb6e902e2f7845cff967fbaaa832be24436df9fbee7"
+  },
+  "categories": {
+    "targeted": 20,
+    "normalization-control": 946,
+    "mixed-fields": 8509,
+    "arbitrary-root": 525
+  },
+  "passed": 10000,
+  "failed": 0,
+  "violationCounts": {},
+  "firstFailures": [],
+  "coverage": {
+    "acceptedVersion": 8949,
+    "gateStages": [
+      3867,
+      2308,
+      2209,
+      1616
+    ],
+    "restoredEndings": 433,
+    "endingValues": {
+      "memory+season": 129,
+      "season+voyage": 168,
+      "memory+voyage": 136
+    },
+    "restoredCompletedGardens": 9150
+  },
+  "invariants": [
+    "restore → serialize → restore does not throw",
+    "all restored numbers and player/seed coordinates are finite",
+    "exactly two core slots; only known purposes or null; no duplicate purpose",
+    "ending is null or the sorted pair of two distinct known purposes, preserved only from the exact input ending",
+    "wind requires p1; bridge requires wind; ending requires bridge; companion requires wind",
+    "restoration is idempotent after serialization",
+    "bridge structure is a known literal string",
+    "rain cannot retain a qualifying trace consumed by the normal simulation"
+  ],
+  "exclusions": [
+    "No browser, GPU, audio, build or real-time long run",
+    "JSON cannot carry functions, getters, circular references, NaN, or Infinity; finite extreme numbers are included",
+    "A structurally coherent saved ending is retained by design; this is not a tamper-proof authenticity check"
+  ],
+  "elapsedMs": 1516.644,
+  "finishedAt": "2026-11-19T08:18:00.812Z",
+  "sourceUnchanged": true
+}

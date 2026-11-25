@@ -1,0 +1,73 @@
+{
+  "kind": "CPU-only zero-step startup pipeline review",
+  "sourceSha256": "37c5c2739e27eb9b5bd8aa9522bfb566d6640e05faa89096cb9ad2708be91cc3",
+  "scope": "Executed actual main frame dispatch up to rendering with real exploration, bridge and delivery modules; GPU and presentation paths audited in source only.",
+  "synthetic": true,
+  "afterWarmup": {
+    "scheduledRaf": 0,
+    "time": 0,
+    "frameNumber": 0,
+    "stateUnchanged": true,
+    "gameplayActions": 0
+  },
+  "afterExplicitInitialRafAndItsCallback": {
+    "totalRequests": 2,
+    "expected": 2,
+    "meaning": "one initial request plus exactly one successor; no second loop"
+  },
+  "moduleCalls": [
+    {
+      "layer": "exploration",
+      "time": 0,
+      "dt": 0,
+      "interactive": false,
+      "signals": 0
+    },
+    {
+      "layer": "weaver",
+      "time": 0,
+      "dt": 0,
+      "interactive": false,
+      "signals": 0
+    },
+    {
+      "layer": "delivery",
+      "time": 0,
+      "dt": 0,
+      "interactive": false,
+      "signals": 0
+    },
+    {
+      "layer": "exploration",
+      "time": 0,
+      "dt": 0,
+      "interactive": false,
+      "signals": 0
+    },
+    {
+      "layer": "weaver",
+      "time": 0,
+      "dt": 0,
+      "interactive": false,
+      "signals": 0
+    },
+    {
+      "layer": "delivery",
+      "time": 0,
+      "dt": 0,
+      "interactive": false,
+      "signals": 0
+    }
+  ],
+  "renderAudit": {
+    "cover": true,
+    "landscapeVisible": false,
+    "explorationVisible": false,
+    "worldVisible": true,
+    "travellerVisible": false,
+    "companionVisible": false,
+    "particleVisible": false,
+    "heroWeatherOpacity": 0,
+    "description": "These are ordinary cover-frame presentation values; they are not saved progress. Hero opacity begins easing on subsequent nonzero frames."
+  }
+}

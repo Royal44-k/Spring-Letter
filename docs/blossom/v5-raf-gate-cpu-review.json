@@ -1,0 +1,28 @@
+{
+  "kind": "CPU-only one-time RAF gate audit",
+  "sourceSha256": "eba0d91e060d9f1d7d188f31196163fb23fc796b7b1df57f47f20de8fd3f9f4c",
+  "synthetic": true,
+  "suppliedTimestamps": [
+    1000,
+    2034.8,
+    2050.8,
+    5050.8
+  ],
+  "warmupScheduledRaf": 0,
+  "queueLengthAfterEachCallback": 1,
+  "recordedFrameTimesMs": [
+    16.000000000000227,
+    3000
+  ],
+  "frameTiming": {
+    "longestMs": 3000,
+    "over50": 1,
+    "over100": 1,
+    "over1000": 1
+  },
+  "initialGateTimestampIgnored": true,
+  "initialFrameEstablishedBaseline": true,
+  "postStartLongFramePreserved": true,
+  "totalRequests": 5,
+  "scope": "Actual frame timing prefix and actual launch expression executed with a deterministic CPU callback queue. Does not simulate GPU or prove browser timestamp causality."
+}

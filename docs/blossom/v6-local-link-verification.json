@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "pages": 21,
+  "localReferences": 528,
+  "missing": [],
+  "scope": "Generated local href/src/poster targets exist. No external link, anchor, or visual-layout assertion."
+}

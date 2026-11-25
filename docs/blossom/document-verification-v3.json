@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-18",
+  "version": "v4.0",
+  "check": "Generated-page local link, media, fragment and title check; external links not fetched",
+  "html_pages": 21,
+  "local_references_checked": 516,
+  "external_references_not_fetched": 164,
+  "project_readme_exists": true,
+  "all_titles_updated": true,
+  "issues": [],
+  "gameplay_qa": "Separate evidence: spring-letter/evidence/v4-browser-verification.json and boundary-verification.json; not performed by this link checker",
+  "browser_layout_qa": {
+    "browser": "Microsoft Edge, headless, local file URLs",
+    "desktop": {
+      "viewport": 1440,
+      "width": 1440,
+      "title": "设计概览 · 花漾年华：待寄出的春信"
+    },
+    "mobile": {
+      "viewport": 390,
+      "width": 390
+    },
+    "releasePageMobile": {
+      "viewport": 390,
+      "width": 390,
+      "tableCount": 4
+    },
+    "frameWorks": true,
+    "choiceWorks": true,
+    "pageErrors": [],
+    "networkRequests": [],
+    "screenshots": [
+      "review-v3-desktop.png",
+      "review-v3-mobile.png"
+    ]
+  }
+}
