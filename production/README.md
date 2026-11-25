@@ -8,6 +8,7 @@
 | 镜头顺序、入出点与字幕 | [edit.json](../spring-letter-promo/work/edit.json) · [剪辑脚本](../spring-letter-promo/work/cut.py) |
 | 原始取样与声音处理 | [配乐取样](../spring-letter/.tools/v7-audio) · [环境音与动作音](../docs/blossom/research/v8-audio) |
 | 全程操作与花尘材质验证 | [实机行程](../spring-letter/evidence/v12/full-2026-11-23T04-53-23-576Z) · [材质与分档画面](../spring-letter/evidence/v10/render-2026-11-23T06-32-25-833Z) |
+| 实机声音样带 | [写信、扬帆与终章](../spring-letter/evidence/v11/audio-1795402325781) · [雨幕温室、沉星天文台与云海花甸](../spring-letter/evidence/v12/audio-2026-11-23T04-59-50-388Z) |
 | 早期已经完成的实机录像 | [录像及原始验证记录](archive) |
 | 母本文件的 SHA-256 | [校验表](SHA256SUMS.txt) |
 

@@ -1,0 +1,1154 @@
+{
+  "url": "http://127.0.0.1:5216/",
+  "passed": true,
+  "scope": "Native destination tap, real earned archives, visible UI controls. Signal and silence measurement only; no human listening verdict.",
+  "cases": [
+    {
+      "stage": "writing",
+      "entry": "./assets/index-Oe3dpFeS.js",
+      "audio": {
+        "state": "running",
+        "muted": false,
+        "paused": false,
+        "disposed": false,
+        "loaded": true,
+        "loadedSamples": [
+          "harpLow",
+          "harp",
+          "piano",
+          "flute",
+          "cello",
+          "pizz",
+          "triangle"
+        ],
+        "loadedFoley": [
+          "grass0",
+          "grass1",
+          "grass2",
+          "stone0",
+          "stone1",
+          "stone2",
+          "stoneTurn",
+          "birds",
+          "river"
+        ],
+        "loadErrors": [],
+        "persistentNodes": 18,
+        "persistentSources": 3,
+        "voices": 1,
+        "voiceLimit": 48,
+        "queuedNotes": 0,
+        "bar": 3,
+        "musicTitle": "落笔之前",
+        "mix": {
+          "music": 0.25,
+          "sfx": 0.65,
+          "ambience": 0.85
+        },
+        "scheduledNotes": 8,
+        "eventCount": 0,
+        "foleyEvents": 0,
+        "lastFoley": null,
+        "fallbackNotes": 0,
+        "fallbackInstruments": [],
+        "missedSchedules": 0,
+        "hasOutput": true,
+        "scene": {
+          "zone": "finale",
+          "voyage": "writing",
+          "voyageSpeed": 0,
+          "groundMaterial": "stone",
+          "nearWater": 0.25,
+          "challengeActive": false,
+          "flowerPhase": "solid",
+          "composing": false
+        }
+      },
+      "samples": [
+        {
+          "rms": 0.009113080410569087,
+          "peak": 0.02935604937374592,
+          "time": 4.4,
+          "state": "running"
+        },
+        {
+          "rms": 0.012636509869917817,
+          "peak": 0.03730589151382446,
+          "time": 4.650666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.00911434480610687,
+          "peak": 0.031192298978567123,
+          "time": 4.930666666666666,
+          "state": "running"
+        },
+        {
+          "rms": 0.008866742701245024,
+          "peak": 0.03054465726017952,
+          "time": 5.192,
+          "state": "running"
+        },
+        {
+          "rms": 0.010528071960968702,
+          "peak": 0.03334081545472145,
+          "time": 5.450666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.0119141779424331,
+          "peak": 0.04646942764520645,
+          "time": 5.717333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.02245635387809618,
+          "peak": 0.08169221878051758,
+          "time": 5.981333333333334,
+          "state": "running"
+        },
+        {
+          "rms": 0.016662228360723612,
+          "peak": 0.05758516490459442,
+          "time": 6.250666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.012566568921780577,
+          "peak": 0.04833711311221123,
+          "time": 6.52,
+          "state": "running"
+        },
+        {
+          "rms": 0.009528248377793353,
+          "peak": 0.034129686653614044,
+          "time": 6.781333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.01059180403293728,
+          "peak": 0.038357213139534,
+          "time": 7.04,
+          "state": "running"
+        },
+        {
+          "rms": 0.00990545413450633,
+          "peak": 0.04505041986703873,
+          "time": 7.309333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.008656448886953994,
+          "peak": 0.02581682801246643,
+          "time": 7.570666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.01114630797812031,
+          "peak": 0.03465929627418518,
+          "time": 7.84,
+          "state": "running"
+        },
+        {
+          "rms": 0.008639234641614493,
+          "peak": 0.025100920349359512,
+          "time": 8.101333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.008491906580071752,
+          "peak": 0.02705174684524536,
+          "time": 8.370666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.013381595814789751,
+          "peak": 0.05386510118842125,
+          "time": 8.64,
+          "state": "running"
+        },
+        {
+          "rms": 0.012149167330423661,
+          "peak": 0.03254058212041855,
+          "time": 8.901333333333334,
+          "state": "running"
+        },
+        {
+          "rms": 0.009221420341420563,
+          "peak": 0.02539125829935074,
+          "time": 9.170666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.008614794107361722,
+          "peak": 0.030575070530176163,
+          "time": 9.432,
+          "state": "running"
+        },
+        {
+          "rms": 0.013895340355456065,
+          "peak": 0.04560164734721184,
+          "time": 9.706666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.01653002710040022,
+          "peak": 0.04318521171808243,
+          "time": 9.970666666666666,
+          "state": "running"
+        },
+        {
+          "rms": 0.01728623231857806,
+          "peak": 0.06752139329910278,
+          "time": 10.24,
+          "state": "running"
+        },
+        {
+          "rms": 0.01169759306418776,
+          "peak": 0.03775756061077118,
+          "time": 10.512,
+          "state": "running"
+        },
+        {
+          "rms": 0.011839694833149787,
+          "peak": 0.038402386009693146,
+          "time": 10.770666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.009413830305880859,
+          "peak": 0.02572062239050865,
+          "time": 11.04,
+          "state": "running"
+        },
+        {
+          "rms": 0.009007969545153422,
+          "peak": 0.023583652451634407,
+          "time": 11.312,
+          "state": "running"
+        },
+        {
+          "rms": 0.007900517589917574,
+          "peak": 0.029955286532640457,
+          "time": 11.570666666666666,
+          "state": "running"
+        },
+        {
+          "rms": 0.008693814639914917,
+          "peak": 0.025463897734880447,
+          "time": 11.84,
+          "state": "running"
+        },
+        {
+          "rms": 0.019583994932111864,
+          "peak": 0.08415499329566956,
+          "time": 12.101333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.008854636203135749,
+          "peak": 0.027918484061956406,
+          "time": 12.36,
+          "state": "running"
+        },
+        {
+          "rms": 0.01044087025447695,
+          "peak": 0.03016320988535881,
+          "time": 12.632,
+          "state": "running"
+        }
+      ],
+      "muted": [
+        {
+          "rms": 0,
+          "peak": 0,
+          "time": 13.08,
+          "state": "running"
+        },
+        {
+          "rms": 0,
+          "peak": 0,
+          "time": 13.2,
+          "state": "running"
+        },
+        {
+          "rms": 0,
+          "peak": 0,
+          "time": 13.309333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0,
+          "peak": 0,
+          "time": 13.432,
+          "state": "running"
+        },
+        {
+          "rms": 0,
+          "peak": 0,
+          "time": 13.530666666666667,
+          "state": "running"
+        }
+      ],
+      "resumed": [
+        {
+          "rms": 0.01022155845352142,
+          "peak": 0.03178812935948372,
+          "time": 13.792,
+          "state": "running"
+        },
+        {
+          "rms": 0.015187607024059243,
+          "peak": 0.043867796659469604,
+          "time": 13.890666666666666,
+          "state": "running"
+        },
+        {
+          "rms": 0.014726350974344495,
+          "peak": 0.05146718770265579,
+          "time": 14.010666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.014031750509547124,
+          "peak": 0.04495707154273987,
+          "time": 14.112,
+          "state": "running"
+        },
+        {
+          "rms": 0.013314217115845043,
+          "peak": 0.037853460758924484,
+          "time": 14.224,
+          "state": "running"
+        },
+        {
+          "rms": 0.012702843925794079,
+          "peak": 0.036018285900354385,
+          "time": 14.352,
+          "state": "running"
+        },
+        {
+          "rms": 0.01229152561977502,
+          "peak": 0.030619557946920395,
+          "time": 14.461333333333334,
+          "state": "running"
+        },
+        {
+          "rms": 0.010772921888867904,
+          "peak": 0.030811835080385208,
+          "time": 14.581333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.008808808114074439,
+          "peak": 0.028214748948812485,
+          "time": 14.68,
+          "state": "running"
+        },
+        {
+          "rms": 0.009505674615420099,
+          "peak": 0.030187036842107773,
+          "time": 14.784,
+          "state": "running"
+        },
+        {
+          "rms": 0.00976998162086544,
+          "peak": 0.028359010815620422,
+          "time": 14.901333333333334,
+          "state": "running"
+        },
+        {
+          "rms": 0.008590870619128617,
+          "peak": 0.029300007969141006,
+          "time": 15,
+          "state": "running"
+        },
+        {
+          "rms": 0.00939637182522323,
+          "peak": 0.025343596935272217,
+          "time": 15.12,
+          "state": "running"
+        },
+        {
+          "rms": 0.00794438851496622,
+          "peak": 0.024134721606969833,
+          "time": 15.221333333333334,
+          "state": "running"
+        },
+        {
+          "rms": 0.009204113039933149,
+          "peak": 0.025057978928089142,
+          "time": 15.330666666666668,
+          "state": "running"
+        }
+      ],
+      "bytes": 171411,
+      "passed": true
+    },
+    {
+      "stage": "sailing",
+      "entry": "./assets/index-Oe3dpFeS.js",
+      "audio": {
+        "state": "running",
+        "muted": false,
+        "paused": false,
+        "disposed": false,
+        "loaded": true,
+        "loadedSamples": [
+          "harpLow",
+          "harp",
+          "piano",
+          "flute",
+          "cello",
+          "pizz",
+          "triangle"
+        ],
+        "loadedFoley": [
+          "grass0",
+          "grass1",
+          "grass2",
+          "stone0",
+          "stone1",
+          "stone2",
+          "stoneTurn",
+          "birds",
+          "river"
+        ],
+        "loadErrors": [],
+        "persistentNodes": 18,
+        "persistentSources": 3,
+        "voices": 9,
+        "voiceLimit": 48,
+        "queuedNotes": 8,
+        "bar": 5,
+        "musicTitle": "一路繁花向海",
+        "mix": {
+          "music": 0.25,
+          "sfx": 0.65,
+          "ambience": 0.85
+        },
+        "scheduledNotes": 53,
+        "eventCount": 1,
+        "foleyEvents": 0,
+        "lastFoley": null,
+        "fallbackNotes": 0,
+        "fallbackInstruments": [],
+        "missedSchedules": 0,
+        "hasOutput": true,
+        "scene": {
+          "zone": "finale",
+          "voyage": "sailing",
+          "voyageSpeed": 3,
+          "groundMaterial": "stone",
+          "nearWater": 0.25,
+          "challengeActive": false,
+          "flowerPhase": "solid",
+          "composing": false
+        }
+      },
+      "samples": [
+        {
+          "rms": 0.026624199731641023,
+          "peak": 0.07676506042480469,
+          "time": 2.56,
+          "state": "running"
+        },
+        {
+          "rms": 0.0263423087602685,
+          "peak": 0.08059908449649811,
+          "time": 2.8506666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.02512238060984809,
+          "peak": 0.06771719455718994,
+          "time": 3.1013333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.028972884761662168,
+          "peak": 0.0921676903963089,
+          "time": 3.3706666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.030969952516634928,
+          "peak": 0.08312210440635681,
+          "time": 3.632,
+          "state": "running"
+        },
+        {
+          "rms": 0.026967263086443156,
+          "peak": 0.07188514620065689,
+          "time": 3.9013333333333335,
+          "state": "running"
+        },
+        {
+          "rms": 0.028013706967783245,
+          "peak": 0.07707563042640686,
+          "time": 4.152,
+          "state": "running"
+        },
+        {
+          "rms": 0.028008908967630905,
+          "peak": 0.08618541061878204,
+          "time": 4.410666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.02640733091356043,
+          "peak": 0.08262169361114502,
+          "time": 4.68,
+          "state": "running"
+        },
+        {
+          "rms": 0.028676438211589276,
+          "peak": 0.08135582506656647,
+          "time": 4.949333333333334,
+          "state": "running"
+        },
+        {
+          "rms": 0.025417857847445453,
+          "peak": 0.06053593382239342,
+          "time": 5.2,
+          "state": "running"
+        },
+        {
+          "rms": 0.03220666008675155,
+          "peak": 0.07356460392475128,
+          "time": 5.472,
+          "state": "running"
+        },
+        {
+          "rms": 0.02447866067172177,
+          "peak": 0.06757129728794098,
+          "time": 5.736,
+          "state": "running"
+        },
+        {
+          "rms": 0.028824693501929125,
+          "peak": 0.08866561204195023,
+          "time": 6.0906666666666665,
+          "state": "running"
+        },
+        {
+          "rms": 0.02665140217966298,
+          "peak": 0.08501774072647095,
+          "time": 6.352,
+          "state": "running"
+        },
+        {
+          "rms": 0.0217403942831018,
+          "peak": 0.05788232386112213,
+          "time": 6.610666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.026589853660946308,
+          "peak": 0.06337999552488327,
+          "time": 6.872,
+          "state": "running"
+        },
+        {
+          "rms": 0.03223565711731277,
+          "peak": 0.08730240166187286,
+          "time": 7.141333333333334,
+          "state": "running"
+        },
+        {
+          "rms": 0.02936362310111549,
+          "peak": 0.08361686021089554,
+          "time": 7.392,
+          "state": "running"
+        },
+        {
+          "rms": 0.028021953157995962,
+          "peak": 0.108610600233078,
+          "time": 7.661333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.026198763494403605,
+          "peak": 0.08146702498197556,
+          "time": 7.92,
+          "state": "running"
+        },
+        {
+          "rms": 0.02236868818172409,
+          "peak": 0.05871262773871422,
+          "time": 8.173333333333334,
+          "state": "running"
+        },
+        {
+          "rms": 0.028322104462451276,
+          "peak": 0.08182418346405029,
+          "time": 8.450666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.03315364222139435,
+          "peak": 0.09146890044212341,
+          "time": 8.72,
+          "state": "running"
+        },
+        {
+          "rms": 0.024904193629591613,
+          "peak": 0.06676369905471802,
+          "time": 8.981333333333334,
+          "state": "running"
+        },
+        {
+          "rms": 0.023705220961210097,
+          "peak": 0.07969659566879272,
+          "time": 9.24,
+          "state": "running"
+        },
+        {
+          "rms": 0.025366763637961323,
+          "peak": 0.06745048612356186,
+          "time": 9.490666666666666,
+          "state": "running"
+        },
+        {
+          "rms": 0.026902712612945953,
+          "peak": 0.07045798748731613,
+          "time": 9.76,
+          "state": "running"
+        },
+        {
+          "rms": 0.032055994934327404,
+          "peak": 0.09555713832378387,
+          "time": 10.032,
+          "state": "running"
+        },
+        {
+          "rms": 0.023324113675500923,
+          "peak": 0.07429343461990356,
+          "time": 10.301333333333334,
+          "state": "running"
+        },
+        {
+          "rms": 0.023002915042975334,
+          "peak": 0.0698978453874588,
+          "time": 10.56,
+          "state": "running"
+        },
+        {
+          "rms": 0.03128808352987479,
+          "peak": 0.08445742726325989,
+          "time": 10.810666666666666,
+          "state": "running"
+        }
+      ],
+      "muted": [
+        {
+          "rms": 0,
+          "peak": 0,
+          "time": 11.24,
+          "state": "running"
+        },
+        {
+          "rms": 0,
+          "peak": 0,
+          "time": 11.36,
+          "state": "running"
+        },
+        {
+          "rms": 0,
+          "peak": 0,
+          "time": 11.472,
+          "state": "running"
+        },
+        {
+          "rms": 0,
+          "peak": 0,
+          "time": 11.592,
+          "state": "running"
+        },
+        {
+          "rms": 0,
+          "peak": 0,
+          "time": 11.701333333333332,
+          "state": "running"
+        }
+      ],
+      "resumed": [
+        {
+          "rms": 0.022138192578069295,
+          "peak": 0.06674153357744217,
+          "time": 11.992,
+          "state": "running"
+        },
+        {
+          "rms": 0.029718541343036125,
+          "peak": 0.07917693257331848,
+          "time": 12.101333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.027689823781264694,
+          "peak": 0.07797335088253021,
+          "time": 12.210666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.025897787630250135,
+          "peak": 0.08615564554929733,
+          "time": 12.32,
+          "state": "running"
+        },
+        {
+          "rms": 0.029120637797876693,
+          "peak": 0.07640688121318817,
+          "time": 12.432,
+          "state": "running"
+        },
+        {
+          "rms": 0.026342051223756456,
+          "peak": 0.06898422539234161,
+          "time": 12.541333333333334,
+          "state": "running"
+        },
+        {
+          "rms": 0.022478824743106123,
+          "peak": 0.06874507665634155,
+          "time": 12.661333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.02207151942612804,
+          "peak": 0.07779951393604279,
+          "time": 12.781333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.027182689843259396,
+          "peak": 0.08496110141277313,
+          "time": 12.890666666666666,
+          "state": "running"
+        },
+        {
+          "rms": 0.02674450083002882,
+          "peak": 0.08723826706409454,
+          "time": 13.010666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.024730174182610632,
+          "peak": 0.08183133602142334,
+          "time": 13.12,
+          "state": "running"
+        },
+        {
+          "rms": 0.02970877771103942,
+          "peak": 0.09373977780342102,
+          "time": 13.232,
+          "state": "running"
+        },
+        {
+          "rms": 0.035825285803859096,
+          "peak": 0.11088208109140396,
+          "time": 13.341333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.030230621293539015,
+          "peak": 0.10374453663825989,
+          "time": 13.450666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.03033725103139041,
+          "peak": 0.09186316281557083,
+          "time": 13.56,
+          "state": "running"
+        }
+      ],
+      "bytes": 173647,
+      "passed": true
+    },
+    {
+      "stage": "complete",
+      "entry": "./assets/index-Oe3dpFeS.js",
+      "audio": {
+        "state": "running",
+        "muted": false,
+        "paused": false,
+        "disposed": false,
+        "loaded": true,
+        "loadedSamples": [
+          "harpLow",
+          "harp",
+          "piano",
+          "flute",
+          "cello",
+          "pizz",
+          "triangle"
+        ],
+        "loadedFoley": [
+          "grass0",
+          "grass1",
+          "grass2",
+          "stone0",
+          "stone1",
+          "stone2",
+          "stoneTurn",
+          "birds",
+          "river"
+        ],
+        "loadErrors": [],
+        "persistentNodes": 18,
+        "persistentSources": 3,
+        "voices": 2,
+        "voiceLimit": 48,
+        "queuedNotes": 1,
+        "bar": 4,
+        "musicTitle": "春天已经上路",
+        "mix": {
+          "music": 0.25,
+          "sfx": 0.65,
+          "ambience": 0.85
+        },
+        "scheduledNotes": 13,
+        "eventCount": 0,
+        "foleyEvents": 0,
+        "lastFoley": null,
+        "fallbackNotes": 0,
+        "fallbackInstruments": [],
+        "missedSchedules": 0,
+        "hasOutput": true,
+        "scene": {
+          "zone": "finale",
+          "voyage": "complete",
+          "voyageSpeed": 0,
+          "groundMaterial": "stone",
+          "nearWater": 0.25,
+          "challengeActive": false,
+          "flowerPhase": "solid",
+          "composing": false
+        }
+      },
+      "samples": [
+        {
+          "rms": 0.01438356167830513,
+          "peak": 0.04127993434667587,
+          "time": 2.6213333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.012780706537961734,
+          "peak": 0.03894394636154175,
+          "time": 2.8906666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.014443525400609078,
+          "peak": 0.04712235927581787,
+          "time": 3.152,
+          "state": "running"
+        },
+        {
+          "rms": 0.012057771248430302,
+          "peak": 0.032347097992897034,
+          "time": 3.421333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.011856312079494877,
+          "peak": 0.031741730868816376,
+          "time": 3.68,
+          "state": "running"
+        },
+        {
+          "rms": 0.018281180019258058,
+          "peak": 0.06031303107738495,
+          "time": 3.952,
+          "state": "running"
+        },
+        {
+          "rms": 0.01484598444539067,
+          "peak": 0.05197197198867798,
+          "time": 4.221333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.014546394428834555,
+          "peak": 0.05226139351725578,
+          "time": 4.501333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.013524522906612518,
+          "peak": 0.03834930434823036,
+          "time": 4.76,
+          "state": "running"
+        },
+        {
+          "rms": 0.013932504957666023,
+          "peak": 0.03766322508454323,
+          "time": 5.021333333333334,
+          "state": "running"
+        },
+        {
+          "rms": 0.011437283035901948,
+          "peak": 0.033208079636096954,
+          "time": 5.290666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.011847262581132717,
+          "peak": 0.03551493212580681,
+          "time": 5.56,
+          "state": "running"
+        },
+        {
+          "rms": 0.013274382493413131,
+          "peak": 0.0375199019908905,
+          "time": 5.8213333333333335,
+          "state": "running"
+        },
+        {
+          "rms": 0.013155945867109393,
+          "peak": 0.038848958909511566,
+          "time": 6.08,
+          "state": "running"
+        },
+        {
+          "rms": 0.012575181498788628,
+          "peak": 0.03923453763127327,
+          "time": 6.352,
+          "state": "running"
+        },
+        {
+          "rms": 0.012010751738655621,
+          "peak": 0.04169050604104996,
+          "time": 6.610666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.011024584020145823,
+          "peak": 0.030432913452386856,
+          "time": 6.872,
+          "state": "running"
+        },
+        {
+          "rms": 0.013759876267874421,
+          "peak": 0.04713897407054901,
+          "time": 7.1306666666666665,
+          "state": "running"
+        },
+        {
+          "rms": 0.01723749491589563,
+          "peak": 0.03977034240961075,
+          "time": 7.4,
+          "state": "running"
+        },
+        {
+          "rms": 0.013738963819863259,
+          "peak": 0.04400091618299484,
+          "time": 7.672,
+          "state": "running"
+        },
+        {
+          "rms": 0.014029894884439648,
+          "peak": 0.03951859474182129,
+          "time": 7.941333333333334,
+          "state": "running"
+        },
+        {
+          "rms": 0.01253642503744947,
+          "peak": 0.03464340418577194,
+          "time": 8.2,
+          "state": "running"
+        },
+        {
+          "rms": 0.013346353707694571,
+          "peak": 0.035764388740062714,
+          "time": 8.461333333333334,
+          "state": "running"
+        },
+        {
+          "rms": 0.012824372210156003,
+          "peak": 0.038908109068870544,
+          "time": 8.730666666666666,
+          "state": "running"
+        },
+        {
+          "rms": 0.012989186963178771,
+          "peak": 0.055548295378685,
+          "time": 8.992,
+          "state": "running"
+        },
+        {
+          "rms": 0.010044700923043609,
+          "peak": 0.03077089786529541,
+          "time": 9.261333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.015488655181393684,
+          "peak": 0.03872497007250786,
+          "time": 9.530666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.012693680457329834,
+          "peak": 0.037320442497730255,
+          "time": 9.792,
+          "state": "running"
+        },
+        {
+          "rms": 0.011834944629471654,
+          "peak": 0.037783265113830566,
+          "time": 10.050666666666666,
+          "state": "running"
+        },
+        {
+          "rms": 0.010511087877552717,
+          "peak": 0.04108494147658348,
+          "time": 10.32,
+          "state": "running"
+        },
+        {
+          "rms": 0.019152488121840616,
+          "peak": 0.05086088925600052,
+          "time": 10.581333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.013735206371546271,
+          "peak": 0.03704888001084328,
+          "time": 10.850666666666667,
+          "state": "running"
+        }
+      ],
+      "muted": [
+        {
+          "rms": 0,
+          "peak": 0,
+          "time": 11.410666666666666,
+          "state": "running"
+        },
+        {
+          "rms": 0,
+          "peak": 0,
+          "time": 11.52,
+          "state": "running"
+        },
+        {
+          "rms": 0,
+          "peak": 0,
+          "time": 11.621333333333334,
+          "state": "running"
+        },
+        {
+          "rms": 0,
+          "peak": 0,
+          "time": 11.752,
+          "state": "running"
+        },
+        {
+          "rms": 0,
+          "peak": 0,
+          "time": 11.850666666666667,
+          "state": "running"
+        }
+      ],
+      "resumed": [
+        {
+          "rms": 0.011448622436648462,
+          "peak": 0.033010564744472504,
+          "time": 12.152,
+          "state": "running"
+        },
+        {
+          "rms": 0.014968785511468073,
+          "peak": 0.045497141778469086,
+          "time": 12.261333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.014427628576424371,
+          "peak": 0.04301212728023529,
+          "time": 12.370666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.012389353838555541,
+          "peak": 0.03765084594488144,
+          "time": 12.48,
+          "state": "running"
+        },
+        {
+          "rms": 0.011095771561770693,
+          "peak": 0.0414847694337368,
+          "time": 12.6,
+          "state": "running"
+        },
+        {
+          "rms": 0.01303806694162006,
+          "peak": 0.04541199654340744,
+          "time": 12.72,
+          "state": "running"
+        },
+        {
+          "rms": 0.012771641938998797,
+          "peak": 0.03552805259823799,
+          "time": 12.821333333333333,
+          "state": "running"
+        },
+        {
+          "rms": 0.01192283459539349,
+          "peak": 0.03738643229007721,
+          "time": 12.930666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.013659632224917367,
+          "peak": 0.038257017731666565,
+          "time": 13.04,
+          "state": "running"
+        },
+        {
+          "rms": 0.014410772258207864,
+          "peak": 0.04618437588214874,
+          "time": 13.152,
+          "state": "running"
+        },
+        {
+          "rms": 0.013155703223549373,
+          "peak": 0.03645612671971321,
+          "time": 13.272,
+          "state": "running"
+        },
+        {
+          "rms": 0.01388112178003116,
+          "peak": 0.039737164974212646,
+          "time": 13.370666666666667,
+          "state": "running"
+        },
+        {
+          "rms": 0.012437332777166299,
+          "peak": 0.03463483974337578,
+          "time": 13.48,
+          "state": "running"
+        },
+        {
+          "rms": 0.011537235906061972,
+          "peak": 0.0426502488553524,
+          "time": 13.6,
+          "state": "running"
+        },
+        {
+          "rms": 0.010737178948937146,
+          "peak": 0.03111913986504078,
+          "time": 13.712,
+          "state": "running"
+        }
+      ],
+      "bytes": 175892,
+      "passed": true
+    }
+  ],
+  "errors": []
+}
