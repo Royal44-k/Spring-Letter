@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-18T07:43:54.483Z",
+  "openingElapsedMs": 48487,
+  "shots": [
+    "v4-intro-1.png",
+    "v4-intro-2.png",
+    "v4-intro-3.png",
+    "v4-intro-4.png",
+    "v4-intro-5.png",
+    "v4-intro-6.png"
+  ],
+  "errors": [],
+  "file": "spring-letter-v4.webm",
+  "scope": "Uncut real local production build, ordinary UI input; six automatically advancing opening scenes, reversible scatter, three materials and flower/dust transition. Playwright video has no audio. Recording overhead excludes this run from performance measurements."
+}
