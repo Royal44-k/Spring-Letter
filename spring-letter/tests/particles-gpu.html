@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Spring Letter particle GPU verification</title><link rel="icon" href="data:,">
+<style>html,body{margin:0;background:#08050e}canvas{display:block}</style>
+<script type="module">
+import * as THREE from 'three';
+import { createBouquet } from '../src/botany.js';
+import { createSurfaceParticles } from '../src/particles.js';
+import { createGestureField } from '../src/gesture-field.js';
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setSize(1200, 800); renderer.setPixelRatio(1);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+document.body.append(renderer.domElement);
+const scene = new THREE.Scene(); scene.background = new THREE.Color('#08050e');
+const camera = new THREE.PerspectiveCamera(38, 1.5, .1, 100);
+camera.position.set(6, 4.2, 8); camera.lookAt(0, 2, 0);
+const bouquet = createBouquet({seed:17,scale:1});
+const samples = bouquet.sampleSurface(65536);
+const particles = createSurfaceParticles(renderer, samples);
+const field = createGestureField();
+scene.add(particles.object, field.group);
+let time = 0;
+const bounds = new THREE.Box3().setFromBufferAttribute(particles.object.geometry.getAttribute('aOpen'));
+const center = bounds.getCenter(new THREE.Vector3());
+const extent = Math.max(...bounds.getSize(new THREE.Vector3()).toArray());
+const state = {bloom:1,dispersion:0,night:true,pointer:null};
+function step(frames, extra = {}) {
+  Object.assign(state, extra);
+  for (let i = 0; i < frames; i++) {
+    time += 1 / 60;
+    particles.update(1 / 60, time, state);
+    field.update(1 / 60, time, state);
+  }
+  renderer.setRenderTarget(null); renderer.render(scene, camera);
+}
+const copyScene = new THREE.Scene();
+const copyCamera = new THREE.Camera();
+const copyMaterial = new THREE.ShaderMaterial({
+  uniforms: {source:{value:null}}, depthWrite:false, depthTest:false,
+  vertexShader:'varying vec2 vUv;void main(){vUv=uv;gl_Position=vec4(position.xy,0.,1.);}',
+  fragmentShader:'uniform sampler2D source;varying vec2 vUv;void main(){gl_FragColor=texture2D(source,vUv);}',
+});
+const quad = new THREE.Mesh(new THREE.PlaneGeometry(2,2),copyMaterial);copyScene.add(quad);
+function read(which='position') {
+  const stats=particles.getStats();const side=stats.simulationWidth;
+  if(!side)throw new Error('GPU simulation unavailable: '+stats.fallbackReason);
+  const target=new THREE.WebGLRenderTarget(side,side,{type:THREE.FloatType,format:THREE.RGBAFormat,depthBuffer:false,minFilter:THREE.NearestFilter,magFilter:THREE.NearestFilter});
+  copyMaterial.uniforms.source.value=particles.object.material.uniforms[which==='position'?'uPosition':'uVelocity'].value;
+  renderer.setRenderTarget(target);renderer.render(copyScene,copyCamera);
+  const output=new Float32Array(side*side*4);renderer.readRenderTargetPixels(target,0,0,side,side,output);
+  renderer.setRenderTarget(null);target.dispose();return output;
+}
+window.particleHarness={renderer,particles,field,scene,camera,samples,center,extent,step,read,THREE,createSurfaceParticles};
+step(1);
+</script></html>

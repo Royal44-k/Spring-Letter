@@ -1,0 +1,19 @@
+const {chromium}=require('playwright'),fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const {summarizeRgba,inspectCanvas,assessPixels,classifyConsole}=require('./v10-pixel-validation.cjs');
+const out=path.resolve('evidence/v10/resize-'+Date.now()),url=process.env.SPRING_URL||'http://127.0.0.1:5209/';fs.mkdirSync(out,{recursive:true});
+const report={passed:false,url,observations:[],errors:[],console:[],scope:'Isolated Chromium DPR 3. Actual viewport changes, per-quality pixel budgets, 1px extremes, repeated same-size resize and restored normal picture. No physical-device certification.'};
+const write=()=>fs.writeFileSync(path.join(out,'report.json'),JSON.stringify(report,null,2));
+(async()=>{const browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});try{
+ const p=await browser.newPage({viewport:{width:1280,height:800},deviceScaleFactor:3});await p.addInitScript('window.__V10_RGBA_STATS__='+summarizeRgba.toString()+';window.__V10_READ_PIXELS__='+inspectCanvas.toString());p.on('pageerror',e=>report.errors.push(String(e)));p.on('console',m=>{if(['error','warning'].includes(m.type()))report.console.push({type:m.type(),text:m.text()});});
+ await p.goto(url);await p.waitForFunction(()=>window.__SPRING__,null,{timeout:120000});await p.locator('#loading').waitFor({state:'hidden'});report.entry=await p.locator('script[type=module][src]').last().getAttribute('src');if(process.env.EXPECTED_JS)assert.equal(report.entry,process.env.EXPECTED_JS);
+ for(const quality of ['light','balanced','delicate']){
+  await p.setViewportSize({width:1280,height:800});await p.locator('#settings').click();await p.locator('#quality-choice').selectOption(quality);await p.locator('#close-modal').click();
+  for(const [width,height]of [[1920,1080],[3840,2160],[7680,4320],[1,4320],[1920,1],[1280,800]]){
+   await p.setViewportSize({width,height});await p.waitForTimeout(300);const n=await p.evaluate(()=>window.__SPRING__.snapshot().frameNumber);await p.waitForFunction(frame=>window.__SPRING__.snapshot().frameNumber>frame,n);
+   const state=await p.evaluate(()=>({render:window.__SPRING_RENDER__.snapshot(),pixels:window.__V10_READ_PIXELS__(),aspect:[innerWidth,innerHeight],dpr:devicePixelRatio}));const size=state.render.size,limit={light:2097152,balanced:4194304,delicate:6291456}[quality];assert.equal(size.width,width);assert.equal(size.height,height);assert.ok(size.bufferWidth>=1&&size.bufferHeight>=1);assert.ok(size.bufferWidth*size.bufferHeight<=limit);assert.ok(!state.render.blocked);assert.equal(state.pixels.glError,0);assert.equal(state.dpr,3);
+   const picture=width>1&&height>1?assessPixels(state.pixels):null;if(picture)assert.ok(picture.valid,JSON.stringify(picture));report.observations.push({quality,width,height,...state,picture});write();console.log(JSON.stringify({quality,width,height,buffer:[size.bufferWidth,size.bufferHeight],ratio:size.pixelRatio,valid:picture?.valid}));
+  }
+ }
+ const {before,unchanged}=await p.evaluate(()=>{const read=()=>({size:window.__SPRING_RENDER__.snapshot().size,pixels:window.__V10_READ_PIXELS__()});const before=read();for(let i=0;i<30;i++)window.dispatchEvent(new Event('resize'));return {before,unchanged:read()};});assert.deepEqual(unchanged.size,before.size);assert.equal(unchanged.pixels.pixelHash,before.pixels.pixelHash,'same-size events must not clear the canvas');report.redundantResizePreservesFrame=true;
+ await p.screenshot({path:path.join(out,'restored.png')});report.consoleValidation=classifyConsole(report.console);assert.deepEqual(report.consoleValidation.blocking,[]);assert.deepEqual(report.errors,[]);report.passed=true;write();console.log(JSON.stringify({passed:true,out}));
+ }finally{await browser.close();}})().catch(e=>{report.failure=e.stack;write();console.error(e);process.exitCode=1;});

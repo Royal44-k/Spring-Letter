@@ -1,0 +1,273 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:5192/",
+  "version": "0.9.1",
+  "candidate": "candidate-a",
+  "entry": "./assets/index-C_HGqS3k.js",
+  "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+  "style": "./assets/index-Cc26boAi.css",
+  "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+  "filesVerified": 52,
+  "files": [
+    {
+      "file": "dist/ASSET_SOURCES.md",
+      "bytes": 12517,
+      "sha256": "d7f07c47ea903a96cace49648233ec8c066d7ed950aa84d8ea1248584051e80e"
+    },
+    {
+      "file": "dist/THIRD_PARTY_LICENSES.txt",
+      "bytes": 5264,
+      "sha256": "ac88f0504c39d0cb9363f3bbc7be7534074b2e6fe508c564f53c209b5f4b45cc"
+    },
+    {
+      "file": "dist/assets/audio/VSCO-CC0.txt",
+      "bytes": 6555,
+      "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673"
+    },
+    {
+      "file": "dist/assets/audio/VSCO-README.txt",
+      "bytes": 1838,
+      "sha256": "101ddb88eb013900cc911834ecbdfbd49497bcd913bf09417160b9677952bb38"
+    },
+    {
+      "file": "dist/assets/audio/cello.wav",
+      "bytes": 220544,
+      "sha256": "e1981f8ef319e59c6fa53954127bd7cd2a3b5697db8f3af6741cad282481de13"
+    },
+    {
+      "file": "dist/assets/audio/flute.wav",
+      "bytes": 198494,
+      "sha256": "fdba949791c2b7ec5c7a422b619dc69b6b0fd9bc3ebe9c4031516814dda84dfa"
+    },
+    {
+      "file": "dist/assets/audio/harp-high.wav",
+      "bytes": 198494,
+      "sha256": "0da196bd2cd12244e8a57bcd05df10afe97d5adaf2fda2d60d35321752d611e5"
+    },
+    {
+      "file": "dist/assets/audio/harp-low.wav",
+      "bytes": 264644,
+      "sha256": "b9ca015aee9c9f7ccf54876422c6d5d4f46644e1b561e91208bbb10e8a55cdbf"
+    },
+    {
+      "file": "dist/assets/audio/piano.wav",
+      "bytes": 220544,
+      "sha256": "268779730c461ee25670910f2c4ddee1b2db365cc5575868e62a28f8347b6a35"
+    },
+    {
+      "file": "dist/assets/audio/pizz.wav",
+      "bytes": 110294,
+      "sha256": "5296cd633096e6f50edadfc4d691b34faea363a219efbab888fb48a806946864"
+    },
+    {
+      "file": "dist/assets/audio/sources.json",
+      "bytes": 6350,
+      "sha256": "69c1a89b1480706e3c551d8d58636ac6c5897c600446b8fa0340cd3cd2b73d17"
+    },
+    {
+      "file": "dist/assets/audio/triangle.wav",
+      "bytes": 71600,
+      "sha256": "e62b54cbc99a1464e04058d54b9c2c7ee3a842ca6ad434d94b2a86d5bfdabf81"
+    },
+    {
+      "file": "dist/assets/environment/README.source.md",
+      "bytes": 1833,
+      "sha256": "fbb8c5f29f0b45f3332af2b75c1f2e5ed509815beee8ed5612b32e58904801c0"
+    },
+    {
+      "file": "dist/assets/environment/spruit_sunrise.files.json",
+      "bytes": 1701,
+      "sha256": "d21442fd0d3cc612e3709d42110bcb095dd84941cc3903310fedd004d5d6e4c7"
+    },
+    {
+      "file": "dist/assets/environment/spruit_sunrise.info.json",
+      "bytes": 1148,
+      "sha256": "c0c8a86d401e2dd48dfcb46a9d84ff28b31cbd2c7620e2c29cea5a706acd668d"
+    },
+    {
+      "file": "dist/assets/environment/spruit_sunrise_1k.hdr",
+      "bytes": 1500948,
+      "sha256": "38199a31e945906f6778431e989256a92d9d78b0cfc0f902accad9f5244bf50f"
+    },
+    {
+      "file": "dist/assets/environment/studio_small_09_1k.hdr",
+      "bytes": 1615248,
+      "sha256": "e7cfda5f4e98e623db12b8bfd0184e048488e4855d9c83e2751fb44a32e80c45"
+    },
+    {
+      "file": "dist/assets/environment/studio_small_09_1k.source.json",
+      "bytes": 1481,
+      "sha256": "daf86567bbecc95e860f30a2f59ff94b5bbc06cf6b54f28eea5837d111743a19"
+    },
+    {
+      "file": "dist/assets/foley-v8/CC0-1.0.txt",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "file": "dist/assets/foley-v8/Kenney-License.txt",
+      "bytes": 608,
+      "sha256": "b49aa9c56b04528b95913de13e506a0f7c5e807b9925db9bfef86af1f91120db"
+    },
+    {
+      "file": "dist/assets/foley-v8/README.md",
+      "bytes": 2845,
+      "sha256": "d168f35378776fb53198951648e9e8a9efd9e55201a27273e00482c0c946fb9f"
+    },
+    {
+      "file": "dist/assets/foley-v8/birds-loop.wav",
+      "bytes": 882044,
+      "sha256": "df4984e91e46615f5293871c2af76c17a512c2a41322c016d5c8a15250416b3a"
+    },
+    {
+      "file": "dist/assets/foley-v8/grass-0.wav",
+      "bytes": 6668,
+      "sha256": "7cc76cc753cb97b0bb7af9c5a9a65fc9124c891b800413f1ae8168f4596b059a"
+    },
+    {
+      "file": "dist/assets/foley-v8/grass-1.wav",
+      "bytes": 7156,
+      "sha256": "aa588f9b5709370dae88941b4920255be794212c1978e7ffaf8d53421ac63944"
+    },
+    {
+      "file": "dist/assets/foley-v8/grass-2.wav",
+      "bytes": 7300,
+      "sha256": "b0a334b44918c98137ca27f13398782f4636e3abf37c9b789b43295d05abe81c"
+    },
+    {
+      "file": "dist/assets/foley-v8/river-loop.wav",
+      "bytes": 882044,
+      "sha256": "23a6143cab8538f2bbd45b86cfa5cfc46e424ed4754309dccbc36534379f4d1e"
+    },
+    {
+      "file": "dist/assets/foley-v8/sources.json",
+      "bytes": 15430,
+      "sha256": "fb706210d996a031c1f75c5e0e6f7fbc2764342349fa8eddb9d5b97eae9baf2f"
+    },
+    {
+      "file": "dist/assets/foley-v8/stone-0.wav",
+      "bytes": 4588,
+      "sha256": "11f6957bc4ce3188df0cb1923b0b1063fe4e458de58da28850ce67f3d06c0da5"
+    },
+    {
+      "file": "dist/assets/foley-v8/stone-1.wav",
+      "bytes": 4664,
+      "sha256": "20c030bf095977dd0daf3c2e5e6c5fd54821e08c02a8b70538074626b538817a"
+    },
+    {
+      "file": "dist/assets/foley-v8/stone-2.wav",
+      "bytes": 4890,
+      "sha256": "50dcc3a2418ee78031a6478c1659f8283568ad6db4d0b30535a8c805ee0f223e"
+    },
+    {
+      "file": "dist/assets/foley-v8/stone-turn.wav",
+      "bytes": 10628,
+      "sha256": "c2580059072a2da29d801fe96b9bcc813ed4fbe3ef34d8abe066e7b00b8d492b"
+    },
+    {
+      "file": "dist/assets/index-C_HGqS3k.js",
+      "bytes": 1276348,
+      "sha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4"
+    },
+    {
+      "file": "dist/assets/index-Cc26boAi.css",
+      "bytes": 117302,
+      "sha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0"
+    },
+    {
+      "file": "dist/assets/surfaces/CC0-1.0.txt",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "file": "dist/assets/surfaces/README.md",
+      "bytes": 1876,
+      "sha256": "f0f54f3176a6b2bf0a7d9f724727c04e431af90d506ad5a8ffb8bb44891d2ef5"
+    },
+    {
+      "file": "dist/assets/surfaces/mossy-rock-normal.jpg",
+      "bytes": 995727,
+      "sha256": "232cdd6a9fdfd01bb8bb1f8f604c53dbca79fa0d3d7995edf85c9945757aa8df"
+    },
+    {
+      "file": "dist/assets/surfaces/mossy-rock-roughness.jpg",
+      "bytes": 780918,
+      "sha256": "0a18bdeb08444b730170b0477f13940ce6cd4d82d06137df661f96d1e2a6a66e"
+    },
+    {
+      "file": "dist/assets/surfaces/mossy_rock.files.json",
+      "bytes": 25215,
+      "sha256": "1e37d8f79fe2f8d43ef3a20814f0baad2fb93e48835617a4346d7ee37764ad41"
+    },
+    {
+      "file": "dist/assets/surfaces/mossy_rock.info.json",
+      "bytes": 956,
+      "sha256": "68e4fff2c970a0c77195fbcea29866ea91063a28bd905bb389318e1df92cd233"
+    },
+    {
+      "file": "dist/assets/surfaces/source.json",
+      "bytes": 1954,
+      "sha256": "3e56bf2ba40f29247cb5950a5b6470bf015b3bf1d8048d12b71d836ebf859830"
+    },
+    {
+      "file": "dist/assets/surfaces/white-plaster-02-normal.jpg",
+      "bytes": 652310,
+      "sha256": "eb572ca3630d5bfde72e2601b1f02412da23ca005cd19384dced8690be4cb783"
+    },
+    {
+      "file": "dist/assets/surfaces/white-plaster-02-roughness.jpg",
+      "bytes": 295900,
+      "sha256": "4ff1fe957cd161b07f721fe6c28a9459c8c2e8ec65627a26c16e483a07c80d85"
+    },
+    {
+      "file": "dist/assets/v5-source-hashes.json",
+      "bytes": 684,
+      "sha256": "1b82cf8aead9b342c5542c6179b39483ee69b83461818dd70507721568d12294"
+    },
+    {
+      "file": "dist/assets/v5-source-record.json",
+      "bytes": 2722,
+      "sha256": "2ccb94ccb7067334cc6d1dcf4b9ff35c0c6e3af68a11abb0fe90e364018c15e1"
+    },
+    {
+      "file": "dist/assets/v7/CC0-1.0.txt",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "file": "dist/assets/v7/README.md",
+      "bytes": 510,
+      "sha256": "7152258997638cf95e2e9eda2d26dee8b231e211bb8c0be912f7ff184114ce93"
+    },
+    {
+      "file": "dist/assets/v7/plaster-color.jpg",
+      "bytes": 527219,
+      "sha256": "a1ebbe091bd1ae93d2abd5de8d69f9003a8d0ee6532bcf9a87c2492c97051f23"
+    },
+    {
+      "file": "dist/assets/v7/rocky-trail-color.jpg",
+      "bytes": 1076180,
+      "sha256": "7f20d83cd4a67f9c38abf72f39f5a3749a962e90bdc156998be027b1227a5bd6"
+    },
+    {
+      "file": "dist/assets/v7/rocky-trail-normal.jpg",
+      "bytes": 1398291,
+      "sha256": "087b8912c8cf40a528965c4282a5b3e4be011da5790273ffcdb5bd2697bde7dd"
+    },
+    {
+      "file": "dist/assets/v7/rocky-trail-roughness.jpg",
+      "bytes": 747035,
+      "sha256": "aa17fcfe3be8fa4d79316d1c7e7a3e32e8522849fb4811e7009aec7762275caa"
+    },
+    {
+      "file": "dist/assets/v7/source.json",
+      "bytes": 2066,
+      "sha256": "7797d8605dfc48222a7632436a762ae17f2c430db2706ea23be11df851fb082f"
+    },
+    {
+      "file": "dist/index.html",
+      "bytes": 9816,
+      "sha256": "21ba469a47a156a0b248f19046ed06af6f58c364497220481caa53de88785ae3"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..'),docs=path.resolve(root,'../docs/blossom'),read=f=>JSON.parse(fs.readFileSync(path.join(root,f),'utf8'));
+const production=read('evidence/v10/production.json'),packages=read('evidence/v10/package.json'),proof=read('evidence/v10/release-evidence.json');assert.equal(production.passed,true);assert.equal(packages.passed,true);assert.equal(production.version,'0.7.1');assert.equal(packages.version,'0.7.1');assert.equal(production.entry,packages.build);
+const visual=path.posix.dirname(proof.visual),audio=path.posix.dirname(proof.audio),stamp=p=>p.match(/(\d{4}-\d{2}-\d{2})T(\d{2})-(\d{2})/)?.slice(1),format=p=>{const [d,h,m]=stamp(p);return d+' '+h+':'+m+' UTC';};
+const file=path.join(docs,'index.html'),archive=path.join(docs,'index-v9.html');if(!fs.existsSync(archive))fs.copyFileSync(file,archive);
+let html=fs.readFileSync(file,'utf8');html=html.replaceAll('evidence/v9/visual-2026-11-21T08-44-25-731Z',visual).replaceAll('evidence/v9/audio-2026-11-21T08-45-19-580Z',audio);
+html=html.replaceAll('0.7制作报告','0.7.1制作报告').replace('待寄出的春信 · 0.7</span>','待寄出的春信 · 0.7.1</span>').replace('>0.7 · 花影、纸翼与春声','>0.7.1 · 花影、纸翼与春声').replaceAll('0.7回访实机','0.7.1回访实机');
+html=html.replaceAll('release-i候选','v10-final-e候选').replaceAll('2026-11-21 08:44 UTC',format(visual));
+html=html.replace('下方是v10-final-e候选于2026-11-21 08:45 UTC录下','下方是v10-final-c同逻辑构建于'+format(audio)+'录下').replaceAll('aria-label="v10-final-e候选实际八拍春声原音量录音"','aria-label="v10-final-c同逻辑构建实际八拍春声原音量录音"');
+html=html.replaceAll('spring-letter-0.7.0-','spring-letter-0.7.1-').replace('两份0.7发行包已生成，来自冻结的release-i构建','两份0.7.1发行包已生成，采用冻结的v10-final-e构建').replaceAll('evidence/v9/package.json','evidence/v10/package.json').replaceAll('evidence/v9/production.json','evidence/v10/production.json').replace('不作为0.7的验收证明','不作为当前版本的验收证明');
+html=html.replace('当前版本、最终检查与限制见','0.7.1 修复序章粉屏、图形恢复与终章提示遮挡。当前版本、最终检查与限制见');
+html=html.replace('<a href="index-v8.html">0.6原展示页</a>','<a href="index-v9.html">0.7原展示页</a><a href="index-v8.html">0.6原展示页</a>');
+fs.writeFileSync(file,html);
+const index=path.join(docs,'README.md');let md=fs.readFileSync(index,'utf8');md=md.replace('当前游戏版本为 **0.7.0**，本轮研究与制作记录使用 **v9** 编号','当前游戏版本为 **0.7.1**；设计记录沿用 **v9**，渲染修复与验证使用 **v10** 编号');md=md.replace('[0.7 图文制作报告]','[0.7.1 图文制作报告]').replace('release-i 候选三庭实际画面','v10-final-e 候选三庭实际画面');
+const paragraphs=md.split('\n\n');md=paragraphs.map(p=>p.startsWith('图文页媒体已更新为')?'图文页使用最终样式的 ['+format(visual)+' 三庭与窄屏画面](../../spring-letter/'+visual+'/report.json)，声音采用同字节 JavaScript 的 ['+format(audio)+' 实际谱面录音](../../spring-letter/'+audio+'/analysis.md)。音频保留原音量，未作人工听感评价；复用来源及最终 CSS 间距补丁在验收记录中明确列出。':p.startsWith('0.7 下载：')?'0.7.1 下载：[Windows 本机启动包](../../spring-letter/releases/spring-letter-0.7.1-windows.zip)、[浏览器静态包](../../spring-letter/releases/spring-letter-0.7.1-browser.zip)。两份包使用冻结的 v10-final-e 文件，CRC、解压和全成员 HTTP 校验见[包装记录](../../spring-letter/evidence/v10/package.json)；本机 5192 的逐文件一致性见[生产记录](../../spring-letter/evidence/v10/production.json)。旧版包仍保留。':p).join('\n\n');
+md=md.replace('## 当前入口','0.7.1 修复开场粉屏、首帧阴影、图形中断后的存档救援和终章提示遮挡。[根因与正负对照](../../spring-letter/evidence/v10/render-root-cause.md)及[最终验证](../../spring-letter/FINAL_QA.md)保留完整证据。\n\n## 当前入口');fs.writeFileSync(index,md);
+const targets=[...html.matchAll(/(?:href|src)="([^"#]+)"/g)].map(m=>m[1]).filter(h=>!/^https?:|^data:/.test(h));for(const href of targets)assert.ok(fs.existsSync(path.resolve(docs,href.split('#')[0])),href+' missing');
+console.log(JSON.stringify({updated:true,html:file,index,archived:archive,localLinks:targets.length,visual,audio}));

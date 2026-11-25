@@ -1,0 +1,102 @@
+# v6：花形、材质与花尘的共同语言
+
+研究日期：2026-11-19。**当前局部交付为四花形、五系列，55张实验图和26项相关CPU检查；最终结果见文末，首轮记录保留为历史。**用户本轮明确要求粒子跟随花色、流晶有可读体积、新花形，以及打散后漂游一段时间再缓慢复原。以下先区分观察、来源与本作决策；不将技术示例称为完整游戏，不使用付费资源。
+
+## 已复核的原作与技术来源
+
+- [thatgamecompany《Flower》官方介绍](https://thatgamecompany.com/flower/)说明方向操控、沿途累积花瓣和环境随行动改变。可借鉴的是动作、空间变化与情绪之间的因果。本作不复制其关卡或资产，也不声称官方介绍披露了相机和物理实现。
+- [Three.js MeshPhysicalMaterial 官方文档](https://threejs.org/docs/pages/MeshPhysicalMaterial.html)区分透射、体积厚度、吸收颜色和镜面高光，提醒物理材质应使用环境图并有额外逐像素成本。结论：玻璃可透光，却不能仅以低opacity替代厚度；本作已有环境，问题是过高透射、过低有效厚度与低对比一起作用。项目锁定0.185.0，新文档r187的薄膜属性变更不直接迁入。
+- [Three.js 官方透射示例](https://threejs.org/examples/webgl_materials_physical_transmission.html)作为光学检查基线，页面可访问。本轮先读官方文档和现有源码；未将链接可访问表述为已完整手动试玩。
+- [Niccolò Fanton 的 Flow Field Particles 作者演示](https://flowfield.niccolofanton.dev/)说明位置/速度双纹理、形体采样目标、随时间变化的流场、指针的平滑世界速度。这支持复用当前GPU弹簧基础，而非迁移引擎。作者的数十万粒子说明不等于本机帧率保证，未复制其代码或付费内容。
+- [Codrops 作者教程索引](https://tympanus.net/codrops/category/tutorials/page/6/)可确认Dominik Fojcik于2024-12-19发表Dreamy Particle教程；[教程正文](https://tympanus.net/codrops/2024/12/19/crafting-a-dreamy-particle-effect-with-three-js-and-gpgpu/)本次403，故不虚构正文阅读。
+- [堪萨斯州立大学园艺资料：Iris](https://extension.k-state.edu/hort-judging/flowers-foliages/iris.html)说明三片直立瓣与三片下垂瓣。以此建立鸢尾式轮廓，避免把百合换色后称为新花。
+- [RHS 睡莲栽培指南](https://www.rhs.org.uk/plants/waterlilies/growing-guide)作为水生花形语境来源。本作新增的是原创睡莲式层瓣艺术形态，非特定品种科学重建。
+
+## 源码根因
+
+1. botany.sampleSurface固定蓝与玫瑰渐变；particles顶点shader又用93%的固定粉蓝覆盖输入色。实体材质换色，粒子仍粉蓝是实现层的断裂。
+2. 流晶花瓣transmission=1、thickness=.12，亮底下体积不足；应让部分实体色和边缘反射持续成立，增加着色吸收而非全白闪光。
+3. 主循环只在运笔时提升scatterTarget，松手立刻归零，玩家没有足够时间体验已经释放的花尘。
+4. 现有GPU三族目标保留同源骨架，但固定薄片占比较高，持续大散形有布面感。需在漂游阶段允许更松的空间涡流，归形时再逐步加强回位。
+
+## 方案决定
+
+保留原百合（三花两苞、长茎、叶），新增睡莲式三重瓣杯与鸢尾式三立三垂。每种形态真实生成不同端点几何，粒子继续面积加权采样同一网格的闭合/盛放三角形，不能用其他点云冒充花的碎解。
+
+视觉系列统一定义：月银（银青/淡紫薄膜）、流晶（紫晶/冰蓝厚色玻璃）、粉瓷（粉白/梅粉，旧lily兼容）、琥珀（蜜金/朱橙）、青釉（青绿/浅玉）。自然金色继续兼容。枝、叶、花蕊仍按各自材料角色处理，花尘颜色按源表面的角色和UV采样；不是整团换成单色。
+
+一次明确破开或快速挥笔：约0.7秒连续碎解，7秒保持漂游，运笔可牵引/点缀并有限延长，最多约15秒，然后约5秒重凝。低速描画不会不断触发爆开；同一次长按不能无限重启阶段；失焦取消输入但不取消自然归形，暂停冻结阶段时间。减少动态模式收小空间幅度并保留足够观察时间。
+
+漂游中由同源瓣带过渡为三种连续空间态：沿源形解开的柔带、旋转流束、稀疏细丝。它们是时间与局部笔势共同驱动的力场，不是每隔几秒硬切预设。点缀保留所在系列的亮色，减少全白热亮。
+
+## 模块契约与所有权
+
+本子任务负责botany.js、particles.js、新flower-presets.js、新flower-cycle.js及对应测试；根代理负责main/index/style接入，避免并行覆盖。
+
+- FLOWER_FORMS: lily / lotus / iris。
+- FLOWER_SERIES: silver / crystal / lily / amber / celadon；getFlowerPalette(kind,variant)。
+- bouquet.setForm(id)返回当前id；setMaterial兼容旧调用；sampleSurface返回closed/open/colors，材质变化不动位置，形态变化仍同源。
+- particles.setSource(samples,{preserveMotion=true})更换目标，保留现有粒子状态并使其缓慢趋向新源；setColors(colors)只更新色，不重置GPU位置/速度。
+- createFlowerCycle().update(dt,{active,energy,burst,paused,reducedMotion})返回phase/dispersion/flow/age/remaining/cycles；reset和state支持可复核生命周期。
+
+## 必须验收
+
+三形轮廓真的不同；三种形态任意开合都有限且同源；五系列的粒子色实际随材质改变；流晶亮/暗环境都能读清。破开后松手2秒仍是尘，随后能无点击回到源形；慢速笔势不误触，连续输入不无限卡尘，暂停与失焦恢复正常。切花形/画质/系列不累积纹理、几何或渲染目标；GPU失败有解析回退。CPU检查只能证明规则和数据，最终美术结论必须来自实图与连续运动。
+
+
+## 首轮三形实施与独立图像审阅（历史）
+
+本子任务按上述方案实现三种真实花形、五个系列和时间驱动的破开/漂游/归形。重莲不仅增加瓣数：花杯降低、三层18瓣、18根短蕊、四片带缺口圆叶；鸢尾改为三立三垂与三根短蕊。原百合的三花两苞轮廓及薄膜银材质保留。瓣长、角度和边缘加入小幅确定性变化，减少完全复制的规则感。
+
+[实体联系表](../../spring-letter/evidence/v6-flower-lab-three-forms/contact-solid.jpg) · [同源花尘联系表](../../spring-letter/evidence/v6-flower-lab-three-forms/contact-dust.jpg) · [阶段联系表](../../spring-letter/evidence/v6-flower-lab-three-forms/contact-cycle.jpg)。这些是独立光学实验场，采用本作真实源码、已有CC0环境光，**不是主线实玩图**；实验场的白色地面未接入世界暗场过渡，不用它评价主线地面明暗。
+
+人工复读了两张15图矩阵、重莲流晶全图、鸢尾粉瓷及夜间流晶全图、停笔轻聚与拖动牵流全图、7阶段联系表。可见事实：琥珀为金橙、青釉为玉青、粉瓷为粉白且叶色留绿；五系列尘色随之改变。流晶具有持续紫色内体和冰蓝枝条，亮底不再近乎消失；仍是风格化玻璃，不冒称光学实测雕刻晶体。睡莲式低花杯与原百合高瘦形、鸢尾直立/垂瓣形成可辨轮廓；仍缺少高精度植物扫描的不规则细节。
+
+停笔不是全花被吸成一个光球。第一次图像审阅发现gather作用域过大，随后缩小聚集半径并减弱拉力；新图保持周围花源结构，中间形成局部亮结。移动笔会牵出流束，松开之后继续漂游，至重凝阶段整体回位。没有增加独立模式菜单。
+
+### 核验范围
+
+- [25项相关CPU检查](../../spring-letter/evidence/v6-flower-cpu.txt)：源三角形配对、三形端点/法线、五系列仅换色不换粒子身份、形态资源释放、暂停/失焦后的周期、有限延长、重入触发和解析回退。
+- [44张图与GPU报告](../../spring-letter/evidence/v6-flower-lab-three-forms/report.json)：源码SHA固定，15实体＋15花尘＋3夜晶＋7阶段＋4笔势；普通渲染器的独立固定输入实验，并非用户视角的完整游玩验收。
+- GPU换色前后、换源前后的位置和速度最大误差均为0；目标几何改变后五秒回到新源，平均坐标误差约7.37e-7。30轮实际绘制实体和尘、变换花形/系列/粒子画质，几何计数17，纹理按透射需求在22/23有界变化，最终22。只能证明本实验渲染器资源计数，不宣称所有设备无显存泄漏或60fps。
+- 一次中间报告仅渲染可见花尘、隐藏实体，不能证明花体资源稳定，原报告保留为`report-hidden-flower-resource-scope.json`，已用实体可见的循环重新验证。
+
+主线的最终可读性、近花镜头、触屏、加载时间与教学理解由根代理在集成后验证。这份局部实验不替代实际游戏路径。
+
+
+## 第二轮：远视剪影与第四种花形
+
+根代理复审认为早期鸢尾远看仍接近百合，因此继续修改，初轮三形图不代表最终四形。
+
+- [RHS 大丽指南](https://www.rhs.org.uk/plants/dahlia/growing-guide/)明确按花形区分类别，并引向National Dahlia Society分类。
+- [Kew 大丽植物介绍](https://www.kew.org/plants/dahlia)列举星状、球状、睡莲状等不同花序结构，说明“多一种颜色”不能替代新花形。
+- [National Dahlia Society 分类](https://www.dahlia-nds.co.uk/about-dahlias/classification/)区分窄卷的Cactus与宽平的Decorative，Stellar还具有U形横截面。 [American Dahlia Society 形态手册](https://dahlia.org/guide/form.html)进一步描述窄瓣从花心向外放射以及内卷弧度。这里借鉴结构特征，未复制照片或模型。
+
+本作新增id=dahlia，中文视觉名“星瓣大丽”。这是原创艺术命名，不等同于官方单圈Star分类：四圈48枚窄卷瓣构成放射盘，边缘成尖、横向内卷，三朵花盘略面向前方，并使用成对阔叶。鸢尾加强为窄而高的三旗瓣、宽而明显垂落的三瓣、短须花心与基部剑叶。验收增加远景单色剪影，并在同色同镜头下比较四种轮廓，以免材质颜色掩盖相似造型。
+
+
+### 首次破开的实际帧时发现
+
+独立实验场用真实requestAnimationFrame从实体进入第一次破开，而不是批量调用模拟步。未预热路径出现801ms首用帧，其后最大17.9ms；对应报告[原始首用记录](../../spring-letter/evidence/v6-flower-first-break-timing.json)。把半透明实体与可见粒子一起在加载期compileAsync并实际渲染一次，恢复显示状态，再开始同样流程：预热耗时482.3ms，交互期最大帧间隔49.9ms，没有≥1秒帧；见[预热后记录](../../spring-letter/evidence/v6-flower-first-break-prewarmed.json)。
+
+两次使用新浏览器上下文，但没有清操作系统/驱动着色器缓存；实验场也不含主线后处理与世界。因此这说明了首次可见程序预热的必要性，不能直接宣称整个游戏已经达到相同帧时。时间没有被删去，而是前移到明确的载入阶段。根代理需在集成候选包里独立复验，且预热不能调用真实任务进度或制造玩家已挥笔的状态。
+
+
+## 当前四形最终局部交付
+
+原百合、重莲、强化鸢尾与星瓣大丽现均具有独立真实几何；大丽四圈48枚卷瓣、三花盘错落并留出空隙，阔叶带边缘起伏。新静态叶片移除无用morph目标，未改变外观或点源对应。月银保留薄膜虹彩并以共同光学色盘形成粉顶蓝底；其余四系列仍按各自花面、叶、蕊的源色产生花尘，shader没有再全局覆盖为固定粉蓝。
+
+[四形同色剪影](../../spring-letter/evidence/v6-four-form-silhouettes.png)是实际几何的CPU投影诊断，非游戏截图。 [20个实体组合](../../spring-letter/evidence/v6-flower-lab/contact-solid.jpg) · [20个花尘组合](../../spring-letter/evidence/v6-flower-lab/contact-dust.jpg)。
+
+### 流晶选择与原片差距
+
+重读参考`video/blossom/detail/frame-0300.jpg`后，没有保留首轮的大面积浓紫；该版本虽然可见，却偏塑料。临时实验对比当前、pale-volume、clear-volume、ice-volume四套方案昼夜各一图，最终选择ice-volume：冰蓝底色、.87透射、花瓣有效厚度.72、折射率1.7、低粗糙度与更清楚环境反射。clear-volume亮底过淡，pale-volume仍偏紫灰。实际运行中保留花蕊/枝叶的角色差别；没有将整花opacity降成幽灵。
+
+[冰蓝流晶日景](../../spring-letter/evidence/v6-flower-lab/lily-crystal.png) · [冰蓝流晶夜景](../../spring-letter/evidence/v6-flower-lab/lily-crystal-night.png) · [新鸢尾](../../spring-letter/evidence/v6-flower-lab/iris-crystal.png) · [琥珀星瓣大丽](../../spring-letter/evidence/v6-flower-lab/dahlia-amber.png)。已逐图看过这些大图和当前联系表。仍有差距：本作瓣壳薄，原片圆厚的体积转折、折射层叠与彩色光火更丰富；现材质参数不能代替进一步雕刻几何。没有声称参考视觉已完美复刻。
+
+### 当前证据
+
+- [26项相关CPU检查](../../spring-letter/evidence/v6-flower-cpu.txt)，新增大丽同源三角形、形态包络和拓扑差异；不计作整个游戏全部验收。
+- [55图与GPU报告](../../spring-letter/evidence/v6-flower-lab/report.json)：20实体、20尘态、4夜间流晶、7阶段和4笔势图；四个产品模块SHA锁定。
+- 30轮真实绘制四花形、五系列与两种粒子画质，始终17几何/22纹理；换色与换源瞬间GPU位置/速度误差0，向新源归形平均误差约5.59e-7，页面/控制台错误为空。资源数字仅适用于这个独立实验场。
+- 本实验使用脚本输入和独立灯光；完整世界的跟随镜头、首个教学、种子关卡、触屏与性能由根代理在隔离候选中另测。先前首破开801ms与预热后49.9ms是不同候选参数下的机制研究，不能改写为最终整游戏帧时。

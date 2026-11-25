@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="春信 0.9.0 交付手册：雨幕温室、沉星天文台、云海花甸，三处独立三维地图与十二环节送信旅程。">
+  <title>春信 · 三种远方 — 0.9.0 交付手册</title>
+  <style>
+    :root{--ink:#152e29;--paper:#edf1e8;--muted:#53675e;--line:#bcc9ba;--green:#b8ce8e;--copper:#d7b06d;--lilac:#c1b7f1;--coral:#efac9d;--serif:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;--sans:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;--mono:"Cascadia Mono",Consolas,monospace}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.8 var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration-thickness:1px;text-underline-offset:5px}a:hover{color:#62783d}a:focus-visible{outline:3px solid currentColor;outline-offset:6px}button{font:inherit}::selection{background:#c4d8a0;color:#152e29}p,h1,h2,h3,figure,ol,ul{margin:0}img{max-width:100%;display:block}svg{display:block}.wrap{width:min(1320px,calc(100% - 96px));margin-inline:auto}.eyebrow{font:11px/1.5 var(--mono);letter-spacing:.14em;text-transform:uppercase}.small{font-size:12px}.muted{color:var(--muted)}.serif{font-family:var(--serif);font-weight:400}.skip{position:absolute;left:20px;top:-80px;padding:10px 18px;background:var(--paper);color:var(--ink);z-index:5}.skip:focus{top:14px}
+    .masthead{background:var(--ink);color:var(--paper);overflow:hidden}.topbar{display:flex;align-items:center;justify-content:space-between;gap:30px;min-height:100px;border-bottom:1px solid #456057}.brand{display:flex;align-items:center;gap:14px;text-decoration:none}.brand svg{width:30px;height:35px}.brand strong{font:24px var(--serif);letter-spacing:.13em}.edition{border-left:1px solid #597066;padding-left:15px;color:#b9c8b7}.open-game{display:inline-flex;align-items:center;justify-content:center;gap:25px;min-height:46px;padding:9px 20px;background:var(--green);color:var(--ink);text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap}.open-game:hover{background:#d4e4ae;color:var(--ink)}.open-game span{font:22px/1 var(--sans)}
+    .hero{display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:70px;padding-block:83px 70px}.hero .eyebrow{color:var(--green)}h1{font:clamp(43px,4.8vw,72px)/1.26 var(--serif);font-weight:400;letter-spacing:-.04em;margin:23px 0 27px}h1 em{font-style:normal;color:var(--green)}.hero-copy{max-width:520px;color:#c5d1c5;line-height:2}.entry-note{margin-top:28px;padding-left:14px;border-left:2px solid var(--green);font-size:12px;color:#e1e8d8}.entry-note strong{font-weight:500;color:var(--green)}.route-illustration{width:100%;height:auto;color:#b9c8b7}.hero-tail{display:flex;justify-content:space-between;align-items:center;gap:25px;padding:23px 0;border-top:1px solid #456057;font-size:12px;color:#bdcabc}.hero-tail nav{display:flex;gap:30px}.hero-tail a{text-decoration:none}.hero-tail a:hover{color:var(--green)}
+    .intro{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:end;padding:85px 0 60px}.intro h2{font:40px/1.45 var(--serif);font-weight:400;margin-top:15px}.intro p{max-width:550px;color:var(--muted)}.chapter{--accent:var(--copper);padding-bottom:80px}.chapter-head{display:flex;align-items:baseline;gap:20px;padding:24px 0;border-top:1px solid var(--line)}.chapter-number{font:36px/1 var(--serif);color:#7a8a78}.chapter h3{font:30px/1.3 var(--serif);font-weight:400}.chapter-subtitle{margin-left:auto;color:var(--muted);font-size:12px}.chapter-layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:35px}.scene-frame{position:relative;overflow:hidden;min-height:200px;background:#dbe3d6;border:1px solid #b8c6b6}.scene-frame img{width:100%;height:auto;aspect-ratio:8/5;object-fit:contain;background:#182e27}.scene-frame .image-unavailable{display:none;align-items:center;justify-content:center;flex-direction:column;gap:10px;min-height:330px;padding:25px;text-align:center;background:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,#b6c4af22 14px,#b6c4af22 15px);color:#52674e}.scene-frame.missing img{display:none}.scene-frame.missing .image-unavailable{display:flex}.image-unavailable strong{font:24px var(--serif);font-weight:400}.image-unavailable small{max-width:340px;line-height:1.7}.scene-caption{display:flex;justify-content:space-between;gap:15px;padding-top:10px;font-size:10px;line-height:1.6;color:var(--muted)}.scene-caption a{white-space:nowrap}.chapter-notes{display:flex;flex-direction:column;align-items:flex-start;padding-top:5px}.action-label{padding-bottom:13px;color:#6b7657;font:11px var(--mono);letter-spacing:.12em}.chapter-notes h4{font:23px/1.5 var(--serif);font-weight:400;margin:0 0 17px}.chapter-notes p{font-size:13px;line-height:1.95;color:var(--muted)}.controls{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);width:100%;font-size:11px;color:var(--muted)}.controls kbd{display:inline-block;min-width:24px;margin-right:4px;padding:0 5px;border:1px solid #adbcaa;border-bottom-width:2px;border-radius:3px;font:10px/1.9 var(--mono);color:var(--ink)}.souvenir{display:flex;align-items:center;gap:10px;margin-top:22px;font-size:12px}.souvenir::before{content:"";width:8px;height:8px;border:1px solid var(--ink);background:var(--accent);transform:rotate(45deg)}.night{--accent:var(--lilac)}.cloud{--accent:var(--coral)}
+    .journey{background:#dfe7d9;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:70px 0 75px}.section-title{display:flex;justify-content:space-between;align-items:baseline;gap:30px;margin-bottom:38px}.section-title h2{font:34px/1.4 var(--serif);font-weight:400}.section-title p{font-size:12px;color:var(--muted)}.prologue{display:flex;align-items:center;gap:15px;font-size:12px;color:var(--muted);padding-bottom:23px}.prologue::before{content:"";display:block;width:8px;height:8px;border-radius:50%;background:#688856}.steps{padding:0;list-style:none;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #aebfa6;border-left:1px solid #aebfa6}.steps li{min-height:108px;padding:15px 17px;border-right:1px solid #aebfa6;border-bottom:1px solid #aebfa6}.steps .step-no{font:11px var(--mono);color:#5c7351}.steps strong{display:block;font-size:13px;font-weight:500;padding:4px 0}.steps small{font-size:10px;color:var(--muted)}.steps .new{background:#cbd9bc}.step-no span{font:9px var(--sans);margin-left:9px;padding:2px 5px;border:1px solid #8fa57b}.epilogue{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;padding-top:40px}.epilogue blockquote{margin:0;font:27px/1.7 var(--serif);font-weight:400}.epilogue p{font-size:12px;color:var(--muted)}
+    .notes{display:block;padding:75px 0 70px}.notes>div:first-child{max-width:790px;margin-bottom:48px}.notes h2{font:30px/1.5 var(--serif);font-weight:400;margin:13px 0 23px}.notes p{font-size:13px;color:var(--muted);margin-bottom:17px}.resource-links{display:flex;flex-wrap:wrap;gap:15px 28px;font-size:12px;margin-top:24px}.verification{padding:35px 0 0;border-top:1px solid var(--line)}.result-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:34px}.result-grid .check-row{grid-template-columns:108px 1fr;gap:13px;min-height:104px}.result-grid .check-row strong{white-space:nowrap}.verification .release-note{font-size:12px;margin:18px 0}.verification .resource-links{margin-top:20px}.check-row{display:grid;grid-template-columns:82px 1fr;gap:17px;padding:16px 0;border-top:1px solid var(--line);font-size:12px}.check-row strong{font:27px/1.1 var(--serif);font-weight:400}.check-row .status{font:12px/1.7 var(--sans)}.check-row span{color:var(--muted)}.verification .limits{margin-top:20px;font-size:11px}.evidence-link{display:inline-block;margin-top:5px;font-size:12px}
+    .research{padding:55px 0 65px;border-top:1px solid var(--line)}.research .section-title{margin-bottom:24px}.research .section-title h2{font-size:28px}.source-list{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 55px}.source-list li{border-top:1px solid var(--line)}.source-list a{display:grid;grid-template-columns:minmax(0,1fr) 1fr 15px;gap:15px;padding:17px 0;text-decoration:none;align-items:baseline;font-size:12px}.source-list a span{color:var(--muted);font-size:11px}.source-list a b{font-size:15px;font-weight:400}.research-footnote{max-width:850px;font-size:11px;color:var(--muted);margin-top:25px;line-height:1.9}.footer{background:var(--ink);color:var(--paper)}.footer-content{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:35px 0}.footer p{font:23px var(--serif);font-weight:400}.footer .small{font:10px/1.8 var(--mono);color:#a8bcaa;text-align:right}
+    @media(min-width:1500px){.hero{min-height:515px}.scene-frame img{aspect-ratio:8/5}}
+    @media(max-width:1050px){.wrap{width:calc(100% - 64px)}.hero{gap:25px;padding-block:65px 55px}.hero h1{font-size:50px}.intro{gap:45px}.chapter-layout{grid-template-columns:minmax(0,1fr) 220px;gap:25px}.result-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.source-list{gap:0 30px}}
+    @media(max-width:760px){.wrap{width:calc(100% - 40px)}.topbar{min-height:82px;gap:15px}.brand{gap:9px}.brand strong{font-size:22px}.brand svg{width:25px}.edition{font-size:9px;padding-left:10px}.open-game{padding:9px 13px;gap:12px;font-size:11px}.hero{grid-template-columns:1fr;gap:20px;padding-block:47px 35px}.hero h1{font-size:clamp(39px,8vw,56px);margin-top:19px}.hero-copy{font-size:13px;max-width:490px}.route-illustration{width:100%;max-height:210px}.entry-note{margin-top:21px}.hero-tail{align-items:flex-start;font-size:10px}.hero-tail nav{gap:16px}.hero-tail>.eyebrow{font-size:9px;letter-spacing:0}.intro{grid-template-columns:1fr;gap:22px;padding:52px 0 36px}.intro h2{font-size:32px;margin-top:10px}.intro p{font-size:13px}.chapter{padding-bottom:48px}.chapter-head{gap:13px;padding:19px 0;flex-wrap:wrap}.chapter-number{font-size:29px}.chapter h3{font-size:25px}.chapter-subtitle{font-size:10px}.chapter-layout{grid-template-columns:1fr;gap:22px}.scene-frame{min-height:0}.scene-frame .image-unavailable{min-height:230px}.scene-caption{font-size:9px}.chapter-notes{display:grid;grid-template-columns:1fr 1fr;gap:0 25px;padding:0}.action-label{grid-column:1 / -1;padding-bottom:9px}.chapter-notes h4{font-size:22px;margin-bottom:10px}.chapter-notes p{grid-column:1 / -1;font-size:12px}.controls{margin-top:17px;padding-top:12px}.souvenir{margin-top:17px;justify-self:end;align-self:center}.journey{padding-block:45px 48px}.section-title{display:block;margin-bottom:26px}.section-title h2{font-size:29px}.section-title p{font-size:11px;margin-top:12px}.steps{grid-template-columns:1fr 1fr}.steps li{min-height:106px;padding:12px}.steps strong{font-size:12px}.steps small{font-size:9px}.epilogue{grid-template-columns:1fr;gap:18px;padding-top:28px}.epilogue blockquote{font-size:25px}.notes{padding:49px 0}.notes>div:first-child{margin-bottom:35px}.result-grid{grid-template-columns:1fr}.result-grid .check-row{min-height:90px;grid-template-columns:110px 1fr}.notes h2{font-size:27px}.verification{padding-left:0;border-left:0}.research{padding-block:40px 45px}.source-list{grid-template-columns:1fr}.source-list a{font-size:12px;padding-block:15px;grid-template-columns:1.1fr 1fr 15px}.source-list a span{font-size:10px}.footer-content{align-items:flex-start;padding-block:27px}.footer p{font-size:20px}.footer .small{font-size:8px}}
+    @media(max-width:370px){.wrap{width:calc(100% - 30px)}.edition{display:none}.hero-tail{display:block}.hero-tail nav{margin-top:12px}.chapter-subtitle{width:100%;margin-left:42px;margin-top:-5px}.chapter-notes{column-gap:15px}.source-list a{grid-template-columns:1fr 15px}.source-list a span{grid-row:2;grid-column:1 / -1;margin-top:-11px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{body{font-size:11px}.wrap{width:100%}.masthead,.footer{background:white;color:#152e29}.hero{padding:30px 0;gap:20px}.hero-copy,.entry-note,.hero-tail,.hero .eyebrow{color:#152e29}.hero h1{font-size:40px}.hero h1 em{color:#152e29}.topbar{min-height:60px}.open-game{border:1px solid currentColor}.chapter{break-inside:avoid;padding-bottom:25px}.intro,.notes,.research,.journey{padding-block:30px}.chapter-layout{grid-template-columns:1fr 230px}.route-illustration{max-height:220px}.source-list a{padding-block:10px}.footer-content{padding-block:20px}.footer .small{color:#53675e}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#maps">跳至三处地图</a>
+  <header class="masthead">
+    <div class="wrap">
+      <div class="topbar">
+        <a class="brand" href="#top" aria-label="春信交付手册首页">
+          <svg viewBox="0 0 30 35" fill="none" aria-hidden="true"><path d="M2 12 15 2l13 10v20H2V12Z" stroke="currentColor"/><path d="m2 12 13 10 13-10M3 31l9-10m15 10-9-10" stroke="currentColor"/><path d="M15 11c-6-7-9 3 0 5 9-2 6-12 0-5Z" fill="#b8ce8e"/></svg>
+          <strong>春信</strong><span class="edition eyebrow">0.9.0<br>交付手册</span>
+        </a>
+        <a class="open-game" href="http://127.0.0.1:5192/" target="_blank" rel="noopener">打开本机游戏 <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero" id="top">
+        <div>
+          <p class="eyebrow">A letter carried by spring · 2026 / 11 / 23</p>
+          <h1>携一封春信，<br>走向<em>三种远方。</em></h1>
+          <p class="hero-copy">穿过雨林，借星光辨认方向，再把身体交给风。<br>三处可以走进去的新地图，接入一段从花庭驶向曙光的旅程。</p>
+          <p class="entry-note">想先看新地图？在游戏首页选择 <strong>「展开远方地图」</strong>，即可直接前往。<br>本机服务地址：127.0.0.1:5192</p>
+        </div>
+        <svg class="route-illustration" viewBox="0 0 390 340" role="img" aria-label="驿路示意：雨幕温室的花香，沉星天文台的星路，云海花甸的远风，汇入驶向曙光的两封信。">
+          <defs><pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".65" fill="#7d987e" opacity=".4"/></pattern></defs>
+          <rect width="390" height="340" fill="url(#grid)"/>
+          <path d="M63 63C204 30 97 130 210 149S354 204 283 249 126 253 135 301" fill="none" stroke="#a2bd8b" stroke-width="1" stroke-dasharray="3 6"/>
+          <path d="M36 67V43a27 27 0 0 1 54 0v24M48 66V43a15 27 0 0 1 30 0v23M35 66h56" fill="none" stroke="#d7b06d" stroke-width="1.3"/>
+          <path d="M62 64V47m0 10-10-7m10 2 9-7" fill="none" stroke="#d7b06d"/>
+          <text x="108" y="53" fill="#e5ebdb" font-size="15" font-family="Microsoft YaHei, sans-serif">雨幕温室</text><text x="109" y="73" fill="#a6bba8" font-size="10" font-family="Microsoft YaHei, sans-serif">06 / 留一缕花香</text>
+          <g fill="none" stroke="#c1b7f1" stroke-width="1.1"><circle cx="210" cy="148" r="25"/><ellipse cx="210" cy="148" rx="10" ry="25" transform="rotate(30 210 148)"/><path d="m187 156 45-16m-22 32v10m-13 0h26"/></g>
+          <path d="m248 113 2-5 2 5 5 2-5 2-2 5-2-5-5-2Z" fill="#c1b7f1"/>
+          <text x="26" y="148" fill="#e5ebdb" font-size="15" font-family="Microsoft YaHei, sans-serif">沉星天文台</text><text x="27" y="168" fill="#a6bba8" font-size="10" font-family="Microsoft YaHei, sans-serif">07 / 描一条星路</text>
+          <path d="M259 232q25-32 50 0m-50 0q6-6 12 0 6-6 13 0 6-6 12 0 6-6 13 0m-25-17v47q0 7-6 7t-6-6m-8 19q20-10 40 0" fill="none" stroke="#efac9d" stroke-width="1.3"/>
+          <text x="87" y="235" fill="#e5ebdb" font-size="15" font-family="Microsoft YaHei, sans-serif">云海花甸</text><text x="88" y="255" fill="#a6bba8" font-size="10" font-family="Microsoft YaHei, sans-serif">08 / 借一程远风</text>
+          <path d="M123 298h25v18h-25Zm0 0 12.5 10L148 298m-18-5h25v18" fill="none" stroke="#b8ce8e"/>
+          <text x="170" y="312" fill="#a6bba8" font-size="10" font-family="Microsoft YaHei, sans-serif">两封信，驶向曙光</text>
+        </svg>
+      </div>
+      <div class="hero-tail"><span class="eyebrow">3 处独立地图 / 12 个主要环节 / 本地保存</span><nav aria-label="页面导航"><a href="#maps">三处驿路 ↓</a><a href="#journey">完整旅程</a><a href="#verification">验证记录</a></nav></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap" id="maps" aria-labelledby="maps-title">
+      <div class="intro"><div><p class="eyebrow">Three places to linger</p><h2 id="maps-title">远方各有形状，<br>抵达各有方法。</h2></div><p>铜拱下的纵深雨林、向夜空敞开的石台、真正分离的云上浮岛。三处地图分别拥有自己的地形、植物、地标与声景；行动也从温柔追随，转向仰望描绘，再到跳跃滑翔。</p></div>
+
+      <article class="chapter">
+        <div class="chapter-head"><span class="chapter-number" aria-label="主线第六环节">06</span><h3>雨幕温室</h3><p class="chapter-subtitle">琥珀铜色 × 雨林青绿 · 陪伴与等待</p></div>
+        <div class="chapter-layout">
+          <figure>
+            <div class="scene-frame"><img data-final-evidence="conservatory" src="../../spring-letter/evidence/v12/full-2026-11-23T04-53-23-576Z/01-rainforest-entry.jpg" alt="0.9 实际游戏画面：主角站在雨幕温室的碎石步道上，铜色肋拱横跨头顶，两侧巨蕨与兰花延伸至青绿林地和远处驿门。" width="1440" height="900"><div class="image-unavailable"><strong>温室实机截图暂不可读取</strong><small>未能加载此张实际游戏画面。请刷新页面，或通过下方「查看原图」检查图片是否可访问。</small></div></div>
+            <figcaption class="scene-caption"><span>0.9 实际游戏画面 · 温室入口</span><a data-evidence-link="conservatory" href="../../spring-letter/evidence/v12/full-2026-11-23T04-53-23-576Z/01-rainforest-entry.jpg" target="_blank" rel="noopener">查看原图 ↗</a></figcaption>
+          </figure>
+          <div class="chapter-notes"><span class="action-label">FOLLOW / POLLINATE</span><h4>让蝶群愿意<br>跟上你的脚步。</h4><p>按住招蝶，再放缓脚步。带着蝶群穿过铜拱、悬根与湿润的叶丛，停在三处兰花坛边，等花朵逐渐苏醒。树林深处的驿门，为这段安静的穿行留下方向。</p><div class="controls"><kbd>Space</kbd> 招蝶<br>移动放缓 · 花坛旁停留</div><div class="souvenir">带走一缕「花香」</div></div>
+        </div>
+      </article>
+
+      <article class="chapter night">
+        <div class="chapter-head"><span class="chapter-number" aria-label="主线第七环节">07</span><h3>沉星天文台</h3><p class="chapter-subtitle">夜蓝玄武岩 × 月白石柱 · 观察与描绘</p></div>
+        <div class="chapter-layout">
+          <figure>
+            <div class="scene-frame"><img data-final-evidence="observatory" src="../../spring-letter/evidence/v12/full-2026-11-23T04-53-23-576Z/03-observatory-entry.jpg" alt="0.9 实际游戏画面：主角沿白色踏石朝观星平台前行，夜蓝地面两侧分布断柱与白花，右后方立着巨大黄铜浑仪。" width="1440" height="900" loading="lazy"><div class="image-unavailable"><strong>星台实机截图暂不可读取</strong><small>未能加载此张实际游戏画面。请刷新页面，或通过下方「查看原图」检查图片是否可访问。</small></div></div>
+            <figcaption class="scene-caption"><span>0.9 实际游戏画面 · 天文台入口</span><a data-evidence-link="observatory" href="../../spring-letter/evidence/v12/full-2026-11-23T04-53-23-576Z/03-observatory-entry.jpg" target="_blank" rel="noopener">查看原图 ↗</a></figcaption>
+          </figure>
+          <div class="chapter-notes"><span class="action-label">LOOK UP / TRACE</span><h4>把散落的星，<br>连成一封信。</h4><p>沿玄武岩缓坡走上观星平台，抬头进入真正的三维星空。逐点点击或拖过星光，描出信封形的星路；中途松手、撤回或离开后，还能接着描绘。</p><div class="controls"><kbd>E</kbd> 在平台仰望<br><kbd>1–6</kbd> 等价描星 <kbd>Z</kbd> 撤回</div><div class="souvenir">记下一条「星路」</div></div>
+        </div>
+      </article>
+
+      <article class="chapter cloud">
+        <div class="chapter-head"><span class="chapter-number" aria-label="主线第八环节">08</span><h3>云海花甸</h3><p class="chapter-subtitle">珊瑚粉白 × 天青草甸 · 跃起与落地</p></div>
+        <div class="chapter-layout">
+          <figure>
+            <div class="scene-frame"><img data-final-evidence="meadow" src="../../spring-letter/evidence/v12/full-2026-11-23T04-53-23-576Z/06-cloud-islands-entry.jpg" alt="0.9 实际游戏画面：主角站在粉白杯花环绕的起始岛上，前方四座实体浮岛彼此分离，风旗、层岩、垂根与低云标出跨岛路线。" width="1440" height="900" loading="lazy"><div class="image-unavailable"><strong>云岛实机截图暂不可读取</strong><small>未能加载此张实际游戏画面。请刷新页面，或通过下方「查看原图」检查图片是否可访问。</small></div></div>
+            <figcaption class="scene-caption"><span>0.9 实际游戏画面 · 云岛入口</span><a data-evidence-link="meadow" href="../../spring-letter/evidence/v12/full-2026-11-23T04-53-23-576Z/06-cloud-islands-entry.jpg" target="_blank" rel="noopener">查看原图 ↗</a></figcaption>
+          </figure>
+          <div class="chapter-notes"><span class="action-label">LEAP / GLIDE</span><h4>展开花伞，<br>越过一段留白。</h4><p>五座实体浮岛之间，留着需要真正跨过的空隙。跟随风旗的方向起跳，展开花伞，掠过云层与垂根。每次落到安全岛都会留下检查点；落空后，风会把你送回。</p><div class="controls"><kbd>Space</kbd> 跳跃 · 按住滑翔<br>逐岛保存检查点</div><div class="souvenir">借来一程「远风」</div></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="journey" id="journey" aria-labelledby="journey-title"><div class="wrap">
+      <div class="section-title"><h2 id="journey-title">从一座花庭，到两封远行的信。</h2><p>开场导入 → 12 个主要环节 → 航海结局</p></div>
+      <p class="prologue">开场：六段情境导入，认识这段借来的春天。</p>
+      <ol class="steps">
+        <li><div class="step-no">01</div><strong>花光暗房</strong><small>从光与花开始</small></li>
+        <li><div class="step-no">02</div><strong>纸翼渡风</strong><small>让一片纸翼穿过风</small></li>
+        <li><div class="step-no">03</div><strong>回声织信</strong><small>留下一段自己的旋律</small></li>
+        <li><div class="step-no">04</div><strong>借花为桥</strong><small>让盛开连接前路</small></li>
+        <li><div class="step-no">05</div><strong>留下两处春天</strong><small>安放两颗种核</small></li>
+        <li class="new"><div class="step-no">06 <span>新地点</span></div><strong>雨幕温室</strong><small>引蝶、轻步、陪伴授粉</small></li>
+        <li class="new"><div class="step-no">07 <span>新地点</span></div><strong>沉星天文台</strong><small>走上平台，描出星路</small></li>
+        <li class="new"><div class="step-no">08 <span>新地点</span></div><strong>云海花甸</strong><small>跃起，展开花伞跨岛</small></li>
+        <li><div class="step-no">09</div><strong>写给未曾谋面的人</strong><small>亲自写下收信人与正文</small></li>
+        <li><div class="step-no">10</div><strong>潮汐留下的旧信</strong><small>循潮汐找到岑的来信</small></li>
+        <li><div class="step-no">11</div><strong>岸边的一叶舟</strong><small>登岛，为启程做好准备</small></li>
+        <li><div class="step-no">12</div><strong>一路繁花向海</strong><small>掌舵，让花在海上开放</small></li>
+      </ol>
+      <div class="epilogue"><blockquote>信尚未抵达，<br>春天已经上路。</blockquote><p>你写的信与岑的旧信，一起放进船上的信袋。最后由你选择驶向曙光，也可以留在海边，再看一会儿。两封信可保存为 TXT，旅程进度保存在本机；已有海岸或结局存档也能访问新增驿路，回来时保留原有信件与阶段。</p></div>
+    </div></section>
+
+    <section class="wrap notes" aria-label="资源与验证">
+      <div><p class="eyebrow">Made here, kept here</p><h2>风景在本地生长。</h2><p>三处地图的地形、地标、植物、蝶群、星点与花伞，由项目程序几何、材质与纹理制作。本轮没有新增外部模型、图片、音轨下载，也没有新增收费资源或运行时联网依赖。</p><p>配乐使用已有 VSCO 2 Community Edition 的 CC0 乐器采样演奏原创音序；既有 CC0 环境音、贴图与 HDR 继续随项目保留来源和许可。公开研究作品中的图像、音乐与模型未被导入游戏。</p><div class="resource-links"><a href="../../spring-letter/ASSET_SOURCES.md">素材与许可记录 ↗</a><a href="v12-research.md">研究与取舍记录 ↗</a></div></div>
+      <div class="verification" id="verification">
+        <p class="eyebrow">Verified in the actual game</p><h2>验证已完成，记录可复查。</h2>
+        <div class="result-grid" id="gpu-status">
+          <div class="check-row"><strong>644 / 644</strong><span>CPU 自动化检查<br>场景、规则、存档与相关回归通过</span></div>
+          <div class="check-row"><strong>12 / 12</strong><span>完整旅程<br>从开场、三处新地图到两封信的航海结局通过</span></div>
+          <div class="check-row" id="layout-status"><strong>9 / 9</strong><span>桌面与模拟触屏<br>包含纯键盘进图、关闭设置后直接使用 WASD</span></div>
+          <div class="check-row"><strong>3 / 3</strong><span>实际音频输出<br>三处地图声音检查通过</span></div>
+          <div class="check-row"><strong>9 / 9</strong><span>地图画质组合<br>三张地图 × 三档画质检查通过</span></div>
+          <div class="check-row"><strong>3 轮</strong><span>换图稳定性<br>预热后重复切换，资源保持稳定</span></div>
+          <div class="check-row"><strong>7 / 7</strong><span>图形恢复<br>三张新地图与四条原有路径通过</span></div>
+          <div class="check-row"><strong>100 / 100</strong><span>视觉与操作观察点<br>材质、花型、散聚与全屏等检查通过</span></div>
+          <div class="check-row"><strong>665 次</strong><span>开场画布取样<br>三档画质全部通过，包含细腻画质 DPR 2</span></div>
+        </div>
+        <p class="release-note">原生花伞滑翔、游戏内留影与全屏切换的补充实机检查已通过。本机发布的 52 个线上文件已核对；Windows 与浏览器离线包均通过完整性、解压及本地访问验证。</p>
+        <p class="limits">三幅入口图均为 0.9 实际游戏画面。开场的 665 次记录是画布取样，并非对每个 GPU 帧逐帧检查；模拟触屏也不等同于所有真实移动设备。完整证据、已知限制与适用范围见 QA 记录，自动化结果不替代真人体验评价。</p>
+        <div class="resource-links"><a href="../../spring-letter/FINAL_QA.md">实际验证、限制与完整证据 →</a><a href="../../spring-letter/evidence/v12/glide-photo-1795410642768/report.json">滑翔、留影与全屏实机记录 ↗</a></div>
+      </div>
+    </section>
+
+    <section class="wrap research" aria-labelledby="research-title">
+      <div class="section-title"><h2 id="research-title">八个新视角，来自公开的官方资料。</h2><p>研究空间、观看、纸材与节奏</p></div>
+      <ul class="source-list">
+        <li><a href="https://www.edenproject.com/whats-here/rainforest-biome" target="_blank" rel="noopener">Eden Project <span>雨林树冠与空间层级</span><b aria-hidden="true">↗</b></a></li>
+        <li><a href="https://eastshade.com/eastshade-game/" target="_blank" rel="noopener">Eastshade <span>让观看参与旅程</span><b aria-hidden="true">↗</b></a></li>
+        <li><a href="https://petums.com/papetura/" target="_blank" rel="noopener">Papetura <span>纸材、受光与无对白叙事</span><b aria-hidden="true">↗</b></a></li>
+        <li><a href="https://manifold.garden/presskit/" target="_blank" rel="noopener">Manifold Garden <span>身体可以验证的空间规则</span><b aria-hidden="true">↗</b></a></li>
+        <li><a href="https://www.inklestudios.com/heavensvault/" target="_blank" rel="noopener">Heaven’s Vault <span>遗址线索与航行叙事</span><b aria-hidden="true">↗</b></a></li>
+        <li><a href="https://www.papertrailgame.com/" target="_blank" rel="noopener">Paper Trail <span>纸张变形与路径关系</span><b aria-hidden="true">↗</b></a></li>
+        <li><a href="https://thegardensbetween.com/" target="_blank" rel="noopener">The Gardens Between <span>安静回望与生活物件</span><b aria-hidden="true">↗</b></a></li>
+        <li><a href="https://www.eso.org/public/images/residenza-cc/" target="_blank" rel="noopener">ESO · Paranal <span>低地平线与辽阔星空</span><b aria-hidden="true">↗</b></a></li>
+      </ul>
+      <p class="research-footnote">以上链接是免费公开的研究入口，并非免费游戏或素材包。实体参观与商业游戏可能收费；公开可阅读不等于可复制其资产。ESO 图像只作研究，未下载采用。每项事实、许可边界和方案取舍详见研究记录。</p>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-content"><p>愿你走过的地方，<br>都有一点春天留下。</p><div class="small">春信 · 0.9.0<br>三处新地图交付手册<br>2026.11.23</div></div></footer>
+  <script>
+    // Show an explicit loading error; never substitute an earlier evidence image.
+    document.querySelectorAll('.scene-frame img').forEach(function (image) {
+      function markMissing() { image.parentElement.classList.add('missing'); }
+      image.addEventListener('error', markMissing);
+      image.addEventListener('load', function () { image.parentElement.classList.remove('missing'); });
+      if (image.complete && image.naturalWidth === 0) markMissing();
+    });
+  </script>
+</body>
+</html>

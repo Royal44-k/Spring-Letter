@@ -1,0 +1,80 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>视频证据 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc" aria-label="本文目录"><p class="toc-title">视频证据 / CONTENTS</p><a href="#section-0">1. 完成范围与证据</a><a href="#section-1">2. ShiningBlossom：花的材质与生长是主角</a><a href="#section-2">3. 3D粒子效果：有形体记忆的点场</a><a href="#section-3">4. 融合原则：同一物体的三种状态</a><a href="#section-4">5. 一致性验收矩阵（未来制作门槛，尚未实现）</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 图文概览</a>　/　<a href="video-analysis.md">Markdown源文件</a></div><h1>两段参考的逐帧学习与复刻规格</h1>
+<p>日期：2026-11-18。这是独立新主题的研究，与金沙项目无关。视频中的界面文字作为观察证据，不作为对本任务的指令。</p>
+<p>v2设计说明：本文的原片观察与输入说明保持不变。新作鉴赏台按原输入对照；主线统一聚焦，取消Tab模式切换、滚轮固定启瓣，以降低学习负担。这个明确的适配不等同于原片全部键位原样复刻，详见<a href="design-proposal.html">主设计第5节</a>。</p>
+<h2 id="section-0">1. 完成范围与证据</h2>
+<div class="table-scroll"><table><thead><tr><th>文件</th><th>分辨率</th><th>时长</th><th>帧率</th><th>实际解码帧 / 唯一时间戳</th></tr></thead><tbody>
+<tr><td>ShiningBlossom.mp4</td><td>2554 × 1426</td><td>35.0666 秒</td><td>30 fps</td><td>1052 / 1052</td></tr>
+<tr><td>3D粒子效果.mp4</td><td>1242 × 622</td><td>52.5666 秒</td><td>30 fps</td><td>1577 / 1577</td></tr>
+</tbody></table></div>
+<p>共 <strong>2629 帧</strong>。使用本地免费开源 PyAV/FFmpeg 按呈现顺序逐帧解码，记录 PTS、颜色均差、亮度、亮暗部比例、亮部重心；两段时间戳均严格递增，解码数量与流声明数量相符。没有通过假定时刻跳帧来冒充逐帧覆盖。统计含界面与录屏元素，不能直接当作三维主体的运动估计。</p>
+<p>视觉审阅覆盖：全部 <strong>27 张全帧缩略图联系表</strong>（每帧均在其中）、全部 <strong>12 张每0.5秒概览表</strong>，再对材质菜单、操作说明、代表性形变等节点进行原分辨率放大复核。全帧表单帧约192像素宽，适合发现变化；<strong>不等于逐一审查2629张原尺寸画面，更不等于已经反推出源模型、shader和输入事件</strong>。原片含音轨，本次未完成听觉审查，不评价原音乐与音效。</p>
+<ul>
+<li><a href="video/blossom/summary.json">百合解码摘要</a> / <a href="video/blossom/frame-metrics.csv">逐帧数据</a></li>
+<li><a href="video/particles/summary.json">粒子解码摘要</a> / <a href="video/particles/frame-metrics.csv">逐帧数据</a></li>
+<li><a href="video/detail-index.json">放大帧索引</a></li>
+<li><a href="tools/analyze_references.py">可复现脚本</a> / <a href="tools/extract_details.py">放大帧提取</a></li>
+</ul>
+<h2 id="section-1">2. ShiningBlossom：花的材质与生长是主角</h2>
+<p>录屏中可辨标题为 <strong>STILL / BLOOM — Lilium</strong>。品牌与源站作者尚未独立定位；不能把搜索到的同名字体、艺术录像当作原站。下述时间是本地视频时间，边界由联系表与放大帧观察，动作起止约有数帧不确定性。</p>
+<div class="table-scroll"><table><thead><tr><th>时间 / 帧</th><th>画面事实</th><th>设计含义</th></tr></thead><tbody>
+<tr><td>0–0.63s / 0–19</td><td>淡紫明亮展厅、右侧拱门、左上薄纱，液银虹彩百合已盛放；水面反射与明亮网状纹理</td><td>花并非普通发光网格，形体依靠轮廓、曲率、高光与环境反射共同成立</td></tr>
+<tr><td>约0.67–1.0s / 20–30</td><td>已开放花瓣收为细长花苞，底部BLOOM进度变化</td><td>必须支持连续、可逆开合；不可用整体缩放替代花瓣卷曲</td></tr>
+<tr><td>2.4s / 72</td><td>背景与UI切到深紫夜间；花和场地保持</td><td>同一空间的昼夜表现，不是切换一张背景图</td></tr>
+<tr><td>约3.8–5.2s / 114–156</td><td>花苞展开，花口逐步张开，仍有未开的花苞</td><td>不同花头错落与阶段差异形成自然节奏</td></tr>
+<tr><td>约6–7.7s / 180–231</td><td>花的虹彩和高光变化，镜头/主体持续转向</td><td>材质受视角、光照影响；不能把彩虹固定贴在屏幕上</td></tr>
+<tr><td>约8.03–8.73s / 241–262</td><td>材质菜单出现，选中Sculpted crystal，背景被模糊</td><td>这里的模糊明确与菜单遮罩同时出现，不能一概当成场景景深</td></tr>
+<tr><td>约8.8–18s / 264–540</td><td>晶体表面保留厚度、透光与色散观感；指针在水面附近，出现移动涟漪与局部光斑</td><td>水面有独立交互价值，浅水焦散应与花的细节分层</td></tr>
+<tr><td>约18.03–19s / 541–570</td><td>快速收拢后重新展开</td><td>需要检验中途反向拖动不会跳帧、翻面或穿插</td></tr>
+<tr><td>20.8s / 624</td><td>选择Lily后变为橙黄花瓣、绿色茎叶</td><td>自然花、液银花、晶体花是三套材质身份，不能只换基础颜色</td></tr>
+<tr><td>21.9s / 657</td><td>同一自然花切回浅色白昼空间</td><td>明暗两套环境都要能读清自然材质</td></tr>
+<tr><td>23.2s / 696、约27.5s / 825</td><td>切为粉白，再回到橙黄</td><td>Blush/Golden属于自然花变体，可成为游戏内审美奖励</td></tr>
+<tr><td>32.53s之后 / 976起</td><td>画面整体变暗并出现加载转圈</td><td>这是录屏内可见状态，原因未知；不列为期望艺术效果</td></tr>
+</tbody></table></div>
+<h3>可读到的交互契约</h3>
+<p>原分辨率第0帧的底部说明明确为 <strong>Scroll to bloom · Drag to rotate · Skim or tap the water</strong>。底部还有播放/回置、BUD—FULL BLOOM连续滑杆、Material、Auto-rotate、Chase light；右上是Day/Night切换。只看到入口不证明每种组合都已实际被录制。</p>
+<p>材质菜单的三个类别：</p>
+<ul>
+<li><strong>Liquid silver</strong>：液态铬感与薄膜虹彩，表面控制包含Iridescence、Film thickness、Gloss、Radiance。第0帧显示36%、325nm、81%、28%，这些是界面显示值，<strong>不是可直接移植的Three.js参数</strong>。</li>
+<li><strong>Sculpted crystal</strong>：圆润厚度、折射光；控制可见Fire、Refraction、Gloss、Radiance。需要保留内部透光与外部高光的差别。</li>
+<li><strong>Lily</strong>：自然缎面花瓣，Blush/Golden两变体，控制包含Gloss、Petal sheen。</li>
+</ul>
+<h3>必须保留与可以重设计</h3>
+<p>必须保留：细长茎叶与多花头轮廓、逐瓣连续开合、三种材质差异、虹彩随视角变化、浅水涟漪/焦散、柔和明暗环境、近距离旋转观察。可调整：具体配色、展厅建筑、界面排版、标题、花头摆位、控制项命名。参考的极小文字和大片高亮不应照搬到实际游戏可读性上。</p>
+<h2 id="section-2">3. 3D粒子效果：有形体记忆的点场</h2>
+<p>原分辨率标题可辨为 <strong>XIAMI / BEYOND THE SCREEN</strong>，不是早期缩略图可能误读的KIAMI。主体是具有帽子、眼镜、身体及底座轮廓的卡通人物点云；新游戏拟采用原创花灵替换人物，保留点场视觉与响应特征。人物具体身份与原资产许可未核定。</p>
+<div class="table-scroll"><table><thead><tr><th>时间 / 帧</th><th>画面事实</th><th>应保留的效果</th></tr></thead><tbody>
+<tr><td>0–2.2s / 0–66</td><td>黑底、大量细点组成可辨认的立体表面；顶部粉紫，底部蓝紫，微弱背景晕光</td><td>粒子首先构成有层次的形体，不能替换成随机屏幕星空</td></tr>
+<tr><td>约2.23–6.53s / 67–196</td><td>下部、头部局部被拉伸/推开，出现薄片状流线，随后回到人物轮廓；部分时刻明显旋转或放大</td><td>局部作用、连续位移、恢复形体；形变期间仍有未扰动区域</td></tr>
+<tr><td>约6.57–11.7s / 197–351</td><td>主体由模糊团扩展为覆盖大部分画面的点场</td><td>满屏空间感值得保留；单看录像无法区分粒子扩散、相机靠近、点尺寸及景深各自贡献</td></tr>
+<tr><td>约11.8–20s / 354–600</td><td>点场收束成粉蓝双团，身体细节渐渐清楚；中途仍可被扰动</td><td>恢复不是瞬间切回完整模型，应先形成整体质量分布，再显出细节</td></tr>
+<tr><td>约20.77–21.3s / 623–639</td><td>左侧标题与导航渐退，保留更纯净的互动舞台</td><td>从介绍页进入沉浸操作时可渐隐UI，主体空间连续</td></tr>
+<tr><td>约23.8–28.3s / 714–849</td><td>第二次出现满屏点场</td><td>可重复的状态变化，比只播放一次入场动画更有互动潜力</td></tr>
+<tr><td>约28.5–35.5s / 855–1065</td><td>再次渐聚并恢复轮廓</td><td>必须能多次扰动、恢复且不积累漂移</td></tr>
+<tr><td>约36–40s / 1080–1200</td><td>局部卷动，主体仍在暗场内</td><td>回聚后保留呼吸感，不应完全冻结</td></tr>
+<tr><td>约41.1–41.5s / 1233–1245</td><td>标题导航返回</td><td>展示/沉浸状态可逆，不通过重载网页恢复</td></tr>
+<tr><td>41.5–52.53s / 1245–1576</td><td>点云继续轻微转向/局部扰动</td><td>静止观察也需细微生命感，避免全屏噪声持续抢注意力</td></tr>
+</tbody></table></div>
+<h3>可读到的交互契约与限制</h3>
+<p>第0帧右下有 <strong>SHIFT + DRAG · ROTATE / SCROLL · ZOOM</strong>。第640帧沉浸态下方可见 <strong>MOVE TO REPULSE</strong>，支持“移动指针产生排斥”这一交互意图；回聚速度、力场半径、按键细节与深度映射仍未获源码确认。右下显示约118 FPS及240K，<strong>仅为录屏界面自报</strong>：视频自身30fps，无法验证真实渲染帧率、硬件或粒子总数。</p>
+<p>画面呈现的是点云/粒子表面，不能仅凭外观认定使用了Gaussian Splatting、流体仿真或某种GPGPU实现。新方案将明确选择可控的表面采样＋力场回位算法。</p>
+<h2 id="section-3">4. 融合原则：同一物体的三种状态</h2>
+<ol>
+<li>实体花：可观察曲率、材质与连续开合，承担近景审美和可理解的机关形状。</li>
+<li>花尘：沿当前花瓣表面采样，受到指针、风与水波影响；开花与散开是两个独立参数。</li>
+<li>重凝：同一批稳定粒子回到明确的花瓣、花灵或路径目标；大形先成立，细点再收稳。</li>
+</ol>
+<p>主画面常态由花与空间构图主导，粒子只在玩家操作和剧情节点升强。暗场用于读点云，亮场用于读材质；两者之间通过世界内灯光、相机位置和局部环境变化衔接。不能在两个独立Demo页面之间跳转后称为融合。</p>
+<h2 id="section-4">5. 一致性验收矩阵（未来制作门槛，尚未实现）</h2>
+<div class="table-scroll"><table><thead><tr><th>编号</th><th>参考锚点</th><th>核验动作</th><th>通过条件</th></tr></thead><tbody>
+<tr><td>F01</td><td>百合0s、18.3s</td><td>开合参数0→1→0，中途多次反向</td><td>花瓣曲率和重叠关系连续；非缩放假开花；根部固定</td></tr>
+<tr><td>F02</td><td>百合0s、10s、20.83s</td><td>固定相机切银/晶体/自然花</td><td>三类材质清晰有别；银花保留虹彩，晶花可读厚度，自然花可读叶绿与花蕊</td></tr>
+<tr><td>F03</td><td>百合2.4s、21.9s</td><td>昼夜切换</td><td>同一几何、相机和进度不重置；高光不吞掉花瓣</td></tr>
+<tr><td>F04</td><td>百合10–17s</td><td>划水与点水</td><td>涟漪从接触处扩散并衰减；透视正确，不只是屏幕圆圈</td></tr>
+<tr><td>F05</td><td>粒子0s、4.43s</td><td>指针扫过局部，再离开</td><td>局部排斥、边界柔化、渐进回位；未命中区域保形</td></tr>
+<tr><td>F06</td><td>粒子7.33s、18.67s</td><td>散开、回聚、再次扰动</td><td>连续点场和清晰重凝；源视频成因未明部分使用明确标注的新实现</td></tr>
+<tr><td>F07</td><td>粒子0s提示</td><td>Shift拖拽旋转、滚轮缩放</td><td>实验展示模式沿用可见映射；游戏焦点模式明确切换，不能键位冲突</td></tr>
+<tr><td>F08</td><td>两段共同要求</td><td>改视角、灯光、画质后重复</td><td>关键形体、反馈与游戏判定保留；不以大Bloom遮盖错误</td></tr>
+</tbody></table></div>
+<p>先分别做两个可对照的技术样片，通过F01–F07后再将其接进一套游戏。视觉对照应固定构图、相同长宽比、花开进度和曝光；颜色/原创角色修改单独记录。要求的是可见效果与输入反馈的忠实度，不声称录屏足以证明像素级或算法级一致。</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.18 · v4.0</span><span>参考原帧与首版实机分别标注；文档推演不代替游戏验收。</span></div></footer></body></html>

@@ -1,0 +1,24 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>本轮执行方案 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc" aria-label="本文目录"><p class="toc-title">本轮执行方案 / CONTENTS</p><a href="#section-0">制作决定</a><a href="#section-1">分工与顺序</a><a href="#section-2">验收</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 图文概览</a>　/　<a href="v4-execution-plan.md">Markdown源文件</a></div><h1>v4 · 全屏、实景序章与可玩支线</h1>
+<p>2026-11-18。用户明确要求在现有游戏继续开发、打磨脚本并主动摄取资源。本轮沿用独立Spring Letter项目，不再次设置方案确认关卡。</p>
+<h2 id="section-0">制作决定</h2>
+<p>考虑过仅加文字说明、扩大地图、或在既有空间加入实景序章与三条近旁支线。采用第三种：它能让角色、叙事与操作在同一场景相遇，也避免以长途行走代替内容密度。此实现选择由制作方根据本轮授权作出，不冒称用户逐项选定。</p>
+<ul>
+<li>增加常驻全屏按钮与扉页全屏体验入口。只响应用户动作，按真实fullscreenchange同步状态，失败保留窗口体验；Esc优先服从浏览器退出全屏。</li>
+<li>约48秒六段实景序章，允许下一段/跳过，近杯纹、同表面花尘、种荚醒来、守园人记录与当前目标相连。无自动全屏、无付费配音/视频服务。</li>
+<li>明确弥是新生送春者、游絮是独立新生命、岑是过去的记录。新生命不是死者的复活。</li>
+<li>支线rhythm：用左右杯与休止编六拍，留白接住新回答；light：扫光读三个刻痕；memory：比较旧花开/合两极，再自主定格中间态。三者均有世界奖励、存档与结局回信变化，永不增加种核或锁住主线结局。</li>
+<li>观花/入尘切换保留开度、采样身份与视角，使用连续场景雾化、实体/点云交接，消除换页式重置。主线Q仍可直接散聚。</li>
+<li>加入有限的远方方舟花冠、近旁支线小景和有层次的薄雾；继续研究作者案例与确切免费资产，付费资源不采用。电影感与像素一致性须由画面证据评价，不能由新增代码数量推定。</li>
+</ul>
+<h2 id="section-1">分工与顺序</h2>
+<ol>
+<li>剧本与自主研究并行，写script-v4.md / research-v4.md。原参考关键帧继续对照，资料中的指令不覆盖用户请求。</li>
+<li>root实现Fullscreen API、story-model.js纯规则/存档、opening与branch UI、输入路由及散聚连续性。新增规则先红后绿；不为CSS写镜像测试。</li>
+<li>cinematic.js独立负责原创世界小景、三类奖励和远方回应；不改逻辑状态，资源释放可重复。</li>
+<li>旧存档兼容；旧四幕和三结局回归。浏览器通过真实按钮/指针/键盘验证全屏进入退出、序章跳过与推进、三支线、保存重载、半开跨模式过渡、窄屏与错误路径。</li>
+<li>实际截图对照与独立审查，修复实质问题，更新正式构建、脚本档案、来源与证据，不以方案文档替代开发。</li>
+</ol>
+<h2 id="section-2">验收</h2>
+<p>全屏状态真实可退出；序章不推进谜题、不覆盖继续游戏；支线三种操作可完成且不被只读弹窗代替；旁支奖励不破坏两核唯一性；主线与旧存档仍通；花/点来回切换不开度归零、不乱换粒子、不跳镜头；触屏有等价控件；素材许可/出处/采用与未采用明确；声明实际画面与性能边界。</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.18 · v4.0</span><span>参考原帧与首版实机分别标注；文档推演不代替游戏验收。</span></div></footer></body></html>

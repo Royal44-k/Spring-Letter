@@ -1,0 +1,5165 @@
+{
+  "started": "2026-11-23T06:29:50.498Z",
+  "url": "http://127.0.0.1:5194/",
+  "passed": true,
+  "cases": [
+    {
+      "name": "desktop-fresh",
+      "view": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "touch": false
+      },
+      "passed": true,
+      "checks": [
+        "Visible flower shapes and palette buttons change real renderer selections",
+        "Dust and flower tabs remain visible and render both modes",
+        "A real burst drifts then slowly returns without a restore button",
+        "Home return and reload preserve the chosen flower and palette",
+        "Gallery → map → studio closes the overlay, resumes rendering and retains the original cover return",
+        "conservatory: global/map studio entry restores original position and progress",
+        "observatory: global/map studio entry restores original position and progress",
+        "meadow: global/map studio entry restores original position and progress",
+        "Gallery → map → old garden enters actual roaming without losing earned map progress"
+      ],
+      "screenshots": [
+        "desktop-fresh-home-studio.jpg",
+        "desktop-fresh-form-lily.jpg",
+        "desktop-fresh-form-lotus.jpg",
+        "desktop-fresh-form-iris.jpg",
+        "desktop-fresh-form-dahlia.jpg",
+        "desktop-fresh-series-silver.jpg",
+        "desktop-fresh-series-crystal.jpg",
+        "desktop-fresh-series-lily.jpg",
+        "desktop-fresh-series-amber.jpg",
+        "desktop-fresh-series-celadon.jpg",
+        "desktop-fresh-dust.jpg",
+        "desktop-fresh-flower-again.jpg",
+        "desktop-fresh-burst-drift.jpg",
+        "desktop-fresh-returning.jpg",
+        "desktop-fresh-naturally-restored.jpg",
+        "desktop-fresh-persisted-selection.jpg",
+        "desktop-fresh-nested-map-studio.jpg",
+        "desktop-fresh-conservatory-before.jpg",
+        "desktop-fresh-conservatory-studio.jpg",
+        "desktop-fresh-conservatory-return.jpg",
+        "desktop-fresh-observatory-before.jpg",
+        "desktop-fresh-observatory-studio.jpg",
+        "desktop-fresh-observatory-return.jpg",
+        "desktop-fresh-meadow-before.jpg",
+        "desktop-fresh-meadow-studio.jpg",
+        "desktop-fresh-meadow-return.jpg",
+        "desktop-fresh-gallery-map-real-garden.jpg"
+      ],
+      "samples": [
+        {
+          "name": "desktop-fresh-home-studio",
+          "frame": 77,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              117.77327473958333,
+              139.26025390625,
+              141.40071614583334
+            ],
+            "sd": [
+              37.41199563336435,
+              31.805077653086524,
+              40.100864522160045
+            ],
+            "pink": 0.0003255208333333333,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1071
+            ],
+            "dominantFraction": 0.17431640625,
+            "pixelHash": "35af2b45",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-form-lily",
+          "frame": 94,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              118.15999348958333,
+              138.88590494791666,
+              140.18701171875
+            ],
+            "sd": [
+              38.62067997348754,
+              32.74769647236548,
+              41.19521322949185
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1066
+            ],
+            "dominantFraction": 0.17350260416666666,
+            "pixelHash": "5167403c",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-form-lotus",
+          "frame": 111,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              117.47705078125,
+              138.32552083333334,
+              139.52197265625
+            ],
+            "sd": [
+              38.42460565428779,
+              32.63973106506184,
+              41.042163108430884
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1048
+            ],
+            "dominantFraction": 0.17057291666666666,
+            "pixelHash": "a2ed8689",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-form-iris",
+          "frame": 128,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              119.50309244791667,
+              139.50016276041666,
+              140.52506510416666
+            ],
+            "sd": [
+              39.48527040528444,
+              33.52385655480055,
+              41.836273564970575
+            ],
+            "pink": 0.00016276041666666666,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1046
+            ],
+            "dominantFraction": 0.17024739583333334,
+            "pixelHash": "13380ce9",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-form-dahlia",
+          "frame": 153,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              118.21419270833333,
+              137.93473307291666,
+              139.01334635416666
+            ],
+            "sd": [
+              38.92686059330196,
+              32.22330842904944,
+              40.78655159025868
+            ],
+            "pink": 0.00016276041666666666,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1030
+            ],
+            "dominantFraction": 0.16764322916666666,
+            "pixelHash": "b109e7f2",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-series-silver",
+          "frame": 171,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              120.07259114583333,
+              140.9658203125,
+              143.12581380208334
+            ],
+            "sd": [
+              37.703293626912945,
+              33.558316638400235,
+              41.67909660806345
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1027
+            ],
+            "dominantFraction": 0.16715494791666666,
+            "pixelHash": "b3664610",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-series-crystal",
+          "frame": 190,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              116.29931640625,
+              137.822265625,
+              140.75911458333334
+            ],
+            "sd": [
+              35.078619282729754,
+              31.59664488175305,
+              40.72222238644442
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1030
+            ],
+            "dominantFraction": 0.16764322916666666,
+            "pixelHash": "bd35d4ae",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-series-lily",
+          "frame": 219,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              117.77360026041667,
+              137.65250651041666,
+              138.89778645833334
+            ],
+            "sd": [
+              39.15951718454489,
+              32.3827238549243,
+              41.023712119184545
+            ],
+            "pink": 0.0006510416666666666,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1018
+            ],
+            "dominantFraction": 0.16569010416666666,
+            "pixelHash": "0228d253",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-series-amber",
+          "frame": 237,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              120.87613932291667,
+              137.57861328125,
+              134.84440104166666
+            ],
+            "sd": [
+              41.49239219851741,
+              31.41191395284883,
+              39.903605464523345
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1025
+            ],
+            "dominantFraction": 0.16682942708333334,
+            "pixelHash": "18192343",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-series-celadon",
+          "frame": 267,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              117.68212890625,
+              140.7177734375,
+              141.42545572916666
+            ],
+            "sd": [
+              36.68277536867962,
+              34.81047228895235,
+              41.30297627776585
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1030
+            ],
+            "dominantFraction": 0.16764322916666666,
+            "pixelHash": "cd104bfc",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-dust",
+          "frame": 374,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              7.740397135416667,
+              11.411295572916666,
+              15.767740885416666
+            ],
+            "sd": [
+              21.579269345074763,
+              34.27860455857194,
+              31.053778658722724
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "0,0,0",
+              5308
+            ],
+            "dominantFraction": 0.8639322916666666,
+            "pixelHash": "1ae84fe0",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus night ink-scene",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "false"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "true"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-flower-again",
+          "frame": 492,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              117.95768229166667,
+              138.63948567708334,
+              140.59423828125
+            ],
+            "sd": [
+              32.86413347568125,
+              25.679358188534486,
+              32.23011296359892
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              737
+            ],
+            "dominantFraction": 0.11995442708333333,
+            "pixelHash": "482ea0bf",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-burst-drift",
+          "frame": 557,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              49.8837890625,
+              56.43798828125,
+              71.04361979166667
+            ],
+            "sd": [
+              29.370630840271467,
+              21.968277220253395,
+              26.12108819240578
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "2,3,5",
+              990
+            ],
+            "dominantFraction": 0.1611328125,
+            "pixelHash": "4c04719c",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus ink-scene",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-returning",
+          "frame": 976,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              43.21533203125,
+              49.707194010416664,
+              66.07242838541667
+            ],
+            "sd": [
+              26.964905685478193,
+              20.057486726084296,
+              24.814070221386547
+            ],
+            "pink": 0.00016276041666666666,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "2,3,5",
+              1138
+            ],
+            "dominantFraction": 0.18522135416666666,
+            "pixelHash": "e3a8ba0a",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus ink-scene",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-naturally-restored",
+          "frame": 1272,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              120.876953125,
+              137.83675130208334,
+              135.18505859375
+            ],
+            "sd": [
+              41.28149243037433,
+              30.996774187306595,
+              39.43056303800342
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1041
+            ],
+            "dominantFraction": 0.16943359375,
+            "pixelHash": "b63ae665",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-persisted-selection",
+          "frame": 75,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              116.330078125,
+              140.29752604166666,
+              142.05436197916666
+            ],
+            "sd": [
+              35.77800795347466,
+              33.840754047516924,
+              40.423417827265965
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1026
+            ],
+            "dominantFraction": 0.1669921875,
+            "pixelHash": "d1dd7b67",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-nested-map-studio",
+          "frame": 117,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              105.38818359375,
+              132.515625,
+              142.83577473958334
+            ],
+            "sd": [
+              13.668896593012159,
+              11.091288606050567,
+              9.649735672722977
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "6,8,9",
+              2322
+            ],
+            "dominantFraction": 0.3779296875,
+            "pixelHash": "d506c09f",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-conservatory-before",
+          "frame": 212,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              94.57080078125,
+              115.73518880208333,
+              85.58479817708333
+            ],
+            "sd": [
+              33.44176667107628,
+              30.339652122509186,
+              31.34441939129673
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "4,6,4",
+              1164
+            ],
+            "dominantFraction": 0.189453125,
+            "pixelHash": "f6b23b54",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play chapter-notice atlas-active focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": false,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": false,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": false,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-conservatory-studio",
+          "frame": 236,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              107.02197265625,
+              129.92350260416666,
+              129.97721354166666
+            ],
+            "sd": [
+              37.4250640901294,
+              31.028485857462766,
+              36.818478950598355
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              701
+            ],
+            "dominantFraction": 0.11409505208333333,
+            "pixelHash": "5b027c34",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play chapter-notice gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-conservatory-return",
+          "frame": 305,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              94.34212239583333,
+              115.5224609375,
+              85.42789713541667
+            ],
+            "sd": [
+              33.66964019730934,
+              30.47042436743024,
+              31.34673584365553
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "4,6,4",
+              1182
+            ],
+            "dominantFraction": 0.1923828125,
+            "pixelHash": "89bd4878",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play chapter-notice ink-scene atlas-active focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": false,
+                "pressed": "false"
+              },
+              {
+                "kind": "dust",
+                "visible": false,
+                "pressed": "true"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": false,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-observatory-before",
+          "frame": 421,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              40.456380208333336,
+              54.166829427083336,
+              83.64860026041667
+            ],
+            "sd": [
+              32.70768056813427,
+              33.68138762535389,
+              35.11446667009345
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "2,3,5",
+              2599
+            ],
+            "dominantFraction": 0.4230143229166667,
+            "pixelHash": "3d7999bf",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "chapter-notice play atlas-active focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": false,
+                "pressed": "false"
+              },
+              {
+                "kind": "dust",
+                "visible": false,
+                "pressed": "true"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": false,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-observatory-studio",
+          "frame": 439,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              93.38118489583333,
+              121.72916666666667,
+              125.85774739583333
+            ],
+            "sd": [
+              40.07630105696536,
+              32.02913441523025,
+              34.696127097282435
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "6,8,9",
+              594
+            ],
+            "dominantFraction": 0.0966796875,
+            "pixelHash": "5868a7c3",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "chapter-notice play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-observatory-return",
+          "frame": 514,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              41.534505208333336,
+              55.3427734375,
+              84.85546875
+            ],
+            "sd": [
+              33.240043653685696,
+              34.08995004206584,
+              35.37747906197209
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "2,3,5",
+              2627
+            ],
+            "dominantFraction": 0.4275716145833333,
+            "pixelHash": "d3867ad9",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "chapter-notice play ink-scene atlas-active focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": false,
+                "pressed": "false"
+              },
+              {
+                "kind": "dust",
+                "visible": false,
+                "pressed": "true"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": false,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-meadow-before",
+          "frame": 618,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              163.2421875,
+              173.37239583333334,
+              156.50520833333334
+            ],
+            "sd": [
+              36.884377393900465,
+              31.49566965092155,
+              40.33766541979213
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "11,12,13",
+              1024
+            ],
+            "dominantFraction": 0.16666666666666666,
+            "pixelHash": "8f09458d",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "chapter-notice play atlas-active focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": false,
+                "pressed": "false"
+              },
+              {
+                "kind": "dust",
+                "visible": false,
+                "pressed": "true"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": false,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-meadow-studio",
+          "frame": 643,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              101.9736328125,
+              124.51920572916667,
+              126.04866536458333
+            ],
+            "sd": [
+              36.214992364474185,
+              31.273813150181518,
+              36.0049965089482
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "6,8,9",
+              605
+            ],
+            "dominantFraction": 0.09847005208333333,
+            "pixelHash": "fea0eb80",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "chapter-notice play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-meadow-return",
+          "frame": 717,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              162.69840494791666,
+              172.45458984375,
+              154.93766276041666
+            ],
+            "sd": [
+              37.428247640173424,
+              31.81962952855324,
+              39.92827049399311
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "9,10,8",
+              970
+            ],
+            "dominantFraction": 0.15787760416666666,
+            "pixelHash": "05cbbf84",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "chapter-notice play ink-scene atlas-active focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": false,
+                "pressed": "false"
+              },
+              {
+                "kind": "dust",
+                "visible": false,
+                "pressed": "true"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": false,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-fresh-gallery-map-real-garden",
+          "frame": 800,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              86.15494791666667,
+              112.33577473958333,
+              110.98697916666667
+            ],
+            "sd": [
+              42.43872438093091,
+              30.78566565386141,
+              31.090732051857486
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "2,5,6",
+              870
+            ],
+            "dominantFraction": 0.1416015625,
+            "pixelHash": "048601c4",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "chapter-notice play letter-led",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": false,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": false,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": false,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        }
+      ],
+      "controls": [
+        {
+          "selector": "#gallery",
+          "rect": {
+            "x": 273.15625,
+            "y": 585.46875,
+            "width": 123.390625,
+            "height": 55
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"lily\"]",
+          "rect": {
+            "x": 1111.171875,
+            "y": 288,
+            "width": 59.75,
+            "height": 59
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"lotus\"]",
+          "rect": {
+            "x": 1175.921875,
+            "y": 288,
+            "width": 59.75,
+            "height": 59
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"iris\"]",
+          "rect": {
+            "x": 1240.671875,
+            "y": 288,
+            "width": 59.75,
+            "height": 59
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"dahlia\"]",
+          "rect": {
+            "x": 1305.421875,
+            "y": 288,
+            "width": 59.75,
+            "height": 59
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"silver\"]",
+          "rect": {
+            "x": 1111.171875,
+            "y": 354,
+            "width": 48.390625,
+            "height": 53
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"crystal\"]",
+          "rect": {
+            "x": 1162.5625,
+            "y": 354,
+            "width": 48.40625,
+            "height": 53
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"lily\"]",
+          "rect": {
+            "x": 1213.96875,
+            "y": 354,
+            "width": 48.390625,
+            "height": 53
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"amber\"]",
+          "rect": {
+            "x": 1265.359375,
+            "y": 354,
+            "width": 48.40625,
+            "height": 53
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"celadon\"]",
+          "rect": {
+            "x": 1316.765625,
+            "y": 354,
+            "width": 48.40625,
+            "height": 53
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"dust\"]",
+          "rect": {
+            "x": 1240.171875,
+            "y": 212,
+            "width": 120,
+            "height": 38
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"amber\"]",
+          "rect": {
+            "x": 1265.359375,
+            "y": 354,
+            "width": 48.40625,
+            "height": 53
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"flower\"]",
+          "rect": {
+            "x": 1116.171875,
+            "y": 212,
+            "width": 120,
+            "height": 38
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "#flower-burst",
+          "rect": {
+            "x": 1257.84375,
+            "y": 426,
+            "width": 107.328125,
+            "height": 35.5
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"dahlia\"]",
+          "rect": {
+            "x": 1305.421875,
+            "y": 288,
+            "width": 59.75,
+            "height": 59
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"celadon\"]",
+          "rect": {
+            "x": 1316.765625,
+            "y": 354,
+            "width": 48.40625,
+            "height": 53
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery-back",
+          "rect": {
+            "x": 1111.171875,
+            "y": 763.5,
+            "width": 254,
+            "height": 40
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 1
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery",
+          "rect": {
+            "x": 273.15625,
+            "y": 585.46875,
+            "width": 123.390625,
+            "height": 55
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"dust\"]",
+          "rect": {
+            "x": 1240.171875,
+            "y": 212,
+            "width": 120,
+            "height": 38
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#map",
+          "rect": {
+            "x": 1244.171875,
+            "y": 31.5,
+            "width": 36,
+            "height": 44
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "#map-flower-studio",
+          "rect": {
+            "x": 1029.4375,
+            "y": 460.875,
+            "width": 109.5625,
+            "height": 42
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "modal",
+              "top": 90,
+              "bottom": 810,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery-back",
+          "rect": {
+            "x": 1111.171875,
+            "y": 763.5,
+            "width": 254,
+            "height": 40
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 1
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#cover-atlas",
+          "rect": {
+            "x": 129.59375,
+            "y": 652.46875,
+            "width": 176.421875,
+            "height": 35
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-atlas-location=\"conservatory\"]",
+          "rect": {
+            "x": 294,
+            "y": 575.265625,
+            "width": 252,
+            "height": 41
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "modal",
+              "top": 90,
+              "bottom": 810,
+              "scrollTop": 286
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#atlas-map",
+          "rect": {
+            "x": 1138.609375,
+            "y": 80,
+            "width": 82.65625,
+            "height": 35
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "#map-flower-studio",
+          "rect": {
+            "x": 1029.4375,
+            "y": 460.875,
+            "width": 109.5625,
+            "height": 42
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "modal",
+              "top": 90,
+              "bottom": 810,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"dust\"]",
+          "rect": {
+            "x": 1240.171875,
+            "y": 212,
+            "width": 120,
+            "height": 38
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery-back",
+          "rect": {
+            "x": 1111.171875,
+            "y": 717.5,
+            "width": 254,
+            "height": 40
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "#home",
+          "rect": {
+            "x": 51.828125,
+            "y": 30,
+            "width": 104.40625,
+            "height": 47
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "#cover-atlas",
+          "rect": {
+            "x": 129.59375,
+            "y": 716.46875,
+            "width": 176.421875,
+            "height": 35
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-atlas-location=\"observatory\"]",
+          "rect": {
+            "x": 594,
+            "y": 575.265625,
+            "width": 252,
+            "height": 41
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "modal",
+              "top": 90,
+              "bottom": 810,
+              "scrollTop": 286
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#flower-studio",
+          "rect": {
+            "x": 1172.171875,
+            "y": 31.5,
+            "width": 48,
+            "height": 44
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"dust\"]",
+          "rect": {
+            "x": 1240.171875,
+            "y": 212,
+            "width": 120,
+            "height": 38
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery-back",
+          "rect": {
+            "x": 1111.171875,
+            "y": 717.5,
+            "width": 254,
+            "height": 40
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "#home",
+          "rect": {
+            "x": 51.828125,
+            "y": 30,
+            "width": 104.40625,
+            "height": 47
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "#cover-atlas",
+          "rect": {
+            "x": 129.59375,
+            "y": 716.46875,
+            "width": 176.421875,
+            "height": 35
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-atlas-location=\"meadow\"]",
+          "rect": {
+            "x": 894,
+            "y": 575.265625,
+            "width": 252,
+            "height": 41
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "modal",
+              "top": 90,
+              "bottom": 810,
+              "scrollTop": 286
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#flower-studio",
+          "rect": {
+            "x": 1172.171875,
+            "y": 31.5,
+            "width": 48,
+            "height": 44
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"dust\"]",
+          "rect": {
+            "x": 1240.171875,
+            "y": 212,
+            "width": 120,
+            "height": 38
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery-back",
+          "rect": {
+            "x": 1111.171875,
+            "y": 717.5,
+            "width": 254,
+            "height": 40
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "#home",
+          "rect": {
+            "x": 51.828125,
+            "y": 30,
+            "width": 104.40625,
+            "height": 47
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery",
+          "rect": {
+            "x": 377.15625,
+            "y": 585.46875,
+            "width": 123.390625,
+            "height": 55
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "#map",
+          "rect": {
+            "x": 1244.171875,
+            "y": 31.5,
+            "width": 36,
+            "height": 44
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "#map-garden",
+          "rect": {
+            "x": 278,
+            "y": 650.265625,
+            "width": 92,
+            "height": 23
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "modal",
+              "top": 90,
+              "bottom": 810,
+              "scrollTop": 286
+            }
+          ],
+          "inScrollport": true
+        }
+      ],
+      "errors": [],
+      "console": [
+        {
+          "type": "warning",
+          "text": "THREE.WebGLProgram: Program Info Log: (210,91-147): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,41-69): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,92-120): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,41-69): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,92-120): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+        }
+      ],
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "consoleReview": {
+        "benign": [
+          {
+            "type": "warning",
+            "text": "THREE.WebGLProgram: Program Info Log: (210,91-147): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,41-69): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,92-120): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,41-69): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,92-120): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+          }
+        ],
+        "blocking": []
+      },
+      "storage": {
+        "file": "desktop-fresh-earned-storage.json",
+        "sha256": "21decfd68a4c058180dd0328447ea3574e4426d72d19ef0d762edd6dcfe5ab99"
+      }
+    },
+    {
+      "name": "portrait-touch-fresh",
+      "view": {
+        "name": "portrait-touch",
+        "width": 390,
+        "height": 844,
+        "touch": true
+      },
+      "passed": true,
+      "checks": [
+        "Visible flower shapes and palette buttons change real renderer selections",
+        "Dust and flower tabs remain visible and render both modes",
+        "Home return and reload preserve the chosen flower and palette",
+        "Gallery → map → studio closes the overlay, resumes rendering and retains the original cover return",
+        "Touch studio entry, scrollable controls and return to the map are reachable"
+      ],
+      "screenshots": [
+        "portrait-touch-fresh-home-studio.jpg",
+        "portrait-touch-fresh-form-lotus.jpg",
+        "portrait-touch-fresh-form-iris.jpg",
+        "portrait-touch-fresh-series-amber.jpg",
+        "portrait-touch-fresh-series-celadon.jpg",
+        "portrait-touch-fresh-dust.jpg",
+        "portrait-touch-fresh-flower-again.jpg",
+        "portrait-touch-fresh-persisted-selection.jpg",
+        "portrait-touch-fresh-nested-map-studio.jpg",
+        "portrait-touch-fresh-touch-controls-reachable.jpg"
+      ],
+      "samples": [
+        {
+          "name": "portrait-touch-fresh-home-studio",
+          "frame": 75,
+          "pixels": {
+            "canvas": true,
+            "width": 390,
+            "height": 844,
+            "samplePixels": 6144,
+            "mean": [
+              107.52815755208333,
+              136.45279947916666,
+              143.7451171875
+            ],
+            "sd": [
+              40.98549017724357,
+              32.37624251519168,
+              36.449426412408194
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              722
+            ],
+            "dominantFraction": 0.11751302083333333,
+            "pixelHash": "90f3b01c",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 390,
+            "viewport": 390
+          }
+        },
+        {
+          "name": "portrait-touch-fresh-form-lotus",
+          "frame": 93,
+          "pixels": {
+            "canvas": true,
+            "width": 390,
+            "height": 844,
+            "samplePixels": 6144,
+            "mean": [
+              101.37451171875,
+              131.75130208333334,
+              139.3828125
+            ],
+            "sd": [
+              39.43656159849769,
+              30.00202355801039,
+              33.81629682789563
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "3,6,7",
+              840
+            ],
+            "dominantFraction": 0.13671875,
+            "pixelHash": "009c33e4",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 390,
+            "viewport": 390
+          }
+        },
+        {
+          "name": "portrait-touch-fresh-form-iris",
+          "frame": 109,
+          "pixels": {
+            "canvas": true,
+            "width": 390,
+            "height": 844,
+            "samplePixels": 6144,
+            "mean": [
+              102.23746744791667,
+              131.8740234375,
+              138.98014322916666
+            ],
+            "sd": [
+              43.99547305775633,
+              33.9917807882391,
+              37.34281200328681
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "3,6,7",
+              883
+            ],
+            "dominantFraction": 0.14371744791666666,
+            "pixelHash": "3a31c6fe",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 390,
+            "viewport": 390
+          }
+        },
+        {
+          "name": "portrait-touch-fresh-series-amber",
+          "frame": 127,
+          "pixels": {
+            "canvas": true,
+            "width": 390,
+            "height": 844,
+            "samplePixels": 6144,
+            "mean": [
+              103.740234375,
+              131.17789713541666,
+              135.46809895833334
+            ],
+            "sd": [
+              44.493740441625434,
+              31.833031394535233,
+              34.958475524103925
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "3,6,7",
+              875
+            ],
+            "dominantFraction": 0.14241536458333334,
+            "pixelHash": "de00e99c",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 390,
+            "viewport": 390
+          }
+        },
+        {
+          "name": "portrait-touch-fresh-series-celadon",
+          "frame": 143,
+          "pixels": {
+            "canvas": true,
+            "width": 390,
+            "height": 844,
+            "samplePixels": 6144,
+            "mean": [
+              100.466796875,
+              133.48714192708334,
+              140.19222005208334
+            ],
+            "sd": [
+              40.52944536782269,
+              34.319208949204025,
+              35.97019343532214
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "3,6,7",
+              893
+            ],
+            "dominantFraction": 0.14534505208333334,
+            "pixelHash": "1ed503ff",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 390,
+            "viewport": 390
+          }
+        },
+        {
+          "name": "portrait-touch-fresh-dust",
+          "frame": 243,
+          "pixels": {
+            "canvas": true,
+            "width": 390,
+            "height": 844,
+            "samplePixels": 6144,
+            "mean": [
+              5.168782552083333,
+              7.391438802083333,
+              11.76318359375
+            ],
+            "sd": [
+              16.133163573124634,
+              26.520363606490644,
+              23.947039113691016
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "0,0,0",
+              5747
+            ],
+            "dominantFraction": 0.9353841145833334,
+            "pixelHash": "128aa57e",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus night ink-scene",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "false"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "true"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 390,
+            "viewport": 390
+          }
+        },
+        {
+          "name": "portrait-touch-fresh-flower-again",
+          "frame": 357,
+          "pixels": {
+            "canvas": true,
+            "width": 390,
+            "height": 844,
+            "samplePixels": 6144,
+            "mean": [
+              101.3828125,
+              131.36848958333334,
+              139.31005859375
+            ],
+            "sd": [
+              38.68129751580872,
+              26.84058400635077,
+              26.86561227262509
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "3,6,7",
+              866
+            ],
+            "dominantFraction": 0.14095052083333334,
+            "pixelHash": "851af404",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 390,
+            "viewport": 390
+          }
+        },
+        {
+          "name": "portrait-touch-fresh-persisted-selection",
+          "frame": 71,
+          "pixels": {
+            "canvas": true,
+            "width": 390,
+            "height": 844,
+            "samplePixels": 6144,
+            "mean": [
+              105.36702473958333,
+              136.76725260416666,
+              142.88850911458334
+            ],
+            "sd": [
+              39.291224865538176,
+              34.34556782425598,
+              37.31265840615689
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              730
+            ],
+            "dominantFraction": 0.11881510416666667,
+            "pixelHash": "208ca6c5",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 390,
+            "viewport": 390
+          }
+        },
+        {
+          "name": "portrait-touch-fresh-nested-map-studio",
+          "frame": 104,
+          "pixels": {
+            "canvas": true,
+            "width": 390,
+            "height": 844,
+            "samplePixels": 6144,
+            "mean": [
+              89.69612630208333,
+              120.36409505208333,
+              132.81787109375
+            ],
+            "sd": [
+              17.200353469438678,
+              14.614059071779685,
+              14.341804957050918
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "6,8,9",
+              1400
+            ],
+            "dominantFraction": 0.22786458333333334,
+            "pixelHash": "c632218c",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 390,
+            "viewport": 390
+          }
+        },
+        {
+          "name": "portrait-touch-fresh-touch-controls-reachable",
+          "frame": 196,
+          "pixels": {
+            "canvas": true,
+            "width": 390,
+            "height": 844,
+            "samplePixels": 6144,
+            "mean": [
+              98.51774088541667,
+              131.30045572916666,
+              137.43961588541666
+            ],
+            "sd": [
+              40.40396613615817,
+              35.214145289047494,
+              36.953644943253465
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "3,6,7",
+              934
+            ],
+            "dominantFraction": 0.15201822916666666,
+            "pixelHash": "a89b90e7",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play chapter-notice gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 390,
+            "viewport": 390
+          }
+        }
+      ],
+      "controls": [
+        {
+          "selector": "#gallery",
+          "rect": {
+            "x": 151.453125,
+            "y": 456.03125,
+            "width": 123.390625,
+            "height": 54
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"lotus\"]",
+          "rect": {
+            "x": 114.25,
+            "y": 501.453125,
+            "width": 78.25,
+            "height": 59
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"iris\"]",
+          "rect": {
+            "x": 197.5,
+            "y": 501.453125,
+            "width": 78.25,
+            "height": 59
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"amber\"]",
+          "rect": {
+            "x": 229.59375,
+            "y": 567.453125,
+            "width": 63.203125,
+            "height": 53
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"celadon\"]",
+          "rect": {
+            "x": 295.796875,
+            "y": 567.453125,
+            "width": 63.203125,
+            "height": 53
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"dust\"]",
+          "rect": {
+            "x": 197,
+            "y": 433.453125,
+            "width": 157,
+            "height": 34
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"amber\"]",
+          "rect": {
+            "x": 229.59375,
+            "y": 567.453125,
+            "width": 63.203125,
+            "height": 53
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"flower\"]",
+          "rect": {
+            "x": 36,
+            "y": 433.453125,
+            "width": 157,
+            "height": 34
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"dahlia\"]",
+          "rect": {
+            "x": 280.75,
+            "y": 501.453125,
+            "width": 78.25,
+            "height": 59
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"celadon\"]",
+          "rect": {
+            "x": 295.796875,
+            "y": 567.453125,
+            "width": 63.203125,
+            "height": 53
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery-back",
+          "rect": {
+            "x": 31,
+            "y": 726.640625,
+            "width": 328,
+            "height": 40
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 216
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery",
+          "rect": {
+            "x": 151.453125,
+            "y": 456.03125,
+            "width": 123.390625,
+            "height": 54
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"dust\"]",
+          "rect": {
+            "x": 197,
+            "y": 433.453125,
+            "width": 157,
+            "height": 34
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#map",
+          "rect": {
+            "x": 303,
+            "y": 16,
+            "width": 32,
+            "height": 30
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "#map-flower-studio",
+          "rect": {
+            "x": 54.703125,
+            "y": 472.171875,
+            "width": 280.59375,
+            "height": 42
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "modal",
+              "top": 84.40625,
+              "bottom": 759.59375,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery-back",
+          "rect": {
+            "x": 31,
+            "y": 726.640625,
+            "width": 328,
+            "height": 40
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 216
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#cover-atlas",
+          "rect": {
+            "x": 31.1875,
+            "y": 522.03125,
+            "width": 176.421875,
+            "height": 35
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-atlas-location=\"conservatory\"]",
+          "rect": {
+            "x": 253.734375,
+            "y": 702.765625,
+            "width": 83.5625,
+            "height": 36
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "modal",
+              "top": 84.40625,
+              "bottom": 759.59375,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#flower-studio",
+          "rect": {
+            "x": 215,
+            "y": 16,
+            "width": 42,
+            "height": 30
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"flower\"]",
+          "rect": {
+            "x": 36,
+            "y": 433.453125,
+            "width": 157,
+            "height": 34
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"dust\"]",
+          "rect": {
+            "x": 197,
+            "y": 433.453125,
+            "width": 157,
+            "height": 34
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"lily\"]",
+          "rect": {
+            "x": 31,
+            "y": 501.453125,
+            "width": 78.25,
+            "height": 59
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"dahlia\"]",
+          "rect": {
+            "x": 280.75,
+            "y": 501.453125,
+            "width": 78.25,
+            "height": 59
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"silver\"]",
+          "rect": {
+            "x": 31,
+            "y": 567.453125,
+            "width": 63.1875,
+            "height": 53
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"celadon\"]",
+          "rect": {
+            "x": 295.796875,
+            "y": 567.453125,
+            "width": 63.203125,
+            "height": 53
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#flower-burst",
+          "rect": {
+            "x": 251.671875,
+            "y": 639.453125,
+            "width": 107.328125,
+            "height": 35.5
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery-back",
+          "rect": {
+            "x": 31,
+            "y": 726.640625,
+            "width": 328,
+            "height": 40
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 216
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery-back",
+          "rect": {
+            "x": 31,
+            "y": 726.640625,
+            "width": 328,
+            "height": 40
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 365.453125,
+              "bottom": 779,
+              "scrollTop": 216
+            }
+          ],
+          "inScrollport": true
+        }
+      ],
+      "errors": [],
+      "console": [],
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "consoleReview": {
+        "benign": [],
+        "blocking": []
+      },
+      "storage": {
+        "file": "portrait-touch-fresh-earned-storage.json",
+        "sha256": "b71f9c13481806add85bffada52856244e15d80d3de7a01776707d0e6d65b811"
+      }
+    },
+    {
+      "name": "landscape-touch-fresh",
+      "view": {
+        "name": "landscape-touch",
+        "width": 844,
+        "height": 390,
+        "touch": true
+      },
+      "passed": true,
+      "checks": [
+        "Visible flower shapes and palette buttons change real renderer selections",
+        "Dust and flower tabs remain visible and render both modes",
+        "Home return and reload preserve the chosen flower and palette",
+        "Gallery → map → studio closes the overlay, resumes rendering and retains the original cover return",
+        "Touch studio entry, scrollable controls and return to the map are reachable"
+      ],
+      "screenshots": [
+        "landscape-touch-fresh-home-studio.jpg",
+        "landscape-touch-fresh-form-lotus.jpg",
+        "landscape-touch-fresh-form-iris.jpg",
+        "landscape-touch-fresh-series-amber.jpg",
+        "landscape-touch-fresh-series-celadon.jpg",
+        "landscape-touch-fresh-dust.jpg",
+        "landscape-touch-fresh-flower-again.jpg",
+        "landscape-touch-fresh-persisted-selection.jpg",
+        "landscape-touch-fresh-nested-map-studio.jpg",
+        "landscape-touch-fresh-touch-controls-reachable.jpg"
+      ],
+      "samples": [
+        {
+          "name": "landscape-touch-fresh-home-studio",
+          "frame": 78,
+          "pixels": {
+            "canvas": true,
+            "width": 844,
+            "height": 390,
+            "samplePixels": 6144,
+            "mean": [
+              112.01383463541667,
+              137.21077473958334,
+              141.41080729166666
+            ],
+            "sd": [
+              35.04180405257573,
+              29.217262792789114,
+              36.64686030455563
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1132
+            ],
+            "dominantFraction": 0.18424479166666666,
+            "pixelHash": "331a305f",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 844,
+            "viewport": 844
+          }
+        },
+        {
+          "name": "landscape-touch-fresh-form-lotus",
+          "frame": 97,
+          "pixels": {
+            "canvas": true,
+            "width": 844,
+            "height": 390,
+            "samplePixels": 6144,
+            "mean": [
+              111.42513020833333,
+              136.84326171875,
+              141.142578125
+            ],
+            "sd": [
+              34.30494177128075,
+              28.393017123800718,
+              35.74510342514208
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1105
+            ],
+            "dominantFraction": 0.17985026041666666,
+            "pixelHash": "3bedf930",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 844,
+            "viewport": 844
+          }
+        },
+        {
+          "name": "landscape-touch-fresh-form-iris",
+          "frame": 112,
+          "pixels": {
+            "canvas": true,
+            "width": 844,
+            "height": 390,
+            "samplePixels": 6144,
+            "mean": [
+              112.1865234375,
+              137.57633463541666,
+              142.3369140625
+            ],
+            "sd": [
+              35.04328667203031,
+              29.258106846694755,
+              36.23330836051025
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1096
+            ],
+            "dominantFraction": 0.17838541666666666,
+            "pixelHash": "b3698b6c",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 844,
+            "viewport": 844
+          }
+        },
+        {
+          "name": "landscape-touch-fresh-series-amber",
+          "frame": 133,
+          "pixels": {
+            "canvas": true,
+            "width": 844,
+            "height": 390,
+            "samplePixels": 6144,
+            "mean": [
+              112.18863932291667,
+              136.564453125,
+              139.77555338541666
+            ],
+            "sd": [
+              35.309974944347275,
+              28.518527182687357,
+              35.97245919216239
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1092
+            ],
+            "dominantFraction": 0.177734375,
+            "pixelHash": "9ed52497",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 844,
+            "viewport": 844
+          }
+        },
+        {
+          "name": "landscape-touch-fresh-series-celadon",
+          "frame": 156,
+          "pixels": {
+            "canvas": true,
+            "width": 844,
+            "height": 390,
+            "samplePixels": 6144,
+            "mean": [
+              110.69775390625,
+              138.02718098958334,
+              142.59749348958334
+            ],
+            "sd": [
+              33.6560172176546,
+              29.756642238121444,
+              36.04600829175801
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1093
+            ],
+            "dominantFraction": 0.17789713541666666,
+            "pixelHash": "582c455e",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 844,
+            "viewport": 844
+          }
+        },
+        {
+          "name": "landscape-touch-fresh-dust",
+          "frame": 258,
+          "pixels": {
+            "canvas": true,
+            "width": 844,
+            "height": 390,
+            "samplePixels": 6144,
+            "mean": [
+              4.827962239583333,
+              6.288248697916667,
+              11.667154947916666
+            ],
+            "sd": [
+              13.117440507084737,
+              20.920439689517348,
+              19.01522626888043
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "0,0,0",
+              5484
+            ],
+            "dominantFraction": 0.892578125,
+            "pixelHash": "26b339da",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus night ink-scene",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "false"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "true"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 844,
+            "viewport": 844
+          }
+        },
+        {
+          "name": "landscape-touch-fresh-flower-again",
+          "frame": 371,
+          "pixels": {
+            "canvas": true,
+            "width": 844,
+            "height": 390,
+            "samplePixels": 6144,
+            "mean": [
+              111.69059244791667,
+              138.35123697916666,
+              144.69156901041666
+            ],
+            "sd": [
+              28.738247190845343,
+              23.779853874504823,
+              29.196684302004506
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              763
+            ],
+            "dominantFraction": 0.12418619791666667,
+            "pixelHash": "9e57ef29",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 844,
+            "viewport": 844
+          }
+        },
+        {
+          "name": "landscape-touch-fresh-persisted-selection",
+          "frame": 82,
+          "pixels": {
+            "canvas": true,
+            "width": 844,
+            "height": 390,
+            "samplePixels": 6144,
+            "mean": [
+              111.64274088541667,
+              137.98746744791666,
+              141.59130859375
+            ],
+            "sd": [
+              33.89096433536963,
+              30.3378599753354,
+              37.1304069257243
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1082
+            ],
+            "dominantFraction": 0.17610677083333334,
+            "pixelHash": "1a44f0e0",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 844,
+            "viewport": 844
+          }
+        },
+        {
+          "name": "landscape-touch-fresh-nested-map-studio",
+          "frame": 123,
+          "pixels": {
+            "canvas": true,
+            "width": 844,
+            "height": 390,
+            "samplePixels": 6144,
+            "mean": [
+              105.33040364583333,
+              133.13020833333334,
+              144.22249348958334
+            ],
+            "sd": [
+              11.642944264195187,
+              8.942905501611982,
+              9.078441899586663
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "6,8,9",
+              1968
+            ],
+            "dominantFraction": 0.3203125,
+            "pixelHash": "2c456002",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 844,
+            "viewport": 844
+          }
+        },
+        {
+          "name": "landscape-touch-fresh-touch-controls-reachable",
+          "frame": 234,
+          "pixels": {
+            "canvas": true,
+            "width": 844,
+            "height": 390,
+            "samplePixels": 6144,
+            "mean": [
+              109.63623046875,
+              137.35693359375,
+              141.94905598958334
+            ],
+            "sd": [
+              34.46746081918255,
+              30.43941495042628,
+              36.22472415885153
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              1064
+            ],
+            "dominantFraction": 0.17317708333333334,
+            "pixelHash": "4c3146f0",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play chapter-notice gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 844,
+            "viewport": 844
+          }
+        }
+      ],
+      "controls": [
+        {
+          "selector": "#gallery",
+          "rect": {
+            "x": 219.515625,
+            "y": 334.765625,
+            "width": 123.390625,
+            "height": 55
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"lotus\"]",
+          "rect": {
+            "x": 617.25,
+            "y": 192,
+            "width": 61.25,
+            "height": 36
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"iris\"]",
+          "rect": {
+            "x": 683.5,
+            "y": 192,
+            "width": 61.25,
+            "height": 36
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"amber\"]",
+          "rect": {
+            "x": 708.796875,
+            "y": 235,
+            "width": 49.609375,
+            "height": 49
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"celadon\"]",
+          "rect": {
+            "x": 761.40625,
+            "y": 235,
+            "width": 49.59375,
+            "height": 49
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"dust\"]",
+          "rect": {
+            "x": 683,
+            "y": 129,
+            "width": 123,
+            "height": 31
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"amber\"]",
+          "rect": {
+            "x": 708.796875,
+            "y": 235,
+            "width": 49.609375,
+            "height": 49
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"flower\"]",
+          "rect": {
+            "x": 556,
+            "y": 129,
+            "width": 123,
+            "height": 31
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"dahlia\"]",
+          "rect": {
+            "x": 749.75,
+            "y": 192,
+            "width": 61.25,
+            "height": 36
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"celadon\"]",
+          "rect": {
+            "x": 761.40625,
+            "y": 235,
+            "width": 49.59375,
+            "height": 49
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery-back",
+          "rect": {
+            "x": 551,
+            "y": 280.5,
+            "width": 260,
+            "height": 40
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 361
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery",
+          "rect": {
+            "x": 219.515625,
+            "y": 334.765625,
+            "width": 123.390625,
+            "height": 55
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"dust\"]",
+          "rect": {
+            "x": 683,
+            "y": 129,
+            "width": 123,
+            "height": 31
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#map",
+          "rect": {
+            "x": 718,
+            "y": 7,
+            "width": 30,
+            "height": 44
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "#map-flower-studio",
+          "rect": {
+            "x": 643.109375,
+            "y": 173.671875,
+            "width": 109.5625,
+            "height": 42
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "modal",
+              "top": 39,
+              "bottom": 351,
+              "scrollTop": 225
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery-back",
+          "rect": {
+            "x": 551,
+            "y": 280.5,
+            "width": 260,
+            "height": 40
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 361
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#cover-atlas",
+          "rect": {
+            "x": 75.953125,
+            "y": 312.765625,
+            "width": 176.421875,
+            "height": 35
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-atlas-location=\"conservatory\"]",
+          "rect": {
+            "x": 84.3125,
+            "y": 174.0625,
+            "width": 193.109375,
+            "height": 41
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "modal",
+              "top": 39,
+              "bottom": 351,
+              "scrollTop": 625
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#flower-studio",
+          "rect": {
+            "x": 664,
+            "y": 7,
+            "width": 40,
+            "height": 44
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"flower\"]",
+          "rect": {
+            "x": 556,
+            "y": 129,
+            "width": 123,
+            "height": 31
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-gallery=\"dust\"]",
+          "rect": {
+            "x": 683,
+            "y": 129,
+            "width": 123,
+            "height": 31
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"lily\"]",
+          "rect": {
+            "x": 551,
+            "y": 192,
+            "width": 61.25,
+            "height": 36
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"dahlia\"]",
+          "rect": {
+            "x": 749.75,
+            "y": 192,
+            "width": 61.25,
+            "height": 36
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"silver\"]",
+          "rect": {
+            "x": 551,
+            "y": 235,
+            "width": 49.59375,
+            "height": 49
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"celadon\"]",
+          "rect": {
+            "x": 761.40625,
+            "y": 235,
+            "width": 49.59375,
+            "height": 49
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#flower-burst",
+          "rect": {
+            "x": 703.671875,
+            "y": 295,
+            "width": 107.328125,
+            "height": 35.5
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 8
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery-back",
+          "rect": {
+            "x": 551,
+            "y": 280.5,
+            "width": 260,
+            "height": 40
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 361
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery-back",
+          "rect": {
+            "x": 551,
+            "y": 280.5,
+            "width": 260,
+            "height": 40
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 63,
+              "bottom": 332,
+              "scrollTop": 361
+            }
+          ],
+          "inScrollport": true
+        }
+      ],
+      "errors": [],
+      "console": [],
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "consoleReview": {
+        "benign": [],
+        "blocking": []
+      },
+      "storage": {
+        "file": "landscape-touch-fresh-earned-storage.json",
+        "sha256": "23c5bdbcdc9dac8baeb53dfee9ba4cb868c36509f51ec2ae97befb89f710fd5a"
+      }
+    },
+    {
+      "name": "desktop-earned-coast",
+      "view": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "touch": false
+      },
+      "passed": true,
+      "checks": [
+        "Earned writing desk resumes with its actual letters and complete map progress unchanged"
+      ],
+      "screenshots": [
+        "desktop-earned-coast-writing-before.jpg",
+        "desktop-earned-coast-studio-from-writing.jpg",
+        "desktop-earned-coast-writing-return.jpg"
+      ],
+      "samples": [
+        {
+          "name": "desktop-earned-coast-writing-before",
+          "frame": 121,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              146.3291015625,
+              152.51220703125,
+              137.28043619791666
+            ],
+            "sd": [
+              42.48655684418379,
+              28.82768344420377,
+              27.74067213848924
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "11,10,8",
+              2019
+            ],
+            "dominantFraction": 0.32861328125,
+            "pixelHash": "e556f3b7",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play chapter-notice voyage-active focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": false,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": false,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": false,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-earned-coast-studio-from-writing",
+          "frame": 139,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              114.50651041666667,
+              134.86995442708334,
+              135.61507161458334
+            ],
+            "sd": [
+              42.047618675262775,
+              34.64807513101383,
+              41.550579126060505
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "8,10,11",
+              907
+            ],
+            "dominantFraction": 0.14762369791666666,
+            "pixelHash": "d892567b",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play chapter-notice gallery focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": true,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": true,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": true,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop-earned-coast-writing-return",
+          "frame": 203,
+          "pixels": {
+            "canvas": true,
+            "width": 1440,
+            "height": 900,
+            "samplePixels": 6144,
+            "mean": [
+              129.29654947916666,
+              142.9150390625,
+              131.90983072916666
+            ],
+            "sd": [
+              40.011264866521124,
+              30.74001481466408,
+              36.57302209311436
+            ],
+            "pink": 0,
+            "magenta": 0,
+            "opaque": 1,
+            "transparent": 0,
+            "allZero": 0,
+            "alphaMean": 255,
+            "dominant": [
+              "9,10,10",
+              1347
+            ],
+            "dominantFraction": 0.21923828125,
+            "pixelHash": "7b1b3f13",
+            "contextLost": false,
+            "glError": 0,
+            "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "loading": false,
+            "failure": false,
+            "failureText": ""
+          },
+          "pixelCheck": {
+            "valid": true,
+            "reasons": []
+          },
+          "dom": {
+            "bodyClasses": "play chapter-notice voyage-active focus",
+            "modeButtons": [
+              {
+                "kind": "flower",
+                "visible": false,
+                "pressed": "true"
+              },
+              {
+                "kind": "dust",
+                "visible": false,
+                "pressed": "false"
+              }
+            ],
+            "workbenchOpen": true,
+            "contextVisible": false,
+            "pageWidth": 1440,
+            "viewport": 1440
+          }
+        }
+      ],
+      "controls": [
+        {
+          "selector": "#continue",
+          "rect": {
+            "x": 129.59375,
+            "y": 589.96875,
+            "width": 123.5625,
+            "height": 46
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "#flower-studio",
+          "rect": {
+            "x": 1295.921875,
+            "y": 18.5,
+            "width": 50,
+            "height": 42
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-form=\"iris\"]",
+          "rect": {
+            "x": 1240.671875,
+            "y": 288,
+            "width": 59.75,
+            "height": 59
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "[data-material=\"amber\"]",
+          "rect": {
+            "x": 1265.359375,
+            "y": 354,
+            "width": 48.40625,
+            "height": 53
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 0
+            }
+          ],
+          "inScrollport": true
+        },
+        {
+          "selector": "#gallery-back",
+          "rect": {
+            "x": 1111.171875,
+            "y": 763.5,
+            "width": 254,
+            "height": 40
+          },
+          "visible": true,
+          "centerHit": true,
+          "scrollParents": [
+            {
+              "id": "context",
+              "top": 135,
+              "bottom": 805,
+              "scrollTop": 1
+            }
+          ],
+          "inScrollport": true
+        }
+      ],
+      "errors": [],
+      "console": [],
+      "earnedArchive": {
+        "file": "evidence/v12/full-2026-11-23T04-53-23-576Z/earned-writing.json",
+        "sha256": "dc249aa473debd90800086b9d7039273394bc8dc28801b87da889fdb2129c587",
+        "originalOrigin": "http://127.0.0.1:5194",
+        "previewOrigin": "http://127.0.0.1:5194",
+        "valuesUnchanged": true
+      },
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "consoleReview": {
+        "benign": [],
+        "blocking": []
+      },
+      "storage": {
+        "file": "desktop-earned-coast-earned-storage.json",
+        "sha256": "f8bfd1900e2849fd1bc78d765a74b46ac449beaff84c82cf0c6743573d1849ab"
+      }
+    }
+  ],
+  "scope": "Four isolated Edge cases. Real click/tap/key input, native local persistence and read-only game/DOM/pixel observation. Three fresh viewports and one unchanged previously earned coastal archive.",
+  "limitations": [
+    "Touch is emulated Chromium input, not physical mobile certification.",
+    "The coastal fixture was earned by the preceding complete playthrough; its storage values are copied unchanged and only its localhost origin is remapped."
+  ],
+  "entry": "./assets/index-C_HGqS3k.js",
+  "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+  "style": "./assets/index-Cc26boAi.css",
+  "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+  "finished": "2026-11-23T06:31:32.862Z"
+}

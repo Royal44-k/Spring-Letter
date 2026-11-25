@@ -1,0 +1,84 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>开发执行计划 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc" aria-label="本文目录"><p class="toc-title">开发执行计划 / CONTENTS</p><a href="#section-0">Global Constraints</a><a href="#section-1">Review Focus</a><a href="#section-2">File map and shared interfaces</a><a href="#section-3">Task 1: Gameplay state and recovery</a><a href="#section-4">Task 2: Hero flower and surface identity</a><a href="#section-5">Task 3: Particles and material continuity</a><a href="#section-6">Task 4: World, camera and P1/P2 route</a><a href="#section-7">Task 5: Structural puzzle, choices and complete ending</a><a href="#section-8">Task 6: Quality, review and handoff</a><a href="#section-9">Self-review</a><a href="#section-10">Delivery gate — first playable build</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 图文概览</a>　/　<a href="execution-plan.md">Markdown源文件</a></div><h1>Spring Letter Implementation Plan</h1>
+<blockquote>For agentic workers: use executing-plans principles for the main integration and focused parallel implementation where interfaces are independent. Keep a durable ledger. The user explicitly requested refinement followed by development; continue without another procedural approval gate.</blockquote>
+<p><strong>Goal:</strong> Build an independent playable artistic flower-and-particle exploration game, with reference-oriented inspection controls, a complete four-act route and recoverable choices.</p>
+<p><strong>Architecture:</strong> Three.js rendering consumes a deterministic gameplay model. Hero botany, GPU particles, world presentation, input, UI and audio have separate modules. State transitions own progress/collision changes; particles never determine success or player support.</p>
+<p><strong>Tech Stack:</strong> Three.js 0.185.0, Vite 8.3.8, native Web Audio, Node test runner, Playwright 1.65.1. Public CC0 environment asset if successfully obtained.</p>
+<p><strong>Spec:</strong> <code>docs/blossom/design-proposal.md</code>, <code>experience-blueprint.md</code>, <code>art-direction-v3.md</code>, <code>video-analysis.md</code>.</p>
+<h2 id="section-0">Global Constraints</h2>
+<ul>
+<li>Work only in new <code>D:/AI Game/spring-letter/</code> plus the research archive. Keep existing game files unchanged.</li>
+<li>Work name: 花漾年华：待寄出的春信. No paid assets, generation APIs, subscriptions or runtime service dependency.</li>
+<li>Source video observation is not proof of source algorithms or FPS. Fidelity and performance remain measured criteria.</li>
+<li>Stable particle identity, reversible bloom/dispersion, deterministic logical puzzles, no unsupported movement over water.</li>
+<li>P3 removal is forbidden when player support depends on it; forbidden requests never queue.</li>
+<li>Two unique finale cores, maximum one per purpose; preview is reversible and never sends seed content. Explicit departure commits.</li>
+<li>Browser-first execution is the implementation choice made under the user&#x27;s instruction to act. Mobile gets readable/touch controls but support claims depend on device verification.</li>
+</ul>
+<h2 id="section-1">Review Focus</h2>
+<ol>
+<li>Blur/visibility/context loss must not leave movement keys held or advance game time; test model time clamp plus browser pause/reload.</li>
+<li>Corrupt, future-version, out-of-range or unavailable local storage must yield a safe start; test literal corrupt fixtures and round trips.</li>
+<li>Removing bridge/shield while on its dependent surface must fail without deferred action; model tests cover both support types and return paths.</li>
+<li>Duplicate core allocation and departure with fewer than two assignments must fail; preview and committed outcome must remain separate.</li>
+<li>Dragging UI or orbiting cannot also repel particles/ripple water; ordinary pointer/keyboard browser tests verify routing and focus exit.</li>
+</ol>
+<h2 id="section-2">File map and shared interfaces</h2>
+<p>All implementation paths below are inside <code>spring-letter/</code>.</p>
+<ul>
+<li><code>index.html</code>, <code>src/style.css</code>: meaningful Chinese UI, live-render opening, HUD, controls, journal/settings/ending.</li>
+<li><code>src/main.js</code>: renderer, camera, lifecycle, input routing, interactions and module integration.</li>
+<li><code>src/botany.js</code>: <code>createBouquet({seed=17,scale=1})</code> → <code>{group,setBloom(b),setMaterial(kind,variant),setOpacity(a),sampleSurface(count),update(time),dispose()}</code>. <code>kind</code> = silver/crystal/lily; sample buffers <code>{closed,open,colors}</code> use root-local xyz/rgb Float32Array, stable deterministic order. Geometry must use those same endpoints.</li>
+<li><code>src/particles.js</code>: <code>createSurfaceParticles(renderer,samples,{quality=&#x27;standard&#x27;})</code> → <code>{object,update(dt,time,{bloom,dispersion,pointer,night,reducedMotion}),setQuality(q),dispose(),getStats()}</code>. <code>pointer</code> is root-local Vector3 or null; object can share bouquet world transform. No mutations to supplied buffers.</li>
+<li><code>src/game-model.js</code>: <code>createState()</code>, <code>updateBloom(state,b,dt)</code>, <code>stepWind(state,input,dt)</code>, <code>setStructure(state,target)</code>, <code>allocateCore(state,id,purpose)</code>, <code>commitLetter(state)</code>, <code>serialize(state)</code>, <code>restore(raw)</code>. Pure logic, no Three/DOM/storage imports. Model exact state/interface finalized in its task.</li>
+<li><code>src/world.js</code>: <code>createWorld()</code> → <code>{group,flowers,targets,water,player,companion,update(time,dt,state),ripple(x,z,strength),dispose()}</code>; support is owned by <code>src/layout.js</code>. World coordinates/target map owned by root integration.</li>
+<li><code>src/audio.js</code>: local synthesis, user-gesture unlock, mute/pause, bounded sound instances.</li>
+<li><code>tests/model.test.js</code>, <code>tests/botany.test.js</code>: meaningful rule/invariant tests.</li>
+<li><code>scripts/smoke.cjs</code>, <code>scripts/serve.cjs</code>: browser verification, local built-game server with local-only binding.</li>
+<li><code>public/assets/</code>, <code>ASSET_SOURCES.md</code>: only adopted verified files and attribution/license provenance.</li>
+</ul>
+<h2 id="section-3">Task 1: Gameplay state and recovery</h2>
+<ul>
+<li>[x] Write tests for P1 hold tolerance; wind return on escape; P3 occupied bridge/shield refusal and return path; core uniqueness/preview/commit; malformed/future saves.</li>
+<li>[x] Run tests and observe feature-missing failure, then implement model functions and state schema.</li>
+<li>[x] Run <code>node --test tests/model.test.js</code>, all passing; log the actual count and fixture behavior.</li>
+</ul>
+<h2 id="section-4">Task 2: Hero flower and surface identity</h2>
+<ul>
+<li>[x] Write geometry tests for deterministic surface samples, finite endpoints, reversible bloom that does not translate stem roots, and independent material changes.</li>
+<li>[x] Implement three open flower heads/two buds, six real curved petals per head, fine stems/leaves/stamens and physical material presets.</li>
+<li>[x] Produce samples from actual triangles and transforms, not an unrelated procedural point cloud. Run tests.</li>
+<li>[x] Integrate a fixed hero view, inspect bright/night silver/crystal/natural states with screenshots, revise geometry/materials based on the images.</li>
+</ul>
+<h2 id="section-5">Task 3: Particles and material continuity</h2>
+<ul>
+<li>[x] Implement GPU position/velocity simulation using closed/open surface textures, spring/damping, bounded repulsion and controlled noise; use appropriate renderer capability checks.</li>
+<li>[x] Match flower-to-points opacity timing and root transform; partial bloom scatter uses current pose; low-quality fallback retains shape and local response.</li>
+<li>[x] Browser exercise partial reversals, repeated scatter/regather, orbit, zoom and pointer exit; record errors, draw count and frame times. Inspect screenshots, not only build output.</li>
+</ul>
+<h2 id="section-6">Task 4: World, camera and P1/P2 route</h2>
+<ul>
+<li>[x] Build shallow-water courtyards, arch/cloth shapes, authored camera reveals, hero and companion, signal and cups with visual beats.</li>
+<li>[x] Wire WASD/arrow movement, surface support, E focus, wheel bloom, Q dispersion, Space shaping, pointer repulsion; route UI/camera input exclusively.</li>
+<li>[x] Implement P1 path opening and two P2 routes, local failure restore, voluntary companion approach after force release; save checkpoints.</li>
+<li>[x] Ordinary input browser traversal from new game through P2; unit suite and production build pass.</li>
+</ul>
+<h2 id="section-7">Task 5: Structural puzzle, choices and complete ending</h2>
+<ul>
+<li>[x] Build safe-platform/temporary-structure puzzle with occupied-dependency guard; map each valid state to visible geometry and support.</li>
+<li>[x] Build the three finale purposes, two unique cores, reversible local previews, explicit departure and checkpoint replay.</li>
+<li>[x] Connect optional discoveries, journal/review, reference gallery, day/night/materials/orbit/zoom, accessible controls and locally saved photo.</li>
+<li>[x] Complete an ordinary-input run to ending; verify all three core combinations and save/reload behavior.</li>
+</ul>
+<h2 id="section-8">Task 6: Quality, review and handoff</h2>
+<ul>
+<li>[x] Run standalone unit suite, build, local production server and browser smoke. Check desktop/narrow UI, console, failed resources, pause/restore and basic touch controls.</li>
+<li>[x] Capture six representative views and a normal-input run/sequence. Record measured performance with environment details, distinguish headless software render from physical GPU.</li>
+<li>[x] Fresh independent review of production code/rules and evidence. Fix material issues, verify regressions and repeat only affected checks.</li>
+<li>[x] Ship launcher, README with honest implemented/unfinished matrix, sources, design links, evidence and durable development log. Do not label the result AAA or perfect reference parity without proof.</li>
+</ul>
+<h2 id="section-9">Self-review</h2>
+<p>The four-act model, hero/pixel fidelity, knowledge/companionship, free tools and lifecycle have assigned tasks. Interfaces share root-local positions and model-owned progress; renderer modules do not mutate puzzle state. No repository metadata was found in the existing workspace; use a separate project folder and file-based ledger rather than fabricate commits or alter the old project&#x27;s repository setup. Tests focus on gameplay invariants; CSS/content and material taste use browser inspection.</p>
+<h2 id="section-10">Delivery gate — first playable build</h2>
+<p>All six implementation tasks are completed for the first playable scope. See <a href="../../spring-letter/FINAL_QA.md">final QA</a> for 33 unit checks, 16 ordinary-input flow checks, 8 lifecycle/storage checks and 5 visual-interaction checks. Completed implementation tasks are not a claim of pixel parity, final 30–45 minute scope, first-time player validation, or film-quality rendering. The narrower P2 route implementation and remaining art/content work are listed explicitly in v3.</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.18 · v4.0</span><span>参考原帧与首版实机分别标注；文档推演不代替游戏验收。</span></div></footer></body></html>

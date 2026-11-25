@@ -1,0 +1,93 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fable案例复核 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc" aria-label="本文目录"><p class="toc-title">Fable案例复核 / CONTENTS</p><a href="#section-0">1. 这轮真正新增的结论</a><a href="#section-1">2. Saltline：版本与出处不能混为一谈</a><a href="#section-2">3. “一句话做出 AAA”的具体含义</a><a href="#section-3">4. 静态看过什么，以及不能据此推导什么</a><a href="#section-4">5. 第二个第一方案例：Graveyard Shift</a><a href="#section-5">6. 可以直接移植的生产方法</a><a href="#section-6">7. 本作首个章节的具体验收办法</a><a href="#section-7">8. 建议执行顺序与本轮资料边界</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 图文概览</a>　/　<a href="fps-case-v3.md">Markdown源文件</a></div><h1>Fable 5.2 射击游戏案例：从传播口号到可复用制作方法</h1>
+<p>更新日期：2026-11-18。服务于《花漾年华：待寄出的春信》；独立于金沙项目。</p>
+<p>本轮是对 <a href="research-cases.html">research-cases.md</a> 的补充核查，重点是 Saltline 的版本溯源、制作证据与可执行验收。未运行任何外部游戏代码，未购买模型、素材或服务。这里的开发建议是本项目的工作方法，不等于已经完成的开发或测试结果。</p>
+<h2 id="section-0">1. 这轮真正新增的结论</h2>
+<ol>
+<li><strong>Saltline 仍是最接近用户所述传播案例的候选。</strong> Fable 5.2 的模型名称与官方发布信息已在前报告核实；本轮不把它误改成其他模型。没有用户看到的原传播片段，不能唯一认定案例身份。</li>
+<li><strong>必须区分最初无人反馈版与后续改进版。</strong> 公开出处整理同时列出两个不同 artifact，并转述后续约两小时的武器、声音与玩法改进。前报告把当前版称为“原始作品地址”，应改成“当前公开版地址”。这一版本线索可靠到可以保留，但本轮未能读取官方作品内容，不能把改进时长升级为独立验证。</li>
+<li><strong>可借鉴的是“小场景、高密度、长时间自主迭代”的生产方式。</strong> “一句提示”描述输入入口，不能代表一次推理、瞬间生成、零成本或无需验收。</li>
+<li><strong>单文件是交付方式，不必成为开发架构。</strong> 另一位作者公开的 Graveyard Shift 已有模块化源码、构建、测试与质量分档，再打包成 HTML。它给本作的工程启发，比强行把所有逻辑写进一个文件更直接。<a href="https://github.com/ethanplusai/zombies">作者仓库</a></li>
+</ol>
+<p>以下证据等级贯穿全文：A＝本次直接读到的一手文档或作者仓库；B＝直接检查到的第三方副本，原版一致性未证实；C＝链接回作者的转述，原始内容本次不可读；D＝为本项目提出的方法或推论。</p>
+<h2 id="section-1">2. Saltline：版本与出处不能混为一谈</h2>
+<div class="table-scroll"><table><thead><tr><th>对象</th><th>地址与本轮状态</th><th>可以据此说什么</th></tr></thead><tbody>
+<tr><td>Felix 首发帖</td><td><a href="https://x.com/felixrieseberg/status/2119925633564463609">X 原帖</a>，403</td><td>找到了作者级出处；没有直读正文</td></tr>
+<tr><td>提示词回复</td><td><a href="https://x.com/felixrieseberg/status/2119927483994907024">X 回复</a>，403</td><td>找到了原提示词位置；逐字内容仍经二手转录</td></tr>
+<tr><td>制作补充</td><td><a href="https://x.com/felixrieseberg/status/2120245629725409758">X 制作帖</a>，403</td><td>不能宣称看过其中制作视频</td></tr>
+<tr><td>首次无人反馈版本</td><td><a href="https://claude.ai/artifact/2UXyB49DrVHFfhTMdNDFTA">初始 artifact</a></td><td>与当前版 URL 不同；链接由出处整理发现</td></tr>
+<tr><td>后续改进版本</td><td><a href="https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp">当前 artifact</a></td><td>不应拿这个版本的最终表现，直接证明初始版全部能力</td></tr>
+<tr><td>多个作品入口</td><td><a href="https://claude.ai/artifact/MXxb36zKgN261ckbGhmNin">Three Games</a></td><td>是合集入口，不能当作某个游戏版本号</td></tr>
+<tr><td>非官方代码镜像</td><td><a href="https://github.com/realcodebear/saltline-fable-5.2">realcodebear 仓库</a></td><td>可以静态检查这份副本；不能直接称为作者原始仓库</td></tr>
+<tr><td>中文修改版出处整理</td><td><a href="https://github.com/Megasu/jimao-3a-game">Megasu 仓库</a></td><td>有助于分辨中文改标题版本、初始版与当前版；不是 Felix 的原始发布</td></tr>
+</tbody></table></div>
+<p><strong>访问结果的细节很重要：</strong> 初始版与当前版经普通 HTML 请求均返回 HTTP 200，但实际页面标题都是 <code>App unavailable in region | Claude by Anthropic</code>。HTTP 成功不等于读到了游戏。本轮未绕过地域限制，也没有把错误页中的脚本当作游戏源码。</p>
+<p>初始版、当前版与约两小时后续改进的线索来自上表中文仓库的出处说明，以及明确标为非官方的 <a href="https://saltlinegame.pro/how-saltline-was-made">Saltline 制作过程整理</a>。后者不是作者官网，因此相关制作时间仍为 C 级证据。</p>
+<h2 id="section-2">3. “一句话做出 AAA”的具体含义</h2>
+<p>非官方整理转录的提示词包含四个方向：做 FPS；追求密集视觉细节；把 AAA 作为画面目标；范围限制在很小的一关。<strong>范围限制与视觉要求同时存在，正是可借鉴的关键。</strong> 这里不把转录当成已验证的完整对话，也不假设上下文、工具配置、系统提示和全部制作日志已公开。<a href="https://saltlinegame.pro/saltline-prompt">提示词转录与出处</a></p>
+<div class="table-scroll"><table><thead><tr><th>传播数据</th><th>当前证据</th><th>正确使用方式</th></tr></thead><tbody>
+<tr><td>首轮约 8 小时</td><td>镜像 README 等转述作者说法，C</td><td>说明它不是瞬间生成；不作为本项目工期估算公式</td></tr>
+<tr><td>约 550 美元</td><td>同上，C；未取得账单</td><td>不纳入本项目零新增采购预算；不能宣传免费复现同样计算量</td></tr>
+<tr><td>约 270 万输出、4.45 亿输入 token，其中含缓存</td><td>同上，C；未取得完整调用日志</td><td>不能将输入总量简单乘统一单价，也不能推算本项目费用</td></tr>
+<tr><td>首轮没有人工反馈</td><td>同上，C</td><td>区分“无人中途指导”与“没有自动工具调用、检查和修正”</td></tr>
+<tr><td>后续约 2 小时改进</td><td>版本出处整理转述标题页说明，C</td><td>评判画面时标注具体版本，避免把打磨版称为初始单提示结果</td></tr>
+<tr><td>AAA 级完整商业游戏</td><td>未见可独立核查的全流程质量认证</td><td>用具体的画面、手感、关卡、性能与完成度指标替代标签</td></tr>
+</tbody></table></div>
+<p>上述运行量与费用的直接出处仍未读到，引用的是明确标注为非官方的 <a href="https://github.com/realcodebear/saltline-fable-5.2">Saltline 镜像说明</a>。不能因为多家网页复制同一组数字，就提高它们的独立证据等级。</p>
+<h2 id="section-3">4. 静态看过什么，以及不能据此推导什么</h2>
+<p>本轮只以文本方式读取 <a href="https://raw.githubusercontent.com/realcodebear/saltline-fable-5.2/main/index.html">镜像 index.html</a>，没有执行脚本。记录如下，属于 B 级证据：</p>
+<div class="table-scroll"><table><thead><tr><th>项目</th><th>本次观察</th></tr></thead><tbody>
+<tr><td>抓取日期</td><td>2026-11-18；<code>main</code> 分支未来可能变化</td></tr>
+<tr><td>字节数</td><td>1,423,569 字节，约 1.36 MiB</td></tr>
+<tr><td>SHA-256</td><td><code>f34e6debbfa7526b72be2daa24595c2f195e102a7aede4f22e59138c99cd6852</code></td></tr>
+<tr><td>HTML 标题</td><td>Saltline</td></tr>
+<tr><td>script 标签</td><td>一个内联 script</td></tr>
+<tr><td>外部资源字符串</td><td>明确含 Google Fonts 样式与字体域名</td></tr>
+<tr><td>源码词法信号</td><td>出现 CanvasTexture、物理材质、WebGLRenderTarget、AudioContext 等名称；这些名称也可能属于内嵌库</td></tr>
+</tbody></table></div>
+<p>这些观察支持“这是一份高度打包的浏览器游戏副本”，<strong>不证明游戏已经在本机正常运行、没有额外网络请求、所有效果都是原创算法、初始版与当前版内容相同</strong>。字符串出现次数也不等于运行时调用次数。</p>
+<p>镜像维护者称游戏内容未改、移除了 Claude 运行框架脚本；原版不可访问，因此本轮没有独立完成差异比较。该镜像也没有给出可据以复用整个游戏的正式授权。新作只借鉴制作方法；不把它的整段源码、名称、关卡或贴图搬进本项目。第三方中文仓库自己的许可证不能自动替代原作者对全部上游内容的授权。</p>
+<h2 id="section-4">5. 第二个第一方案例：Graveyard Shift</h2>
+<p>这说明近期不止一个 Fable 5.2 FPS 在传播，但还不足以判断用户看到的究竟是哪一个。作者的 <a href="https://www.reddit.com/r/vibecoding/comments/1xts6te/i_asked_fable_52_to_build_me_a_zombies_game/">发布帖</a> 自述约 14 小时、消耗约 120% 周额度，并使用多个模型协作；加载图来自图像生成。这是作者报告，未复核调用账单。</p>
+<p><a href="https://github.com/ethanplusai/zombies">作者仓库</a> 可直接读到：Three.js/WebGL2、设备质量分档、程序生成模型/纹理/音频；加载图与分享图是例外；源码分为规则、场景、材质、导航、音频、渲染等模块；esbuild 输出单 HTML；包含烟雾检查和截图脚本；标示 MIT。可选排行榜后端与核心游戏分离。这些是一手公开实现说明，不是本轮实测性能。当前仓库经过多少次生成与人工修改，也不能仅凭成品倒推出“一次完成”。</p>
+<p><strong>对本作最有价值的组合：模块化制作、程序化统一美术、可关闭的非核心联网功能、离线可审查的交付产物。</strong> 宏大叙事可以靠世界关系与后果展开；第一章的空间仍应集中，以保证每处都值得探索。</p>
+<h2 id="section-5">6. 可以直接移植的生产方法</h2>
+<h3>6.1 先把“小范围但高密度”转为本作约束</h3>
+<p>首个可玩章节围绕一个能反复改变状态的主场景展开：信庭、花体与通往远方的粒子信路彼此连通。主花承担近景材质与散聚的视觉要求；周围空间承担探索、谜题和叙事反馈。玩家每完成一次行动，至少改变一个可见状态，而不是只增加任务计数。</p>
+<p>暂不以铺大地图证明宏大：先做出“玩家能让一座空间从封存走向回应”的完整因果，再以远景、回信、不同年代的遗物展开更大世界。这是 D 级设计建议，不是 Saltline 已实现的玩法。</p>
+<h3>6.2 程序化资产服务统一质感</h3>
+<p>对两段参考视频中的共同对象建立同一个几何来源：花瓣表面采样点、完整花瓣网格和散开后的粒子共享稳定 ID 与目标位置。这样“凝聚成花—触碰散开—引导归位”可以是连续状态，而非两种互不相关的特效切换。</p>
+<p>把花瓣曲率、层数、薄膜色、粗糙度、粒子密度、散开半径、恢复阻尼做成参数；固定随机种子。每次调色不重新随机造型，每次材质修正都能与同一镜头比对。新增免费素材应逐个记录原始来源、许可证、用途与本地转换；网页展示免费不等于素材可任意再分发。</p>
+<p>程序生成解决的是风格一致与可调节性，不保证自动达到高质量。主花、手边交互物、地面水光与远景必须分别校验形体、材质和光照，不能用强泛光掩盖模型问题。</p>
+<h3>6.3 使用独立视觉审查，但给它正确的输入</h3>
+<p>Saltline 制作视频里的“第二模型看截图评分”目前只读到了 <a href="https://www.aigamer.gg/games/saltline">二手报道</a>，不能写成亲眼验证。更明确的一手依据是 Abyssal Garden 的 <a href="https://raw.githubusercontent.com/Noniv/abyssal-garden/main/prompt.txt">公开 prompt.txt</a>：它直接要求独立审查者只看渲染结果，使用六个固定机位与运动录屏，并记录平均、P99 和最大帧时间。原提示词指定的高端显卡与分辨率不可直接作为本机性能承诺。</p>
+<p>本作采用两轮审查，防止“符合参考”与“本身好看”互相替代：</p>
+<ul>
+<li><strong>参考一致性审查：</strong> 输入相应参考帧、对应游戏截图与相同时间段录屏；检查花型、空间层次、粒子尺度、散聚节奏和交互响应。屏幕录像看不到的内部逻辑标为推断，不捏造原实现。</li>
+<li><strong>独立艺术审查：</strong> 只看本作截图和短录屏，不看代码与作者解释；检查焦点、明暗层级、材质可读性、操作反馈、眩光、闪烁、穿插和镜头舒适度。</li>
+</ul>
+<p>审查发现使用同一格式：<code>截图/时间码 → 具体位置 → 观察到的问题 → 对体验的影响 → 最小修正 → 同机位复查结果</code>。例如“00:12 花瓣边缘过曝，银白花瓣变成一片白，细层无法读出；先下调 bloom 阈值之外的贡献并恢复局部对比，再复查”，而不是“画面不够高级”。</p>
+<h2 id="section-6">7. 本作首个章节的具体验收办法</h2>
+<p>以下是建议的验收目标，尚未经过本机实测，不是已经达标的结果。</p>
+<div class="table-scroll"><table><thead><tr><th>检查</th><th>固定条件与记录</th><th>通过依据</th></tr></thead><tbody>
+<tr><td>六个视觉机位</td><td>入口远景、银白花体近景、晶体/薄膜侧光、粒子局部排斥、信路形成、结尾回信；固定镜头与随机种子</td><td>主体轮廓、材质、密度和景深层次可辨；关键参考帧各有对应；没有主花穿插、大片过曝等重大缺陷</td></tr>
+<tr><td>散聚连续性</td><td>同一花体连续 20 次散开/归位，记录首尾与中间状态</td><td>无粒子突然换位、永久丢失、越操作越漂移；重新开始可恢复初态</td></tr>
+<tr><td>交互响应</td><td>按下、拖动、离开、松开、取消、失焦逐一检查；降低帧率再试</td><td>行为可预期，无卡住的“按下”状态；操作造成的变化可见且可逆</td></tr>
+<tr><td>完整玩法</td><td>新存档按正常操作走到结尾，覆盖至少一次误操作、重试、暂停与继续</td><td>不依靠隐藏测试按钮；有探索线索、可判断的解法、完成反馈和可抵达结局</td></tr>
+<tr><td>三种节奏</td><td>自由探索、明确谜题、短时动态交互分别记录一个片段</td><td>不能全部退化为寻找发光点后点一下；不同动作改变不同世界状态</td></tr>
+<tr><td>运动画面</td><td>固定 60 秒镜头路线，含转向、近景穿行、最密粒子与恢复</td><td>无明显闪烁、几何跳变、粒子突然弹出；静帧美观不能替代此项</td></tr>
+<tr><td>性能</td><td>先记录真实硬件、浏览器、分辨率与画质；报告平均/P99/最大帧时间，区分 CPU 帧间隔与 GPU 测量</td><td>高档以 60 fps 为目标；达不到时按数据降低粒子/分辨率/后期，并保留形态与交互；没有 GPU 测量就明确标记未测</td></tr>
+<tr><td>本地完整性</td><td>检查首开、刷新、字体/材质加载、断网与许可证清单</td><td>核心章节不依赖付费 API；第三方免费资源可以追溯；无未说明的外部游戏代码</td></tr>
+</tbody></table></div>
+<p>“六机位”“20 次”“60 秒”是可重复的抽样协议，不是全部缺陷已被穷尽的保证。审查者未发现问题也不自动意味着达到了电影或商业 AAA 作品水平。</p>
+<h2 id="section-7">8. 建议执行顺序与本轮资料边界</h2>
+<ol>
+<li>把两段视频的时间码、目标帧与可见交互转成对照清单，分开写观察事实、推断和主动改编。</li>
+<li>完成主花材质与同源粒子散聚；用固定镜头证明它们能连续融合。</li>
+<li>加入一条完整的“发现—理解—操作—世界改变—收到回应”玩法链，再加入不同类型的互动。</li>
+<li>用六个机位与 60 秒录屏做艺术审查；先修会破坏视觉承诺和操作理解的问题。</li>
+<li>在真实设备记录性能并设置分档；保持统一形态，按成本顺序降低次要效果。</li>
+<li>留存参数、截图、问题清单、版本与素材来源，作为下个章节可继续使用的知识，而非一段无法复现的聊天结论。</li>
+</ol>
+<p>本轮没有读到 Felix 的完整原始对话、原始调用日志、完整账单，也没有实玩 Saltline 或 Graveyard Shift；制作补充视频未直接观看。未找到可将两版 Saltline 与镜像逐字对应的官方校验值。这些缺口不会妨碍采用其可核查的制作思想，但不应被包装为已经完成的一手复现。</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.18 · v4.0</span><span>参考原帧与首版实机分别标注；文档推演不代替游戏验收。</span></div></footer></body></html>

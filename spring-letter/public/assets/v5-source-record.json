@@ -1,0 +1,74 @@
+{
+  "records": [
+    {
+      "asset": "spruit_sunrise",
+      "title": "Spruit Sunrise",
+      "authors": {
+        "Greg Zaal": "All"
+      },
+      "source": "https://polyhaven.com/a/spruit_sunrise",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://polyhaven.com/license",
+      "retrieved": "2026-11-19T03:29:14.489Z",
+      "file": "public/assets/environment/spruit_sunrise_1k.hdr",
+      "bytes": 1500948,
+      "md5": "101e62113705da89b6fa2299385ce801",
+      "sha256": "38199a31e945906f6778431e989256a92d9d78b0cfc0f902accad9f5244bf50f",
+      "officialFile": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/spruit_sunrise_1k.hdr",
+      "apiField": "/hdri/1k/hdr",
+      "decoded": {
+        "width": 1024,
+        "height": 512,
+        "dataType": "Uint16Array",
+        "decodedBytes": 4194304
+      }
+    },
+    {
+      "asset": "mossy_rock",
+      "title": "Mossy Rock",
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "source": "https://polyhaven.com/a/mossy_rock",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://polyhaven.com/license",
+      "retrieved": "2026-11-19T03:29:14.495Z",
+      "file": "public/assets/surfaces/mossy-rock-normal.jpg",
+      "bytes": 995727,
+      "md5": "59370f9b3d068271c2bccfb414dc325b",
+      "sha256": "232cdd6a9fdfd01bb8bb1f8f604c53dbca79fa0d3d7995edf85c9945757aa8df",
+      "officialFile": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/mossy_rock/mossy_rock_nor_gl_1k.jpg",
+      "apiField": "/nor_gl/1k/jpg",
+      "decoded": {
+        "width": 1024,
+        "height": 1024,
+        "format": "JPEG",
+        "mode": "RGB"
+      }
+    },
+    {
+      "asset": "mossy_rock",
+      "title": "Mossy Rock",
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "source": "https://polyhaven.com/a/mossy_rock",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://polyhaven.com/license",
+      "retrieved": "2026-11-19T03:29:14.499Z",
+      "file": "public/assets/surfaces/mossy-rock-roughness.jpg",
+      "bytes": 780918,
+      "md5": "7eadb38815ad2569104d827ad8ac1572",
+      "sha256": "0a18bdeb08444b730170b0477f13940ce6cd4d82d06137df661f96d1e2a6a66e",
+      "officialFile": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/mossy_rock/mossy_rock_rough_1k.jpg",
+      "apiField": "/gltf/1k/gltf/include/textures/mossy_rock_rough_1k.jpg",
+      "decoded": {
+        "width": 1024,
+        "height": 1024,
+        "format": "JPEG",
+        "mode": "L"
+      }
+    }
+  ],
+  "method": "Original official API files retained; local MD5 matches official file entry, local SHA256 independently rechecked; HDR parsed by pinned Three HDRLoader."
+}

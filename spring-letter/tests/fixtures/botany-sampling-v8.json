@@ -1,0 +1,208 @@
+{
+  "count": 257,
+  "seed": 17,
+  "scale": 1,
+  "provenance": "Captured from the independent pre-cache botany.js reference on 2026-11-21; SHA256 of each complete Float32 byte array.",
+  "samples": {
+    "lily/silver/blush": {
+      "closed": "81fa86587da9adeda7d5bddf71dbd78cfb7a6167e8c1ab936aa31bdc13668358",
+      "open": "ffac50dc2cd4aaafd05a45e0a8484a548c4ef8d5348980a3c2fd688b81978ec9",
+      "colors": "4b3a0990c08a75bf4bd15d845bd76eb86442edeeb8cae7627c2587f0e49e268a"
+    },
+    "lily/silver/golden": {
+      "closed": "81fa86587da9adeda7d5bddf71dbd78cfb7a6167e8c1ab936aa31bdc13668358",
+      "open": "ffac50dc2cd4aaafd05a45e0a8484a548c4ef8d5348980a3c2fd688b81978ec9",
+      "colors": "4b3a0990c08a75bf4bd15d845bd76eb86442edeeb8cae7627c2587f0e49e268a"
+    },
+    "lily/crystal/blush": {
+      "closed": "81fa86587da9adeda7d5bddf71dbd78cfb7a6167e8c1ab936aa31bdc13668358",
+      "open": "ffac50dc2cd4aaafd05a45e0a8484a548c4ef8d5348980a3c2fd688b81978ec9",
+      "colors": "8f4ad40d80d7e308840105190c299e6da8ceb5b4fdd45abe78d20848cb681fbc"
+    },
+    "lily/crystal/golden": {
+      "closed": "81fa86587da9adeda7d5bddf71dbd78cfb7a6167e8c1ab936aa31bdc13668358",
+      "open": "ffac50dc2cd4aaafd05a45e0a8484a548c4ef8d5348980a3c2fd688b81978ec9",
+      "colors": "8f4ad40d80d7e308840105190c299e6da8ceb5b4fdd45abe78d20848cb681fbc"
+    },
+    "lily/lily/blush": {
+      "closed": "81fa86587da9adeda7d5bddf71dbd78cfb7a6167e8c1ab936aa31bdc13668358",
+      "open": "ffac50dc2cd4aaafd05a45e0a8484a548c4ef8d5348980a3c2fd688b81978ec9",
+      "colors": "a362e1682a8db49aa7f23b7b5586f364f5f1a2e0126d16ee95015c9ede8d70ff"
+    },
+    "lily/lily/golden": {
+      "closed": "81fa86587da9adeda7d5bddf71dbd78cfb7a6167e8c1ab936aa31bdc13668358",
+      "open": "ffac50dc2cd4aaafd05a45e0a8484a548c4ef8d5348980a3c2fd688b81978ec9",
+      "colors": "ba98b74e349a838b7e4917c48095368d5ed373870a75882c84d9226260e48d6c"
+    },
+    "lily/amber/blush": {
+      "closed": "81fa86587da9adeda7d5bddf71dbd78cfb7a6167e8c1ab936aa31bdc13668358",
+      "open": "ffac50dc2cd4aaafd05a45e0a8484a548c4ef8d5348980a3c2fd688b81978ec9",
+      "colors": "2a380b965f1a35d22d94daf5bd778bf7a179095a1f42e3befcd9be619bf29d00"
+    },
+    "lily/amber/golden": {
+      "closed": "81fa86587da9adeda7d5bddf71dbd78cfb7a6167e8c1ab936aa31bdc13668358",
+      "open": "ffac50dc2cd4aaafd05a45e0a8484a548c4ef8d5348980a3c2fd688b81978ec9",
+      "colors": "2a380b965f1a35d22d94daf5bd778bf7a179095a1f42e3befcd9be619bf29d00"
+    },
+    "lily/celadon/blush": {
+      "closed": "81fa86587da9adeda7d5bddf71dbd78cfb7a6167e8c1ab936aa31bdc13668358",
+      "open": "ffac50dc2cd4aaafd05a45e0a8484a548c4ef8d5348980a3c2fd688b81978ec9",
+      "colors": "48bbfc55fa1ec961a66f574a46acf79d98267151e260b4522dc80d73442ee1de"
+    },
+    "lily/celadon/golden": {
+      "closed": "81fa86587da9adeda7d5bddf71dbd78cfb7a6167e8c1ab936aa31bdc13668358",
+      "open": "ffac50dc2cd4aaafd05a45e0a8484a548c4ef8d5348980a3c2fd688b81978ec9",
+      "colors": "48bbfc55fa1ec961a66f574a46acf79d98267151e260b4522dc80d73442ee1de"
+    },
+    "lotus/silver/blush": {
+      "closed": "a52c569833c7fe92335eeabbb2a8095dc74754903122e1638dfd05051d610b33",
+      "open": "161b09988a703fb8b961c75d46059bc2c90d71bef76e0052a5c2e0bf133971d5",
+      "colors": "ab8e1d034751e6007c90cd1e57547ca286ab061dbd7ab93a01df7410b8af1c6b"
+    },
+    "lotus/silver/golden": {
+      "closed": "a52c569833c7fe92335eeabbb2a8095dc74754903122e1638dfd05051d610b33",
+      "open": "161b09988a703fb8b961c75d46059bc2c90d71bef76e0052a5c2e0bf133971d5",
+      "colors": "ab8e1d034751e6007c90cd1e57547ca286ab061dbd7ab93a01df7410b8af1c6b"
+    },
+    "lotus/crystal/blush": {
+      "closed": "a52c569833c7fe92335eeabbb2a8095dc74754903122e1638dfd05051d610b33",
+      "open": "161b09988a703fb8b961c75d46059bc2c90d71bef76e0052a5c2e0bf133971d5",
+      "colors": "6a9da76902d1ee0eb1d15b099714d147dc68a2303dab134c62e5776ae8db3040"
+    },
+    "lotus/crystal/golden": {
+      "closed": "a52c569833c7fe92335eeabbb2a8095dc74754903122e1638dfd05051d610b33",
+      "open": "161b09988a703fb8b961c75d46059bc2c90d71bef76e0052a5c2e0bf133971d5",
+      "colors": "6a9da76902d1ee0eb1d15b099714d147dc68a2303dab134c62e5776ae8db3040"
+    },
+    "lotus/lily/blush": {
+      "closed": "a52c569833c7fe92335eeabbb2a8095dc74754903122e1638dfd05051d610b33",
+      "open": "161b09988a703fb8b961c75d46059bc2c90d71bef76e0052a5c2e0bf133971d5",
+      "colors": "a13e6dea922e1db5aa7bc94a87e4e9d8d090df3023360c360f2d9f55788b9e90"
+    },
+    "lotus/lily/golden": {
+      "closed": "a52c569833c7fe92335eeabbb2a8095dc74754903122e1638dfd05051d610b33",
+      "open": "161b09988a703fb8b961c75d46059bc2c90d71bef76e0052a5c2e0bf133971d5",
+      "colors": "09fd2bff8744658dfe8065dd7ce7bf5cd196b210acee49761006a60f72a33299"
+    },
+    "lotus/amber/blush": {
+      "closed": "a52c569833c7fe92335eeabbb2a8095dc74754903122e1638dfd05051d610b33",
+      "open": "161b09988a703fb8b961c75d46059bc2c90d71bef76e0052a5c2e0bf133971d5",
+      "colors": "13894f89d6ee5c8e775c455265b9005acc0b57d0aff1d8df76b1de8246d65c07"
+    },
+    "lotus/amber/golden": {
+      "closed": "a52c569833c7fe92335eeabbb2a8095dc74754903122e1638dfd05051d610b33",
+      "open": "161b09988a703fb8b961c75d46059bc2c90d71bef76e0052a5c2e0bf133971d5",
+      "colors": "13894f89d6ee5c8e775c455265b9005acc0b57d0aff1d8df76b1de8246d65c07"
+    },
+    "lotus/celadon/blush": {
+      "closed": "a52c569833c7fe92335eeabbb2a8095dc74754903122e1638dfd05051d610b33",
+      "open": "161b09988a703fb8b961c75d46059bc2c90d71bef76e0052a5c2e0bf133971d5",
+      "colors": "fb0feef0a3805398412158772a34a0cfa285612b48c0c83b91f1c9f9f2b2b0ff"
+    },
+    "lotus/celadon/golden": {
+      "closed": "a52c569833c7fe92335eeabbb2a8095dc74754903122e1638dfd05051d610b33",
+      "open": "161b09988a703fb8b961c75d46059bc2c90d71bef76e0052a5c2e0bf133971d5",
+      "colors": "fb0feef0a3805398412158772a34a0cfa285612b48c0c83b91f1c9f9f2b2b0ff"
+    },
+    "iris/silver/blush": {
+      "closed": "ea841b3b99c108cc73d37df623e291e05809841fed2940efd78f7e4f9c89e2c9",
+      "open": "bc5861f3187d2a4e51a443fb9c160e27c3da41cd7a856253a6f9b670da9ac1b5",
+      "colors": "9eb6541e9d67ca8ddcfe4fb568c3a762a64c390f304faecdaf806a2d9516cd1b"
+    },
+    "iris/silver/golden": {
+      "closed": "ea841b3b99c108cc73d37df623e291e05809841fed2940efd78f7e4f9c89e2c9",
+      "open": "bc5861f3187d2a4e51a443fb9c160e27c3da41cd7a856253a6f9b670da9ac1b5",
+      "colors": "9eb6541e9d67ca8ddcfe4fb568c3a762a64c390f304faecdaf806a2d9516cd1b"
+    },
+    "iris/crystal/blush": {
+      "closed": "ea841b3b99c108cc73d37df623e291e05809841fed2940efd78f7e4f9c89e2c9",
+      "open": "bc5861f3187d2a4e51a443fb9c160e27c3da41cd7a856253a6f9b670da9ac1b5",
+      "colors": "053f9d5eb37f3d6b31f9ee36ced8fa38e51e76c39e869b53985fefaa9e4c08be"
+    },
+    "iris/crystal/golden": {
+      "closed": "ea841b3b99c108cc73d37df623e291e05809841fed2940efd78f7e4f9c89e2c9",
+      "open": "bc5861f3187d2a4e51a443fb9c160e27c3da41cd7a856253a6f9b670da9ac1b5",
+      "colors": "053f9d5eb37f3d6b31f9ee36ced8fa38e51e76c39e869b53985fefaa9e4c08be"
+    },
+    "iris/lily/blush": {
+      "closed": "ea841b3b99c108cc73d37df623e291e05809841fed2940efd78f7e4f9c89e2c9",
+      "open": "bc5861f3187d2a4e51a443fb9c160e27c3da41cd7a856253a6f9b670da9ac1b5",
+      "colors": "0e0953f1b7c8cd2986ea1f3eebbc181e7496eebf946316e5a2d3ecaafa9866f9"
+    },
+    "iris/lily/golden": {
+      "closed": "ea841b3b99c108cc73d37df623e291e05809841fed2940efd78f7e4f9c89e2c9",
+      "open": "bc5861f3187d2a4e51a443fb9c160e27c3da41cd7a856253a6f9b670da9ac1b5",
+      "colors": "6b935ba6c3fdaf27c8863eacc00bd90795252b03b8209427feffa5ef7cf316e4"
+    },
+    "iris/amber/blush": {
+      "closed": "ea841b3b99c108cc73d37df623e291e05809841fed2940efd78f7e4f9c89e2c9",
+      "open": "bc5861f3187d2a4e51a443fb9c160e27c3da41cd7a856253a6f9b670da9ac1b5",
+      "colors": "9336588cc6a13244a9184c40830d2ed77725e560c180a5b715f8061e483bb9b9"
+    },
+    "iris/amber/golden": {
+      "closed": "ea841b3b99c108cc73d37df623e291e05809841fed2940efd78f7e4f9c89e2c9",
+      "open": "bc5861f3187d2a4e51a443fb9c160e27c3da41cd7a856253a6f9b670da9ac1b5",
+      "colors": "9336588cc6a13244a9184c40830d2ed77725e560c180a5b715f8061e483bb9b9"
+    },
+    "iris/celadon/blush": {
+      "closed": "ea841b3b99c108cc73d37df623e291e05809841fed2940efd78f7e4f9c89e2c9",
+      "open": "bc5861f3187d2a4e51a443fb9c160e27c3da41cd7a856253a6f9b670da9ac1b5",
+      "colors": "7694609edf865518484b63a4581b6bcec3d32c8fd686507e17b38dc1243d9311"
+    },
+    "iris/celadon/golden": {
+      "closed": "ea841b3b99c108cc73d37df623e291e05809841fed2940efd78f7e4f9c89e2c9",
+      "open": "bc5861f3187d2a4e51a443fb9c160e27c3da41cd7a856253a6f9b670da9ac1b5",
+      "colors": "7694609edf865518484b63a4581b6bcec3d32c8fd686507e17b38dc1243d9311"
+    },
+    "dahlia/silver/blush": {
+      "closed": "62243e97b475175086df7a2b393f05075d837fa5b53038b3de5aa8c50b688c9c",
+      "open": "9dd77cc6a38f8e6b642b4ee804d4a45df71f9985361280e6d3f75120eb4167b0",
+      "colors": "5d647080e7dfa4900e43fb606bd9cd1737a1474d4ea19d45077d8c9fa24aa9e5"
+    },
+    "dahlia/silver/golden": {
+      "closed": "62243e97b475175086df7a2b393f05075d837fa5b53038b3de5aa8c50b688c9c",
+      "open": "9dd77cc6a38f8e6b642b4ee804d4a45df71f9985361280e6d3f75120eb4167b0",
+      "colors": "5d647080e7dfa4900e43fb606bd9cd1737a1474d4ea19d45077d8c9fa24aa9e5"
+    },
+    "dahlia/crystal/blush": {
+      "closed": "62243e97b475175086df7a2b393f05075d837fa5b53038b3de5aa8c50b688c9c",
+      "open": "9dd77cc6a38f8e6b642b4ee804d4a45df71f9985361280e6d3f75120eb4167b0",
+      "colors": "90f604d4b458ae6e8242ba3740a88abbabff049511e95f3068fadde9cb7423e0"
+    },
+    "dahlia/crystal/golden": {
+      "closed": "62243e97b475175086df7a2b393f05075d837fa5b53038b3de5aa8c50b688c9c",
+      "open": "9dd77cc6a38f8e6b642b4ee804d4a45df71f9985361280e6d3f75120eb4167b0",
+      "colors": "90f604d4b458ae6e8242ba3740a88abbabff049511e95f3068fadde9cb7423e0"
+    },
+    "dahlia/lily/blush": {
+      "closed": "62243e97b475175086df7a2b393f05075d837fa5b53038b3de5aa8c50b688c9c",
+      "open": "9dd77cc6a38f8e6b642b4ee804d4a45df71f9985361280e6d3f75120eb4167b0",
+      "colors": "c4f6e7ecccabbc241798c4dfa909799ba9f34e21fb0a8c124b14fa31dac772b4"
+    },
+    "dahlia/lily/golden": {
+      "closed": "62243e97b475175086df7a2b393f05075d837fa5b53038b3de5aa8c50b688c9c",
+      "open": "9dd77cc6a38f8e6b642b4ee804d4a45df71f9985361280e6d3f75120eb4167b0",
+      "colors": "c529382fd8615b453e2c5b71fce68d90720804ea40b5fea304d558295ac438fa"
+    },
+    "dahlia/amber/blush": {
+      "closed": "62243e97b475175086df7a2b393f05075d837fa5b53038b3de5aa8c50b688c9c",
+      "open": "9dd77cc6a38f8e6b642b4ee804d4a45df71f9985361280e6d3f75120eb4167b0",
+      "colors": "7c5adaa741424f66ffbb99bc3be03ba80ecd480917f72e9a5c3118d073bb6259"
+    },
+    "dahlia/amber/golden": {
+      "closed": "62243e97b475175086df7a2b393f05075d837fa5b53038b3de5aa8c50b688c9c",
+      "open": "9dd77cc6a38f8e6b642b4ee804d4a45df71f9985361280e6d3f75120eb4167b0",
+      "colors": "7c5adaa741424f66ffbb99bc3be03ba80ecd480917f72e9a5c3118d073bb6259"
+    },
+    "dahlia/celadon/blush": {
+      "closed": "62243e97b475175086df7a2b393f05075d837fa5b53038b3de5aa8c50b688c9c",
+      "open": "9dd77cc6a38f8e6b642b4ee804d4a45df71f9985361280e6d3f75120eb4167b0",
+      "colors": "71fbc2f5c85c4d7f01b711c57a1e70ea7a554c4de0d9e92ddd7894bb351ec903"
+    },
+    "dahlia/celadon/golden": {
+      "closed": "62243e97b475175086df7a2b393f05075d837fa5b53038b3de5aa8c50b688c9c",
+      "open": "9dd77cc6a38f8e6b642b4ee804d4a45df71f9985361280e6d3f75120eb4167b0",
+      "colors": "71fbc2f5c85c4d7f01b711c57a1e70ea7a554c4de0d9e92ddd7894bb351ec903"
+    }
+  }
+}

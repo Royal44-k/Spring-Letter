@@ -1,0 +1,3874 @@
+TAP version 13
+# Subtest: bundled assets resolve within both nested static hosts and root local hosting
+ok 1 - bundled assets resolve within both nested static hosts and root local hosting
+  ---
+  duration_ms: 4.7591
+  type: 'test'
+  ...
+# Subtest: index filenames, query strings and fragments do not move asset or license paths
+ok 2 - index filenames, query strings and fragments do not move asset or license paths
+  ---
+  duration_ms: 0.9451
+  type: 'test'
+  ...
+# Subtest: external, root-absolute, traversal and encoded paths are rejected before resolution
+ok 3 - external, root-absolute, traversal and encoded paths are rejected before resolution
+  ---
+  duration_ms: 2.4333
+  type: 'test'
+  ...
+# Subtest: only HTTP(S) document origins are supported for actual play; file URLs are not silently accepted
+ok 4 - only HTTP(S) document origins are supported for actual play; file URLs are not silently accepted
+  ---
+  duration_ms: 1.0584
+  type: 'test'
+  ...
+# Subtest: default resolution reads the current document base and has a DOM-free relative fallback for Node tests
+ok 5 - default resolution reads the current document base and has a DOM-free relative fallback for Node tests
+  ---
+  duration_ms: 0.666
+  type: 'test'
+  ...
+# Subtest: the actual garden surface loader requests all four local files under the embedded game directory
+ok 6 - the actual garden surface loader requests all four local files under the embedded game directory
+  ---
+  duration_ms: 4.5169
+  type: 'test'
+  ...
+# Subtest: entering, switching and leaving maps retires old music and effects before the new phrase
+ok 7 - entering, switching and leaving maps retires old music and effects before the new phrase
+  ---
+  duration_ms: 20.8156
+  type: 'test'
+  ...
+# Subtest: three maps reuse the same loops with distinct habitats and no stale ocean or water bleed
+ok 8 - three maps reuse the same loops with distinct habitats and no stale ocean or water bleed
+  ---
+  duration_ms: 11.5667
+  type: 'test'
+  ...
+# Subtest: atlas follows pause, mute and channel volumes while actual ground movement still emits footsteps
+ok 9 - atlas follows pause, mute and channel volumes while actual ground movement still emits footsteps
+  ---
+  duration_ms: 8.4605
+  type: 'test'
+  ...
+# Subtest: atlas progress does not restart its phrase, repeated switching stays bounded
+ok 10 - atlas progress does not restart its phrase, repeated switching stays bounded
+  ---
+  duration_ms: 18.8757
+  type: 'test'
+  ...
+# Subtest: map collect and completion stay gentle
+ok 11 - map collect and completion stay gentle
+  ---
+  duration_ms: 4.8959
+  type: 'test'
+  ...
+# Subtest: jump gives one short audible gesture instead of retriggering on held input
+ok 12 - jump gives one short audible gesture instead of retriggering on held input
+  ---
+  duration_ms: 7.7886
+  type: 'test'
+  ...
+# Subtest: a visited atlas map takes precedence over a retained voyage, old letter and ending
+ok 13 - a visited atlas map takes precedence over a retained voyage, old letter and ending
+  ---
+  duration_ms: 4.4183
+  type: 'test'
+  ...
+# Subtest: each map has its own written pitch and rhythm sequence rather than a timbre swap
+ok 14 - each map has its own written pitch and rhythm sequence rather than a timbre swap
+  ---
+  duration_ms: 7.2253
+  type: 'test'
+  ...
+# Subtest: observatory leaves whole silent bars even after progress and never uses a sustained drone
+ok 15 - observatory leaves whole silent bars even after progress and never uses a sustained drone
+  ---
+  duration_ms: 1.5272
+  type: 'test'
+  ...
+# Subtest: atlas scores stay finite, quiet and bounded for restored malformed progress and indices
+ok 16 - atlas scores stay finite, quiet and bounded for restored malformed progress and indices
+  ---
+  duration_ms: 7.1734
+  type: 'test'
+  ...
+# Subtest: absent or unknown atlas leaves every old zone and voyage score unchanged
+ok 17 - absent or unknown atlas leaves every old zone and voyage score unchanged
+  ---
+  duration_ms: 30.9749
+  type: 'test'
+  ...
+# Subtest: star camera keeps all six labelled stars inside the usable 360 x 800 region
+ok 18 - star camera keeps all six labelled stars inside the usable 360 x 800 region
+  ---
+  duration_ms: 32.9363
+  type: 'test'
+  ...
+# Subtest: star camera keeps all six labelled stars inside the usable 390 x 844 region
+ok 19 - star camera keeps all six labelled stars inside the usable 390 x 844 region
+  ---
+  duration_ms: 6.9443
+  type: 'test'
+  ...
+# Subtest: star camera keeps all six labelled stars inside the usable 844 x 390 region
+ok 20 - star camera keeps all six labelled stars inside the usable 844 x 390 region
+  ---
+  duration_ms: 7.9089
+  type: 'test'
+  ...
+# Subtest: star camera keeps all six labelled stars inside the usable 1440 x 900 region
+ok 21 - star camera keeps all six labelled stars inside the usable 1440 x 900 region
+  ---
+  duration_ms: 5.9046
+  type: 'test'
+  ...
+# Subtest: resizing to 150 x 200 keeps a finite camera and visible stars
+ok 22 - resizing to 150 x 200 keeps a finite camera and visible stars
+  ---
+  duration_ms: 2.4179
+  type: 'test'
+  ...
+# Subtest: resizing to 320 x 220 keeps a finite camera and visible stars
+ok 23 - resizing to 320 x 220 keeps a finite camera and visible stars
+  ---
+  duration_ms: 1.9541
+  type: 'test'
+  ...
+# Subtest: resizing to 200 x 100 keeps a finite camera and visible stars
+ok 24 - resizing to 200 x 100 keeps a finite camera and visible stars
+  ---
+  duration_ms: 1.5256
+  type: 'test'
+  ...
+# Subtest: unmeasured or invalid viewport sizes use a finite fallback camera
+ok 25 - unmeasured or invalid viewport sizes use a finite fallback camera
+  ---
+  duration_ms: 2.177
+  type: 'test'
+  ...
+# Subtest: controller sends world-coordinate movement and displays fractional model progress as a percentage
+ok 26 - controller sends world-coordinate movement and displays fractional model progress as a percentage
+  ---
+  duration_ms: 52.3802
+  type: 'test'
+  ...
+# Subtest: releasing movement over a focused button or input cannot leave the avatar walking
+ok 27 - releasing movement over a focused button or input cannot leave the avatar walking
+  ---
+  duration_ms: 16.898
+  type: 'test'
+  ...
+# Subtest: ordinary button, link and summary focus still permits walking and game shortcuts
+ok 28 - ordinary button, link and summary focus still permits walking and game shortcuts
+  ---
+  duration_ms: 44.8593
+  type: 'test'
+  ...
+# Subtest: editable controls suppress gameplay while native buttons retain Space and Enter activation
+ok 29 - editable controls suppress gameplay while native buttons retain Space and Enter activation
+  ---
+  duration_ms: 17.3152
+  type: 'test'
+  ...
+# Subtest: map entry and leaving the star controls return keyboard focus to the playable scene
+ok 30 - map entry and leaving the star controls return keyboard focus to the playable scene
+  ---
+  duration_ms: 16.8313
+  type: 'test'
+  ...
+# Subtest: touch movement and the held action release on cancellation or lost pointer capture
+ok 31 - touch movement and the held action release on cancellation or lost pointer capture
+  ---
+  duration_ms: 11.1573
+  type: 'test'
+  ...
+# Subtest: the held action also works from keyboard focus on its own accessible button
+ok 32 - the held action also works from keyboard focus on its own accessible button
+  ---
+  duration_ms: 9.2892
+  type: 'test'
+  ...
+# Subtest: special-button key events bubble without duplicating its hold and release on a changed focus
+ok 33 - special-button key events bubble without duplicating its hold and release on a changed focus
+  ---
+  duration_ms: 24.4547
+  type: 'test'
+  ...
+# Subtest: entering stargazing cancels movement and the same ordered stars survive exit and reentry
+ok 34 - entering stargazing cancels movement and the same ordered stars survive exit and reentry
+  ---
+  duration_ms: 15.1467
+  type: 'test'
+  ...
+# Subtest: the final constellation click completes once without dereferencing the cancelled pointer
+ok 35 - the final constellation click completes once without dereferencing the cancelled pointer
+  ---
+  duration_ms: 13.0712
+  type: 'test'
+  ...
+# Subtest: the final constellation drag completes once without dereferencing the cancelled pointer
+ok 36 - the final constellation drag completes once without dereferencing the cancelled pointer
+  ---
+  duration_ms: 14.8745
+  type: 'test'
+  ...
+# Subtest: secondary pointers never connect stars and keyboard digits use the same route rule
+ok 37 - secondary pointers never connect stars and keyboard digits use the same route rule
+  ---
+  duration_ms: 13.3431
+  type: 'test'
+  ...
+# Subtest: completion releases held touch movement and permits a later deliberate fresh jump
+ok 38 - completion releases held touch movement and permits a later deliberate fresh jump
+  ---
+  duration_ms: 6.9244
+  type: 'test'
+  ...
+# Subtest: switching maps and return preserve separate positions while clearing transient inputs
+ok 39 - switching maps and return preserve separate positions while clearing transient inputs
+  ---
+  duration_ms: 20.9978
+  type: 'test'
+  ...
+# Subtest: cancelled click-to-walk cannot resume when a paused map starts updating again
+ok 40 - cancelled click-to-walk cannot resume when a paused map starts updating again
+  ---
+  duration_ms: 6.4579
+  type: 'test'
+  ...
+# Subtest: an automatic fall recovery cancels old held controls before returning to its checkpoint
+ok 41 - an automatic fall recovery cancels old held controls before returning to its checkpoint
+  ---
+  duration_ms: 11.6862
+  type: 'test'
+  ...
+# Subtest: a rejected airborne note interaction cannot open text that the model did not record
+ok 42 - a rejected airborne note interaction cannot open text that the model did not record
+  ---
+  duration_ms: 6.515
+  type: 'test'
+  ...
+# Subtest: Z performs the same single-step undo advertised in the star-map hint
+ok 43 - Z performs the same single-step undo advertised in the star-map hint
+  ---
+  duration_ms: 23.2923
+  type: 'test'
+  ...
+# Subtest: a freshly completed garden saves its departure checkpoint and enters the first new map before the coast
+ok 44 - a freshly completed garden saves its departure checkpoint and enters the first new map before the coast
+  ---
+  duration_ms: 32.0202
+  type: 'test'
+  ...
+# Subtest: the coast route always selects the first unfinished map until all three earned rewards are present
+ok 45 - the coast route always selects the first unfinished map until all three earned rewards are present
+  ---
+  duration_ms: 6.3043
+  type: 'test'
+  ...
+# Subtest: finishing the three freely accessible maps cannot bypass missing garden seeds
+ok 46 - finishing the three freely accessible maps cannot bypass missing garden seeds
+  ---
+  duration_ms: 9.0361
+  type: 'test'
+  ...
+# Subtest: legacy coastal progress and legacy endings can continue without fabricated atlas completion
+ok 47 - legacy coastal progress and legacy endings can continue without fabricated atlas completion
+  ---
+  duration_ms: 9.4484
+  type: 'test'
+  ...
+# Subtest: an older ending without coastal data still continues to the coast instead of losing its ending
+ok 48 - an older ending without coastal data still continues to the coast instead of losing its ending
+  ---
+  duration_ms: 3.621
+  type: 'test'
+  ...
+# Subtest: continue resumes the active atlas map before a retained voyage or ending
+ok 49 - continue resumes the active atlas map before a retained voyage or ending
+  ---
+  duration_ms: 37.0995
+  type: 'test'
+  ...
+# Subtest: continue uses the old coastal scene when no atlas location was saved
+ok 50 - continue uses the old coastal scene when no atlas location was saved
+  ---
+  duration_ms: 9.5611
+  type: 'test'
+  ...
+# Subtest: fresh cover map entry creates a valid new journey and cancels the opening before entering the requested map
+ok 51 - fresh cover map entry creates a valid new journey and cancels the opening before entering the requested map
+  ---
+  duration_ms: 10.3912
+  type: 'test'
+  ...
+# Subtest: the cover map loads a legacy journey before visiting a new destination without changing its letter
+ok 52 - the cover map loads a legacy journey before visiting a new destination without changing its letter
+  ---
+  duration_ms: 9.3955
+  type: 'test'
+  ...
+# Subtest: a failed new-journey write from the cover never enters a map or silently overwrites the archive
+ok 53 - a failed new-journey write from the cover never enters a map or silently overwrites the archive
+  ---
+  duration_ms: 4.8168
+  type: 'test'
+  ...
+# Subtest: the map coast button obeys the same new-map route gate rather than bypassing it
+ok 54 - the map coast button obeys the same new-map route gate rather than bypassing it
+  ---
+  duration_ms: 6.095
+  type: 'test'
+  ...
+# Subtest: return to the garden from a cover map does not accidentally reopen the saved atlas location
+ok 55 - return to the garden from a cover map does not accidentally reopen the saved atlas location
+  ---
+  duration_ms: 26.49
+  type: 'test'
+  ...
+# Subtest: a carried seed prevents map travel without discarding or moving that seed
+ok 56 - a carried seed prevents map travel without discarding or moving that seed
+  ---
+  duration_ms: 4.2637
+  type: 'test'
+  ...
+# Subtest: earned-writing: main resumes the earned v0.8 coast and returns from an independent map without an atlas gate
+ok 57 - earned-writing: main resumes the earned v0.8 coast and returns from an independent map without an atlas gate
+  ---
+  duration_ms: 27.5885
+  type: 'test'
+  ...
+# Subtest: earned-old-letter: main resumes the earned v0.8 coast and returns from an independent map without an atlas gate
+ok 58 - earned-old-letter: main resumes the earned v0.8 coast and returns from an independent map without an atlas gate
+  ---
+  duration_ms: 32.4006
+  type: 'test'
+  ...
+# Subtest: earned-complete: main resumes the earned v0.8 coast and returns from an independent map without an atlas gate
+ok 59 - earned-complete: main resumes the earned v0.8 coast and returns from an independent map without an atlas gate
+  ---
+  duration_ms: 53.4346
+  type: 'test'
+  ...
+# Subtest: earned-writing: real v0.8 sealed letter and earned voyage survive independent maps and archive round trip
+ok 60 - earned-writing: real v0.8 sealed letter and earned voyage survive independent maps and archive round trip
+  ---
+  duration_ms: 81.4046
+  type: 'test'
+  ...
+# Subtest: earned-old-letter: real v0.8 sealed letter and earned voyage survive independent maps and archive round trip
+ok 61 - earned-old-letter: real v0.8 sealed letter and earned voyage survive independent maps and archive round trip
+  ---
+  duration_ms: 37.8073
+  type: 'test'
+  ...
+# Subtest: earned-complete: real v0.8 sealed letter and earned voyage survive independent maps and archive round trip
+ok 62 - earned-complete: real v0.8 sealed letter and earned voyage survive independent maps and archive round trip
+  ---
+  duration_ms: 68.9375
+  type: 'test'
+  ...
+# Subtest: locations retain earned work and restore their own walking positions
+ok 63 - locations retain earned work and restore their own walking positions
+  ---
+  duration_ms: 8.2563
+  type: 'test'
+  ...
+# Subtest: a nearby player cannot pollinate until the actual butterfly arrives
+ok 64 - a nearby player cannot pollinate until the actual butterfly arrives
+  ---
+  duration_ms: 9.3604
+  type: 'test'
+  ...
+# Subtest: running away leaves the following butterfly behind and earns no remote pollen
+ok 65 - running away leaves the following butterfly behind and earns no remote pollen
+  ---
+  duration_ms: 3.6396
+  type: 'test'
+  ...
+# Subtest: all three blooms complete the conservatory once and report the next destination
+ok 66 - all three blooms complete the conservatory once and report the next destination
+  ---
+  duration_ms: 4.7611
+  type: 'test'
+  ...
+# Subtest: star study requires reaching the dais and only accepts the next route node
+ok 67 - star study requires reaching the dais and only accepts the next route node
+  ---
+  duration_ms: 2.8797
+  type: 'test'
+  ...
+# Subtest: narrative notes must be found nearby in their own location
+ok 68 - narrative notes must be found nearby in their own location
+  ---
+  duration_ms: 1.9357
+  type: 'test'
+  ...
+# Subtest: cloud geography has real gaps and the observatory has a walkable ramp
+ok 69 - cloud geography has real gaps and the observatory has a walkable ramp
+  ---
+  duration_ms: 0.6718
+  type: 'test'
+  ...
+# Subtest: jump rises, holding the action glides only on descent, and holding cannot autojump on landing
+ok 70 - jump rises, holding the action glides only on descent, and holding cannot autojump on landing
+  ---
+  duration_ms: 2.2192
+  type: 'test'
+  ...
+# Subtest: landing on an out-of-order island cannot grant the final checkpoint
+ok 71 - landing on an out-of-order island cannot grant the final checkpoint
+  ---
+  duration_ms: 0.9822
+  type: 'test'
+  ...
+# Subtest: every cloud island is reachable with real jump and movement inputs in order
+ok 72 - every cloud island is reachable with real jump and movement inputs in order
+  ---
+  duration_ms: 4.977
+  type: 'test'
+  ...
+# Subtest: touch-speed eight-direction jumps reach every island from a forgiving 65-percent-radius takeoff
+ok 73 - touch-speed eight-direction jumps reach every island from a forgiving 65-percent-radius takeoff
+  ---
+  duration_ms: 8.0561
+  type: 'test'
+  ...
+# Subtest: recover returns to the latest earned island and leaves map progress intact
+ok 74 - recover returns to the latest earned island and leaves map progress intact
+  ---
+  duration_ms: 0.563
+  type: 'test'
+  ...
+# Subtest: malformed saves and oversized frame inputs cannot create nonfinite state or forged rewards
+ok 75 - malformed saves and oversized frame inputs cannot create nonfinite state or forged rewards
+  ---
+  duration_ms: 6.3902
+  type: 'test'
+  ...
+# Subtest: rule commands and stepping do not mutate their caller state
+ok 76 - rule commands and stepping do not mutate their caller state
+  ---
+  duration_ms: 0.9583
+  type: 'test'
+  ...
+# Subtest: a continuous slow walk lets the real butterfly follow and pollinate all three beds
+ok 77 - a continuous slow walk lets the real butterfly follow and pollinate all three beds
+  ---
+  duration_ms: 14.938
+  type: 'test'
+  ...
+# Subtest: restoring an airborne save returns to the earned island and clears action latches
+ok 78 - restoring an airborne save returns to the earned island and clears action latches
+  ---
+  duration_ms: 0.8454
+  type: 'test'
+  ...
+# Subtest: grounded walking cannot pass through the actual fern trunk, brass base or cloud tree
+ok 79 - grounded walking cannot pass through the actual fern trunk, brass base or cloud tree
+  ---
+  duration_ms: 2.6412
+  type: 'test'
+  ...
+# Subtest: diagonal movement slides around a trunk instead of sticking or entering its cylinder
+ok 80 - diagonal movement slides around a trunk instead of sticking or entering its cylinder
+  ---
+  duration_ms: 1.9228
+  type: 'test'
+  ...
+# Subtest: airborne flight can clear a cloud trunk but landing cannot leave feet inside it
+ok 81 - airborne flight can clear a cloud trunk but landing cannot leave feet inside it
+  ---
+  duration_ms: 1.2441
+  type: 'test'
+  ...
+# Subtest: a saved position inside newly solid scenery restores just outside that scenery
+ok 82 - a saved position inside newly solid scenery restores just outside that scenery
+  ---
+  duration_ms: 0.8271
+  type: 'test'
+  ...
+# Subtest: old coastal and completed journeys gain unvisited maps without changing their letters or ending
+ok 83 - old coastal and completed journeys gain unvisited maps without changing their letters or ending
+  ---
+  duration_ms: 18.2668
+  type: 'test'
+  ...
+# Subtest: normal journey serialization retains a mid-map position and every independent puzzle
+ok 84 - normal journey serialization retains a mid-map position and every independent puzzle
+  ---
+  duration_ms: 10.0376
+  type: 'test'
+  ...
+# Subtest: archive import rejects a future atlas schema in journeys and before-letter checkpoints
+ok 85 - archive import rejects a future atlas schema in journeys and before-letter checkpoints
+  ---
+  duration_ms: 14.18
+  type: 'test'
+  ...
+# Subtest: archive summary names the current new map and counts earned discoveries
+ok 86 - archive summary names the current new map and counts earned discoveries
+  ---
+  duration_ms: 7.0438
+  type: 'test'
+  ...
+# Subtest: export and import retain a new-map visit beside a legacy sealed coastal letter
+ok 87 - export and import retain a new-map visit beside a legacy sealed coastal letter
+  ---
+  duration_ms: 19.8699
+  type: 'test'
+  ...
+# Subtest: atlas switches independent environments and only animates the active location
+ok 88 - atlas switches independent environments and only animates the active location
+  ---
+  duration_ms: 1909.1241
+  type: 'test'
+  ...
+# Subtest: all authored positions, normals and transforms stay finite under malformed presentation input
+ok 89 - all authored positions, normals and transforms stay finite under malformed presentation input
+  ---
+  duration_ms: 1450.4527
+  type: 'test'
+  ...
+# Subtest: cloud islands have real flat land at shared elevations and no terrain fills the gaps
+ok 90 - cloud islands have real flat land at shared elevations and no terrain fills the gaps
+  ---
+  duration_ms: 1785.2897
+  type: 'test'
+  ...
+# Subtest: star path reflects actual traced nodes and world updates do not accumulate objects
+ok 91 - star path reflects actual traced nodes and world updates do not accumulate objects
+  ---
+  duration_ms: 1192.0333
+  type: 'test'
+  ...
+# Subtest: visible walking surfaces match the greenhouse floor and observatory rise
+ok 92 - visible walking surfaces match the greenhouse floor and observatory rise
+  ---
+  duration_ms: 836.4878
+  type: 'test'
+  ...
+# Subtest: large entrance masonry and fallen columns leave the central walking corridor clear
+ok 93 - large entrance masonry and fallen columns leave the central walking corridor clear
+  ---
+  duration_ms: 1338.6587
+  type: 'test'
+  ...
+# Subtest: the courier opens a physical parasol only during cloud-island gliding
+ok 94 - the courier opens a physical parasol only during cloud-island gliding
+  ---
+  duration_ms: 657.0605
+  type: 'test'
+  ...
+# Subtest: light density lowers geometry while retaining living flowers on every cloud island
+ok 95 - light density lowers geometry while retaining living flowers on every cloud island
+  ---
+  duration_ms: 683.0478
+  type: 'test'
+  ...
+# Subtest: atlas releases owned geometry, materials, textures and lights exactly once
+ok 96 - atlas releases owned geometry, materials, textures and lights exactly once
+  ---
+  duration_ms: 778.2296
+  type: 'test'
+  ...
+# Subtest: sample requests stay beside a nested iframe index instead of the host root
+ok 97 - sample requests stay beside a nested iframe index instead of the host root
+  ---
+  duration_ms: 44.7794
+  type: 'test'
+  ...
+# Subtest: authored score has harmonic movement, rests and materially distinct challenge orchestration
+ok 98 - authored score has harmonic movement, rests and materially distinct challenge orchestration
+  ---
+  duration_ms: 3.9256
+  type: 'test'
+  ...
+# Subtest: unlock is idempotent and audio clock schedules notes even with a tiny render delta
+ok 99 - unlock is idempotent and audio clock schedules notes even with a tiny render delta
+  ---
+  duration_ms: 17.8124
+  type: 'test'
+  ...
+# Subtest: pause and mute clear all foreground voices and do not replay a backlog on resume
+ok 100 - pause and mute clear all foreground voices and do not replay a backlog on resume
+  ---
+  duration_ms: 9.1705
+  type: 'test'
+  ...
+# Subtest: event storms stay bounded and dispose disconnects every persistent node
+ok 101 - event storms stay bounded and dispose disconnects every persistent node
+  ---
+  duration_ms: 42.6822
+  type: 'test'
+  ...
+# Subtest: independent mix persists before unlock and reverb uses post-fader paths
+ok 102 - independent mix persists before unlock and reverb uses post-fader paths
+  ---
+  duration_ms: 6.6062
+  type: 'test'
+  ...
+# Subtest: recorded birds and river have one loop each across repeated unlock, pause and mute
+ok 103 - recorded birds and river have one loop each across repeated unlock, pause and mute
+  ---
+  duration_ms: 24.9462
+  type: 'test'
+  ...
+# Subtest: walking selects varied recordings for its actual surface and stops when stationary
+ok 104 - walking selects varied recordings for its actual surface and stops when stationary
+  ---
+  duration_ms: 18.5487
+  type: 'test'
+  ...
+# Subtest: stone tile rotation plays recorded contact and respects the effects slider
+ok 105 - stone tile rotation plays recorded contact and respects the effects slider
+  ---
+  duration_ms: 4.3949
+  type: 'test'
+  ...
+# Subtest: river proximity changes its level independently from music, while ambience fader gates both loops
+ok 106 - river proximity changes its level independently from music, while ambience fader gates both loops
+  ---
+  duration_ms: 3.342
+  type: 'test'
+  ...
+# Subtest: a 130 ms press produces an early step, then stationary frames remain silent
+ok 107 - a 130 ms press produces an early step, then stationary frames remain silent
+  ---
+  duration_ms: 5.8606
+  type: 'test'
+  ...
+# Subtest: repeated quick taps cannot exceed the audio-clock footstep rate limit
+ok 108 - repeated quick taps cannot exceed the audio-clock footstep rate limit
+  ---
+  duration_ms: 7.1621
+  type: 'test'
+  ...
+# Subtest: continuous walking keeps normal half-second strides after the early first step
+ok 109 - continuous walking keeps normal half-second strides after the early first step
+  ---
+  duration_ms: 8.3191
+  type: 'test'
+  ...
+# Subtest: single-frame movement flicker cannot trigger footsteps
+ok 110 - single-frame movement flicker cannot trigger footsteps
+  ---
+  duration_ms: 4.5457
+  type: 'test'
+  ...
+# Subtest: old and new tide choices share pitches but place the harp answer half a beat apart in every bar
+ok 111 - old and new tide choices share pitches but place the harp answer half a beat apart in every bar
+  ---
+  duration_ms: 5.5397
+  type: 'test'
+  ...
+# Subtest: tide reply motif keeps four pitches and gains while new choice leaves space before each harp answer
+ok 112 - tide reply motif keeps four pitches and gains while new choice leaves space before each harp answer
+  ---
+  duration_ms: 5.1501
+  type: 'test'
+  ...
+# Subtest: reply event schedules the chosen tide rhythm without adding persistent audio nodes
+ok 113 - reply event schedules the chosen tide rhythm without adding persistent audio nodes
+  ---
+  duration_ms: 4.5667
+  type: 'test'
+  ...
+# Subtest: cached sampling preserves the original Float32 values for every form, series and variant
+ok 114 - cached sampling preserves the original Float32 values for every form, series and variant
+  ---
+  duration_ms: 3795.573
+  type: 'test'
+  ...
+# Subtest: callers cannot mutate the private endpoints or subsequent colors
+ok 115 - callers cannot mutate the private endpoints or subsequent colors
+  ---
+  duration_ms: 2252.1508
+  type: 'test'
+  ...
+# Subtest: colors-only sampling validates counts, handles empty input and rejects disposed bouquets
+ok 116 - colors-only sampling validates counts, handles empty input and rejects disposed bouquets
+  ---
+  duration_ms: 574.8518
+  type: 'test'
+  ...
+# Subtest: surface samples are deterministic, finite, exact length, and reject invalid counts
+ok 117 - surface samples are deterministic, finite, exact length, and reject invalid counts
+  ---
+  duration_ms: 1748.7043
+  type: 'test'
+  ...
+# Subtest: each sampled identity stays on the same real triangle through bloom
+ok 118 - each sampled identity stays on the same real triangle through bloom
+  ---
+  duration_ms: 1691.0161
+  type: 'test'
+  ...
+# Subtest: bloom is reversible with fixed stem roots and unchanged geometry buffers
+ok 119 - bloom is reversible with fixed stem roots and unchanged geometry buffers
+  ---
+  duration_ms: 242.1934
+  type: 'test'
+  ...
+# Subtest: bouquet remains within hero framing and has three distinct blossoms plus two buds
+ok 120 - bouquet remains within hero framing and has three distinct blossoms plus two buds
+  ---
+  duration_ms: 1102.3506
+  type: 'test'
+  ...
+# Subtest: physical materials are isolated between bouquets and natural foliage stays green
+ok 121 - physical materials are isolated between bouquets and natural foliage stays green
+  ---
+  duration_ms: 1019.1607
+  type: 'test'
+  ...
+# Subtest: thin flower shells have outward normals on both sides for physical transmission
+ok 122 - thin flower shells have outward normals on both sides for physical transmission
+  ---
+  duration_ms: 339.229
+  type: 'test'
+  ...
+# Subtest: opacity removes all solid parts continuously and restoring does not rebuild the bouquet
+ok 123 - opacity removes all solid parts continuously and restoring does not rebuild the bouquet
+  ---
+  duration_ms: 211.6351
+  type: 'test'
+  ...
+# Subtest: scale affects samples once and owned GPU resources dispose once
+ok 124 - scale affects samples once and owned GPU resources dispose once
+  ---
+  duration_ms: 667.4874
+  type: 'test'
+  ...
+# Subtest: silver interference uses non-color thickness variation and preserves geometry identity
+ok 125 - silver interference uses non-color thickness variation and preserves geometry identity
+  ---
+  duration_ms: 392.3465
+  type: 'test'
+  ...
+# Subtest: surface controls clamp zero and finite extremes, ignore invalid numbers, and reset with material presets
+ok 126 - surface controls clamp zero and finite extremes, ignore invalid numbers, and reset with material presets
+  ---
+  duration_ms: 499.9803
+  type: 'test'
+  ...
+# Subtest: v6 forms have distinct real topology, finite normals and matched morph endpoints
+ok 127 - v6 forms have distinct real topology, finite normals and matched morph endpoints
+  ---
+  duration_ms: 1938.3818
+  type: 'test'
+  ...
+# Subtest: v6 all optical series keep positions but supply distinct source colors
+ok 128 - v6 all optical series keep positions but supply distinct source colors
+  ---
+  duration_ms: 528.3109
+  type: 'test'
+  ...
+# Subtest: v6 changing form releases old geometries once and preserves material resources
+ok 129 - v6 changing form releases old geometries once and preserves material resources
+  ---
+  duration_ms: 606.0903
+  type: 'test'
+  ...
+# Subtest: new forms sample the exact same real triangles at closed and open endpoints
+ok 130 - new forms sample the exact same real triangles at closed and open endpoints
+  ---
+  duration_ms: 5658.4457
+  type: 'test'
+  ...
+# Subtest: dahlia rays and iris flags occupy different silhouettes at the same scale
+ok 131 - dahlia rays and iris flags occupy different silhouettes at the same scale
+  ---
+  duration_ms: 1686.3537
+  type: 'test'
+  ...
+# Subtest: bridge_am opens a low, unobstructed flower crossing after its reveal
+ok 132 - bridge_am opens a low, unobstructed flower crossing after its reveal
+  ---
+  duration_ms: 1296.2296
+  type: 'test'
+  ...
+# Subtest: bridge_mf opens a low, unobstructed flower crossing after its reveal
+ok 133 - bridge_mf opens a low, unobstructed flower crossing after its reveal
+  ---
+  duration_ms: 576.8313
+  type: 'test'
+  ...
+# Subtest: shield_rm opens a low, unobstructed flower crossing after its reveal
+ok 134 - shield_rm opens a low, unobstructed flower crossing after its reveal
+  ---
+  duration_ms: 589.614
+  type: 'test'
+  ...
+# Subtest: a complete ordered world-space stroke commits only on deliberate release
+ok 135 - a complete ordered world-space stroke commits only on deliberate release
+  ---
+  duration_ms: 14.0816
+  type: 'test'
+  ...
+# Subtest: the middle platform chooses its adjacent route by the actual first anchors
+ok 136 - the middle platform chooses its adjacent route by the actual first anchors
+  ---
+  duration_ms: 8.353
+  type: 'test'
+  ...
+# Subtest: remote starts, skipped routes and one-frame teleports cannot build a bridge
+ok 137 - remote starts, skipped routes and one-frame teleports cannot build a bridge
+  ---
+  duration_ms: 1.1362
+  type: 'test'
+  ...
+# Subtest: occupied bridge, locked wind and nonadjacent platform cannot queue a later construction
+ok 138 - occupied bridge, locked wind and nonadjacent platform cannot queue a later construction
+  ---
+  duration_ms: 12.6255
+  type: 'test'
+  ...
+# Subtest: lifting early, leaving the route, moving the player or losing focus cancels safely
+ok 139 - lifting early, leaving the route, moving the player or losing focus cancels safely
+  ---
+  duration_ms: 2.2986
+  type: 'test'
+  ...
+# Subtest: a failed stroke fades and a clean next stroke can succeed without reset buttons
+ok 140 - a failed stroke fades and a clean next stroke can succeed without reset buttons
+  ---
+  duration_ms: 3.602
+  type: 'test'
+  ...
+# Subtest: visual adapter owns four render objects and disposes without mutating state
+ok 141 - visual adapter owns four render objects and disposes without mutating state
+  ---
+  duration_ms: 12.3833
+  type: 'test'
+  ...
+# Subtest: only masonry between the view and its subject fades, then returns as the view clears
+ok 142 - only masonry between the view and its subject fades, then returns as the view clears
+  ---
+  duration_ms: 36.3389
+  type: 'test'
+  ...
+# Subtest: an off-centre flower bed stays visible even when the traveller ray is clear
+ok 143 - an off-centre flower bed stays visible even when the traveller ray is clear
+  ---
+  duration_ms: 16.9426
+  type: 'test'
+  ...
+# Subtest: visual updates never change gameplay state and invalid frame values remain finite
+ok 144 - visual updates never change gameplay state and invalid frame values remain finite
+  ---
+  duration_ms: 293.5312
+  type: 'test'
+  ...
+# Subtest: each optional reward appears only for its completed branch and can restore a save
+ok 145 - each optional reward appears only for its completed branch and can restore a save
+  ---
+  duration_ms: 99.4504
+  type: 'test'
+  ...
+# Subtest: branch targets are finite and independent of visual animation; memory flower responds to comparison
+ok 146 - branch targets are finite and independent of visual animation; memory flower responds to comparison
+  ---
+  duration_ms: 136.5432
+  type: 'test'
+  ...
+# Subtest: separate scenes own their mutable materials
+ok 147 - separate scenes own their mutable materials
+  ---
+  duration_ms: 299.083
+  type: 'test'
+  ...
+# Subtest: owned geometries, materials and textures are released once despite repeated disposal
+ok 148 - owned geometries, materials and textures are released once despite repeated disposal
+  ---
+  duration_ms: 46.436
+  type: 'test'
+  ...
+# Subtest: fabric detailing preserves the authored silhouette, root scale and standing bounds
+ok 149 - fabric detailing preserves the authored silhouette, root scale and standing bounds
+  ---
+  duration_ms: 181.5479
+  type: 'test'
+  ...
+# Subtest: secondary motion keeps the original feet and body trajectory and stays inside the old motion envelope
+ok 150 - secondary motion keeps the original feet and body trajectory and stays inside the old motion envelope
+  ---
+  duration_ms: 280.8888
+  type: 'test'
+  ...
+# Subtest: cloth is rough, non-emissive and UV-complete, with bounded local texture and draw budgets
+ok 151 - cloth is rough, non-emissive and UV-complete, with bounded local texture and draw budgets
+  ---
+  duration_ms: 62.2144
+  type: 'test'
+  ...
+# Subtest: owned resources are isolated, invalid input does not poison motion, and disposal is idempotent
+ok 152 - owned resources are isolated, invalid input does not poison motion, and disposal is idempotent
+  ---
+  duration_ms: 69.2358
+  type: 'test'
+  ...
+# Subtest: sustained dash exhausts, recovers and requires release instead of flickering
+ok 153 - sustained dash exhausts, recovers and requires release instead of flickering
+  ---
+  duration_ms: 7.0685
+  type: 'test'
+  ...
+# Subtest: stationary or disabled controls do not spend energy; pause does not advance
+ok 154 - stationary or disabled controls do not spend energy; pause does not advance
+  ---
+  duration_ms: 0.7114
+  type: 'test'
+  ...
+# Subtest: after planting, onward guidance points to the remaining seed or the departure instead of undoing the planted choice
+ok 155 - after planting, onward guidance points to the remaining seed or the departure instead of undoing the planted choice
+  ---
+  duration_ms: 50.791
+  type: 'test'
+  ...
+# Subtest: ordinary actions carry, plant, lift, replant and preview without committing the ending
+ok 156 - ordinary actions carry, plant, lift, replant and preview without committing the ending
+  ---
+  duration_ms: 15.9134
+  type: 'test'
+  ...
+# Subtest: sustained trigger never performs an accidental second action across intent changes
+ok 157 - sustained trigger never performs an accidental second action across intent changes
+  ---
+  duration_ms: 18.769
+  type: 'test'
+  ...
+# Subtest: occupied beds do not consume the second core and distant actions explain the destination
+ok 158 - occupied beds do not consume the second core and distant actions explain the destination
+  ---
+  duration_ms: 3.8693
+  type: 'test'
+  ...
+# Subtest: carried identity survives presentation recreation and rejects invalid or allocated identities
+ok 159 - carried identity survives presentation recreation and rejects invalid or allocated identities
+  ---
+  duration_ms: 46.0728
+  type: 'test'
+  ...
+# Subtest: inactive presentation and held input across a modal cannot take, plant, or send
+ok 160 - inactive presentation and held input across a modal cannot take, plant, or send
+  ---
+  duration_ms: 3.7439
+  type: 'test'
+  ...
+# Subtest: closed or completed chapters expose no delivery action
+ok 161 - closed or completed chapters expose no delivery action
+  ---
+  duration_ms: 0.8451
+  type: 'test'
+  ...
+# Subtest: real model saves keep the held identity across take, plant and lift without duplicating a core
+ok 162 - real model saves keep the held identity across take, plant and lift without duplicating a core
+  ---
+  duration_ms: 35.9438
+  type: 'test'
+  ...
+# Subtest: malformed and contradictory carried saves are rejected by authoritative restoration
+ok 163 - malformed and contradictory carried saves are rejected by authoritative restoration
+  ---
+  duration_ms: 4.9955
+  type: 'test'
+  ...
+# Subtest: canceling a letter preview leaves allocations editable and subsequent confirmation remains authoritative
+ok 164 - canceling a letter preview leaves allocations editable and subsequent confirmation remains authoritative
+  ---
+  duration_ms: 28.2715
+  type: 'test'
+  ...
+# Subtest: optional contact-depth failure restores scene visibility and renderer state
+ok 165 - optional contact-depth failure restores scene visibility and renderer state
+  ---
+  duration_ms: 75.384
+  type: 'test'
+  ...
+# Subtest: normal pass does not rebuild main-scene shadows
+ok 166 - normal pass does not rebuild main-scene shadows
+  ---
+  duration_ms: 32.8555
+  type: 'test'
+  ...
+# Subtest: explicit pending shadow request survives auxiliary drawing
+ok 167 - explicit pending shadow request survives auxiliary drawing
+  ---
+  duration_ms: 4.9249
+  type: 'test'
+  ...
+# Subtest: failed auxiliary drawing restores both shadow flags
+ok 168 - failed auxiliary drawing restores both shadow flags
+  ---
+  duration_ms: 6.052
+  type: 'test'
+  ...
+# Subtest: wind brush trace requires spatial travel, survives a short release and completes in either direction
+ok 169 - wind brush trace requires spatial travel, survives a short release and completes in either direction
+  ---
+  duration_ms: 33.8619
+  type: 'test'
+  ...
+# Subtest: clicking, pointer jumps, remote gestures and paused/locked scenes cannot auto-complete a garden
+ok 170 - clicking, pointer jumps, remote gestures and paused/locked scenes cannot auto-complete a garden
+  ---
+  duration_ms: 8.3308
+  type: 'test'
+  ...
+# Subtest: a seed follows three ordered gates, needs a deliberate release, and only replays after an explicit request
+ok 171 - a seed follows three ordered gates, needs a deliberate release, and only replays after an explicit request
+  ---
+  duration_ms: 10.7621
+  type: 'test'
+  ...
+# Subtest: missed seed routes cannot skip gates and a boundary return retains the last safe gate
+ok 172 - missed seed routes cannot skip gates and a boundary return retains the last safe gate
+  ---
+  duration_ms: 5.5977
+  type: 'test'
+  ...
+# Subtest: echo listening requires walking to each source and stillness with the brush put away
+ok 173 - echo listening requires walking to each source and stillness with the brush put away
+  ---
+  duration_ms: 12.0859
+  type: 'test'
+  ...
+# Subtest: simulation is pure, bad frame values are harmless, and restoration safely supports old saves and reprises
+ok 174 - simulation is pure, bad frame values are harmless, and restoration safely supports old saves and reprises
+  ---
+  duration_ms: 2.8002
+  type: 'test'
+  ...
+# Subtest: a damaged saved rain trace cannot grant a first reward or duplicate a reprise without input
+ok 175 - a damaged saved rain trace cannot grant a first reward or duplicate a reprise without input
+  ---
+  duration_ms: 23.0145
+  type: 'test'
+  ...
+# Subtest: legitimate partial circles and already-earned reprises retain their progress through restoration
+ok 176 - legitimate partial circles and already-earned reprises retain their progress through restoration
+  ---
+  duration_ms: 29.9129
+  type: 'test'
+  ...
+# Subtest: render layer exposes discoverable targets, gates rewards and only changes the exploration slice
+ok 177 - render layer exposes discoverable targets, gates rewards and only changes the exploration slice
+  ---
+  duration_ms: 158.9559
+  type: 'test'
+  ...
+# Subtest: independent layers own mutable materials and disposal releases attached resources exactly once
+ok 178 - independent layers own mutable materials and disposal releases attached resources exactly once
+  ---
+  duration_ms: 64.376
+  type: 'test'
+  ...
+# Subtest: legacy main-game saves default new gardens safely, and a legitimate save retains all garden rewards
+ok 179 - legacy main-game saves default new gardens safely, and a legitimate save retains all garden rewards
+  ---
+  duration_ms: 2.1324
+  type: 'test'
+  ...
+# Subtest: reduced motion preserves the same task rules and keeps a steady visible echo guide
+ok 180 - reduced motion preserves the same task rules and keeps a steady visible echo guide
+  ---
+  duration_ms: 45.6031
+  type: 'test'
+  ...
+# Subtest: a reserved gesture or modal cannot turn its inactive brush into an accidental delivery or echo
+ok 181 - a reserved gesture or modal cannot turn its inactive brush into an accidental delivery or echo
+  ---
+  duration_ms: 7.2006
+  type: 'test'
+  ...
+# Subtest: ordinary action at the seed cup requests pickup without held-key state
+ok 182 - ordinary action at the seed cup requests pickup without held-key state
+  ---
+  duration_ms: 23.9634
+  type: 'test'
+  ...
+# Subtest: between beds an action requests guidance rather than disappearing
+ok 183 - between beds an action requests guidance rather than disappearing
+  ---
+  duration_ms: 3.3248
+  type: 'test'
+  ...
+# Subtest: normal close views retain the action to leave
+ok 184 - normal close views retain the action to leave
+  ---
+  duration_ms: 7.8005
+  type: 'test'
+  ...
+# Subtest: modal and opening cannot queue a pickup behind the visible screen
+ok 185 - modal and opening cannot queue a pickup behind the visible screen
+  ---
+  duration_ms: 25.6472
+  type: 'test'
+  ...
+# Subtest: an earned letter still opens its review instead of queuing a seed action
+ok 186 - an earned letter still opens its review instead of queuing a seed action
+  ---
+  duration_ms: 3.2593
+  type: 'test'
+  ...
+# Subtest: a nearby nest does not swallow seed actions unless actually at its start
+ok 187 - a nearby nest does not swallow seed actions unless actually at its start
+  ---
+  duration_ms: 3.1086
+  type: 'test'
+  ...
+# Subtest: an active run handles E as return-to-nest rather than consuming a seed
+ok 188 - an active run handles E as return-to-nest rather than consuming a seed
+  ---
+  duration_ms: 3.7926
+  type: 'test'
+  ...
+# Subtest: an idle nest cannot steal pickup at the overlapping edge of the terminal seed cup
+ok 189 - an idle nest cannot steal pickup at the overlapping edge of the terminal seed cup
+  ---
+  duration_ms: 3.0279
+  type: 'test'
+  ...
+# Subtest: a nest still starts when the only delivery intent is a distant walk hint
+ok 190 - a nest still starts when the only delivery intent is a distant walk hint
+  ---
+  duration_ms: 4.4478
+  type: 'test'
+  ...
+# Subtest: a nearby letter opens in free roam while an active chase keeps ownership of E
+ok 191 - a nearby letter opens in free roam while an active chase keeps ownership of E
+  ---
+  duration_ms: 3.894
+  type: 'test'
+  ...
+# Subtest: an actionable seed pickup takes priority over a stale nearby-letter hint
+ok 192 - an actionable seed pickup takes priority over a stale nearby-letter hint
+  ---
+  duration_ms: 2.1891
+  type: 'test'
+  ...
+# Subtest: an active coastal chapter owns E without triggering a hidden seed pickup or garden interaction
+ok 193 - an active coastal chapter owns E without triggering a hidden seed pickup or garden interaction
+  ---
+  duration_ms: 2.1691
+  type: 'test'
+  ...
+# Subtest: an active atlas map owns E before retained coastal progress or nearby garden pickups
+ok 194 - an active atlas map owns E before retained coastal progress or nearby garden pickups
+  ---
+  duration_ms: 2.3093
+  type: 'test'
+  ...
+# Subtest: one burst releases, lingers after release and restores without another input
+ok 195 - one burst releases, lingers after release and restores without another input
+  ---
+  duration_ms: 41.3823
+  type: 'test'
+  ...
+# Subtest: slow adornment never shatters a solid flower; sustained fast input does not restart forever
+ok 196 - slow adornment never shatters a solid flower; sustained fast input does not restart forever
+  ---
+  duration_ms: 4.2142
+  type: 'test'
+  ...
+# Subtest: adornment extends drift to a finite ceiling and keeps slow restoration
+ok 197 - adornment extends drift to a finite ceiling and keeps slow restoration
+  ---
+  duration_ms: 2.0029
+  type: 'test'
+  ...
+# Subtest: pause freezes phase; release/cancel continues restoration; reduced motion preserves discovery time
+ok 198 - pause freezes phase; release/cancel continues restoration; reduced motion preserves discovery time
+  ---
+  duration_ms: 4.6036
+  type: 'test'
+  ...
+# Subtest: invalid time and input remain finite; reset cancels residue and edge-triggered held burst
+ok 199 - invalid time and input remain finite; reset cancels residue and edge-triggered held burst
+  ---
+  duration_ms: 1.526
+  type: 'test'
+  ...
+# Subtest: real elapsed lifecycle time gives the same gentle return on a 10 or 60 fps device
+ok 200 - real elapsed lifecycle time gives the same gentle return on a 10 or 60 fps device
+  ---
+  duration_ms: 5.8905
+  type: 'test'
+  ...
+# Subtest: a static flower or unattended burst cannot complete the first journey
+ok 201 - a static flower or unattended burst cannot complete the first journey
+  ---
+  duration_ms: 3.2015
+  type: 'test'
+  ...
+# Subtest: a deliberate brush through the drifting flower and its natural return open the way
+ok 202 - a deliberate brush through the drifting flower and its natural return open the way
+  ---
+  duration_ms: 0.9253
+  type: 'test'
+  ...
+# Subtest: hints describe the missing action and solved older saves remain solved
+ok 203 - hints describe the missing action and solved older saves remain solved
+  ---
+  duration_ms: 7.7675
+  type: 'test'
+  ...
+# Subtest: paused or invalid elapsed time does not earn brush progress
+ok 204 - paused or invalid elapsed time does not earn brush progress
+  ---
+  duration_ms: 5.2465
+  type: 'test'
+  ...
+# Subtest: the learned flower opens the route on its natural return even after leaving near-view
+ok 205 - the learned flower opens the route on its natural return even after leaving near-view
+  ---
+  duration_ms: 12.149
+  type: 'test'
+  ...
+# Subtest: wandering gestures cannot earn an unlearned flower lesson
+ok 206 - wandering gestures cannot earn an unlearned flower lesson
+  ---
+  duration_ms: 23.5197
+  type: 'test'
+  ...
+# Subtest: garden sky owns one background draw and releases its resources exactly once
+ok 207 - garden sky owns one background draw and releases its resources exactly once
+  ---
+  duration_ms: 19.4479
+  type: 'test'
+  ...
+# Subtest: CC0 surfaces change shading, not world topology, navigation or existing shared maps
+ok 208 - CC0 surfaces change shading, not world topology, navigation or existing shared maps
+  ---
+  duration_ms: 2077.793
+  type: 'test'
+  ...
+# Subtest: partial texture failure disposes all successful loads without installing material hooks
+ok 209 - partial texture failure disposes all successful loads without installing material hooks
+  ---
+  duration_ms: 2.7999
+  type: 'test'
+  ...
+# Subtest: new opening meadow leaves the hero, starting route and cup-table interaction clear
+ok 210 - new opening meadow leaves the hero, starting route and cup-table interaction clear
+  ---
+  duration_ms: 1263.5737
+  type: 'test'
+  ...
+# Subtest: light quality preserves all meadow clumps and restores detail without reallocating geometry
+ok 211 - light quality preserves all meadow clumps and restores detail without reallocating geometry
+  ---
+  duration_ms: 633.7841
+  type: 'test'
+  ...
+# Subtest: wind trail is bounded and expires without a restore action
+ok 212 - wind trail is bounded and expires without a restore action
+  ---
+  duration_ms: 161.7058
+  type: 'test'
+  ...
+# Subtest: separate gestures never draw a bridge between unrelated positions
+ok 213 - separate gestures never draw a bridge between unrelated positions
+  ---
+  duration_ms: 2.1132
+  type: 'test'
+  ...
+# Subtest: low quality actually reduces trail work and omits the spark draw call
+ok 214 - low quality actually reduces trail work and omits the spark draw call
+  ---
+  duration_ms: 37.8324
+  type: 'test'
+  ...
+# Subtest: slow deliberate motion produces a line and malformed input releases it safely
+ok 215 - slow deliberate motion produces a line and malformed input releases it safely
+  ---
+  duration_ms: 1.7755
+  type: 'test'
+  ...
+# Subtest: empty and damaged saves settle immediately into one stable fresh-journey shape
+ok 216 - empty and damaged saves settle immediately into one stable fresh-journey shape
+  ---
+  duration_ms: 17.9303
+  type: 'test'
+  ...
+# Subtest: all five route centerlines are walkable, graded, and connect to existing legal ground
+ok 217 - all five route centerlines are walkable, graded, and connect to existing legal ground
+  ---
+  duration_ms: 1218.2866
+  type: 'test'
+  ...
+# Subtest: all three interaction courts remain flat across a 4.2 metre disc
+ok 218 - all three interaction courts remain flat across a 4.2 metre disc
+  ---
+  duration_ms: 765.7805
+  type: 'test'
+  ...
+# Subtest: support comes from the visible triangle surface, including clipped coasts
+ok 219 - support comes from the visible triangle surface, including clipped coasts
+  ---
+  duration_ms: 2663.2085
+  type: 'test'
+  ...
+# Subtest: optional terrain respects both main gates and never reaches locked pool bridges
+ok 220 - optional terrain respects both main gates and never reaches locked pool bridges
+  ---
+  duration_ms: 495.5049
+  type: 'test'
+  ...
+# Subtest: rewards restore independently without mutating game state or target positions
+ok 221 - rewards restore independently without mutating game state or target positions
+  ---
+  duration_ms: 503.0187
+  type: 'test'
+  ...
+# Subtest: all scenery stays below the draw-call budget and owns disposable resources
+ok 222 - all scenery stays below the draw-call budget and owns disposable resources
+  ---
+  duration_ms: 879.0894
+  type: 'test'
+  ...
+# Subtest: shared surface textures have complete UVs and remain owned by their caller
+ok 223 - shared surface textures have complete UVs and remain owned by their caller
+  ---
+  duration_ms: 888.4426
+  type: 'test'
+  ...
+# Subtest: unopened first path cannot be traversed as water, while unlocked path connects gardens
+ok 224 - unopened first path cannot be traversed as water, while unlocked path connects gardens
+  ---
+  duration_ms: 7.7155
+  type: 'test'
+  ...
+# Subtest: pool crossings exist only when their material supports them
+ok 225 - pool crossings exist only when their material supports them
+  ---
+  duration_ms: 16.6853
+  type: 'test'
+  ...
+# Subtest: the second bridge joins M to F and finale route requires reaching F
+ok 226 - the second bridge joins M to F and finale route requires reaching F
+  ---
+  duration_ms: 1.2722
+  type: 'test'
+  ...
+# Subtest: support rejects nonfinite/outside coordinates and provides a fixed recovery point
+ok 227 - support rejects nonfinite/outside coordinates and provides a fixed recovery point
+  ---
+  duration_ms: 2.8039
+  type: 'test'
+  ...
+# Subtest: exported positions can be picked on every stone, including all quarter turns
+ok 228 - exported positions can be picked on every stone, including all quarter turns
+  ---
+  duration_ms: 816.866
+  type: 'test'
+  ...
+# Subtest: every committed choice has permanent growth after leaving and re-rotating
+ok 229 - every committed choice has permanent growth after leaving and re-rotating
+  ---
+  duration_ms: 331.0352
+  type: 'test'
+  ...
+# Subtest: all frame-reused geometry, material and instance resources dispose exactly once
+ok 230 - all frame-reused geometry, material and instance resources dispose exactly once
+  ---
+  duration_ms: 181.0227
+  type: 'test'
+  ...
+# Subtest: source lifecycle follows dt, pauses, finishes once, and safely restarts after leaving
+ok 231 - source lifecycle follows dt, pauses, finishes once, and safely restarts after leaving
+  ---
+  duration_ms: 471.5685
+  type: 'test'
+  ...
+# Subtest: source grains remain on propagated edges during flow and both tide flowers can be picked
+ok 232 - source grains remain on propagated edges during flow and both tide flowers can be picked
+  ---
+  duration_ms: 281.5999
+  type: 'test'
+  ...
+# Subtest: four source flower forms share fixed resources and reduced motion omits detached grains
+ok 233 - four source flower forms share fixed resources and reduced motion omits detached grains
+  ---
+  duration_ms: 447.765
+  type: 'test'
+  ...
+# Subtest: continuing is unavailable before a valid reply and never grants progress itself
+ok 234 - continuing is unavailable before a valid reply and never grants progress itself
+  ---
+  duration_ms: 10.5002
+  type: 'test'
+  ...
+# Subtest: a reply directs the player only to unlocked unfinished gardens
+ok 235 - a reply directs the player only to unlocked unfinished gardens
+  ---
+  duration_ms: 2.0825
+  type: 'test'
+  ...
+# Subtest: out-of-order legacy journeys check later gardens before wrapping to earlier ones
+ok 236 - out-of-order legacy journeys check later gardens before wrapping to earlier ones
+  ---
+  duration_ms: 1.2363
+  type: 'test'
+  ...
+# Subtest: every completed garden returns to the old platform only once all replies are written
+ok 237 - every completed garden returns to the old platform only once all replies are written
+  ---
+  duration_ms: 1.2718
+  type: 'test'
+  ...
+# Subtest: new visitors reach rain on its walkable approach instead of crossing the water
+ok 238 - new visitors reach rain on its walkable approach instead of crossing the water
+  ---
+  duration_ms: 96.0501
+  type: 'test'
+  ...
+# Subtest: the last reply leads back along actual shore paths to the bridge writing platform
+ok 239 - the last reply leads back along actual shore paths to the bridge writing platform
+  ---
+  duration_ms: 326.3638
+  type: 'test'
+  ...
+# Subtest: courtyard exits, main bridges, and the pool stepping stones connect all letter journeys
+ok 240 - courtyard exits, main bridges, and the pool stepping stones connect all letter journeys
+  ---
+  duration_ms: 1568.2638
+  type: 'test'
+  ...
+# Subtest: nearby waypoints advance for coarse steps and main-court visitors head directly to an exit
+ok 241 - nearby waypoints advance for coarse steps and main-court visitors head directly to an exit
+  ---
+  duration_ms: 170.5014
+  type: 'test'
+  ...
+# Subtest: arrival is local to the requested court and leaves game state and positions untouched
+ok 242 - arrival is local to the requested court and leaves game state and positions untouched
+  ---
+  duration_ms: 5.4134
+  type: 'test'
+  ...
+# Subtest: letter access follows p1 and wind gates and invalid requests return null
+ok 243 - letter access follows p1 and wind gates and invalid requests return null
+  ---
+  duration_ms: 12.1847
+  type: 'test'
+  ...
+# Subtest: main island edges remain usable and optional bridges never invent a disconnected return route
+ok 244 - main island edges remain usable and optional bridges never invent a disconnected return route
+  ---
+  duration_ms: 968.1416
+  type: 'test'
+  ...
+# Subtest: rain: fresh board needs action and both choices are attainable
+ok 245 - rain: fresh board needs action and both choices are attainable
+  ---
+  duration_ms: 18.9619
+  type: 'test'
+  ...
+# Subtest: rain: fixed stones and unknown inputs cannot create progress
+ok 246 - rain: fixed stones and unknown inputs cannot create progress
+  ---
+  duration_ms: 1.1604
+  type: 'test'
+  ...
+# Subtest: rain: changing a completed route preserves reply until deliberate recommit
+ok 247 - rain: changing a completed route preserves reply until deliberate recommit
+  ---
+  duration_ms: 0.7801
+  type: 'test'
+  ...
+# Subtest: wind: fresh board needs action and both choices are attainable
+ok 248 - wind: fresh board needs action and both choices are attainable
+  ---
+  duration_ms: 2.0395
+  type: 'test'
+  ...
+# Subtest: wind: fixed stones and unknown inputs cannot create progress
+ok 249 - wind: fixed stones and unknown inputs cannot create progress
+  ---
+  duration_ms: 0.66
+  type: 'test'
+  ...
+# Subtest: wind: changing a completed route preserves reply until deliberate recommit
+ok 250 - wind: changing a completed route preserves reply until deliberate recommit
+  ---
+  duration_ms: 0.5189
+  type: 'test'
+  ...
+# Subtest: tide: fresh board needs action and both choices are attainable
+ok 251 - tide: fresh board needs action and both choices are attainable
+  ---
+  duration_ms: 5.2674
+  type: 'test'
+  ...
+# Subtest: tide: fixed stones and unknown inputs cannot create progress
+ok 252 - tide: fixed stones and unknown inputs cannot create progress
+  ---
+  duration_ms: 1.7321
+  type: 'test'
+  ...
+# Subtest: tide: changing a completed route preserves reply until deliberate recommit
+ok 253 - tide: changing a completed route preserves reply until deliberate recommit
+  ---
+  duration_ms: 0.6669
+  type: 'test'
+  ...
+# Subtest: wind route cannot commit while its old well receives a live branch
+ok 254 - wind route cannot commit while its old well receives a live branch
+  ---
+  duration_ms: 1.3258
+  type: 'test'
+  ...
+# Subtest: tide needs both sources; one connected source is only a preview
+ok 255 - tide needs both sources; one connected source is only a preview
+  ---
+  duration_ms: 1.099
+  type: 'test'
+  ...
+# Subtest: restore rejects unknown schemas and clamps malformed per-entry values
+ok 256 - restore rejects unknown schemas and clamps malformed per-entry values
+  ---
+  duration_ms: 1.2428
+  type: 'test'
+  ...
+# Subtest: letter availability follows earned access and rewards count committed replies
+ok 257 - letter availability follows earned access and rewards count committed replies
+  ---
+  duration_ms: 0.8635
+  type: 'test'
+  ...
+# Subtest: half-open hold unlocks the first path; full bloom does not
+ok 258 - half-open hold unlocks the first path; full bloom does not
+  ---
+  duration_ms: 11.2001
+  type: 'test'
+  ...
+# Subtest: leaving the optical window resets hold, and background time cannot solve it
+ok 259 - leaving the optical window resets hold, and background time cannot solve it
+  ---
+  duration_ms: 6.9509
+  type: 'test'
+  ...
+# Subtest: game model exposes deliberate wind attraction and escape preserves the flower state
+ok 260 - game model exposes deliberate wind attraction and escape preserves the flower state
+  ---
+  duration_ms: 2.4835
+  type: 'test'
+  ...
+# Subtest: an untouched light cannot silently complete the wind puzzle
+ok 261 - an untouched light cannot silently complete the wind puzzle
+  ---
+  duration_ms: 1.6422
+  type: 'test'
+  ...
+# Subtest: a deliberately delivered light can settle into the receiving flower
+ok 262 - a deliberately delivered light can settle into the receiving flower
+  ---
+  duration_ms: 1.3961
+  type: 'test'
+  ...
+# Subtest: both inner and outer routes stay still until the player explicitly guides the seed
+ok 263 - both inner and outer routes stay still until the player explicitly guides the seed
+  ---
+  duration_ms: 2.1208
+  type: 'test'
+  ...
+# Subtest: guidance is stable across ordinary frame rates and cannot cut through the stone center
+ok 264 - guidance is stable across ordinary frame rates and cannot cut through the stone center
+  ---
+  duration_ms: 15.4313
+  type: 'test'
+  ...
+# Subtest: escape clears touched and cannot silently deliver a returned light
+ok 265 - escape clears touched and cannot silently deliver a returned light
+  ---
+  duration_ms: 1.129
+  type: 'test'
+  ...
+# Subtest: continued effective force cannot complete the receiving-flower hold
+ok 266 - continued effective force cannot complete the receiving-flower hold
+  ---
+  duration_ms: 1.9446
+  type: 'test'
+  ...
+# Subtest: a deliberate release is caught visibly without a hidden speed requirement
+ok 267 - a deliberate release is caught visibly without a hidden speed requirement
+  ---
+  duration_ms: 1.6371
+  type: 'test'
+  ...
+# Subtest: occupied bridge cannot be recalled or replaced; request does not queue
+ok 268 - occupied bridge cannot be recalled or replaced; request does not queue
+  ---
+  duration_ms: 1.0841
+  type: 'test'
+  ...
+# Subtest: shield cannot be removed while the dependent leaf path carries the player
+ok 269 - shield cannot be removed while the dependent leaf path carries the player
+  ---
+  duration_ms: 0.495
+  type: 'test'
+  ...
+# Subtest: every safe platform has a valid return route; remote disconnected build is rejected
+ok 270 - every safe platform has a valid return route; remote disconnected build is rejected
+  ---
+  duration_ms: 0.4486
+  type: 'test'
+  ...
+# Subtest: two cores cannot occupy one purpose and previews do not commit an ending
+ok 271 - two cores cannot occupy one purpose and previews do not commit an ending
+  ---
+  duration_ms: 6.9914
+  type: 'test'
+  ...
+# Subtest: all three intended endings are reachable without a hidden third core
+ok 272 - all three intended endings are reachable without a hidden third core
+  ---
+  duration_ms: 11.5478
+  type: 'test'
+  ...
+# Subtest: a valid save preserves puzzle state and core identity through restore
+ok 273 - a valid save preserves puzzle state and core identity through restore
+  ---
+  duration_ms: 12.7582
+  type: 'test'
+  ...
+# Subtest: malformed, future and forged progress saves restore to coherent safe state
+ok 274 - malformed, future and forged progress saves restore to coherent safe state
+  ---
+  duration_ms: 17.717
+  type: 'test'
+  ...
+# Subtest: restoration discards nonstring bridge shapes without coercing damaged JSON objects
+ok 275 - restoration discards nonstring bridge shapes without coercing damaged JSON objects
+  ---
+  duration_ms: 2.0237
+  type: 'test'
+  ...
+# Subtest: restoration never treats inherited object property names as bridge shapes
+ok 276 - restoration never treats inherited object property names as bridge shapes
+  ---
+  duration_ms: 1.9075
+  type: 'test'
+  ...
+# Subtest: valid saved bridge structures keep their physical crossings and remain gated by wind
+ok 277 - valid saved bridge structures keep their physical crossings and remain gated by wind
+  ---
+  duration_ms: 4.927
+  type: 'test'
+  ...
+# Subtest: composition uses the requested recorded instrument, pitch, gain and spatial position
+ok 278 - composition uses the requested recorded instrument, pitch, gain and spatial position
+  ---
+  duration_ms: 78.7944
+  type: 'test'
+  ...
+# Subtest: composition fades only music to zero, preserves preferences and ambience, and resumes without a queue
+ok 279 - composition fades only music to zero, preserves preferences and ambience, and resumes without a queue
+  ---
+  duration_ms: 128.3612
+  type: 'test'
+  ...
+# Subtest: invalid composition values are bounded, and an explicitly silent note is not reported as played
+ok 280 - invalid composition values are bounded, and an explicitly silent note is not reported as played
+  ---
+  duration_ms: 16.2438
+  type: 'test'
+  ...
+# Subtest: pause, mute and the effects slider suppress recorded and fallback notes without delayed playback
+ok 281 - pause, mute and the effects slider suppress recorded and fallback notes without delayed playback
+  ---
+  duration_ms: 18.7561
+  type: 'test'
+  ...
+# Subtest: mute ramps the actual master parameter to exact zero in 60 ms and unmute never replays discarded notes
+ok 282 - mute ramps the actual master parameter to exact zero in 60 ms and unmute never replays discarded notes
+  ---
+  duration_ms: 11.1013
+  type: 'test'
+  ...
+# Subtest: missing samples produce distinct finite fallback waveforms, reuse three buffers and release every voice
+ok 283 - missing samples produce distinct finite fallback waveforms, reuse three buffers and release every voice
+  ---
+  duration_ms: 69.9443
+  type: 'test'
+  ...
+# Subtest: decode errors use fallback while successful instruments remain sampled
+ok 284 - decode errors use fallback while successful instruments remain sampled
+  ---
+  duration_ms: 14.9499
+  type: 'test'
+  ...
+# Subtest: a first gesture during asset loading sounds immediately and later gestures switch to the real sample
+ok 285 - a first gesture during asset loading sounds immediately and later gestures switch to the real sample
+  ---
+  duration_ms: 36.1389
+  type: 'test'
+  ...
+# Subtest: moment reply is one short breath and one quiet harp note, including when its asset is unavailable
+ok 286 - moment reply is one short breath and one quiet harp note, including when its asset is unavailable
+  ---
+  duration_ms: 30.4888
+  type: 'test'
+  ...
+# Subtest: rain environment appears only during focus and stays outside framing and picking APIs
+ok 287 - rain environment appears only during focus and stays outside framing and picking APIs
+  ---
+  duration_ms: 265.5188
+  type: 'test'
+  ...
+# Subtest: tide environment appears only during focus and stays outside framing and picking APIs
+ok 288 - tide environment appears only during focus and stays outside framing and picking APIs
+  ---
+  duration_ms: 165.8587
+  type: 'test'
+  ...
+# Subtest: greenhouse ground extends past the optical stage while every triangle leaves the flower sheets clear
+ok 289 - greenhouse ground extends past the optical stage while every triangle leaves the flower sheets clear
+  ---
+  duration_ms: 269.6259
+  type: 'test'
+  ...
+# Subtest: water garden surrounds the sound stage at a lower level with no instrument obstruction
+ok 290 - water garden surrounds the sound stage at a lower level with no instrument obstruction
+  ---
+  duration_ms: 59.6613
+  type: 'test'
+  ...
+# Subtest: rain animation and palette changes retain fixed resources and reduced motion is stationary
+ok 291 - rain animation and palette changes retain fixed resources and reduced motion is stationary
+  ---
+  duration_ms: 311.1164
+  type: 'test'
+  ...
+# Subtest: tide animation and palette changes retain fixed resources and reduced motion is stationary
+ok 292 - tide animation and palette changes retain fixed resources and reduced motion is stationary
+  ---
+  duration_ms: 152.5798
+  type: 'test'
+  ...
+# Subtest: independent environments never share mutable GPU resources or modify a supplied palette
+ok 293 - independent environments never share mutable GPU resources or modify a supplied palette
+  ---
+  duration_ms: 174.4083
+  type: 'test'
+  ...
+# Subtest: all retained geometry, material and instancing buffers are disposed exactly once
+ok 294 - all retained geometry, material and instancing buffers are disposed exactly once
+  ---
+  duration_ms: 150.7014
+  type: 'test'
+  ...
+# Subtest: wind and unknown scenes have no added environment
+ok 295 - wind and unknown scenes have no added environment
+  ---
+  duration_ms: 34.8495
+  type: 'test'
+  ...
+# Subtest: old editions, missing art, unknown letters and malformed choices leave the existing letter intact
+ok 296 - old editions, missing art, unknown letters and malformed choices leave the existing letter intact
+  ---
+  duration_ms: 10.3549
+  type: 'test'
+  ...
+# Subtest: every keepsake is responsive standalone SVG with accessible words and no external resource or interactive claim
+ok 297 - every keepsake is responsive standalone SVG with accessible words and no external resource or interactive claim
+  ---
+  duration_ms: 5.574
+  type: 'test'
+  ...
+# Subtest: rendering is deterministic and never mutates committed artwork
+ok 298 - rendering is deterministic and never mutates committed artwork
+  ---
+  duration_ms: 6.5055
+  type: 'test'
+  ...
+# Subtest: rain positions are taken from the actual three papers rather than an authored finished arrangement
+ok 299 - rain positions are taken from the actual three papers rather than an authored finished arrangement
+  ---
+  duration_ms: 1.7141
+  type: 'test'
+  ...
+# Subtest: invalid rain coordinates cannot produce a misleading or unbounded illustration
+ok 300 - invalid rain coordinates cannot produce a misleading or unbounded illustration
+  ---
+  duration_ms: 0.5512
+  type: 'test'
+  ...
+# Subtest: wind uses the saved progress to mark the five known gates without printing scores or inventing a flight trace
+ok 301 - wind uses the saved progress to mark the five known gates without printing scores or inventing a flight trace
+  ---
+  duration_ms: 0.9227
+  type: 'test'
+  ...
+# Subtest: wind rejects missing and unsafe saved state and reflects the actual recipient choice
+ok 302 - wind rejects missing and unsafe saved state and reflects the actual recipient choice
+  ---
+  duration_ms: 0.982
+  type: 'test'
+  ...
+# Subtest: every tide petal group corresponds exactly to one saved voice/beat including real rests
+ok 303 - every tide petal group corresponds exactly to one saved voice/beat including real rests
+  ---
+  duration_ms: 1.2158
+  type: 'test'
+  ...
+# Subtest: a valid blank score stays blank; malformed note dimensions and non-boolean cells are not coerced
+ok 304 - a valid blank score stays blank; malformed note dimensions and non-boolean cells are not coerced
+  ---
+  duration_ms: 2.354
+  type: 'test'
+  ...
+# Subtest: untrusted strings and prototype-shaped properties are never included in generated markup
+ok 305 - untrusted strings and prototype-shaped properties are never included in generated markup
+  ---
+  duration_ms: 3.5856
+  type: 'test'
+  ...
+# Subtest: three authored silhouettes begin displaced; their paper regions overlap in the final composition
+ok 306 - three authored silhouettes begin displaced; their paper regions overlap in the final composition
+  ---
+  duration_ms: 32.1487
+  type: 'test'
+  ...
+# Subtest: restoring a draft normalizes unknown versions and hostile numeric data without trusting completion flags
+ok 307 - restoring a draft normalizes unknown versions and hostile numeric data without trusting completion flags
+  ---
+  duration_ms: 4.4626
+  type: 'test'
+  ...
+# Subtest: alignment is spatial, reversible and tolerant, with no colour or timer dependency
+ok 308 - alignment is spatial, reversible and tolerant, with no colour or timer dependency
+  ---
+  duration_ms: 1.5249
+  type: 'test'
+  ...
+# Subtest: ordinary raycasts move sheets continuously under translated, rotated and scaled parent transforms
+ok 309 - ordinary raycasts move sheets continuously under translated, rotated and scaled parent transforms
+  ---
+  duration_ms: 880.6141
+  type: 'test'
+  ...
+# Subtest: several pointer moves form one undo record and never snap to authored targets
+ok 310 - several pointer moves form one undo record and never snap to authored targets
+  ---
+  duration_ms: 518.5909
+  type: 'test'
+  ...
+# Subtest: a cancelled gesture restores its own start and cannot consume a previous completed gesture
+ok 311 - a cancelled gesture restores its own start and cannot consume a previous completed gesture
+  ---
+  duration_ms: 256.1079
+  type: 'test'
+  ...
+# Subtest: other fingers, non-primary buttons and pointer misses cannot steal or end an active drag
+ok 312 - other fingers, non-primary buttons and pointer misses cannot steal or end an active drag
+  ---
+  duration_ms: 183.1421
+  type: 'test'
+  ...
+# Subtest: keyboard selection and fine placement share the spatial rules; reset can be undone
+ok 313 - keyboard selection and fine placement share the spatial rules; reset can be undone
+  ---
+  duration_ms: 223.1659
+  type: 'test'
+  ...
+# Subtest: leaving, pausing and zero time do not advance growth or retain a half-finished gesture
+ok 314 - leaving, pausing and zero time do not advance growth or retain a half-finished gesture
+  ---
+  duration_ms: 360.5859
+  type: 'test'
+  ...
+# Subtest: each placed silhouette reveals growth, and complete alignment emits one completion event
+ok 315 - each placed silhouette reveals growth, and complete alignment emits one completion event
+  ---
+  duration_ms: 233.6354
+  type: 'test'
+  ...
+# Subtest: guidance follows the actual order of discovery rather than assuming the tree was placed first
+ok 316 - guidance follows the actual order of discovery rather than assuming the tree was placed first
+  ---
+  duration_ms: 258.7794
+  type: 'test'
+  ...
+# Subtest: pollen uses the actual bouquet palette fields and updates when flower series changes
+ok 317 - pollen uses the actual bouquet palette fields and updates when flower series changes
+  ---
+  duration_ms: 296.813
+  type: 'test'
+  ...
+# Subtest: silhouette batching keeps the light room below a modest draw-item budget without removing three pick targets
+ok 318 - silhouette batching keeps the light room below a modest draw-item budget without removing three pick targets
+  ---
+  duration_ms: 229.9479
+  type: 'test'
+  ...
+# Subtest: procedural shadow maps contain distinct visible botanical shapes and a soft edge without browser canvas
+ok 319 - procedural shadow maps contain distinct visible botanical shapes and a soft edge without browser canvas
+  ---
+  duration_ms: 196.5065
+  type: 'test'
+  ...
+# Subtest: save/restore is JSON data, reproduces actual positions and does not replay completion sound
+ok 320 - save/restore is JSON data, reproduces actual positions and does not replay completion sound
+  ---
+  duration_ms: 379.1919
+  type: 'test'
+  ...
+# Subtest: only a committed choice changes the living garden, while the paper layout and puzzle result stay intact
+ok 321 - only a committed choice changes the living garden, while the paper layout and puzzle result stay intact
+  ---
+  duration_ms: 203.0105
+  type: 'test'
+  ...
+# Subtest: committed result grows gently during play, settles immediately for reduced motion, and stays inside authored bounds
+ok 322 - committed result grows gently during play, settles immediately for reduced motion, and stays inside authored bounds
+  ---
+  duration_ms: 260.5599
+  type: 'test'
+  ...
+# Subtest: authored view bounds contain geometry even when every sheet is moved to each movement limit
+ok 323 - authored view bounds contain geometry even when every sheet is moved to each movement limit
+  ---
+  duration_ms: 262.1408
+  type: 'test'
+  ...
+# Subtest: disposal releases each owned geometry and material once and makes later input harmless
+ok 324 - disposal releases each owned geometry and material once and makes later input harmless
+  ---
+  duration_ms: 199.2957
+  type: 'test'
+  ...
+# Subtest: personal composition requires diversity, three notes and a full listening pass
+ok 325 - personal composition requires diversity, three notes and a full listening pass
+  ---
+  duration_ms: 9.6455
+  type: 'test'
+  ...
+# Subtest: actual score timing is deterministic with sparse beats and has no repeated note emissions
+ok 326 - actual score timing is deterministic with sparse beats and has no repeated note emissions
+  ---
+  duration_ms: 4.7664
+  type: 'test'
+  ...
+# Subtest: editing invalidates a listened phrase and cancellation cannot complete it
+ok 327 - editing invalidates a listened phrase and cancellation cannot complete it
+  ---
+  duration_ms: 1.0261
+  type: 'test'
+  ...
+# Subtest: missing, future, nonfinite and forged drafts restore to bounded data without starting playback
+ok 328 - missing, future, nonfinite and forged drafts restore to bounded data without starting playback
+  ---
+  duration_ms: 2.315
+  type: 'test'
+  ...
+# Subtest: world-space pointer targets pick all three shapes and drag stroke undoes as one operation
+ok 329 - world-space pointer targets pick all three shapes and drag stroke undoes as one operation
+  ---
+  duration_ms: 186.734
+  type: 'test'
+  ...
+# Subtest: a second touch cannot steal, paint or end the current real-ray stroke
+ok 330 - a second touch cannot steal, paint or end the current real-ray stroke
+  ---
+  duration_ms: 34.6615
+  type: 'test'
+  ...
+# Subtest: global cancellation releases touch ownership and pointer-less mouse strokes remain usable
+ok 331 - global cancellation releases touch ownership and pointer-less mouse strokes remain usable
+  ---
+  duration_ms: 35.6362
+  type: 'test'
+  ...
+# Subtest: keyboard edits, voice selection and native button keys remain distinct
+ok 332 - keyboard edits, voice selection and native button keys remain distinct
+  ---
+  duration_ms: 75.3328
+  type: 'test'
+  ...
+# Subtest: full playback produces the requested instruments and inactivity freezes the listening cursor
+ok 333 - full playback produces the requested instruments and inactivity freezes the listening cursor
+  ---
+  duration_ms: 155.4244
+  type: 'test'
+  ...
+# Subtest: geometry remains inside framing bounds, resources stay fixed and dispose once
+ok 334 - geometry remains inside framing bounds, resources stay fixed and dispose once
+  ---
+  duration_ms: 173.4278
+  type: 'test'
+  ...
+# Subtest: all staggered instrument centres still pick their own note after world transforms
+ok 335 - all staggered instrument centres still pick their own note after world transforms
+  ---
+  duration_ms: 202.1411
+  type: 'test'
+  ...
+# Subtest: sound ripples, trajectories and instrument glow use fixed bounded buffers
+ok 336 - sound ripples, trajectories and instrument glow use fixed bounded buffers
+  ---
+  duration_ms: 210.1133
+  type: 'test'
+  ...
+# Subtest: committed home and distant replies have different water traces without changing the composition or resources
+ok 337 - committed home and distant replies have different water traces without changing the composition or resources
+  ---
+  duration_ms: 294.5442
+  type: 'test'
+  ...
+# Subtest: paper wing requires an intentional launch; no wall timer or zero-delta advancement
+ok 338 - paper wing requires an intentional launch; no wall timer or zero-delta advancement
+  ---
+  duration_ms: 14.9153
+  type: 'test'
+  ...
+# Subtest: five differently shaped/located gates require spatial steering, not elapsed time
+ok 339 - five differently shaped/located gates require spatial steering, not elapsed time
+  ---
+  duration_ms: 31.9258
+  type: 'test'
+  ...
+# Subtest: missing an elevated gate restores the earned safe point without deleting earlier gates
+ok 340 - missing an elevated gate restores the earned safe point without deleting earlier gates
+  ---
+  duration_ms: 12.7193
+  type: 'test'
+  ...
+# Subtest: diamond corner misses even when it fits an ellipse; braking changes travel rather than scores
+ok 341 - diamond corner misses even when it fits an ellipse; braking changes travel rather than scores
+  ---
+  duration_ms: 1.618
+  type: 'test'
+  ...
+# Subtest: restore keeps bounded earned progress and deliberately clears held motion
+ok 342 - restore keeps bounded earned progress and deliberately clears held motion
+  ---
+  duration_ms: 20.2982
+  type: 'test'
+  ...
+# Subtest: world ray drag uses the translated local flight plane and release/cancel relinquish input
+ok 343 - world ray drag uses the translated local flight plane and release/cancel relinquish input
+  ---
+  duration_ms: 261.247
+  type: 'test'
+  ...
+# Subtest: keyboard release, touch button pulses and inactive state never retain flight input
+ok 344 - keyboard release, touch button pulses and inactive state never retain flight input
+  ---
+  duration_ms: 95.5749
+  type: 'test'
+  ...
+# Subtest: the 3D experience owns bounded resources, finite geometry and idempotent cleanup
+ok 345 - the 3D experience owns bounded resources, finite geometry and idempotent cleanup
+  ---
+  duration_ms: 215.7427
+  type: 'test'
+  ...
+# Subtest: paper, scenery parallax and gate response remain visual only and preserve the same flight decisions
+ok 346 - paper, scenery parallax and gate response remain visual only and preserve the same flight decisions
+  ---
+  duration_ms: 277.8817
+  type: 'test'
+  ...
+# Subtest: only a committed reply reveals either a lit harbour or a real protective sail, without changing the flight draft
+ok 347 - only a committed reply reveals either a lit harbour or a real protective sail, without changing the flight draft
+  ---
+  duration_ms: 66.2526
+  type: 'test'
+  ...
+# Subtest: new moment state owns three independent unfinished drafts and never aliases another journey
+ok 348 - new moment state owns three independent unfinished drafts and never aliases another journey
+  ---
+  duration_ms: 6.073
+  type: 'test'
+  ...
+# Subtest: restoring moments copies artwork, accepts only explicit completion and ignores unknown gardens
+ok 349 - restoring moments copies artwork, accepts only explicit completion and ignores unknown gardens
+  ---
+  duration_ms: 1.581
+  type: 'test'
+  ...
+# Subtest: artwork snapshotting bounds records and handles cyclic or nonserializable values without retaining references
+ok 350 - artwork snapshotting bounds records and handles cyclic or nonserializable values without retaining references
+  ---
+  duration_ms: 1.4722
+  type: 'test'
+  ...
+# Subtest: legacy rotor progress retains its own replies but never pre-completes the new experiences
+ok 351 - legacy rotor progress retains its own replies but never pre-completes the new experiences
+  ---
+  duration_ms: 6.4118
+  type: 'test'
+  ...
+# Subtest: journey round trips retain an unfinished flight and committed composition as distinct copied records
+ok 352 - journey round trips retain an unfinished flight and committed composition as distinct copied records
+  ---
+  duration_ms: 13.3049
+  type: 'test'
+  ...
+# Subtest: all real activity drafts survive archive restoration and remain usable by their respective stage rules
+ok 353 - all real activity drafts survive archive restoration and remain usable by their respective stage rules
+  ---
+  duration_ms: 10.3477
+  type: 'test'
+  ...
+# Subtest: edition two records preserve valid replies and artworks without converting old choices
+ok 354 - edition two records preserve valid replies and artworks without converting old choices
+  ---
+  duration_ms: 1.4179
+  type: 'test'
+  ...
+# Subtest: unwritten entries describe the current experiences while actual old replies retain their original language
+ok 355 - unwritten entries describe the current experiences while actual old replies retain their original language
+  ---
+  duration_ms: 0.7711
+  type: 'test'
+  ...
+# Subtest: sending a spring letter freezes edition and artwork independently from later edits or restarts
+ok 356 - sending a spring letter freezes edition and artwork independently from later edits or restarts
+  ---
+  duration_ms: 4.4716
+  type: 'test'
+  ...
+# Subtest: export, preview and import preserve both partial drafts and committed artworks in journey and checkpoint
+ok 357 - export, preview and import preserve both partial drafts and committed artworks in journey and checkpoint
+  ---
+  duration_ms: 27.9893
+  type: 'test'
+  ...
+# Subtest: future moments container versions are rejected in active journeys and rewind checkpoints without writes
+ok 358 - future moments container versions are rejected in active journeys and rewind checkpoints without writes
+  ---
+  duration_ms: 12.3648
+  type: 'test'
+  ...
+# Subtest: future known draft schemas cannot import successfully and then disappear when a stage restores
+ok 359 - future known draft schemas cannot import successfully and then disappear when a stage restores
+  ---
+  duration_ms: 16.2476
+  type: 'test'
+  ...
+# Subtest: future reply editions and artwork versions cannot be silently downgraded to legacy text
+ok 360 - future reply editions and artwork versions cannot be silently downgraded to legacy text
+  ---
+  duration_ms: 22.6034
+  type: 'test'
+  ...
+# Subtest: an oversized known artwork is rejected before import rather than silently disappearing during restore
+ok 361 - an oversized known artwork is rejected before import rather than silently disappearing during restore
+  ---
+  duration_ms: 84.5697
+  type: 'test'
+  ...
+# Subtest: a committed experience saves the new reply, artwork and progression together before publishing live state
+ok 362 - a committed experience saves the new reply, artwork and progression together before publishing live state
+  ---
+  duration_ms: 11.5613
+  type: 'test'
+  ...
+# Subtest: failed or conflicting reply writes cannot award a new chapter or replace the existing artwork
+ok 363 - failed or conflicting reply writes cannot award a new chapter or replace the existing artwork
+  ---
+  duration_ms: 14.3576
+  type: 'test'
+  ...
+# Subtest: reply transactions retain personal audio levels in live state and subsequent preference saves
+ok 364 - reply transactions retain personal audio levels in live state and subsequent preference saves
+  ---
+  duration_ms: 11.6853
+  type: 'test'
+  ...
+# Subtest: unknown reply destinations never write a new revision or mutate live state
+ok 365 - unknown reply destinations never write a new revision or mutate live state
+  ---
+  duration_ms: 3.0877
+  type: 'test'
+  ...
+# Subtest: forward and strafing follow the rotated view without diagonal speed gain
+ok 366 - forward and strafing follow the rotated view without diagonal speed gain
+  ---
+  duration_ms: 4.0973
+  type: 'test'
+  ...
+# Subtest: orbit persists through mode changes and supports full turns with bounded zoom and pitch
+ok 367 - orbit persists through mode changes and supports full turns with bounded zoom and pitch
+  ---
+  duration_ms: 2.5527
+  type: 'test'
+  ...
+# Subtest: all voyage events are audible, throttled on the audio clock, bounded, and suppressed by pause/mute/effects zero
+ok 368 - all voyage events are audible, throttled on the audio clock, bounded, and suppressed by pause/mute/effects zero
+  ---
+  duration_ms: 23.9141
+  type: 'test'
+  ...
+# Subtest: maritime ambience filters the existing river loop without multiplying loops or changing user volumes
+ok 369 - maritime ambience filters the existing river loop without multiplying loops or changing user volumes
+  ---
+  duration_ms: 71.5206
+  type: 'test'
+  ...
+# Subtest: a stage change within the same shore zone retires old notes and schedules the new stage immediately
+ok 370 - a stage change within the same shore zone retires old notes and schedules the new stage immediately
+  ---
+  duration_ms: 9.4586
+  type: 'test'
+  ...
+# Subtest: explicit wet steps use contact foley and breath while rate limiting frame storms
+ok 371 - explicit wet steps use contact foley and breath while rate limiting frame storms
+  ---
+  duration_ms: 2.8841
+  type: 'test'
+  ...
+# Subtest: coastal stages have distinct authored arrangements and ocean 6/8 keeps two groups of three
+ok 372 - coastal stages have distinct authored arrangements and ocean 6/8 keeps two groups of three
+  ---
+  duration_ms: 11.0595
+  type: 'test'
+  ...
+# Subtest: voyage score is deterministic, finite and within sampled instrumental range even for invalid input
+ok 373 - voyage score is deterministic, finite and within sampled instrumental range even for invalid input
+  ---
+  duration_ms: 58.6877
+  type: 'test'
+  ...
+# Subtest: the dawn cadence settles on the same D centre and speed changes colour rather than pitch
+ok 374 - the dawn cadence settles on the same D centre and speed changes colour rather than pitch
+  ---
+  duration_ms: 1.7973
+  type: 'test'
+  ...
+# Subtest: unsupported float target retains an honest, usable reduced-density fallback
+ok 375 - unsupported float target retains an honest, usable reduced-density fallback
+  ---
+  duration_ms: 92.7013
+  type: 'test'
+  ...
+# Subtest: quality never invents source samples and malformed input fails clearly
+ok 376 - quality never invents source samples and malformed input fails clearly
+  ---
+  duration_ms: 2.6011
+  type: 'test'
+  ...
+# Subtest: wind brush accepts direct manipulation and decays continuously on release
+ok 377 - wind brush accepts direct manipulation and decays continuously on release
+  ---
+  duration_ms: 10.0599
+  type: 'test'
+  ...
+# Subtest: invalid or extreme brush input cannot poison GPU-bound state
+ok 378 - invalid or extreme brush input cannot poison GPU-bound state
+  ---
+  duration_ms: 1.7927
+  type: 'test'
+  ...
+# Subtest: v6 source and palette updates preserve identities and reuse equal-size geometry
+ok 379 - v6 source and palette updates preserve identities and reuse equal-size geometry
+  ---
+  duration_ms: 4.7352
+  type: 'test'
+  ...
+# Subtest: v6 still pen gathers and moving pen carries without another mode button
+ok 380 - v6 still pen gathers and moving pen carries without another mode button
+  ---
+  duration_ms: 3.7416
+  type: 'test'
+  ...
+# Subtest: a voluntary local playtest record contains only the stated answers and whitelisted game summary
+ok 381 - a voluntary local playtest record contains only the stated answers and whitelisted game summary
+  ---
+  duration_ms: 11.0871
+  type: 'test'
+  ...
+# Subtest: unknown fields, identity, browser identifiers and save contents never leak into the exported record
+ok 382 - unknown fields, identity, browser identifiers and save contents never leak into the exported record
+  ---
+  duration_ms: 4.4928
+  type: 'test'
+  ...
+# Subtest: blank or unknown subjective choices are rejected instead of being replaced with positive defaults
+ok 383 - blank or unknown subjective choices are rejected instead of being replaced with positive defaults
+  ---
+  duration_ms: 3.9244
+  type: 'test'
+  ...
+# Subtest: clarity requires an explicit integer from one through five
+ok 384 - clarity requires an explicit integer from one through five
+  ---
+  duration_ms: 1.6068
+  type: 'test'
+  ...
+# Subtest: notes can be omitted or blank, retain text literally, and cannot exceed 800 Unicode characters
+ok 385 - notes can be omitted or blank, retain text literally, and cannot exceed 800 Unicode characters
+  ---
+  duration_ms: 1.7925
+  type: 'test'
+  ...
+# Subtest: invalid summary values fail explicitly rather than being invented as measured player behavior
+ok 386 - invalid summary values fail explicitly rather than being invented as measured player behavior
+  ---
+  duration_ms: 1.456
+  type: 'test'
+  ...
+# Subtest: postcards show only actual known replies and leave unmade choices blank
+ok 387 - postcards show only actual known replies and leave unmade choices blank
+  ---
+  duration_ms: 7.7374
+  type: 'test'
+  ...
+# Subtest: preferences survive starting a new journey without replacing the journey itself
+ok 388 - preferences survive starting a new journey without replacing the journey itself
+  ---
+  duration_ms: 5.1982
+  type: 'test'
+  ...
+# Subtest: existing saved settings migrate, while an explicit preference takes precedence
+ok 389 - existing saved settings migrate, while an explicit preference takes precedence
+  ---
+  duration_ms: 1.3178
+  type: 'test'
+  ...
+# Subtest: bad settings and unavailable storage preserve safe motion defaults
+ok 390 - bad settings and unavailable storage preserve safe motion defaults
+  ---
+  duration_ms: 0.9462
+  type: 'test'
+  ...
+# Subtest: recording candidate binds the exact G HTML, JavaScript and CSS bytes
+ok 391 - recording candidate binds the exact G HTML, JavaScript and CSS bytes
+  ---
+  duration_ms: 61.8893
+  type: 'test'
+  ...
+# Subtest: recording checks the actual Playwright FFmpeg registry executable
+ok 392 - recording checks the actual Playwright FFmpeg registry executable
+  ---
+  duration_ms: 378.1538
+  type: 'test'
+  ...
+# Subtest: candidate parsing refuses missing JS or CSS rather than guessing a version
+ok 393 - candidate parsing refuses missing JS or CSS rather than guessing a version
+  ---
+  duration_ms: 4.227
+  type: 'test'
+  ...
+# Subtest: canonical publication keeps the exact original and previous canonical bytes
+ok 394 - canonical publication keeps the exact original and previous canonical bytes
+  ---
+  duration_ms: 287.8444
+  type: 'test'
+  ...
+# Subtest: publication rejects traversal and duplicate artifact names before copying
+ok 395 - publication rejects traversal and duplicate artifact names before copying
+  ---
+  duration_ms: 26.7771
+  type: 'test'
+  ...
+# Subtest: a second publication cannot erase an already retained original
+ok 396 - a second publication cannot erase an already retained original
+  ---
+  duration_ms: 111.1031
+  type: 'test'
+  ...
+# Subtest: served-candidate preflight rejects mismatched bytes even under the right asset name
+ok 397 - served-candidate preflight rejects mismatched bytes even under the right asset name
+  ---
+  duration_ms: 306.691
+  type: 'test'
+  ...
+# Subtest: successful reflection returns control to the main target and preserves exclusions
+ok 398 - successful reflection returns control to the main target and preserves exclusions
+  ---
+  duration_ms: 97.2989
+  type: 'test'
+  ...
+# Subtest: failed reflection restores target before the next main draw
+ok 399 - failed reflection restores target before the next main draw
+  ---
+  duration_ms: 21.4768
+  type: 'test'
+  ...
+# Subtest: failed reflection restores xr before the next main draw
+ok 400 - failed reflection restores xr before the next main draw
+  ---
+  duration_ms: 3.996
+  type: 'test'
+  ...
+# Subtest: failed reflection restores shadow before the next main draw
+ok 401 - failed reflection restores shadow before the next main draw
+  ---
+  duration_ms: 10.413
+  type: 'test'
+  ...
+# Subtest: failed reflection restores viewport before the next main draw
+ok 402 - failed reflection restores viewport before the next main draw
+  ---
+  duration_ms: 3.2186
+  type: 'test'
+  ...
+# Subtest: first reflection waits for primary-render shadow maps, then resumes without rebuilding them
+ok 403 - first reflection waits for primary-render shadow maps, then resumes without rebuilding them
+  ---
+  duration_ms: 23.9797
+  type: 'test'
+  ...
+# Subtest: light mode never starts an auxiliary draw or mutates renderer state
+ok 404 - light mode never starts an auxiliary draw or mutates renderer state
+  ---
+  duration_ms: 2.2526
+  type: 'test'
+  ...
+# Subtest: optional reflection draw failure disables reflection and allows subsequent frames
+ok 405 - optional reflection draw failure disables reflection and allows subsequent frames
+  ---
+  duration_ms: 3.1661
+  type: 'test'
+  ...
+# Subtest: a context loss before any scene exists pauses and offers recovery
+ok 406 - a context loss before any scene exists pauses and offers recovery
+  ---
+  duration_ms: 9.1636
+  type: 'test'
+  ...
+# Subtest: restoring the WebGL context never silently resumes stale render targets
+ok 407 - restoring the WebGL context never silently resumes stale render targets
+  ---
+  duration_ms: 1.1394
+  type: 'test'
+  ...
+# Subtest: an unsolicited restored event does not freeze a healthy page
+ok 408 - an unsolicited restored event does not freeze a healthy page
+  ---
+  duration_ms: 0.5951
+  type: 'test'
+  ...
+# Subtest: pause or save exceptions cannot hide the recovery entrance
+ok 409 - pause or save exceptions cannot hide the recovery entrance
+  ---
+  duration_ms: 1.4335
+  type: 'test'
+  ...
+# Subtest: failed save results are recorded without claiming successful preservation
+ok 410 - failed save results are recorded without claiming successful preservation
+  ---
+  duration_ms: 0.831
+  type: 'test'
+  ...
+# Subtest: duplicate loss notifications do not repeatedly save a broken session
+ok 411 - duplicate loss notifications do not repeatedly save a broken session
+  ---
+  duration_ms: 0.7113
+  type: 'test'
+  ...
+# Subtest: disposing removes both listeners and leaves a blocked old renderer
+ok 412 - disposing removes both listeners and leaves a blocked old renderer
+  ---
+  duration_ms: 0.4485
+  type: 'test'
+  ...
+# Subtest: diagnostic snapshots cannot mutate lifecycle state
+ok 413 - diagnostic snapshots cannot mutate lifecycle state
+  ---
+  duration_ms: 0.5024
+  type: 'test'
+  ...
+# Subtest: ordinary desktop sizing keeps the complete view at the requested density
+ok 414 - ordinary desktop sizing keeps the complete view at the requested density
+  ---
+  duration_ms: 1.1157
+  type: 'test'
+  ...
+# Subtest: zero, missing or non-finite dimensions never reach projection or framebuffer arithmetic
+ok 415 - zero, missing or non-finite dimensions never reach projection or framebuffer arithmetic
+  ---
+  duration_ms: 1.6677
+  type: 'test'
+  ...
+# Subtest: full-screen high-DPI sizing keeps CSS aspect and fits the pixel budget
+ok 416 - full-screen high-DPI sizing keeps CSS aspect and fits the pixel budget
+  ---
+  duration_ms: 0.5675
+  type: 'test'
+  ...
+# Subtest: an unusually wide viewport respects the GPU dimension limit without cropping CSS
+ok 417 - an unusually wide viewport respects the GPU dimension limit without cropping CSS
+  ---
+  duration_ms: 0.4177
+  type: 'test'
+  ...
+# Subtest: device limits and area bounds remain finite for malformed capability inputs
+ok 418 - device limits and area bounds remain finite for malformed capability inputs
+  ---
+  duration_ms: 0.484
+  type: 'test'
+  ...
+# Subtest: light mode uses one device pixel per CSS pixel unless hardware or area requires less
+ok 419 - light mode uses one device pixel per CSS pixel unless hardware or area requires less
+  ---
+  duration_ms: 0.3996
+  type: 'test'
+  ...
+# Subtest: the actual resize path avoids reallocating unchanged buffers on duplicate fullscreen/resize events
+ok 420 - the actual resize path avoids reallocating unchanged buffers on duplicate fullscreen/resize events
+  ---
+  duration_ms: 8.19
+  type: 'test'
+  ...
+# Subtest: the actual resize path never allocates a zero backing dimension after viewport collapse
+ok 421 - the actual resize path never allocates a zero backing dimension after viewport collapse
+  ---
+  duration_ms: 3.4075
+  type: 'test'
+  ...
+# Subtest: the actual resize path preserves camera aspect while bounding high-DPI offscreen targets
+ok 422 - the actual resize path preserves camera aspect while bounding high-DPI offscreen targets
+  ---
+  duration_ms: 2.6364
+  type: 'test'
+  ...
+# Subtest: the actual resize path performs no GPU operations while recovery is required
+ok 423 - the actual resize path performs no GPU operations while recovery is required
+  ---
+  duration_ms: 2.641
+  type: 'test'
+  ...
+# Subtest: late HDR/texture completion is disposed instead of continuing a blocked startup
+ok 424 - late HDR/texture completion is disposed instead of continuing a blocked startup
+  ---
+  duration_ms: 4.342
+  type: 'test'
+  ...
+# Subtest: healthy startup receives the original asynchronously loaded resource
+ok 425 - healthy startup receives the original asynchronously loaded resource
+  ---
+  duration_ms: 2.73
+  type: 'test'
+  ...
+# Subtest: all authored motes, moving extrema, nests and gusts stay on available main islands
+ok 426 - all authored motes, moving extrema, nests and gusts stay on available main islands
+  ---
+  duration_ms: 149.2741
+  type: 'test'
+  ...
+# Subtest: later nests respect actual main progression; distant E cannot start
+ok 427 - later nests respect actual main progression; distant E cannot start
+  ---
+  duration_ms: 8.2662
+  type: 'test'
+  ...
+# Subtest: five silver motes make a bankable first route, but only returning and E earns the clear
+ok 428 - five silver motes make a bankable first route, but only returning and E earns the clear
+  ---
+  duration_ms: 8.146
+  type: 'test'
+  ...
+# Subtest: golden drifting motes require a moving dash, grant energy, and cannot be farmed twice
+ok 429 - golden drifting motes require a moving dash, grant energy, and cannot be farmed twice
+  ---
+  duration_ms: 1.344
+  type: 'test'
+  ...
+# Subtest: walking a full route gives a distinct complete-harmony reward and best survives a weaker replay
+ok 430 - walking a full route gives a distinct complete-harmony reward and best survives a weaker replay
+  ---
+  duration_ms: 5.3222
+  type: 'test'
+  ...
+# Subtest: standing still, pausing or discontinuous teleporting cannot silently harvest motes
+ok 431 - standing still, pausing or discontinuous teleporting cannot silently harvest motes
+  ---
+  duration_ms: 2.7682
+  type: 'test'
+  ...
+# Subtest: swept crossing catches a flower between two rendered positions
+ok 432 - swept crossing catches a flower between two rendered positions
+  ---
+  duration_ms: 0.8292
+  type: 'test'
+  ...
+# Subtest: gusts break a chain without deleting carried flowers; dashing protects the chain
+ok 433 - gusts break a chain without deleting carried flowers; dashing protects the chain
+  ---
+  duration_ms: 1.6585
+  type: 'test'
+  ...
+# Subtest: timeout and explicit cancellation preserve earned best and never clear the main game
+ok 434 - timeout and explicit cancellation preserve earned best and never clear the main game
+  ---
+  duration_ms: 1.1586
+  type: 'test'
+  ...
+# Subtest: invalid saves and paused transient routes do not manufacture completion
+ok 435 - invalid saves and paused transient routes do not manufacture completion
+  ---
+  duration_ms: 0.857
+  type: 'test'
+  ...
+# Subtest: only final-garden golden crowns have timing windows, and every window is at least 2.6 seconds
+ok 436 - only final-garden golden crowns have timing windows, and every window is at least 2.6 seconds
+  ---
+  duration_ms: 15.7323
+  type: 'test'
+  ...
+# Subtest: both later gardens support complete moving routes and return-to-nest resolution
+ok 437 - both later gardens support complete moving routes and return-to-nest resolution
+  ---
+  duration_ms: 49.2552
+  type: 'test'
+  ...
+# Subtest: crosswind silver waits for the escort, catches up gently, and requires a real shared crossing
+ok 438 - crosswind silver waits for the escort, catches up gently, and requires a real shared crossing
+  ---
+  duration_ms: 3.7045
+  type: 'test'
+  ...
+# Subtest: crosswind escort follows a normal walk, pauses with the player, and never mutates the prior state
+ok 439 - crosswind escort follows a normal walk, pauses with the player, and never mutates the prior state
+  ---
+  duration_ms: 1.1246
+  type: 'test'
+  ...
+# Subtest: starting crosswind from the outer side of its nest still places the escort over walkable land
+ok 440 - starting crosswind from the outer side of its nest still places the escort over walkable land
+  ---
+  duration_ms: 0.5539
+  type: 'test'
+  ...
+# Subtest: crosswind gold can be pursued ahead of the escort and existing payload is never discarded
+ok 441 - crosswind gold can be pursued ahead of the escort and existing payload is never discarded
+  ---
+  duration_ms: 1.344
+  type: 'test'
+  ...
+# Subtest: homeward silver asks for walking while gold still needs an open moving dash
+ok 442 - homeward silver asks for walking while gold still needs an open moving dash
+  ---
+  duration_ms: 1.3521
+  type: 'test'
+  ...
+# Subtest: world snapshots expose escort and each garden pickup rule without leaking mutable model state
+ok 443 - world snapshots expose escort and each garden pickup rule without leaking mutable model state
+  ---
+  duration_ms: 49.6453
+  type: 'test'
+  ...
+# Subtest: world view uses instancing, reports navigable targets, and releases each owned resource once
+ok 444 - world view uses instancing, reports navigable targets, and releases each owned resource once
+  ---
+  duration_ms: 11.469
+  type: 'test'
+  ...
+# Subtest: departing atomically saves the pre-letter checkpoint before opening the coast and does not grant an ending
+ok 445 - departing atomically saves the pre-letter checkpoint before opening the coast and does not grant an ending
+  ---
+  duration_ms: 23.3579
+  type: 'test'
+  ...
+# Subtest: a failed departure write leaves live progress and the previous archive untouched and does not open the coast
+ok 446 - a failed departure write leaves live progress and the previous archive untouched and does not open the coast
+  ---
+  duration_ms: 53.8685
+  type: 'test'
+  ...
+# Subtest: a conflicting tab cannot be overwritten by sending a letter or by a partial checkpoint commit
+ok 447 - a conflicting tab cannot be overwritten by sending a letter or by a partial checkpoint commit
+  ---
+  duration_ms: 7.3274
+  type: 'test'
+  ...
+# Subtest: revisiting the coast preserves the first pre-letter checkpoint rather than replacing it with mid-voyage progress
+ok 448 - revisiting the coast preserves the first pre-letter checkpoint rather than replacing it with mid-voyage progress
+  ---
+  duration_ms: 50.8791
+  type: 'test'
+  ...
+# Subtest: finishing freezes the exact replies and personal letter after the completion transaction, retaining the original checkpoint
+ok 449 - finishing freezes the exact replies and personal letter after the completion transaction, retaining the original checkpoint
+  ---
+  duration_ms: 15.5068
+  type: 'test'
+  ...
+# Subtest: a premature completion request cannot freeze replies or create an ending
+ok 450 - a premature completion request cannot freeze replies or create an ending
+  ---
+  duration_ms: 6.7711
+  type: 'test'
+  ...
+# Subtest: completion quota failure cannot assign a live ending or replace the authoritative archive
+ok 451 - completion quota failure cannot assign a live ending or replace the authoritative archive
+  ---
+  duration_ms: 13.2229
+  type: 'test'
+  ...
+# Subtest: completion conflicts preserve both the other tab archive and this tab live unsent state
+ok 452 - completion conflicts preserve both the other tab archive and this tab live unsent state
+  ---
+  duration_ms: 14.5821
+  type: 'test'
+  ...
+# Subtest: legacy completed journeys acquire an independent reply snapshot instead of changing when later replies are added
+ok 453 - legacy completed journeys acquire an independent reply snapshot instead of changing when later replies are added
+  ---
+  duration_ms: 6.5901
+  type: 'test'
+  ...
+# Subtest: rewinding clears the ending only after saving and retains the exact original before-letter checkpoint
+ok 454 - rewinding clears the ending only after saving and retains the exact original before-letter checkpoint
+  ---
+  duration_ms: 32.6969
+  type: 'test'
+  ...
+# Subtest: rewind quota failure preserves the current ending, live state and saved checkpoint
+ok 455 - rewind quota failure preserves the current ending, live state and saved checkpoint
+  ---
+  duration_ms: 14.03
+  type: 'test'
+  ...
+# Subtest: rewind conflict cannot switch the player to another tab checkpoint even though status reads see it
+ok 456 - rewind conflict cannot switch the player to another tab checkpoint even though status reads see it
+  ---
+  duration_ms: 17.6111
+  type: 'test'
+  ...
+# Subtest: revisiting a completed coast retries the failed final transaction once after storage recovers
+ok 457 - revisiting a completed coast retries the failed final transaction once after storage recovers
+  ---
+  duration_ms: 19.2051
+  type: 'test'
+  ...
+# Subtest: ordinary autosave finalizes a pending completed voyage in its single atomic write
+ok 458 - ordinary autosave finalizes a pending completed voyage in its single atomic write
+  ---
+  duration_ms: 13.8035
+  type: 'test'
+  ...
+# Subtest: resume and autosave cannot resolve an unacknowledged cross-tab conflict by overwriting it
+ok 459 - resume and autosave cannot resolve an unacknowledged cross-tab conflict by overwriting it
+  ---
+  duration_ms: 10.5621
+  type: 'test'
+  ...
+# Subtest: restoring a saved complete voyage without the final snapshot finishes at the next coastal entry
+ok 460 - restoring a saved complete voyage without the final snapshot finishes at the next coastal entry
+  ---
+  duration_ms: 23.5902
+  type: 'test'
+  ...
+# Subtest: rewinding a completed imported journey without a usable checkpoint clears the coastal completion before autosaving
+ok 461 - rewinding a completed imported journey without a usable checkpoint clears the coastal completion before autosaving
+  ---
+  duration_ms: 90.4298
+  type: 'test'
+  ...
+# Subtest: new journey cancellation calls no destructive callback and leaves the saved archive intact
+ok 462 - new journey cancellation calls no destructive callback and leaves the saved archive intact
+  ---
+  duration_ms: 23.1562
+  type: 'test'
+  ...
+# Subtest: file preview is read-only, cancel keeps progress, and explicit confirmation loads the imported archive once
+ok 463 - file preview is read-only, cancel keeps progress, and explicit confirmation loads the imported archive once
+  ---
+  duration_ms: 95.7994
+  type: 'test'
+  ...
+# Subtest: closing a dialog while a file is reading prevents late preview or import
+ok 464 - closing a dialog while a file is reading prevents late preview or import
+  ---
+  duration_ms: 3.8245
+  type: 'test'
+  ...
+# Subtest: a newer tab save during import preview stays protected and the dialog explains the conflict
+ok 465 - a newer tab save during import preview stays protected and the dialog explains the conflict
+  ---
+  duration_ms: 7.6799
+  type: 'test'
+  ...
+# Subtest: repeated automatic save failures produce a single toast until the reason changes
+ok 466 - repeated automatic save failures produce a single toast until the reason changes
+  ---
+  duration_ms: 1.7433
+  type: 'test'
+  ...
+# Subtest: write failures offer temporary play only after explicit confirmation and leave disk untouched
+ok 467 - write failures offer temporary play only after explicit confirmation and leave disk untouched
+  ---
+  duration_ms: 14.6817
+  type: 'test'
+  ...
+# Subtest: unavailable reads expose a cancellable temporary entry without attempting storage writes
+ok 468 - unavailable reads expose a cancellable temporary entry without attempting storage writes
+  ---
+  duration_ms: 1.9006
+  type: 'test'
+  ...
+# Subtest: temporary callback failures retain the confirmation and allow a retry
+ok 469 - temporary callback failures retain the confirmation and allow a retry
+  ---
+  duration_ms: 4.2093
+  type: 'test'
+  ...
+# Subtest: failure deduplication does not erase the temporary option and old callers need no callback
+ok 470 - failure deduplication does not erase the temporary option and old callers need no callback
+  ---
+  duration_ms: 6.5479
+  type: 'test'
+  ...
+# Subtest: temporary mode and letter reply counts are visible when reopening the panel
+ok 471 - temporary mode and letter reply counts are visible when reopening the panel
+  ---
+  duration_ms: 5.961
+  type: 'test'
+  ...
+# Subtest: a new journey is committed as one archive and remains available to a fresh service
+ok 472 - a new journey is committed as one archive and remains available to a fresh service
+  ---
+  duration_ms: 17.6918
+  type: 'test'
+  ...
+# Subtest: all legacy slots migrate without read-side writes and preserve unknown journey content
+ok 473 - all legacy slots migrate without read-side writes and preserve unknown journey content
+  ---
+  duration_ms: 15.938
+  type: 'test'
+  ...
+# Subtest: new journey preserves the whole previous journey and undo can restore every slot
+ok 474 - new journey preserves the whole previous journey and undo can restore every slot
+  ---
+  duration_ms: 27.8513
+  type: 'test'
+  ...
+# Subtest: ordinary saving rolls recovery forward but never erases the fixed previous journey
+ok 475 - ordinary saving rolls recovery forward but never erases the fixed previous journey
+  ---
+  duration_ms: 4.2581
+  type: 'test'
+  ...
+# Subtest: two tabs cannot silently save an already stale state, even after status read
+ok 476 - two tabs cannot silently save an already stale state, even after status read
+  ---
+  duration_ms: 3.5473
+  type: 'test'
+  ...
+# Subtest: empty, unreadable, unavailable and future saves are distinct and read never erases them
+ok 477 - empty, unreadable, unavailable and future saves are distinct and read never erases them
+  ---
+  duration_ms: 11.4019
+  type: 'test'
+  ...
+# Subtest: future journey schema is rejected inside a valid archive, without changing current data
+ok 478 - future journey schema is rejected inside a valid archive, without changing current data
+  ---
+  duration_ms: 2.1607
+  type: 'test'
+  ...
+# Subtest: a broken original can only be replaced explicitly and its exact bytes remain backed up
+ok 479 - a broken original can only be replaced explicitly and its exact bytes remain backed up
+  ---
+  duration_ms: 1.7476
+  type: 'test'
+  ...
+# Subtest: import previews are read-only and valid imports back up all previous local content
+ok 480 - import previews are read-only and valid imports back up all previous local content
+  ---
+  duration_ms: 13.2852
+  type: 'test'
+  ...
+# Subtest: archive size, depth and dangerous object keys are bounded before writing anything
+ok 481 - archive size, depth and dangerous object keys are bounded before writing anything
+  ---
+  duration_ms: 5.1502
+  type: 'test'
+  ...
+# Subtest: backup quota failure prevents new-journey replacement
+ok 482 - backup quota failure prevents new-journey replacement
+  ---
+  duration_ms: 2.8408
+  type: 'test'
+  ...
+# Subtest: primary write failure is reported while the previous valid archive stays intact
+ok 483 - primary write failure is reported while the previous valid archive stays intact
+  ---
+  duration_ms: 3.6537
+  type: 'test'
+  ...
+# Subtest: legacy mirror failures do not misreport the successfully committed authoritative save
+ok 484 - legacy mirror failures do not misreport the successfully committed authoritative save
+  ---
+  duration_ms: 6.1688
+  type: 'test'
+  ...
+# Subtest: an intervening write during backup creation is detected before replacing the archive
+ok 485 - an intervening write during backup creation is detected before replacing the archive
+  ---
+  duration_ms: 2.9232
+  type: 'test'
+  ...
+# Subtest: conflicted or unavailable storage can still export an explicit current in-memory journey without writing
+ok 486 - conflicted or unavailable storage can still export an explicit current in-memory journey without writing
+  ---
+  duration_ms: 3.1571
+  type: 'test'
+  ...
+# Subtest: future nested letter schemas cannot be silently downgraded by gameplay restoration
+ok 487 - future nested letter schemas cannot be silently downgraded by gameplay restoration
+  ---
+  duration_ms: 32.2304
+  type: 'test'
+  ...
+# Subtest: unchanged cover preferences do not create a new revision or invalidate another playing tab
+ok 488 - unchanged cover preferences do not create a new revision or invalidate another playing tab
+  ---
+  duration_ms: 5.8327
+  type: 'test'
+  ...
+# Subtest: exporting a conflicted in-memory journey retains its own accepted checkpoint rather than another tab checkpoint
+ok 489 - exporting a conflicted in-memory journey retains its own accepted checkpoint rather than another tab checkpoint
+  ---
+  duration_ms: 13.4763
+  type: 'test'
+  ...
+# Subtest: archive summaries count only the three known gardens with a valid reply choice
+ok 490 - archive summaries count only the three known gardens with a valid reply choice
+  ---
+  duration_ms: 14.7538
+  type: 'test'
+  ...
+# Subtest: keepsake replay reads only the actual three voices and preserves silence
+ok 491 - keepsake replay reads only the actual three voices and preserves silence
+  ---
+  duration_ms: 22.391
+  type: 'test'
+  ...
+# Subtest: preview cancellation prevents future callbacks, is idempotent and does not edit the work
+ok 492 - preview cancellation prevents future callbacks, is idempotent and does not edit the work
+  ---
+  duration_ms: 4.5305
+  type: 'test'
+  ...
+# Subtest: no actual release means pinch and idle cannot finish either seed journey
+ok 493 - no actual release means pinch and idle cannot finish either seed journey
+  ---
+  duration_ms: 12.7098
+  type: 'test'
+  ...
+# Subtest: canceling a partly caught seed preserves position and checkpoints without later idle completion
+ok 494 - canceling a partly caught seed preserves position and checkpoints without later idle completion
+  ---
+  duration_ms: 3.1251
+  type: 'test'
+  ...
+# Subtest: one genuine release starts a gentle catch that continues without repeating the pulse
+ok 495 - one genuine release starts a gentle catch that continues without repeating the pulse
+  ---
+  duration_ms: 1.9724
+  type: 'test'
+  ...
+# Subtest: temporary play works when storage access throws and leaves original storage untouched
+ok 496 - temporary play works when storage access throws and leaves original storage untouched
+  ---
+  duration_ms: 5.2824
+  type: 'test'
+  ...
+# Subtest: restored memory pose is presented immediately without reopening its branch
+ok 497 - restored memory pose is presented immediately without reopening its branch
+  ---
+  duration_ms: 8.3814
+  type: 'test'
+  ...
+# Subtest: cancelled opening is distinct from a watched or skipped opening
+ok 498 - cancelled opening is distinct from a watched or skipped opening
+  ---
+  duration_ms: 2.8253
+  type: 'test'
+  ...
+# Subtest: all six opening scenes leave an existing journey and its decisions intact
+ok 499 - all six opening scenes leave an existing journey and its decisions intact
+  ---
+  duration_ms: 18.1846
+  type: 'test'
+  ...
+# Subtest: farewell answers actual notes once and cancellation stops pending reply
+ok 500 - farewell answers actual notes once and cancellation stops pending reply
+  ---
+  duration_ms: 2.5755
+  type: 'test'
+  ...
+# Subtest: a personal six-beat phrase needs sound but has no prescribed cup pattern or final rest
+ok 501 - a personal six-beat phrase needs sound but has no prescribed cup pattern or final rest
+  ---
+  duration_ms: 4.5777
+  type: 'test'
+  ...
+# Subtest: motif rejects invalid inputs and overlong phrases without changing existing music
+ok 502 - motif rejects invalid inputs and overlong phrases without changing existing music
+  ---
+  duration_ms: 1.922
+  type: 'test'
+  ...
+# Subtest: each of three inscriptions requires sustained light; pointing elsewhere resets only the unfinished hold
+ok 503 - each of three inscriptions requires sustained light; pointing elsewhere resets only the unfinished hold
+  ---
+  duration_ms: 0.7622
+  type: 'test'
+  ...
+# Subtest: memory requires seeing both contrasting states before choosing an intermediate living pose
+ok 504 - memory requires seeing both contrasting states before choosing an intermediate living pose
+  ---
+  duration_ms: 0.6493
+  type: 'test'
+  ...
+# Subtest: corrupt stories cannot claim completed rewards, and a valid partial story can resume safely
+ok 505 - corrupt stories cannot claim completed rewards, and a valid partial story can resume safely
+  ---
+  duration_ms: 0.9751
+  type: 'test'
+  ...
+# Subtest: story progress survives the existing version-one save without inventing core allocations or blocking old saves
+ok 506 - story progress survives the existing version-one save without inventing core allocations or blocking old saves
+  ---
+  duration_ms: 51.9906
+  type: 'test'
+  ...
+# Subtest: slow and fast strokes stay distinct at 60 Hz rendering
+ok 507 - slow and fast strokes stay distinct at 60 Hz rendering
+  ---
+  duration_ms: 57.0554
+  type: 'test'
+  ...
+# Subtest: slow and fast strokes stay distinct at 90 Hz rendering
+ok 508 - slow and fast strokes stay distinct at 90 Hz rendering
+  ---
+  duration_ms: 1.7814
+  type: 'test'
+  ...
+# Subtest: slow and fast strokes stay distinct at 144 Hz rendering
+ok 509 - slow and fast strokes stay distinct at 144 Hz rendering
+  ---
+  duration_ms: 3.527
+  type: 'test'
+  ...
+# Subtest: a sparse fast sample retains its travel before the direction vector would be capped
+ok 510 - a sparse fast sample retains its travel before the direction vector would be capped
+  ---
+  duration_ms: 0.5514
+  type: 'test'
+  ...
+# Subtest: alternating stroke directions keep fast scalar motion instead of cancelling it
+ok 511 - alternating stroke directions keep fast scalar motion instead of cancelling it
+  ---
+  duration_ms: 3.0695
+  type: 'test'
+  ...
+# Subtest: release and explicit cancellation remove energy before a new slow stroke
+ok 512 - release and explicit cancellation remove energy before a new slow stroke
+  ---
+  duration_ms: 0.9418
+  type: 'test'
+  ...
+# Subtest: invalid speeds decay safely, invalid clocks hold state, and finite extremes stay bounded
+ok 513 - invalid speeds decay safely, invalid clocks hold state, and finite extremes stay bounded
+  ---
+  duration_ms: 0.8078
+  type: 'test'
+  ...
+# Subtest: continuous motion integrates by elapsed seconds across render rates
+ok 514 - continuous motion integrates by elapsed seconds across render rates
+  ---
+  duration_ms: 0.634
+  type: 'test'
+  ...
+# Subtest: independent gestures do not share their temporal energy
+ok 515 - independent gestures do not share their temporal energy
+  ---
+  duration_ms: 0.5253
+  type: 'test'
+  ...
+# Subtest: regular 5 Hz input remains usable but has little fast-stroke threshold margin
+ok 516 - regular 5 Hz input remains usable but has little fast-stroke threshold margin
+  ---
+  duration_ms: 3.7314
+  type: 'test'
+  ...
+# Subtest: touch release activates once without cancelling native pointer behavior, then deduplicates its touch click
+ok 517 - touch release activates once without cancelling native pointer behavior, then deduplicates its touch click
+  ---
+  duration_ms: 4.5959
+  type: 'test'
+  ...
+# Subtest: moving twelve pixels cancels the tap even when the finger returns before release
+ok 518 - moving twelve pixels cancels the tap even when the finger returns before release
+  ---
+  duration_ms: 4.0256
+  type: 'test'
+  ...
+# Subtest: release must remain inside the same connected enabled button and preserve its action
+ok 519 - release must remain inside the same connected enabled button and preserve its action
+  ---
+  duration_ms: 1.2254
+  type: 'test'
+  ...
+# Subtest: direction controls, disabled buttons, ordinary buttons, mouse and non-primary touches are excluded
+ok 520 - direction controls, disabled buttons, ordinary buttons, mouse and non-primary touches are excluded
+  ---
+  duration_ms: 0.7508
+  type: 'test'
+  ...
+# Subtest: another pointer cannot release or move the owning contact
+ok 521 - another pointer cannot release or move the owning contact
+  ---
+  duration_ms: 0.4618
+  type: 'test'
+  ...
+# Subtest: pointer cancellation and controller cancellation clear contacts but retain an already-used click guard
+ok 522 - pointer cancellation and controller cancellation clear contacts but retain an already-used click guard
+  ---
+  duration_ms: 0.7825
+  type: 'test'
+  ...
+# Subtest: genuine mouse clicks and keyboard clicks are never consumed after a touch activation
+ok 523 - genuine mouse clicks and keyboard clicks are never consumed after a touch activation
+  ---
+  duration_ms: 0.519
+  type: 'test'
+  ...
+# Subtest: compatibility clicks survive a same-action DOM redraw, but other actions and expired clicks remain native
+ok 524 - compatibility clicks survive a same-action DOM redraw, but other actions and expired clicks remain native
+  ---
+  duration_ms: 0.6929
+  type: 'test'
+  ...
+# Subtest: reset and dispose clear all contacts and deferred-click guards
+ok 525 - reset and dispose clear all contacts and deferred-click guards
+  ---
+  duration_ms: 0.57
+  type: 'test'
+  ...
+# Subtest: a held strafe stays on its intended line while the following camera turns
+ok 526 - a held strafe stays on its intended line while the following camera turns
+  ---
+  duration_ms: 7.6099
+  type: 'test'
+  ...
+# Subtest: releasing and choosing a new direction takes the current camera as a new reference
+ok 527 - releasing and choosing a new direction takes the current camera as a new reference
+  ---
+  duration_ms: 1.1319
+  type: 'test'
+  ...
+# Subtest: manual orbit immediately owns the view and rebases a held walking gesture
+ok 528 - manual orbit immediately owns the view and rebases a held walking gesture
+  ---
+  duration_ms: 1.0345
+  type: 'test'
+  ...
+# Subtest: idle view and an interaction do not recenter themselves
+ok 529 - idle view and an interaction do not recenter themselves
+  ---
+  duration_ms: 1.1628
+  type: 'test'
+  ...
+# Subtest: explicit recenter works while idle, turns by the shortest arc and respects a speed cap
+ok 530 - explicit recenter works while idle, turns by the shortest arc and respects a speed cap
+  ---
+  duration_ms: 1.1617
+  type: 'test'
+  ...
+# Subtest: automatic follow can be disabled without disabling deliberate recenter
+ok 531 - automatic follow can be disabled without disabling deliberate recenter
+  ---
+  duration_ms: 0.6301
+  type: 'test'
+  ...
+# Subtest: diagonal input is normalized and zero/nonfinite elapsed time cannot poison the view
+ok 532 - diagonal input is normalized and zero/nonfinite elapsed time cannot poison the view
+  ---
+  duration_ms: 0.4702
+  type: 'test'
+  ...
+# Subtest: v10 validates complete synthetic evidence without changing files and binds nested shader hashes
+ok 533 - v10 validates complete synthetic evidence without changing files and binds nested shader hashes
+  ---
+  duration_ms: 99.7815
+  type: 'test'
+  ...
+# Subtest: a passed graphics report from another bundle cannot be promoted
+ok 534 - a passed graphics report from another bundle cannot be promoted
+  ---
+  duration_ms: 84.6076
+  type: 'test'
+  ...
+# Subtest: passed true cannot hide transparent opening frames or an incomplete context phase
+ok 535 - passed true cannot hide transparent opening frames or an incomplete context phase
+  ---
+  duration_ms: 22.9973
+  type: 'test'
+  ...
+# Subtest: every soak sample needs valid pixels even when its stored verdict and timing pass
+ok 536 - every soak sample needs valid pixels even when its stored verdict and timing pass
+  ---
+  duration_ms: 34.8263
+  type: 'test'
+  ...
+# Subtest: shader diagnostics must match every final source hash and actual nested bytes
+ok 537 - shader diagnostics must match every final source hash and actual nested bytes
+  ---
+  duration_ms: 40.0892
+  type: 'test'
+  ...
+# Subtest: negative control and guarded pixels cannot be relabelled as a root fix
+ok 538 - negative control and guarded pixels cannot be relabelled as a root fix
+  ---
+  duration_ms: 56.648
+  type: 'test'
+  ...
+# Subtest: digest changes when retained diagnostic evidence changes without violating its expected result
+ok 539 - digest changes when retained diagnostic evidence changes without violating its expected result
+  ---
+  duration_ms: 20.5693
+  type: 'test'
+  ...
+# Subtest: v10 rejects missing graphics coverage, source changes and an old package version
+ok 540 - v10 rejects missing graphics coverage, source changes and an old package version
+  ---
+  duration_ms: 17.4083
+  type: 'test'
+  ...
+# Subtest: an explicit CSS-only patch preserves old source provenance and binds all new layout artifacts
+ok 541 - an explicit CSS-only patch preserves old source provenance and binds all new layout artifacts
+  ---
+  duration_ms: 33.9089
+  type: 'test'
+  ...
+# Subtest: CSS reuse rejects changed unrelated sources, a different append and missing reuse declarations
+ok 542 - CSS reuse rejects changed unrelated sources, a different append and missing reuse declarations
+  ---
+  duration_ms: 65.6409
+  type: 'test'
+  ...
+# Subtest: new layout evidence must identify new CSS and cannot pass with overlapping or clipped text
+ok 543 - new layout evidence must identify new CSS and cannot pass with overlapping or clipped text
+  ---
+  duration_ms: 121.4611
+  type: 'test'
+  ...
+# Subtest: CSS may rename byte-identical JavaScript while every reused report keeps its baseline identity
+ok 544 - CSS may rename byte-identical JavaScript while every reused report keeps its baseline identity
+  ---
+  duration_ms: 47.9508
+  type: 'test'
+  ...
+# Subtest: entry rename cannot conceal changed JavaScript or relabelled baseline reports
+ok 545 - entry rename cannot conceal changed JavaScript or relabelled baseline reports
+  ---
+  duration_ms: 15.9718
+  type: 'test'
+  ...
+# Subtest: GL_NO_ERROR and advancing gameplay cannot validate an all-zero RGBA buffer
+ok 546 - GL_NO_ERROR and advancing gameplay cannot validate an all-zero RGBA buffer
+  ---
+  duration_ms: 10.1113
+  type: 'test'
+  ...
+# Subtest: opaque pink, black, white and near-flat output fail independently of the pink heuristic
+ok 547 - opaque pink, black, white and near-flat output fail independently of the pink heuristic
+  ---
+  duration_ms: 14.4195
+  type: 'test'
+  ...
+# Subtest: detailed colored scenes remain valid while partial transparency is detected
+ok 548 - detailed colored scenes remain valid while partial transparency is detected
+  ---
+  duration_ms: 9.6407
+  type: 'test'
+  ...
+# Subtest: almost solid images cannot borrow variance from a tiny hot pixel
+ok 549 - almost solid images cannot borrow variance from a tiny hot pixel
+  ---
+  duration_ms: 35.0847
+  type: 'test'
+  ...
+# Subtest: missing statistics, an empty sample, loss, GL errors and visible overlays fail closed
+ok 550 - missing statistics, an empty sample, loss, GL errors and visible overlays fail closed
+  ---
+  duration_ms: 17.2107
+  type: 'test'
+  ...
+# Subtest: only exact Three X4122 precision-only warning logs are nonblocking
+ok 551 - only exact Three X4122 precision-only warning logs are nonblocking
+  ---
+  duration_ms: 2.2896
+  type: 'test'
+  ...
+# Subtest: opening acceptance requires useful imagery in every shot and first gameplay
+ok 552 - opening acceptance requires useful imagery in every shot and first gameplay
+  ---
+  duration_ms: 2.5339
+  type: 'test'
+  ...
+# Subtest: one bad image fails even when all shots have other good samples and play is reached
+ok 553 - one bad image fails even when all shots have other good samples and play is reached
+  ---
+  duration_ms: 0.6885
+  type: 'test'
+  ...
+# Subtest: the old reflection-only report pattern cannot pass on RGB zero plus GL0
+ok 554 - the old reflection-only report pattern cannot pass on RGB zero plus GL0
+  ---
+  duration_ms: 0.6292
+  type: 'test'
+  ...
+# Subtest: interruption never counts as work and the legacy duration remains explicitly wall-clock
+ok 555 - interruption never counts as work and the legacy duration remains explicitly wall-clock
+  ---
+  duration_ms: 21.4444
+  type: 'test'
+  ...
+# Subtest: final report identity rejects old candidates, omitted CSS and changed final CSS
+ok 556 - final report identity rejects old candidates, omitted CSS and changed final CSS
+  ---
+  duration_ms: 8.9592
+  type: 'test'
+  ...
+# Subtest: bound evidence rejects post-gate changes even when the build filename stays the same
+ok 557 - bound evidence rejects post-gate changes even when the build filename stays the same
+  ---
+  duration_ms: 129.0764
+  type: 'test'
+  ...
+# Subtest: video, decoder, ZIP and served reports all bind the exact current manifest
+ok 558 - video, decoder, ZIP and served reports all bind the exact current manifest
+  ---
+  duration_ms: 132.5558
+  type: 'test'
+  ...
+# Subtest: release overview regeneration is idempotent and uses final relative media/package links
+ok 559 - release overview regeneration is idempotent and uses final relative media/package links
+  ---
+  duration_ms: 8.0498
+  type: 'test'
+  ...
+# Subtest: soak cannot count old RAF history when animation freezes or counter resets
+ok 560 - soak cannot count old RAF history when animation freezes or counter resets
+  ---
+  duration_ms: 5.7073
+  type: 'test'
+  ...
+# Subtest: soak statistics use only newly rendered finite samples
+ok 561 - soak statistics use only newly rendered finite samples
+  ---
+  duration_ms: 5.5633
+  type: 'test'
+  ...
+# Subtest: warm resource audit permits a fixed plateau and bounded returning variation
+ok 562 - warm resource audit permits a fixed plateau and bounded returning variation
+  ---
+  duration_ms: 2.7153
+  type: 'test'
+  ...
+# Subtest: resource audit rejects both slow cumulative leaks and within-tolerance rising trends
+ok 563 - resource audit rejects both slow cumulative leaks and within-tolerance rising trends
+  ---
+  duration_ms: 1.3704
+  type: 'test'
+  ...
+# Subtest: resource audit requires matched repeated states and valid counters
+ok 564 - resource audit requires matched repeated states and valid counters
+  ---
+  duration_ms: 1.2805
+  type: 'test'
+  ...
+# Subtest: interface observers include shader console errors on every page
+ok 565 - interface observers include shader console errors on every page
+  ---
+  duration_ms: 0.9082
+  type: 'test'
+  ...
+# Subtest: complete matching evidence validates without FINAL_QA or modifying any source record
+ok 566 - complete matching evidence validates without FINAL_QA or modifying any source record
+  ---
+  duration_ms: 57.8325
+  type: 'test'
+  ...
+# Subtest: a passed developer or old bundle report cannot be relabelled as the current candidate
+ok 567 - a passed developer or old bundle report cannot be relabelled as the current candidate
+  ---
+  duration_ms: 8.2163
+  type: 'test'
+  ...
+# Subtest: one old nested page rejects an otherwise matching aggregate report
+ok 568 - one old nested page rejects an otherwise matching aggregate report
+  ---
+  duration_ms: 2.686
+  type: 'test'
+  ...
+# Subtest: both observed hash field names are checked at report and page level
+ok 569 - both observed hash field names are checked at report and page level
+  ---
+  duration_ms: 5.7093
+  type: 'test'
+  ...
+# Subtest: failed or unfinished nested pages cannot borrow a passed parent result
+ok 570 - failed or unfinished nested pages cannot borrow a passed parent result
+  ---
+  duration_ms: 29.8782
+  type: 'test'
+  ...
+# Subtest: opening entry objects and every observed reload are bound to the candidate script and hash
+ok 571 - opening entry objects and every observed reload are bound to the candidate script and hash
+  ---
+  duration_ms: 19.1854
+  type: 'test'
+  ...
+# Subtest: opening evidence requires two completed pages with six frames and an observed entry each
+ok 572 - opening evidence requires two completed pages with six frames and an observed entry each
+  ---
+  duration_ms: 49.0908
+  type: 'test'
+  ...
+# Subtest: audio analysis must describe the exact capture report rather than a different successful recording
+ok 573 - audio analysis must describe the exact capture report rather than a different successful recording
+  ---
+  duration_ms: 2.1421
+  type: 'test'
+  ...
+# Subtest: recording bytes are verified independently from the capture and analysis success flags
+ok 574 - recording bytes are verified independently from the capture and analysis success flags
+  ---
+  duration_ms: 2.6566
+  type: 'test'
+  ...
+# Subtest: empty, false or merely truthy audio checks cannot produce a successful audio verdict
+ok 575 - empty, false or merely truthy audio checks cannot produce a successful audio verdict
+  ---
+  duration_ms: 15.8766
+  type: 'test'
+  ...
+# Subtest: changing source bytes or immutable candidate bytes invalidates the evidence before promotion
+ok 576 - changing source bytes or immutable candidate bytes invalidates the evidence before promotion
+  ---
+  duration_ms: 3.6146
+  type: 'test'
+  ...
+# Subtest: failed, incomplete or inconsistent unit output cannot be counted as a complete passing suite
+ok 577 - failed, incomplete or inconsistent unit output cannot be counted as a complete passing suite
+  ---
+  duration_ms: 7.6922
+  type: 'test'
+  ...
+# Subtest: missing activity observations and incomplete soak duration are rejected rather than printed as coverage
+ok 578 - missing activity observations and incomplete soak duration are rejected rather than printed as coverage
+  ---
+  duration_ms: 9.1254
+  type: 'test'
+  ...
+# Subtest: changing a report under the same build changes the fingerprint required by FINAL_QA
+ok 579 - changing a report under the same build changes the fingerprint required by FINAL_QA
+  ---
+  duration_ms: 5.7878
+  type: 'test'
+  ...
+# Subtest: actual report and promotion entrypoints reject mixed evidence through the shared gate before writing
+ok 580 - actual report and promotion entrypoints reject mixed evidence through the shared gate before writing
+  ---
+  duration_ms: 40.6131
+  type: 'test'
+  ...
+# Subtest: all four flower silhouettes fit above or beside controls, including rotated portrait views
+ok 581 - all four flower silhouettes fit above or beside controls, including rotated portrait views
+  ---
+  duration_ms: 4842.0391
+  type: 'test'
+  ...
+# Subtest: responsive framing preserves a deliberate zoom ratio without cumulative drift
+ok 582 - responsive framing preserves a deliberate zoom ratio without cumulative drift
+  ---
+  duration_ms: 1.2094
+  type: 'test'
+  ...
+# Subtest: Space and touch halyard return a numeric held hoist axis and release cleanly
+ok 583 - Space and touch halyard return a numeric held hoist axis and release cleanly
+  ---
+  duration_ms: 8.9616
+  type: 'test'
+  ...
+# Subtest: Tab and native button activation remain available while unrelated game shortcuts are not consumed
+ok 584 - Tab and native button activation remain available while unrelated game shortcuts are not consumed
+  ---
+  duration_ms: 2.931
+  type: 'test'
+  ...
+# Subtest: reading either letter blocks background gameplay shortcuts and does not queue held controls
+ok 585 - reading either letter blocks background gameplay shortcuts and does not queue held controls
+  ---
+  duration_ms: 7.9435
+  type: 'test'
+  ...
+# Subtest: releasing a movement key while a text field has focus never leaves walking stuck
+ok 586 - releasing a movement key while a text field has focus never leaves walking stuck
+  ---
+  duration_ms: 2.5657
+  type: 'test'
+  ...
+# Subtest: stamp dragging outside the envelope cannot be converted into a native click seal
+ok 587 - stamp dragging outside the envelope cannot be converted into a native click seal
+  ---
+  duration_ms: 7.4144
+  type: 'test'
+  ...
+# Subtest: rigging at 99.5 percent keeps hoisting available until the launch rule is satisfied
+ok 588 - rigging at 99.5 percent keeps hoisting available until the launch rule is satisfied
+  ---
+  duration_ms: 28.7123
+  type: 'test'
+  ...
+# Subtest: the deliberate departure notifies completion once; a repeated ending action does not notify again
+ok 589 - the deliberate departure notifies completion once; a repeated ending action does not notify again
+  ---
+  duration_ms: 8.665
+  type: 'test'
+  ...
+# Subtest: recovery explains the return and clears an obsolete click-to-walk target
+ok 590 - recovery explains the return and clears an obsolete click-to-walk target
+  ---
+  duration_ms: 3.0777
+  type: 'test'
+  ...
+# Subtest: the visible close-letter action returns to the tide without taking the old letter
+ok 591 - the visible close-letter action returns to the tide without taking the old letter
+  ---
+  duration_ms: 6.0187
+  type: 'test'
+  ...
+# Subtest: middle button drags never change either rope or the halyard
+ok 592 - middle button drags never change either rope or the halyard
+  ---
+  duration_ms: 3.9444
+  type: 'test'
+  ...
+# Subtest: right button drags never change either rope or the halyard
+ok 593 - right button drags never change either rope or the halyard
+  ---
+  duration_ms: 2.2574
+  type: 'test'
+  ...
+# Subtest: middle orbit cannot hoist or steer during its initial sub-threshold movement
+ok 594 - middle orbit cannot hoist or steer during its initial sub-threshold movement
+  ---
+  duration_ms: 2.9654
+  type: 'test'
+  ...
+# Subtest: right orbit cannot hoist or steer during its initial sub-threshold movement
+ok 595 - right orbit cannot hoist or steer during its initial sub-threshold movement
+  ---
+  duration_ms: 2.2372
+  type: 'test'
+  ...
+# Subtest: primary physical drags still untie both ropes and raise the sail
+ok 596 - primary physical drags still untie both ropes and raise the sail
+  ---
+  duration_ms: 2.3005
+  type: 'test'
+  ...
+# Subtest: rigging applies the orbit camera while letter and ending framing stay fixed
+ok 597 - rigging applies the orbit camera while letter and ending framing stay fixed
+  ---
+  duration_ms: 7.9869
+  type: 'test'
+  ...
+# Subtest: completed rigging targets cannot steal a nearby remaining rope pick
+ok 598 - completed rigging targets cannot steal a nearby remaining rope pick
+  ---
+  duration_ms: 24.9828
+  type: 'test'
+  ...
+# Subtest: tide only primary clicks can walk or scatter
+ok 599 - tide only primary clicks can walk or scatter
+  ---
+  duration_ms: 11.8738
+  type: 'test'
+  ...
+# Subtest: island only primary clicks can walk or scatter
+ok 600 - island only primary clicks can walk or scatter
+  ---
+  duration_ms: 5.2729
+  type: 'test'
+  ...
+# Subtest: sailing only primary clicks can walk or scatter
+ok 601 - sailing only primary clicks can walk or scatter
+  ---
+  duration_ms: 4.9144
+  type: 'test'
+  ...
+# Subtest: writing legacy introduction preserves the already sealed letter and native read-only controls
+ok 602 - writing legacy introduction preserves the already sealed letter and native read-only controls
+  ---
+  duration_ms: 15.4107
+  type: 'test'
+  ...
+# Subtest: writing partial introduction preserves the already sealed letter and native read-only controls
+ok 603 - writing partial introduction preserves the already sealed letter and native read-only controls
+  ---
+  duration_ms: 4.0855
+  type: 'test'
+  ...
+# Subtest: writing complete introduction preserves the already sealed letter and native read-only controls
+ok 604 - writing complete introduction preserves the already sealed letter and native read-only controls
+  ---
+  duration_ms: 4.2244
+  type: 'test'
+  ...
+# Subtest: rendering the real v0.8 ending retains its exact recipient and body with no map completion requirement
+ok 605 - rendering the real v0.8 ending retains its exact recipient and body with no map completion requirement
+  ---
+  duration_ms: 5.3407
+  type: 'test'
+  ...
+# Subtest: a handled dialog Tab suppresses its native second focus advance exactly once
+ok 606 - a handled dialog Tab suppresses its native second focus advance exactly once
+  ---
+  duration_ms: 8.7733
+  type: 'test'
+  ...
+# Subtest: native Tab and text editing remain native without entering garden dispatch
+ok 607 - native Tab and text editing remain native without entering garden dispatch
+  ---
+  duration_ms: 11.4007
+  type: 'test'
+  ...
+# Subtest: unhandled coastal M R and E cannot open hidden garden systems or leave held keys behind
+ok 608 - unhandled coastal M R and E cannot open hidden garden systems or leave held keys behind
+  ---
+  duration_ms: 4.8418
+  type: 'test'
+  ...
+# Subtest: native focused button activation keeps its Space and Enter defaults
+ok 609 - native focused button activation keeps its Space and Enter defaults
+  ---
+  duration_ms: 2.8385
+  type: 'test'
+  ...
+# Subtest: fullscreen and outer modals keep priority over the coastal input owner
+ok 610 - fullscreen and outer modals keep priority over the coastal input owner
+  ---
+  duration_ms: 2.1603
+  type: 'test'
+  ...
+# Subtest: returning to the garden restores its own shortcuts
+ok 611 - returning to the garden restores its own shortcuts
+  ---
+  duration_ms: 2.4226
+  type: 'test'
+  ...
+# Subtest: an active new map receives its own keys before retained coastal or garden input
+ok 612 - an active new map receives its own keys before retained coastal or garden input
+  ---
+  duration_ms: 4.8498
+  type: 'test'
+  ...
+# Subtest: a personal letter requires both fields, preserves Unicode, and seals only deliberately
+ok 613 - a personal letter requires both fields, preserves Unicode, and seals only deliberately
+  ---
+  duration_ms: 15.8442
+  type: 'test'
+  ...
+# Subtest: tide route is connected, has safe waiting places, and walking normalizes diagonal speed
+ok 614 - tide route is connected, has safe waiting places, and walking normalizes diagonal speed
+  ---
+  duration_ms: 4.1918
+  type: 'test'
+  ...
+# Subtest: rising water returns only to a high checkpoint without losing the letter
+ok 615 - rising water returns only to a high checkpoint without losing the letter
+  ---
+  duration_ms: 9.2988
+  type: 'test'
+  ...
+# Subtest: old letter requires actual proximity and reading; distant island cannot skip it
+ok 616 - old letter requires actual proximity and reading; distant island cannot skip it
+  ---
+  duration_ms: 1.9477
+  type: 'test'
+  ...
+# Subtest: boarding, ropes and sail each have real prerequisites and replay-safe events
+ok 617 - boarding, ropes and sail each have real prerequisites and replay-safe events
+  ---
+  duration_ms: 2.0873
+  type: 'test'
+  ...
+# Subtest: sailing responds to steering, trim and brake, grows diverse finite flowers, and pauses at dawn
+ok 618 - sailing responds to steering, trim and brake, grows diverse finite flowers, and pauses at dawn
+  ---
+  duration_ms: 38.9231
+  type: 'test'
+  ...
+# Subtest: restoration rejects malformed progress and restores earned stages without stale velocity
+ok 619 - restoration rejects malformed progress and restores earned stages without stale velocity
+  ---
+  duration_ms: 2.9517
+  type: 'test'
+  ...
+# Subtest: nonfinite input cannot poison movement; paused updates do not advance tide or sailing
+ok 620 - nonfinite input cannot poison movement; paused updates do not advance tide or sailing
+  ---
+  duration_ms: 3.4411
+  type: 'test'
+  ...
+# Subtest: a complete tide crossing and boarding is reachable through movement and commands only
+ok 621 - a complete tide crossing and boarding is reachable through movement and commands only
+  ---
+  duration_ms: 12.6803
+  type: 'test'
+  ...
+# Subtest: the island boarding point and offshore boat mooring are distinct and joined by a supported jetty
+ok 622 - the island boarding point and offshore boat mooring are distinct and joined by a supported jetty
+  ---
+  duration_ms: 2.169
+  type: 'test'
+  ...
+# Subtest: old rigging saves move to the corrected mooring without resetting ropes or sail; sailed routes keep their x coordinate
+ok 623 - old rigging saves move to the corrected mooring without resetting ropes or sail; sailed routes keep their x coordinate
+  ---
+  duration_ms: 1.3784
+  type: 'test'
+  ...
+# Subtest: reloaded letters, checkpoints and bouquets are normalized without granting unrelated future progress
+ok 624 - reloaded letters, checkpoints and bouquets are normalized without granting unrelated future progress
+  ---
+  duration_ms: 2.252
+  type: 'test'
+  ...
+# Subtest: a sealed draft can be reopened only at the desk and direct sail trim is finite and sea-only
+ok 625 - a sealed draft can be reopened only at the desk and direct sail trim is finite and sea-only
+  ---
+  duration_ms: 2.2161
+  type: 'test'
+  ...
+# Subtest: an old journey gains an empty voyage without changing the earned core
+ok 626 - an old journey gains an empty voyage without changing the earned core
+  ---
+  duration_ms: 9.083
+  type: 'test'
+  ...
+# Subtest: written coastal letter survives the normal journey serializer and restore
+ok 627 - written coastal letter survives the normal journey serializer and restore
+  ---
+  duration_ms: 7.3434
+  type: 'test'
+  ...
+# Subtest: unearned malformed coastal state cannot appear before the bridge
+ok 628 - unearned malformed coastal state cannot appear before the bridge
+  ---
+  duration_ms: 4.1219
+  type: 'test'
+  ...
+# Subtest: voyage world geometry stays finite through shore, tide, sailing and dawn
+ok 629 - voyage world geometry stays finite through shore, tide, sailing and dawn
+  ---
+  duration_ms: 755.8407
+  type: 'test'
+  ...
+# Subtest: only a completed departure moves the presentation boat and pulls the camera back
+ok 630 - only a completed departure moves the presentation boat and pulls the camera back
+  ---
+  duration_ms: 521.3724
+  type: 'test'
+  ...
+# Subtest: seed choices give flower sea distinct restrained palettes without changing flower forms
+ok 631 - seed choices give flower sea distinct restrained palettes without changing flower forms
+  ---
+  duration_ms: 324.0177
+  type: 'test'
+  ...
+# Subtest: dense mixed sea blooms keep the balanced geometry budget bounded
+ok 632 - dense mixed sea blooms keep the balanced geometry budget bounded
+  ---
+  duration_ms: 2458.0202
+  type: 'test'
+  ...
+# Subtest: small sea petals use one smooth membrane without competing duplicate layers
+ok 633 - small sea petals use one smooth membrane without competing duplicate layers
+  ---
+  duration_ms: 5.9183
+  type: 'test'
+  ...
+# Subtest: dawn and final pullback keep the sun visible above an upper-third horizon
+ok 634 - dawn and final pullback keep the sun visible above an upper-third horizon
+  ---
+  duration_ms: 478.7535
+  type: 'test'
+  ...
+# Subtest: moored boat floats outside island terrain at hull, deck and stern sample points
+ok 635 - moored boat floats outside island terrain at hull, deck and stern sample points
+  ---
+  duration_ms: 286.3632
+  type: 'test'
+  ...
+# Subtest: jetty planks support the modeled island boarding route at one continuous height
+ok 636 - jetty planks support the modeled island boarding route at one continuous height
+  ---
+  duration_ms: 254.85
+  type: 'test'
+  ...
+# Subtest: idle seed stays in its cup; invalid and distant pointers cannot deliver it
+ok 637 - idle seed stays in its cup; invalid and distant pointers cannot deliver it
+  ---
+  duration_ms: 17.9241
+  type: 'test'
+  ...
+# Subtest: held pen attracts seed, then release brakes it instead of reversing the interaction
+ok 638 - held pen attracts seed, then release brakes it instead of reversing the interaction
+  ---
+  duration_ms: 2.1569
+  type: 'test'
+  ...
+# Subtest: an ordinary outer route reaches the visible flower and needs release before delivery
+ok 639 - an ordinary outer route reaches the visible flower and needs release before delivery
+  ---
+  duration_ms: 7.5933
+  type: 'test'
+  ...
+# Subtest: intentional release at flower edge catches even a fast seed; mere arrival without contact does not
+ok 640 - intentional release at flower edge catches even a fast seed; mere arrival without contact does not
+  ---
+  duration_ms: 5.5001
+  type: 'test'
+  ...
+# Subtest: boundary returns visibly reset contact history; paused or invalid time cannot integrate
+ok 641 - boundary returns visibly reset contact history; paused or invalid time cannot integrate
+  ---
+  duration_ms: 1.2238
+  type: 'test'
+  ...
+# Subtest: shore scenery preserves gameplay anchors and keeps planting approaches clear
+ok 642 - shore scenery preserves gameplay anchors and keeps planting approaches clear
+  ---
+  duration_ms: 1050.3721
+  type: 'test'
+  ...
+# Subtest: shore presentation remains finite and does not mutate delivery or quest state
+ok 643 - shore presentation remains finite and does not mutate delivery or quest state
+  ---
+  duration_ms: 2801.5433
+  type: 'test'
+  ...
+# Subtest: new shore geometry and materials are owned by the world and disposed once
+ok 644 - new shore geometry and materials are owned by the world and disposed once
+  ---
+  duration_ms: 783.7015
+  type: 'test'
+  ...
+1..644
+# tests 644
+# suites 0
+# pass 644
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 19735.0055

@@ -1,0 +1,18 @@
+/** Promote the exact immutable, independently checked local candidate. */
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
+const {validateV9Evidence}=require('./validation-v9.cjs');
+const root=path.resolve(__dirname,'..'),label=process.argv[2];assert.match(label||'',/^[a-z0-9-]+$/);
+const hash=f=>crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex');
+const {proof,build,reports,entry,total,evidenceHashes,evidenceDigest}=validateV9Evidence(root,{candidate:label});
+const qa=fs.readFileSync(path.join(root,'FINAL_QA.md'),'utf8');assert.ok(qa.startsWith('# 0.7.0')&&qa.includes(build.entry),'QA must match candidate');
+assert.ok(qa.includes('<!-- v9-evidence-sha256: '+evidenceDigest+' -->'),'QA must describe this exact verified evidence set');
+if(process.argv.includes('--verify-only')){console.log(JSON.stringify({verified:true,label,entry,units:total}));process.exit(0);}
+const dist=path.resolve(root,'dist'),archive=path.resolve(root,'.history','dist-before-0.7-'+Date.now());for(const p of [dist,archive])assert.ok(p.startsWith(root+path.sep)&&p!==root);
+const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(d,e.name)):[path.join(d,e.name)]),old=fs.existsSync(dist)?walk(dist).map(f=>({file:path.relative(dist,f),sha256:hash(f)})):[];
+if(old.length){fs.mkdirSync(path.dirname(archive),{recursive:true});fs.cpSync(dist,archive,{recursive:true,errorOnExist:true});for(const f of old)assert.equal(hash(path.join(archive,f.file)),f.sha256);}
+fs.mkdirSync(dist,{recursive:true});for(const f of build.files.filter(f=>f.file!=='index.html')){const target=path.resolve(dist,f.file);assert.ok(target.startsWith(dist+path.sep));fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(path.join(build.outDir,f.file),target);assert.equal(hash(target),f.sha256);}
+const staged=path.join(dist,'.spring-index-upgrade.tmp');fs.copyFileSync(path.join(build.outDir,'index.html'),staged);fs.renameSync(staged,path.join(dist,'index.html'));
+const entries=build.files.map(f=>({file:'dist/'+f.file,bytes:f.bytes,sha256:f.sha256}));for(const f of entries)assert.equal(hash(path.join(root,f.file)),f.sha256);
+const runtimeFiles=['scripts/serve.cjs','启动春信.cmd','THIRD_PARTY_LICENSES.txt','ASSET_SOURCES.md','README.md','FINAL_QA.md'].map(file=>({file,bytes:fs.statSync(path.join(root,file)).size,sha256:hash(path.join(root,file))}));
+const manifest={version:'0.7.0',date:new Date().toISOString(),build:build.entry,styleBuild:build.style,candidate:label,dist:entries,runtimeFiles,sources:build.sources,evidence:proof,evidenceHashes,checks:{units:total,play:reports.play.checks.length,input:reports.input.pages.reduce((n,p)=>n+p.checks.length,0),legacy:reports.legacy.checks.length,continuousSeconds:reports.soak.elapsedSeconds},previousDist:archive,retainedPreviousAssets:true,limitations:['Independent playable browser chapter; commercial demand and willingness to pay are not yet validated.','Desktop Chromium and emulated touch checks, not physical mobile-device certification.','Audio analysis verifies actual digital output; no human listening verdict.','Automated routes use readonly object projections, not blind first-time player testing.']};
+fs.writeFileSync(path.join(root,'evidence/release-manifest-v9.json'),JSON.stringify(manifest,null,2));console.log(JSON.stringify({promoted:true,entry:build.entry,files:entries.length,backup:archive}));

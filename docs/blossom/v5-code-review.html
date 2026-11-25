@@ -1,0 +1,135 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>代码独立审查 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc"><p class="toc-title">代码独立审查</p><a href="#section-0">当前结论</a><a href="#section-1">已做得好的部分</a><a href="#section-2">已修复问题</a><a href="#section-3">验证记录</a><a href="#section-4">未作判断的行为</a><a href="#section-5">建议</a><a href="#section-6">附录：固定种子恢复健壮性探查</a><a href="#section-7">附录：初始化计时与首帧基线复核</a><a href="#section-8">附录：首屏完整管线零时间步预热</a><a href="#section-9">附录：最终一次性刷新门闩与 startup 证据边界</a><a href="#section-10">附录：连续风笔的采样修复与 Space 组合键复核</a><a href="#section-11">附录：最终交付守卫与本地启动器</a><a href="#section-12">附录：冻结包的完整文件集与解压校验复核</a><a href="#section-13">附录：触屏长按完成后的兼容 click</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 本轮制作概览</a>　/　<a href="v5-code-review.md">Markdown源文件</a></div><h1>v5 独立代码审查</h1>
+<p>审查日期：2026-11-19。审查对象：<code>D:/AI Game/spring-letter</code> 的 v5 工作副本。项目没有 Git 仓库，参考基线为 <code>.history/v02-before-exploration-20261119.zip</code>；本次按需求与当前源代码审查，不虚构提交范围。首轮只读应用源码；后续经主代理明确授权，仅修复 <code>game-model.js</code> 的桥形状恢复校验并添加对应测试。全程未启动浏览器、未运行 GPU、未构建项目或父项目。</p>
+<h2 id="section-0">当前结论</h2>
+<p>当前没有未关闭的 P1/P2。首轮审查发现的两处 P2 均已修复并独立复核，尾声镜头的几何入画问题也已修正；后续恢复探查发现的桥形状验证 P2 已修复，并通过同种子 10,000 样本复测及完整 90 项单测。本报告不代替真实输入、视觉和听感验收，也不声称对所有设备或全部运行路径作了穷尽证明。</p>
+<h2 id="section-1">已做得好的部分</h2>
+<ul>
+<li>桥手势识别只返回构造请求，最终仍经过 <code>setStructure</code> 的占用与相邻石台检查；移动、失焦、双指缩放和未完成手势有独立取消路径。</li>
+<li>携核模块区分拾起、安放、取回和寄出，各自需要持续按住；一次操作后必须松手再进行下一次，避免同一长按连续提交多个决定。</li>
+<li>三庭任务保留不同的状态规则；庭院路径检测使用可见三角面，对主线解锁与跨桥限制有测试，侧路不会绕过主线桥。</li>
+<li>主循环在隐藏、模态和 WebGL 中断时不推进世界时间，7.2 秒结局延迟用同一个世界时钟，浏览器后台时间不会消耗演出。</li>
+<li>可选 AO 失败会恢复场景可见性、覆盖材质和渲染器状态，并关闭后续 AO；粒子与风迹资源有容量上限、降级路径和释放测试。</li>
+</ul>
+<h2 id="section-2">已修复问题</h2>
+<h3>P2-1：完成春信后，终庭的 E 与底部操作键仍被持有操作拦截</h3>
+<p>位置：<code>src/main.js:101</code>、<code>src/main.js:111</code>；关联 <code>src/delivery.js:10</code>。</p>
+<p>复现：寄出春信，选择“留在花庭”，仍停在启程台 <code>z=-50.25</code>；或载入已结束的存档。<code>deliveryIntent</code> 因已有 <code>state.ending</code> 返回空，但主输入处理仍以 <code>bridge.solved &amp;&amp; player.z &lt; -40</code> 拦截 E 和底部按钮，不调用 <code>interact</code>。界面显示“靠近·细看”而操作无效，包含“回看这封春信”的终庭面板无法正常打开。只有退回 <code>-40 ≤ z &lt; -39</code> 的入口段才能绕过。</p>
+<p>证据：从实际 <code>main.js</code> 提取键盘处理器，使用 Node 的隔离上下文执行。修复前已结束状态在 <code>z=-50.25</code> 的 <code>interact</code> 调用次数为 0，移至 <code>z=-39.5</code> 后为 1。该探针不运行浏览器，也不修改游戏进度入口。</p>
+<p>修复建议：三个持有操作守卫都增加 <code>!state.ending</code>，让已结束状态恢复普通查看行为。</p>
+<p>状态：已关闭。主代理添加了三个守卫。独立复核实际源码中的键盘、点击和 pointerdown 处理器：已结束且 <code>z=-50.25</code> 时，点击与 E 各调用一次 <code>interact</code>，pointerdown 不再捕获；未结束时仍不调用 <code>interact</code>，pointerdown 正常捕获一次，原有长按入口保留。</p>
+<h3>P2-2：恢复损坏的雨庭瞬态后，无输入可直接获得完成奖励</h3>
+<p>位置：<code>src/exploration-model.js:47</code>、<code>src/exploration-model.js:48</code>；关联 <code>src/exploration-model.js:153</code> 的雨庭完成判断。</p>
+<p>复现：恢复 <code>rain: {done:false, mask:4095, travel:6.2}</code>，玩家位于雨留庭，不传入风笔手势，推进一帧。恢复逻辑保留了全部掩码和超阈值路程；完成判断不要求本帧合法绘制，于是立即发出 <code>complete</code>，将 <code>done</code> 改为 true 并增加 <code>rounds</code>。</p>
+<p>这不是正常的可恢复中间态：正常模拟在达到该组合的同一帧已提交完成并清空掩码/路程。它违反计划的“旧存档兼容、不因恢复坏存档而虚构奖励”，也与旧剧情奖励的证据检查不一致。</p>
+<p>证据：Node 直接运行 <code>restoreExplorationState</code> 和 <code>stepExploration</code>，零输入第一帧得到 <code>discover</code> 与 <code>complete</code> 两个信号。</p>
+<p>修复建议：恢复时清除这种不可能的未完成瞬态，或要求本帧合法描画产生进展后才能触发雨庭完成；加入损坏存档恢复后零输入不获奖的回归用例。</p>
+<p>状态：已关闭。恢复逻辑现在于 <code>src/exploration-model.js:52</code> 清除不可能的达标瞬态，保留永久奖励。新增测试覆盖初次奖励、已获奖后的重玩、多个异常边界与合法半圈恢复。独立重跑完整 <code>restore</code> 链后，坏记录的 mask/travel 为 0，下一帧 done=false、rounds=0，仅发出 discover，没有 complete。</p>
+<h3>尾声镜头入画检查</h3>
+<p>原实现从物理启程台寄出后继续使用漫游镜头。默认视角中，旧灯中心的 NDC x 为 <code>-1.091</code>，远方花座中心的 NDC y 为 <code>-1.438</code>，已离开画面；这会削弱七秒世界回应的可见性。</p>
+<p>主代理已在 <code>src/main.js:147</code> 增加仍可自由拖动的 farewell 视角，目标 <code>(0,.8,-46)</code>、基准偏移 <code>(6.8,6.2,10.2)</code>、FOV 48，并按 <code>clamp(.8/aspect,1,2)</code> 放大竖屏初始半径。独立无 GPU 投影确认：16:9、9:16、390×844 中，三处花座中心与装饰轮廓、启程台人物/同伴的保守范围均在 NDC <code>[-1,1]</code> 内。390×844 的旧灯轮廓 x 范围为 <code>[-.781,-.194]</code>，远方花座为 <code>[.329,.771]</code>，同伴保守范围为 <code>[.002,.796]</code>。</p>
+<p>状态：几何投影问题已关闭。投影只证明几何入画，不证明遮挡、对比度或实际演出的可读性；真实输入验收仍需观看三个结局。</p>
+<h2 id="section-3">验证记录</h2>
+<ul>
+<li>在 <code>D:/AI Game/spring-letter</code> 执行 <code>npm test</code>：85/85 通过，0 失败。该次执行发生在后续修复完成前。</li>
+<li>修复后执行 <code>node --test tests/exploration.test.js tests/navigation.test.js tests/story-director.test.js</code>：19/19 通过，0 失败；其中包含新增的两个雨庭存档回归测试。输入拦截与宽镜另以实际处理器和 Three.js 投影定向复核。</li>
+<li>对风过庭使用 0、30、150、900 秒四个世界初始时间，各推进 15 分钟纯状态模拟，不提供任何风笔输入：四次均停留 stage 0，没有完成信号。这是模拟时间，不是设备长时运行测试。</li>
+<li>检查了主循环、输入绑定、存档接线、navigation、delivery、bridge-weaver、exploration-model/exploration、layout/landscape、camera-occlusion、depth-pass、hero-weather、courier、story-director，以及 world 的结局与同伴回应逻辑；查看了粒子、风迹和反射的相关资源路径。</li>
+<li>核对了桥占用保护、错误手势不排队、图库桥引导隐藏、探索交互关闭时不推进任务、两枚核互斥、低画质资源边界等现有测试。</li>
+</ul>
+<p>首轮最终定向复核源码 SHA-256（后续恢复修复的指纹另载于附录证据 JSON）：</p>
+<div class="table-scroll"><table><thead><tr><th>文件</th><th>SHA-256</th></tr></thead><tbody>
+<tr><td><code>src/main.js</code></td><td><code>FB6195FDDDDD55972FF0F1F1C164DED3E3C1D30B3429E6F77DB037A39C373597</code></td></tr>
+<tr><td><code>src/exploration-model.js</code></td><td><code>A29ED6688286BFBBCA9778D01BC4A3AC52A24AD1D8E9E0EC439F24D5CEE0B3D9</code></td></tr>
+<tr><td><code>src/delivery.js</code></td><td><code>80373AFBE43A70F95318B4178A244D9E5799356571B69AAD88301504427A11D6</code></td></tr>
+<tr><td><code>src/navigation.js</code></td><td><code>2BAAB35CEE02D5094D1A2F14E47B6B5CBB1A41E2F1AFC5CCC394689A453118FE</code></td></tr>
+</tbody></table></div>
+<h2 id="section-4">未作判断的行为</h2>
+<ul>
+<li>画面质量、石材和花尘的实际对比、可见遮挡、不同设备 GPU 表现：本审查明确禁止浏览器/GPU；几何投影不等价于渲染验收。</li>
+<li>实际听感、声像是否能让玩家顺利寻声：未播放或聆听声音，只读音符触发和状态时序。</li>
+<li>首次玩家是否理解风笔、空间路线或两核三愿的取舍：没有开展首次玩家测试，不能从代码与测试数量推出理解程度。</li>
+<li>真实手机浏览器的多指捕获、键盘系统行为、全屏兼容和长期显存变化：仅核对源码与既有测试，真实设备结果由主验收负责。</li>
+</ul>
+<h2 id="section-5">建议</h2>
+<p>由真实输入验收补上结束后原地重看春信、竖屏尾声视角及三种安排的世界反馈。本轮没有提出代码风格修改，也没有把审查范围外的体验问题包装成已验证结论。</p>
+<h2 id="section-6">附录：固定种子恢复健壮性探查</h2>
+<p>使用独立脚本 <code>docs/blossom/tools/v5-restore-fuzz.mjs</code>，种子 <code>0x5a17c0de</code>（xorshift32），生成 10,000 份合法 JSON。包含正常归一化对照、任意根类型、字段类型混杂、有限极大数、越界数字、重复数组与特殊对象属性；仅执行 <code>restore → serialize → restore</code>，不调用浏览器或 GPU。</p>
+<p>检查不抛异常、所有恢复数值及坐标有限、恰有两枚种核且不重复、终局与合法用途/原终局一致、主路门槛顺序、恢复幂等、桥结构必须为合法字符串、雨庭不保留已被正常模拟消费的达标瞬态。保留结构完整的既有终局是存档语义，不声称能验证其历史真实性。</p>
+<h3>P2-3：桥形状验证对损坏字段执行隐式对象转键</h3>
+<p>位置：<code>src/game-model.js:118</code> 的 <code>connections[data.bridge?.structure]</code>。</p>
+<p>最小反例：<code>{&quot;version&quot;:1,&quot;p1&quot;:{&quot;solved&quot;:true},&quot;wind&quot;:{&quot;solved&quot;:true},&quot;bridge&quot;:{&quot;structure&quot;:{&quot;toString&quot;:null}}}</code>。该 JSON 合法，但恢复时抛出 <code>TypeError: Cannot convert object to primitive value</code>。启动流程也会在 <code>showCover</code> 中恢复存档，因此此数据可能让启动进入错误界面。另 <code>structure:[&quot;bridge_am&quot;]</code>、<code>&quot;__proto__&quot;</code>、<code>&quot;constructor&quot;</code> 会被当作合法形状保留，表明验证使用了隐式转键/原型继承而非封闭白名单。</p>
+<p>建议：先要求字符串类型，再以显式白名单或 <code>Object.hasOwn</code> 检查允许结构，保留 <code>none</code>；不读取任意对象属性键。</p>
+<p>第一轮证据：<code>v5-restore-fuzz-before-fix.json</code>。10,000 例中 9,901 通过、99 失败；77 次转键异常、22 次非法桥结构。426 个结构完整的已存终局得到保留，三种结局分别覆盖 142、140、144 次。没有找到除此形状校验之外的种核、终局、主线门槛或幂等反例。源码指纹在运行前后未变化；总计约 1.6 秒 CPU 探查，不是设备长时运行。</p>
+<p>状态：已关闭。经主代理授权，恢复校验改为先要求 <code>typeof structure === &#x27;string&#x27;</code>，再允许 <code>none</code> 或 <code>Object.hasOwn(connections, structure)</code> 的自有白名单项。未修改其他玩法行为或桥构造接口。</p>
+<p>新增三类行为回归：损坏对象/非字符串安全丢弃；原型继承属性名被拒绝；合法结构的真实可走支撑保留、恢复幂等且仍受风廊门槛约束。修复前前两类按预期失败（20 项中 18 通过、2 失败），合法结构控制组原本通过；修复后执行项目 <code>npm test</code>，90/90 全部通过。</p>
+<p>同脚本、同种子和同样本的复测结果：10,000/10,000 通过，0 异常，0 不变量失败。431 个结构完整的已存终局得到保留，三种结局分别覆盖 145、140、146 次；与修复前覆盖数不同，是此前抛异常的样本现在能完成所有检查，生成样本未改变。运行前后源码指纹一致，总计约 1.0 秒 CPU 探查。</p>
+<p>独立证据：<code>v5-restore-fuzz-before-fix.json</code> 保留修复前失败；<code>v5-restore-fuzz-after-fix.json</code> 记录完整复测；<code>v5-restore-fuzz-evidence.json</code> 是简短前后对照及单测摘要。可复跑脚本为 <code>tools/v5-restore-fuzz.mjs</code>。这些探针不证明历史存档未被篡改，也不替代正在进行的浏览器长时验收。</p>
+<h2 id="section-7">附录：初始化计时与首帧基线复核</h2>
+<p>旧构建 <code>/assets/index-DOLalDHR.js</code> 的长跑证据记录了累计 <code>longestMs=9088.3</code>、<code>over1000=1</code>；读取的首个 silver 和末个采样均保持这两个值。该累计指标受到初始化预热计时污染，不能解释为已可交互阶段停顿九秒。</p>
+<p>源码调用链明确：<code>bindFullscreen()</code> 初始化时同步 <code>sync()</code> 并调用 <code>onChange(false)</code>；旧 <code>main.init</code> 回调在材质预热前写入 <code>lastTime=performance.now()</code>。接着等待三种材质的 <code>compileAsync</code> 与 composer 渲染，最后才启动 RAF。第一帧的 <code>now-lastTime</code> 因此跨越了 loading 内的初始化预热等待；它不是两个连续动画帧之间的时差。这里只确认测量区间错误，不把全部 9.088 秒分别归因于着色器、驱动缓存或反射，也未证明用户在可交互阶段发生了同等停顿。</p>
+<p>主代理的最小修正已通过 CPU 复核：</p>
+<ul>
+<li><code>src/main.js:202</code> 在 init 内记录初始化起点；<code>loadingTiming.totalMs</code> 从该起点计至预热和反射对象创建完成。</li>
+<li><code>src/main.js:213</code> 起记录 <code>warmupMs</code>，范围包含粒子初始化更新、三个材质的编译/渲染、表面同步及反射对象创建；不包含反射的首次实际渲染。</li>
+<li><code>overlayHiddenMs</code> 在 750ms 延迟回调实际设置 <code>hidden=true</code> 时记录相对 init 起点的耗时；它是回调时间，不能直接当作合成器已绘制完成的证明。</li>
+<li><code>src/main.js:221</code> 仅在首次 RAF 前执行 <code>lastTime=0</code>，使第一帧建立基线。后续动画仍保留所有正时差；没有删除长帧、筛去大于一秒的间隔或重置累计计数。</li>
+</ul>
+<p>独立 CPU 探针从实际 main 源码提取初始化尾段和帧计时段执行，使用明确标注的合成时间。验证独立 loading 指标、750ms 隐藏回调和首帧基线；随后模拟 16ms、3000ms、2000ms 三个动画间隔，结果原样记录 <code>[16,3000,2000]</code>，累计 <code>longestMs=3000</code>、<code>over1000=2</code>。证据见 <code>v5-startup-timing-cpu-review.json</code>，其中的合成耗时不是新的 GPU 或实际启动测量。该次 main SHA-256 为 <code>84108e36488ae1fe4545cb9a6e1c148989ad6bd39b9775cd5d28274d4eb1acf5</code>。</p>
+<p>在上述仅调整计时边界的复核版本中，反射对象仍在材质预热后创建，768² 半浮点多重采样目标和镜像场景第一次实际渲染由第一帧触发；流晶镜像的透射目标按相机独立懒创建。源码只支持“这些实际渲染路径当时尚未在 loading 中执行”，不足以确认它们导致九秒停顿。Reflector 的裁切通过投影矩阵完成，其自身材质未加入场景，不能凭空归因为新裁切 shader 编译。该次复核没有运行浏览器/GPU，也没有修改反射预热；后续调整见下文。</p>
+<p>边界：<code>totalMs</code> 不包含调用 init 之前的模块加载/求值；加载统计与后续动画统计分开呈现。现有旧长跑数据保留，不能通过纠正统计口径改写为“实际启动无卡顿”。</p>
+<h2 id="section-8">附录：首屏完整管线零时间步预热</h2>
+<p>在启动分阶段复测之后，主代理将反射创建移至材质预热循环前，并让每种材质先执行一次反射更新，再执行 composer。随后新增完整首屏准备：<code>frame(now,scheduleNext=true)</code> 只在 <code>scheduleNext</code> 为 true 时预约下一帧；init 在 loading 仍不透明时执行 <code>lastTime=0; frame(0,false)</code>，记录 loading 时间后淡出。该轮最初使用 <code>lastTime=0; requestAnimationFrame(frame)</code> 直接启动；最终增加的一次性刷新门闩见下一节。</p>
+<p>CPU 复核未发现这一变更导致任务推进或第二条 RAF 循环。该轮直接启动版本的探针执行实际 main 的帧调度段，并使用真实 exploration、bridge-weaver、delivery 模块：</p>
+<ul>
+<li>预热调用的 <code>raw=0</code>、<code>dt=0</code>、世界时间保持 0，帧计数不增加。</li>
+<li>当前是 <code>mode=&#x27;cover&#x27;</code>；剧情导演和 <code>updatePlay</code> 不执行。三个交互模块均收到关闭交互的参数，返回零信号；没有领取、安放、寄出、任务完成或存档动作，整个 <code>serialize(state)</code> 前后相等。</li>
+<li><code>frame(0,false)</code> 预约 RAF 0 次；init 预约 1 次后，第一次真实回调只预约 1 个后继，累计恰为 2 次请求，未形成第二条循环。</li>
+<li>后半帧源码将场景准备为正常 cover 状态：侧庭和探索引导隐藏、旅人/同伴隐藏、实体世界显示、花尘隐藏；光照、雾、表面和反射使用正常首屏设置。仅更新展示状态，没有永久进度写入。薄雾在 dt=0 时保持零透明度，从后续非零帧开始渐入；这是普通首帧本来就会发生的行为。</li>
+</ul>
+<p>证据：<code>v5-zero-step-warmup-cpu-review.json</code>，复核 main SHA-256 为 <code>37c5c2739e27eb9b5bd8aa9522bfb566d6640e05faa89096cb9ad2708be91cc3</code>。本探针未运行 GPU；渲染后半段仅源码核对，不能证明实际帧耗时、像素输出或冷启动卡顿已消失。运行时改善仍以 startup 实测为准，不能从零时间步调用的行为安全推断性能结论。</p>
+<h2 id="section-9">附录：最终一次性刷新门闩与 startup 证据边界</h2>
+<p>仅把首次动画基线清零后，完整 cover 预热版仍曾报告首窗口 <code>1034.8ms</code>。独立只读查看 <code>spring-letter/evidence/v5-startup-cover-warmup.json</code>：diagnostics-ready 至 loading-hidden 约一秒内完成 58 帧，该窗口没有 LongTask；对应的 1034ms 长任务在约 17260ms 已结束，早于 diagnostics-ready 的 17279.8ms。不能把这个累计值解释为该窗口实际停住一秒，也不能归因为反射。它与编译 promise 完成所在刷新批次沿用旧 RAF 时间戳的计时边界问题相符。</p>
+<p>最终启动表达式为 <code>lastTime=0; requestAnimationFrame(()=&gt;requestAnimationFrame(frame))</code>：第一层回调仅预约下一刷新边界，丢弃该回调自身的时间戳；真正动画首帧仍只建立基线，后续由 frame 自身预约一个后继。CPU 探针执行实际表达式及帧计时前缀，确认零时间步预热不预约 RAF、每次回调后队列长度始终为 1；合成的 16ms 和 3000ms 后续间隔仍被原样记录，<code>over1000=1</code>，没有过滤运行中的长帧。证据见 <code>v5-raf-gate-cpu-review.json</code>；main SHA-256 为 <code>eba0d91e060d9f1d7d188f31196163fb23fc796b7b1df57f47f20de8fd3f9f4c</code>。</p>
+<p>主代理完成的最终启动实测记录为 <code>spring-letter/evidence/v5-startup.json</code>、构建 <code>/assets/index-BKcuSN5I.js</code>。审查者只读核对其结果，未启动浏览器：</p>
+<div class="table-scroll"><table><thead><tr><th>阶段</th><th>累计最长间隔</th><th>边界</th></tr></thead><tbody>
+<tr><td>loading-hidden</td><td>17.2ms</td><td>无大于 50ms 的间隔</td></tr>
+<tr><td>cover-settled</td><td>17.8ms</td><td>无大于 50ms 的间隔</td></tr>
+<tr><td>begin / opening 后</td><td>450.6ms</td><td>真实记录保留，不宣称全程 60fps</td></tr>
+<tr><td>首次行走、花朵近看、画廊后</td><td>仍为 450.6ms</td><td>无大于等于 1 秒间隔，pageerrors 为空</td></tr>
+</tbody></table></div>
+<p>该次 init 总耗时约 15.274 秒，warmup 约 13.244 秒，遮罩隐藏记录约 16.027 秒，均独立保留。这次证据支持“初始化旧时间戳不再污染正常动画统计”，不能据此宣称加载成本消失、所有设备无卡顿、反射单独造成或解决停顿，亦未清除或验证操作系统驱动缓存。</p>
+<h2 id="section-10">附录：连续风笔的采样修复与 Space 组合键复核</h2>
+<p>本轮复核范围为 <code>src/stroke-motion.js</code>、其 10 项回归测试及 <code>main.js</code> 接入；未发现新的待处理 P1/P2。独立审查只执行 CPU 单测、源码提取 VM 探针和只读证据检查，没有开启浏览器、GPU 或构建。完整 red/green 输出摘要、数值、源码哈希和直接读取的运行时证据见 <a href="./v5-gesture-fix-review.json">v5-gesture-fix-review.json</a>。</p>
+<p>原问题是输入事件与 RAF 频率不同：main 每帧按当前位置差分计算速度，没有新 pointermove 的帧立即得到零速度，随后把散尘目标清零。受力向量先限幅又丢掉了稀疏事件所累计的路程。受控 CPU 样本在 60 Hz RAF / 20 Hz 输入下得到 <code>18,0,0</code> 的速度和 <code>1,0,0</code> 的目标，最终散尘约在 0.3125–0.3547 波动；末端平滑本身不能恢复连续笔速。这解释了快扫仍保留大量实体的状态，不是缺少固定散尘动画。</p>
+<p>修复只为散尘判定增加独立标量：未限幅的 <code>distance/dt</code> 先按 rate=8 指数积分，结果再限幅至 18。不能先对单帧速度峰值取最大值，否则稀疏慢笔也容易被判成快笔；也不能平滑有方向的向量，否则往返会抵消。真实方向冲量仍使用原来的向量与 clamp18，原有力度公式没有变。</p>
+<ul>
+<li>Red：可导入、确实执行旧单帧限幅行为的 helper，在同一测试文件下 10 项中 7 项断言失败、3 项通过，进程退出码 1；失败不是 import 错误。Green：修复后完整 <code>npm test</code> 100/100 通过，包含 helper 的 10 项测试。</li>
+<li>60/90/144 Hz RAF × 10/20/30/60 Hz 输入均满足真实慢速 0.8 的 scatter &lt; 0.005、真实快速 20 的稳态 scatter &gt; 0.95。10 Hz 慢输入在这三种 RAF 下的峰值分别为 0、0.000002943、0.000016492，允许的微小泄漏已有量化。</li>
+<li>从实际 main 提取 <code>updateGesture</code> 与 <code>clearInput</code> 执行：起笔和 dt=0 仅建立基线；原始速度 50 先积分得到能量 18，方向向量仍为 (10.8,14.4,0)，反向后为其相反数；空事件帧的方向为零而标量能量连续衰减。松手仍按原 <code>exp(-6dt)</code> / <code>exp(-4dt)</code> 衰减方向与力度，散尘目标和标量立即归零；下一笔不继承上笔能量。只读 <code>snapshot().gesture.motionEnergy</code> 返回 getter 数值，没有状态写入。</li>
+<li>规则 5 Hz 输入已接近边界：慢笔峰值约 0.00335–0.00354，快笔最低约 0.951–0.966；若间隔交替为 160/240ms，慢笔峰值约 0.00514–0.00526、快笔最低约 0.871–0.908，不能承诺仍满足上述阈值。长时间没有输入会自然衰减；未擅自修改 rate=8 来掩盖这个边界。采样之间已经往返抵消的路程也无法由位置差分恢复。</li>
+</ul>
+<p>只读核对主代理同脚本真实轨迹：修复前 BKcuSN5I 的 131 个有效帧中 29 帧速度为零，峰值 scatter=0.458783；修复后 ZF6XXQOO 的 127 个有效帧中仍有 34 帧速度为零，但峰值达到 0.999561，两次各有 50 个快帧。证据为 <code>spring-letter/evidence/v5-brush-trace-before.json</code> 与 <code>v5-brush-trace-after.json</code>；这是普通真实 pointer 输入和逐 RAF 只读快照，审查者没有运行或生成这些浏览器测量。</p>
+<p>随后真实 UI 又发现独立的表单到画布组合键问题：调节 bloom 后焦点留在 range，Space keydown 被表单守卫提前丢弃，接着拖画布成为环看。失败证据 <code>spring-letter/evidence/v5-gallery-chord-before.json</code> 保留。主代理加入 <code>spaceHeld</code> 物理修饰键：表单仍保留原生键行为，画布 pointerdown 时才转入游戏按键集合；keyup、clearInput 清理它。实际处理器的 14 项 CPU 检查均通过，覆盖 input/select/textarea/button 到画布、keyup、右键优先、重复事件、modal、resetPresentation、pointercancel、blur、visibilitychange，以及 cover/opening 不转入绘画。弹窗先 clearInput，弹窗内 keydown 不记录修饰键；展示重置与失焦不会保留旧 Space。VM 只证明事件逻辑和未调用 preventDefault，原生焦点及控件默认行为仍由浏览器验证。</p>
+<p>后续主代理在 <code>/assets/index-BNqW-E_H.js</code> 上完成真实 UI 复测。直接读取 <code>spring-letter/evidence/v5-visual-verification.json</code> 的 6 项检查与 <code>v5-boundary-verification.json</code> 的 9 项检查，二者 errors 均为空。主线快扫峰值为 0.997864，画廊三轮为 0.997181、0.997195、0.996609，包含调节 bloom 后持 Space 拖画布、保持半开状态并自然归形；边界检查还覆盖失焦、表单焦点下 Escape、触屏模拟和损坏存档等。hero 风迹透明度 0.22 与 focus 隐藏重复 HUD 仅为展示变更，未改变输入积分或任务进度。以上真实 UI 已通过，但不等同于真人触感、首次玩家理解、主观听感或所有设备的性能评测。</p>
+<h2 id="section-11">附录：最终交付守卫与本地启动器</h2>
+<p>审读 <code>scripts/release-v5.cjs</code>、<code>package-release.py</code>、<code>serve.cjs</code> 与 <code>启动春信.cmd</code> 时发现两项 P2，主代理已修复；本轮没有剩余的已确认 P1/P2：</p>
+<ol>
+<li>发布守卫原先优先采用 <code>build.finalEntry</code>。已有的中途等待修复路径可能在旧版完成支线，只在新版回访尾声，却被整体标成“最终包原有支线”。现在除统一模块标识检查外，还逐一检查对象中的 <code>entry</code> 与 <code>finalEntry</code>，不允许其中任一为旧版。</li>
+<li>启动器原先只凭页面标题与 <code>id=&quot;begin&quot;</code> 识别已运行服务。另一个目录的旧版占用 5192 时，双击新版包可能静默进入旧版。现在复用必须与本地 <code>dist/index.html</code> 完整相等；不同版本明确提示端口占用并退出，不关闭原有服务。</li>
+</ol>
+<p>独立执行 <a href="../../spring-letter/scripts/verify-release-guards.cjs">verify-release-guards.cjs</a>，6 项检查通过。发布检查从当前源码提取真实守卫，仅在 VM 内创建报告夹具：同版起止标识通过，旧 entry / 新 finalEntry 被 <code>branches.entry is a mixed-build run</code> 拒绝。HTTP 检查在系统分配端口建立一个同名旧花庭，实际启动 <code>serve.cjs</code> 返回 1，原服务响应保持不变；随后对当前 5192 同版服务实际启动返回 0，复用后服务仍正常。运行参数未传 <code>--open</code>，没有浏览器或 GPU；只关闭测试自身创建的临时服务。证据见 <code>spring-letter/evidence/v5-release-guards.json</code>，包含脚本哈希、退出码及实际输出。</p>
+<p>发布文案已将 DOLalDHR 的 45 分钟长跑及 Y7Oj_FhV / D6zDvZfx 的探索、触屏和回访明确标为较早候选，列出长跑之后发生的手势、预热和恢复修改，没有称为最终模块长跑。审核时仍待最终重新生成的主线/支线/录像报告会被模块守卫挡住；这属于进行中的验证步骤，不把尚未完成的新报告记成缺陷。</p>
+<p>本地内容检查核对了六个外部资产的真实文件字节与各自元数据 SHA-256：两张 HDR、两张石膏贴图、两张岩石贴图均相符。dist 中有完整 MIT 授权与免责段、完整 CC0 文本及来源/哈希 JSON，根目录与 dist 的第三方通知相同。打包脚本将整个 dist、启动器和本地服务器一起收录，运行依赖 Node.js 的限制也已写明。该检查确认当前输入文件和打包清单；本次未运行打包，不代替随后独立 ZIP 检查。包验证还应核对精确成员集及启动器/服务器字节，不能仅把 CRC 通过当作所有文件与发行清单相等。</p>
+<p>只读核对最终 BNqW-E_H 的 7 阶段 startup：加载准备 16001.5ms、预热 13977.5ms、遮罩隐藏 16752.1ms 均保留；动画累计最大间隔 484.2ms，超过 50ms 与 100ms 各 3 次、超过一秒 0 次，errors 为空。计数跨阶段单调保留，没有清零或隐藏切场耗时；发布脚本直接引用这些数值。新上下文不代表清除了系统驱动缓存，也不支持全程 60fps 的结论。</p>
+<p>本轮未评判：正在生成的最终报告是否成功（由完成后的守卫决定）；尚未生成的最终 ZIP 是否逐字节完整（由独立包验证决定）；真人手机触感、首次玩家理解和主观听感（不属于 CPU/本地 HTTP 证据范围）。</p>
+<h2 id="section-12">附录：冻结包的完整文件集与解压校验复核</h2>
+<p>针对冻结入口 <code>index-DeZnNiPM.js</code> / <code>index-B1husieO.css</code>，再次审读 <code>package-release.py</code>、<code>verify-package.py</code> 及发布清单的 runtimeFiles 来源，没有新增 P1/P2。上一节提出的包成员和启动器字节检查已实现：实际 dist 文件集合必须与清单完全一致，运行文件严格包含 serve.cjs、启动春信.cmd 和第三方通知三项；打包前校验全部散列，只按清单收录。ZIP 写入后及解压复核时均拒绝多余或重复成员。验包先确认整个 ZIP 的 SHA，再验证抽出的启动文件，随后从抽出的目录启动本地服务，逐个取回 dist 文件并核对 SHA。</p>
+<p>CPU 探针解析了两份真实 Python 源码的 AST，并执行实际守卫节点。26 个纯内存/只读案例均符合预期：匹配集合与散列通过；缺少或新增文件、重复 ZIP 成员、错误 dist/启动器/归档散列被拒；正常 Unicode 相对路径通过，正反斜杠上跳、绝对磁盘路径和 UNC 越界被拒；临时清理目标若不在 releases 内也被拒。没有生成或替换最终包，没有提取测试 ZIP、启动服务或执行清理。</p>
+<p>源码中的进程与目录所有权清晰：临时目录由 <code>TemporaryDirectory</code> 在已解析的 releases 下随机创建，进入后再次确认包含关系，逐个校验成员路径后才 extractall；游戏目录包含“春信”，因此最终实际执行将覆盖 Unicode cwd。Node 使用参数列表和 <code>cwd</code> 启动，不经拼接 shell，也不传 <code>--open</code>；finally 仅终止该次 Popen 返回的子进程，等待退出后再由上下文清理自身临时目录。没有枚举或关闭既有用户服务。脚本明确不把抽出后的服务测试称作双击批处理窗口或浏览器 UI 测试。</p>
+<p>本轮审查的 <code>package-release.py</code> SHA-256 为 <code>fbb7039c0df33978dc7ce8dee5ce0dc21e54cec3f91c59c4f91d90fcf7df8c40</code>，<code>verify-package.py</code> 为 <code>d5efa723c911b17c2f96a46cc3568ef00b4f1c4fdc384f9dcc00e3d4b6ab502d</code>。最终清单、QA 和 ZIP 当时仍待同包报告完成后生成，这是预期顺序；以上证明守卫逻辑，实际归档完整性及 Unicode 路径 HTTP 运行仍以主代理随后执行 package→verify-package 的记录为准。</p>
+<h2 id="section-13">附录：触屏长按完成后的兼容 click</h2>
+<p>真实触屏回访在 DeZnNiPM 发现 P2：长按寄出已提交 ending，随后的 pointerup / 兼容 click 又按“已寄出”的新状态执行 interact，令 focus 从 null 变成 finale，打断告别构图。原始失败保存在 <code>spring-letter/evidence/v5-final-revisit-failure.json</code>。主代理加入局部 fieldPressWasHold，记录 pointerdown 当时是否进入长按；pointerup 清 KeyE，随后正 detail 的 click 消费这次长按身份。标记必须跨过 depart→exitFocus→clearInput，因为这个 click 属于已经发生的按压；它不代表仍在继续游戏输入，KeyE 和其他输入依然立即清空。pointercancel 清标记，新 pointerdown 覆写标记，detail=0 的键盘激活正常执行。</p>
+<p>独立新增 <code>tests/field-action-input.test.js</code>，从当前 main 提取真实处理器，执行真实 depart、commitLetter、exitFocus、clearInput 与 resetPresentation；仅 DOM/展示边界用替身。11 项通过，覆盖 mouse/touch 完成与未完成长按、延迟 click、取消、新按压、键盘 click、场景切换、鼠标转触摸，以及消费后正常再次回看；确认 7.2 秒截止时间与 focus=null 不被释放事件改变，没有新增 P1/P2。完整 <code>npm test</code> 111/111、0 fail 的真实输出已直接保存到 <code>spring-letter/evidence/unit-verification-v5.txt</code>，SHA-256 为 <code>ed244a5e67112b4512d6efc13cba9125112b766ada9c9dc727b10f83e4156c41</code>。本次 main SHA-256 为 <code>22afbfd4736ff11881fbb1a4de4ce6196386cdf83637c3d26bcbfc8c4c7536d3</code>。</p>
+<p>只读核对主代理的 DcUM5LG9 绿证据 <code>spring-letter/evidence/v5-final-revisit.json</code>：6 项通过、errors 为空，真实 CDP 触摸接触在按钮上保持 1839ms 后释放，releaseFocus=null，camera.z=-57.97882479548275，后续停留和回看正常。本次回访沿用连续普通游玩真实获得的原生存档，sourceSaveSha256 为 <code>f52ee933b29c32a55718c6e7c6d0f812a8f1e69730f0b2467a973b00e85f1840</code>；没有伪造进度或 DOM click。CPU 测试不模拟浏览器原生事件生成；CDP 触屏也不等同于实体手机触感。投影点在屏内不单独证明没有遮挡，实际画面由主代理另行检查。</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.19 · v5.0</span><span>参考原帧与首版实机分别标注；文档推演不代替游戏验收。</span></div></footer></body></html>

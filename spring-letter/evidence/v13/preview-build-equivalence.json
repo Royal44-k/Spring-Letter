@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "candidate": "candidate-a",
+  "entry": "./assets/index-C_HGqS3k.js",
+  "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+  "style": "./assets/index-Cc26boAi.css",
+  "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+  "unchangedArtifacts": 51,
+  "onlyDifference": "The disclosure icon was marked aria-hidden in index.html; no IDs, scripts, styles, game data, media, geometry or controls changed."
+}

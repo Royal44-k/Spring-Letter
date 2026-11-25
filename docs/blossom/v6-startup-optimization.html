@@ -1,0 +1,30 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>加载预热优化与独立对照 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc" aria-label="本文目录"><p class="toc-title">加载预热优化与独立对照</p><a href="#section-0">实验方法与范围</a><a href="#section-1">实际结果</a><a href="#section-2">源码解释与去重边界</a><a href="#section-3">正式候选与仍需验证的内容</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 花随风行 · 制作概览</a>　/　<a href="v6-startup-optimization.md">Markdown 源文件</a></div><h1>V6 启动预热：减少无用程序，保留首次互动</h1>
+<p>2026-11-19。候选E出现一次约51秒初始化、其中约46秒预热的记录后，团队暂停最终回归，检查预热是否在承担不必要的编译。该次较慢记录是调查触发点；下面的可比实验基线为32–33秒，不能把不同轮次中最慢的数字拼成夸大的提升比例。</p>
+<p><strong>采用的改动：预编译绑定实际 composer 缓冲目标，完成后用 finally 恢复原目标；琥珀作为青釉的功能组合代表。</strong> 保留实体与半透明花体、可见粒子的两态真实渲染，以及反射与后期流程。候选F首次集成、G继续保留；本页先报告独立实验，正式F加载与回归结果另列，不能互相替代。</p>
+<h2 id="section-0">实验方法与范围</h2>
+<p><a href="../../spring-letter/scripts/v6-startup-bench.cjs">实验脚本</a>使用独立插桩源码副本，Edge无头模式、1440×900，每轮新建浏览器与上下文，串行独占GPU。第一组按“全系列、仅初始、仅初始、全系列”顺序交替；第二组对修正目标的方案重复两次。</p>
+<p>每轮读取实际初始化/预热/加载层消退时间与程序数量，然后通过可见入口进入花朵展厅，按F完成第一次破开—归形，随后点击流晶系列，记录对应窗口内的最大帧间隔。日志中错误列表为空。</p>
+<p>新浏览器配置与上下文<strong>不等于清空操作系统或驱动的着色器缓存</strong>。两组均在同一机器、同一驱动上顺序执行；第二组不是完全随机化的独立冷启动试验。报告没有独立记录GPU驱动后端，所以不外推其他硬件。每方案只有两轮，不能据此给出总体置信区间或所有设备加载保证。</p>
+<p>原始证据：<a href="../../spring-letter/evidence/v6-startup-experiment.json">全系列与仅初始对照</a> · <a href="../../spring-letter/evidence/v6-startup-targeted-experiment.json">正确目标＋代表系列</a>。第二组插桩入口是 <code>/assets/index-C9zsbGm2.js</code>，运行于5196；它不是正式候选F的入口 <code>/assets/index-BXu5N06Q.js</code>。</p>
+<h2 id="section-1">实际结果</h2>
+<p>表内均为两轮观察范围，不是平均值。初始化完成不包括最后约0.65秒的加载层淡出；“加载层消退”更接近本组用户可进入扉页的等待。</p>
+<div class="table-scroll"><table><thead><tr><th>策略</th><th>初始化完成</th><th>其中预热</th><th>加载层消退</th><th>程序数</th><th>首次F周期最大帧间隔</th><th>首次流晶切换最大帧间隔</th></tr></thead><tbody>
+<tr><td>原全系列，默认屏幕目标</td><td>32.34–33.36秒</td><td>29.47–30.33秒</td><td>32.99–34.03秒</td><td>170</td><td>18.2–20.0毫秒</td><td>50.0–66.9毫秒</td></tr>
+<tr><td>仅初始月银，两态</td><td>13.84–13.93秒</td><td>10.88–10.92秒</td><td>14.50–14.58秒</td><td>120</td><td>17.7–18.1毫秒</td><td><strong>2353.1–2453.3毫秒</strong></td></tr>
+<tr><td>实际composer目标，四个代表系列</td><td><strong>15.56–16.94秒</strong></td><td><strong>12.46–13.77秒</strong></td><td><strong>16.21–17.59秒</strong></td><td><strong>108</strong></td><td><strong>17.5–19.7毫秒</strong></td><td><strong>66.8毫秒</strong></td></tr>
+</tbody></table></div>
+<p>修正方案的两轮初始化时间约为原全系列的一半，程序数从170降至108；几何数165、纹理数54与原全系列一致。它节省的是不必要的程序准备，不能据此宣称纹理内存或几何复杂度也降低。首次流晶切换仍有约66.8毫秒的帧间隔，不应写成完全无顿挫。</p>
+<p>只预热初始月银虽然更快到达扉页，却把约2.4秒的停顿转移到了首次切换流晶，因此没有采用。流晶是本轮重要视觉系列，不能用延迟暴露的问题换取一个更好看的启动数字。</p>
+<h2 id="section-2">源码解释与去重边界</h2>
+<p><a href="../../node_modules/three/src/renderers/webgl/WebGLPrograms.js">本地Three.js WebGLPrograms</a>把目标输出色域与toneMapping计入程序键。默认屏幕目标下编译得到sRGB／ACES组合；实际<a href="../../node_modules/three/examples/jsm/postprocessing/RenderPass.js">RenderPass</a>和<a href="../../node_modules/three/examples/jsm/objects/Reflector.js">Reflector</a>使用普通离屏目标，得到工作色域／NoToneMapping，再由OutputPass输出。预编译改为临时绑定 <code>composer.readBuffer</code>，能与实际绘制的程序组合一致，且通过finally恢复原目标。输出色彩管理没有被关闭。</p>
+<p><a href="v6-material-variants-cpu.json">CPU功能比较</a>实际构造本作花体并检查6种部件、morph属性、UV/normal及两种透明态，琥珀与青釉的功能签名完全相同；它们的颜色、折射率、粗糙度与强度等为uniform差异。月银、流晶和粉瓷另有不同功能组合，不能合并为一个代表。该CPU比较没有创建renderer，不是GPU缓存命中测量。</p>
+<p>原全系列实验中，青釉只花58–76毫秒，程序数保持162，说明缓存已经复用了对应功能组合。因此，删掉青釉的一轮不是主要时间收益；程序目标对齐是与大幅减少程序数相符的解释。由于第二组同时合并了代表系列，这不是严格的单因素归因试验。</p>
+<p><code>compileAsync</code>没有覆盖阴影、GTAO、bloom、输出以及传输捕获的所有首次使用成本。最终方案保留真实 <code>waterReflection.update()</code> 和 <code>composer.render()</code>，并在加载层下实际渲染半透明花体与可见粒子。没有把材质特性强制变成统一非零值，没有降低花形或纹理质量，也没有全局关闭阴影来制造提速。</p>
+<h2 id="section-3">正式候选与仍需验证的内容</h2>
+<p>当时正式候选F入口为 <code>/assets/index-BXu5N06Q.js</code>，样式 <code>/assets/index-B12KydA1.css</code>。<a href="../../spring-letter/evidence/v6-candidate-f/v6-main-play.json">F正式新档主路归档报告</a>完成于09:01:34 UTC，入口SHA-256为 <code>c7c90ce5475629873afd24e212caee232c1e01ba9022d0cdd50f0baf9c948bac</code>，初末资源一致。该轮实际初始化 <strong>15.50秒</strong>，其中预热 <strong>12.57秒</strong>，加载层消退 <strong>16.15秒</strong>；这是新档主路首次加载的单次观察，并非重载后的短窗口，也不构成所有机器的启动上限。</p>
+<p>另两轮正式F新档回归的<a href="../../spring-letter/evidence/v6-candidate-f-retained/v6-branches-play.json">支线归档</a>与<a href="../../spring-letter/evidence/v6-candidate-f-retained/v6-exploration-play.json">雨潮归档</a>已通过，初始化分别16.10／15.72秒，加载层消退16.75／16.38秒；首次加载保存在<code>observations.initialLoadingTiming</code>，与重载窗口分开。主线及保留内容加载与独立实验结果相近，但不把独立实验中的首次F周期/换色数值移植为正式主线的帧率结论。界面、长时运行与发行仍以其后各自的实际报告为准。</p>
+<p><a href="../../spring-letter/evidence/v6-candidate-f/v6-interface.json">正式F界面归档报告</a>于09:11:06 UTC完成10项检查，初末构建一致、错误为空。该轮初始化 <strong>15.03秒</strong>，预热 <strong>12.23秒</strong>，加载层消退 <strong>15.70秒</strong>；第一次真实F破开—自动归形周期为 <strong>12.752秒、763帧、最大帧间隔17.6毫秒</strong>。这些数值对应这一个明确周期，不代表整章、所有系列或45分钟持续运行都保持相同帧时。</p>
+<p>E的保留支线接力因性能调查被中断，只有部分截图与<a href="../../spring-letter/evidence/v6-candidate-e-retained/INTERRUPTED.json">中断说明</a>，没有完整通过报告或获得存档。D历史证据继续保存；最终保留内容回归已经写入独立F目录，再以同字节副本提供给发行流程。</p>
+<p>F之后的长时测试发生一次失败，另一轮诊断在约13分钟主动中断，两次都未通过45分钟验收。新增的候选G保留本页预热方案，仅修复AO通道重复更新共享阴影；详见<a href="v6-render-pass-review.html">渲染通道复核</a>。本页以上F数值继续引用F归档，不能随着根目录报告被G更新而改称G的加载或性能结果。</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.19 · v6 / 0.4 制作档案</span><span>原片、隔离实验与主游戏证据分别标注；文档不代替最终验收。</span></div></footer></body></html>

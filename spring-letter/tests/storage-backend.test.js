@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {createStorageBackend} from '../src/storage-backend.js';
+test('temporary play works when storage access throws and leaves original storage untouched',()=>{
+ let attempts=0;const b=createStorageBackend(()=>{attempts++;throw Error('denied');});assert.throws(()=>b.storage.getItem('journey'));assert.equal(attempts,1);assert.ok(b.enterTemporary({journey:'kept'}));assert.equal(b.temporary,true);assert.equal(b.storage.getItem('journey'),'kept');b.storage.setItem('journey','new');assert.equal(b.storage.getItem('journey'),'new');assert.equal(b.storage.getItem('none'),null);b.storage.removeItem('journey');assert.equal(b.storage.getItem('journey'),null);assert.equal(attempts,1);assert.equal(b.enterTemporary({journey:'overwrite'}),false);
+});

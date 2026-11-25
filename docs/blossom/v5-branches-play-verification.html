@@ -1,0 +1,29 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>三支线与尾声实际输入 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc"><p class="toc-title">三支线与尾声实际输入</p><a href="#section-0">支线与交互</a><a href="#section-1">音频与可看世界的时间</a><a href="#section-2">留园回看与触屏修复</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 本轮制作概览</a>　/　<a href="v5-branches-play-verification.md">Markdown源文件</a></div><h1>V5 三条旧支线与真实终章回应</h1>
+<p>2026-11-19 06:00:54 UTC，<code>spring-letter/scripts/v5-branches-play.cjs</code>在固定5192包完成<strong>11项真实输入检查，无控制台错误</strong>。开始、结束入口均为<strong><code>/assets/index-DcUM5LG9.js</code></strong>。报告为<code>spring-letter/evidence/v5-branches-play.json</code>，截图以下均以前述evidence目录为前缀。</p>
+<p>脚本从新游戏出发，实际键盘步行、慢笔开花、风廊推光、两段手绘桥、携核与安放；穿过三支线后达成一个带自创杯曲的结尾。未预填存档、调用进度修改器或代为完成判定。</p>
+<h2 id="section-0">支线与交互</h2>
+<ul>
+<li><strong>杯边六拍</strong>：全留白不能完成；写满有效六拍后保存；显式取消改写、离开未保存改写都保留原曲；再写并保存<code>[2,0,1,2,0,2]</code>，真实回放保留两处留白。证据<code>v5-branch-01-authored-cups.png</code>。</li>
+<li><strong>三处光刻</strong>：左痕用数字键、中痕用可见按钮、右痕用实际鼠标停在实景刻痕，三处均显影。证据<code>v5-branch-02-three-inscriptions.png</code>。</li>
+<li><strong>旧花年份</strong>：未观察就保存被拒绝；全合与全开都需实际停留到记录成立；全开姿态仍不能保存；最后选择40%开放保存。证据<code>v5-branch-03-old-flower-closed.png</code>、<code>04-old-flower-open.png</code>、<code>05-old-flower-chosen.png</code>。</li>
+<li><strong>慢笔语义</strong>：缓慢上提开至约半开时散聚低于.18，实体保持完整并解锁第一幕，未回到旧候选“慢笔也一直扬尘”的状态。</li>
+<li><strong>真实结尾</strong>：亲自选择新季与远行，启程后重奏自创杯曲，保留留白，再响游絮的独立答音；世界回应先发生，之后才出现结尾信笺。</li>
+</ul>
+<h2 id="section-1">音频与可看世界的时间</h2>
+<p>音频证据来自对真实<code>AudioContext.createOscillator</code>、<code>frequency.setValueAtTime</code>、<code>start</code>的旁观记录，原调用参数和调度原样传递。杯音为523.25 / 392 / 523.25 / 523.25Hz，实际2.76倍泛音节点用于与开场和弦区分；两处留白使对应间隔约1.2秒。最后659.25Hz答音位于最后杯音约.6秒之后，没有把开场和弦的同频音误算作答音。</p>
+<p><strong>这些证据验证实际音频节点、节拍和留白，不证明扬声器输出、主观听感或最终混音品质。</strong> 连续实录本身无音轨，也不能用它声称听过最终音乐。</p>
+<p>时序使用真实<code>dialog[open]</code>的DOM变化观察。当前弹窗在脚本检测到提交后的<strong>7168.2ms</strong>打开，轮询在7174ms看见。提交检测略晚于游戏内部提交，故这个墙钟值不是源代码时长的精确测量。</p>
+<div class="table-scroll"><table><thead><tr><th>截图请求</th><th>保存结束相对检测提交</th><th>结束时弹窗</th></tr></thead><tbody>
+<tr><td><code>v5-branch-07-farewell-0ms.png</code></td><td>723ms</td><td>未打开</td></tr>
+<tr><td><code>v5-branch-07-farewell-2200ms.png</code></td><td>2944ms</td><td>未打开</td></tr>
+<tr><td><code>v5-branch-07-farewell-4500ms.png</code></td><td>5224ms</td><td>未打开</td></tr>
+<tr><td><code>v5-branch-07-farewell-6000ms.png</code></td><td>6674ms</td><td>未打开</td></tr>
+</tbody></table></div>
+<p>截图覆盖回应的多个时点，不能单独证明每一中间帧。当前远侧机位可见三花座、角色/游絮、新生地花与飞种，旧前景拱柱不再遮住季节花座中心；同包未剪辑录像的<code>v5-final-farewell-video.png</code>补充连续过程。拱顶仍靠近画面上缘，主体与远景明暗层次可以继续优化。</p>
+<h2 id="section-2">留园回看与触屏修复</h2>
+<p>本流程无条件执行“留在花庭 → 按E → 出现春信回看入口”，<code>focus=finale</code>且回看按钮可见。成功后才原生导出<code>v5-branches-real-play-storage.json</code>，最后关闭浏览器。</p>
+<p>同包独立<code>v5-final-revisit.json</code>另外通过6项真实存档回访，包含可见按钮上的触屏长按寄出。1844ms实际完成后松手仍保持<code>focus=null</code>，远侧尾声不被回看面板打断，留园后可正常回看。最新竖屏实图也已确认粗杆退出前景；不以花座投影在屏内代替真实图像复核。该测试使用移动视口和真实浏览器触屏输入协议，不等于实体手机测试。</p>
+<p>历史D6候选曾出现留园后E不能回看，Cy93修复；其条件式热更新流程共14项，只是旧阶段，不能与本轮11项混算。BKcu、BNqW、DeZn随后各轮记录也保留：BNqW投影通过但实图仍有粗杆遮挡，DeZn真实触屏释放会误开回看；这些缺陷已分别由背景穹架后移和长按兼容点击消费修复，再以DcUM普通输入重新验证。</p>
+<p>旧报告和图分别在<code>archive-v5-before-release/</code>、<code>archive-BKcu-gesture-review/</code>、<code>archive-BNqW-before-crown-fix/</code>、<code>archive-DeZn-before-touch-fix/</code>。早期6.7秒才请求截图、保存跨过弹窗的失败证据，以及音频观察器读到默认频率的旧尝试仍保留，不用旧图或旧默认值支持当前结论。功能通过和音频节点正确不替代主花材质、电影感和游戏体验的持续判断。</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.19 · v5.0</span><span>参考原帧与首版实机分别标注；文档推演不代替游戏验收。</span></div></footer></body></html>

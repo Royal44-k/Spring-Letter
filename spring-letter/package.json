@@ -1,0 +1,51 @@
+{
+  "name": "spring-letter",
+  "version": "0.9.1",
+  "private": true,
+  "type": "module",
+  "description": "花漾年华：待寄出的春信 — 独立艺术探索游戏",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5192 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4192 --strictPort",
+    "test": "node --test tests/*.test.js",
+    "smoke": "node scripts/v12-full-play.cjs",
+    "serve": "node scripts/serve.cjs",
+    "qa:boundary": "node scripts/v5-boundaries.cjs",
+    "qa:visual": "node scripts/v5-visual-check.cjs",
+    "qa:audio": "node scripts/audio-check.cjs",
+    "qa:exploration": "node scripts/v6-exploration-play.cjs",
+    "qa:branches": "node scripts/v6-branches-play.cjs",
+    "qa:soak": "node scripts/v6-soak.cjs",
+    "qa:cancel": "node scripts/v6-seed-cancellation.cjs",
+    "qa:mobile": "node scripts/v6-delivery-mobile-check.cjs",
+    "qa:record": "node scripts/v6-record.cjs",
+    "qa:v7": "node scripts/v7-full-play.cjs",
+    "qa:v7:audio": "node scripts/v7-audio-capture.cjs",
+    "qa:v8": "node scripts/v8-full-play.cjs",
+    "qa:v8:mobile": "node scripts/v8-mobile-check.cjs",
+    "qa:v8:visual": "node scripts/v8-visual-review.cjs",
+    "qa:v8:saves": "node scripts/v8-save-ui-check.cjs",
+    "qa:v9": "node scripts/v9-full-play.cjs",
+    "qa:v9:visual": "node scripts/v9-visual-check.cjs",
+    "qa:v9:input": "node scripts/v9-input-boundaries.cjs",
+    "qa:v9:legacy": "node scripts/v9-legacy-check.cjs",
+    "qa:v9:audio": "node scripts/v9-audio-capture.cjs",
+    "qa:v9:soak": "node scripts/v9-soak.cjs",
+    "qa:v11": "node scripts/v11-full-play.cjs",
+    "qa:v11:coast": "node scripts/v11-coastal-play.cjs",
+    "qa:v11:layout": "node scripts/v11-layout-audit.cjs",
+    "qa:v11:audio": "node scripts/v11-audio-capture.cjs",
+    "qa:v12": "node scripts/v12-full-play.cjs",
+    "qa:v12:layout": "node scripts/v12-layout-audit.cjs",
+    "qa:v12:audio": "node scripts/v12-audio-capture.cjs",
+    "qa:v13:flower": "node scripts/v13-flower-access.cjs"
+  },
+  "dependencies": {
+    "three": "0.185.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.8",
+    "playwright": "1.65.1"
+  }
+}

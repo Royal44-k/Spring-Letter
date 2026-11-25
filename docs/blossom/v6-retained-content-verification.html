@@ -1,0 +1,40 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>保留支线与雨潮庭回归 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc" aria-label="本文目录"><p class="toc-title">保留支线与雨潮庭回归</p><a href="#section-0">候选与证据</a><a href="#section-1">三条叙事支线</a><a href="#section-2">雨留庭、潮生庭与真实路线</a><a href="#section-3">范围与后续审美判断</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 花随风行 · 制作概览</a>　/　<a href="v6-retained-content-verification.md">Markdown 源文件</a></div><h1>V6 保留支线与雨、潮庭：普通输入回归</h1>
+<p><strong>最终候选 G 已实际完成两轮独立新档验证。</strong> 原始输出保留在 <code>evidence/v6-candidate-g-final-retained/</code>；发行工具读取的根 evidence 路径为16个文件的同字节副本，<a href="../../spring-letter/evidence/v6-retained-g-copy-manifest.json">SHA-256核对清单</a>全部一致，未重写报告字段。</p>
+<p>2026-11-19，候选 G；两轮独立新档，桌面 Edge 无头模式，1440×900。三条叙事支线 <strong>9 项通过</strong>，雨、潮庭与主路衔接 <strong>8 项通过</strong>。恢复后两轮均在本次运行完成，重载确认已获得的成果保存，页面和控制台错误列表为空。本次使用既有输入脚本并更新文档，没有修改运行代码。</p>
+<h2 id="section-0">候选与证据</h2>
+<p>两轮共同入口 <code>/assets/index-BAJMaxNn.js</code>，SHA-256 <code>2f1312b822af74a328c5dfb230bb4563db48878406892113c48a0d56c6ea1636</code>；样式 <code>/assets/index-B12KydA1.css</code>，地址 <code>http://127.0.0.1:5194</code>。每个脚本在开始与重载后检查资源身份一致，避免把不同候选混成一份报告。</p>
+<div class="table-scroll"><table><thead><tr><th>范围</th><th>脚本、报告与实际获得存档</th><th>完成时刻</th></tr></thead><tbody>
+<tr><td>三条叙事支线</td><td><a href="../../spring-letter/scripts/v6-branches-play.cjs">脚本</a> · <a href="../../spring-letter/evidence/v6-candidate-g-final-retained/v6-branches-play.json">完整 JSON</a> · <a href="../../spring-letter/evidence/v6-candidate-g-final-retained/v6-branches-earned-storage.json">实际获得存档</a></td><td>11:21:34 UTC</td></tr>
+<tr><td>雨留庭、潮生庭</td><td><a href="../../spring-letter/scripts/v6-exploration-play.cjs">脚本</a> · <a href="../../spring-letter/evidence/v6-candidate-g-final-retained/v6-exploration-play.json">完整 JSON</a> · <a href="../../spring-letter/evidence/v6-candidate-g-final-retained/v6-exploration-earned-storage.json">实际获得存档</a></td><td>11:23:53 UTC</td></tr>
+</tbody></table></div>
+<p>D历史的<a href="../../spring-letter/evidence/v6-candidate-d/v6-branches-play.json">三支线9项</a>与<a href="../../spring-letter/evidence/v6-candidate-d/v6-exploration-play.json">雨潮8项</a>仍原样保留，D入口为<code>index-Dm57NR6t.js</code>。E的接力因启动性能调查中断，只有部分截图及<a href="../../spring-letter/evidence/v6-candidate-e-retained/INTERRUPTED.json">中断说明</a>，不计通过。当前脚本链接指向最终G使用版本，已增加首花提前离开近景的断言，不把它倒算成D已经测试的内容。</p>
+<p>F历史的<a href="../../spring-letter/evidence/v6-candidate-f-retained/v6-branches-play.json">三支线9项</a>与<a href="../../spring-letter/evidence/v6-candidate-f-retained/v6-exploration-play.json">雨潮8项</a>继续独立保留。G的上次运行随本轮主动中断，只留下两张截图及<a href="../../spring-letter/evidence/v6-candidate-g-retained/INTERRUPTED.json">中断说明</a>，没有完整报告；本次恢复后从两个新档重新执行，没有续用旧会话或把部分结果补称通过。</p>
+<p>两个报告的 <code>sourceCheckpoint</code> 均为 <code>null</code>。从可见“新的旅途”开始，使用可见跳过引言按钮；未注入进度或调用状态 setter。诊断接口只读取快照与世界坐标投影，按键、鼠标、滑杆和按钮承担实际操作。</p>
+<p>脚本支持可选 <code>SPRING_STORAGE</code>，但本轮未使用。未来若从 <code>v6-main-before-wind-storage.json</code> 继续，仅映射 origin，并记录原文件路径与哈希；不能修改任务字段来制造合法进度。全通关的 <code>v6-main-real-play-storage.json</code> 不满足本组测试的前置条件。</p>
+<h2 id="section-1">三条叙事支线</h2>
+<ol>
+<li>从花庭外圈走到旧杯边。六拍全留白无法完成；自编曲 <code>[1,2,0,1,0,2]</code> 可以在游絮尚未觉醒时留存。开始改写后取消，或离开再回来，原曲均保持。</li>
+<li>改写为 <code>[2,0,1,2,0,2]</code> 并重听，观察到四个实际杯声基频依次为 <code>523.25 / 392 / 523.25 / 523.25 Hz</code>，两处留白的实际起音间隔均大于 1.08 秒。观测脚本旁听 Web Audio 的 oscillator 创建与 start，不替换声源或推进任务；用同次 <code>2.76×</code> 泛音区分杯声与环境音。这证明调度关系，不证明扬声器输出或主观音质。</li>
+<li>首花通过 <code>F</code> 释放、普通鼠标运笔后，<strong>在漂游阶段主动退出近景</strong>，保持<code>focus: null</code>等待自然归形，首幕照样完成；随后实际步行上新路到显影支线，没有再次E近看来提交结果。这项覆盖E修复、由最终G再次验证的边界，不沿用V5的即时上划解锁。</li>
+<li>到信笺前，分别用数字键、可见刻痕按钮、实际世界刻痕的鼠标位置，使三处浅痕显影。结果保存为三项全读。</li>
+<li>主风种子在按住时受牵引，经过石障外缘到目标；仍按住时不会完成，真实松手后停入花杯。随后等待游絮的自然觉醒。</li>
+<li>旧花未观察年份时不能直接提交；实际操作滑杆 Home / End 并停留，全合与全开都有可见形态差别。停在端点仍不能提交；回到 0.4 的中间姿态后成功留存。</li>
+<li>正常重载后，三项支线全完成、自编六拍与 <code>memoryBloom: 0.4</code> 均保留。</li>
+</ol>
+<p>实图：<a href="../../spring-letter/evidence/v6-candidate-g-final-retained/v6-branches-01-authored-cups.png">杯边自编曲</a> · <a href="../../spring-letter/evidence/v6-candidate-g-final-retained/v6-branches-03-inscriptions.png">三处显影</a> · <a href="../../spring-letter/evidence/v6-candidate-g-final-retained/v6-branches-04-old-flower-closed.png">旧花全合</a> · <a href="../../spring-letter/evidence/v6-candidate-g-final-retained/v6-branches-05-old-flower-open.png">旧花全开</a> · <a href="../../spring-letter/evidence/v6-candidate-g-final-retained/v6-branches-06-old-flower-chosen.png">留下的姿态</a>。</p>
+<h2 id="section-2">雨留庭、潮生庭与真实路线</h2>
+<p>另一新档从初花庭外圈上雨庭坡道，在任何主谜题完成前抵达。角色海拔符合实际抬高地形。持笔不移动无法完成；沿真实世界半径 1.28 的花环连续画风，花庭恢复。沿另一条合法坡道返回，绕开首花 3.9 米自动近景边界，再明确进入首花互动。</p>
+<p>完成新首花与主风后，依次走至主路 A 台、R 台和西侧地形连接，到潮庭时终桥仍未解开。分别步行到三处花铃，驻足等待实际回声推进；最后 <code>tide.index</code> 为 3，雨、潮庭完成，侧风仍未完成。正常重载保留这组真实状态，未误解锁终庭。</p>
+<p>实图：<a href="../../spring-letter/evidence/v6-candidate-g-final-retained/v6-exploration-01-rain-arrival.png">雨庭初至</a> · <a href="../../spring-letter/evidence/v6-candidate-g-final-retained/v6-exploration-02-rain-half-trace.png">半圈运笔</a> · <a href="../../spring-letter/evidence/v6-candidate-g-final-retained/v6-exploration-03-rain-restored.png">雨庭恢复</a> · <a href="../../spring-letter/evidence/v6-candidate-g-final-retained/v6-exploration-04-main-wind-delivered.png">主风落巢</a> · <a href="../../spring-letter/evidence/v6-candidate-g-final-retained/v6-exploration-06-tide-arrival.png">潮庭初至</a> · <a href="../../spring-letter/evidence/v6-candidate-g-final-retained/v6-exploration-07-tide-complete.png">三段来信听完</a>。</p>
+<h2 id="section-3">范围与后续审美判断</h2>
+<ul>
+<li>使用新跟随镜头的分段按键，每一小段释放后再根据当前方位继续；39 个到达路点均来自真实步行。这覆盖这些路线的可达性，不等于全面证明镜头舒适性或所有自由探索路径。</li>
+<li>没有重复侧风取消专项；<code>SPRING_INCLUDE_WIND=1</code> 的可选路径已准备但本轮未运行，不能标为本报告通过内容。终庭分配、三种结局、触屏与移动端由各自专项负责。</li>
+<li>截图可确认杯、信笺、旧花和两庭均有现场反馈；仍存在程式化石台、旧花像标本装置、天空与地表光比偏平等审美限制。它们需要独立美术改进，不应因交互断言通过就宣称电影或 3A 品质。</li>
+<li>旧花截图中的临时提示来自本测试刻意尝试无效提交，随提示寿命消退；记录其来源，不能把静帧中残留提示误认为提交失败。</li>
+<li>报告末尾的 <code>frameTiming</code>、<code>loadingTiming</code> 属于<strong>重载后的短窗口</strong>。首次加载已单独保存在<code>observations.initialLoadingTiming</code>：支线轮初始化15.60秒、预热12.43秒、加载层消退16.25秒；雨潮轮对应16.06／13.03／16.71秒。末尾重载初始化分别约2.53与2.41秒，不能拿后者宣称首次启动速度；这些本机单次观察也不代表全程稳定帧率。</li>
+<li>这是代理驱动的真实输入回归，尚未进行外部新玩家盲测；不声称玩家已经理解叙事、引导或选择内涵。</li>
+</ul>
+<p>V5 的脚本与报告保持原样，D、F的原始通过记录和E、G的中断证据继续保留；本页最终结论仅对应以上候选G与实际证据。</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.19 · v6 / 0.4 制作档案</span><span>原片、隔离实验与主游戏证据分别标注；文档不代替最终验收。</span></div></footer></body></html>

@@ -1,0 +1,29 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>种子普通输入审查 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc" aria-label="本文目录"><p class="toc-title">种子普通输入审查</p><a href="#section-0">实际走过的路径</a><a href="#section-1">第一轮人工看图：当时仍需修正</a><a href="#section-2">原失败记录与证据边界</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 花随风行 · 制作概览</a>　/　<a href="v6-seeds-play-review.md">Markdown 源文件</a></div><h1>v6 种子与终庭：第一轮真实操作审查</h1>
+<p>2026-11-19 15:19 Asia/Shanghai。对象是开发端口5193的候选源码，不是最终发行包；随后还会改画面与布局。这一轮全部浏览器已关闭，GPU交还根协调后续制作。</p>
+<p><strong>历史范围：</strong> 本页固定保留第一轮操作与遮挡问题，不表示当前G仍有这些现象。窄屏7项与对应图片固定链接至 <code>v6-pre-b-mobile</code> 归档，不能指向后来覆盖根路径的G报告。当前G的主线11项、取消6项及窄屏终庭10项见<a href="v6-seeds-review.html">后续种子复核</a>，与本页按候选分开。</p>
+<h2 id="section-0">实际走过的路径</h2>
+<h3>新开档：先学花，再送种</h3>
+<p>通过可见“跳过序章”按钮进入。普通E近看、F破开、鼠标按住拖动花尘，等待自然归形，首幕实际解锁。之后沿可走主路进入风廊，按住笔尖从起点分段牵引，绕开石心、抵达接收花；按住时未完成，松手后落杯成功。再实走东侧坡道至风过庭，沿三道门牵引并松手，花巢完成。</p>
+<p><a href="../../spring-letter/evidence/v6-seeds-flow.json">普通输入报告</a> · <a href="../../spring-letter/evidence/v6-seeds-flow-01-first-drift.png">第一阵花尘</a> · <a href="../../spring-letter/evidence/v6-seeds-flow-02-main-held.png">主风廊持笔</a> · <a href="../../spring-letter/evidence/v6-seeds-flow-05-side-held.png">侧庭第三门</a>。三个流程断言通过，页面/游戏错误数组为空。</p>
+<p>新旅途真实获得的本地存档导出为 v6-seeds-flow-native-storage.json，没有写入虚构通关状态。只读坐标投影用于让自动鼠标命中可见世界，移动使用真实方向键。</p>
+<h3>旧存档兼容：重选终庭</h3>
+<p>输入是v5连续实录完成后导出的原生存档。只映射origin到开发端口，未改进度。正常继续、回看信、回到启程前，用一次E取回四季种核，重载后仍持有同一枚；走向旧灯，点按操作按钮安放；走到启程台，打开摘要再取消，结局不提交；再次预览并明确寄出，才得到旧灯与远航的结尾。</p>
+<p><a href="../../spring-letter/evidence/v6-seeds-delivery.json">桌面6项报告</a> · <a href="../../spring-letter/evidence/v6-seeds-01-rewound.png">入口</a> · <a href="../../spring-letter/evidence/v6-seeds-03-restored-carry.png">携带恢复</a> · <a href="../../spring-letter/evidence/v6-seeds-05-preview.png">寄信摘要</a>。</p>
+<p>同一流程在390×844 Chromium触屏仿真重复，用真实touchscreen tap执行可见按钮，走路仍用方向键。7项通过、错误数组为空、文档宽度无溢出；这不是实体手机测试。</p>
+<p><a href="../../spring-letter/evidence/v6-pre-b-mobile/v6-seeds-mobile-delivery.json">窄屏7项报告</a> · <a href="../../spring-letter/evidence/v6-pre-b-mobile/v6-seeds-mobile-01-rewound.png">窄屏入口</a> · <a href="../../spring-letter/evidence/v6-pre-b-mobile/v6-seeds-mobile-05-preview.png">窄屏摘要</a>。该原始报告时间为07:19:24 UTC，实际入口为5193上的 <code>/src/main.js?t=1795072513781</code>。</p>
+<h2 id="section-1">第一轮人工看图：当时仍需修正</h2>
+<ol>
+<li>终庭入口粗立柱遮住远航花座，标签浮在柱上，不能以投影中心在屏内宣称实体可读。</li>
+<li>窄屏主HUD、现场行动框与四季标签重叠；底部字幕和导航胶囊重叠。无水平滚动不等于布局合格。</li>
+<li>窄屏左右花座与标签被裁出，玩家不易发现三个用途。需要终庭更宽构图或明确的边缘目标线索。</li>
+<li>侧庭当前有三门任务，主线导航却继续提示借桥石台，容易分散新玩家的目标注意力。</li>
+<li>风过庭站在中心时，角色会遮住部分门。核心种子仍可操作，但可考虑轻微升高近庭镜头或调整入庭站位。</li>
+</ol>
+<p>当时根任务收到以上项，并安排UI与景观修改，要求在隔离构建后重拍相同位置。后来G另有10项窄屏报告与新图，但本轮有遮挡的截图和文字继续原样保留，不改称最终画面；报告通过也不等于场景已达到电影质感。</p>
+<h2 id="section-2">原失败记录与证据边界</h2>
+<p>第一趟终庭的全部游戏断言通过后，报告脚本用script[type=module]取单一入口，在Vite客户端与主模块两个标签下失败。原记录保留为v6-seeds-metadata-failure.json；修正元数据选择器后从同一原生存档完整重跑通过。</p>
+<p>第一次新开档固定等待1000毫秒就要求进入漂游，实际尚在破开阶段。随后截取时已经漂游，改为等待真实阶段后完整重跑通过。原记录v6-seeds-flow-first-break-timing.json含1018.1毫秒累计最大帧间隔；该候选附近发生源码热更新，不能据此确定产品固有卡顿，最终隔离发行包须另测启动与首次破开。</p>
+<p>后续G的<a href="../../spring-letter/evidence/v6-interface.json">界面报告</a>已经另测首次完整散聚周期；它属于新候选的单周期记录，不覆盖本页的早期长帧观察，也不能代替仍在运行的45分钟稳定性验证。</p>
+<p>这一轮规则测试与普通输入证明流程能完成、状态没有丢核，不能替代首次外部玩家理解评估、最终混音或电影/3A品质判断。</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.19 · v6 / 0.4 制作档案</span><span>原片、隔离实验与主游戏证据分别标注；文档不代替最终验收。</span></div></footer></body></html>

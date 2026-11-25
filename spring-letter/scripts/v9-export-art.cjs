@@ -1,0 +1,4 @@
+const fs=require('node:fs');const file='src/main.js';let s=fs.readFileSync(file,'utf8');function change(a,b){if(!s.includes(a))throw Error(a.slice(0,120));s=s.replace(a,b);}
+change("+renderMomentKeepsake(l.id,e)+(l.id==='tide'", "+renderMomentKeepsake(l.id,e)+(renderMomentKeepsake(l.id,e)?'<button data-save-artwork=\"'+l.id+'\">收藏这一页 ↓</button>':'')+(l.id==='tide'");
+change("all('[data-replay-score]').forEach", "all('[data-save-artwork]').forEach(b=>b.onclick=()=>{const id=b.dataset.saveArtwork,svg=renderMomentKeepsake(id,state.letters.entries[id]);if(!svg)return;const url=URL.createObjectURL(new Blob([svg],{type:'image/svg+xml;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download='春信留影-'+({rain:'花光',wind:'纸翼',tide:'春声'})[id]+'.svg';a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);});\n all('[data-replay-score]').forEach");
+fs.writeFileSync(file,s);

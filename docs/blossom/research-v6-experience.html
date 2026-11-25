@@ -1,0 +1,80 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>加载与镜头研究 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc" aria-label="本文目录"><p class="toc-title">加载与镜头研究</p><a href="#section-0">研究结论</a><a href="#section-1">一手案例：事实与采用方式分开</a><a href="#section-2">用户给定网站及自主扩展</a><a href="#section-3">加载演出：三封未寄出的信</a><a href="#section-4">随行相机：默认帮玩家看路</a><a href="#section-5">自然教学与减轻机械感</a><a href="#section-6">免费素材与执行范围</a><a href="#section-7">本轮验收建议</a><a href="#section-8">研究边界</a><a href="#section-9">实施附件</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 花随风行 · 制作概览</a>　/　<a href="research-v6-experience.md">Markdown 源文件</a></div><h1>v6 体验研究：加载演出、随行镜头与自然引导</h1>
+<p>研究时间：2026-11-19，06:47–06:54 UTC。对象为《花漾年华：待寄出的春信》0.3.0之后的大迭代。本文是<strong>可实施设计建议与来源复核</strong>，不是已经完工的功能说明；尚未启动本机游戏、未改产品代码。结合用户指出的单调、手动镜头负担、机械提示与种子不明白的问题，读取了现有 <code>index.html</code>、<code>src/main.js</code> 的加载、相机、移动与交互实现。</p>
+<h2 id="section-0">研究结论</h2>
+<p>这款游戏的视觉设计需要贯穿从等待到行动，而不是把华丽加载图、花体展柜、独立粒子屏和任务面板拼起来。建议把“春信”变成一套可见的物理语言：信纸携带一地的颜色；风带动花瓣、衣摆与路标；花尘是可被暂借的材料；同一阵风能游玩、示路和叙事。相机默认替玩家看路，手动操作只是表达选择。</p>
+<p>以下所有数值是本项目的起始调参建议，不是原作参数；每一条需在实机中再验证。</p>
+<h2 id="section-1">一手案例：事实与采用方式分开</h2>
+<div class="table-scroll"><table><thead><tr><th>案例与来源</th><th>本次确认的具体方法</th><th>本作采用</th><th>拒绝机械照搬</th></tr></thead><tbody>
+<tr><td><a href="https://blog.playstation.com/2021/01/12/how-stunning-visual-effects-bring-ghost-of-tsushima-to-life/">Ghost of Tsushima：Sucker Punch首席VFX作者解析</a></td><td>粒子读取风、地形、角色位移等场景信息；叶片、植被、布料共享风向。指路风使用前方地形检测，并非紧贴地表上下走。</td><td>一套风输入同时影响花尘、草梢、披风与少量可读的导航花瓣；漂移经过台阶应抬升，不穿地。</td><td>不把一条强亮粒子线常驻画面；不要求玩家机械追箭头。不要为了“自然”把目的地藏得看不见。</td></tr>
+<tr><td><a href="https://www.playstation.com/en-us/editorial/ghost-of-tsushima-beginners-guide/">Ghost of Tsushima：官方入门引导</a></td><td>玩家可以主动召唤指引风朝目标走。</td><td>默认世界地标足够清楚；迷路时主动呼唤游絮，用一阵短风提示下一个地标。</td><td>不每隔几秒自动弹窗催促。</td></tr>
+<tr><td><a href="https://media.gdcvault.com/gdc05/slides/GD_Haigh-Hutchinson_FundamentalsReal-TimeCameraDesign.pdf">GDC：Mark Haigh-Hutchinson，Fundamentals of Real-Time Camera Design</a></td><td>p22–23强调自动通过环境、可手动但不应强制手动、最小化镜头运动、限制转向速度、向运动前方构图、保留玩家意图。</td><td>漫游背后柔和跟随、前瞻构图、遮挡处理、手动暂时接管。</td><td>不把固定斜角镜头包装成“自由视角”；也不让每次轻碰方向键都引发猛转。</td></tr>
+<tr><td><a href="https://docs.unity3d.com/Packages/com.unity.cinemachine@3.1/manual/CinemachineThirdPersonFollow.html">Unity Cinemachine 3.1.7：Third Person Follow</a></td><td>以目标、肩部和相机组成跟随结构，位移与旋转可阻尼，包含避障。</td><td>采用其相机职责拆分思路，以轻量Three.js代码实现；人物占画面下部，视线留给前路。</td><td>不为此移植Unity、不拉入新引擎。</td></tr>
+<tr><td><a href="https://docs.unity3d.com/Packages/com.unity.cinemachine@3.1/manual/CinemachineOrbitalFollow.html">Unity Cinemachine 3.1.7：Orbital Follow</a></td><td>水平、垂直和半径独立，回正有等待与完成时间，并能以目标朝向定义回正参考。</td><td>拖动与缩放独立；手动结束后等待，再按实际行进缓慢回正。</td><td>不一松手立刻弹回；不在站定观景时夺回镜头。</td></tr>
+<tr><td><a href="https://thatgamecompany.com/flower/">Flower：thatgamecompany官方作品页</a></td><td>风、花瓣累积与环境变化是同一游玩过程；输入方向带动跨越场地。</td><td>首幕应先让玩家亲手使一朵花散开、带着它流动，再目睹返形与环境响应。</td><td>不做一份“开度正确百分比”考试，不以按钮/滑块承担核心体验。</td></tr>
+<tr><td><a href="https://blog.playstation.com/2025/06/04/sword-of-the-sea-launches-august-19-on-ps5-as-part-of-playstation-plus-game-catalog/">Sword of the Sea：Matt Nava作者介绍</a></td><td>移动、速度和操纵表达本身就是乐趣；复苏世界改变可走空间与活动。</td><td>花尘激活地形后，玩家要能踏上它、绕入新角度或发现新物；风笔动作本身应有连续的回报。</td><td>不只播放通关特效、世界却毫无变化；不仿造与本作无关的高速滑板。</td></tr>
+<tr><td><a href="https://www.thatskygame.com/dearvangogh/">Sky Dear Van Gogh：2026官方季节页</a></td><td>画作成为可探索的环境；笔触动作带回颜色与光；艺术背后的关系通过旅途展开。</td><td>系列花形配色应成为地点记忆：月银的旧记录、暖金的新生、蓝紫的远行；改变颜色也改变光、声音和局部风景。</td><td>不把“艺术”缩成几个外观皮肤。该页作品与角色不可直接取用。</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=JKV-30FD6NY">Masahiro Sakurai：Loading Screens</a></td><td>作者官方视频说明强调缩短等待，也可清楚说明加载，并用等待介绍世界或操控。</td><td>加载是第一段情景引言；展示明确阶段和一条短提示，准备好即进入。</td><td>不伪造百分比、故意等完整轮播，也不使用含糊旋转符号掩盖卡住。</td></tr>
+<tr><td><a href="https://tympanus.net/codrops/2026/10/12/chasing-the-moment/">Codrops：Chasing the Moment，作者制作过程</a></td><td>可检索的作者摘要显示用“电影票”实体作为浏览器短片的入场物件，Canvas 2D生成票面文字；加载先建立作品身份。</td><td>本作的入场物件选“未封口的信”，不是泛用星芒；信上对应即将到达的场景。</td><td>不照搬电影票造型，不为加载额外启动第二套WebGL渲染。此页本次直接读取403，仅采用可核实的索引段落，未宣称观看完整演示。</td></tr>
+</tbody></table></div>
+<p>这里的近期样本并非“越新越值得照搬”。2026年官方Sky案例说明同一个美术语汇可以穿过故事、操作和地点；相机则采用多年成熟的方法解决用户已明确指出的负担。<a href="https://www.thatskygame.com/news/this-month-in-sky-september-2026-edition/">Sky官方9月公告</a>表明Dear Van Gogh当季于10月1日结束；本文未把它称作当前正在进行的季节。</p>
+<h2 id="section-2">用户给定网站及自主扩展</h2>
+<ul>
+<li><a href="https://showreel.design/">Showreel</a>：本次直接访问403。保留该失败，不写成“已逐个体验案例”。</li>
+<li><a href="https://sael.net/">SAEL目录</a>：当前目录可读，包含Farewell Light、Soap Bubble、Prismatic、Wind Tunnel等；作者首页自己提示模型经过简化。</li>
+<li><a href="https://sael.net/soap-bubble/">SAEL Soap Bubble</a>：页面呈现线框形状、拖环、扭转和视角，动作与可见材料变化相对应。可借其“直接触碰材料”的关系，不照搬多排实验参数面板进游戏。这里只读取页面内容，没有实机测算其物理真实性或性能。</li>
+<li><a href="https://sael.net/demo/farewell-light/">SAEL Farewell Light</a>：目录能发现；进一步读取不稳定，不能由作品名推断实际玩法。</li>
+<li><a href="https://motionsites.ai/">MotionSites</a>：目录和类别可见，含付费/Unlimited入口。只作免费目录发现，不使用收费MCP、收费素材或以网页漂亮代替游戏可玩。</li>
+<li><a href="https://tympanus.net/codrops/hub/all/">Codrops Creative Hub</a>：本次看到近期玻璃、布料、碎裂、水等作者项目。可追到作者再研究局部技术，不能将聚合标签当作已试玩证明。</li>
+<li><a href="https://tympanus.net/codrops/2024/03/21/case-study-design-embraced-portfolio-2024/">Design Embraced作者技术说明</a>明确谈到为移动端减少加载负担采用较轻的呈现。这支持本作加载用2D图层、而非为了“华丽”再把GPU占满的选择。</li>
+</ul>
+<h2 id="section-3">加载演出：三封未寄出的信</h2>
+<p><strong>方向：完整画面，有限动效，真实状态。</strong> 首屏不再只有一个居中✳。后景是本作场景的三幅原创画面，前景是一张半透明植物纤维信纸边缘，几枚不同远近的花瓣穿过屏幕；标题与一行文本都属于同一构图。图像可来自本作无HUD实机，或原创Canvas/SVG版画，不采外部游戏截图当自己的开场。</p>
+<div class="table-scroll"><table><thead><tr><th>轮播</th><th>画面构图</th><th>动效</th><th>文字与下一步关联</th></tr></thead><tbody>
+<tr><td>晨雾来信</td><td>左侧近景银白花瓣，右侧远处水庭/窄桥；淡青雾与温暖晨光，人物剪影很小。</td><td>近景花瓣比远雾慢半拍；信纸边缘轻翻；相机式推近幅度≤3%。</td><td>“风暴过后，花庭还记得三个人的愿望。” / 初次可用提示“行走时，视线会跟随你。拖动可暂时环看。”</td></tr>
+<tr><td>一阵风的颜色</td><td>同一朵花打散成与所选系列一致的彩色花尘，保留瓣片与茎叶暗示；信纸位置不跳。</td><td>少量粒子沿一条弧流动，前后两层，不做全屏随机飞点；与下一幅自然溶接。</td><td>“一朵花能够归形。借走的春风，也会慢慢回来。” / 提示“掠过花瓣，扬起花尘；放松手，看看它会往哪里去。”</td></tr>
+<tr><td>远方留白</td><td>深蓝远景里有暖光花帆和一条未填满的航道，明暗节奏与首幕晨光形成过渡。</td><td>纸上浅金线路缓慢浮现，远帆轻摆，少数花粉向远方漂。</td><td>“有些信，写给尚未相遇的人。” / 回访提示可替换为当前真实进度，不剧透所有结局。</td></tr>
+</tbody></table></div>
+<p>节奏建议：每页6秒，交叉淡入1.2秒；可点击小型页签回看，但加载准备好不必等满18秒。无交互时始终有很轻的环境运动，禁止高亮闪烁与大幅摇摆。<code>prefers-reduced-motion</code>：取消推近、漂移，只做短淡入或静态切图。窄屏以文字区和花朵主体为优先裁切，不把细字压在图像高光上。</p>
+<p><strong>加载阶段必须真实</strong>：资源读取 → 花庭布置 → 光与水准备 → 就绪。每个阶段由实际init事件驱动；若只能知道阶段就显示阶段，不做0到99的定时动画。实际编译期间也必须能看见状态；同步大任务前先让浏览器绘制一次，不把“加载演出”自身变成静帧。无假最短等待。失败页留下同一美术背景，给出重新打开/降低画质入口和可读的实际原因。</p>
+<p><strong>低成本实现</strong>：CSS背景图或SVG图层负责推近/交叉淡入；Canvas 2D若用于少量漂浮物，DPR上限1.5、数量约40–80、脱离加载页立即停止；主场景预热占GPU时避免第二个WebGL context。图片宜WebP、每张目标约150–300KB，有纯色/线稿fallback。先用现有资源与原创图层，不为加载接入外部账户服务。</p>
+<h2 id="section-4">随行相机：默认帮玩家看路</h2>
+<p>现版<code>main.js</code>中的漫游分支虽跟随位置，方位仍来自固定初始offset和手动<code>viewRig</code>。因此人物往左走时，镜头并不会自然移到身后；用户必须持续拖动是实际结构问题。</p>
+<p>建议设计：</p>
+<ol>
+<li><strong>自动随行是默认</strong>。身体运动与视线方向分别维护。平地背后距离约6.5–7.5，抬高2.5–3.2，注视点位于身体上方1.1并朝移动前方0.8–1.5；这些数值随本作尺度调整。停步不摇摆，不追角色轻微idle转身。</li>
+<li><strong>方向用真实位移</strong>。连续移动0.25–0.35秒、速度足够后才认定新的朝向；撞墙导致零位移时不追错误键盘方向。过滤掉接触台阶时的短噪声。</li>
+<li><strong>保持可读速度</strong>。水平角以最短角差插值，自动回正角速度上限约65–85°/秒；快速180°掉头也不能一帧甩镜。位置与注视点分别阻尼，镜头不用roll，不随走路上下点头。</li>
+<li><strong>手动优先</strong>。拖动开始就取消自动旋转，结束后保留至少1.6秒；仅在再次走动且没有风笔/近看/对话时逐渐接回。静止观景不应超时弹回。主动“回到身后”入口可给C键或小按钮。</li>
+<li><strong>局部互动构图</strong>。进入花/风廊/种核时切合适的近景或双主体构图，转场约0.5–0.8秒；结束互动返回角色当前方位，不能突然回到全局默认角。</li>
+<li><strong>相机碰撞与遮挡</strong>。从目标到镜头的线段查关键建筑，接近障碍缩短距离，离开时慢慢伸回。现有遮挡淡化可继续，但不能让玩家、任务花座或关键台阶一起透明。竖屏更高/更远但保持主角与目标在同一安全区域。</li>
+<li><strong>舒适选项</strong>。设置里保留“跟随角色 / 自由环看”，减少动态选项下关闭速度FOV变化与呼吸偏移，但保留必要随行；实际眼动舒适不能靠单元测试证明。</li>
+</ol>
+<h3>必须避免的输入反馈环</h3>
+<p>现版<code>movePlayer()</code>每帧用<code>viewRig.state.azimuth</code>生成移动向量。如果直接把同帧移动向量作为自动追背方向，持续按A/D就会出现相机追转→输入参考系转→人物继续转的反馈。结果可能变成绕圈，违背原本的横向行走意图。</p>
+<p>可行方案是<strong>连续移动手势锁定参考方位</strong>：从无输入到有输入时捕获移动基准yaw，直到按键组合变化/松开/手动环看再更新；相机可以追到这一段稳定运动方向的后方。必须看玩家持续按WA、单A、转向时切W、按S回头是否符合预期。较保守的替代是仅前向移动启用自动回正，纯横移/倒退保持镜头，但这只能部分解决用户诉求。首选前一种并实玩验证，不能只验证角度计算。</p>
+<h2 id="section-5">自然教学与减轻机械感</h2>
+<p><strong>第一分钟只教一个动词：掠过。</strong> 开场最后一个镜头把人物、花和后方路放在同一画面里。第一条提示只写“走近花瓣”，花身上已有轻微随角色靠近的响应；靠近后才显示一次实际输入动作。完成后不立即把镜头拉走，不用“任务完成”横幅盖住刚发生的花尘。</p>
+<p><strong>同一动作逐步加深</strong>：初次快扫让花散开 → 散开时拖动让它改变流向 → 放手后先继续漂游、再缓慢返形 → 第一次返形带来清晰环境结果，如身边花灯亮起/路边种子醒来。后面的桥、风廊、种核继续利用已学的“靠近—触碰—观察后果”，不突然换成表格式分配操作。</p>
+<p><strong>提示两层，不靠文艺隐语承载规则</strong>：常态是世界里的风/光/同伴；卡住约10–15秒才出现一行直白建议，如“走到金色花座旁，按E种下”。叙事句可以随后轻声出现，不能取代操作指令。成功/失败分别有可见结果；无效操作告诉玩家缺了什么，避免静默无反应。</p>
+<p><strong>目的地有形状而不只有颜色</strong>：旧日灯=灯芯/环形，四季=叶芽/层叠花台，远行=帆/舟。能区分形状、位置、光色和文字；灯光变亮代表可操作，不靠细小进度条猜状态。最终选择分清“现在手里拿着什么”和“这个花座会长出什么”，对应种子代理的专项设计。</p>
+<h2 id="section-6">免费素材与执行范围</h2>
+<p>优先采用本作已有CC0晨光HDR/石面、本作实机图与原创纸纹/花瓣/插画。若需要新增植物或界面图标，必须先看单资产许可、保持本作统一审美；不要把更多下载等同于升级。</p>
+<ul>
+<li><a href="https://polyhaven.com/license">Poly Haven许可</a>：其HDRI、纹理、模型为CC0；网页、Logo及示例渲染不自动包含在同一许可中。本作可以继续使用已入库的资产，不直接拿网站渲染当自己的美术。</li>
+<li><a href="https://kenney.nl/support">Kenney官方许可问答</a>：资产页游戏素材为CC0，仍以包内许可和实际资产页核实；不是所有可购买工具都免费。可用其输入图标做清晰提示，但当前已有文字按键，没必要引入一整套外观不搭的UI。</li>
+<li>不使用收费MotionSites入口、付费AI图片/视频/语音，不下载外部游戏视频充当本作加载动画，不复用未明确许可的音乐。研究引用与产品素材采用分开记账。</li>
+</ul>
+<h2 id="section-7">本轮验收建议</h2>
+<ul>
+<li>加载首次绘制可见、3幅场景各有构图，真实加载阶段跳转正确；快缓存不强迫看轮播；窄屏不遮字；减少动态与失败路径可读。</li>
+<li>只用WASD、不拖鼠标，能从首花走到侧庭再返回；A持续按3秒不绕圈；S返回不瞬甩180°；手动观景不会被抢镜；失焦后无残留移动。</li>
+<li>近看/结束对话到漫游过渡不穿地或穿穹架；桥面、坡道、最终花座可见；竖屏含角色和当前目标。</li>
+<li>新玩家不用打开材质工具箱即可第一次打散/漂移/返形；每个系列花尘颜色与源形一致；延时返形不会让下一目标永远锁住。</li>
+<li>提示区只同时讲一件事；种子当前状态、可去目标和选择后果能在场景中看懂。完成的自动化路径不等于玩家理解，需额外做不读攻略的实玩评审。</li>
+</ul>
+<h2 id="section-8">研究边界</h2>
+<p>本报告使用官方页面、作者文章/演讲与实际源码阅读；没有声称本轮购买或完整通关任何商业游戏。Sakurai视频直接播放未成功，采用官方索引描述；GDC注意力设计长PDF超过工具体积限制，未纳入详细论证。近期索引内容与实际可访问页面分开标注。所有设计推导都是本项目建议，不能冒称原作采用相同参数或证明本作已达到原作质量。</p>
+<h2 id="section-9">实施附件</h2>
+<p>研究之后已实现独立加载组件，并对三种视口做实际渲染检查。详见 <a href="v6-experience-review.html">体验复审</a>。这部分是本作原创SVG情景画，不是外部游戏实机，也不替代整包运行验证。</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.19 · v6 / 0.4 制作档案</span><span>原片、隔离实验与主游戏证据分别标注；文档不代替最终验收。</span></div></footer></body></html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><link rel="icon" href="data:,"><title>Landscape inspection</title><style>html,body{margin:0;background:#80919c;overflow:hidden}canvas{display:block}#caption{position:fixed;bottom:20px;left:24px;color:#eef1e7;font:13px system-ui;letter-spacing:.1em;text-shadow:0 1px 4px #172c37}</style></head>
+<body><div id="caption">SPRING LETTER — LANDSCAPE INSPECTION</div><script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
+import { createLandscape } from '../src/landscape.js';
+const renderer = new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});
+renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(1);renderer.outputColorSpace=THREE.SRGBColorSpace;
+renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.82;document.body.append(renderer.domElement);
+const scene=new THREE.Scene();scene.background=new THREE.Color('#8d9fab');scene.fog=new THREE.FogExp2('#8d9fab',.018);
+const camera=new THREE.PerspectiveCamera(43,innerWidth/innerHeight,.1,180),controls=new OrbitControls(camera,renderer.domElement);
+scene.add(new THREE.HemisphereLight('#cfdeea','#283e3d',.23));const sun=new THREE.DirectionalLight('#fff5e2',2.5);sun.position.set(-12,24,6);sun.castShadow=true;sun.shadow.mapSize.set(1536,1536);Object.assign(sun.shadow.camera,{left:-12,right:12,top:12,bottom:-12,near:.1,far:70});sun.shadow.normalBias=.03;scene.add(sun,sun.target);
+const fill=new THREE.DirectionalLight('#c1c9ff',.72);fill.position.set(15,8,-30);scene.add(fill);
+const water=new THREE.Mesh(new THREE.PlaneGeometry(180,180),new THREE.MeshStandardMaterial({color:'#496d7b',roughness:.32,metalness:.34}));water.rotation.x=-Math.PI/2;water.position.set(0,-.18,-23);scene.add(water);
+const land=createLandscape();scene.add(land.group);const state={p1:{solved:true},wind:{solved:true},exploration:{rain:{done:true},wind:{done:true},tide:{done:true}}};
+const textureLoader=new THREE.TextureLoader();
+const [normal,roughness,hdr]=await Promise.all([textureLoader.loadAsync('/assets/surfaces/mossy-rock-normal.jpg'),textureLoader.loadAsync('/assets/surfaces/mossy-rock-roughness.jpg'),new RGBELoader().loadAsync('/assets/environment/spruit_sunrise_1k.hdr')]);
+for(const map of[normal,roughness]){map.wrapS=map.wrapT=THREE.RepeatWrapping;map.anisotropy=4;}
+land.setSurfaceTextures(normal,roughness);const pmrem=new THREE.PMREMGenerator(renderer);const environment=pmrem.fromEquirectangular(hdr);scene.environment=environment.texture;scene.environmentIntensity=.43;hdr.dispose();pmrem.dispose();
+for(const [x,z,r]of [[0,0,6.8],[0,-16,6],[-5,-29,1.25],[0,-26,1.25]]){const m=new THREE.Mesh(new THREE.CylinderGeometry(r,r,.25,64),new THREE.MeshStandardMaterial({color:'#9b9d91',roughness:.85}));m.position.set(x,-.065,z);scene.add(m);}
+const shots={overview:[[27,28,18],[-1,0,-15]],rain:[[-4,5.1,8.5],[-12,2,-1]],wind:[[3,7.2,-8],[12,3.1,-16]],tide:[[-4,5.3,-23.5],[-12,1.5,-29]]};
+function shot(name){const[p,t]=shots[name]||shots.overview;camera.position.set(...p);controls.target.set(...t);sun.position.set(t[0]+4,t[1]+9,t[2]+5);sun.target.position.set(...t);controls.update();renderer.render(scene,camera);return renderer.info.render;}
+window.landscapeQA={land,scene,camera,renderer,shot};shot('overview');
+renderer.setAnimationLoop(t=>{land.update(t/1000,.016,state);controls.update();renderer.render(scene,camera);});
+</script></body></html>

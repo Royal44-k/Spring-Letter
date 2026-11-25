@@ -1,0 +1,50 @@
+[
+  {
+    "file": "rocky-trail-color.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rocky_trail/rocky_trail_diff_1k.jpg",
+    "bytes": 1076180,
+    "md5": "f515d1f026fe4a022d5c182f191d60dc",
+    "sha256": "7f20d83cd4a67f9c38abf72f39f5a3749a962e90bdc156998be027b1227a5bd6",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "author": "Amal Kumar",
+    "sourcePage": "https://polyhaven.com/a/rocky_trail",
+    "retrievedDate": "2026-11-20"
+  },
+  {
+    "file": "rocky-trail-normal.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rocky_trail/rocky_trail_nor_gl_1k.jpg",
+    "bytes": 1398291,
+    "md5": "72db2dba30e2c1685c2c203508528a29",
+    "sha256": "087b8912c8cf40a528965c4282a5b3e4be011da5790273ffcdb5bd2697bde7dd",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "author": "Amal Kumar",
+    "sourcePage": "https://polyhaven.com/a/rocky_trail",
+    "retrievedDate": "2026-11-20"
+  },
+  {
+    "file": "rocky-trail-roughness.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rocky_trail/rocky_trail_rough_1k.jpg",
+    "bytes": 747035,
+    "md5": "72de4f16dd3941cf74862f230cc9b2a3",
+    "sha256": "aa17fcfe3be8fa4d79316d1c7e7a3e32e8522849fb4811e7009aec7762275caa",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "author": "Amal Kumar",
+    "sourcePage": "https://polyhaven.com/a/rocky_trail",
+    "retrievedDate": "2026-11-20"
+  },
+  {
+    "file": "plaster-color.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_plaster_02/white_plaster_02_diff_1k.jpg",
+    "bytes": 527219,
+    "md5": "7b10c2686bcfd76d1f309a20fd06b57e",
+    "sha256": "a1ebbe091bd1ae93d2abd5de8d69f9003a8d0ee6532bcf9a87c2492c97051f23",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "author": "Rob Tuytel",
+    "sourcePage": "https://polyhaven.com/a/white_plaster_02",
+    "retrievedDate": "2026-11-20"
+  }
+]

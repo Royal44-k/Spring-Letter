@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 1,
+  "retrievedDate": "2026-11-21",
+  "license": "CC0-1.0",
+  "processingTool": {
+    "python": "3.12.14",
+    "pyav": "19.0.2",
+    "numpy": "2.3.5"
+  },
+  "originalArchive": {
+    "file": "kenney_impact-sounds.zip",
+    "bytes": 800850,
+    "sha256": "029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8",
+    "downloadLinkEvidence": "kenney-download-response.json"
+  },
+  "evidence": [
+    {
+      "file": "kenney-impact-sounds.html",
+      "sha256": "547c159c89d147b3b44a0aa5ea7c1d0d41ce6cafbfd5173925db44fe5fc2661f"
+    },
+    {
+      "file": "ambient-bird-sounds.html",
+      "sha256": "89e79e772ab528295aa040c85fa3bc782f5c6fd8d6ffeb2015a4525f1c3024c3"
+    },
+    {
+      "file": "park-ambiences.html",
+      "sha256": "b820dc0e810a1bc92e7c669dff3eae56567c74969aba1eb5962f02fa633fc639"
+    },
+    {
+      "file": "thimras.html",
+      "sha256": "12c1c1d4cf1dfd1306db1b98da689f5528e7733741c1df603acef2bc152635f9"
+    },
+    {
+      "file": "kenney-download-response.json",
+      "sha256": "5fd0291965d96b8aa65fab5c01921b734a1ecd82f5da460448bbb0c01e8f42ac"
+    }
+  ],
+  "totalAudioBytes": 1809982,
+  "listeningVerification": "No human listening claimed. Decoding, sample level, clipping and boundary measurements only. Author descriptions identify the two ambient inputs as field recordings.",
+  "assets": [
+    {
+      "file": "grass-0.wav",
+      "processedSha256": "7cc76cc753cb97b0bb7af9c5a9a65fc9124c891b800413f1ae8168f4596b059a",
+      "bytes": 6668,
+      "format": "PCM16 WAV",
+      "sampleRate": 22050,
+      "channels": 1,
+      "durationSeconds": 0.15020408163265306,
+      "peakDbFS": -2.853703508307462,
+      "rmsDbFS": -25.210631356187925,
+      "dcOffset": 3.685697841183575e-08,
+      "loopSeamJump": 0.0,
+      "loopSeamJumpToRmsDerivative": 0.0,
+      "sourceFile": "kenney\\Audio\\footstep_grass_000.ogg",
+      "sourceSha256": "9d49497777405d78d7cf7f2888e28277f3a23192300cfd1d79d54876b20f479f",
+      "sourceFormat": {
+        "sampleRate": 44100,
+        "channels": 2,
+        "codec": "vorbis",
+        "bytes": 8290,
+        "durationSeconds": 0.7775736961451247
+      },
+      "author": "Kenney",
+      "sourcePage": "https://kenney.nl/assets/impact-sounds",
+      "downloadUrl": "https://kenney.nl/download-link/6173736574732f696d706163742d736f756e6473",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "processing": {
+        "resample": "FFmpeg libswresample via PyAV 19.0.2, mono 22050 Hz",
+        "trimStartSeconds": 0.0,
+        "trimEndSeconds": 0.15020408163265306,
+        "relativeSilenceThresholdDb": -45,
+        "gainLinear": 0.5858152063546974,
+        "edgeFadeSeconds": [
+          0.001,
+          0.016
+        ],
+        "loop": false
+      },
+      "usage": "Grass footstep"
+    },
+    {
+      "file": "grass-1.wav",
+      "processedSha256": "aa588f9b5709370dae88941b4920255be794212c1978e7ffaf8d53421ac63944",
+      "bytes": 7156,
+      "format": "PCM16 WAV",
+      "sampleRate": 22050,
+      "channels": 1,
+      "durationSeconds": 0.16126984126984126,
+      "peakDbFS": -2.853703508307462,
+      "rmsDbFS": -24.527661028412258,
+      "dcOffset": 6.007397268700787e-08,
+      "loopSeamJump": 0.0,
+      "loopSeamJumpToRmsDerivative": 0.0,
+      "sourceFile": "kenney\\Audio\\footstep_grass_001.ogg",
+      "sourceSha256": "fb28781bd22b2eefdc14077f1adf5c94d7fe9c3a130194633b55f3e0d39d9f04",
+      "sourceFormat": {
+        "sampleRate": 44100,
+        "channels": 2,
+        "codec": "vorbis",
+        "bytes": 8313,
+        "durationSeconds": 0.6736054421768708
+      },
+      "author": "Kenney",
+      "sourcePage": "https://kenney.nl/assets/impact-sounds",
+      "downloadUrl": "https://kenney.nl/download-link/6173736574732f696d706163742d736f756e6473",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "processing": {
+        "resample": "FFmpeg libswresample via PyAV 19.0.2, mono 22050 Hz",
+        "trimStartSeconds": 0.0,
+        "trimEndSeconds": 0.16126984126984126,
+        "relativeSilenceThresholdDb": -45,
+        "gainLinear": 0.6074029521317499,
+        "edgeFadeSeconds": [
+          0.001,
+          0.016
+        ],
+        "loop": false
+      },
+      "usage": "Grass footstep"
+    },
+    {
+      "file": "grass-2.wav",
+      "processedSha256": "b0a334b44918c98137ca27f13398782f4636e3abf37c9b789b43295d05abe81c",
+      "bytes": 7300,
+      "format": "PCM16 WAV",
+      "sampleRate": 22050,
+      "channels": 1,
+      "durationSeconds": 0.16453514739229025,
+      "peakDbFS": -2.853703508307462,
+      "rmsDbFS": -25.507685585261648,
+      "dcOffset": 2.10292021258269e-07,
+      "loopSeamJump": 0.0,
+      "loopSeamJumpToRmsDerivative": 0.0,
+      "sourceFile": "kenney\\Audio\\footstep_grass_002.ogg",
+      "sourceSha256": "73a520139f5be716a403bfe9c80e0e94d1e61d8e9de04a354b336392164b53dc",
+      "sourceFormat": {
+        "sampleRate": 44100,
+        "channels": 2,
+        "codec": "vorbis",
+        "bytes": 8278,
+        "durationSeconds": 0.6924489795918367
+      },
+      "author": "Kenney",
+      "sourcePage": "https://kenney.nl/assets/impact-sounds",
+      "downloadUrl": "https://kenney.nl/download-link/6173736574732f696d706163742d736f756e6473",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "processing": {
+        "resample": "FFmpeg libswresample via PyAV 19.0.2, mono 22050 Hz",
+        "trimStartSeconds": 0.0,
+        "trimEndSeconds": 0.16453514739229025,
+        "relativeSilenceThresholdDb": -45,
+        "gainLinear": 0.577826455042463,
+        "edgeFadeSeconds": [
+          0.001,
+          0.016
+        ],
+        "loop": false
+      },
+      "usage": "Grass footstep"
+    },
+    {
+      "file": "stone-0.wav",
+      "processedSha256": "11f6957bc4ce3188df0cb1923b0b1063fe4e458de58da28850ce67f3d06c0da5",
+      "bytes": 4588,
+      "format": "PCM16 WAV",
+      "sampleRate": 22050,
+      "channels": 1,
+      "durationSeconds": 0.10303854875283447,
+      "peakDbFS": -2.853703508307462,
+      "rmsDbFS": -23.253625555572764,
+      "dcOffset": 1.7461642413072184e-07,
+      "loopSeamJump": 0.0,
+      "loopSeamJumpToRmsDerivative": 0.0,
+      "sourceFile": "kenney\\Audio\\footstep_concrete_000.ogg",
+      "sourceSha256": "d7267e183067757c92c169de2a379abea592cfca6b39bb2e8feea15221ad79fe",
+      "sourceFormat": {
+        "sampleRate": 44100,
+        "channels": 2,
+        "codec": "vorbis",
+        "bytes": 5808,
+        "durationSeconds": 0.10591836734693877
+      },
+      "author": "Kenney",
+      "sourcePage": "https://kenney.nl/assets/impact-sounds",
+      "downloadUrl": "https://kenney.nl/download-link/6173736574732f696d706163742d736f756e6473",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "processing": {
+        "resample": "FFmpeg libswresample via PyAV 19.0.2, mono 22050 Hz",
+        "trimStartSeconds": 0.0,
+        "trimEndSeconds": 0.10303854875283447,
+        "relativeSilenceThresholdDb": -45,
+        "gainLinear": 0.5666300362204106,
+        "edgeFadeSeconds": [
+          0.001,
+          0.016
+        ],
+        "loop": false
+      },
+      "usage": "Concrete footstep used for hard stone path; original is not labeled natural stone."
+    },
+    {
+      "file": "stone-1.wav",
+      "processedSha256": "20c030bf095977dd0daf3c2e5e6c5fd54821e08c02a8b70538074626b538817a",
+      "bytes": 4664,
+      "format": "PCM16 WAV",
+      "sampleRate": 22050,
+      "channels": 1,
+      "durationSeconds": 0.10476190476190476,
+      "peakDbFS": -2.853703508307462,
+      "rmsDbFS": -24.25962051703226,
+      "dcOffset": 2.5101038284632036e-07,
+      "loopSeamJump": 0.0,
+      "loopSeamJumpToRmsDerivative": 0.0,
+      "sourceFile": "kenney\\Audio\\footstep_concrete_001.ogg",
+      "sourceSha256": "507a75eb19b897087855a3be3cf11a12d7fa37d143ad535eeebe0b8031c7325d",
+      "sourceFormat": {
+        "sampleRate": 44100,
+        "channels": 2,
+        "codec": "vorbis",
+        "bytes": 6308,
+        "durationSeconds": 0.10764172335600906
+      },
+      "author": "Kenney",
+      "sourcePage": "https://kenney.nl/assets/impact-sounds",
+      "downloadUrl": "https://kenney.nl/download-link/6173736574732f696d706163742d736f756e6473",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "processing": {
+        "resample": "FFmpeg libswresample via PyAV 19.0.2, mono 22050 Hz",
+        "trimStartSeconds": 0.0,
+        "trimEndSeconds": 0.10476190476190476,
+        "relativeSilenceThresholdDb": -45,
+        "gainLinear": 0.6148536654406632,
+        "edgeFadeSeconds": [
+          0.001,
+          0.016
+        ],
+        "loop": false
+      },
+      "usage": "Concrete footstep used for hard stone path; original is not labeled natural stone."
+    },
+    {
+      "file": "stone-2.wav",
+      "processedSha256": "50dcc3a2418ee78031a6478c1659f8283568ad6db4d0b30535a8c805ee0f223e",
+      "bytes": 4890,
+      "format": "PCM16 WAV",
+      "sampleRate": 22050,
+      "channels": 1,
+      "durationSeconds": 0.10988662131519275,
+      "peakDbFS": -2.853703508307462,
+      "rmsDbFS": -25.226761767126682,
+      "dcOffset": -5.037982356582749e-08,
+      "loopSeamJump": 0.0,
+      "loopSeamJumpToRmsDerivative": 0.0,
+      "sourceFile": "kenney\\Audio\\footstep_concrete_002.ogg",
+      "sourceSha256": "b21fa546d74941196b25da8a20b7010abd8c05c4fcf93545d1f344e66a664e13",
+      "sourceFormat": {
+        "sampleRate": 44100,
+        "channels": 2,
+        "codec": "vorbis",
+        "bytes": 6255,
+        "durationSeconds": 0.1127891156462585
+      },
+      "author": "Kenney",
+      "sourcePage": "https://kenney.nl/assets/impact-sounds",
+      "downloadUrl": "https://kenney.nl/download-link/6173736574732f696d706163742d736f756e6473",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "processing": {
+        "resample": "FFmpeg libswresample via PyAV 19.0.2, mono 22050 Hz",
+        "trimStartSeconds": 0.0,
+        "trimEndSeconds": 0.10988662131519275,
+        "relativeSilenceThresholdDb": -45,
+        "gainLinear": 0.5727136423334468,
+        "edgeFadeSeconds": [
+          0.001,
+          0.016
+        ],
+        "loop": false
+      },
+      "usage": "Concrete footstep used for hard stone path; original is not labeled natural stone."
+    },
+    {
+      "file": "stone-turn.wav",
+      "processedSha256": "c2580059072a2da29d801fe96b9bcc813ed4fbe3ef34d8abe066e7b00b8d492b",
+      "bytes": 10628,
+      "format": "PCM16 WAV",
+      "sampleRate": 22050,
+      "channels": 1,
+      "durationSeconds": 0.24,
+      "peakDbFS": -2.853703508307462,
+      "rmsDbFS": -16.539859780635354,
+      "dcOffset": 2.8833690594293274e-08,
+      "loopSeamJump": 0.0,
+      "loopSeamJumpToRmsDerivative": 0.0,
+      "sourceFile": "kenney\\Audio\\impactMining_000.ogg",
+      "sourceSha256": "36b4ea107222d073c67ca64dde26944975609202d5090b2f2021213c1a7e35cd",
+      "sourceFormat": {
+        "sampleRate": 44100,
+        "channels": 2,
+        "codec": "vorbis",
+        "bytes": 12035,
+        "durationSeconds": 0.937437641723356
+      },
+      "author": "Kenney",
+      "sourcePage": "https://kenney.nl/assets/impact-sounds",
+      "downloadUrl": "https://kenney.nl/download-link/6173736574732f696d706163742d736f756e6473",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "processing": {
+        "resample": "FFmpeg libswresample via PyAV 19.0.2, mono 22050 Hz",
+        "trimStartSeconds": 0.0,
+        "trimEndSeconds": 0.24,
+        "relativeSilenceThresholdDb": -45,
+        "gainLinear": 0.5780415415974332,
+        "edgeFadeSeconds": [
+          0.001,
+          0.016
+        ],
+        "loop": false
+      },
+      "usage": "Mining impact used as short stone-tile contact; not a field recording of a rotating stone."
+    },
+    {
+      "file": "birds-loop.wav",
+      "processedSha256": "df4984e91e46615f5293871c2af76c17a512c2a41322c016d5c8a15250416b3a",
+      "bytes": 882044,
+      "format": "PCM16 WAV",
+      "sampleRate": 22050,
+      "channels": 1,
+      "durationSeconds": 20.0,
+      "peakDbFS": -4.013542447859473,
+      "rmsDbFS": -27.38332732308471,
+      "dcOffset": 1.473978263180272e-08,
+      "loopSeamJump": 0.0003662109375,
+      "loopSeamJumpToRmsDerivative": 0.008211764234252837,
+      "sourceFile": "birds-isaiah658_0.ogg",
+      "sourceSha256": "359e4e3f9da9d75aac64cede511c7e3ef8b461f9d9f8c230f8f80e44c4b3e35f",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "codec": "vorbis",
+        "bytes": 544669,
+        "durationSeconds": 30.68825
+      },
+      "author": "isaiah658",
+      "sourcePage": "https://opengameart.org/content/ambient-bird-sounds",
+      "downloadUrl": "https://opengameart.org/sites/default/files/birds-isaiah658_0.ogg",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "processing": {
+        "resample": "FFmpeg libswresample via PyAV 19.0.2, mono 22050 Hz",
+        "sourceRegionSeconds": [
+          3,
+          25
+        ],
+        "crossfadeSeconds": 2,
+        "crossfadeCurve": "equal power: tail*cos(t) + head*sin(t), t from 0 to pi/2; overlap placed at end, first sample continues head after crossfade",
+        "gainLinear": 1.2095753159938707,
+        "loop": true
+      }
+    },
+    {
+      "file": "river-loop.wav",
+      "processedSha256": "23a6143cab8538f2bbd45b86cfa5cfc46e424ed4754309dccbc36534379f4d1e",
+      "bytes": 882044,
+      "format": "PCM16 WAV",
+      "sampleRate": 22050,
+      "channels": 1,
+      "durationSeconds": 20.0,
+      "peakDbFS": -4.3057879601530535,
+      "rmsDbFS": -17.72139878477571,
+      "dcOffset": 2.837235154478458e-09,
+      "loopSeamJump": 0.17462158203125,
+      "loopSeamJumpToRmsDerivative": 2.185877092908586,
+      "sourceFile": "park_ambience_river.wav",
+      "sourceSha256": "da0c0c9b1249a83a1611cc116d5737b0864a8db9f45f1ae8dcc079d0f7c0bbbf",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "codec": "pcm_s16le",
+        "bytes": 99072736,
+        "durationSeconds": 516.0
+      },
+      "author": "Thimras (Eike Germann)",
+      "sourcePage": "https://opengameart.org/content/park-ambiences",
+      "downloadUrl": "https://opengameart.org/sites/default/files/park_ambience_river.wav",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "processing": {
+        "resample": "FFmpeg libswresample via PyAV 19.0.2, mono 22050 Hz",
+        "sourceRegionSeconds": [
+          12,
+          34
+        ],
+        "crossfadeSeconds": 2,
+        "crossfadeCurve": "equal power: tail*cos(t) + head*sin(t), t from 0 to pi/2; overlap placed at end, first sample continues head after crossfade",
+        "gainLinear": 14.620926474668106,
+        "loop": true
+      }
+    }
+  ]
+}

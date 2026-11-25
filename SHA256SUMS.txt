@@ -1,0 +1,12 @@
+f67bc14a0e8763128b15c91b40130f15b345e2d48de1fa04bfbf6d98c385d519  spring-letter/releases/spring-letter-0.9.1-browser.zip
+08df451f250f8862d6bf9e6cc3fa5e799afe6398e44b3ec377e5982aa553420f  spring-letter/releases/spring-letter-0.9.1-windows.zip
+15497031f09a12bbab7b33eddaae240de4b03c5d00ab05049a6e484bd57b3351  spring-letter-promo/春信-小红书首发物料.zip
+01aced3f1721eff76e2653b5cc480d58240d63614e229f7b5406844a2db6e735  spring-letter-promo/首发物料/01-春信-真实游玩宣传片.mp4
+95d20da4c271e61e106b9103ac884ff7aad0df050b36ea4dd7f2c3f2cf3e2837  spring-letter-promo/首发物料/02-实机视频封面.jpg
+3ededa354df506002f7933a76daa55271234468facd8184ee8754b90d7d0ca48  spring-letter-promo/首发物料/03-花尘来信.png
+033590f865634d8fa1fd1e65e5a68d18f542ab2a892acfb5cc34ca2d9f926655  spring-letter-promo/首发物料/04-海上花路.png
+5947f9c345f1641eff53b954d343d754d9eee3e4a22b0f40abc059d196b1da3a  spring-letter-promo/首发物料/05-花庭与远海-实机对照.jpg
+9111d57fb3e524f8ae27ecb22122997dcb2cba2a5a634b2c342a8cc7b209617c  spring-letter-promo/首发物料/06-视频首帖文案.txt
+e208ac3524878720379de46f1bf6bc07b1a3801f417ca19e8586d0ee0d4d9918  spring-letter-promo/首发物料/07-概念图配文.txt
+397dff610e9b59de20808e2ccd678f0548e13976c2b9f95095d09694053adbb5  spring-letter-promo/首发物料/08-第一次发布与合作指南.md
+b4c47c68db3125190cbc5e2e7ef83e2d0fc1815a69f3f08b039b6621077346a1  spring-letter-promo/首发物料/09-互动开发合作案例卡.jpg

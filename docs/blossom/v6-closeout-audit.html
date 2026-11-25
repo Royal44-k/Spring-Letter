@@ -1,0 +1,37 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>最终候选与发行收尾核对 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc" aria-label="本文目录"><p class="toc-title">最终候选与发行收尾核对</p><a href="#section-0">交付核对结果</a><a href="#section-1">两份文档中需要校准的表述</a><a href="#section-2">历史 F 接力与当前 G 复验</a><a href="#section-3">已完成的 G 长跑与 CPU 检查</a><a href="#section-4">已完成的实录、解码与发行</a><a href="#section-5">已完成的图文页面检查</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 花随风行 · 制作概览</a>　/　<a href="v6-closeout-audit.md">Markdown 源文件</a></div><h1>V6 收尾核对：文档与最终候选证据</h1>
+<p>2026-11-19，CPU 只读核对运行源码；本页不改变实现，也不把计划当作完成证明。核对对象：<a href="v6-design.html">设计</a>、<a href="v6-execution-plan.html">实施计划</a>、<a href="v6-retained-content-verification.html">保留内容回归</a>。当前冻结候选为 G，入口 <code>/assets/index-BAJMaxNn.js</code>，SHA-256 <code>2f1312b822af74a328c5dfb230bb4563db48878406892113c48a0d56c6ea1636</code>，样式 <code>/assets/index-B12KydA1.css</code>。F 的历史通过不计为 G 的复验。</p>
+<p>制作时段为 06:44:55–09:49:45 UTC，首段连续超过 3 小时；09:50 中断，恢复后的首次时钟记录为 11:18:23。发行记录保守排除两次记录之间的整段空档，以 <code>activeWorkMs</code> 和 <code>workIntervals</code> 表达记录的制作时段，墙钟字段另列。不能把中断时间计入实际制作，也不能凭时长证明美术质量。</p>
+<h2 id="section-0">交付核对结果</h2>
+<div class="table-scroll"><table><thead><tr><th>项目</th><th>当前可用依据</th><th>范围与边界</th></tr></thead><tbody>
+<tr><td>最终候选身份</td><td>G 已通过主路11、取消6、移动端10、三支线9、雨潮及衔接8、界面11项、长跑10项与连续实录6项；发行清单绑定同一 JS/CSS 与文件散列</td><td>D/E/F 历史分别保留，没有改旧 JSON 的 build 字段冒充复验</td></tr>
+<tr><td>首花在近景外自然完成</td><td>D 的问题在 E 修复；G 09:43:22 UTC 专项回归及本次支线确认离开后自然归形开路</td><td>该项已有 G 证据；反例和各候选修复后记录继续保留</td></tr>
+<tr><td>交互界面、启动与持续运行</td><td>G 界面11项通过；11:27 UTC 开始的长跑已实际完成47.00分钟、13轮、351阶段、10项检查，错误为空；G 两轮支线新档初始化15.60／16.06秒，重载窗口另存</td><td>长跑已有完整 G 证据，仅覆盖本机和该操作序列；不能外推所有 GPU、实体手机或玩家理解</td></tr>
+<tr><td>CPU 规则与交付工具</td><td>全量 Node 178/178通过；Python 包校验3项、媒体守卫9项通过。新发行工具反例已纳入 Node 总数</td><td>下列实际录像解码、解压与HTTP核对是另外完成的验证，未用CPU用例替代</td></tr>
+<tr><td>可交付文件</td><td>0.4.0 G已晋级发行；实录4397帧完整解码，27文件ZIP实际解压启动，22个dist资源与3个运行文件核对通过，本机5192的22个HTTP资源也与清单一致</td><td>最终图文HTML已生成；桌面/窄屏共6组浏览器检查通过，截图另经人工查看；不外推实体手机或艺术品质等级</td></tr>
+</tbody></table></div>
+<h2 id="section-1">两份文档中需要校准的表述</h2>
+<ol>
+<li><strong>漂游计时不是“每次松手后重新保留 7 秒”。</strong> <code>flower-cycle.js</code> 的实际规则是破开约 0.7 秒后进入默认 7 秒漂游；有活动笔势时，余下时间至少延至约 2.5 秒，漂游阶段总长上限 15 秒，随后约 5 秒归形。建议将设计中的“放手后保留约7秒漂游”改为上述描述，避免玩家把阶段总时长理解成松手后的固定等待。</li>
+<li><strong>“三个春痕依次苏醒”有两种现场反馈，应说明用途。</strong> <code>journey-guide.js</code> 的三处花痕分别对应破开、有效运笔与教学完成；<code>world.js</code> 三道水纹是在完成后以 0.68 秒错开依次出现。可描述为“破开、写风、归形分别唤醒三处春痕；完成后水纹沿旧路扩散”，不应把所有光圈说成三项独立谜题。</li>
+<li><strong>加载场景概念名与屏幕文案不同。</strong> 晨雾花湾／琥珀风廊／星夜花帆是画面概念；当前屏幕位置名称是雨留庭／风廊／花帆渡口，标题是“晨雾里的第一封信／把一阵风，寄给远方／写给尚未相遇的人”。设计可以保留概念，但剧本和验收截图应使用当前实词，不能让读者以为另有未实现关卡。</li>
+<li><strong>实现与验收必须分列。</strong> 原清单把已落地和待最终验收混在一起，现已拆分。navigation、花形与粒子、loading、送种规则、主界面接线和世界改造有源码与候选证据；当前 G 的长跑、CPU检查、连续实录、解码、实际解压启动与图文页面检查均按各自报告关闭。</li>
+<li><strong>新报告与最终验证页已进入 HTML 档案。</strong> 保留内容回归和本页已纳入 <code>build_v6_dossier.py</code>；发行验证页在最终门槛生成 <code>v6-release-verification.md</code> 后纳入。生成后另以浏览器检查当前页面，不用旧候选页面或Markdown存在代替HTML验收。</li>
+<li><strong>终稿须把固定参考一致性与原创扩展分开。</strong> 4 花形、5 系列、同源粒子已经实现；百合与两段原视频的瓣形/曲率、镜头、材质、交互仍有差异。设计中的目标可以保留，但最终报告应说实测达到哪里，不把“研究了”或“功能存在”改写成“完美复刻”或“已达 3A”。</li>
+</ol>
+<p>Three.js 0.185.0、4 花形／5 系列、F 释放和快速笔势释放、C 回正、同次按键组合锁定移动参考、两枚种核对应三种无高低组合，都与当前源码一致；无需为收尾另改运行逻辑。</p>
+<p>文档修订进度：以上第1–4项已落实至设计与实施计划；第5项已完成图文生成与浏览器检查，第6项继续作为最终报告的证据边界。长跑、录像、发行与文档视觉均凭各自实际报告关闭。</p>
+<h2 id="section-2">历史 F 接力与当前 G 复验</h2>
+<p>E接力因启动成本调查中断，没有完整通过报告；F优化后重新从两个新档分别执行 <code>v6-branches-play.cjs</code> 与 <code>v6-exploration-play.cjs</code>，9项与8项均通过，完成于09:07:39／09:10:07 UTC。F原始输出位于独立 <code>evidence/v6-candidate-f-retained/</code>，16份报告、截图及存档的发行副本SHA-256完全一致。D归档与E中断说明均保留。</p>
+<p>历史 F 证据固定为<a href="../../spring-letter/evidence/v6-candidate-f-retained/v6-branches-play.json">三支线报告</a>与<a href="../../spring-letter/evidence/v6-candidate-f-retained/v6-exploration-play.json">雨潮报告</a>，加载研究见<a href="v6-startup-optimization.html">启动实验取舍</a>。这些文件没有被重写成 G。</p>
+<p>恢复后重新执行 G 三支线9项和雨潮8项，分别完成于11:21:34／11:23:53 UTC。16个报告、截图和存档从 <code>v6-candidate-g-final-retained</code> 同字节复制至发行证据路径，见<a href="../../spring-letter/evidence/v6-retained-g-copy-manifest.json">复制散列清单</a>与<a href="v6-retained-content-verification.html">当前 G 保留内容验证</a>。G 界面报告另有11项通过，随后完成长跑、连续实录、独立解码、发行核验与生成后图文页面的浏览器检查。</p>
+<h2 id="section-3">已完成的 G 长跑与 CPU 检查</h2>
+<p><a href="../../spring-letter/evidence/v6-soak.json">长跑完整报告</a>记录47.004分钟、13轮、351个采样阶段，JS/CSS 与 G 一致，10项检查通过且错误列表为空。首轮暖机后81组同状态资源比较的最大增长为0；最少一个稳态窗口也有144个新帧。稳态最大单帧间隔50.5ms、各段P95最高33.6ms；切换窗口最大183.6ms，单独列出，没有混成稳定帧率。以上为本机浏览器的 RAF 间隔与资源计数，不是 GPU 定时、显存泄漏证明或跨设备性能保证。</p>
+<p><a href="../../spring-letter/evidence/unit-verification-v6.txt">全量 Node 输出</a>为178/178；另有Python包校验3项、媒体守卫9项CPU用例通过。它们与下列真实文件验收分别计数。</p>
+<h2 id="section-4">已完成的实录、解码与发行</h2>
+<p><a href="../../spring-letter/evidence/spring-letter-v6-uncut-silent.webm">G连续无声实录</a>从完整六镜引言走到一次明确选择的结局，<a href="../../spring-letter/evidence/v6-recording-verification.json">普通输入记录</a>6项通过。独立<a href="../../spring-letter/evidence/v6-media-decoding.json">媒体解码</a>覆盖全部4397帧、1440×900、末帧175.84秒，损坏帧0、音轨0，文件SHA-256为 <code>f57d147521215ae407c83c0e21e6486bf56166fce393e8481261aef5d67ac978</code>。无剪辑、未加速；录像不代表游戏声音评测，录制开销也不用于性能承诺。</p>
+<p><a href="../../spring-letter/releases/spring-letter-0.4.0-windows.zip">0.4.0 Windows本地包</a>为5,433,422字节、27个成员。已从中文临时目录真实启动包内Node服务，22个dist资源逐个HTTP散列通过，3个运行文件亦匹配；<a href="../../spring-letter/evidence/v6-package-verification.json">解压核对</a>绑定当前<a href="../../spring-letter/evidence/release-manifest-v6.json">发行清单</a>。<a href="http://127.0.0.1:5192/">本机花庭</a>另有<a href="../../spring-letter/evidence/v6-served-files.json">22个实际服务资源核对</a>。本地包需要已有Node.js，没有外部公开部署。</p>
+<p>旧dist保存在 <code>.history/dist-before-v6-20261119-202139</code>。发行清单截至12:21:56 UTC记录的制作时段合计约4.14小时，墙钟跨度约5.62小时；中断空档未计入制作。</p>
+<h2 id="section-5">已完成的图文页面检查</h2>
+<p><a href="../../spring-letter/evidence/v6-dossier-visual.json">独立浏览器报告</a>覆盖1440×900与390×844的首页、README、QA共6组：整页无横向溢出，图片解码和本地链接通过；录像来源、实际文件SHA、浏览器尺寸与时长一致，实际定位后播放推进再暂停。根任务另人工查看首页、发行区、窄屏QA等截图，预览未残留加载转圈。验证使用自有浏览器和临时localhost服务，结束后关闭，不访问用户正在游玩的标签页。这是文档呈现检查，不是实体手机或电影级美术证明。</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.19 · v6 / 0.4 制作档案</span><span>原片、隔离实验与主游戏证据分别标注；文档不代替最终验收。</span></div></footer></body></html>

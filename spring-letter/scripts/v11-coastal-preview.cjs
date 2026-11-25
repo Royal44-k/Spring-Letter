@@ -1,0 +1,8 @@
+const {chromium}=require('playwright'),fs=require('node:fs'),path=require('node:path');
+const {inspectCanvas,assessPixels,summarizeRgba}=require('./v10-pixel-validation.cjs');
+const root=path.resolve(__dirname,'..'),url=process.env.SPRING_URL||'http://127.0.0.1:5193',dir=path.join(root,'evidence/v11/preview');fs.mkdirSync(dir,{recursive:true});
+(async()=>{const saved=JSON.parse(fs.readFileSync(path.join(root,'evidence/v9/play-2026-11-21T11-47-50-746Z/earned-storage.json'),'utf8'));saved.origins.forEach(o=>o.origin=new URL(url).origin);
+ const b=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});const c=await b.newContext({storageState:saved,viewport:{width:1440,height:900}}),p=await c.newPage(),errors=[];p.on('pageerror',e=>errors.push(String(e)));p.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+ try{await p.addInitScript({content:'window.__V10_RGBA_STATS__='+summarizeRgba.toString()});await p.goto(url);await p.waitForFunction(()=>window.__SPRING__,null,{timeout:120000});await p.waitForSelector('#loading',{state:'hidden',timeout:120000});await p.locator('#continue').click();await p.waitForTimeout(4500);await p.screenshot({path:path.join(dir,'coast-writing.jpg')});const s=await p.evaluate(()=>window.__SPRING__.snapshot()),pixels=await p.evaluate(inspectCanvas);delete s.frameTimes;fs.writeFileSync(path.join(dir,'snapshot.json'),JSON.stringify({s,pixels,pixelCheck:assessPixels(pixels),errors},null,2));console.log(JSON.stringify({stage:s.voyage?.stage,focus:s.focus,pixelCheck:assessPixels(pixels),errors,world:s.voyage?.world}));}
+ finally{await c.close();await b.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

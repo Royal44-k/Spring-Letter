@@ -1,0 +1,41 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>参考视觉对照 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc"><p class="toc-title">参考视觉对照</p><a href="#section-0">版本沿革</a><a href="#section-1">画面对照</a><a href="#section-2">当前连续录像与抽帧</a><a href="#section-3">横竖屏尾声与真实松手</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 本轮制作概览</a>　/　<a href="v5-visual-gap-review.md">Markdown源文件</a></div><h1>V5 参考一致性：已改善与仍有差距</h1>
+<p><strong>当前验收构建：<code>/assets/index-DcUM5LG9.js</code>，固定端口5192。连续实录11项、主线15项、支线11项、真实触屏回访6项均通过，无新故障。实际散聚暗场、横竖屏尾声与触屏松手已复读图证。以下仍保留具体美术差距，不把功能验收写成“完美复刻”或电影/3A级等量成品。</strong></p>
+<p>原视频帧以下以<code>video/…</code>简写，实际前缀为<code>docs/blossom/</code>；成品文件名前缀为<code>spring-letter/evidence/</code>。静帧用于判断形态、色彩与构图；连续实录补充动作过程；两者都不能单独证明长期性能或主观音乐品质。</p>
+<h2 id="section-0">版本沿革</h2>
+<div class="table-scroll"><table><thead><tr><th>阶段</th><th>证据与变化</th></tr></thead><tbody>
+<tr><td>Y7初审（5197）</td><td><code>v5-visual-review.json</code>、<code>v5-review-01…14</code>：晶体偏白银、慢笔约.194散聚、近看裁顶，是历史缺陷。</td></tr>
+<tr><td>主花/粒子修订</td><td><code>v5-glass-shape-{silver,crystal,lily}.png</code>显示肩部、卷曲、膜色、透射改善；这组调参图没有独立入口字段，不冒称某个固定构建。<code>v5-particles-gpu-weave.png</code>与GPU报告覆盖保色热亮、局部受力和回弹。</td></tr>
+<tr><td>D6 → Cy93</td><td>慢笔散聚接近0、自创杯曲有实际答音；旧留园后E不能回看修复。宽镜仍有前景拱柱挡住中间花座。旧图/报告在<code>archive-v5-before-release/</code>。</td></tr>
+<tr><td>DOL → BKcu</td><td>尾声改远侧反看；BKcu的214.44秒录像、主线15项、支线11项通过，但持续风笔视觉复核仍发现银光实体主导。完整候选在<code>archive-BKcu-gesture-review/</code>。</td></tr>
+<tr><td>BNqW</td><td>修正持续速度采样、表单焦点后的Space笔势并压低风迹亮度。221.72秒实录出现粉蓝尘片暗场；竖屏5项功能/投影通过，实图却有粗穹架杆件。证据在<code>archive-BNqW-before-crown-fix/</code>。</td></tr>
+<tr><td>C0 → DeZn</td><td>穹架退至z=-73，粗杆退出默认尾声前景；触屏近看隐藏无效方向盘。DeZn的221.44秒录像、主线15项、支线11项通过，但真实touchEnd误开回看，切断远侧尾声。证据在<code>archive-DeZn-before-touch-fix/</code>，没有追改为成功。</td></tr>
+<tr><td><strong>DcUM（当前）</strong></td><td>按原始长按意图消费兼容点击，真实touchStart/End后保持远侧尾声；从新游戏重新录制并完成同包主线/支线/回访，构建与存档SHA明确。当前根目录同名证据均按报告入口辨认。</td></tr>
+</tbody></table></div>
+<h2 id="section-1">画面对照</h2>
+<div class="table-scroll"><table><thead><tr><th>项目与参考</th><th>已改善的可见事实</th><th>仍需打磨</th></tr></thead><tbody>
+<tr><td>银花：<code>video/blossom/detail/frame-0000.jpg</code> ↔ <code>v5-glass-shape-silver.png</code>、当前<code>v5-final-flower-video.png</code></td><td>三朵花与两枚花苞关系明确；肩部、下卷端部更圆顺，粉绿薄膜色和软高光可见。实录慢笔半开时实体完整。</td><td>花瓣仍规律，宽面和尖端有薄壳/折片感；参考瓣间层叠与体积转折更丰富。应继续优化轮廓与高光转折，不靠堆亮度替代液态银。</td></tr>
+<tr><td>晶体：<code>video/blossom/detail/frame-0300.jpg</code> ↔ <code>v5-glass-shape-crystal.png</code></td><td>白银反光收住，背景能透过花瓣，边缘与亮点更独立，与银花身份拉开。</td><td>仍偏薄、冷灰；参考厚体积重叠中的折射层次和少量彩色光火更明显。透明不等于雕刻晶体一致。</td></tr>
+<tr><td>本色花：<code>video/blossom/detail/frame-0658.jpg</code> ↔ <code>v5-glass-shape-lily.png</code></td><td>奶白粉心、暗花药、绿茎、低光泽成立，杯状肩部与反卷更接近百合。</td><td>新图粉色、原帧金橙，配色不同本身不是失败；纵向瓣纹、花心斑点与不规则卷边仍少。旧金色图不代表当前新金色近看。</td></tr>
+<tr><td>粒子：<code>video/particles/detail/frame-0133.jpg</code>、<code>0196.jpg</code>、<code>0560.jpg</code> ↔ 当前<code>v5-final-scatter-video.png</code></td><td>主线媒体107.602秒可见粉顶蓝底、花瓣薄片与枝干来源，银实体基本隐去，背景深紫；附近连续帧显示尘片受力弯曲。</td><td>上部粉尘仍偏密、偏实，有布面感；与参考细粒轻盈、半透明层次仍有距离。参考是人物而本作为花，不能用形体不同掩盖密度、点径差距。</td></tr>
+<tr><td>笔势与主线背景</td><td>慢笔开合、快速扫尘、松手自然回流在同次实录内发生。旧BKcu“最大散聚仍银光主导”的现象在当前近峰值原帧不再成立。</td><td>重复水平往返会留下明显横向风迹，仍可增强随速度变化的粗细与寿命。树叶、拱柱和石块在暗场仍可辨，背景杂讯还有精简空间；纯黑画廊不能替代主线现场证据。</td></tr>
+<tr><td>近看自由度</td><td>注视高度提高至2.3、默认视野更宽，全花图未见初审默认裁顶。</td><td>初审滚轮-280、半径约8.01→6.4曾裁顶；默认图不能证明任意缩放都合格。更近距离选择上层花注视/平移仍可增强。</td></tr>
+</tbody></table></div>
+<h2 id="section-2">当前连续录像与抽帧</h2>
+<p><code>spring-letter-v5-uncut-silent.webm</code>为<strong>283.76秒、1280×720、25fps VP9，只有视频流、无音轨</strong>。83,384,381字节；完整六镜自动开场从点击开始到进入漫游的墙钟为50.599秒。11项录制检查通过，无控制台/请求错误。录像从新游戏开始，使用普通键鼠/UI自动操作，未剪辑、加速或混入参考，未预填进度。它不是人工玩家录像，录制负担也使其不适合作为性能基准。</p>
+<p>数值采样峰值为.97664145，位于第12笔墙钟109948ms。总墙钟285706ms比媒体多1.946秒；这个差值只用于找附近帧，不是精确同步。实际FFmpeg媒体seek如下，25fps逐帧量化仍适用：</p>
+<div class="table-scroll"><table><thead><tr><th>当前文件</th><th>媒体seek</th><th>复读结果</th></tr></thead><tbody>
+<tr><td><code>v5-final-flower-video.png</code></td><td>101.374秒</td><td>半开实体银花、膜色完整</td></tr>
+<tr><td><code>v5-final-scatter-near-peak-early.png</code></td><td>107.202秒</td><td>深紫环境、粉蓝尘片</td></tr>
+<tr><td><code>v5-final-scatter-video.png</code></td><td>107.602秒</td><td>强散聚、实体基本隐去、花源关系可辨</td></tr>
+<tr><td><code>v5-final-scatter-near-peak-late.png</code></td><td>108.202秒</td><td>仍在运笔中，尘片形态继续变化</td></tr>
+<tr><td><code>v5-final-farewell-video.png</code></td><td>259.857秒</td><td>三花座、人物、新生地花、飞种可见，尚无信笺弹窗</td></tr>
+</tbody></table></div>
+<p>三张“near-peak”图只表示接近数值采样峰值的位置，不能声称其中某图恰是峰值瞬间。录像随后还有运笔与自然回流，不把第三张误说成已经松手。当前媒体SHA256为<code>8f25cd4676a3fc2ada3b4d3cf8e579c19096b4d688178258f0b747a74988d35c</code>。<code>v5-recording-frame-extractions.json</code>、<code>v5-scatter-media-comparison.json</code>与<code>v5-recording-media-probe.json</code>保存构建、时钟范围、哈希和流信息，没有沿用旧媒体哈希。</p>
+<p>此前BNqW录制因持续强推未收束的失败视频/JSON位于<code>archive-BNqW-record-wind-failure/</code>。后续只读速度引导真实鼠标提前减速、撤手，游戏规则未改；从新游戏重录，未剪掉失败段接片。本轮在65次风场输入、中位233ms/最大670ms反馈间隔下，约16.608秒实际送达。</p>
+<h2 id="section-3">横竖屏尾声与真实松手</h2>
+<p>当前横屏原帧和<code>v5-branch-07-farewell-4500ms.png</code>显示远侧反看：旧拱柱不再挡住中间花座，三花座、角色/游絮、新花、飞种可辨。支线该图保存结束5224ms，弹窗约7168.2ms打开。拱顶仍靠近上缘，主体与远景的明暗分离可以继续优化。</p>
+<p>当前<code>v5-release-portrait-farewell.png</code>已逐图复读，旧粗穹杆退出前景，三个花座和人物可见；<code>v5-release-portrait-letter.png</code>信笺完整无横向溢出。CPU同形几何投影也显示穹架从-55移到-73后，默认横竖屏相机的可见杆件顶点为0、花座射线不再被挡；这只是默认机位辅助证据，不宣称任意自由环看都无物体遮挡。</p>
+<p><code>v5-final-revisit.json</code>的6项检查使用本次成功实录后浏览器原生导出的真实存档，SHA256随报告保存。可见按钮上真实触屏长按1844ms完成寄出，再touchEnd；释放后<code>focus=null</code>、远侧camera.z=-57.495，稍后为-63.659，结局保留、留园后仍能回看。旧DeZn的触屏误开回看问题没有在本轮复现。此为390×844触屏视口与键盘步行、CDP浏览器触屏输入，不是实体手机验收。</p>
+<p>音频节点和节拍由三支线实际流程另行验证，不能据无声录像声称主观听感已评审。融合链已经可见：实体开合 → 同形粉蓝点面 → 局部牵引花尘 → 自然归形，并进入推光、织桥、携种核和有后果的结尾。材质体积、尘粒轻盈、自然物细节、自由近看与更密支线仍有提升空间；不以测试数量替代审美和游戏体验。</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.19 · v5.0</span><span>参考原帧与首版实机分别标注；文档推演不代替游戏验收。</span></div></footer></body></html>

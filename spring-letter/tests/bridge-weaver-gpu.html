@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Bridge weaving GPU verification</title><link rel="icon" href="data:,">
+<style>html,body{margin:0;background:#11111e}canvas{display:block}</style><script type="module">
+import * as THREE from 'three';
+import { createBridgeWeaver, BRIDGE_WEAVE_ROUTES } from '../src/bridge-weaver.js';
+import { createState, setStructure } from '../src/game-model.js';
+import { PLATFORMS } from '../src/layout.js';
+const renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});renderer.setSize(1200,800);renderer.toneMapping=THREE.ACESFilmicToneMapping;document.body.append(renderer.domElement);
+const scene=new THREE.Scene();scene.background=new THREE.Color('#11111e');
+const camera=new THREE.PerspectiveCamera(43,1.5,.1,100);camera.position.set(9,11,-21);camera.lookAt(-.5,0,-31.5);
+scene.add(new THREE.HemisphereLight(0xe8d5ff,0x281c36,3));
+const ground=new THREE.Mesh(new THREE.PlaneGeometry(24,24),new THREE.MeshStandardMaterial({color:0x222b3d,roughness:.3,metalness:.6}));ground.rotation.x=-Math.PI/2;ground.position.set(0,.05,-32);scene.add(ground);
+const material=new THREE.MeshStandardMaterial({color:0x958b92,roughness:.7});
+for(const point of Object.values(PLATFORMS)){const platform=new THREE.Mesh(new THREE.CylinderGeometry(1.25,1.4,.25,48),material);platform.position.set(point.x,.13,point.z);scene.add(platform);}
+const state=createState();state.p1.solved=state.wind.solved=true;state.bridge.platform='A';state.player.x=0;state.player.z=-26;state.player.safe='pool';
+const weaver=createBridgeWeaver();scene.add(weaver.group);let time=0;
+const input={player:state.player,state,interactive:true,gesture:{active:false}};
+function draw(gesture=input.gesture){input.gesture=gesture;time+=1/60;const signals=weaver.update(time,1/60,input);renderer.render(scene,camera);return signals;}
+window.bridgeHarness={renderer,weaver,state,draw,routes:BRIDGE_WEAVE_ROUTES,setStructure};draw();
+</script></html>

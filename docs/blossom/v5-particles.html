@@ -1,0 +1,66 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>同源花尘与风笔 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc"><p class="toc-title">同源花尘与风笔</p><a href="#section-0">参考回看与主动研究</a><a href="#section-1">三轮美术判断</a><a href="#section-2">实际交互与接口</a><a href="#section-3">验证证据</a><a href="#section-4">边界与仍需判断的地方</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 本轮制作概览</a>　/　<a href="v5-particles.md">Markdown源文件</a></div><h1>V5 花尘与风笔：实现、参考和验收</h1>
+<p>本文件记录实际完成的粒子模块，不将效果研究等同于完成整款游戏。代码范围是 <code>spring-letter/src/particles.js</code>、<code>spring-letter/src/gesture-field.js</code> 及对应测试；镜头、暗场过渡、玩法与输入绑定由主集成负责。</p>
+<h2 id="section-0">参考回看与主动研究</h2>
+<p>回看项目已有的原视频逐帧记录，并重新观察粒子原片 <code>frame-0133</code>、<code>frame-0196</code>、<code>frame-0560</code>、<code>frame-0725</code>：重点是粉上蓝下、暗背景中的空间表面、局部受力拉出的薄片，以及扰动区之外仍成立的形体。不是将整个物体均匀炸散成星空。原片的人物模型与新作的花朵模型不同，本实现保持花朵的同源采样，并非宣称像素级复制。</p>
+<p>补查的一手来源：</p>
+<ul>
+<li><a href="https://tympanus.net/codrops/2024/12/19/crafting-a-dreamy-particle-effect-with-three-js-and-gpgpu/">Dominik Fojcik：Crafting a Dreamy Particle Effect with Three.js and GPGPU，Codrops</a>。作者介绍将指针位置和移动速度传入 GPGPU 速度着色器。借鉴的是“输入影响速度、形体有记忆”的方法；没有搬运其源码。正文直接打开返回 403，本次能核查的是搜索返回的作者正文片段，不能声称完整审读文章。</li>
+<li><a href="https://pavelmazhuga.com/lab/">Pavel Mazhuga 的实验室</a>及其<a href="https://pavelmazhuga.com/lab/flow-field/">风场实验</a>、<a href="https://pavelmazhuga.com/lab/magic-wand-cursor/">魔杖笔触实验</a>。作者明确将这些归为 WebGPU/TSL/shader/compute 实验。借鉴连续笔触与流场作为艺术交互的方向，未下载、复制或引入其许可不明的代码、贴图或模型。本次网页文本不能证明其具体算法。</li>
+<li><a href="https://github.com/mrdoob/three.js/blob/master/examples/jsm/misc/GPUComputationRenderer.js">Three.js GPUComputationRenderer 官方源码</a>。项目使用本地锁定的 Three.js 0.185.0，<code>GPUComputationRenderer</code> 的双缓冲是现有粒子仿真的基础；本地依赖包含 MIT 许可。新增着色器、笔触几何和力场为本项目实现，不需要付费服务或素材账户。</li>
+</ul>
+<h2 id="section-1">三轮美术判断</h2>
+<p>首轮把球状散开替换为三层螺旋带。它在暗场中有明显留白和粉蓝层次，但全散后呈现多圈示意图，花源的几何身份变弱。实际截图留在 <code>spring-letter/evidence/v5-particle-ribbons-first.png</code>，作为被继续改进的阶段证据。</p>
+<p>第二轮改为从原花瓣表面的方位角和高度出发，让受风后仍能看见花枝与花瓣的来处：</p>
+<ul>
+<li>约 36% 采样维持受风扭转的花枝骨架，稀疏呈现。</li>
+<li>约 44% 采样沿原花瓣方向抽出开放曲面，构成较亮的花尘薄片。</li>
+<li>约 20% 采样填在骨架和薄片之间，形成轻而细的放射连接。</li>
+</ul>
+<p>三种密度都使用相同的稳定采样 ID。散聚只改变目标位置，开合仍插值原始含苞/盛放两套真实采样。粉蓝色来自源表面高度，因此被手拖开后不会突然按世界高度换色。</p>
+<p>第三轮对照固定 5197 的受力截图，发现连续经过的花尘中部容易泛白，削弱粉上蓝下的色相关系。热亮改为提升原色亮度并只混入少量暖光，不再把整片受力区推向白色；只有约 4% 的稳定采样有短促闪光峰值。标准档点径略收细，低档仍保持可读性。该调整在 <code>v5-particles-gpu-weave.png</code> 中已验证，晚于 5197 固定包，不能算进该包的审美截图结论。</p>
+<h2 id="section-2">实际交互与接口</h2>
+<pre><code>particles.update(dt, time, {
+  bloom, dispersion, opacity, pointer, night, reducedMotion,
+  gesture: {
+    active: true,
+    position: localPosition, // THREE.Vector3，与 particles.object 同坐标系
+    velocity: localVelocity, // 坐标单位/秒
+    strength: 0.8,           // 归一化，内部限幅 0..1
+    mode: &#x27;weave&#x27;,           // 或 &#x27;gather&#x27;
+  },
+});</code></pre>
+<p><code>weave</code> 在笔触附近放松回位弹簧，让指针速度携带粒子，并加入小幅切向旋转；<code>gather</code> 使局部粒子形成柔和的聚束。力场使用有边界的平滑衰减，不会影响远处全部花瓣。按下、输入变化、松开都经过连续包络。松开后力和速度自然衰减，弹簧将采样带回当前开合/散聚目标；粒子模块不需要“点击恢复”事件。</p>
+<p>被笔触触及的粒子有热亮值，存在速度纹理的第四通道中，离开笔触后逐渐冷却，能读出刚刚经过的路径。热亮不增加粒子数量或额外绘制调用。极端速度、非有限值、长帧均做限幅；半隐式欧拉积分的小步长最大为 1/60 秒。</p>
+<p>质量切换也保持连续：GPU 状态按稳定采样 ID 从旧图集搬到新图集，不能直接按 UV 缩放，否则会打乱点与花瓣的关系。降档保留的 16384 个粒子同时保持当前位置、速度和热亮；升档新增的点从当前散聚目标开始，已有点不跳回花形。旧纹理在新图集复制后释放。</p>
+<pre><code>const brush = createGestureField({
+  maxPoints: 96, lifetime: 1.8, width: 0.035,
+  color: 0xf5c7e8, quality: &#x27;standard&#x27;,
+});
+scene.add(brush.group); // 世界输入挂 scene；局部输入挂对应模型的父节点
+brush.update(dt, time, { gesture, reducedMotion, opacity: 1 });
+brush.setQuality(&#x27;low&#x27;);
+brush.clear();
+brush.dispose();</code></pre>
+<p>风笔模块只读输入，不绑定鼠标或键盘。两条互相交叉的薄带合为一个 Mesh，环看时不容易完全侧对视线消失；一组 Points 带出少量飘尘，合计最多两个 draw calls。低档省去飘尘且轨迹最多 48 个样本，只保留一个 draw call。连续笔画按距离补采样并设置每帧上限，慢速小幅移动会累计而不会被阈值吃掉。抬手再按下不会连接到旧笔画。</p>
+<h2 id="section-3">验证证据</h2>
+<p>自动化入口：</p>
+<pre><code>cd &quot;D:\AI Game\spring-letter&quot;
+node --test tests/particles.test.js tests/gesture-field.test.js
+node tests/particles-gpu.cjs</code></pre>
+<p>GPU 测试默认访问开发服务 <code>http://127.0.0.1:5194</code>，可通过 <code>SPRING_URL</code> 指定其他 Vite 服务；独立测试页不操纵游戏进度。结果写入 <code>spring-letter/evidence/v5-particles-gpu-verification.json</code>。</p>
+<p>已通过 8 个 Node 测试：原采样不变、真实降档、输入合法性、松开连续衰减、笔画不跨空连接、样本容量上限、慢速笔触和销毁重复调用。</p>
+<p>真实 GPU：Edge，AMD Radeon(TM) Graphics，经 ANGLE D3D11；不是软件渲染器。最新 2026-11-19 02:44 UTC 的 65536 个 GPU 粒子实测：笔触附近 22235 个样本平均位移约 0.527 单位；远处 2166 个样本平均位移为 0；松开 4 秒后整体验证平均回位误差约 4.48e-7 单位；热亮最大值由 0.899 降到 0.00067；状态全部有限，无着色器或页面错误。低档使用 128×128=16384 个状态纹素，风笔下降为 1 次绘制。采样数量随主花几何修订改变，这些数值对应报告时间的实际几何，不应与旧版本数值混作性能提升。</p>
+<p>质量重建额外检查：高→低后保留点的位置与速度逐分量误差为 0；低→高后已有点的位置误差也为 0。连续四轮高低切换后渲染器纹理计数保持 8，没有逐次泄漏。</p>
+<p>同一真实浏览器还强制走解析回退路径并绘制，覆盖回退着色器、减少动态设置与风笔输入的组合，无编译错误；这不等于已经测遍不支持浮点纹理的硬件。</p>
+<p>集成截图：<code>v5-particle-morph-integration.png</code> 展示同源银花/点云交接；<code>v5-particle-scatter-integration.png</code> 展示新骨架与开放薄片；<code>v5-particle-brush-integration.png</code> 展示玩家风笔与局部受热。路径均在 <code>spring-letter/evidence/</code>。截图来自主开发服务当时状态，后续主集成继续调整环境光、镜头和字幕样式。</p>
+<p>这些是模块功能与稳定性检查，不是全游戏帧率保证。单帧截图和测试页快进不能证明主机、移动端或长时间实际游玩的性能。</p>
+<h2 id="section-4">边界与仍需判断的地方</h2>
+<ul>
+<li>不支持浮点颜色目标的设备使用解析回退：仍有同源形体、流场目标、平滑输入及局部偏移；没有 GPU 分粒子惯性和持久热亮。<code>getStats().backend</code> 明示 <code>analytic-fallback</code>。</li>
+<li>粒子不是完整流体或粒子间碰撞模拟；风力是可控的局部艺术力场。这样能稳定回到同一朵花，并控制性能。</li>
+<li>输入坐标系必须与粒子物体一致。主集成若移动/缩放花束，应正确变换 position 和 velocity；把世界坐标直接传给有位移的局部对象会让笔触错位。</li>
+<li>暗场、镜头距离、可见实体花透明度、剧情时序由主集成负责。本模块无法单独保证花→尘全流程视觉一致，需要集成截图和实际交互复核。</li>
+<li>GPU 读回测试使用有限的笔触路径；后续若改积分、范围或质量重建流程，需重新运行稳定性测试。</li>
+</ul></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.19 · v5.0</span><span>参考原帧与首版实机分别标注；文档推演不代替游戏验收。</span></div></footer></body></html>

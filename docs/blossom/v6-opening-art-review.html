@@ -1,0 +1,30 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>初花庭美术复审 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc" aria-label="本文目录"><p class="toc-title">初花庭美术复审</p><a href="#section-0">当前读图与源码定位</a><a href="#section-1">建议一：一道主拱、一道低残肋，恢复大中小层级（优先）</a><a href="#section-2">建议二：用“潮退后的痕迹”替代金属同心刻度（优先）</a><a href="#section-3">建议三：局部材质明暗，先不叠更多后期（可随一执行）</a><a href="#section-4">一手依据与采用方式</a><a href="#section-5">候选 B 的独立 A/B 读图</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 花随风行 · 制作概览</a>　/　<a href="v6-opening-art-review.md">Markdown 源文件</a></div><h1>V6 初花庭构图复审：候选 A 实图</h1>
+<p>审查图：<code>spring-letter/evidence/v6-candidate-a-gallery.png</code>，1440 × 900。只读检查 <code>world.js</code>、<code>world-polish.js</code>、<code>landscape.js</code>、<code>cinematic.js</code>；未修改运行源码、未启动 GPU。以下数值为待选实施建议，尚无实图结果。</p>
+<h2 id="section-0">当前读图与源码定位</h2>
+<p>银花具有高亮边缘，但其左侧和后方两个完整、接近同高度的宽石拱覆盖天空，花茎与近侧门柱发生轮廓重叠。建筑的完整闭合形状比花更容易被读成主角。前景水面同时存在底座金圈、两只对称玻璃杯、三道水痕圈、两道地面圈和十二点金刻度，以及支线桌具上的圆形装饰。很多小物件具有接近的尺寸和亮度，造成均匀噪声。</p>
+<p>源码对应：<code>arch(-.6,-6.5,5.5,5.8,.2)</code> 与 <code>arch(-5.3,-3.4,5.1,5.9,-.3)</code>，拱带默认半宽 <code>.32</code>、深 <code>.48</code>、倒角 <code>.045</code>；<code>ExtrudeGeometry</code> 原始法线在弧面上仍能读出分段。水面“绿石子”主要是 <code>fallenPetals</code> 的 40 个绿色叶片实例，基础叶片附带 <code>.12</code> 脊高，使短小落瓣看起来像立起的凸块。<code>landscape.js</code> 的碎石主要属于外侧三座花庭，本图首先应改 world 的落瓣，而不是盲目降低全地图植被。</p>
+<h2 id="section-1">建议一：一道主拱、一道低残肋，恢复大中小层级（优先）</h2>
+<p>保留后方的路径主拱和真实遮挡接口，将其高度由 5.8 降至约 4.9、带半宽 <code>.32 → .19</code>、深 <code>.48 → .30</code>。左侧 <code>(-5.3,-3.4)</code> 不再放第二个同高度的闭合门洞，改为保留外侧柱和约半段弧面的低残肋，高约 3.3–3.6；去掉贴近花茎的那根整柱。残肋底脚仍固定在旧岛岸附近，不能把支撑脚直接推到裸水面。现有薄帘收为残肋内的一条偏左旧帛，不延伸到花头后方。</p>
+<p>大形是水面与留白，中形是单个主拱与不完整残肋，小形才是花心、花瓣边缘与少量生活痕迹。让花在默认近看和开场角度都拥有一段不被石柱切断的轮廓，而非为了单张截图把整个建筑隐藏。</p>
+<p>在现有拱门几何上使用 <code>toCreasedNormals(geometry, Math.PI/3)</code> 平滑弧面、保留大角度棱边；倒角可保留 <code>.035–.045</code>，不通过单纯堆分段解决法线条带。该工具已存在本地 Three.js 依赖，官方说明明确其保留锐角、平滑其它法线的行为。<a href="https://threejs.org/docs/pages/module-BufferGeometryUtils.html#toCreasedNormals">Three.js BufferGeometryUtils</a></p>
+<p>成本：删改现有几何；不加灯、不加渲染通道、绘制批次应不增加。需复核移动镜头下残肋背面、遮挡淡化与开场镜头。</p>
+<h2 id="section-2">建议二：用“潮退后的痕迹”替代金属同心刻度（优先）</h2>
+<p>初花庭只保留花台一处细金边作为焦点，不改种植或音律支线的实际对象和坐标。取消水下完整双圈与 12 点金刻度；三道旧水痕改成两段错开、不同弧长的低对比沉积痕。解锁时的 <code>awakeningRings</code> 是短暂反馈，可以继续存在；常驻装饰与游戏反馈应分开对待。</p>
+<p>落瓣从 40 个降到约 16–20 个，压平原 <code>.12</code> 脊高至约 <code>.015–.025</code>，让它们确实贴水，而不是以小石块形态均匀冒出水面。仅沿后左岸与右前外岸形成两道不等长的水流堆积带，花脚到镜头之间留下连续的静水反射区。颜色改为较深的灰绿或少量旧花色，避免每一个落瓣都以相同明度对比背景。初花庭两只装饰玻璃杯可一高一低、略错开前后，但音律支线的两只杯与缺席座位仍保持叙事功能。</p>
+<p>成本：减少实例、减少常驻金属圈；无需增加绘制批次。主要风险是勿删除 <code>awakeningRings</code> 的反馈接口和 <code>cinematic.js</code> 桌上第三只杯出现的叙事关系。</p>
+<h2 id="section-3">建议三：局部材质明暗，先不叠更多后期（可随一执行）</h2>
+<p>当前拱门前脸、内弧和侧面都属于相近粉灰中间调，水岸同样均匀，导致轮廓虽然大，体积关系却弱。只为初花庭两处石构建立一个共享的哑光灰青材质（roughness 约 <code>.8</code>、metalness 约 <code>.02</code>），将内弧与近水脚部在现有顶点色里压暗约 15–25%，外缘保留受光的较浅暖灰。大尺度渐变遵从表面位置和内外关系，不随机撒斑点。继续复用已加载石材 normal/roughness 图；不增加新纹理下载或实时光源。</p>
+<p>银花的材质与高光由花朵代理统一调校；本项不通过提高全局曝光、泛光或加聚光灯来让背景变得更亮。现有 <code>main.js</code> 已有环境、主光与轮廓光，优先把反射性留给花、把建筑做成更安静的受光块面。若整体彩照仍偏灰，需要根代理在同一候选画面下调整光比，不能在这里脱离花材质做全局改动。</p>
+<p>成本：最多一个共享材质，或将既有初庭石材切换为顶点色；顶点操作仅构建时发生。无新阴影贴图、后期 pass 或动态灯。</p>
+<h2 id="section-4">一手依据与采用方式</h2>
+<ol>
+<li>《Journey》美术总监 Matt Nava 在本人开发回顾中展示了早期与最终场景，说明反复调整滑坡的角度、位置和形状，也说明当时的阴影由手工绘制、夕阳柱影甚至需对齐低分辨率贴图网格。可学习的是明确设计光影与大轮廓，而不是以更高实时成本替代构图。<a href="https://bsky.app/profile/mattnava.bsky.social/post/3lbnlt5m2i22d">Matt Nava 开发回顾</a>；搜索索引公开了完整作者串，单页直接抓取仅有串首，因此不声称看完嵌入视频。</li>
+<li>Blizzard 世界美术作者 Nikolay Valchev 的本人文章具体讨论大小反差、信号与噪声、留白、引导线和建筑取景框，并强调环境应支持游戏目标。本建议中的“单个主拱＋次级残肋＋静水留白”是对这些原则的本作应用，不是其文章中的固定布局。<a href="https://nvalchev.artstation.com/blog/7oYNO/the-power-of-composition-how-to-guide-a-player-s-eye-through-your-environment">The Power of Composition</a></li>
+<li>Sony 对《Ghost》主创的直接访谈中，Joanna Wang 解释羊蹄山顶场景先确定美丽与孤独的共同情感目标，再统一环境、灯光、天空和天气；Adrian Bentley 强调技术选择必须支撑核心体验并适配现有能力。本作因此应把开场定为“潮退后仍等候一封春信”，由安静水面、旧帛与独存的花表达，而不是再添加不相干的华丽装饰。<a href="https://www.sony.com/en/brand/voicesofcreativity/interviews/ghost1/">Sony 主创访谈</a></li>
+</ol>
+<p>建议顺序：<strong>一＋二先落地，三的小范围材质变化同批试验</strong>。评审应固定同一相机/同一花形/同一曝光截图，另检查默认游走与窄屏；不以漂亮的孤立镜头掩盖实际游戏视角的问题。</p>
+<h2 id="section-5">候选 B 的独立 A/B 读图</h2>
+<p>根任务完成实施后，独立对照 <code>v6-candidate-a-gallery.png</code> 与 <code>v6-candidate-b-gallery.png</code> 的同机位 1440×900 实图。建议保留 B：天空留白增加，花茎不再被粗门柱截断，静水反射连续，落瓣减量有效；石拱弧面条带减少，内缘与脚部的明暗能表达厚度。</p>
+<p>B 的石材在当前暖光下更接近橄榄灰绿，仍略抢眼，但未压过银花高光。可选末轮微调是降低约 10–15% 的黄绿倾向、向中性冷灰挪一点，不再增加明度；不建议回滚构图或临时堆高频噪点。表面仍有整块涂层/模压观感，残肋断口略整齐；这两项不影响保留 B 的判断，也不构成已达电影级石材的证据。本次仅检查两张实图，未启动 GPU，未修改运行源码。</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.19 · v6 / 0.4 制作档案</span><span>原片、隔离实验与主游戏证据分别标注；文档不代替最终验收。</span></div></footer></body></html>

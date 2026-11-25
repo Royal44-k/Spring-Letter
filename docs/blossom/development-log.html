@@ -1,0 +1,71 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>开发与验收记录 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc" aria-label="本文目录"><p class="toc-title">开发与验收记录 / CONTENTS</p><a href="#section-0">Decisions</a><a href="#section-1">Progress</a><a href="#section-2">Task status snapshot</a><a href="#section-3">Formal-build QA evidence — 2026-11-18</a><a href="#section-4">Performance evidence and its limit</a><a href="#section-5">Final visual QA — still open</a><a href="#section-6">Final first-playable handoff — 2026-11-18</a><a href="#section-7">v4设计 / 0.2.0可玩章节精修 — 2026-11-18</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 图文概览</a>　/　<a href="development-log.md">Markdown源文件</a></div><h1>Execution ledger — plan: D:/AI Game/docs/blossom/execution-plan.md</h1>
+<p>2026-11-18, Asia/Shanghai.</p>
+<h2 id="section-0">Decisions</h2>
+<ul>
+<li>User explicitly requested careful design followed by development. Treat this as authorization to execute the refined direction without another procedural approval question.</li>
+<li>Independent project: <code>D:/AI Game/spring-letter</code>. Existing game stays outside the edit scope. No Git repository metadata was observed; retain this ledger, tests and screenshots instead of inventing commits or restructuring the old project.</li>
+<li>Follow native main integration with parallel specialist research/modules where bounded interfaces save time. The root owns integration, visual review and verification.</li>
+<li>Work name updated to 花漾年华：待寄出的春信. Preserve prior design documents as history; v3 supplements, rather than erases, reviewed mechanics.</li>
+<li>Standard renderer targets WebGL2/r185. Exact original algorithms and pixel parity are not claimed; visible reference controls and differences are explicitly tracked.</li>
+</ul>
+<h2 id="section-1">Progress</h2>
+<ul>
+<li>v2 main design and narrative/playability blueprint read; key silver-flower and disturbed-particle original frames re-examined in this turn. Existing 2629-frame analysis reused, not claimed as a fresh full-frame review.</li>
+<li>v3 art direction, release-design main entry and executable task plan written. Source-site, FPS-case and precise free-asset reports completed with access/attribution limits recorded.</li>
+<li>Independent four-act implementation written under <code>spring-letter/</code>: botany, particles, deterministic rules, layout, world, input/lifecycle, UI, local storage and Web Audio. This status describes code delivery, not final playthrough acceptance.</li>
+<li>31 unit tests passed at the integration snapshot provided for this document update. Test totals may increase after further corrections; the final QA entry below must identify the final run and evidence.</li>
+<li>Hero bouquet uses three open heads/two buds, two whorls of curved petals, real closed/open triangle sampling and position/normal morph targets. Eight botany tests previously passed after meaningful initial failures; thin-shell outward-normal regression was found and fixed.</li>
+<li>Downloaded and verified <code>Studio Small 09</code> 1K HDR from Poly Haven, Sergej Majboroda, CC0-1.0. SHA-256, official-MD5 match and HDRLoader decode are recorded beside the asset. No paid asset/service was adopted.</li>
+<li>GPU particles are implemented with bounded state textures and a reduced-density fallback. Float render-target support is checked rather than inferred solely from WebGL2 availability.</li>
+<li>P2 was revised after independent review: inner/outer routes now have spatially different wind and a timed calm window; receiving requires release plus low speed. This does not mean every v2 environment-reconfiguration idea has shipped.</li>
+<li>Input review found Shift/OrbitControls modifier behavior and event-order conflicts; capture-phase routing, touch mode separation and day/night water linkage were corrected by integration. Ordinary-input recheck passed for Shift rotation, touch simulation and focus exit; see final QA below.</li>
+<li>P4 local consequence previews and the M-platform preservation projection were added after review. Preview vs. committed seed flight remains a state boundary. Visual clarity and repeated play still need final inspection.</li>
+<li>Closing or reloading after an ending now has a persistent review entry; the completed wind challenge no longer permits an inconsistent reset. The formal-build browser run verified the persistent review entry; completed-reset protection is implemented.</li>
+<li>First-build screenshots exist under <code>spring-letter/evidence/</code>. Dossier screenshots are explicitly separated from reference video frames. Earlier screenshots remain development evidence, not claims about the final polished state.</li>
+<li>AMD hardware rendering at a 1280 viewport produced an initial cover-frame interval of about 16.7 ms. This is an initial observation only: not full-route P50/P95, not a GPU timer measurement, and not a cross-device result.</li>
+</ul>
+<h2 id="section-2">Task status snapshot</h2>
+<div class="table-scroll"><table><thead><tr><th>Task</th><th>Implementation</th><th>Verification state</th></tr></thead><tbody>
+<tr><td>1. Gameplay state/recovery</td><td>Written; rule and corruption tests present</td><td>Unit checks passed in the current 31-test snapshot; final suite record pending</td></tr>
+<tr><td>2. Hero flower/surface identity</td><td>Written; geometry, physical materials, deterministic real-surface sampling</td><td>Botany invariants passed; final reference-matched visual review pending</td></tr>
+<tr><td>3. Particles/material continuity</td><td>GPU path and fallback written</td><td>Compilation and first renders inspected; repeated/reversed browser interactions pending final record</td></tr>
+<tr><td>4. World/camera/P1/P2</td><td>Four spaces, ordinary movement and first two acts written; two-route wind revision applied</td><td>Formal-build ordinary-input four-act completion passed; both-route broader sampling remains</td></tr>
+<tr><td>5. Structure/ending</td><td>Occupancy guard, allocation, local preview, commit and review written</td><td>Three ending combinations and reload/review entrance passed; artistic clarity still under review</td></tr>
+<tr><td>6. Quality/review/handoff</td><td>Research and source provenance complete; dossier v3 integrated</td><td>Final QA, device metrics, latest screenshots and runtime README owned by root integration</td></tr>
+</tbody></table></div>
+<h2 id="section-3">Formal-build QA evidence — 2026-11-18</h2>
+<p>Read records: <a href="../../spring-letter/evidence/browser-verification.json">browser-verification.json</a>, timestamp <code>2026-11-18T05:21:36.628Z</code>, and <a href="../../spring-letter/evidence/boundary-verification.json">boundary-verification.json</a>. Main-flow checks use ordinary keyboard, pointer and UI input; the read-only snapshot supplies assertions/navigation only. Boundary fixtures deliberately inject lifecycle/storage faults, without forging gameplay completion.</p>
+<div class="table-scroll"><table><thead><tr><th>Check</th><th>Actual result</th><th>Scope / remaining work</th></tr></thead><tbody>
+<tr><td>Unit checks</td><td>33 passed after focused silver-material and surface-control update</td><td>Root retains final console/build records; rerun affected checks after later changes</td></tr>
+<tr><td>Formal-build ordinary-input flow</td><td>16 checks passed; no errors or failed resources reported</td><td>Four acts, first ending, two alternative endings and reload/review; not a first-time human playtest</td></tr>
+<tr><td>P1 and P2</td><td>Range-input unlock and pointer-only light delivery passed</td><td>Inner/outer spatial wind differs in rules; broader normal-input sampling of both strategies remains</td></tr>
+<tr><td>P3 occupancy and route</td><td>Occupied recall refused, not queued, second bridge reaches F</td><td>Correctness evidence does not replace animation/art review</td></tr>
+<tr><td>Finale preview / commit / replay</td><td>Duplicate destination refused; preview uncommitted; three endings and saved review entrance passed</td><td>Latest local-preview visuals remain subject to fixed-view review</td></tr>
+<tr><td>Pause and focus</td><td>Settings clear movement and pause; blur/focus do not restore stale keys</td><td>Additional pointer-cancel/rare input combinations may still need device testing</td></tr>
+<tr><td>Storage and failure</td><td>Malformed JSON safe start; unavailable storage still playable; context loss gives reload instructions</td><td>This does not mean context is silently rebuilt without reload</td></tr>
+<tr><td>Quality / touch</td><td>Low mode uses actual 128×128 GPU state; Shift rotation and range-focus Esc passed; emulated touch completes P1</td><td>Real phone hardware not verified</td></tr>
+<tr><td>Layout</td><td>Narrow layout has no horizontal overflow in browser check</td><td>Full device/browser matrix not claimed</td></tr>
+<tr><td>Dossier</td><td>17 HTML pages generated; local targets/anchors and 1440/390 layout checked</td><td><a href="document-verification-v3.json">document-verification-v3.json</a>; project README now exists and is linked</td></tr>
+</tbody></table></div>
+<h2 id="section-4">Performance evidence and its limit</h2>
+<p>Formal-build sample: <code>1440×900</code>, <code>ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)</code>, final dust-gallery segment, 180 frame intervals. Standard <code>gpu-spring</code>, 256×256 state texture, 65,536 active particles. Mean <strong>20.51 ms</strong>, P99 <strong>25.9 ms</strong>, maximum <strong>28 ms</strong>. This is approximately 49 fps by the mean interval, not stable full-game 60 fps. Recorded draw counts are for this dust-gallery segment, not the complete world.</p>
+<p>The earlier 1280 cover observation around16.7 ms is retained only as an early observation. Browser frame intervals are not direct GPU timer-query measurements; no full-route worst-transition, all-DPR or physical-phone claim follows from either sample. P50/P95 and other devices were not recorded in this JSON.</p>
+<h2 id="section-5">Final visual QA — still open</h2>
+<ul>
+<li>Latest silver/crystal/natural/dust images must be compared against the corresponding original frames, with fixed camera and exposure.</li>
+<li>Focused silver polish has now landed: original linear grayscale UV thickness waves feed physical iridescence, with adjusted substrate/clearcoat. Optional finite/clamped surface controls preserve material/geometry identities. Two added regression tests pass, raising the full suite from31 to33. Rebuilt fixed-view screenshots are still required to accept the visible effect.</li>
+<li>Full continuous reversal/scatter/recovery sequences, first-time player comprehension, richer soundscape and the exact finished playtime are not certified by the 24 browser checks.</li>
+<li>Keep reference frames labelled reference and new renders labelled first-build footage. Do not convert these successes into claims of pixel parity, movie rendering or commercial AAA completion.</li>
+</ul>
+<h2 id="section-6">Final first-playable handoff — 2026-11-18</h2>
+<p>The final ordinary-input production run passed all 16 checks at 2026-11-18T05:37:30.886Z. The final unit suite passed 33/33. Five additional visual-interaction checks passed at 2026-11-18T05:39:00.863Z, including partial reversal, three scatter/regather cycles and same-composer PNG export. Eight boundary checks remain the recorded lifecycle/storage evidence.</p>
+<p>Silver thin-film polish, surface sliders, chase light, water skimming, completed-wind reset hiding and same-postprocessing photo export landed. Three material presets are compiled/rendered behind the loading screen to reduce first-switch compilation stalls. Latest fixed views were regenerated and inspected; 01–19 are actual local renders, not reference frames. Reference fidelity remains a qualitative work-in-progress, with remaining gaps explicitly described.</p>
+<p>Final serving address is http://127.0.0.1:5192/ running the built dist, not the Vite development server. Startup, provenance, sources, exact dependency declarations/derived lock, manifest hashes and known limits are provided. <a href="../../spring-letter/FINAL_QA.md">Final QA</a> contains the authoritative latest performance table and delivery scope. Earlier performance samples above are retained as dated history.</p>
+<h2 id="section-7">v4设计 / 0.2.0可玩章节精修 — 2026-11-18</h2>
+<p>新增全屏入口、浏览器真实状态同步与Esc保护；48秒六镜头实景开场，可跳过/重看；原创角色弥、游絮与岑旧记录；三种支线动作（杯声创作、扫光显字、保护/停滞对照）和个人回信。支线不改变两核三用途，沿用版本1存档并兼容旧档。</p>
+<p>主动研究Samorost3、Creaks、Sword of the Sea、SEASON/Jusant作者资料、Bruno、Codrops、A Short Hike和Botany Manor。采用Poly Haven CC0石材微表面，记录官方哈希；未购买素材或启用付费生成。物理银花瓣肩/膜厚、自然花粉/金颜色、固定镜头构图、低预算真实平面反射与四区合成声部实际落地。FFmpeg编码工具通过Playwright官方CDN安装在本项目.tools，不进入dist，使用免费编码方案。</p>
+<p>独立复核发现并修复：支线入口遮挡保形协议旧记录；续读的花姿被导演缓存覆盖；后期重看序章演员缺席；未醒游絮提前跟随；修改杯曲误覆盖旧曲；静止指针覆盖键盘扫光；旧字幕串到新支线；石柱/角色挡住支线实物。普通键鼠通关验证四旧记录可集齐、.4花姿刷新保留、演出不移动存档角色。</p>
+<p>当前47项单元、28项正常流程、8边界、5视觉交互、4全屏、11隔离音频图通过，具体时间/范围以FINAL_QA为准。录制完整自动序章与花尘鉴赏，录像无声，未冒充最终听感评审。</p>
+<p>操作记录：本轮曾有一次构建命令误在工作区根目录运行，重生成原项目dist；未改原项目源码。随后所有春信构建均显式使用D:/AI Game/spring-letter，未把两个项目代码或内容合并。</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.18 · v4.0</span><span>参考原帧与首版实机分别标注；文档推演不代替游戏验收。</span></div></footer></body></html>

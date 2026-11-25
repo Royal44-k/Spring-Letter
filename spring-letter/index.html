@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#e7e2ed"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ctext y='32' font-size='34'%3E✳%3C/text%3E%3C/svg%3E"><title>花漾年华 · 待寄出的春信</title></head>
+<body>
+ <div id="scene" aria-label="可交互的三维花庭"></div><div id="world-guide" aria-hidden="true"></div><div class="vignette" aria-hidden="true"></div>
+ <header><button class="wordmark" id="home" aria-label="返回扉页">春信 <span>SPRING LETTER</span></button><nav aria-label="全局控制"><button id="fullscreen" data-fullscreen aria-pressed="false">全屏体验</button><button id="sound" aria-label="打开声音">音 · 开</button><button id="night">入夜</button><button id="flower-studio" aria-label="花与花尘 · 花形、配色与粒子互动">花与花尘</button><button id="map">花庭图</button><button id="journal">来信册</button><button id="settings">设置</button></nav></header>
+ <main id="cover">
+  <div class="edition"><span></span> 一封写给未来的春信 <small>折光 · 织声 · 向海</small></div>
+  <h1>花漾<br><span>年华</span><i>待寄出的春信</i></h1>
+  <p class="cover-copy">把故乡放进光里，把自己的话写进信里。<br>带上前人的一封旧信，沿着繁花，驶向曙光。</p>
+  <div class="cover-actions"><button id="begin" class="primary">走进花庭 <span>↗</span></button><button id="continue" hidden>续写春信 →</button><button id="gallery">花与花尘 <small>花形 · 配色 · 粒子互动</small></button><button id="cover-fullscreen" data-fullscreen aria-pressed="false">全屏体验</button></div>
+  <button id="cover-atlas">展开远方地图 · 三处新地点 ↗</button>
+  <div class="cover-foot">十二段春光 · 两封信 · 一程远航 <span>Ⅰ — Ⅻ</span></div>
+ </main>
+ <section id="hud" hidden aria-label="旅途指引"><div class="chapter"><span id="act-number">Ⅰ</span><div><small id="act-eyebrow">THE FIRST BREATH</small><h2 id="act-title">半开的故乡</h2></div></div><p id="objective"></p><div class="progress-line"><i id="progress-fill"></i></div></section>
+ <section id="exploration-hint" hidden aria-label="春庭中的来信"><small id="garden-title"></small><h3 id="garden-objective"></h3><p id="garden-hint"></p><div class="garden-track"><i id="garden-progress"></i></div><button id="replay-garden" hidden>再写一次这阵风 ↗</button></section>
+ <section id="field-action" hidden aria-label="此刻可以做的事"><h3 id="field-title"></h3><p id="field-hint"></p><div class="garden-track"><i id="field-progress"></i></div></section>
+ <div id="caption" role="status" aria-live="polite"></div>
+ <section id="opening" hidden aria-label="故事序章"><div class="opening-bars" aria-hidden="true"></div><div class="opening-copy"><small id="opening-speaker">引言</small><p id="opening-line"></p><div class="opening-counter"><i id="opening-progress"></i></div></div><div class="opening-actions"><span id="opening-page">01 / 06</span><button id="opening-next">下一段 <kbd>Space</kbd></button><button id="opening-skip">跳过序章 →</button></div></section>
+ <button id="nearby-branch" hidden><small>旅途旁的回声</small><span></span><kbd>E</kbd></button>
+ <aside id="context" hidden><div class="context-head"><small id="context-label">近看一朵花</small><button id="leave-focus" aria-label="退出近看">×</button></div>
+  <div id="flower-controls">
+   <div id="gallery-tabs" hidden aria-label="花与花尘的两种视图"><button data-gallery="flower" class="active" aria-pressed="true">花的形体</button><button data-gallery="dust" aria-pressed="false">尘的呼吸</button></div>
+   <details id="flower-workbench" open><summary>花形与配色 <span aria-hidden="true">＋</span></summary>
+    <div class="flower-forms" aria-label="花的形态"><button data-form="lily" class="active" aria-pressed="true"><i class="form-lily"></i><b>百合</b></button><button data-form="lotus" aria-pressed="false"><i class="form-lotus"></i><b>重莲</b></button><button data-form="iris" aria-pressed="false"><i class="form-iris"></i><b>鸢尾</b></button><button data-form="dahlia" aria-pressed="false"><i class="form-dahlia"></i><b>星瓣</b></button></div>
+    <div class="material-row" aria-label="花的光泽与颜色"><button data-material="silver" class="active" aria-pressed="true"><i></i>月银</button><button data-material="crystal" aria-pressed="false"><i></i>流晶</button><button data-material="lily" aria-pressed="false"><i></i>粉瓷</button><button data-material="amber" aria-pressed="false"><i></i>琥珀</button><button data-material="celadon" aria-pressed="false"><i></i>青釉</button></div>
+   </details>
+   <div class="flower-life"><span id="flower-cycle-label">花的形体</span><button id="flower-burst">化作花尘 <kbd>F</kbd></button></div>
+   <p id="bloom-hint">轻触花心，让花瓣化作一阵光。</p>
+   <div class="slider-label"><label for="bloom">含苞 <span>花开</span></label><output id="bloom-value">12%</output></div><input id="bloom" type="range" min="0" max="100" value="12" aria-label="花朵开放程度">
+   <div class="pair"><button id="scatter" aria-pressed="false">旅途风笔</button><button id="auto-rotate" aria-pressed="false">缓缓环看</button><button id="chase-light" aria-pressed="false">追一束光</button></div>
+   <details id="surface-controls"><summary>光与表面 <span>＋</span></summary><label>虹彩<input data-surface="iridescence" type="range" min="0" max="1" step=".01" value=".75" aria-label="虹彩强度"></label><label>薄膜厚度 <small>nm</small><input data-surface="thickness" type="range" min="100" max="800" step="1" value="325" aria-label="薄膜厚度"></label><label>润泽<input data-surface="gloss" type="range" min="0" max="1" step=".01" value=".81" aria-label="表面润泽"></label><label>微光<input data-surface="radiance" type="range" min="0" max="1" step=".01" value=".08" aria-label="微光强度"></label></details>
+   <p id="flower-practice"></p><button id="gallery-back" hidden>返回扉页 ↗</button>
+  </div>
+  <div id="wind-controls" hidden><p class="wind-mouse-help">按住游光，把它引向远处的花杯。<br>松手，它会缓缓停下。</p><p class="wind-touch-help">按住游光，再慢慢拖向花杯。<br>松手，它会缓缓停下。</p><p class="muted">绕开池中的石心。花杯旁的光环，会接住靠近的游光。</p><button id="wind-reset">让光回到出发的花杯</button></div>
+  <div id="pool-controls" hidden><p>花尘只够凝成一段路。<br>抵达石台，再借下一段春风。</p><div class="shape-list"><button data-shape="bridge_am">近桥 · 此岸 ↔ 中庭</button><button data-shape="bridge_mf">远桥 · 中庭 ↔ 彼岸</button><button data-shape="shield_rm">叶渡 · 旧台 ↔ 中庭</button><button data-shape="none">收回花尘</button></div><p class="muted" id="platform-label"></p></div>
+  <div id="finale-controls" hidden><p>两枚种核，三座花庭。<br>走近它们，再决定你想照料的未来。</p><p id="allocation"></p><button id="depart" class="primary">回到花庭中 ↗</button><button id="review-letter" class="primary" hidden>回看这封春信 ↗</button><p class="muted">拿起、安放和取回，都只需靠近后点按 E。</p></div>
+  <div id="branch-controls" hidden><small id="branch-subtitle"></small><p id="branch-line"></p><div id="branch-task"></div><p id="branch-status" aria-live="polite"></p><button id="branch-finish" class="primary" hidden>把这一刻留下</button></div>
+ </aside>
+ <footer id="controls" hidden><span id="movement-help"><kbd>W A S D</kbd> 漫游</span><button id="focus-button"><kbd>E</kbd> 靠近 · 细看</button><button id="recenter-camera" title="镜头回到角色身后"><kbd>C</kbd> 镜头回正</button><button id="wind-pen" aria-pressed="false"><kbd>R</kbd> 风笔</button><span class="pen-shortcut"><kbd>Space＋拖动</kbd> 写风</span><button id="photo">留一帧春光 ↗</button></footer>
+ <div id="touch-pad" aria-label="触屏移动" hidden><button data-move="KeyW" aria-label="向前">↑</button><div><button data-move="KeyA" aria-label="向左">←</button><button data-move="KeyS" aria-label="向后">↓</button><button data-move="KeyD" aria-label="向右">→</button></div></div>
+ <div id="toast" role="status" aria-live="polite"></div>
+ <dialog id="modal"><button id="close-modal" class="close" aria-label="关闭">×</button><div id="modal-content"></div></dialog>
+ <div id="loading" aria-label="花庭正在准备"><span id="load-status">花影、风和回声，正在醒来</span></div>
+  <button id="storage-notice" hidden aria-label="查看存档状态并导出当前旅途"></button>
+  <div id="material-preparing" hidden role="status" aria-live="polite"><span class="light-petal">✧</span><p>让光落入新的花瓣</p></div>
+  <section id="failure" hidden role="alertdialog" aria-modal="true" aria-labelledby="failure-title" aria-describedby="failure-detail failure-note"><div class="failure-card"><small>春信 · 画面恢复</small><h2 id="failure-title">画面暂时中断了</h2><p id="failure-detail"></p><p id="failure-note"></p><div class="failure-actions"><button id="failure-reload" type="button">重新打开花庭</button><button id="failure-export" type="button">先导出春信备份 ↓</button></div><p id="failure-export-status" role="status" aria-live="polite"></p></div></section>
+ <script type="module" src="/src/main.js"></script>
+</body></html>

@@ -1,0 +1,53 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>阴影归属与渲染实验复核 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc" aria-label="本文目录"><p class="toc-title">阴影归属与渲染实验复核</p><a href="#section-0">本地调用链与错误的阴影覆盖</a><a href="#section-1">G采用的保护范围</a><a href="#section-2">三轮短实验：全部数据</a><a href="#section-3">F长时失败、中断与G完整长跑</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 花随风行 · 制作概览</a>　/　<a href="v6-render-pass-review.md">Markdown 源文件</a></div><h1>V6 渲染通道复核：阴影归属与实测边界</h1>
+<p>2026-11-19。候选F的长时测试出现真实帧数不足后，团队先保留失败，再检查渲染链路。<strong>候选G仅让环境遮蔽的法线通道暂时停止更新共享阴影图；正式场景仍逐帧更新阴影。</strong> 这项修改有源码与绘制量证据，但三轮短实验不能支持“帧率翻倍”或“长时性能已修复”的结论。</p>
+<p>本页对应本地锁定的 Three.js 0.185.0。候选F入口为 <code>/assets/index-BXu5N06Q.js</code>；G及独立修复实验入口为 <code>/assets/index-BAJMaxNn.js</code>，共用样式 <code>/assets/index-B12KydA1.css</code>。下文保留实验当时的端口与版本，不把后来同端口的构建当成原实验对象。</p>
+<h2 id="section-0">本地调用链与错误的阴影覆盖</h2>
+<ol>
+<li><a href="../../spring-letter/src/main.js">main.js</a>的正式后期顺序为 <code>RenderPass → GardenDepthPass → UnrealBloomPass → OutputPass</code>。水面反射在 <code>composer.render()</code> 前更新。</li>
+<li><a href="../../spring-letter/src/depth-pass.js">GardenDepthPass</a>为获得接触深度，暂时隐藏传输系数大于0.1、低不透明度、关闭深度写入或标为排除的网格。这是为了不让透明花、水和天空形成不合适的实心遮蔽。</li>
+<li>本地<a href="../../node_modules/three/examples/jsm/postprocessing/GTAOPass.js">GTAOPass</a>的 <code>render()</code> 调用 <code>_overrideVisibility()</code>、<code>_renderOverride()</code>；后者设定 <code>scene.overrideMaterial</code> 后再次执行 <code>renderer.render(scene, camera)</code>。替换为法线材质并不自动关闭阴影渲染。</li>
+<li><a href="../../node_modules/three/src/renderers/WebGLRenderer.js">WebGLRenderer</a>在绘制场景前调用 <code>shadowMap.render()</code>；<a href="../../node_modules/three/src/renderers/webgl/WebGLShadowMap.js">WebGLShadowMap</a>仅在 <code>autoUpdate</code> 与 <code>needsUpdate</code> <strong>同时为 false</strong> 时跳过整张阴影更新。它遍历实际物体的 <code>material</code> 和可见性，不因 <code>scene.overrideMaterial</code> 是法线材质而停止。</li>
+<li><a href="../../spring-letter/src/botany.js">botany.js</a>的花体网格本身会投影，main又为整个花束开启投影。晶花与琥珀花在AO通道被隐藏后，这次冗余阴影会把共享纹理改写为缺少这些投影物体的场景。它不仅重复工作，还改变了共享资源的内容。</li>
+<li>本地<a href="../../node_modules/three/examples/jsm/objects/Reflector.js">Reflector</a>在反射绘制时临时关闭阴影自动更新；本作<a href="../../spring-letter/src/water-reflection.js">水面反射</a>下一帧因此可读取上一帧AO留下的不完整阴影。修复后，反射继续使用上一帧正式场景的完整阴影；原有一帧时序没有新增延迟。</li>
+</ol>
+<p>这不意味着旧F的每个画面都明显错误：遮蔽是否启用、材料、投影位置和镜头都会影响可见差别。也不能要求修复前后逐像素完全相同；透明花相关的反射阴影允许出现正确性变化。</p>
+<h2 id="section-1">G采用的保护范围</h2>
+<p>在 <code>GardenDepthPass.render()</code> 保存 <code>renderer.shadowMap.autoUpdate</code> 与 <code>needsUpdate</code>，仅在调用 <code>super.render()</code> 的 <code>try</code> 中把二者置为false，<code>finally</code>首先恢复两个原值，再恢复可见性、覆盖材质与渲染目标。显式待更新请求不会被AO消费或吞掉。</p>
+<p>正式RenderPass的逐帧阴影、1536²阴影尺寸、花体几何、材质、AO分辨率和后期参数保持原有设置。本项目没有发现会在AO渲染回调中重新设置 <code>shadowMap.needsUpdate</code> 的逻辑；该判断基于本轮本地源码检索，不外推任意插件场景。</p>
+<p><a href="../../spring-letter/tests/depth-shadow-ownership.test.js">双标志与异常恢复测试</a>检查两标志的不同初始组合和异常路径；<a href="../../spring-letter/tests/depth-pass.test.js">既有恢复测试</a>继续覆盖场景状态恢复。该修正阶段CPU检查166/166通过；加入发行与媒体工具反例后，<a href="../../spring-letter/evidence/unit-verification-v6.txt">最终全量Node输出</a>为178/178。CPU断言证明状态契约，不代替实际GPU画面与长时性能验收。</p>
+<h2 id="section-2">三轮短实验：全部数据</h2>
+<p><a href="../../spring-letter/scripts/v6-ao-bench.cjs">实验脚本</a>与<a href="../../spring-letter/evidence/v6-ao-benchmark.json">原始JSON</a>保留全部三轮。Edge无头、1440×900，每轮新浏览器上下文，同机串行执行；每个状态先等待2.5秒，再采样约7秒，读取本作连续帧计数和帧间隔。实际经过百合/月银、莲/琥珀、大丽/流晶和回到行走状态，均为普通界面输入。</p>
+<p>实验顺序是F、修复、修复重测，没有交替反转顺序，也没有清除驱动缓存或记录独立GPU计时器。<code>renderer</code>只返回 <code>WebKit WebGL</code>，不能据此断言具体硬件后端。帧间隔包含浏览器调度等因素，不能直接视为GPU耗时；绘制次数与三角形数是采样末帧的计数。</p>
+<div class="table-scroll"><table><thead><tr><th>轮次 / 状态</th><th>新帧</th><th>平均ms</th><th>P95 ms</th><th>最大ms</th><th>绘制次数</th><th>三角形</th><th>点数</th></tr></thead><tbody>
+<tr><td>F / 百合·月银</td><td>422</td><td>16.69</td><td>16.80</td><td>17.70</td><td>381</td><td>1,043,678</td><td>462</td></tr>
+<tr><td>F / 莲·琥珀</td><td>422</td><td>16.69</td><td>16.90</td><td>17.30</td><td>537</td><td>1,772,598</td><td>462</td></tr>
+<tr><td>F / 大丽·流晶</td><td>385</td><td>18.29</td><td>33.40</td><td>34.50</td><td>512</td><td>1,799,340</td><td>462</td></tr>
+<tr><td>F / 行走场景</td><td>227</td><td>31.98</td><td>50.20</td><td>100.90</td><td>796</td><td>2,631,912</td><td>582</td></tr>
+<tr><td>修复 / 百合·月银</td><td>422</td><td>16.69</td><td>16.80</td><td>17.50</td><td>346</td><td>879,624</td><td>462</td></tr>
+<tr><td>修复 / 莲·琥珀</td><td>419</td><td>16.77</td><td>16.80</td><td>33.70</td><td>505</td><td>1,664,750</td><td>462</td></tr>
+<tr><td>修复 / 大丽·流晶</td><td>422</td><td>16.69</td><td>16.80</td><td>17.60</td><td>486</td><td>1,732,114</td><td>462</td></tr>
+<tr><td>修复 / 行走场景</td><td>417</td><td>16.97</td><td>17.10</td><td>33.50</td><td>761</td><td>2,548,408</td><td>582</td></tr>
+<tr><td>修复重测 / 百合·月银</td><td>232</td><td>30.07</td><td>68.10</td><td>567.70</td><td>346</td><td>879,624</td><td>462</td></tr>
+<tr><td>修复重测 / 莲·琥珀</td><td>82</td><td><strong>89.13</strong></td><td><strong>184.70</strong></td><td><strong>467.10</strong></td><td>509</td><td>1,664,754</td><td>462</td></tr>
+<tr><td>修复重测 / 大丽·流晶</td><td>193</td><td>36.57</td><td>50.70</td><td>267.10</td><td>486</td><td>1,732,114</td><td>462</td></tr>
+<tr><td>修复重测 / 行走场景</td><td>198</td><td>35.65</td><td>50.20</td><td>66.70</td><td>761</td><td>2,548,408</td><td>582</td></tr>
+</tbody></table></div>
+<p>全部12个状态都记录179个几何、54张纹理、108个程序，三轮错误列表均为空。各轮加载数据另列，不能拿“错误为空”代替流畅性：</p>
+<div class="table-scroll"><table><thead><tr><th>轮次</th><th>当时URL</th><th>初始化ms</th><th>预热ms</th><th>加载层消退ms</th></tr></thead><tbody>
+<tr><td>F</td><td>5194</td><td>17,478.0</td><td>14,053.1</td><td>18,130.5</td></tr>
+<tr><td>修复</td><td>5195</td><td>20,099.2</td><td>16,317.5</td><td>20,772.0</td></tr>
+<tr><td>修复重测</td><td>5195</td><td>19,006.6</td><td>16,052.1</td><td>19,702.3</td></tr>
+</tbody></table></div>
+<p><strong>确定的收益是避免重复绘制及错误覆盖，不是这组数据里的稳定帧率倍数。</strong> 百合少35次绘制、164,054个三角形；莲的第一对少32次、107,848个三角形；大丽少26次、67,226个三角形；行走场景少35次、83,504个三角形。修复重测莲多出4次绘制与4个三角形，说明末帧动态对象并非完全相同，其余三个状态计数与前次修复相同。</p>
+<p>第一次修复行走窗口从31.98ms变为16.97ms，但修复重测又到35.65ms，莲达到89.13ms。不能挑选第一对宣传“2倍FPS”，也不能凭这一组排除硬件负载、浏览器调度或其他性能因素。重复的低绘制量并未保证重复的低帧间隔。</p>
+<h2 id="section-3">F长时失败、中断与G完整长跑</h2>
+<ul>
+<li><a href="../../spring-letter/evidence/v6-soak-first-failure.json">F第一次长时测试</a>明确 <code>passed: false</code>：莲/月银的5.5秒稳态窗口只取得26个新帧，低于41帧门槛。保留原始失败，不改阈值来制造通过。</li>
+<li><a href="../../spring-letter/evidence/v6-soak-f-diagnostic-interrupted.json">F第二次诊断记录</a>由根任务主动中断，以转入隔离渲染实验。原始文件有89段已记录阶段，末段为第4轮莲/流晶、运行后771,596ms（约12.86分钟）；没有最终通过标记，也没有达到45分钟。它是约13分钟的未完成记录，<strong>不是失败后自动变为通过</strong>。</li>
+<li>G已经固定构建，主路11项、取消6项、移动端10项与首花离开近景专项有同版报告；恢复后另完成<a href="v6-retained-content-verification.html">三支线9项与雨潮8项</a>。上次G保留内容中断的部分截图继续保存，不计通过。<a href="../../spring-letter/evidence/v6-interface.json">G界面11项</a>已通过，确认实际全屏、双指接管、设置暂停/恢复、四形五系列与衣橱重载；其首次破开12.736秒/763帧/最大18.1ms仍只是单周期观察。</li>
+<li><a href="../../spring-letter/evidence/v6-soak.json">G长跑</a>现已完成47.004分钟、13轮、351阶段，10项检查通过且错误为空。81组暖机后同状态资源比较最大增长0；稳态窗口最少144个新帧，稳态最大单帧间隔50.5ms、各段P95最高33.6ms，切换窗口最大183.6ms。这个结果来自同一台机器和这套普通输入序列，不证明所有设备稳定，也不把资源计数等同显存测量。</li>
+<li>后续<a href="../../spring-letter/evidence/v6-recording-verification.json">G连续实录</a>6项通过，<a href="../../spring-letter/evidence/v6-media-decoding.json">媒体解码</a>覆盖4397帧、1440×900、175.84秒末帧、0损坏帧；<a href="../../spring-letter/evidence/v6-package-verification.json">发行包实际解压</a>和<a href="../../spring-letter/evidence/v6-served-files.json">本机HTTP全量核对</a>均绑定同一G构建。无声录像与录制开销不用于音质或稳定帧率结论。<a href="../../spring-letter/evidence/v6-dossier-visual.json">图文页面浏览器检查</a>也已通过桌面/窄屏6组，截图另经人工查看；文档检查不外推游戏GPU性能。</li>
+</ul>
+<p>本次长跑据完整G报告关闭，F失败与中断原样保留。后续判断仍应同时包含同构建身份、普通输入可达性、足量新帧样本、稳态资源数量及实际画面；若其他设备或更长序列失败，继续记录定位，不把此次通过描述成全部性能问题已经解决。</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.19 · v6 / 0.4 制作档案</span><span>原片、隔离实验与主游戏证据分别标注；文档不代替最终验收。</span></div></footer></body></html>

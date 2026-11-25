@@ -1,0 +1,20 @@
+[
+  {
+    "path": "public/assets/surfaces/mossy-rock-normal.jpg",
+    "bytes": 995727,
+    "sha256": "232CDD6A9FDFD01BB8BB1F8F604C53DBCA79FA0D3D7995EDF85C9945757AA8DF",
+    "md5": "59370F9B3D068271C2BCCFB414DC325B"
+  },
+  {
+    "path": "public/assets/surfaces/mossy-rock-roughness.jpg",
+    "bytes": 780918,
+    "sha256": "0A18BDEB08444B730170B0477F13940CE6CD4D82D06137DF661F96D1E2A6A66E",
+    "md5": "7EADB38815AD2569104D827AD8AC1572"
+  },
+  {
+    "path": "public/assets/environment/spruit_sunrise_1k.hdr",
+    "bytes": 1500948,
+    "sha256": "38199A31E945906F6778431E989256A92D9D78B0CFC0F902ACCAD9F5244BF50F",
+    "md5": "101E62113705DA89B6FA2299385CE801"
+  }
+]

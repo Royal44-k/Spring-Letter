@@ -1,0 +1,4938 @@
+{
+  "url": "http://127.0.0.1:5194/",
+  "passed": true,
+  "observations": [
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        115.76513671875,
+        139.08382161458334,
+        142.453125
+      ],
+      "sd": [
+        37.29542308016769,
+        31.154175561656377,
+        38.72940585982707
+      ],
+      "pink": 0.00016276041666666666,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1044
+      ],
+      "dominantFraction": 0.169921875,
+      "pixelHash": "948a33ed",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 62,
+      "quality": "balanced",
+      "material": "lily",
+      "form": "lily",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "fresh",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        108.10579427083333,
+        131.97233072916666,
+        132.67903645833334
+      ],
+      "sd": [
+        44.749583974664986,
+        37.064470191239565,
+        43.538209578971205
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1064
+      ],
+      "dominantFraction": 0.17317708333333334,
+      "pixelHash": "b5607131",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 113,
+      "quality": "light",
+      "material": "silver",
+      "form": "lily",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-silver-lily",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        112.46321614583333,
+        135.30338541666666,
+        136.39794921875
+      ],
+      "sd": [
+        46.562293216209184,
+        38.55932272158432,
+        44.64528165640479
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1037
+      ],
+      "dominantFraction": 0.16878255208333334,
+      "pixelHash": "2a2d8262",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 152,
+      "quality": "light",
+      "material": "silver",
+      "form": "lotus",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-silver-lotus",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        109.654296875,
+        132.79899088541666,
+        133.18994140625
+      ],
+      "sd": [
+        45.52514351953616,
+        37.8653013609924,
+        44.26990073474611
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1014
+      ],
+      "dominantFraction": 0.1650390625,
+      "pixelHash": "690000b7",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 189,
+      "quality": "light",
+      "material": "silver",
+      "form": "iris",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-silver-iris",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        110.70182291666667,
+        133.70133463541666,
+        134.23649088541666
+      ],
+      "sd": [
+        46.67281698842816,
+        38.99289412815601,
+        45.61354982381737
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1038
+      ],
+      "dominantFraction": 0.1689453125,
+      "pixelHash": "1059f7e1",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 228,
+      "quality": "light",
+      "material": "silver",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-silver-dahlia",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        56.80810546875,
+        69.3896484375,
+        84.57421875
+      ],
+      "sd": [
+        26.456481920381247,
+        23.73230968644828,
+        30.95562956868775
+      ],
+      "pink": 0.008138020833333334,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "4,5,7",
+        1035
+      ],
+      "dominantFraction": 0.16845703125,
+      "pixelHash": "e9c6ef0a",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 286,
+      "quality": "light",
+      "material": "silver",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-silver-scatter",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        104.67903645833333,
+        130.97688802083334,
+        133.01416015625
+      ],
+      "sd": [
+        44.30522510932831,
+        36.622637327133496,
+        43.02991436150815
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1054
+      ],
+      "dominantFraction": 0.17154947916666666,
+      "pixelHash": "5821d576",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 51,
+      "quality": "light",
+      "material": "silver",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-silver-reload",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        104.47265625,
+        128.8134765625,
+        129.71207682291666
+      ],
+      "sd": [
+        42.75805427570735,
+        35.52645875269956,
+        42.921594700690584
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1076
+      ],
+      "dominantFraction": 0.17513020833333334,
+      "pixelHash": "6a9813ba",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 108,
+      "quality": "light",
+      "material": "crystal",
+      "form": "lily",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-crystal-lily",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        106.17952473958333,
+        130.23014322916666,
+        131.33740234375
+      ],
+      "sd": [
+        43.671549797932464,
+        36.13103813768117,
+        43.42319452111797
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1054
+      ],
+      "dominantFraction": 0.17154947916666666,
+      "pixelHash": "05ddcb59",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 148,
+      "quality": "light",
+      "material": "crystal",
+      "form": "lotus",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-crystal-lotus",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        104.56640625,
+        128.64306640625,
+        129.29378255208334
+      ],
+      "sd": [
+        42.83589861321491,
+        35.60284454669181,
+        43.08549428884589
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1070
+      ],
+      "dominantFraction": 0.17415364583333334,
+      "pixelHash": "9bccdd63",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 187,
+      "quality": "light",
+      "material": "crystal",
+      "form": "iris",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-crystal-iris",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        106.162109375,
+        129.74348958333334,
+        130.74739583333334
+      ],
+      "sd": [
+        43.45273365044334,
+        36.173495373136184,
+        43.957421171297305
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1040
+      ],
+      "dominantFraction": 0.16927083333333334,
+      "pixelHash": "e8a5a0f3",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 226,
+      "quality": "light",
+      "material": "crystal",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-crystal-dahlia",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        55.328776041666664,
+        69.3173828125,
+        84.005859375
+      ],
+      "sd": [
+        24.449931142580468,
+        24.003855428701378,
+        30.895019733179613
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "4,5,7",
+        1046
+      ],
+      "dominantFraction": 0.17024739583333334,
+      "pixelHash": "8e9e4ba7",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 289,
+      "quality": "light",
+      "material": "crystal",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-crystal-scatter",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        101.69075520833333,
+        128.36165364583334,
+        130.69270833333334
+      ],
+      "sd": [
+        42.01185742780041,
+        34.729475366676915,
+        42.08217916888846
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1047
+      ],
+      "dominantFraction": 0.17041015625,
+      "pixelHash": "d9f292db",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 53,
+      "quality": "light",
+      "material": "crystal",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-crystal-reload",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        107.76790364583333,
+        130.58723958333334,
+        130.42692057291666
+      ],
+      "sd": [
+        46.63977269356471,
+        37.60627570749901,
+        44.214861407598825
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1069
+      ],
+      "dominantFraction": 0.17399088541666666,
+      "pixelHash": "7350c44c",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 105,
+      "quality": "light",
+      "material": "lily",
+      "form": "lily",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-lily-lily",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        107.10774739583333,
+        130.14241536458334,
+        129.69694010416666
+      ],
+      "sd": [
+        46.82398729638501,
+        37.289789262323715,
+        43.93280577118548
+      ],
+      "pink": 0.00016276041666666666,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1046
+      ],
+      "dominantFraction": 0.17024739583333334,
+      "pixelHash": "e9c31ce8",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 143,
+      "quality": "light",
+      "material": "lily",
+      "form": "lotus",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-lily-lotus",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        109.29182942708333,
+        131.40250651041666,
+        130.84993489583334
+      ],
+      "sd": [
+        47.09136825886182,
+        38.00924966535985,
+        44.58579561439582
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1047
+      ],
+      "dominantFraction": 0.17041015625,
+      "pixelHash": "f31ed9e7",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 181,
+      "quality": "light",
+      "material": "lily",
+      "form": "iris",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-lily-iris",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        108.21028645833333,
+        130.34016927083334,
+        129.87972005208334
+      ],
+      "sd": [
+        48.57529176144606,
+        38.17478615379546,
+        44.90527159308482
+      ],
+      "pink": 0.0003255208333333333,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1024
+      ],
+      "dominantFraction": 0.16666666666666666,
+      "pixelHash": "c01ebaec",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 219,
+      "quality": "light",
+      "material": "lily",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-lily-dahlia",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        58.196614583333336,
+        70.13948567708333,
+        84.0859375
+      ],
+      "sd": [
+        29.316981960073697,
+        24.71247899270002,
+        30.385550468044737
+      ],
+      "pink": 0.0026041666666666665,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "4,5,7",
+        1029
+      ],
+      "dominantFraction": 0.16748046875,
+      "pixelHash": "df525a46",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 277,
+      "quality": "light",
+      "material": "lily",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-lily-scatter",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        103.12076822916667,
+        128.90852864583334,
+        130.380859375
+      ],
+      "sd": [
+        45.54261324039267,
+        36.17745208332622,
+        42.82507948755779
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1044
+      ],
+      "dominantFraction": 0.169921875,
+      "pixelHash": "f3cb5299",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 51,
+      "quality": "light",
+      "material": "lily",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-lily-reload",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        107.12223307291667,
+        128.87939453125,
+        126.64957682291667
+      ],
+      "sd": [
+        46.944679466044214,
+        35.95552000965439,
+        41.75129921510282
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1065
+      ],
+      "dominantFraction": 0.17333984375,
+      "pixelHash": "a4efcbfa",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 108,
+      "quality": "light",
+      "material": "amber",
+      "form": "lily",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-amber-lily",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        108.96012369791667,
+        129.74625651041666,
+        126.9765625
+      ],
+      "sd": [
+        48.41276456846668,
+        36.31741982480419,
+        42.05047698595218
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1044
+      ],
+      "dominantFraction": 0.169921875,
+      "pixelHash": "bfc4efdd",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 147,
+      "quality": "light",
+      "material": "amber",
+      "form": "lotus",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-amber-lotus",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        108.50048828125,
+        129.13606770833334,
+        125.82177734375
+      ],
+      "sd": [
+        47.875710528573336,
+        36.07631759628352,
+        41.91259942536431
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1030
+      ],
+      "dominantFraction": 0.16764322916666666,
+      "pixelHash": "8f70f0ef",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 184,
+      "quality": "light",
+      "material": "amber",
+      "form": "iris",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-amber-iris",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        110.212890625,
+        129.32470703125,
+        125.09407552083333
+      ],
+      "sd": [
+        49.63630673016429,
+        36.125777658586216,
+        41.85909139731631
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1033
+      ],
+      "dominantFraction": 0.16813151041666666,
+      "pixelHash": "3ade2f98",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 223,
+      "quality": "light",
+      "material": "amber",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-amber-dahlia",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        57.479166666666664,
+        69.13118489583333,
+        81.46875
+      ],
+      "sd": [
+        28.29156503111347,
+        23.66314389646424,
+        29.323331110155834
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "4,5,7",
+        1029
+      ],
+      "dominantFraction": 0.16748046875,
+      "pixelHash": "ee9281b9",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 282,
+      "quality": "light",
+      "material": "amber",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-amber-scatter",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        104.37158203125,
+        128.35660807291666,
+        127.55029296875
+      ],
+      "sd": [
+        46.22498739151949,
+        34.79387235331224,
+        40.937755365521625
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1043
+      ],
+      "dominantFraction": 0.16975911458333334,
+      "pixelHash": "d853920e",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 54,
+      "quality": "light",
+      "material": "amber",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-amber-reload",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        105.58902994791667,
+        130.72233072916666,
+        130.36832682291666
+      ],
+      "sd": [
+        44.67306967735193,
+        38.20397450534701,
+        43.85517023619076
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1061
+      ],
+      "dominantFraction": 0.17268880208333334,
+      "pixelHash": "c0836dbf",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 110,
+      "quality": "light",
+      "material": "celadon",
+      "form": "lily",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-celadon-lily",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        106.87679036458333,
+        131.99332682291666,
+        131.51236979166666
+      ],
+      "sd": [
+        45.321819677910014,
+        38.892251343722585,
+        44.27781879918269
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1045
+      ],
+      "dominantFraction": 0.17008463541666666,
+      "pixelHash": "810c8729",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 149,
+      "quality": "light",
+      "material": "celadon",
+      "form": "lotus",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-celadon-lotus",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        106.47347005208333,
+        131.39371744791666,
+        130.53971354166666
+      ],
+      "sd": [
+        45.08580447227114,
+        38.93460019108916,
+        44.424148086950176
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1034
+      ],
+      "dominantFraction": 0.16829427083333334,
+      "pixelHash": "74c22b47",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 189,
+      "quality": "light",
+      "material": "celadon",
+      "form": "iris",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-celadon-iris",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        107.33089192708333,
+        132.31168619791666,
+        131.31184895833334
+      ],
+      "sd": [
+        45.294357533082135,
+        39.6556346011545,
+        44.81880929803747
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1032
+      ],
+      "dominantFraction": 0.16796875,
+      "pixelHash": "4fd1f1fd",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 229,
+      "quality": "light",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-celadon-dahlia",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        54.852376302083336,
+        69.73893229166667,
+        83.10807291666667
+      ],
+      "sd": [
+        23.951621926727558,
+        24.475850553521752,
+        29.706765239147945
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "4,5,7",
+        1030
+      ],
+      "dominantFraction": 0.16764322916666666,
+      "pixelHash": "da7118c0",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 289,
+      "quality": "light",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-celadon-scatter",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        102.53727213541667,
+        130.01171875,
+        131.1318359375
+      ],
+      "sd": [
+        43.34536366085867,
+        37.09062828290859,
+        42.71941144347908
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1040
+      ],
+      "dominantFraction": 0.16927083333333334,
+      "pixelHash": "fdd396fc",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 54,
+      "quality": "light",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-celadon-reload",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        103.62386067708333,
+        130.67903645833334,
+        131.63199869791666
+      ],
+      "sd": [
+        43.211661381691954,
+        37.08507660615095,
+        42.682152066052
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1072
+      ],
+      "dominantFraction": 0.17447916666666666,
+      "pixelHash": "bbe5b7b5",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 115,
+      "quality": "light",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-fullscreen",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 390,
+      "height": 844,
+      "samplePixels": 6144,
+      "mean": [
+        114.88720703125,
+        142.85791015625,
+        144.98811848958334
+      ],
+      "sd": [
+        41.667881820443554,
+        37.051486549508176,
+        40.41854618559148
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        892
+      ],
+      "dominantFraction": 0.14518229166666666,
+      "pixelHash": "81cc35cc",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 137,
+      "quality": "light",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-portrait",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 844,
+      "height": 390,
+      "samplePixels": 6144,
+      "mean": [
+        99.05305989583333,
+        131.27034505208334,
+        136.64388020833334
+      ],
+      "sd": [
+        40.289404524503965,
+        33.497794054557716,
+        39.388222833288815
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1142
+      ],
+      "dominantFraction": 0.18587239583333334,
+      "pixelHash": "5850a5bc",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 151,
+      "quality": "light",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "light-landscape",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        118.7392578125,
+        140.57047526041666,
+        142.98665364583334
+      ],
+      "sd": [
+        36.80637658425042,
+        32.241619864188586,
+        39.992554860507
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1062
+      ],
+      "dominantFraction": 0.1728515625,
+      "pixelHash": "f8ff3732",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 201,
+      "quality": "balanced",
+      "material": "silver",
+      "form": "lily",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-silver-lily",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        122.66715494791667,
+        143.46533203125,
+        146.13606770833334
+      ],
+      "sd": [
+        38.173727253866005,
+        33.323014228887075,
+        40.732950020218034
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1046
+      ],
+      "dominantFraction": 0.17024739583333334,
+      "pixelHash": "5a3ffec1",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 242,
+      "quality": "balanced",
+      "material": "silver",
+      "form": "lotus",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-silver-lotus",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        119.43733723958333,
+        140.59130859375,
+        142.50374348958334
+      ],
+      "sd": [
+        36.67514226772168,
+        32.531802288476726,
+        40.469465714994506
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1019
+      ],
+      "dominantFraction": 0.16585286458333334,
+      "pixelHash": "8d9b7d7a",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 287,
+      "quality": "balanced",
+      "material": "silver",
+      "form": "iris",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-silver-iris",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        119.54752604166667,
+        140.70052083333334,
+        142.90445963541666
+      ],
+      "sd": [
+        36.958468655206254,
+        32.899450662517125,
+        41.08493433206373
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1028
+      ],
+      "dominantFraction": 0.16731770833333334,
+      "pixelHash": "345108c6",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 328,
+      "quality": "balanced",
+      "material": "silver",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-silver-dahlia",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        62.394368489583336,
+        74.12418619791667,
+        89.6181640625
+      ],
+      "sd": [
+        26.601342449376634,
+        23.307571271359368,
+        32.54551653652671
+      ],
+      "pink": 0.014485677083333334,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "4,5,7",
+        1036
+      ],
+      "dominantFraction": 0.16861979166666666,
+      "pixelHash": "1207c763",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 389,
+      "quality": "balanced",
+      "material": "silver",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-silver-scatter",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        115.84342447916667,
+        140.25602213541666,
+        144.62386067708334
+      ],
+      "sd": [
+        34.67561586574599,
+        30.071800680301184,
+        37.587951855328626
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1063
+      ],
+      "dominantFraction": 0.17301432291666666,
+      "pixelHash": "7e45d90b",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 45,
+      "quality": "balanced",
+      "material": "silver",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-silver-reload",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        115.25048828125,
+        137.6298828125,
+        140.35970052083334
+      ],
+      "sd": [
+        34.54929651578365,
+        30.86655468566826,
+        39.714555783190406
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1066
+      ],
+      "dominantFraction": 0.17350260416666666,
+      "pixelHash": "b40ed4d6",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 121,
+      "quality": "balanced",
+      "material": "crystal",
+      "form": "lily",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-crystal-lily",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        116.73486328125,
+        138.650390625,
+        141.54378255208334
+      ],
+      "sd": [
+        34.729570706051355,
+        30.88435312705416,
+        39.55680626175218
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1048
+      ],
+      "dominantFraction": 0.17057291666666666,
+      "pixelHash": "3c61d289",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 156,
+      "quality": "balanced",
+      "material": "crystal",
+      "form": "lotus",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-crystal-lotus",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        115.12125651041667,
+        137.0771484375,
+        139.5107421875
+      ],
+      "sd": [
+        34.05650430770551,
+        30.609582193766112,
+        39.62692903061093
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1065
+      ],
+      "dominantFraction": 0.17333984375,
+      "pixelHash": "dc924298",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 194,
+      "quality": "balanced",
+      "material": "crystal",
+      "form": "iris",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-crystal-iris",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        116.27669270833333,
+        137.92220052083334,
+        140.68831380208334
+      ],
+      "sd": [
+        34.524998544221376,
+        30.957639730084534,
+        40.21114544003245
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1043
+      ],
+      "dominantFraction": 0.16975911458333334,
+      "pixelHash": "59e3fe64",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 229,
+      "quality": "balanced",
+      "material": "crystal",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-crystal-dahlia",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        56.362955729166664,
+        69.12646484375,
+        85.123046875
+      ],
+      "sd": [
+        22.43840167903005,
+        23.71359166850054,
+        32.077986677131385
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "4,5,6",
+        806
+      ],
+      "dominantFraction": 0.13118489583333334,
+      "pixelHash": "c01b70d4",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 273,
+      "quality": "balanced",
+      "material": "crystal",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-crystal-scatter",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        113.53173828125,
+        138.27945963541666,
+        143.04280598958334
+      ],
+      "sd": [
+        33.1053838612116,
+        28.926195730645166,
+        37.08891374947509
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1048
+      ],
+      "dominantFraction": 0.17057291666666666,
+      "pixelHash": "08e6a1c4",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 36,
+      "quality": "balanced",
+      "material": "crystal",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-crystal-reload",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        117.87093098958333,
+        138.6845703125,
+        140.18147786458334
+      ],
+      "sd": [
+        39.070263079175305,
+        33.043701081984985,
+        41.17964061841419
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1060
+      ],
+      "dominantFraction": 0.17252604166666666,
+      "pixelHash": "9fa62f07",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 117,
+      "quality": "balanced",
+      "material": "lily",
+      "form": "lily",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-lily-lily",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        116.99007161458333,
+        137.96044921875,
+        139.013671875
+      ],
+      "sd": [
+        38.334470645991885,
+        32.21560612783221,
+        40.68739769644898
+      ],
+      "pink": 0.00048828125,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1040
+      ],
+      "dominantFraction": 0.16927083333333334,
+      "pixelHash": "6348dae1",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 176,
+      "quality": "balanced",
+      "material": "lily",
+      "form": "lotus",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-lily-lotus",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        119.24739583333333,
+        139.45638020833334,
+        140.54264322916666
+      ],
+      "sd": [
+        39.13524051938332,
+        33.11385993371361,
+        41.28722836211998
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1047
+      ],
+      "dominantFraction": 0.17041015625,
+      "pixelHash": "c1a5c275",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 233,
+      "quality": "balanced",
+      "material": "lily",
+      "form": "iris",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-lily-iris",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        117.71516927083333,
+        137.74007161458334,
+        138.83154296875
+      ],
+      "sd": [
+        38.74604639236184,
+        32.02914092235436,
+        40.79594771657112
+      ],
+      "pink": 0.00048828125,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1017
+      ],
+      "dominantFraction": 0.16552734375,
+      "pixelHash": "93800cf1",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 289,
+      "quality": "balanced",
+      "material": "lily",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-lily-dahlia",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        55.29833984375,
+        64.00423177083333,
+        79.90201822916667
+      ],
+      "sd": [
+        29.042253652977436,
+        23.353676109368365,
+        29.721523855646257
+      ],
+      "pink": 0.009928385416666666,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "3,4,6",
+        1510
+      ],
+      "dominantFraction": 0.24576822916666666,
+      "pixelHash": "7d59cf60",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 366,
+      "quality": "balanced",
+      "material": "lily",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-lily-scatter",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        114.84163411458333,
+        138.4140625,
+        142.07291666666666
+      ],
+      "sd": [
+        35.82587944062581,
+        29.6602907794427,
+        37.67152035929209
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1052
+      ],
+      "dominantFraction": 0.17122395833333334,
+      "pixelHash": "d3a612c0",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 53,
+      "quality": "balanced",
+      "material": "lily",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-lily-reload",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        117.79654947916667,
+        137.59212239583334,
+        137.14518229166666
+      ],
+      "sd": [
+        38.76419365146232,
+        31.005071038958278,
+        38.97347876572207
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1060
+      ],
+      "dominantFraction": 0.17252604166666666,
+      "pixelHash": "5e169eb5",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 138,
+      "quality": "balanced",
+      "material": "amber",
+      "form": "lily",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-amber-lily",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        119.98404947916667,
+        138.30973307291666,
+        137.05598958333334
+      ],
+      "sd": [
+        39.58197592967726,
+        31.065495899399792,
+        39.06742206402996
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1035
+      ],
+      "dominantFraction": 0.16845703125,
+      "pixelHash": "a8615d8c",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 189,
+      "quality": "balanced",
+      "material": "amber",
+      "form": "lotus",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-amber-lotus",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        119.31005859375,
+        137.60042317708334,
+        135.82926432291666
+      ],
+      "sd": [
+        39.35457542850673,
+        31.073428343838515,
+        39.411771640714434
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1030
+      ],
+      "dominantFraction": 0.16764322916666666,
+      "pixelHash": "5708541a",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 244,
+      "quality": "balanced",
+      "material": "amber",
+      "form": "iris",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-amber-iris",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        120.62516276041667,
+        137.587890625,
+        134.80078125
+      ],
+      "sd": [
+        40.94696485256961,
+        30.94133640739419,
+        39.47969743813035
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1028
+      ],
+      "dominantFraction": 0.16731770833333334,
+      "pixelHash": "c3009898",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 297,
+      "quality": "balanced",
+      "material": "amber",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-amber-dahlia",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        59.212239583333336,
+        68.27766927083333,
+        80.40152994791667
+      ],
+      "sd": [
+        29.459793507863097,
+        22.665853913545867,
+        28.34850550886839
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "4,5,6",
+        752
+      ],
+      "dominantFraction": 0.12239583333333333,
+      "pixelHash": "6a9a587a",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 359,
+      "quality": "balanced",
+      "material": "amber",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-amber-scatter",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        116.5693359375,
+        138.12646484375,
+        139.36018880208334
+      ],
+      "sd": [
+        37.23390063625178,
+        29.0334272618714,
+        37.30676756238652
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1050
+      ],
+      "dominantFraction": 0.1708984375,
+      "pixelHash": "1e561e0f",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 33,
+      "quality": "balanced",
+      "material": "amber",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-amber-reload",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        116.12060546875,
+        139.35856119791666,
+        140.78385416666666
+      ],
+      "sd": [
+        36.41856379590392,
+        33.360691303267906,
+        40.499941643985544
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1061
+      ],
+      "dominantFraction": 0.17268880208333334,
+      "pixelHash": "ee2673a3",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 118,
+      "quality": "balanced",
+      "material": "celadon",
+      "form": "lily",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-celadon-lily",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        117.58837890625,
+        140.67171223958334,
+        141.68994140625
+      ],
+      "sd": [
+        36.37508951309393,
+        33.46428746798751,
+        40.39014312732159
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1041
+      ],
+      "dominantFraction": 0.16943359375,
+      "pixelHash": "e74b87fa",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 165,
+      "quality": "balanced",
+      "material": "celadon",
+      "form": "lotus",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-celadon-lotus",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        117.16796875,
+        140.14925130208334,
+        140.9091796875
+      ],
+      "sd": [
+        36.52430932838689,
+        33.718566903069,
+        40.725367447748944
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1034
+      ],
+      "dominantFraction": 0.16829427083333334,
+      "pixelHash": "f01d1792",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 220,
+      "quality": "balanced",
+      "material": "celadon",
+      "form": "iris",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-celadon-iris",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        117.62760416666667,
+        140.68733723958334,
+        141.25374348958334
+      ],
+      "sd": [
+        36.492351595767936,
+        34.43118130277404,
+        41.13054320445541
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1027
+      ],
+      "dominantFraction": 0.16715494791666666,
+      "pixelHash": "b8c024f7",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 269,
+      "quality": "balanced",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-celadon-dahlia",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        46.648111979166664,
+        58.280436197916664,
+        74.59440104166667
+      ],
+      "sd": [
+        18.96441302226693,
+        23.48665611991516,
+        28.091018960796546
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "3,4,5",
+        932
+      ],
+      "dominantFraction": 0.15169270833333334,
+      "pixelHash": "0979a1d6",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 324,
+      "quality": "balanced",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-celadon-scatter",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        114.48518880208333,
+        140.2177734375,
+        143.49169921875
+      ],
+      "sd": [
+        34.34657122781812,
+        31.005891942445185,
+        37.62479576845385
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1055
+      ],
+      "dominantFraction": 0.17171223958333334,
+      "pixelHash": "43152f45",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 36,
+      "quality": "balanced",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-celadon-reload",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        114.82307942708333,
+        140.48909505208334,
+        143.78255208333334
+      ],
+      "sd": [
+        34.48630343907751,
+        31.152303717629632,
+        37.626378819522394
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1078
+      ],
+      "dominantFraction": 0.17545572916666666,
+      "pixelHash": "c956fc8b",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 123,
+      "quality": "balanced",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-fullscreen",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 390,
+      "height": 844,
+      "samplePixels": 6144,
+      "mean": [
+        123.78304036458333,
+        151.15836588541666,
+        154.64957682291666
+      ],
+      "sd": [
+        33.82602787188465,
+        30.44869775517378,
+        32.94586127591065
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        905
+      ],
+      "dominantFraction": 0.14729817708333334,
+      "pixelHash": "e0f5aca8",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 164,
+      "quality": "balanced",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-portrait",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 844,
+      "height": 390,
+      "samplePixels": 6144,
+      "mean": [
+        110.08333333333333,
+        139.673828125,
+        146.64420572916666
+      ],
+      "sd": [
+        31.177398302785893,
+        27.745243913590432,
+        34.35662442976139
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1142
+      ],
+      "dominantFraction": 0.18587239583333334,
+      "pixelHash": "4963375d",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 188,
+      "quality": "balanced",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "balanced-landscape",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        118.56233723958333,
+        140.50618489583334,
+        143.08740234375
+      ],
+      "sd": [
+        36.55845803164976,
+        32.143598106731304,
+        39.887814818394816
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1057
+      ],
+      "dominantFraction": 0.17203776041666666,
+      "pixelHash": "a86d225d",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 245,
+      "quality": "delicate",
+      "material": "silver",
+      "form": "lily",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-silver-lily",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        122.98111979166667,
+        143.77620442708334,
+        146.46907552083334
+      ],
+      "sd": [
+        37.83965065598387,
+        32.99232293387038,
+        40.42183196498832
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1041
+      ],
+      "dominantFraction": 0.16943359375,
+      "pixelHash": "03726d34",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 296,
+      "quality": "delicate",
+      "material": "silver",
+      "form": "lotus",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-silver-lotus",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        119.76383463541667,
+        140.90250651041666,
+        142.78629557291666
+      ],
+      "sd": [
+        36.583968777232,
+        32.46689169319121,
+        40.51896901389642
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1017
+      ],
+      "dominantFraction": 0.16552734375,
+      "pixelHash": "85eb1a3a",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 349,
+      "quality": "delicate",
+      "material": "silver",
+      "form": "iris",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-silver-iris",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        119.72721354166667,
+        140.95654296875,
+        143.0986328125
+      ],
+      "sd": [
+        36.87369085312023,
+        32.7516136414964,
+        40.94603168991631
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1034
+      ],
+      "dominantFraction": 0.16829427083333334,
+      "pixelHash": "3c7385b6",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 408,
+      "quality": "delicate",
+      "material": "silver",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-silver-dahlia",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        50.37451171875,
+        58.85009765625,
+        77.70768229166667
+      ],
+      "sd": [
+        22.917428663474343,
+        19.601743368624682,
+        29.781875751437493
+      ],
+      "pink": 0.015625,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "3,4,6",
+        1206
+      ],
+      "dominantFraction": 0.1962890625,
+      "pixelHash": "dfae12b1",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 486,
+      "quality": "delicate",
+      "material": "silver",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-silver-scatter",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        116.13069661458333,
+        140.52490234375,
+        144.83414713541666
+      ],
+      "sd": [
+        34.77751564123275,
+        30.05188706773017,
+        37.504014533227775
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1062
+      ],
+      "dominantFraction": 0.1728515625,
+      "pixelHash": "193a52be",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 40,
+      "quality": "delicate",
+      "material": "silver",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-silver-reload",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        115.12369791666667,
+        137.580078125,
+        140.30208333333334
+      ],
+      "sd": [
+        34.37069099314479,
+        30.619723720554116,
+        39.55316284410412
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1067
+      ],
+      "dominantFraction": 0.17366536458333334,
+      "pixelHash": "0515139b",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 128,
+      "quality": "delicate",
+      "material": "crystal",
+      "form": "lily",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-crystal-lily",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        116.95182291666667,
+        138.87727864583334,
+        141.662109375
+      ],
+      "sd": [
+        34.77985953809294,
+        30.73371824015214,
+        39.45313951951567
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1050
+      ],
+      "dominantFraction": 0.1708984375,
+      "pixelHash": "a8843569",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 184,
+      "quality": "delicate",
+      "material": "crystal",
+      "form": "lotus",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-crystal-lotus",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        115.37744140625,
+        137.38802083333334,
+        139.81477864583334
+      ],
+      "sd": [
+        34.0665606175288,
+        30.385069271347117,
+        39.367813535032944
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1063
+      ],
+      "dominantFraction": 0.17301432291666666,
+      "pixelHash": "7b2bbab6",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 229,
+      "quality": "delicate",
+      "material": "crystal",
+      "form": "iris",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-crystal-iris",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        116.5185546875,
+        138.14453125,
+        140.8505859375
+      ],
+      "sd": [
+        34.37771742281238,
+        30.747024268094197,
+        40.011710602444374
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1041
+      ],
+      "dominantFraction": 0.16943359375,
+      "pixelHash": "cdcc17c7",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 270,
+      "quality": "delicate",
+      "material": "crystal",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-crystal-dahlia",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        43.996907552083336,
+        53.276204427083336,
+        72.30924479166667
+      ],
+      "sd": [
+        19.516256500172254,
+        21.86268359032599,
+        30.20346162646471
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "2,3,5",
+        1125
+      ],
+      "dominantFraction": 0.18310546875,
+      "pixelHash": "68d25a59",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 324,
+      "quality": "delicate",
+      "material": "crystal",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-crystal-scatter",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        112.79085286458333,
+        137.82210286458334,
+        142.65543619791666
+      ],
+      "sd": [
+        33.630218204557714,
+        29.377694242664084,
+        37.466477113503906
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1041
+      ],
+      "dominantFraction": 0.16943359375,
+      "pixelHash": "7013def6",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 11,
+      "quality": "delicate",
+      "material": "crystal",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-crystal-reload",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        117.87890625,
+        138.8447265625,
+        140.484375
+      ],
+      "sd": [
+        38.99465755811359,
+        32.904686644617044,
+        40.93141752682415
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1066
+      ],
+      "dominantFraction": 0.17350260416666666,
+      "pixelHash": "c4ab8819",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 74,
+      "quality": "delicate",
+      "material": "lily",
+      "form": "lily",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-lily-lily",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        117.01643880208333,
+        137.9609375,
+        138.9521484375
+      ],
+      "sd": [
+        38.195966523600845,
+        32.10982391464372,
+        40.67598149577505
+      ],
+      "pink": 0.00048828125,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1044
+      ],
+      "dominantFraction": 0.169921875,
+      "pixelHash": "474d5a0a",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 113,
+      "quality": "delicate",
+      "material": "lily",
+      "form": "lotus",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-lily-lotus",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        119.64420572916667,
+        139.75862630208334,
+        140.80208333333334
+      ],
+      "sd": [
+        39.051615637183836,
+        32.9123259338104,
+        41.084079449360715
+      ],
+      "pink": 0.00016276041666666666,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1041
+      ],
+      "dominantFraction": 0.16943359375,
+      "pixelHash": "0197a986",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 151,
+      "quality": "delicate",
+      "material": "lily",
+      "form": "iris",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-lily-iris",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        118.02604166666667,
+        138.02001953125,
+        139.09993489583334
+      ],
+      "sd": [
+        38.535933906419444,
+        31.695210214170384,
+        40.416259877625436
+      ],
+      "pink": 0.00048828125,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1020
+      ],
+      "dominantFraction": 0.166015625,
+      "pixelHash": "a0dc3bbc",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 190,
+      "quality": "delicate",
+      "material": "lily",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-lily-dahlia",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        46.225748697916664,
+        52.979329427083336,
+        71.07779947916667
+      ],
+      "sd": [
+        26.755389980229022,
+        21.42385367577844,
+        27.881500351027984
+      ],
+      "pink": 0.009114583333333334,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "2,3,5",
+        1103
+      ],
+      "dominantFraction": 0.17952473958333334,
+      "pixelHash": "4cbc0215",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 235,
+      "quality": "delicate",
+      "material": "lily",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-lily-scatter",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        114.259765625,
+        138.033203125,
+        141.77571614583334
+      ],
+      "sd": [
+        35.9712237919549,
+        29.86004470774152,
+        37.81114179905959
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1042
+      ],
+      "dominantFraction": 0.16959635416666666,
+      "pixelHash": "c355b341",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 13,
+      "quality": "delicate",
+      "material": "lily",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-lily-reload",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        117.79671223958333,
+        137.48551432291666,
+        136.91910807291666
+      ],
+      "sd": [
+        38.90729812340545,
+        31.117894496149606,
+        39.09813124245693
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1069
+      ],
+      "dominantFraction": 0.17399088541666666,
+      "pixelHash": "287a8fcc",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 77,
+      "quality": "delicate",
+      "material": "amber",
+      "form": "lily",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-amber-lily",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        119.90234375,
+        138.18440755208334,
+        136.8701171875
+      ],
+      "sd": [
+        39.45579385826627,
+        31.087206352495745,
+        39.35612633293812
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1044
+      ],
+      "dominantFraction": 0.169921875,
+      "pixelHash": "9d755ebe",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 111,
+      "quality": "delicate",
+      "material": "amber",
+      "form": "lotus",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-amber-lotus",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        119.44091796875,
+        137.74527994791666,
+        135.97835286458334
+      ],
+      "sd": [
+        39.26622407443302,
+        30.99271788187489,
+        39.380671137832465
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1026
+      ],
+      "dominantFraction": 0.1669921875,
+      "pixelHash": "89a39bde",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 147,
+      "quality": "delicate",
+      "material": "amber",
+      "form": "iris",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-amber-iris",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        120.69694010416667,
+        137.703125,
+        135.03531901041666
+      ],
+      "sd": [
+        40.6757049405154,
+        30.69313344634606,
+        39.29312199560193
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1031
+      ],
+      "dominantFraction": 0.16780598958333334,
+      "pixelHash": "9d06926e",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 180,
+      "quality": "delicate",
+      "material": "amber",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-amber-dahlia",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        46.103352864583336,
+        52.346842447916664,
+        68.32145182291667
+      ],
+      "sd": [
+        26.61656682187429,
+        20.287973488869547,
+        25.167447471190368
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "2,3,5",
+        1100
+      ],
+      "dominantFraction": 0.17903645833333334,
+      "pixelHash": "30d53a5c",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 222,
+      "quality": "delicate",
+      "material": "amber",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-amber-scatter",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        114.94694010416667,
+        137.09130859375,
+        138.60791015625
+      ],
+      "sd": [
+        37.29699981317694,
+        29.3763125146683,
+        37.87464000354562
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1027
+      ],
+      "dominantFraction": 0.16715494791666666,
+      "pixelHash": "584aef2f",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 8,
+      "quality": "delicate",
+      "material": "amber",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-amber-reload",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        116.27685546875,
+        139.34716796875,
+        140.669921875
+      ],
+      "sd": [
+        36.65242251625176,
+        33.56937703714342,
+        40.66354061577231
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1058
+      ],
+      "dominantFraction": 0.17220052083333334,
+      "pixelHash": "d80165db",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 70,
+      "quality": "delicate",
+      "material": "celadon",
+      "form": "lily",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-celadon-lily",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        117.4677734375,
+        140.56559244791666,
+        141.57080078125
+      ],
+      "sd": [
+        36.33774316927469,
+        33.51395456754957,
+        40.53340877390781
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1044
+      ],
+      "dominantFraction": 0.169921875,
+      "pixelHash": "0fba0347",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 103,
+      "quality": "delicate",
+      "material": "celadon",
+      "form": "lotus",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-celadon-lotus",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        117.18033854166667,
+        140.1494140625,
+        140.93619791666666
+      ],
+      "sd": [
+        36.40086732583289,
+        33.69008193445702,
+        40.742036921628404
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1033
+      ],
+      "dominantFraction": 0.16813151041666666,
+      "pixelHash": "8247c2c5",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 136,
+      "quality": "delicate",
+      "material": "celadon",
+      "form": "iris",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-celadon-iris",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        117.859375,
+        140.91080729166666,
+        141.43863932291666
+      ],
+      "sd": [
+        36.36180338545805,
+        34.22489271918834,
+        40.91364378649429
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1034
+      ],
+      "dominantFraction": 0.16829427083333334,
+      "pixelHash": "4557c2e2",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 170,
+      "quality": "delicate",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-celadon-dahlia",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        43.0107421875,
+        53.3603515625,
+        70.60139973958333
+      ],
+      "sd": [
+        17.671938508468,
+        22.230739050480764,
+        27.068961014129815
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "2,3,5",
+        1106
+      ],
+      "dominantFraction": 0.18001302083333334,
+      "pixelHash": "cd7249ba",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 208,
+      "quality": "delicate",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "gallery",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-celadon-scatter",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        113.97721354166667,
+        139.85970052083334,
+        143.18815104166666
+      ],
+      "sd": [
+        34.61278743028337,
+        31.14788801885788,
+        37.82982234376108
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1047
+      ],
+      "dominantFraction": 0.17041015625,
+      "pixelHash": "9628680d",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 14,
+      "quality": "delicate",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-celadon-reload",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 1280,
+      "height": 800,
+      "samplePixels": 6144,
+      "mean": [
+        114.75146484375,
+        140.51171875,
+        143.80126953125
+      ],
+      "sd": [
+        34.22958705587451,
+        30.79566909594157,
+        37.3228331197701
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1069
+      ],
+      "dominantFraction": 0.17399088541666666,
+      "pixelHash": "c979f8b1",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 77,
+      "quality": "delicate",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-fullscreen",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 390,
+      "height": 844,
+      "samplePixels": 6144,
+      "mean": [
+        123.8154296875,
+        150.04378255208334,
+        153.25732421875
+      ],
+      "sd": [
+        32.06860803495755,
+        28.990292305043745,
+        34.55957588785671
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        829
+      ],
+      "dominantFraction": 0.13492838541666666,
+      "pixelHash": "2061be83",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 103,
+      "quality": "delicate",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-portrait",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "canvas": true,
+      "width": 844,
+      "height": 390,
+      "samplePixels": 6144,
+      "mean": [
+        111.07991536458333,
+        139.998046875,
+        146.28190104166666
+      ],
+      "sd": [
+        31.87710308001794,
+        27.919381407267437,
+        34.59562190856254
+      ],
+      "pink": 0,
+      "magenta": 0,
+      "opaque": 1,
+      "transparent": 0,
+      "allZero": 0,
+      "alphaMean": 255,
+      "dominant": [
+        "8,10,11",
+        1135
+      ],
+      "dominantFraction": 0.18473307291666666,
+      "pixelHash": "32886b42",
+      "contextLost": false,
+      "glError": 0,
+      "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "loading": false,
+      "failure": false,
+      "failureText": "",
+      "frame": 119,
+      "quality": "delicate",
+      "material": "celadon",
+      "form": "dahlia",
+      "mode": "cover",
+      "errors": [],
+      "style": "./assets/index-Cc26boAi.css",
+      "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+      "entry": "./assets/index-C_HGqS3k.js",
+      "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+      "label": "delicate-landscape",
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    }
+  ],
+  "console": [
+    {
+      "type": "warning",
+      "text": "THREE.WebGLProgram: Program Info Log: (210,91-147): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,41-69): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,92-120): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,41-69): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,92-120): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+    },
+    {
+      "type": "warning",
+      "text": "THREE.WebGLProgram: Program Info Log: (210,91-147): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,41-69): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,92-120): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,41-69): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,92-120): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+    }
+  ],
+  "pageErrors": [],
+  "requests": [],
+  "scope": "Isolated browser; real UI changes; actual opaque, nonflat canvas pixels and WebGL status, not only DOM or JS success. Three qualities, five series, four forms, scatter/reload and fullscreen/portrait/landscape. Screenshots accompany every observation; these samples do not claim continuous visual coverage.",
+  "entry": "./assets/index-C_HGqS3k.js",
+  "entrySha256": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+  "style": "./assets/index-Cc26boAi.css",
+  "styleSha256": "1fd3538d060c6c2a81370ddc2a49f68af5cb1fdbcb1bb965836b7ff77d5a8ba0",
+  "consoleValidation": {
+    "benign": [
+      {
+        "type": "warning",
+        "text": "THREE.WebGLProgram: Program Info Log: (210,91-147): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,41-69): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,92-120): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,41-69): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,92-120): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+      },
+      {
+        "type": "warning",
+        "text": "THREE.WebGLProgram: Program Info Log: (210,91-147): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,41-69): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,92-120): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,41-69): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,92-120): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+      }
+    ],
+    "blocking": []
+  },
+  "invalidObservations": [],
+  "failedRequests": []
+}

@@ -1,0 +1,23 @@
+<!doctype html><html><meta charset="utf-8"><title>v6 Flower laboratory — isolated optical study</title><link rel="icon" href="data:,"><style>html,body{margin:0;background:#d2ced9}canvas{display:block}#label{position:absolute;left:35px;top:30px;color:#302d43;font:16px Georgia,serif;letter-spacing:2px;pointer-events:none}#note{position:absolute;left:35px;bottom:24px;color:#544d62;font:12px sans-serif;pointer-events:none}</style><div id="label"></div><div id="note">ISOLATED RENDER STUDY · Original geometry / shared-source dust · Not gameplay evidence</div><script type="module">
+import * as T from 'three';
+import {RGBELoader} from 'three/addons/loaders/RGBELoader.js';
+import {createBouquet} from '../src/botany.js';
+import {createSurfaceParticles} from '../src/particles.js';
+import {createFlowerCycle} from '../src/flower-cycle.js';
+const renderer=new T.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});renderer.setSize(1200,800);renderer.setPixelRatio(1);renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.1;document.body.append(renderer.domElement);
+const scene=new T.Scene();scene.background=new T.Color('#cbc8d6');
+const hdr=await new RGBELoader().loadAsync('/assets/environment/studio_small_09_1k.hdr');hdr.mapping=T.EquirectangularReflectionMapping;const pmrem=new T.PMREMGenerator(renderer);const environment=pmrem.fromEquirectangular(hdr);hdr.dispose();pmrem.dispose();scene.environment=environment.texture;scene.environmentIntensity=.7;
+const key=new T.DirectionalLight('#fff2e3',2.1);key.position.set(-4,6,7);scene.add(key);const fill=new T.HemisphereLight('#d8edff','#867886',1.1);scene.add(fill);const rim=new T.DirectionalLight('#bba5ff',1.9);rim.position.set(5,3,-5);scene.add(rim);
+const ground=new T.Mesh(new T.CircleGeometry(7,96),new T.MeshStandardMaterial({color:'#b3adbf',metalness:.25,roughness:.27}));ground.rotation.x=-Math.PI/2;ground.position.y=-.02;scene.add(ground);
+const bouquet=createBouquet();scene.add(bouquet.group);const particles=createSurfaceParticles(renderer,bouquet.sampleSurface(65536));scene.add(particles.object);
+const camera=new T.PerspectiveCamera(38,1.5,.1,100);camera.position.set(6,4.2,8);camera.lookAt(0,2,0);
+let time=0,form='lily',series='silver',dust=false,night=false;
+const state={bloom:1,dispersion:0,flow:0,night:false,opacity:0};
+const cycle=createFlowerCycle();
+function render(){renderer.setRenderTarget(null);renderer.render(scene,camera);}
+function step(frames,extra={}){Object.assign(state,extra);for(let i=0;i<frames;i++){time+=1/60;particles.update(1/60,time,state);}render();}
+async function select(f,s,n=false,d=false){form=f;series=s;night=n;dust=d;bouquet.setForm(f);bouquet.setMaterial(s);bouquet.setBloom(1);particles.setSource(bouquet.sampleSurface(65536));bouquet.setOpacity(d?0:1);particles.object.visible=d;scene.background.set(n||d?'#100d20':'#cbc8d6');ground.visible=!d;scene.environmentIntensity=n?.38:.7;key.intensity=n?.5:2.1;fill.intensity=n?.5:1.1;rim.intensity=n?2:1.9;document.getElementById('label').textContent=`${f.toUpperCase()} / ${s.toUpperCase()}${d?' / DUST':''}${n?' / NIGHT':''}`;document.getElementById('label').style.color=n||d?'#ded5ec':'#302d43';document.getElementById('note').style.color=n||d?'#978da8':'#544d62';await renderer.compileAsync(scene,camera);step(120,{bloom:1,dispersion:d?1:0,flow:d?.8:0,night:n||d,opacity:d?1:0,gesture:null,pointer:null});}
+const copyScene=new T.Scene(),copyCamera=new T.Camera(),copyMaterial=new T.ShaderMaterial({uniforms:{source:{value:null}},depthWrite:false,depthTest:false,vertexShader:'varying vec2 vUv;void main(){vUv=uv;gl_Position=vec4(position.xy,0.,1.);}',fragmentShader:'uniform sampler2D source;varying vec2 vUv;void main(){gl_FragColor=texture2D(source,vUv);}'});copyScene.add(new T.Mesh(new T.PlaneGeometry(2,2),copyMaterial));
+function read(which='position'){const side=particles.getStats().simulationWidth;if(!side)throw Error('GPU unavailable');const target=new T.WebGLRenderTarget(side,side,{type:T.FloatType,format:T.RGBAFormat,depthBuffer:false,minFilter:T.NearestFilter,magFilter:T.NearestFilter});copyMaterial.uniforms.source.value=particles.object.material.uniforms[which==='position'?'uPosition':'uVelocity'].value;renderer.setRenderTarget(target);renderer.render(copyScene,copyCamera);const data=new Float32Array(side*side*4);renderer.readRenderTargetPixels(target,0,0,side,side,data);renderer.setRenderTarget(null);target.dispose();return data;}
+window.flowerLab={renderer,scene,camera,bouquet,particles,cycle,select,step,read,state,T,render};await select('lily','silver');window.labReady=true;
+</script></html>

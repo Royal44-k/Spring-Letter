@@ -1,0 +1,48 @@
+/* The original flower experience stays visible beside every journey map. */
+header nav #flower-studio{border-bottom-color:#a0798c75}
+#gallery{padding:10px 13px;border:1px solid #a88e9c55;background:#f7efeb80;text-align:left}
+#gallery small{display:block;margin-top:5px;font-size:9px;letter-spacing:.6px;color:var(--sub)}
+body.focus #context:has(#flower-controls:not([hidden])){width:300px;scrollbar-width:thin;overscroll-behavior:contain}
+body.focus #context:has(#flower-controls:not([hidden])) .context-head{margin-bottom:9px;padding-bottom:8px}
+body #flower-controls #gallery-tabs{position:static;inset:auto;transform:none;display:grid;grid-template-columns:1fr 1fr;gap:4px;margin:0 0 12px;padding:4px;border:1px solid var(--line);background:#eee3ea88;white-space:normal}
+body #flower-controls #gallery-tabs button{padding:9px 5px;min-height:38px;font-size:12px;letter-spacing:1px}
+body #flower-controls #gallery-tabs button.active{background:#80607e;color:#fff9f2}
+body #flower-workbench{margin-top:0;padding-top:0;border-top:0}
+body #flower-workbench>summary{font-size:11px;letter-spacing:1px}
+body #flower-workbench[open]>summary{margin-bottom:7px}
+body #flower-workbench[open]>summary span{font-size:0}
+body #flower-workbench[open]>summary span:after{content:'−';font-size:13px}
+body #flower-controls .flower-forms{margin:5px 0 7px;gap:5px}
+body #flower-controls .flower-forms button{padding:7px 3px;gap:5px;min-height:54px}
+body #flower-controls .flower-forms i{height:22px;width:22px}
+body #flower-controls .material-row{margin-top:4px;margin-bottom:10px;gap:3px}
+body #flower-controls .material-row button{padding:6px 2px;min-height:49px;gap:5px}
+body #flower-controls .material-row i{width:20px;height:20px}
+body #flower-controls .flower-life{margin:8px 0;padding:8px 0;gap:6px}
+body #flower-controls #bloom-hint{font-size:11px;line-height:1.7;margin:7px 0 12px}
+body #flower-controls #flower-practice{font-size:10px;line-height:1.8;color:var(--sub);margin:14px 0 8px}
+#gallery-back{width:100%;min-height:40px;margin-top:9px;border-top:1px solid var(--line);font-size:12px;letter-spacing:1px;text-align:left}
+.atlas-flower-stop{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:0 0 24px;padding:18px 22px;background:linear-gradient(110deg,#f3e7e1,#eee5f0);border:1px solid #b89caf55}
+.atlas-flower-stop small{font-size:10px;letter-spacing:1px;color:#806a7b}
+.atlas-flower-stop h3{font:23px var(--serif);margin:6px 0}
+.atlas-map-sheet .atlas-flower-stop p{font-size:12px;margin:7px 0 0;line-height:1.7}
+.atlas-flower-stop button{flex-shrink:0;border:1px solid #a0819755;padding:12px 16px;font-size:12px;background:#ffffff66}
+@media(max-width:700px){
+ body header{align-items:flex-start;gap:10px}
+ body header nav{justify-content:flex-end;flex-wrap:wrap;column-gap:9px;row-gap:0;max-width:calc(100% - 80px)}
+ body header nav button{min-height:30px;font-size:10px;letter-spacing:0}
+ body.focus #context:has(#flower-controls:not([hidden])){width:auto;left:14px;right:14px;top:auto;bottom:65px;max-height:49dvh;padding:12px 16px}
+ body #flower-controls #gallery-tabs{margin-bottom:8px}
+ body #flower-controls #gallery-tabs button{min-height:34px;padding:7px 5px}
+ .atlas-flower-stop{display:block;padding:16px}
+ .atlas-flower-stop button{margin-top:12px;width:100%;text-align:left}
+}
+@media(min-width:701px) and (max-height:540px){
+ body.focus #context:has(#flower-controls:not([hidden])){width:290px;top:63px;bottom:58px;max-height:calc(100dvh - 121px);padding:10px 14px}
+ body #flower-controls #gallery-tabs{margin-bottom:6px}
+ body #flower-controls #gallery-tabs button{min-height:31px;padding:6px 5px}
+ body #flower-controls .flower-forms button{flex-direction:row;justify-content:center;min-height:36px;padding:5px 2px}
+ body #flower-controls .flower-forms i{width:15px;height:17px}
+ body #flower-controls .flower-forms button b{font-size:11px;letter-spacing:0}
+ body #flower-controls .material-row button{min-height:43px;padding:4px 1px}
+}

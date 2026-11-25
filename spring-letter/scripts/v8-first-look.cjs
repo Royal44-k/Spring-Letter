@@ -1,0 +1,7 @@
+const {chromium}=require('playwright'),fs=require('node:fs'),path=require('node:path'),{harness}=require('./v6-input-helpers.cjs');
+(async()=>{const b=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true}),p=await b.newPage({viewport:{width:1440,height:900}}),errors=[];
+ p.on('pageerror',e=>errors.push(String(e)));p.on('console',m=>{if(m.type()==='error')errors.push(m.text());});const dir=path.resolve(process.env.V8_LOOK_DIR||'evidence/v8/first-look');fs.mkdirSync(dir,{recursive:true});
+ try{await p.goto(process.env.SPRING_URL||'http://127.0.0.1:5193');await p.waitForFunction(()=>window.__SPRING__,null,{timeout:120000});await p.waitForSelector('#loading',{state:'hidden'});await p.screenshot({path:path.join(dir,'cover.png')});await p.locator('#begin').click();await p.locator('#opening-skip').click();await p.waitForTimeout(2500);
+ const h=harness(p,{evidence:dir,prefix:'dev'});await h.capture('arrival');await h.routeTo([[-5,1],[-7.5,2],[-10,2.2],[-12,-1]]);await h.capture('rain-arrival');await h.act();await p.waitForTimeout(3000);await h.capture('rain-board');
+ let snap=await h.snap();fs.writeFileSync(path.join(dir,'snapshot.json'),JSON.stringify({errors,snapshot:snap},null,2));console.log(JSON.stringify({errors,mode:snap.mode,focus:snap.focus,letters:snap.letters,loading:snap.loadingTiming,frame:snap.frameTimes.slice(-100).reduce((a,b)=>a+b,0)/100}));
+ }finally{await b.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,0 +1,153 @@
+# v6 种子接线审查
+
+2026-11-19；针对开发版本源码。审查后仍有根协调的UI、世界景观与主输入修改，因此以下不是最终发行签收。
+
+## 已核实的身份与状态关系
+
+- 两枚种核身份只有0和1。deliveryIntent从未分配的核中拿取；占用花座不发allocate；allocateCore仍负责用途互斥和已寄出后的禁止变更。
+- carry/allocate处理后，main同步delivery.persistCarried到state.deliveryCarried再save。restore仅接收已到终庭、尚未结束、身份合法且对应核未分配的携带值。连续重载不复制核。
+- showCover先保存再清呈现，startGame恢复模型后restoreCarried。回到寄出前恢复checkpoint，再恢复携带身份；目前的偏好设置独立保存并在回溯时保留，不被旧信检查点覆盖。
+- preview-send只打开摘要。取消不调用commitLetter；确认才调用depart/commitLetter，重复提交由规则拒绝。模态打开会clearInput，不留下下一帧误执行的trigger。
+- E键重复事件被忽略，可见按钮用普通click/tap请求一次动作，delivery又只接受trigger上升沿。根的键盘/按钮调用与模块之间不再夹着长按计时。
+
+以上有9项delivery规则测试，包含实际serialize/restore往返；也有开发版本桌面和触屏仿真的普通输入验证，见后文。
+
+## 找到并修正：取消不能冒充松手
+
+审查发现两个送种模型都曾把“没有活动风笔”当成落巢许可。主风廊两指缩放时pointer变null，能在接收圈里误完成；侧庭缩放期间冻结，但两指全部抬起后，inactive又能误完成。pointercancel与系统失焦也不应算玩家选择的落种。
+
+先加入seed-release.test.js：两个取消相关断言失败，一个真实释放断言通过。经根授权修正后，三项均通过；连同model、delivery、wind-flow、exploration的局部回归共50项通过。
+
+- stepWind新增released与cancelled输入；真实released且在1.05接收圈内才开始catching，之后平滑落入，0.7秒完成。没有恢复难以看懂的速度阈值。
+- cancelSeedGuidance(state)清除未完成的catching、hold和速度，保留位置与主动接触历史。
+- 侧庭同样用gesture.released开始0.7范围内的catching；cancelExplorationGuidance返回安全的新slice，清除未完成捕获和速度，保留三门进度。interactive=false也执行取消。
+- 根负责在clearInput和第二触点加入时调用两项取消接口，并清gestureLastActive与gesture.released；多指手势不在结束时补发虚假release。
+
+模型修复已验证；最终隔离构建仍需真实CDP多指操作验证整个DOM事件链。先前通过的送种报告发生在这项修复前，不能代替它的最终浏览器回归。
+
+## 两处种子的关系
+
+主风廊近看时直接按住拖动；侧庭漫游时使用Space＋拖动或开启风笔，保留普通拖动看环境的能力。两者对种子都是朝笔尖牵引、松手承接，普通悬停不施力。差别在明确的近看/漫游控制场景，而不再是力的方向相反。
+
+主风廊有石心阻挡与外部软退；侧庭有三门次序和检查点。两者都要求玩家主动接触，静等不自动通关；再试玩通过可见按钮，不以靠近起点自动重置。
+
+## 开发版本实际输入范围
+
+- 新开档首花破开、写风、自然归形解锁；实走风廊，牵引绕石并松手；再实走侧庭坡道，三门牵引并松手。[报告](../../spring-letter/evidence/v6-seeds-flow.json)
+- 使用v5连续实录实际得到的存档，仅映射origin到5193：继续、回看、回溯、E取回、重载持核、按钮安放、取消摘要、确认尾声。桌面6项通过。[报告](../../spring-letter/evidence/v6-seeds-delivery.json)
+- 390×844 Chromium触屏仿真中重复终庭流程，用真实tap操作按钮、键盘行走。7项通过；非实体手机测试。[报告](../../spring-letter/evidence/v6-pre-b-mobile/v6-seeds-mobile-delivery.json)
+
+三份报告错误数组为空，但不等于最终包、所有设备或外部新玩家已经验证。
+
+## 图像审查残留项
+
+终庭粗柱挡住远航实体；窄屏主HUD/行动框/标签重叠；字幕与导航胶囊重叠；左右用途裁出窄屏；侧庭进行时主线导航抢占注意力。根已安排修正，需在后续隔离构建重拍同位置。[详细图片审查](v6-seeds-play-review.md)
+
+首次破开候选观察到约1秒最大帧间隔，附近存在源码热更新，因此只保留为候选观测，不能认定最终版本必现，也不能删除它假装没有发生。最终启动/首次切场专项应独立测量。
+
+## 隔离候选a的后续复验（2026-11-19 15:53）
+
+在固定5194构建 /assets/index-D6fp8qsb.js 上，新开档主线11项通过：首花破开、写风、自动归形，主风廊真实牵引与释放，两次手绘桥，半笔取消、地图中断、占桥拒绝，双种核实际搬运、占用拒绝、寄信摘要取消，以及三种合法回溯重植的结局。未注入存档或通关状态。首尾入口及JS SHA256一致。
+
+[完整普通输入报告](../../spring-letter/evidence/v6-candidate-a/v6-main-play.json) · [第二段实绘花桥](../../spring-letter/evidence/v6-candidate-a/v6-main-04-second-bridge.png) · [第一枚实际安放](../../spring-letter/evidence/v6-candidate-a/v6-main-05-memory-planted.png)。这一流程累计最大帧间隔651.1毫秒，无一秒以上帧；仅是该路径的实测，不能据此推导全部设备或长时表现。
+
+随后的取消专项使用上述新旅途实际产生的章节存档，普通输入推进主/支种子，真实CDP加入第二触点、全部抬起；也在实际catch过程中按M打开地图并关闭。六项通过：两种取消都不误提交，侧庭三门进度保留，之后新的真实释放仍能正常完成。[取消专项报告](../../spring-letter/evidence/v6-candidate-a/v6-seed-cancellation.json)。这补上了模型修复后的真实事件链验证；没有伪造DOM blur。
+
+新发现需候选b处理：第一枚安放后前一个“种核在手中”字幕仍暂留，需用安放结果替换；当前花座的取回动作不应遮蔽“回入口拿另一枚”的主目标。宽屏触屏仿真1440×900下方向键与侧庭提示仍重叠，必须按coarse输入布局，而不只按窄屏宽度处理。根已收到这些问题，以上候选a通过记录不能替代候选b最终回归。
+
+
+## 隔离候选 b 复验（2026-11-19 16:10）
+
+固定地址 5194，JS /assets/index-BBu2mUNl.js，SHA256 1f73f47808eafa551843640b0f5c31d772cc5ffcb92335d62b0c6f702eb64371；CSS /assets/index-CfleCtPg.css。新档主线 11 项、主支种子取消 6 项、390×844 终庭兼容与取放 9 项通过，三份错误数组为空。
+
+- [主线报告](../../spring-letter/evidence/v6-candidate-b/v6-main-play.json)：新档到三种合法结局，入口 JS 及内容 SHA 首尾一致。该次开头未记录 CSS；结束后的 HTTP 只读确认记录在 styleObservedAfterRun，不能冒称 CSS 首尾已核验。以后脚本已增加 CSS 首尾记录。
+- [取消报告](../../spring-letter/evidence/v6-candidate-b/v6-seed-cancellation.json)：使用本次新档实际赚取的首章存档。主/支种子加入第二指、全抬起不会冒充落种；接住过程打开地图后保持取消，侧庭保留三门检查点。重新牵引并明确松手仍完成。JS 与 CSS 首尾一致。
+- [窄屏报告](../../spring-letter/evidence/v6-candidate-b/v6-seeds-mobile-delivery.json)：来自原生 v5 连续实录存档，仅映射 origin，SHA256 b39fe65a4b19c48394cddfe60461eac155342192bd74ca88b52012c0d9c238e0。触屏 tap 取回、刷新后仍持有同一身份、安放、预览取消、确认结局均成功。JS/CSS 首尾一致。移动使用键盘，反向视角使用真实右键拖动；这是 Chromium 触屏仿真，不是实体手机。
+
+竖屏抵达、180°反向环看、取回、重载携带、种下、寄出台位置的三花座保守包围盒都在视口内；告别镜头也实际留住三个实体。固定框景修复了之前的两侧裁切。第一枚安放后字幕已改为生根结果，导航指向入口的下一枚种核。宽屏 coarse 侧庭说明不再压住方向盘。
+
+仍需精修的可见问题（功能通过不代表视觉通过）：
+
+1. P2：[抵达](../../spring-letter/evidence/v6-candidate-b/v6-seeds-mobile-01-rewound.png)、[反向](../../spring-letter/evidence/v6-candidate-b/v6-seeds-mobile-01b-reverse-view.png)中央启程台与四季的世界标签仍叠字，应在窄屏错开或只显示近处动作。
+2. P2：[种下后](../../spring-letter/evidence/v6-candidate-b/v6-seeds-mobile-04-planted.png)右下动作卡底沿约 y602 与字幕上沿约 y594 重叠约 8px。文案内容已一致，但版面需留实测间距。
+3. P3：竖屏顶部全横排菜单可辨性偏弱，按钮字过小；横屏走到旧日灯时远方用途部分出屏但方向标签保留。后者未纳入本轮“竖屏三用途同时可见”断言。
+
+本次主线累计最长帧间隔 634.3ms、>50ms 20 帧、>100ms 14 帧、>1000ms 0 帧；包括整个流程和截图，不能用作稳定帧率承诺。旧候选 a 与开发版 mobile 证据分别归档到 v6-candidate-a 和 v6-pre-b-mobile，未用新报告覆盖历史结论。
+
+
+## 候选 C 的误报与验收口径修正（2026-11-19 16:18）
+
+JS /assets/index-TAZQttUK.js，CSS /assets/index-B12KydA1.css。终庭功能 9 项和三用途框景完成；新增“整个标签容器矩形不得相交”断言失败三对。原始失败与截图完整保留在 [候选 C mobile 证据](../../spring-letter/evidence/v6-candidate-c-mobile/v6-seeds-mobile-delivery-failure.json)，没有把失败报告改成通过。
+
+复核 [取回](../../spring-letter/evidence/v6-candidate-c-mobile/v6-seeds-mobile-02-carried.png) 和 [恢复携带](../../spring-letter/evidence/v6-candidate-c-mobile/v6-seeds-mobile-03-restored-carry.png) 后，标题和文字底色实际分离；CSS 的 ::after 引线高度 13px，加上 7px margin 使父容器含 20px 尾部空白，标题 b 又是全宽块。外框相交不能直接判定文字遮挡。行动卡与字幕在所有采样阶段均无相交，C 的中央启程台叠字也已经消失。
+
+经根复核同意，后续标准改为：不同标签的标题文本 Range.getBoundingClientRect 与说明 span 实际底色区域，两两交集不得在两个轴上都超过 1px；继续记录父容器供审查。只纳入 computed display/visibility 可见、opacity≥0.15 的元素，避免透明字幕误报。此项只修验收脚本，不修改产品。待候选 D 固定包重新普通输入验证，不能将 C 的外框失败直接标成新的口径通过。
+
+
+## 候选 D 的首花离开边界（2026-11-19 16:30）
+
+固定 JS /assets/index-Dm57NR6t.js、CSS /assets/index-B12KydA1.css，常规新档主线 11 项通过，JS/CSS 首尾一致。但这只覆盖归形前保持近看，不能推出提前离开的路径正确。
+
+独立新档用真实 F 破开、鼠标写风使 ink≥1.2，然后在 drifting 期间 E 离开近看。自然回到 solid 再等 500ms，p1.solved 仍为 false；再 E 进入近看，立即成为 true。 [原始复现报告](../../spring-letter/evidence/v6-candidate-d/v6-flower-leave-before-return.json) 与 [归形后仍未解锁截图](../../spring-letter/evidence/v6-candidate-d/v6-flower-leave-before-return-03-natural-return-outside-focus.png) 保存此断点。没有注入进度或存档，版本首尾一致，无 runtime error。
+
+根确认原因是首花教学结算仅在 focus===flower 更新，已学会风笔后的自然归形不应强迫玩家重新近看。候选 D 的取消/窄屏验收暂缓，待修复后的隔离 E 重跑。D 的常规路径通过并未被用来掩盖此边界缺陷。
+
+
+## 冻结候选 E 的完整回归（2026-11-19 16:45）
+
+JS /assets/index-Cl_BoOsu.js，CSS /assets/index-B12KydA1.css。主线 JS SHA256 dd640cdaf2b7cb8924b64a78fceff80f687d89e1bb4269a1f4782228247a3111。以下四趟均实际首尾核对同版，错误数组为空；浏览器严格串行，运行后全部关闭。
+
+- [首花提前退出修复](../../spring-letter/evidence/v6-candidate-e/v6-flower-leave-fixed.json)：独立新档，F 破开、实际写风到 ink=1.2、drifting 时 E 离开，focus 保持 null；自然 solid 后 solved=true，无需再近看。使用 SPRING_EXPECT_FIXED=1 强制断言，不是仅记录观察。D 的失败保留在归档。
+- [主线 11 项](../../spring-letter/evidence/v6-candidate-e/v6-main-play.json)：新档首花自然归形、风廊绕石释放、两段手绘花桥、未完成/地图中断/占桥拒绝、两核身份和占用拒绝、寄信摘要取消、三种合法回溯重植结局。开场使用可见跳过按钮；完整自动开场留给另一次连续录像。
+- [种子取消 6 项](../../spring-letter/evidence/v6-candidate-e/v6-seed-cancellation.json)：本次主线真实赚取的首章 checkpoint；实际 CDP 多点触控、抬手、地图打断，主/支种子不假判落种，侧庭保留关门进度，重新明确释放均能完成。
+- [窄屏终庭 10 项](../../spring-letter/evidence/v6-candidate-e/v6-seeds-mobile-delivery.json)：390×844，原生 v5 实录存档仅映射 origin。tap 取回/安放、刷新持核身份、预览取消/确认寄出通过。三用途实体保守包围盒在抵达、180°反向、取回、恢复持核、种下与寄出台位置都在屏内。七个采样阶段的实际标签文字/底色区域、行动卡/字幕均无大于 1px 的交叠。
+
+[反向携带截图](../../spring-letter/evidence/v6-candidate-e/v6-seeds-mobile-02-carried.png)、[种下后的版面](../../spring-letter/evidence/v6-candidate-e/v6-seeds-mobile-04-planted.png)、[寄出前的后果摘要](../../spring-letter/evidence/v6-candidate-e/v6-seeds-mobile-05-preview.png) 经过图像复看。行动卡底沿 y564，字幕顶沿约 y593.22，有约 29px 间距。抵达时三处用途各自有清楚名字，走近启程台后才收起用途标签并显示单一启程动作，C 之前的中央叠字没有重现。
+
+范围限制保持不变：窄屏是 Chromium 触屏仿真，行走用键盘、反向视角用普通右键拖动；不是实体手机验收。主线用分段释放方向键，不替代根的持续跟随镜头测试。所有投影与 snapshot 只读，不注入通关状态。
+
+### 启动成本尚需处理
+
+E 主线新 headless Edge 上下文的 loadingTiming 为 totalMs=50,376.5，warmupMs=45,877.2，overlayHiddenMs=51,028。这个约 46 秒的首次预热是明显的可感知成本，功能通过不能覆盖该问题。根已暂停后续 GPU 验收，准备独立量测各系列预热成本；若形成候选 F，E 的通过不能自动代替 F 的最终验收。
+
+主线全程累计最长帧间隔 751ms、>50ms 136 帧、>100ms 10 帧、>1000ms 0 帧。这些覆盖启动、交互、截图和多次结局，**不能解释成稳态帧率**，也不能据此声称连续运行没有卡顿。稳态与长时退化必须独立采样。
+
+### 本轮沉淀
+
+首花的归形属于已经开始的世界过程，不应因关闭近看面板停止任务结算；只有新的笔迹输入需要局部焦点。送种的“明确松手”必须与双指接管、弹窗、系统取消区别。终庭的两枚身份必须跨安放、取回和刷新保持一致。可见区域验收要区分文字与引线的透明容器，保留误报证据后再改判据，避免为了让测试变绿而移动本来没有遮挡的内容。
+
+
+## 最终候选 F 的重复验收（2026-11-19 17:04）
+
+预热目标修正后，未复用 E 的通过结论。F 在固定 5194 的 JS /assets/index-BXu5N06Q.js、CSS /assets/index-B12KydA1.css 上，重新串行完成以下四趟：
+
+| 实际操作范围 | 结果 | 原始记录 |
+| --- | --- | --- |
+| 学会风笔后提前离开近看，等自然归形 | 通过，无需重进 | [首花回归](../../spring-letter/evidence/v6-candidate-f/v6-flower-leave-fixed.json) |
+| 全新存档首花、风廊、双桥、两核与三种结局 | 11/11 | [完整主线](../../spring-letter/evidence/v6-candidate-f/v6-main-play.json) |
+| 主/支种子双指、地图打断及重新释放 | 6/6 | [取消专项](../../spring-letter/evidence/v6-candidate-f/v6-seed-cancellation.json) |
+| 390×844 v5 原生存档继续、取回、刷新持核、安放、取消/确认寄出、三用途框景及可见文字区域 | 10/10 | [窄屏终庭](../../spring-letter/evidence/v6-candidate-f/v6-seeds-mobile-delivery.json) |
+
+四份报告的 JS/CSS 首尾一致，错误数组为空。主线同时核验 JS 内容 SHA256：c7c90ce5475629873afd24e212caee232c1e01ba9022d0cdd50f0baf9c948bac。首花与主线完全新档；取消专项只用该主线真实获得的首章存档；窄屏只用真实 v5 实录存档映射 origin。全部进度靠普通输入，无设置器、注入通关、伪造 DOM blur 或隐藏自动完成。
+
+F 两个新上下文的加载样本为：首花回归 total 15,237.4ms / warmup 12,374.2ms / overlayHidden 15,904.7ms；完整主线 total 15,499.5ms / warmup 12,568.8ms / overlayHidden 16,150.1ms。首花回归归形后 programs=108，完整主线末 programs=109。与 E 的约 46 秒预热成本相比，F 的这两次加载明显缩短。样本仍限本机当前浏览器环境，不是设备普遍承诺。
+
+F 主线累计最长帧间隔 584.2ms、>50ms 13 帧、>100ms 6 帧、>1000ms 0 帧；它包含启动、截图和完整关卡切换，不代表首次破花时延或稳态帧率。首F专项、全系列表现、45分钟长跑由根独立验收。图像复看确认 [风廊完成](../../spring-letter/evidence/v6-candidate-f/v6-main-02-wind-delivered.png) 和 [窄屏安放](../../spring-letter/evidence/v6-candidate-f/v6-seeds-mobile-04-planted.png) 没有新增标签遮挡。
+
+E 的原始报告和图片已在 v6-candidate-e 归档，上一节链接全部指向该归档，不能冒充 F。历史 D 的提前离开缺陷、C 的容器矩形误报及更早候选均保留。此次浏览器全部关闭后已将 GPU 交研究代理做最终支线与雨潮；尚未开始连续录像。
+
+
+## 冻结候选 G 的再次回归（2026-11-19 17:49）
+
+G 仅修改 AO normal pass 的阴影更新处理后，仍重新实际执行四趟，没有复用 F 结论：
+
+- [提前离开首花](../../spring-letter/evidence/v6-flower-leave-fixed.json)：SPRING_EXPECT_FIXED=1 通过，已学会笔迹后退出，归形完成仍解锁。
+- [新档完整主线](../../spring-letter/evidence/v6-main-play.json)：11/11，包含实际双桥、两枚种核身份、取消寄出与三种合法重植结局。
+- [主/支取消专项](../../spring-letter/evidence/v6-seed-cancellation.json)：6/6，双指与地图取消不误提交，新释放仍可完成，侧庭保留三门进度。
+- [窄屏终庭](../../spring-letter/evidence/v6-seeds-mobile-delivery.json)：10/10，旧原生存档继续、取回、刷新、安放、预览取消/确认均成功；三用途实体保持可见，跨标签文字和底色、可见行动卡和字幕无超过 1px 的相交。
+
+四份记录都实际读取到 JS /assets/index-BAJMaxNn.js、CSS /assets/index-B12KydA1.css 并核对首尾一致，错误数组为空。主线 JS 内容 SHA256=2f1312b822af74a328c5dfb230bb4563db48878406892113c48a0d56c6ea1636。[终庭安放原图](../../spring-letter/evidence/v6-main-05-memory-planted.png) 经复看，人物、花座与地面阴影存在，下一枚入口提示清楚；这只证明该场景的实际呈现，不能用作 FPS 提升结论。
+
+两个新上下文的加载记录：首花 total 16,820.9ms / warmup 13,922.4ms；主线 total 17,873ms / warmup 14,449.4ms / overlayHidden 18,525.9ms。完整主线末 programs=109；累计 longest=317.1ms、>50ms=6、>100ms=2、>1000ms=0。它们仍仅是具体运行样本，不作稳态、首次破花或“FPS 翻倍”的推断。
+
+F 的报告与图片已归档 v6-candidate-f，上一节所有链接都已指向归档。F 两次长跑分别因样本数量不足失败、或为研究问题主动中断，未记成通过；当前 G 的 45 分钟长跑由根随后独立完成，此处不预先宣称结果。四趟浏览器均关闭后已把 GPU 交研究代理接 G 的支线与雨潮验证，连续录像仍待根通知。

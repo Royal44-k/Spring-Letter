@@ -1,0 +1,361 @@
+{
+  "date": "2026-11-19T09:40:03.829Z",
+  "label": "candidate-g",
+  "root": "D:\\AI Game\\spring-letter",
+  "outDir": ".qa-v6/candidate-g",
+  "entry": "/assets/index-BAJMaxNn.js",
+  "sources": [
+    {
+      "path": "index.html",
+      "sha256": "b060f5140c26aba9a07a26408f04b40feafb7568721abc7010008dd0c7440814"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "1add2c0d19562a1a5337bbb04ef389a1d4499d6e7649d47c2e6408313aa71adc"
+    },
+    {
+      "path": "package.json",
+      "sha256": "f35e153cb94bb7574ada82a3972eaa662762dd5796c146a52b13e704188f8665"
+    },
+    {
+      "path": "public/ASSET_SOURCES.md",
+      "sha256": "970369dcf8d3043a548c7ff6ce526153eae54dd25cfdba197e5aeeac5fed9272"
+    },
+    {
+      "path": "public/THIRD_PARTY_LICENSES.txt",
+      "sha256": "dd2fd5735732d940cd29da43d570f38752f71fb12393041c40687504699882ad"
+    },
+    {
+      "path": "public/assets/environment/README.source.md",
+      "sha256": "fbb8c5f29f0b45f3332af2b75c1f2e5ed509815beee8ed5612b32e58904801c0"
+    },
+    {
+      "path": "public/assets/environment/spruit_sunrise.files.json",
+      "sha256": "d21442fd0d3cc612e3709d42110bcb095dd84941cc3903310fedd004d5d6e4c7"
+    },
+    {
+      "path": "public/assets/environment/spruit_sunrise.info.json",
+      "sha256": "c0c8a86d401e2dd48dfcb46a9d84ff28b31cbd2c7620e2c29cea5a706acd668d"
+    },
+    {
+      "path": "public/assets/environment/spruit_sunrise_1k.hdr",
+      "sha256": "38199a31e945906f6778431e989256a92d9d78b0cfc0f902accad9f5244bf50f"
+    },
+    {
+      "path": "public/assets/environment/studio_small_09_1k.hdr",
+      "sha256": "e7cfda5f4e98e623db12b8bfd0184e048488e4855d9c83e2751fb44a32e80c45"
+    },
+    {
+      "path": "public/assets/environment/studio_small_09_1k.source.json",
+      "sha256": "daf86567bbecc95e860f30a2f59ff94b5bbc06cf6b54f28eea5837d111743a19"
+    },
+    {
+      "path": "public/assets/surfaces/CC0-1.0.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "public/assets/surfaces/README.md",
+      "sha256": "f0f54f3176a6b2bf0a7d9f724727c04e431af90d506ad5a8ffb8bb44891d2ef5"
+    },
+    {
+      "path": "public/assets/surfaces/mossy-rock-normal.jpg",
+      "sha256": "232cdd6a9fdfd01bb8bb1f8f604c53dbca79fa0d3d7995edf85c9945757aa8df"
+    },
+    {
+      "path": "public/assets/surfaces/mossy-rock-roughness.jpg",
+      "sha256": "0a18bdeb08444b730170b0477f13940ce6cd4d82d06137df661f96d1e2a6a66e"
+    },
+    {
+      "path": "public/assets/surfaces/mossy_rock.files.json",
+      "sha256": "1e37d8f79fe2f8d43ef3a20814f0baad2fb93e48835617a4346d7ee37764ad41"
+    },
+    {
+      "path": "public/assets/surfaces/mossy_rock.info.json",
+      "sha256": "68e4fff2c970a0c77195fbcea29866ea91063a28bd905bb389318e1df92cd233"
+    },
+    {
+      "path": "public/assets/surfaces/source.json",
+      "sha256": "3e56bf2ba40f29247cb5950a5b6470bf015b3bf1d8048d12b71d836ebf859830"
+    },
+    {
+      "path": "public/assets/surfaces/white-plaster-02-normal.jpg",
+      "sha256": "eb572ca3630d5bfde72e2601b1f02412da23ca005cd19384dced8690be4cb783"
+    },
+    {
+      "path": "public/assets/surfaces/white-plaster-02-roughness.jpg",
+      "sha256": "4ff1fe957cd161b07f721fe6c28a9459c8c2e8ec65627a26c16e483a07c80d85"
+    },
+    {
+      "path": "public/assets/v5-source-hashes.json",
+      "sha256": "1b82cf8aead9b342c5542c6179b39483ee69b83461818dd70507721568d12294"
+    },
+    {
+      "path": "public/assets/v5-source-record.json",
+      "sha256": "2ccb94ccb7067334cc6d1dcf4b9ff35c0c6e3af68a11abb0fe90e364018c15e1"
+    },
+    {
+      "path": "src/atmosphere.js",
+      "sha256": "16bf7e880677acf75eae927e9f3a6b73b9cb091b018c7c244d307f34071b0025"
+    },
+    {
+      "path": "src/audio.js",
+      "sha256": "78a096c8827fb9325afa44b66f0e777f16071e81f034a8b90f6986949839be6c"
+    },
+    {
+      "path": "src/botany.js",
+      "sha256": "1df587fbab25d805bcd43001f3a19ae78d223a32ae0cc989c47aee3b6e6b5b17"
+    },
+    {
+      "path": "src/bridge-weaver.js",
+      "sha256": "0c1954e8a4a42d5881471575ff8bfe98b7f3650f9bf44d11584272eb9b0b13bd"
+    },
+    {
+      "path": "src/camera-occlusion.js",
+      "sha256": "a5f563de686fcc3b53ddf4bd21f64dfb9dc9091b88976899232261c83eaae8e9"
+    },
+    {
+      "path": "src/cinematic.js",
+      "sha256": "fb0f4384ffccf12a701cefd36a0f54dcc7be17fdb7d278b20be596328abf5b19"
+    },
+    {
+      "path": "src/courier.js",
+      "sha256": "baa2601e5567b48d6de4a61729826397d230b56a6c39109dc655d91a05924218"
+    },
+    {
+      "path": "src/delivery.js",
+      "sha256": "a0897b939e426096f36c5ac4db8a0ed05d4957e9e5a655b6fd9ba5c406c1ec38"
+    },
+    {
+      "path": "src/depth-pass.js",
+      "sha256": "e6ee93367c3170eaf04b1c6951430ac5cba51234f7e021f9c8b1be82f1f3ebc2"
+    },
+    {
+      "path": "src/experience-v6.css",
+      "sha256": "edd6fba3f4ccaddbb2ffa867ff69f808617df28abf4f93adf6078f60c8cfb476"
+    },
+    {
+      "path": "src/exploration-model.js",
+      "sha256": "069aadf0c9c6a4e8f387c0a6a624c147568e3174b0714a8e32d36973f5e0418d"
+    },
+    {
+      "path": "src/exploration.js",
+      "sha256": "a9be668ea45926422a1a4ea5f703d61e4d8431c5cab4a2af583b4d381cd987f8"
+    },
+    {
+      "path": "src/flower-cycle.js",
+      "sha256": "629312bbca644ed2e7e8332b5b1a137ab995576b0f124eb086409385adfc76e8"
+    },
+    {
+      "path": "src/flower-lesson.js",
+      "sha256": "123a6acb27ea2fcade56e0de2d42e4a64f446c8717538b1105394ac33f0683c0"
+    },
+    {
+      "path": "src/flower-presets.js",
+      "sha256": "c327c88fd12e3e2704599699817c842196ae2b32228e31d9332e8a1bf699e79e"
+    },
+    {
+      "path": "src/fullscreen.js",
+      "sha256": "acb54f396111976b0391231ede31f5a8a86724b78e8563a20154a2718fedfc74"
+    },
+    {
+      "path": "src/game-model.js",
+      "sha256": "c37e1931a7de699f96b08c07dd73ec528f1ecaa84deed4e78655818b287d5352"
+    },
+    {
+      "path": "src/gesture-field.js",
+      "sha256": "497955b817c2fa0787851b49c04372ce1813d89b2b098f36860ce6c50a936220"
+    },
+    {
+      "path": "src/hero-weather.js",
+      "sha256": "4e9f48159491503a13183cd68460cc7386ede9ee4e80db8a23e840a6a5392f2d"
+    },
+    {
+      "path": "src/journey-guide.js",
+      "sha256": "3d101867285bc3d68a5bfaa364e9ecc2eac14885206e41d46b309ffdbc59d0b3"
+    },
+    {
+      "path": "src/landscape.js",
+      "sha256": "20c54fa3ab79ec43259e38dc578730f4a0eaf3d473fd83c66fbab437940b96ad"
+    },
+    {
+      "path": "src/layout.js",
+      "sha256": "1caf9d37009202ed47265668f46b2a6a8f7f39a58682f72a2951878070cd536a"
+    },
+    {
+      "path": "src/loading-scene.css",
+      "sha256": "fd5becbd25fd2575dbd279643ed7200d55899c33b601ecde9566015f4db45531"
+    },
+    {
+      "path": "src/loading-scene.js",
+      "sha256": "f1a5a4bd43c5f14f3f6ce969bef2e9472dc6f807d6248fa0de75f77d9433e910"
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "63ae4d82d5763903dc38647dcb8833d1a0f441ec50297e6c917a45a59384e7fa"
+    },
+    {
+      "path": "src/navigation.js",
+      "sha256": "6878a494b10a60a13c48957bd6ae99acd803b7e1c5f99322f3fec20856c9ae3a"
+    },
+    {
+      "path": "src/particles.js",
+      "sha256": "2857806dd94219d29585ed1f899008dad133f68a469a657f210c230b1b276cb7"
+    },
+    {
+      "path": "src/preferences.js",
+      "sha256": "85a9e8869f19cf4d3fe39076b768ba9313e508195b8a633cc423e9f3f01a644f"
+    },
+    {
+      "path": "src/story-content.js",
+      "sha256": "a58bb4c53833b3fb43a18cb8cd21634d4c1e85949b554ebdcdad83322eb12971"
+    },
+    {
+      "path": "src/story-director.js",
+      "sha256": "f2da6703b9b4d70a01c65edb726bfb7de3f5c1fb359c6256adaf2ebb5fb6f6be"
+    },
+    {
+      "path": "src/story-model.js",
+      "sha256": "33700f8129bd477195dc9fb6e902e2f7845cff967fbaaa832be24436df9fbee7"
+    },
+    {
+      "path": "src/stroke-motion.js",
+      "sha256": "b280059d647b17baa75573434720b81024b456e7fe1f9cc0d078938ac7798b3b"
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "4b54366e558f949676bb8f63c479a95e6981c82cab123df5521aed6105d31b5f"
+    },
+    {
+      "path": "src/view-framing.js",
+      "sha256": "134dc4ada03d1dc53548e2426df7b34dc273cec83a78b58a1f7d872000d08e4b"
+    },
+    {
+      "path": "src/water-reflection.js",
+      "sha256": "021a4e06d448d5e3b6cc37c7262cd5cc1a50751279847b796146946dede3bb6e"
+    },
+    {
+      "path": "src/wind-flow.js",
+      "sha256": "e425ea7e1ffdbb56d08daed3a35798fdce3362d7de98546a269c782304df4310"
+    },
+    {
+      "path": "src/world-polish.js",
+      "sha256": "2559433fe40aa3c9a74249581372a8f8af31872138b7d379d0afa1498ba7932a"
+    },
+    {
+      "path": "src/world.js",
+      "sha256": "256ba3af7d44434fc4d199c1caa273280f562ed928f8a17ab4652e95d511b357"
+    }
+  ],
+  "dist": [
+    {
+      "path": "assets/environment/README.source.md",
+      "bytes": 1833,
+      "sha256": "fbb8c5f29f0b45f3332af2b75c1f2e5ed509815beee8ed5612b32e58904801c0"
+    },
+    {
+      "path": "assets/environment/spruit_sunrise.files.json",
+      "bytes": 1701,
+      "sha256": "d21442fd0d3cc612e3709d42110bcb095dd84941cc3903310fedd004d5d6e4c7"
+    },
+    {
+      "path": "assets/environment/spruit_sunrise.info.json",
+      "bytes": 1148,
+      "sha256": "c0c8a86d401e2dd48dfcb46a9d84ff28b31cbd2c7620e2c29cea5a706acd668d"
+    },
+    {
+      "path": "assets/environment/spruit_sunrise_1k.hdr",
+      "bytes": 1500948,
+      "sha256": "38199a31e945906f6778431e989256a92d9d78b0cfc0f902accad9f5244bf50f"
+    },
+    {
+      "path": "assets/environment/studio_small_09_1k.hdr",
+      "bytes": 1615248,
+      "sha256": "e7cfda5f4e98e623db12b8bfd0184e048488e4855d9c83e2751fb44a32e80c45"
+    },
+    {
+      "path": "assets/environment/studio_small_09_1k.source.json",
+      "bytes": 1481,
+      "sha256": "daf86567bbecc95e860f30a2f59ff94b5bbc06cf6b54f28eea5837d111743a19"
+    },
+    {
+      "path": "assets/index-B12KydA1.css",
+      "bytes": 49898,
+      "sha256": "7f31d38c2af641ffc4c177dc989f088db7954f56355f5b5ed81e43b243ace20f"
+    },
+    {
+      "path": "assets/index-BAJMaxNn.js",
+      "bytes": 924881,
+      "sha256": "2f1312b822af74a328c5dfb230bb4563db48878406892113c48a0d56c6ea1636"
+    },
+    {
+      "path": "assets/surfaces/CC0-1.0.txt",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/surfaces/mossy-rock-normal.jpg",
+      "bytes": 995727,
+      "sha256": "232cdd6a9fdfd01bb8bb1f8f604c53dbca79fa0d3d7995edf85c9945757aa8df"
+    },
+    {
+      "path": "assets/surfaces/mossy-rock-roughness.jpg",
+      "bytes": 780918,
+      "sha256": "0a18bdeb08444b730170b0477f13940ce6cd4d82d06137df661f96d1e2a6a66e"
+    },
+    {
+      "path": "assets/surfaces/mossy_rock.files.json",
+      "bytes": 25215,
+      "sha256": "1e37d8f79fe2f8d43ef3a20814f0baad2fb93e48835617a4346d7ee37764ad41"
+    },
+    {
+      "path": "assets/surfaces/mossy_rock.info.json",
+      "bytes": 956,
+      "sha256": "68e4fff2c970a0c77195fbcea29866ea91063a28bd905bb389318e1df92cd233"
+    },
+    {
+      "path": "assets/surfaces/README.md",
+      "bytes": 1876,
+      "sha256": "f0f54f3176a6b2bf0a7d9f724727c04e431af90d506ad5a8ffb8bb44891d2ef5"
+    },
+    {
+      "path": "assets/surfaces/source.json",
+      "bytes": 1954,
+      "sha256": "3e56bf2ba40f29247cb5950a5b6470bf015b3bf1d8048d12b71d836ebf859830"
+    },
+    {
+      "path": "assets/surfaces/white-plaster-02-normal.jpg",
+      "bytes": 652310,
+      "sha256": "eb572ca3630d5bfde72e2601b1f02412da23ca005cd19384dced8690be4cb783"
+    },
+    {
+      "path": "assets/surfaces/white-plaster-02-roughness.jpg",
+      "bytes": 295900,
+      "sha256": "4ff1fe957cd161b07f721fe6c28a9459c8c2e8ec65627a26c16e483a07c80d85"
+    },
+    {
+      "path": "assets/v5-source-hashes.json",
+      "bytes": 684,
+      "sha256": "1b82cf8aead9b342c5542c6179b39483ee69b83461818dd70507721568d12294"
+    },
+    {
+      "path": "assets/v5-source-record.json",
+      "bytes": 2722,
+      "sha256": "2ccb94ccb7067334cc6d1dcf4b9ff35c0c6e3af68a11abb0fe90e364018c15e1"
+    },
+    {
+      "path": "ASSET_SOURCES.md",
+      "bytes": 2755,
+      "sha256": "970369dcf8d3043a548c7ff6ce526153eae54dd25cfdba197e5aeeac5fed9272"
+    },
+    {
+      "path": "index.html",
+      "bytes": 8706,
+      "sha256": "a6af89894eae7c567c912bd46bcec93b0dc5f223162c40a11b31aa6a6c3f4aff"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES.txt",
+      "bytes": 3472,
+      "sha256": "dd2fd5735732d940cd29da43d570f38752f71fb12393041c40687504699882ad"
+    }
+  ]
+}

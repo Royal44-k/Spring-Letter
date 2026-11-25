@@ -1,0 +1,35 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>真实问题与制作复盘 · 花漾年华：待寄出的春信</title><link rel="stylesheet" href="dossier.css"></head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="index.html">SPRING LETTER · 春信</a><nav class="toplinks" aria-label="文档导航"><a href="index.html#development">当前进度</a><a href="index.html#story">故事与主题</a><a href="index.html#journey">四幕玩法</a><a href="index.html#library">完整档案</a></nav></div></header>
+<main class="wrap doc-layout"><aside class="toc" aria-label="本文目录"><p class="toc-title">真实问题与制作复盘</p><a href="#section-0">1. 跟随镜头不能同时改写玩家正在使用的移动基准</a><a href="#section-1">2. 花体与粒子要共享可追溯的源，而不是每次换装重新撒点</a><a href="#section-2">3. 首次可见时才编译的程序，会把卡顿留给第一下互动</a><a href="#section-3">4. 有存档不等于字段完整，空值也不是默认参数</a><a href="#section-4">5. 自动归形是世界进度，不应依赖面板仍打开</a><a href="#section-5">6. 压力观察首先要证明看到了新帧</a><a href="#section-6">7. 交付证据必须绑定同一份 JS、CSS 和文件集合</a></aside><article class="prose"><div class="doc-meta"><a href="index.html">← 花随风行 · 制作概览</a>　/　<a href="v6-production-notes.md">Markdown 源文件</a></div><h1>0.4 制作复盘：从实际故障留下的工程经验</h1>
+<p>本页记录这一轮实现、实景检验和交付工具审阅中确实发生的问题。文档中的实验结果各有范围：独立花卉实验不代替整场游戏，CPU 用例不代替普通输入实玩，旧候选的反例不改写为新候选的通过。最终发布状态以发布清单和与其一致的报告为准。</p>
+<h2 id="section-0">1. 跟随镜头不能同时改写玩家正在使用的移动基准</h2>
+<p>问题来自一个反馈环：按住横移时按当前镜头角计算移动，镜头又追随角色刚产生的朝向；下一帧移动方向随镜头旋转，角色因此不断改变方向。单独看“相对镜头移动”或“跟随角色”都合理，组合后可能绕圈。</p>
+<p>当前 <code>createTravelController</code> 在按键方向组合改变时确定移动基准；同一段持续输入保持这条方向，镜头依据实际位移缓慢追随。主动环看会重新设定基准，并保留 1.8 秒手动控制窗口；静止和专注交互时不强行转回，C 则是明确的回正意图。轻缓动态另有转速限制。</p>
+<p>证据：<a href="../../spring-letter/src/navigation.js">navigation.js</a>、<a href="../../spring-letter/tests/travel-camera.test.js">跟随镜头用例</a>。其中持续横移用例同时推进运动和转镜头，要求轨迹保持直线；这比只检查一次角度计算更能覆盖原问题。CPU 轨迹成立不等于所有用户都觉得舒服，实际视角和遮挡仍需实玩检查。</p>
+<h2 id="section-1">2. 花体与粒子要共享可追溯的源，而不是每次换装重新撒点</h2>
+<p>四种花形的实体与粒子使用同一套生成几何；闭合与开放形态通过同一三角形及重心坐标采样，保持点的对应关系。花瓣、枝叶、花心的取色域分开，再共享视觉系列的配色。这样才有“这一朵花散开，又回到这一朵花”的身份连续性。</p>
+<p>同数量换花形时，<code>setSource</code> 更新目标位置和颜色，保留当前模拟位置、速度及资源；换色仅更新颜色。改变质量档位时按稳定线性点编号保留重合部分，避免按归一化纹理坐标重新配对导致画面洗牌。旧资源在需要重建时明确释放。</p>
+<p><a href="../../spring-letter/evidence/v6-flower-lab/report.json">隔离实验报告</a>记录换色位置误差、换源位置与速度误差均为 0，归形误差约 <code>5.59e-7</code>，值均有限；30 轮实际绘制的资源计数维持 17 个几何与 22 个纹理。此结果只覆盖该实验场景，不能宣布全游戏无泄漏。早先一份隐藏花体的资源观察被保留为范围不足的历史记录，之后改为花体实际可见再绘制，防止“对象未进入渲染”制造虚假的稳定。</p>
+<p>实现入口：<a href="../../spring-letter/src/botany.js">botany.js</a>、<a href="../../spring-letter/src/particles.js">particles.js</a>、<a href="../../spring-letter/src/flower-presets.js">flower-presets.js</a>。</p>
+<h2 id="section-2">3. 首次可见时才编译的程序，会把卡顿留给第一下互动</h2>
+<p>首次打散的隔离实验出现 801 ms 的 RAF 间隔。原因排查指向首次可见粒子程序及透明花材质路径：只准备一个不透明实体，不能保证另一种渲染状态已经建立。加载完成后才暴露这条路径，会让用户把编译停顿理解成手势没有反应。</p>
+<p>随后在加载阶段实际绘制透明花体和可见粒子。对照实验中的预热耗时为 482.3 ms，进入互动后的最大 RAF 间隔为 49.9 ms。两次都是独立实验页的新浏览器上下文，没有清除显卡驱动缓存，也没有主世界、完整后处理，因此不能作为本版全游戏冷启动性能承诺。</p>
+<p>证据：<a href="../../spring-letter/evidence/v6-flower-first-break-timing.json">首次破开</a>、<a href="../../spring-letter/evidence/v6-flower-first-break-prewarmed.json">预热对照</a>。主程序进一步预热了不同材质和粒子、反射、合成路径，并恢复原花型、系列、透明度、可见性等状态；预热不调用玩家关卡进度。结果应分别报告加载时间、首交互间隔与稳定运行区间，平均帧率无法替代这三项。</p>
+<p>后续 F 候选改为在后处理实际使用的目标上预编译，并在成功或异常时恢复原目标；它解决的是重复生成用不到的着色器变体。具体的独立对照、舍弃方案与正式候选身份另见<a href="v6-startup-optimization.html">启动预热优化</a>，不与上面的早期花卉实验合并统计。</p>
+<h2 id="section-3">4. 有存档不等于字段完整，空值也不是默认参数</h2>
+<p>新增跟随镜头、花型、材质偏好后，旧存档可能完全没有这些字段。偏好还可能是 JSON <code>null</code>、错误类型或损坏文本。默认函数参数只处理 <code>undefined</code>，不能假设解析成功就得到一个完整对象。</p>
+<p>当前恢复流程先创建完整默认状态，再逐字段接收合法布尔值与枚举；偏好读取使用可空访问并兼容旧旅程中的 settings。画面密度、轻缓动态、静音和衣橱偏好单独保存，开始新旅程不会重置用户的体验选择。封面阶段也应用已保存花型与材质，避免存储正确但要进游戏后才生效。</p>
+<p>证据：<a href="../../spring-letter/src/preferences.js">preferences.js</a>、<a href="../../spring-letter/src/game-model.js">game-model.js</a>、<a href="../../spring-letter/tests/preferences.test.js">偏好用例</a>、<a href="../../spring-letter/tests/model.test.js">存档恢复用例</a>。这些用例分别覆盖偏好与旅程分离、旧字段迁移、坏设置和无效存档；没有将“格式能解析”当成“内容可使用”。</p>
+<h2 id="section-4">5. 自动归形是世界进度，不应依赖面板仍打开</h2>
+<p>D 候选发现了真实边缘问题：玩家已经破开并写过足够的风，随后离开近看；花在世界里自然复原，但关卡完成判断只在花卉专注状态调用。于是必须重新靠近一次才能解锁。视觉生命周期已结束，任务生命周期却漏掉了这个时刻。</p>
+<p>修正后，主线运行期间持续观察花的归形阶段；新的写风进度仍只在靠近花时累计。这样离开不会丢失完成，也不能在远处随意挥动画笔刷过教学。暂停时两种时序均冻结；模拟步长与演出生命周期时间分开处理，低帧率下不能因为物理步长截断而把“等待片刻”拉长成另一种节奏。</p>
+<p>证据保留了前后两个版本：<a href="../../spring-letter/evidence/v6-candidate-d/v6-flower-leave-before-return.json">D 候选反例</a>的 <code>solvedWithoutReentry</code> 为 false；<a href="../../spring-letter/evidence/v6-candidate-e/v6-flower-leave-fixed.json">E 候选普通输入回归归档</a>在 08:36:31 UTC 记录 <code>regression passed</code>，该值为 true，入口为 <code>index-Cl_BoOsu.js</code>。另有<a href="../../spring-letter/tests/flower-return-integration.test.js">调用层集成用例</a>验证离场完成只触发一次，以及远处手势不能累计未学会的花课。不能用 E 的修复结论覆盖 D 的反例文件，也不把 E 归档标作后续 F 候选的回归。</p>
+<h2 id="section-5">6. 压力观察首先要证明看到了新帧</h2>
+<p>工具审阅发现 <code>array.slice(-count)</code> 在 <code>count === 0</code> 时等于 <code>slice(0)</code>，会把旧缓冲区整段取出。若浏览器没有产生新帧，测试仍可能拿到很多旧帧并宣布样本充足。修正后的采样器先检查帧计数递增，再只取新增窗口；空样本、计数倒退、非有限间隔都直接失败，稳定阶段还要求足够的新样本。</p>
+<p>另一处问题是只检查最后三轮资源的最大最小差。每轮泄漏一个对象时，尾部差值始终很小；运行越久，遗漏越严重。现在先运行完整暖机轮，再固定基线，检查每个匹配阶段的几何、纹理与程序计数，同时检查缓慢单调增长和连续增长趋势。合理抖动与新增资源路径需要分析，不能任意移动基线抹掉增长。</p>
+<p>证据：<a href="../../spring-letter/scripts/v6-soak.cjs">v6-soak.cjs</a>、<a href="../../spring-letter/tests/v6-tooling.test.js">工具反例与回归用例</a>。本轮新增的 6 个 CPU 用例通过，覆盖零新帧、有效窗口、稳定平台、渐增泄漏、缺项计数，以及页面错误和 console.error 的收集。它们验证观察工具的逻辑，不等于完成 45 分钟压力实跑，更不是显存泄漏证明。</p>
+<h2 id="section-6">7. 交付证据必须绑定同一份 JS、CSS 和文件集合</h2>
+<p>多代理并行调整时，Vite 热更新曾干扰正在进行的实玩。之后先冻结运行源，构建独立候选，再让验证只访问该候选；艺术实验页与主游戏证据也分别归档。候选不是文件夹名字，而是一组可核对的字节。</p>
+<p>交付工具审阅还找到几处可能假通过的路径：报告的 CSS 字段形状不同而漏查；录像只看检查列表却忽略 <code>success</code>；压缩包与自己内嵌的旧清单一致，却没有与当前发布清单一致。修正后的门槛同时核对入口 JS、CSS、前后构建状态、源文件和 dist 的 SHA-256；录像核对成功状态、实际字节数与 SHA；解压包必须匹配当前 release manifest 的版本、构建与完整文件集合，再实际通过 HTTP 读取并校验文件。</p>
+<p>证据：<a href="../../spring-letter/scripts/release-v6.cjs">发布门槛</a>、<a href="../../spring-letter/scripts/verify-v6-package.py">实际解压与服务验证</a>、<a href="../../spring-letter/tests/v6-package-tooling.test.py">打包验证 CPU 用例</a>。打包校验的 3 个 CPU 用例分别接受一致的新候选，拒绝内部自洽但已过时的候选，以及 CSS、版本或文件集合不符的包。界面检验同时记录 pageerror 与 console.error，避免着色器错误只进控制台而漏报。</p>
+<p>这些门槛的作用是让“测试过”与“交付了”指向同一对象。它们不使画面自动更好，也不代替玩法判断。艺术上还未达到的部分单列于<a href="v6-visual-boundaries.html">视觉边界复核</a>，已实现故事和交互以<a href="v6-play-script.html">可执行脚本</a>为准。</p></article></main><footer><div class="wrap"><span>独立主题设计与制作档案 · 2026.11.19 · v6 / 0.4 制作档案</span><span>原片、隔离实验与主游戏证据分别标注；文档不代替最终验收。</span></div></footer></body></html>
