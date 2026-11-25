@@ -1,0 +1,2830 @@
+{
+  "render": {
+    "lifecycle": {
+      "phase": "ready",
+      "blocked": false,
+      "contextLost": false,
+      "needsReload": false,
+      "lossCount": 0,
+      "statusMessage": "",
+      "saveAttempted": false,
+      "saveSucceeded": null,
+      "callbackErrors": []
+    },
+    "size": {
+      "width": 1440,
+      "height": 900,
+      "pixelRatio": 1,
+      "bufferWidth": 1440,
+      "bufferHeight": 900,
+      "limited": false
+    },
+    "failure": null,
+    "blocked": false
+  },
+  "state": {
+    "version": 1,
+    "started": true,
+    "playedSeconds": 321.4360000000316,
+    "bloom": 0.82,
+    "player": {
+      "x": -0.07482610163034331,
+      "z": -50.13812392222002,
+      "safe": "finale"
+    },
+    "p1": {
+      "solved": true,
+      "hold": 0.8,
+      "broken": false,
+      "ink": 0
+    },
+    "wind": {
+      "x": 3,
+      "z": -2,
+      "vx": 0,
+      "vz": 0,
+      "touched": true,
+      "solved": true,
+      "hold": 0.8,
+      "returns": 0,
+      "time": 0
+    },
+    "companion": {
+      "trust": 1,
+      "awakened": true
+    },
+    "bridge": {
+      "platform": "F",
+      "support": null,
+      "structure": "bridge_mf",
+      "solved": true
+    },
+    "cores": [
+      "memory",
+      "season"
+    ],
+    "deliveryCarried": null,
+    "ending": null,
+    "discoveries": [
+      "leaf",
+      "echo",
+      "protocol"
+    ],
+    "story": {
+      "introSeen": true,
+      "branches": {
+        "rhythm": false,
+        "light": false,
+        "memory": false
+      },
+      "motif": [],
+      "lightFound": [
+        false,
+        false,
+        false
+      ],
+      "lightHold": [
+        0,
+        0,
+        0
+      ],
+      "memorySeen": {
+        "closed": false,
+        "open": false
+      },
+      "memoryHold": {
+        "closed": 0,
+        "open": 0
+      },
+      "memoryBloom": 0.5,
+      "seenChapters": [
+        3
+      ]
+    },
+    "exploration": {
+      "version": 1,
+      "rain": {
+        "done": false,
+        "rounds": 0,
+        "mask": 0,
+        "travel": 0,
+        "lastAngle": null,
+        "gap": 0,
+        "clock": 0,
+        "best": 0,
+        "flash": 0
+      },
+      "wind": {
+        "done": false,
+        "rounds": 0,
+        "stage": 0,
+        "seed": {
+          "x": -1.18,
+          "z": 1.05,
+          "vx": 0,
+          "vz": 0
+        },
+        "touched": false,
+        "catching": false,
+        "hold": 0,
+        "rest": 0,
+        "bumps": 0,
+        "clock": 0,
+        "best": 0,
+        "flash": 0
+      },
+      "tide": {
+        "done": false,
+        "rounds": 0,
+        "index": 0,
+        "hold": 0,
+        "lastX": null,
+        "lastZ": null,
+        "pulse": 0,
+        "clock": 0,
+        "flash": 0
+      },
+      "seen": []
+    },
+    "letters": {
+      "version": 1,
+      "entries": {
+        "rain": {
+          "turns": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 2,
+            "f": 0
+          },
+          "choice": "tree",
+          "moves": 0,
+          "read": true,
+          "edition": 2,
+          "artwork": {
+            "version": 1,
+            "positions": {
+              "tree": {
+                "x": -0.6500034210551662,
+                "y": 2.080003702630422
+              },
+              "window": {
+                "x": 0.5200004443520421,
+                "y": 1.770000016540218
+              },
+              "bloom": {
+                "x": 0.07956639567392054,
+                "y": 1.0949173131142986
+              }
+            },
+            "selected": "bloom"
+          }
+        },
+        "wind": {
+          "turns": {
+            "a": 0,
+            "b": 0,
+            "c": 3,
+            "d": 1,
+            "e": 0,
+            "f": 2,
+            "g": 0,
+            "h": 2,
+            "i": 1,
+            "j": 1,
+            "k": 0
+          },
+          "choice": "lamp",
+          "moves": 0,
+          "read": true,
+          "edition": 2,
+          "artwork": {
+            "version": 1,
+            "distance": 73,
+            "x": -0.005831114654363076,
+            "y": 2.0499994924987957,
+            "vx": 0,
+            "vy": 0,
+            "gate": 5,
+            "checkpoint": 5,
+            "launched": false,
+            "completed": true,
+            "misses": 0,
+            "elapsed": 30.00749999999995,
+            "recover": 0,
+            "lastMiss": null
+          }
+        },
+        "tide": {
+          "turns": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 1,
+            "e": 0,
+            "f": 0,
+            "g": 3,
+            "h": 0,
+            "i": 2,
+            "j": 0
+          },
+          "choice": "new",
+          "moves": 0,
+          "read": true,
+          "edition": 2,
+          "artwork": {
+            "version": 1,
+            "notes": [
+              [
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                true
+              ],
+              [
+                false,
+                false,
+                true,
+                false,
+                false,
+                false,
+                true,
+                false
+              ],
+              [
+                false,
+                false,
+                false,
+                false,
+                true,
+                false,
+                false,
+                false
+              ]
+            ],
+            "selectedVoice": 0,
+            "selectedBeat": 7,
+            "heardSignature": "10000001:00100010:00001000",
+            "playCount": 1
+          }
+        }
+      }
+    },
+    "lettersSent": null,
+    "moments": {
+      "version": 1,
+      "entries": {
+        "rain": {
+          "draft": {
+            "version": 1,
+            "positions": {
+              "tree": {
+                "x": -0.6500034210551662,
+                "y": 2.080003702630422
+              },
+              "window": {
+                "x": 0.5200004443520421,
+                "y": 1.770000016540218
+              },
+              "bloom": {
+                "x": 0.07956639567392054,
+                "y": 1.0949173131142986
+              }
+            },
+            "selected": "bloom"
+          },
+          "completed": true
+        },
+        "wind": {
+          "draft": {
+            "version": 1,
+            "distance": 73,
+            "x": -0.005831114654363076,
+            "y": 2.0499994924987957,
+            "vx": 0,
+            "vy": 0,
+            "gate": 5,
+            "checkpoint": 5,
+            "launched": false,
+            "completed": true,
+            "misses": 0,
+            "elapsed": 30.00749999999995,
+            "recover": 0,
+            "lastMiss": null
+          },
+          "completed": true
+        },
+        "tide": {
+          "draft": {
+            "version": 1,
+            "notes": [
+              [
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                true
+              ],
+              [
+                false,
+                false,
+                true,
+                false,
+                false,
+                false,
+                true,
+                false
+              ],
+              [
+                false,
+                false,
+                false,
+                false,
+                true,
+                false,
+                false,
+                false
+              ]
+            ],
+            "selectedVoice": 0,
+            "selectedBeat": 7,
+            "heardSignature": "10000001:00100010:00001000",
+            "playCount": 1
+          },
+          "completed": true
+        }
+      }
+    },
+    "voyage": {
+      "version": 1,
+      "stage": "sailing",
+      "letter": {
+        "recipient": "一位未曾谋面的收信人",
+        "body": "今天，花窗重新透进了光。\n我把一段自己的春声，和一封旧信，带向远方。",
+        "sealKind": "lily",
+        "sealed": true
+      },
+      "predecessor": true,
+      "oldRead": true,
+      "player": {
+        "x": 5.8662012329101545,
+        "z": -105.3400102672427
+      },
+      "checkpoint": 11,
+      "elapsed": 74.81829999999854,
+      "tideClock": 0,
+      "boat": {
+        "x": 5.8662012329101545,
+        "z": -105.3400102672427,
+        "heading": -0.010790000000000258,
+        "speed": 3.9835345959453736
+      },
+      "ropes": [
+        true,
+        true
+      ],
+      "sail": 1,
+      "trim": 1,
+      "distance": 76.3400102672427,
+      "flowers": [
+        {
+          "x": 6.449999999999999,
+          "z": -29.989394772637237,
+          "kind": "lily",
+          "age": 17.756999999999966
+        },
+        {
+          "x": 9.49,
+          "z": -31.897847407831048,
+          "kind": "lotus",
+          "age": 17.256699999999967
+        },
+        {
+          "x": 5.808141593084374,
+          "z": -33.754878959089076,
+          "kind": "iris",
+          "age": 16.772699999999958
+        },
+        {
+          "x": 9.992973155843108,
+          "z": -37.62885781861304,
+          "kind": "lily",
+          "age": 16.221999999999962
+        },
+        {
+          "x": 4.153677332088025,
+          "z": -38.209343890804554,
+          "kind": "lotus",
+          "age": 15.654499999999969
+        },
+        {
+          "x": 7.930922076768499,
+          "z": -39.11067572574548,
+          "kind": "lily",
+          "age": 15.454199999999963
+        },
+        {
+          "x": 4.869017581112202,
+          "z": -41.124269722999166,
+          "kind": "lily",
+          "age": 15.103599999999963
+        },
+        {
+          "x": 8.585337369249904,
+          "z": -41.48540225000464,
+          "kind": "lily",
+          "age": 14.953599999999964
+        },
+        {
+          "x": 4.171612160870856,
+          "z": -42.733645087959815,
+          "kind": "iris",
+          "age": 14.569699999999967
+        },
+        {
+          "x": 9.238073792151889,
+          "z": -44.01571769227005,
+          "kind": "lily",
+          "age": 14.419399999999971
+        },
+        {
+          "x": 5.164192113761768,
+          "z": -45.280295676449214,
+          "kind": "lotus",
+          "age": 14.035599999999974
+        },
+        {
+          "x": 8.201191984719332,
+          "z": -45.574733022265384,
+          "kind": "lily",
+          "age": 13.902099999999976
+        },
+        {
+          "x": 4.456684002664525,
+          "z": -47.825935989258305,
+          "kind": "lily",
+          "age": 13.50159999999998
+        },
+        {
+          "x": 8.822581130497454,
+          "z": -51.010151392078804,
+          "kind": "lotus",
+          "age": 12.383499999999989
+        },
+        {
+          "x": 3.721806834126494,
+          "z": -52.907998479384695,
+          "kind": "iris",
+          "age": 11.832799999999995
+        },
+        {
+          "x": 7.751241922286558,
+          "z": -55.76249976600374,
+          "kind": "lily",
+          "age": 11.315300000000004
+        },
+        {
+          "x": 4.690509682003908,
+          "z": -57.66745522012819,
+          "kind": "lotus",
+          "age": 10.798100000000007
+        },
+        {
+          "x": 8.389232921217964,
+          "z": -59.659344561858994,
+          "kind": "iris",
+          "age": 10.280700000000017
+        },
+        {
+          "x": 3.958625050655218,
+          "z": -62.472184897098245,
+          "kind": "lily",
+          "age": 9.76320000000002
+        },
+        {
+          "x": 9.01712566686293,
+          "z": -64.49204305465992,
+          "kind": "lotus",
+          "age": 9.245900000000022
+        },
+        {
+          "x": 4.93612137529262,
+          "z": -66.41670785658097,
+          "kind": "iris",
+          "age": 8.728600000000025
+        },
+        {
+          "x": 7.944968508281624,
+          "z": -69.32019482312786,
+          "kind": "lily",
+          "age": 8.211100000000027
+        },
+        {
+          "x": 4.203936292753569,
+          "z": -71.24928179030276,
+          "kind": "lotus",
+          "age": 7.693800000000028
+        },
+        {
+          "x": 8.582455265435769,
+          "z": -73.26377012949987,
+          "kind": "iris",
+          "age": 7.176400000000025
+        },
+        {
+          "x": 3.4718700079880738,
+          "z": -76.07084616302232,
+          "kind": "lily",
+          "age": 6.659100000000019
+        },
+        {
+          "x": 7.510529681462575,
+          "z": -78.07046076533723,
+          "kind": "lotus",
+          "age": 6.1417000000000135
+        },
+        {
+          "x": 4.449693644322319,
+          "z": -79.98503557343953,
+          "kind": "iris",
+          "age": 5.62430000000001
+        },
+        {
+          "x": 8.138863363599574,
+          "z": -82.86229555285388,
+          "kind": "lily",
+          "age": 5.106900000000008
+        },
+        {
+          "x": 3.718344538472578,
+          "z": -84.74013552695308,
+          "kind": "lotus",
+          "age": 4.589500000000006
+        },
+        {
+          "x": 8.777422949637756,
+          "z": -86.70644664705375,
+          "kind": "iris",
+          "age": 4.072200000000002
+        },
+        {
+          "x": 4.686715051643082,
+          "z": -89.53039132326202,
+          "kind": "lily",
+          "age": 3.5381
+        },
+        {
+          "x": 7.7054937984995195,
+          "z": -91.51346786923098,
+          "kind": "lotus",
+          "age": 3.0040999999999998
+        },
+        {
+          "x": 3.964858819707351,
+          "z": -93.40574099768519,
+          "kind": "iris",
+          "age": 2.47
+        },
+        {
+          "x": 8.33425284530354,
+          "z": -96.26588206737476,
+          "kind": "lily",
+          "age": 1.9360000000000008
+        },
+        {
+          "x": 3.2333413407034635,
+          "z": -98.17644490113973,
+          "kind": "lotus",
+          "age": 1.3841999999999992
+        },
+        {
+          "x": 7.272228026702867,
+          "z": -100.15502116101476,
+          "kind": "iris",
+          "age": 0.8345
+        },
+        {
+          "x": 4.202011431184583,
+          "z": -102.93893742733563,
+          "kind": "lily",
+          "age": 0.28369999999999895
+        }
+      ],
+      "recoveries": 0,
+      "recover": 0,
+      "scatterCooldown": 0,
+      "flowerSerial": 37,
+      "flowerDistance": 75.20709940914698,
+      "paused": false
+    },
+    "atlas": {
+      "version": 1,
+      "location": null,
+      "player": {
+        "x": 0,
+        "y": 0,
+        "z": 10,
+        "vy": 0,
+        "grounded": true,
+        "gliding": false
+      },
+      "visited": [
+        "conservatory",
+        "observatory",
+        "meadow"
+      ],
+      "completed": [
+        "conservatory",
+        "observatory",
+        "meadow"
+      ],
+      "blooms": [
+        1,
+        1,
+        1
+      ],
+      "butterfly": {
+        "x": -4.772666515852344,
+        "y": 1.1,
+        "z": -24.471120654792482,
+        "trust": 0.9919920000000001
+      },
+      "stars": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0,
+        5,
+        2
+      ],
+      "stargazing": false,
+      "meadowCheckpoint": 4,
+      "notes": {
+        "conservatory": [],
+        "observatory": [],
+        "meadow": []
+      },
+      "positions": {
+        "conservatory": {
+          "x": -4.8473435707139485,
+          "y": 0,
+          "z": -24.68491893659243,
+          "vy": 0,
+          "grounded": true,
+          "gliding": false
+        },
+        "observatory": {
+          "x": 0,
+          "y": 1.7700749999999659,
+          "z": -17.866999999999848,
+          "vy": 0,
+          "grounded": true,
+          "gliding": false
+        },
+        "meadow": {
+          "x": -0.06002298654257463,
+          "y": 2.8,
+          "z": -35.79708822048836,
+          "vy": 0,
+          "grounded": true,
+          "gliding": false
+        }
+      },
+      "jumpHeld": false,
+      "calling": false,
+      "elapsed": 80.39309999999968,
+      "recoveries": 0
+    },
+    "settings": {
+      "muted": false,
+      "quality": "balanced",
+      "reducedMotion": false,
+      "autoCamera": true,
+      "flowerForm": "lily",
+      "flowerSeries": "lily",
+      "musicVolume": 0.25,
+      "sfxVolume": 0.65,
+      "ambienceVolume": 0.85
+    }
+  },
+  "mode": "play",
+  "focus": "voyage",
+  "galleryKind": "flower",
+  "displayBloom": 0.82,
+  "scatter": 0,
+  "material": "lily",
+  "flowerForm": "lily",
+  "flowerCycle": {
+    "phase": "solid",
+    "dispersion": 0,
+    "flow": 0,
+    "age": 0,
+    "remaining": 0,
+    "cycles": 0
+  },
+  "travel": {
+    "basis": 0,
+    "heading": 0,
+    "movingTime": 0,
+    "manualRemaining": 0,
+    "recentering": false
+  },
+  "night": false,
+  "dustView": 0,
+  "opening": null,
+  "branch": null,
+  "camera": [
+    8.962949932776041,
+    4.299999999999995,
+    -96.37384296325997
+  ],
+  "fov": 47.999999999999986,
+  "cameraLook": [
+    5.874473649594633,
+    1.700000000000001,
+    -108.0733656290811
+  ],
+  "view": {
+    "key": null
+  },
+  "gesture": {
+    "active": false,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "velocity": [
+      0,
+      0,
+      0
+    ],
+    "strength": 0,
+    "motionEnergy": 0
+  },
+  "penMode": false,
+  "weaver": {
+    "available": false,
+    "origin": null,
+    "status": "blocked",
+    "shape": null,
+    "target": null,
+    "progress": 0,
+    "hint": "走到一座固定石台，再开始织桥。",
+    "fade": 1,
+    "anchors": []
+  },
+  "depthPass": false,
+  "delivery": null,
+  "carried": null,
+  "exploration": {
+    "nearTarget": null,
+    "key": null,
+    "title": "",
+    "completed": 0,
+    "total": 3,
+    "progress": 0,
+    "objective": "为三座失联春庭递出春信",
+    "hint": "岔路上的悬花与风铃，正等一位愿意绕远的送信人。",
+    "touchHint": "用屏幕方向键走向岔路，关闭风笔时可单指环看。"
+  },
+  "outdoorEnvironment": true,
+  "landscapeTextures": true,
+  "stoneTextures": true,
+  "reflection": false,
+  "presentation": {
+    "memoryBloom": 0.5,
+    "actor": [
+      -0.07482610163034331,
+      0.35,
+      -50.13812392222002
+    ],
+    "companionVisible": true
+  },
+  "renderer": {
+    "calls": 138,
+    "triangles": 864594,
+    "points": 220,
+    "renderer": "WebKit WebGL"
+  },
+  "memory": {
+    "geometries": 392,
+    "textures": 71,
+    "programs": 149
+  },
+  "audio": {
+    "state": "running",
+    "muted": false,
+    "paused": false,
+    "disposed": false,
+    "loaded": true,
+    "loadedSamples": [
+      "harpLow",
+      "harp",
+      "piano",
+      "flute",
+      "cello",
+      "pizz",
+      "triangle"
+    ],
+    "loadedFoley": [
+      "grass0",
+      "grass1",
+      "grass2",
+      "stone0",
+      "stone1",
+      "stone2",
+      "stoneTurn",
+      "birds",
+      "river"
+    ],
+    "loadErrors": [],
+    "persistentNodes": 18,
+    "persistentSources": 3,
+    "voices": 6,
+    "voiceLimit": 48,
+    "queuedNotes": 5,
+    "bar": 6,
+    "musicTitle": "一路繁花向海",
+    "mix": {
+      "music": 0.25,
+      "sfx": 0.65,
+      "ambience": 0.85
+    },
+    "scheduledNotes": 66,
+    "eventCount": 0,
+    "foleyEvents": 0,
+    "lastFoley": null,
+    "fallbackNotes": 0,
+    "fallbackInstruments": [],
+    "missedSchedules": 0,
+    "hasOutput": true,
+    "scene": {
+      "zone": "finale",
+      "atlas": null,
+      "atlasProgress": 0,
+      "voyage": "sailing",
+      "voyageSpeed": 3,
+      "groundMaterial": "stone",
+      "nearWater": 0.25,
+      "challengeActive": false,
+      "flowerPhase": "solid",
+      "composing": false
+    }
+  },
+  "gardenSurfaces": {
+    "loaded": true,
+    "materials": 13,
+    "textures": 4
+  },
+  "resonance": {
+    "active": false,
+    "context": {
+      "active": false,
+      "near": false,
+      "id": null,
+      "title": "",
+      "objective": "",
+      "hint": "",
+      "progress": 0
+    },
+    "records": {
+      "dawn": {
+        "best": 0,
+        "completions": 0,
+        "grade": 0,
+        "most": 0
+      },
+      "crosswind": {
+        "best": 0,
+        "completions": 0,
+        "grade": 0,
+        "most": 0
+      },
+      "homeward": {
+        "best": 0,
+        "completions": 0,
+        "grade": 0,
+        "most": 0
+      }
+    },
+    "run": null,
+    "escort": null,
+    "result": null,
+    "nodes": [],
+    "hazards": [],
+    "stations": [
+      {
+        "id": "dawn",
+        "title": "第一阵春风",
+        "x": 3,
+        "z": 4,
+        "unlocked": true,
+        "completed": false
+      },
+      {
+        "id": "crosswind",
+        "title": "穿过回旋的风",
+        "x": 3,
+        "z": -12,
+        "unlocked": true,
+        "completed": false
+      },
+      {
+        "id": "homeward",
+        "title": "把远方带回来",
+        "x": 3,
+        "z": -42,
+        "unlocked": true,
+        "completed": false
+      }
+    ],
+    "resources": {
+      "geometries": 4,
+      "materials": 4,
+      "textures": 1
+    }
+  },
+  "letters": {
+    "activeId": null,
+    "nearId": null,
+    "trackedId": "rain",
+    "selectedId": null,
+    "completed": [
+      "rain",
+      "wind",
+      "tide"
+    ],
+    "stages": {
+      "rain": {
+        "ready": true,
+        "progress": 1,
+        "aligned": 3,
+        "phase": "garden",
+        "hint": "三片花影合成了一扇春窗。枝叶已经长出纸面，留下你想照料的那一处。",
+        "status": "窗里的春天已经醒来。看看你想把什么留在信里。",
+        "selected": "bloom",
+        "selectedLabel": "花冠花笺",
+        "dragging": false,
+        "undoCount": 0,
+        "controls": [
+          {
+            "id": "select",
+            "value": "tree",
+            "label": "枝叶花笺",
+            "selected": false
+          },
+          {
+            "id": "select",
+            "value": "window",
+            "label": "窗影花笺",
+            "selected": false
+          },
+          {
+            "id": "select",
+            "value": "bloom",
+            "label": "花冠花笺",
+            "selected": true
+          },
+          {
+            "id": "left",
+            "label": "← 左移"
+          },
+          {
+            "id": "up",
+            "label": "↑ 上移"
+          },
+          {
+            "id": "down",
+            "label": "↓ 下移"
+          },
+          {
+            "id": "right",
+            "label": "右移 →"
+          },
+          {
+            "id": "undo",
+            "label": "撤回 Z",
+            "disabled": true
+          },
+          {
+            "id": "reset",
+            "label": "重新布置 R"
+          }
+        ],
+        "draft": {
+          "version": 1,
+          "positions": {
+            "tree": {
+              "x": -0.6500034210551662,
+              "y": 2.080003702630422
+            },
+            "window": {
+              "x": 0.5200004443520421,
+              "y": 1.770000016540218
+            },
+            "bloom": {
+              "x": 0.07956639567392054,
+              "y": 1.0949173131142986
+            }
+          },
+          "selected": "bloom"
+        },
+        "next": null,
+        "panes": [
+          {
+            "id": "tree",
+            "name": "枝叶花笺",
+            "shape": "分叉的枝叶",
+            "position": [
+              -0.6500034210551662,
+              2.080003702630422,
+              0.45
+            ],
+            "target": [
+              -0.65,
+              2.08,
+              0.45
+            ],
+            "worldPosition": [
+              -12.650003421055166,
+              3.980003702630422,
+              -0.55
+            ],
+            "worldTarget": [
+              -12.65,
+              3.98,
+              -0.55
+            ],
+            "aligned": true,
+            "distance": 0.000005041139800724587
+          },
+          {
+            "id": "window",
+            "name": "窗影花笺",
+            "shape": "带拱顶的小窗",
+            "position": [
+              0.5200004443520421,
+              1.770000016540218,
+              0.6
+            ],
+            "target": [
+              0.52,
+              1.77,
+              0.6
+            ],
+            "worldPosition": [
+              -11.479999555647957,
+              3.670000016540218,
+              -0.4
+            ],
+            "worldTarget": [
+              -11.48,
+              3.67,
+              -0.4
+            ],
+            "aligned": true,
+            "distance": 4.4465977565856715e-7
+          },
+          {
+            "id": "bloom",
+            "name": "花冠花笺",
+            "shape": "六瓣的小花",
+            "position": [
+              0.07956639567392054,
+              1.0949173131142986,
+              0.75
+            ],
+            "target": [
+              0.08,
+              1.14,
+              0.75
+            ],
+            "worldPosition": [
+              -11.92043360432608,
+              2.9949173131142985,
+              -0.25
+            ],
+            "worldTarget": [
+              -11.92,
+              3.04,
+              -0.25
+            ],
+            "aligned": true,
+            "distance": 0.04508477203608527
+          }
+        ],
+        "growth": [
+          1,
+          1,
+          1
+        ],
+        "outcome": {
+          "choice": "tree",
+          "blend": {
+            "tree": 1,
+            "shoot": 0
+          },
+          "plants": [
+            {
+              "position": [
+                -1.55,
+                0.38,
+                -0.33
+              ],
+              "scale": [
+                1.45,
+                1.55,
+                1.25
+              ]
+            },
+            {
+              "position": [
+                -0.52,
+                0.38,
+                -0.25
+              ],
+              "scale": [
+                1.1400000000000001,
+                1.28,
+                1
+              ]
+            },
+            {
+              "position": [
+                0.71,
+                0.38,
+                0.1
+              ],
+              "scale": [
+                0.52,
+                0.65,
+                0.65
+              ]
+            }
+          ]
+        },
+        "disposed": false
+      },
+      "wind": {
+        "ready": true,
+        "progress": 1,
+        "selected": null,
+        "status": "春信抵岸",
+        "hint": "纸翼记住了这一路。现在可以决定，把渡口的春风先留给谁。",
+        "controls": [
+          {
+            "id": "restart",
+            "label": "再飞一程",
+            "disabled": false
+          },
+          {
+            "id": "land",
+            "label": "落回安全风段",
+            "disabled": true
+          },
+          {
+            "id": "left",
+            "label": "← 向左",
+            "disabled": true
+          },
+          {
+            "id": "right",
+            "label": "向右 →",
+            "disabled": true
+          },
+          {
+            "id": "up",
+            "label": "↑ 抬翼",
+            "disabled": true
+          },
+          {
+            "id": "down",
+            "label": "↓ 俯冲",
+            "disabled": true
+          },
+          {
+            "id": "brake",
+            "label": "缓行",
+            "active": false,
+            "disabled": true
+          }
+        ],
+        "draft": {
+          "version": 1,
+          "distance": 73,
+          "x": -0.005831114654363076,
+          "y": 2.0499994924987957,
+          "vx": 0,
+          "vy": 0,
+          "gate": 5,
+          "checkpoint": 5,
+          "launched": false,
+          "completed": true,
+          "misses": 0,
+          "elapsed": 30.00749999999995,
+          "recover": 0,
+          "lastMiss": null
+        },
+        "flight": {
+          "version": 1,
+          "distance": 73,
+          "x": -0.005831114654363076,
+          "y": 2.0499994924987957,
+          "vx": 0,
+          "vy": 0,
+          "gate": 5,
+          "checkpoint": 5,
+          "launched": false,
+          "completed": true,
+          "misses": 0,
+          "elapsed": 30.00749999999995,
+          "recover": 0,
+          "lastMiss": null,
+          "world": [
+            11.994168885345637,
+            4.849999492498796,
+            -14.95
+          ]
+        },
+        "currentGate": null,
+        "gates": [
+          {
+            "id": "petal",
+            "name": "初绽花环",
+            "distance": 12,
+            "x": -1.05,
+            "y": 1.55,
+            "rx": 1,
+            "ry": 1.05,
+            "kind": "petal",
+            "passed": true,
+            "world": [
+              10.95,
+              4.35,
+              2.1300000000000026
+            ],
+            "controlWorld": [
+              10.95,
+              4.35,
+              -14.95
+            ]
+          },
+          {
+            "id": "lift",
+            "name": "高处的风铃",
+            "distance": 28,
+            "x": 0.8,
+            "y": 3.1,
+            "rx": 1.05,
+            "ry": 0.92,
+            "kind": "spiral",
+            "passed": true,
+            "world": [
+              12.8,
+              5.9,
+              -2.349999999999998
+            ],
+            "controlWorld": [
+              12.8,
+              5.9,
+              -14.95
+            ]
+          },
+          {
+            "id": "weave",
+            "name": "斜风纸窗",
+            "distance": 43,
+            "x": -1.2,
+            "y": 2.45,
+            "rx": 1.05,
+            "ry": 1.06,
+            "kind": "diamond",
+            "passed": true,
+            "world": [
+              10.8,
+              5.25,
+              -6.549999999999999
+            ],
+            "controlWorld": [
+              10.8,
+              5.25,
+              -14.95
+            ]
+          },
+          {
+            "id": "shelter",
+            "name": "低处的帆影",
+            "distance": 58,
+            "x": 1.15,
+            "y": 1.3,
+            "rx": 1.12,
+            "ry": 0.82,
+            "kind": "sail",
+            "passed": true,
+            "world": [
+              13.15,
+              4.1,
+              -10.75
+            ],
+            "controlWorld": [
+              13.15,
+              4.1,
+              -14.95
+            ]
+          },
+          {
+            "id": "harbour",
+            "name": "渡口的回光",
+            "distance": 72,
+            "x": 0,
+            "y": 2.05,
+            "rx": 1.3,
+            "ry": 1.15,
+            "kind": "harbour",
+            "passed": true,
+            "world": [
+              12,
+              4.85,
+              -14.67
+            ],
+            "controlWorld": [
+              12,
+              4.85,
+              -14.95
+            ]
+          }
+        ],
+        "input": {
+          "dragging": false,
+          "held": [],
+          "brake": false
+        },
+        "presentation": {
+          "choice": "lamp",
+          "harbourVisible": true,
+          "lampVisible": true,
+          "sailVisible": false
+        },
+        "resources": {
+          "owned": 76,
+          "meshCount": 33
+        },
+        "disposed": false
+      },
+      "tide": {
+        "kind": "tide",
+        "ready": true,
+        "progress": 1,
+        "hint": "你的回应已完整响过。可以再改一笔，或将这一版收进春信。",
+        "status": "这一封，已经有你的声音",
+        "selected": "cup:7",
+        "playing": false,
+        "playhead": -1,
+        "noteCount": 5,
+        "voiceCount": 3,
+        "canUndo": false,
+        "controls": [
+          {
+            "id": "voice-cup",
+            "label": "杯声 1",
+            "pressed": true
+          },
+          {
+            "id": "voice-harp",
+            "label": "弦声 2",
+            "pressed": false
+          },
+          {
+            "id": "voice-wind",
+            "label": "风声 3",
+            "pressed": false
+          },
+          {
+            "id": "play",
+            "label": "听一遍",
+            "disabled": false
+          },
+          {
+            "id": "undo",
+            "label": "收回一笔",
+            "disabled": true
+          },
+          {
+            "id": "clear",
+            "label": "重新留白",
+            "disabled": false
+          }
+        ],
+        "draft": {
+          "version": 1,
+          "notes": [
+            [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            [
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false
+            ]
+          ],
+          "selectedVoice": 0,
+          "selectedBeat": 7,
+          "heardSignature": "10000001:00100010:00001000",
+          "playCount": 1
+        },
+        "targets": [
+          {
+            "voice": 0,
+            "beat": 0,
+            "id": "cup:0",
+            "shape": "cup",
+            "local": [
+              -3.025,
+              0.68,
+              -0.32671562499999995
+            ],
+            "position": [
+              -15.025,
+              2.08,
+              -29.326715625
+            ],
+            "active": true
+          },
+          {
+            "voice": 0,
+            "beat": 1,
+            "id": "cup:1",
+            "shape": "cup",
+            "local": [
+              -2.0838077423978496,
+              0.773256291816938,
+              -0.5493018414293028
+            ],
+            "position": [
+              -14.08380774239785,
+              2.173256291816938,
+              -29.5493018414293
+            ],
+            "active": false
+          },
+          {
+            "voice": 0,
+            "beat": 2,
+            "id": "cup:2",
+            "shape": "cup",
+            "local": [
+              -1.1767026258663145,
+              0.8099445683953957,
+              -0.6897911687161127
+            ],
+            "position": [
+              -13.176702625866314,
+              2.2099445683953958,
+              -29.689791168716113
+            ],
+            "active": false
+          },
+          {
+            "voice": 0,
+            "beat": 3,
+            "id": "cup:3",
+            "shape": "cup",
+            "local": [
+              -0.30052109929501375,
+              0.7678102134716496,
+              -0.7689241799561415
+            ],
+            "position": [
+              -12.300521099295013,
+              2.1678102134716495,
+              -29.76892417995614
+            ],
+            "active": false
+          },
+          {
+            "voice": 0,
+            "beat": 4,
+            "id": "cup:4",
+            "shape": "cup",
+            "local": [
+              0.5816939274138669,
+              0.6724113613544146,
+              -0.7896155398544068
+            ],
+            "position": [
+              -11.418306072586134,
+              2.0724113613544146,
+              -29.789615539854406
+            ],
+            "active": false
+          },
+          {
+            "voice": 0,
+            "beat": 5,
+            "id": "cup:5",
+            "shape": "cup",
+            "local": [
+              1.5003060886050361,
+              0.5816156756099694,
+              -0.7290004000270314
+            ],
+            "position": [
+              -10.499693911394964,
+              1.9816156756099694,
+              -29.729000400027033
+            ],
+            "active": false
+          },
+          {
+            "voice": 0,
+            "beat": 6,
+            "id": "cup:6",
+            "shape": "cup",
+            "local": [
+              2.4459039477229685,
+              0.5504986008513408,
+              -0.5576178885251091
+            ],
+            "position": [
+              -9.554096052277032,
+              1.9504986008513407,
+              -29.557617888525108
+            ],
+            "active": false
+          },
+          {
+            "voice": 0,
+            "beat": 7,
+            "id": "cup:7",
+            "shape": "cup",
+            "local": [
+              3.3795858881856953,
+              0.5979353370765983,
+              -0.2656713771612673
+            ],
+            "position": [
+              -8.620414111814306,
+              1.9979353370765982,
+              -29.26567137716127
+            ],
+            "active": true
+          },
+          {
+            "voice": 1,
+            "beat": 0,
+            "id": "harp:0",
+            "shape": "lyre",
+            "local": [
+              -3.2955485155317237,
+              1.6781084648984999,
+              -0.4779691849852025
+            ],
+            "position": [
+              -15.295548515531724,
+              3.0781084648984995,
+              -29.477969184985202
+            ],
+            "active": false
+          },
+          {
+            "voice": 1,
+            "beat": 1,
+            "id": "harp:1",
+            "shape": "lyre",
+            "local": [
+              -2.3847876721672896,
+              1.6551045324965468,
+              -0.7527451140479302
+            ],
+            "position": [
+              -14.38478767216729,
+              3.0551045324965465,
+              -29.75274511404793
+            ],
+            "active": false
+          },
+          {
+            "voice": 1,
+            "beat": 2,
+            "id": "harp:2",
+            "shape": "lyre",
+            "local": [
+              -1.5070430950199651,
+              1.5683456010477828,
+              -0.9611800543005705
+            ],
+            "position": [
+              -13.507043095019965,
+              2.9683456010477824,
+              -29.96118005430057
+            ],
+            "active": true
+          },
+          {
+            "voice": 1,
+            "beat": 3,
+            "id": "harp:3",
+            "shape": "lyre",
+            "local": [
+              -0.6270658077862309,
+              1.4704584741774465,
+              -1.1056706229406332
+            ],
+            "position": [
+              -12.62706580778623,
+              2.8704584741774464,
+              -30.105670622940632
+            ],
+            "active": false
+          },
+          {
+            "voice": 1,
+            "beat": 4,
+            "id": "harp:4",
+            "shape": "lyre",
+            "local": [
+              0.2879532429355405,
+              1.4208201695276497,
+              -1.1652103240548364
+            ],
+            "position": [
+              -11.71204675706446,
+              2.8208201695276496,
+              -30.165210324054836
+            ],
+            "active": false
+          },
+          {
+            "voice": 1,
+            "beat": 5,
+            "id": "harp:5",
+            "shape": "lyre",
+            "local": [
+              1.2325291995830736,
+              1.4495406166177216,
+              -1.1099874051178622
+            ],
+            "position": [
+              -10.767470800416927,
+              2.8495406166177215,
+              -30.109987405117863
+            ],
+            "active": false
+          },
+          {
+            "voice": 1,
+            "beat": 6,
+            "id": "harp:6",
+            "shape": "lyre",
+            "local": [
+              2.168877188521102,
+              1.5391983776337257,
+              -0.928702998383014
+            ],
+            "position": [
+              -9.831122811478899,
+              2.9391983776337254,
+              -29.928702998383013
+            ],
+            "active": true
+          },
+          {
+            "voice": 1,
+            "beat": 7,
+            "id": "harp:7",
+            "shape": "lyre",
+            "local": [
+              3.0682039230528764,
+              1.6354082578334426,
+              -0.636538840974927
+            ],
+            "position": [
+              -8.931796076947123,
+              3.0354082578334425,
+              -29.63653884097493
+            ],
+            "active": false
+          },
+          {
+            "voice": 2,
+            "beat": 0,
+            "id": "wind:0",
+            "shape": "reed",
+            "local": [
+              -3.1231745900611014,
+              2.4635484595202675,
+              -0.8344135936561475
+            ],
+            "position": [
+              -15.123174590061101,
+              3.8635484595202674,
+              -29.834413593656148
+            ],
+            "active": false
+          },
+          {
+            "voice": 2,
+            "beat": 1,
+            "id": "wind:1",
+            "shape": "reed",
+            "local": [
+              -2.243544676814835,
+              2.362472342371669,
+              -1.1253782083572712
+            ],
+            "position": [
+              -14.243544676814835,
+              3.762472342371669,
+              -30.125378208357272
+            ],
+            "active": false
+          },
+          {
+            "voice": 2,
+            "beat": 2,
+            "id": "wind:2",
+            "shape": "reed",
+            "local": [
+              -1.3655051520344756,
+              2.296291730394363,
+              -1.3440569340189454
+            ],
+            "position": [
+              -13.365505152034476,
+              3.6962917303943628,
+              -30.344056934018944
+            ],
+            "active": false
+          },
+          {
+            "voice": 2,
+            "beat": 3,
+            "id": "wind:3",
+            "shape": "reed",
+            "local": [
+              -0.4541293604778366,
+              2.30515089475638,
+              -1.4718451710365459
+            ],
+            "position": [
+              -12.454129360477836,
+              3.70515089475638,
+              -30.471845171036545
+            ],
+            "active": false
+          },
+          {
+            "voice": 2,
+            "beat": 4,
+            "id": "wind:4",
+            "shape": "reed",
+            "local": [
+              0.4890792221697673,
+              2.3836759852341394,
+              -1.4815947828686293
+            ],
+            "position": [
+              -11.510920777830233,
+              3.7836759852341393,
+              -30.48159478286863
+            ],
+            "active": true
+          },
+          {
+            "voice": 2,
+            "beat": 5,
+            "id": "wind:5",
+            "shape": "reed",
+            "local": [
+              1.427829999187116,
+              2.4842347356480188,
+              -1.363731703300248
+            ],
+            "position": [
+              -10.572170000812884,
+              3.8842347356480187,
+              -30.36373170330025
+            ],
+            "active": false
+          },
+          {
+            "voice": 2,
+            "beat": 6,
+            "id": "wind:6",
+            "shape": "reed",
+            "local": [
+              2.3307038984255937,
+              2.545829557364093,
+              -1.136630874765643
+            ],
+            "position": [
+              -9.669296101574407,
+              3.945829557364093,
+              -30.136630874765643
+            ],
+            "active": false
+          },
+          {
+            "voice": 2,
+            "beat": 7,
+            "id": "wind:7",
+            "shape": "reed",
+            "local": [
+              3.205488378075617,
+              2.5310978580514765,
+              -0.8272678495059853
+            ],
+            "position": [
+              -8.794511621924382,
+              3.9310978580514764,
+              -29.827267849505986
+            ],
+            "active": false
+          }
+        ],
+        "presentation": {
+          "reply": "new",
+          "echoes": 0,
+          "trailCapacity": 144
+        },
+        "history": 0,
+        "disposed": false
+      }
+    }
+  },
+  "voyage": {
+    "active": true,
+    "stage": "sailing",
+    "state": {
+      "version": 1,
+      "stage": "sailing",
+      "letter": {
+        "recipient": "一位未曾谋面的收信人",
+        "body": "今天，花窗重新透进了光。\n我把一段自己的春声，和一封旧信，带向远方。",
+        "sealKind": "lily",
+        "sealed": true
+      },
+      "predecessor": true,
+      "oldRead": true,
+      "player": {
+        "x": 5.8662012329101545,
+        "z": -105.3400102672427
+      },
+      "checkpoint": 11,
+      "elapsed": 74.81829999999854,
+      "tideClock": 0,
+      "boat": {
+        "x": 5.8662012329101545,
+        "z": -105.3400102672427,
+        "heading": -0.010790000000000258,
+        "speed": 3.9835345959453736
+      },
+      "ropes": [
+        true,
+        true
+      ],
+      "sail": 1,
+      "trim": 1,
+      "distance": 76.3400102672427,
+      "flowers": [
+        {
+          "x": 6.449999999999999,
+          "z": -29.989394772637237,
+          "kind": "lily",
+          "age": 17.756999999999966
+        },
+        {
+          "x": 9.49,
+          "z": -31.897847407831048,
+          "kind": "lotus",
+          "age": 17.256699999999967
+        },
+        {
+          "x": 5.808141593084374,
+          "z": -33.754878959089076,
+          "kind": "iris",
+          "age": 16.772699999999958
+        },
+        {
+          "x": 9.992973155843108,
+          "z": -37.62885781861304,
+          "kind": "lily",
+          "age": 16.221999999999962
+        },
+        {
+          "x": 4.153677332088025,
+          "z": -38.209343890804554,
+          "kind": "lotus",
+          "age": 15.654499999999969
+        },
+        {
+          "x": 7.930922076768499,
+          "z": -39.11067572574548,
+          "kind": "lily",
+          "age": 15.454199999999963
+        },
+        {
+          "x": 4.869017581112202,
+          "z": -41.124269722999166,
+          "kind": "lily",
+          "age": 15.103599999999963
+        },
+        {
+          "x": 8.585337369249904,
+          "z": -41.48540225000464,
+          "kind": "lily",
+          "age": 14.953599999999964
+        },
+        {
+          "x": 4.171612160870856,
+          "z": -42.733645087959815,
+          "kind": "iris",
+          "age": 14.569699999999967
+        },
+        {
+          "x": 9.238073792151889,
+          "z": -44.01571769227005,
+          "kind": "lily",
+          "age": 14.419399999999971
+        },
+        {
+          "x": 5.164192113761768,
+          "z": -45.280295676449214,
+          "kind": "lotus",
+          "age": 14.035599999999974
+        },
+        {
+          "x": 8.201191984719332,
+          "z": -45.574733022265384,
+          "kind": "lily",
+          "age": 13.902099999999976
+        },
+        {
+          "x": 4.456684002664525,
+          "z": -47.825935989258305,
+          "kind": "lily",
+          "age": 13.50159999999998
+        },
+        {
+          "x": 8.822581130497454,
+          "z": -51.010151392078804,
+          "kind": "lotus",
+          "age": 12.383499999999989
+        },
+        {
+          "x": 3.721806834126494,
+          "z": -52.907998479384695,
+          "kind": "iris",
+          "age": 11.832799999999995
+        },
+        {
+          "x": 7.751241922286558,
+          "z": -55.76249976600374,
+          "kind": "lily",
+          "age": 11.315300000000004
+        },
+        {
+          "x": 4.690509682003908,
+          "z": -57.66745522012819,
+          "kind": "lotus",
+          "age": 10.798100000000007
+        },
+        {
+          "x": 8.389232921217964,
+          "z": -59.659344561858994,
+          "kind": "iris",
+          "age": 10.280700000000017
+        },
+        {
+          "x": 3.958625050655218,
+          "z": -62.472184897098245,
+          "kind": "lily",
+          "age": 9.76320000000002
+        },
+        {
+          "x": 9.01712566686293,
+          "z": -64.49204305465992,
+          "kind": "lotus",
+          "age": 9.245900000000022
+        },
+        {
+          "x": 4.93612137529262,
+          "z": -66.41670785658097,
+          "kind": "iris",
+          "age": 8.728600000000025
+        },
+        {
+          "x": 7.944968508281624,
+          "z": -69.32019482312786,
+          "kind": "lily",
+          "age": 8.211100000000027
+        },
+        {
+          "x": 4.203936292753569,
+          "z": -71.24928179030276,
+          "kind": "lotus",
+          "age": 7.693800000000028
+        },
+        {
+          "x": 8.582455265435769,
+          "z": -73.26377012949987,
+          "kind": "iris",
+          "age": 7.176400000000025
+        },
+        {
+          "x": 3.4718700079880738,
+          "z": -76.07084616302232,
+          "kind": "lily",
+          "age": 6.659100000000019
+        },
+        {
+          "x": 7.510529681462575,
+          "z": -78.07046076533723,
+          "kind": "lotus",
+          "age": 6.1417000000000135
+        },
+        {
+          "x": 4.449693644322319,
+          "z": -79.98503557343953,
+          "kind": "iris",
+          "age": 5.62430000000001
+        },
+        {
+          "x": 8.138863363599574,
+          "z": -82.86229555285388,
+          "kind": "lily",
+          "age": 5.106900000000008
+        },
+        {
+          "x": 3.718344538472578,
+          "z": -84.74013552695308,
+          "kind": "lotus",
+          "age": 4.589500000000006
+        },
+        {
+          "x": 8.777422949637756,
+          "z": -86.70644664705375,
+          "kind": "iris",
+          "age": 4.072200000000002
+        },
+        {
+          "x": 4.686715051643082,
+          "z": -89.53039132326202,
+          "kind": "lily",
+          "age": 3.5381
+        },
+        {
+          "x": 7.7054937984995195,
+          "z": -91.51346786923098,
+          "kind": "lotus",
+          "age": 3.0040999999999998
+        },
+        {
+          "x": 3.964858819707351,
+          "z": -93.40574099768519,
+          "kind": "iris",
+          "age": 2.47
+        },
+        {
+          "x": 8.33425284530354,
+          "z": -96.26588206737476,
+          "kind": "lily",
+          "age": 1.9360000000000008
+        },
+        {
+          "x": 3.2333413407034635,
+          "z": -98.17644490113973,
+          "kind": "lotus",
+          "age": 1.3841999999999992
+        },
+        {
+          "x": 7.272228026702867,
+          "z": -100.15502116101476,
+          "kind": "iris",
+          "age": 0.8345
+        },
+        {
+          "x": 4.202011431184583,
+          "z": -102.93893742733563,
+          "kind": "lily",
+          "age": 0.28369999999999895
+        }
+      ],
+      "recoveries": 0,
+      "recover": 0,
+      "scatterCooldown": 0,
+      "flowerSerial": 37,
+      "flowerDistance": 75.20709940914698,
+      "paused": false
+    },
+    "info": {
+      "stage": "sailing",
+      "title": "一路繁花向海",
+      "hint": "左右掌舵，调整花帆迎风；把种子撒向船侧，让走过的海也开花。",
+      "target": null,
+      "tideLevel": 0,
+      "distance": 76.3400102672427,
+      "progress": 0.5089334017816181
+    },
+    "reading": false,
+    "bagOpen": false,
+    "endingOpen": true,
+    "held": [],
+    "touchHeld": [],
+    "drag": null,
+    "view": {
+      "stage": "sailing",
+      "player": {
+        "x": 5.8662012329101545,
+        "z": -105.3400102672427
+      },
+      "boat": {
+        "x": 5.8662012329101545,
+        "z": -105.3400102672427,
+        "heading": -0.010790000000000258,
+        "speed": 3.9835345959453736
+      },
+      "tide": 0,
+      "sail": 1,
+      "ropes": [
+        true,
+        true
+      ],
+      "trim": 1,
+      "progress": 0.5089334017816181,
+      "blooms": [
+        {
+          "x": 6.449999999999999,
+          "z": -29.989394772637237,
+          "kind": "lily",
+          "age": 17.756999999999966
+        },
+        {
+          "x": 9.49,
+          "z": -31.897847407831048,
+          "kind": "lotus",
+          "age": 17.256699999999967
+        },
+        {
+          "x": 5.808141593084374,
+          "z": -33.754878959089076,
+          "kind": "iris",
+          "age": 16.772699999999958
+        },
+        {
+          "x": 9.992973155843108,
+          "z": -37.62885781861304,
+          "kind": "lily",
+          "age": 16.221999999999962
+        },
+        {
+          "x": 4.153677332088025,
+          "z": -38.209343890804554,
+          "kind": "lotus",
+          "age": 15.654499999999969
+        },
+        {
+          "x": 7.930922076768499,
+          "z": -39.11067572574548,
+          "kind": "lily",
+          "age": 15.454199999999963
+        },
+        {
+          "x": 4.869017581112202,
+          "z": -41.124269722999166,
+          "kind": "lily",
+          "age": 15.103599999999963
+        },
+        {
+          "x": 8.585337369249904,
+          "z": -41.48540225000464,
+          "kind": "lily",
+          "age": 14.953599999999964
+        },
+        {
+          "x": 4.171612160870856,
+          "z": -42.733645087959815,
+          "kind": "iris",
+          "age": 14.569699999999967
+        },
+        {
+          "x": 9.238073792151889,
+          "z": -44.01571769227005,
+          "kind": "lily",
+          "age": 14.419399999999971
+        },
+        {
+          "x": 5.164192113761768,
+          "z": -45.280295676449214,
+          "kind": "lotus",
+          "age": 14.035599999999974
+        },
+        {
+          "x": 8.201191984719332,
+          "z": -45.574733022265384,
+          "kind": "lily",
+          "age": 13.902099999999976
+        },
+        {
+          "x": 4.456684002664525,
+          "z": -47.825935989258305,
+          "kind": "lily",
+          "age": 13.50159999999998
+        },
+        {
+          "x": 8.822581130497454,
+          "z": -51.010151392078804,
+          "kind": "lotus",
+          "age": 12.383499999999989
+        },
+        {
+          "x": 3.721806834126494,
+          "z": -52.907998479384695,
+          "kind": "iris",
+          "age": 11.832799999999995
+        },
+        {
+          "x": 7.751241922286558,
+          "z": -55.76249976600374,
+          "kind": "lily",
+          "age": 11.315300000000004
+        },
+        {
+          "x": 4.690509682003908,
+          "z": -57.66745522012819,
+          "kind": "lotus",
+          "age": 10.798100000000007
+        },
+        {
+          "x": 8.389232921217964,
+          "z": -59.659344561858994,
+          "kind": "iris",
+          "age": 10.280700000000017
+        },
+        {
+          "x": 3.958625050655218,
+          "z": -62.472184897098245,
+          "kind": "lily",
+          "age": 9.76320000000002
+        },
+        {
+          "x": 9.01712566686293,
+          "z": -64.49204305465992,
+          "kind": "lotus",
+          "age": 9.245900000000022
+        },
+        {
+          "x": 4.93612137529262,
+          "z": -66.41670785658097,
+          "kind": "iris",
+          "age": 8.728600000000025
+        },
+        {
+          "x": 7.944968508281624,
+          "z": -69.32019482312786,
+          "kind": "lily",
+          "age": 8.211100000000027
+        },
+        {
+          "x": 4.203936292753569,
+          "z": -71.24928179030276,
+          "kind": "lotus",
+          "age": 7.693800000000028
+        },
+        {
+          "x": 8.582455265435769,
+          "z": -73.26377012949987,
+          "kind": "iris",
+          "age": 7.176400000000025
+        },
+        {
+          "x": 3.4718700079880738,
+          "z": -76.07084616302232,
+          "kind": "lily",
+          "age": 6.659100000000019
+        },
+        {
+          "x": 7.510529681462575,
+          "z": -78.07046076533723,
+          "kind": "lotus",
+          "age": 6.1417000000000135
+        },
+        {
+          "x": 4.449693644322319,
+          "z": -79.98503557343953,
+          "kind": "iris",
+          "age": 5.62430000000001
+        },
+        {
+          "x": 8.138863363599574,
+          "z": -82.86229555285388,
+          "kind": "lily",
+          "age": 5.106900000000008
+        },
+        {
+          "x": 3.718344538472578,
+          "z": -84.74013552695308,
+          "kind": "lotus",
+          "age": 4.589500000000006
+        },
+        {
+          "x": 8.777422949637756,
+          "z": -86.70644664705375,
+          "kind": "iris",
+          "age": 4.072200000000002
+        },
+        {
+          "x": 4.686715051643082,
+          "z": -89.53039132326202,
+          "kind": "lily",
+          "age": 3.5381
+        },
+        {
+          "x": 7.7054937984995195,
+          "z": -91.51346786923098,
+          "kind": "lotus",
+          "age": 3.0040999999999998
+        },
+        {
+          "x": 3.964858819707351,
+          "z": -93.40574099768519,
+          "kind": "iris",
+          "age": 2.47
+        },
+        {
+          "x": 8.33425284530354,
+          "z": -96.26588206737476,
+          "kind": "lily",
+          "age": 1.9360000000000008
+        },
+        {
+          "x": 3.2333413407034635,
+          "z": -98.17644490113973,
+          "kind": "lotus",
+          "age": 1.3841999999999992
+        },
+        {
+          "x": 7.272228026702867,
+          "z": -100.15502116101476,
+          "kind": "iris",
+          "age": 0.8345
+        },
+        {
+          "x": 4.202011431184583,
+          "z": -102.93893742733563,
+          "kind": "lily",
+          "age": 0.28369999999999895
+        }
+      ],
+      "quality": "balanced",
+      "reducedMotion": false,
+      "sealed": true,
+      "predecessor": true,
+      "letterSeal": "lily",
+      "departureAge": 0,
+      "purposes": [
+        "memory",
+        "season"
+      ]
+    },
+    "cameraYaw": 0.2580953191410822,
+    "interactables": [
+      {
+        "id": "seal",
+        "position": [
+          0.78,
+          1.83,
+          1.25
+        ],
+        "radius": 0.35
+      },
+      {
+        "id": "old-letter",
+        "position": [
+          0,
+          1.81,
+          -13
+        ],
+        "radius": 0.5
+      },
+      {
+        "id": "rope-left",
+        "position": [
+          5.154962223835384,
+          0.7264609520414476,
+          -103.74353453813762
+        ],
+        "radius": 0.4
+      },
+      {
+        "id": "rope-right",
+        "position": [
+          6.554827002851066,
+          0.7141060075540484,
+          -103.72850271129954
+        ],
+        "radius": 0.4
+      },
+      {
+        "id": "halyard",
+        "position": [
+          5.944774123304816,
+          2.4534391861795095,
+          -106.02490328129815
+        ],
+        "radius": 0.5
+      }
+    ],
+    "world": {
+      "stage": "sailing",
+      "time": 14.135799999999971,
+      "meshes": 141,
+      "triangles": 874980,
+      "flowerSpecies": 4,
+      "flowers": 118,
+      "palette": [
+        "dec1cd",
+        "e7e4d6",
+        "a9b9cf",
+        "d7caab"
+      ],
+      "floralMood": "memory+season",
+      "boat": [
+        5.8662012329101545,
+        0.049848567918349684,
+        -105.3400102672427
+      ],
+      "tideStones": [
+        {
+          "x": 0,
+          "z": -2.8,
+          "r": 1.65,
+          "high": true
+        },
+        {
+          "x": 0.45,
+          "z": -4.8,
+          "r": 1.3,
+          "high": false
+        },
+        {
+          "x": -0.35,
+          "z": -6.8,
+          "r": 1.3,
+          "high": false
+        },
+        {
+          "x": 0.25,
+          "z": -8.8,
+          "r": 1.65,
+          "high": true
+        },
+        {
+          "x": -0.45,
+          "z": -10.8,
+          "r": 1.3,
+          "high": false
+        },
+        {
+          "x": 0,
+          "z": -13,
+          "r": 2.1,
+          "high": true
+        },
+        {
+          "x": 0.45,
+          "z": -15.2,
+          "r": 1.3,
+          "high": false
+        },
+        {
+          "x": -0.35,
+          "z": -17.3,
+          "r": 1.3,
+          "high": false
+        },
+        {
+          "x": 0.25,
+          "z": -19.4,
+          "r": 1.65,
+          "high": true
+        },
+        {
+          "x": -0.35,
+          "z": -21.5,
+          "r": 1.3,
+          "high": false
+        },
+        {
+          "x": 0,
+          "z": -23.5,
+          "r": 1.65,
+          "high": true
+        }
+      ],
+      "interactables": [
+        {
+          "id": "seal",
+          "position": [
+            0.78,
+            1.83,
+            1.25
+          ],
+          "radius": 0.35
+        },
+        {
+          "id": "old-letter",
+          "position": [
+            0,
+            1.81,
+            -13
+          ],
+          "radius": 0.5
+        },
+        {
+          "id": "rope-left",
+          "position": [
+            5.154962223835384,
+            0.7264609520414476,
+            -103.74353453813762
+          ],
+          "radius": 0.4
+        },
+        {
+          "id": "rope-right",
+          "position": [
+            6.554827002851066,
+            0.7141060075540484,
+            -103.72850271129954
+          ],
+          "radius": 0.4
+        },
+        {
+          "id": "halyard",
+          "position": [
+            5.944774123304816,
+            2.4534391861795095,
+            -106.02490328129815
+          ],
+          "radius": 0.5
+        }
+      ]
+    }
+  },
+  "atlas": {
+    "active": false,
+    "state": {
+      "version": 1,
+      "location": null,
+      "player": {
+        "x": 0,
+        "y": 0,
+        "z": 10,
+        "vy": 0,
+        "grounded": true,
+        "gliding": false
+      },
+      "visited": [
+        "conservatory",
+        "observatory",
+        "meadow"
+      ],
+      "completed": [
+        "conservatory",
+        "observatory",
+        "meadow"
+      ],
+      "blooms": [
+        1,
+        1,
+        1
+      ],
+      "butterfly": {
+        "x": -4.772666515852344,
+        "y": 1.1,
+        "z": -24.471120654792482,
+        "trust": 0.9919920000000001
+      },
+      "stars": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0,
+        5,
+        2
+      ],
+      "stargazing": false,
+      "meadowCheckpoint": 4,
+      "notes": {
+        "conservatory": [],
+        "observatory": [],
+        "meadow": []
+      },
+      "positions": {
+        "conservatory": {
+          "x": -4.8473435707139485,
+          "y": 0,
+          "z": -24.68491893659243,
+          "vy": 0,
+          "grounded": true,
+          "gliding": false
+        },
+        "observatory": {
+          "x": 0,
+          "y": 1.7700749999999659,
+          "z": -17.866999999999848,
+          "vy": 0,
+          "grounded": true,
+          "gliding": false
+        },
+        "meadow": {
+          "x": -0.06002298654257463,
+          "y": 2.8,
+          "z": -35.79708822048836,
+          "vy": 0,
+          "grounded": true,
+          "gliding": false
+        }
+      },
+      "jumpHeld": false,
+      "calling": false,
+      "elapsed": 80.39309999999968,
+      "recoveries": 0
+    },
+    "status": {
+      "location": null,
+      "title": "远方的三处驿路",
+      "objective": "在地图选择一处新的风景。",
+      "hint": "花香、星路与远风，都可以慢慢寻找。",
+      "progress": 0,
+      "complete": false,
+      "target": null,
+      "nextStar": null,
+      "canStudy": false
+    },
+    "camera": {
+      "yaw": 0,
+      "pitch": 0.42,
+      "radius": 12
+    },
+    "held": [],
+    "touch": [],
+    "world": {
+      "location": null,
+      "visibleLocations": [],
+      "landmarks": [],
+      "meshes": 0,
+      "triangles": 0,
+      "objects": 0,
+      "instances": 0,
+      "player": [
+        0,
+        0,
+        0
+      ],
+      "parasol": false,
+      "tracedSegments": 0,
+      "disposed": false,
+      "maps": [
+        {
+          "id": "conservatory",
+          "title": "雨幕温室",
+          "landmarks": [
+            "conservatory-amber-ribbed-hall",
+            "conservatory-rainforest-depth",
+            "conservatory-forest-post-gate",
+            "conservatory-inscription-沿林间小径 · 往星台去",
+            "conservatory-entrance-portal",
+            "conservatory-giant-tree-ferns",
+            "conservatory-timber-nursery-shelves",
+            "conservatory-orchid-bed-amber",
+            "conservatory-inscription-灯笼兰",
+            "conservatory-orchid-bed-rose",
+            "conservatory-inscription-雨蝶兰",
+            "conservatory-orchid-bed-ivory",
+            "conservatory-inscription-月白兰",
+            "conservatory-last-gardeners-bench",
+            "conservatory-rain-catcher",
+            "conservatory-inscription-一张褪色的植物标签",
+            "conservatory-inscription-铜椅下的旧花签",
+            "conservatory-butterflies"
+          ]
+        },
+        {
+          "id": "observatory",
+          "title": "沉星天文台",
+          "landmarks": [
+            "observatory-broken-horseshoe-colonnade",
+            "observatory-star-reading-dais",
+            "observatory-great-brass-armillary",
+            "observatory-cratered-moon",
+            "observatory-inscription-断柱上的刻痕",
+            "observatory-inscription-无名航海者的星图",
+            "observatory-envelope-constellation"
+          ]
+        },
+        {
+          "id": "meadow",
+          "title": "云海花甸",
+          "landmarks": [
+            "meadow-floating-island-0",
+            "meadow-floating-island-1",
+            "meadow-floating-island-2",
+            "meadow-floating-island-3",
+            "meadow-floating-island-4",
+            "meadow-flower-wind-sculpture",
+            "meadow-letter-tree",
+            "meadow-postmark-stone",
+            "meadow-inscription-缝补过的风旗",
+            "meadow-inscription-树梢的一句留言",
+            "meadow-cloud-ocean"
+          ]
+        }
+      ]
+    }
+  },
+  "saveStatus": {
+    "temporary": false,
+    "status": "ready",
+    "lastResult": {
+      "ok": true,
+      "code": "saved"
+    }
+  },
+  "dash": {
+    "energy": 1,
+    "active": false,
+    "exhausted": false,
+    "speed": 0,
+    "moving": false
+  },
+  "particles": {
+    "backend": "gpu-spring",
+    "activeCount": 65536,
+    "sourceCount": 65536,
+    "quality": "standard",
+    "simulationWidth": 256,
+    "simulationHeight": 256,
+    "simulationTexels": 65536,
+    "fallbackReason": null,
+    "disposed": false,
+    "gestureActive": false,
+    "gestureStrength": 0,
+    "gestureMode": "weave",
+    "flowShape": "petal-streams-drifting-filaments",
+    "flow": 0
+  },
+  "environment": true,
+  "errors": [],
+  "frameNumber": 844,
+  "frameTiming": {
+    "longestMs": 133.5,
+    "over50": 1,
+    "over100": 1,
+    "over1000": 0
+  },
+  "loadingTiming": {
+    "totalMs": 1612.7999999988824,
+    "warmupMs": 617,
+    "overlayHiddenMs": 2267.5
+  },
+  "shaderPreparing": false,
+  "warmedSeries": [
+    "lily"
+  ]
+}

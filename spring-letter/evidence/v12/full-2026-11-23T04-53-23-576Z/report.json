@@ -1,0 +1,5363 @@
+{
+  "version": "0.9.0",
+  "primaryActions": 12,
+  "coreChecks": {
+    "rain": true,
+    "wind": true,
+    "tide": true,
+    "bridges": true,
+    "cores": true,
+    "conservatory": true,
+    "observatory": true,
+    "meadow": true,
+    "writing": true,
+    "tidalLetter": true,
+    "rigging": true,
+    "sailing": true
+  },
+  "started": "2026-11-23T04:53:23.577Z",
+  "url": "http://127.0.0.1:5194/",
+  "passed": true,
+  "checks": [
+    "rain authored interaction completes and saves its actual work",
+    "wind authored interaction completes and saves its actual work",
+    "tide authored interaction completes and saves its actual work",
+    "three distinct interactions connect to drawn bridges and terminal",
+    "five earned garden actions open the conservatory before the coast",
+    "rainforest: actual walking, delayed butterfly following and three orchid blooms",
+    "observatory: actual sky clicks trace an earned constellation, partial progress resumes",
+    "cloud meadow: physical walking, jumps, glides and four sequential landings",
+    "three distinct new maps retain earned progress across reloads",
+    "all three earned map rewards connect to the coastal writing desk",
+    "sealed personal letter survives reload",
+    "predecessor letter and safe tidal checkpoint survive reload",
+    "partly rigged boat resumes without stuck input",
+    "sailing keeps route, both letters and flowers after reload",
+    "player letter and predecessor letter exported intact",
+    "final ceremony and letters survive reload",
+    "twelve deliberate actions finish the sailing ending and freeze actual works and choices"
+  ],
+  "errors": [],
+  "scope": "Isolated Edge automated gameplay regression. Ordinary input and visible UI; readonly diagnostic projections locate authored world objects. Not a blind playtest.",
+  "entry": "./assets/index-BKDYua_4.js",
+  "entrySha256": "64a665b53d97ca7f2f446e055d6c356d0ee03cb1f2fa2dc1a889bce81fce843b",
+  "style": "./assets/index-BQ6tPwxP.css",
+  "styleSha256": "eb5fcb3cd56dc494b3d1bc6f4a4039cdeb5cf2c7eb7bc0276d187079d3889abd",
+  "personalMix": {
+    "musicVolume": 0.25,
+    "sfxVolume": 0.65,
+    "ambienceVolume": 0.85
+  },
+  "samples": [
+    {
+      "name": "01-rainforest-entry",
+      "location": "conservatory",
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          94.74055989583333,
+          115.22884114583333,
+          85.10546875
+        ],
+        "sd": [
+          33.07076055752548,
+          30.53215691182508,
+          31.107727323921296
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "4,6,4",
+          1073
+        ],
+        "dominantFraction": 0.17464192708333334,
+        "pixelHash": "2097294b",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      },
+      "style": "./assets/index-BQ6tPwxP.css",
+      "styleSha256": "eb5fcb3cd56dc494b3d1bc6f4a4039cdeb5cf2c7eb7bc0276d187079d3889abd"
+    },
+    {
+      "name": "02-orchid-0",
+      "location": "conservatory",
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          97.34928385416667,
+          116.03694661458333,
+          83.85465494791667
+        ],
+        "sd": [
+          37.40159492418138,
+          35.07342236740315,
+          34.20580807122408
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "4,6,4",
+          549
+        ],
+        "dominantFraction": 0.08935546875,
+        "pixelHash": "aae958fd",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      },
+      "style": "./assets/index-BQ6tPwxP.css",
+      "styleSha256": "eb5fcb3cd56dc494b3d1bc6f4a4039cdeb5cf2c7eb7bc0276d187079d3889abd"
+    },
+    {
+      "name": "02-orchid-1",
+      "location": "conservatory",
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          92.47379557291667,
+          112.2939453125,
+          82.35856119791667
+        ],
+        "sd": [
+          38.47318334587743,
+          37.623531633960056,
+          37.34432332562202
+        ],
+        "pink": 0.00244140625,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "4,6,4",
+          672
+        ],
+        "dominantFraction": 0.109375,
+        "pixelHash": "af6e6d05",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      },
+      "style": "./assets/index-BQ6tPwxP.css",
+      "styleSha256": "eb5fcb3cd56dc494b3d1bc6f4a4039cdeb5cf2c7eb7bc0276d187079d3889abd"
+    },
+    {
+      "name": "02-orchid-2",
+      "location": "conservatory",
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          96.72021484375,
+          116.50537109375,
+          87.70556640625
+        ],
+        "sd": [
+          37.68170398639671,
+          35.90624053242258,
+          37.33817158829269
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "4,6,4",
+          856
+        ],
+        "dominantFraction": 0.13932291666666666,
+        "pixelHash": "0239910a",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      },
+      "style": "./assets/index-BQ6tPwxP.css",
+      "styleSha256": "eb5fcb3cd56dc494b3d1bc6f4a4039cdeb5cf2c7eb7bc0276d187079d3889abd"
+    },
+    {
+      "name": "03-observatory-entry",
+      "location": "observatory",
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          39.5244140625,
+          53.278645833333336,
+          82.96061197916667
+        ],
+        "sd": [
+          31.80003525933924,
+          32.75359533763022,
+          34.21273840862709
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "2,3,5",
+          2607
+        ],
+        "dominantFraction": 0.42431640625,
+        "pixelHash": "18283093",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      },
+      "style": "./assets/index-BQ6tPwxP.css",
+      "styleSha256": "eb5fcb3cd56dc494b3d1bc6f4a4039cdeb5cf2c7eb7bc0276d187079d3889abd"
+    },
+    {
+      "name": "04-constellation",
+      "location": "observatory",
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          14.550455729166666,
+          21.50439453125,
+          43.050618489583336
+        ],
+        "sd": [
+          39.91663341879207,
+          39.60310885130225,
+          37.490036127780165
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "0,0,2",
+          3913
+        ],
+        "dominantFraction": 0.6368815104166666,
+        "pixelHash": "9e92f9df",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      },
+      "style": "./assets/index-BQ6tPwxP.css",
+      "styleSha256": "eb5fcb3cd56dc494b3d1bc6f4a4039cdeb5cf2c7eb7bc0276d187079d3889abd"
+    },
+    {
+      "name": "05-star-letter-complete",
+      "location": "observatory",
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          14.865397135416666,
+          21.788736979166668,
+          43.226888020833336
+        ],
+        "sd": [
+          40.237619576762526,
+          39.86548382031372,
+          37.62374054443775
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "0,0,2",
+          3891
+        ],
+        "dominantFraction": 0.63330078125,
+        "pixelHash": "92220a44",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      },
+      "style": "./assets/index-BQ6tPwxP.css",
+      "styleSha256": "eb5fcb3cd56dc494b3d1bc6f4a4039cdeb5cf2c7eb7bc0276d187079d3889abd"
+    },
+    {
+      "name": "06-cloud-islands-entry",
+      "location": "meadow",
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          163.56510416666666,
+          173.99055989583334,
+          158.26334635416666
+        ],
+        "sd": [
+          36.39147580749487,
+          31.7031505474524,
+          40.652474494819074
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "11,12,13",
+          1208
+        ],
+        "dominantFraction": 0.19661458333333334,
+        "pixelHash": "1423c8cb",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      },
+      "style": "./assets/index-BQ6tPwxP.css",
+      "styleSha256": "eb5fcb3cd56dc494b3d1bc6f4a4039cdeb5cf2c7eb7bc0276d187079d3889abd"
+    },
+    {
+      "name": "07-landed-island-1",
+      "location": "meadow",
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          168.28824869791666,
+          177.76513671875,
+          163.912109375
+        ],
+        "sd": [
+          37.46566247260378,
+          32.49974982947873,
+          40.73799298091448
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "11,12,13",
+          1360
+        ],
+        "dominantFraction": 0.22135416666666666,
+        "pixelHash": "85e9f6f1",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      },
+      "style": "./assets/index-BQ6tPwxP.css",
+      "styleSha256": "eb5fcb3cd56dc494b3d1bc6f4a4039cdeb5cf2c7eb7bc0276d187079d3889abd"
+    },
+    {
+      "name": "07-landed-island-2",
+      "location": "meadow",
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          163.84830729166666,
+          174.53125,
+          161.47705078125
+        ],
+        "sd": [
+          40.09317075119831,
+          34.60288102167217,
+          41.667561378727534
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "11,12,13",
+          1355
+        ],
+        "dominantFraction": 0.22054036458333334,
+        "pixelHash": "c57d1272",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      },
+      "style": "./assets/index-BQ6tPwxP.css",
+      "styleSha256": "eb5fcb3cd56dc494b3d1bc6f4a4039cdeb5cf2c7eb7bc0276d187079d3889abd"
+    },
+    {
+      "name": "07-landed-island-3",
+      "location": "meadow",
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          163.27473958333334,
+          173.90738932291666,
+          160.802734375
+        ],
+        "sd": [
+          40.01079004774437,
+          34.73537495872057,
+          41.90921121556326
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "11,12,13",
+          1353
+        ],
+        "dominantFraction": 0.22021484375,
+        "pixelHash": "691ff832",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      },
+      "style": "./assets/index-BQ6tPwxP.css",
+      "styleSha256": "eb5fcb3cd56dc494b3d1bc6f4a4039cdeb5cf2c7eb7bc0276d187079d3889abd"
+    },
+    {
+      "name": "07-landed-island-4",
+      "location": "meadow",
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          158.84619140625,
+          169.65462239583334,
+          154.08951822916666
+        ],
+        "sd": [
+          39.48749153146777,
+          33.488792213125166,
+          40.81064706139791
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "11,12,13",
+          1317
+        ],
+        "dominantFraction": 0.21435546875,
+        "pixelHash": "d50f7b4e",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      },
+      "style": "./assets/index-BQ6tPwxP.css",
+      "styleSha256": "eb5fcb3cd56dc494b3d1bc6f4a4039cdeb5cf2c7eb7bc0276d187079d3889abd"
+    },
+    {
+      "name": "08-three-places-earned",
+      "location": "meadow",
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          158.66666666666666,
+          169.48893229166666,
+          153.67024739583334
+        ],
+        "sd": [
+          39.4875609479499,
+          33.513409861228176,
+          40.95913455292005
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "11,12,13",
+          1304
+        ],
+        "dominantFraction": 0.21223958333333334,
+        "pixelHash": "73d4f37d",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      },
+      "style": "./assets/index-BQ6tPwxP.css",
+      "styleSha256": "eb5fcb3cd56dc494b3d1bc6f4a4039cdeb5cf2c7eb7bc0276d187079d3889abd"
+    },
+    {
+      "name": "01-writing",
+      "stage": "writing",
+      "frame": 867,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          146.40185546875,
+          152.3759765625,
+          136.93017578125
+        ],
+        "sd": [
+          42.9622737900764,
+          29.239179283388214,
+          28.062549431013178
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "11,10,8",
+          2021
+        ],
+        "dominantFraction": 0.3289388020833333,
+        "pixelHash": "7ff120a7",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "02-sealed",
+      "stage": "writing",
+      "frame": 878,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          146.54182942708334,
+          152.45100911458334,
+          136.99153645833334
+        ],
+        "sd": [
+          42.75030695902302,
+          29.07864485962694,
+          27.94956150397167
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "11,10,8",
+          2023
+        ],
+        "dominantFraction": 0.3292643229166667,
+        "pixelHash": "e270da87",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "03-tidal-shore",
+      "stage": "tide",
+      "frame": 259,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          125.052734375,
+          136.20524088541666,
+          122.17399088541667
+        ],
+        "sd": [
+          52.161905703163235,
+          34.68296280208832,
+          28.354976999838573
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "11,10,8",
+          1709
+        ],
+        "dominantFraction": 0.2781575520833333,
+        "pixelHash": "7c6722c9",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "04-safe-high-stone",
+      "stage": "tide",
+      "frame": 1303,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          86.21728515625,
+          114.78955078125,
+          116.48681640625
+        ],
+        "sd": [
+          46.81617650142905,
+          32.770615353660624,
+          25.17643125576359
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "3,5,6",
+          812
+        ],
+        "dominantFraction": 0.13216145833333334,
+        "pixelHash": "96aec282",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "05-predecessor-letter",
+      "stage": "tide",
+      "frame": 1455,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          90.22249348958333,
+          116.74332682291667,
+          116.84602864583333
+        ],
+        "sd": [
+          49.451702111243634,
+          34.11977749834273,
+          26.39667708351305
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "3,5,6",
+          725
+        ],
+        "dominantFraction": 0.11800130208333333,
+        "pixelHash": "f0262917",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "06-island",
+      "stage": "island",
+      "frame": 1192,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          117.49479166666667,
+          131.71305338541666,
+          120.36197916666667
+        ],
+        "sd": [
+          53.105106314019025,
+          36.104654542165775,
+          30.083355763603976
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "11,10,8",
+          1214
+        ],
+        "dominantFraction": 0.19759114583333334,
+        "pixelHash": "a78e10aa",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "07-boat-rigging",
+      "stage": "rigging",
+      "frame": 1569,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          116.517578125,
+          138.55533854166666,
+          138.21630859375
+        ],
+        "sd": [
+          49.61016338212552,
+          34.668221897305465,
+          29.898944177613025
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "9,10,10",
+          1284
+        ],
+        "dominantFraction": 0.208984375,
+        "pixelHash": "cfebd378",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "08-sails-raised",
+      "stage": "rigging",
+      "frame": 275,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          124.572265625,
+          144.19645182291666,
+          141.44254557291666
+        ],
+        "sd": [
+          52.93577192744471,
+          37.86389818266901,
+          31.419845001627753
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "9,10,10",
+          1309
+        ],
+        "dominantFraction": 0.21305338541666666,
+        "pixelHash": "7e83f737",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "09-sailing",
+      "stage": "sailing",
+      "frame": 376,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          115.3837890625,
+          136.32828776041666,
+          137.314453125
+        ],
+        "sd": [
+          44.985922684876336,
+          32.30686011080745,
+          28.093490672938987
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "10,10,10",
+          948
+        ],
+        "dominantFraction": 0.154296875,
+        "pixelHash": "755d6910",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "10-flower-wake",
+      "stage": "sailing",
+      "frame": 593,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          122.66829427083333,
+          139.28466796875,
+          137.87923177083334
+        ],
+        "sd": [
+          45.06134415365613,
+          31.79478549574577,
+          27.863939994444248
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "10,10,10",
+          1338
+        ],
+        "dominantFraction": 0.2177734375,
+        "pixelHash": "55c83f40",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "sea-38",
+      "stage": "sailing",
+      "frame": 316,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          128.60807291666666,
+          141.42317708333334,
+          137.4091796875
+        ],
+        "sd": [
+          44.144748589806056,
+          31.157017239130404,
+          27.33987866126156
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "10,10,10",
+          826
+        ],
+        "dominantFraction": 0.13444010416666666,
+        "pixelHash": "a89d83f3",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "sea-76",
+      "stage": "sailing",
+      "frame": 844,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          137.49137369791666,
+          144.93570963541666,
+          136.28727213541666
+        ],
+        "sd": [
+          43.70897917456722,
+          30.37983716335462,
+          25.8374764550249
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "5,7,7",
+          831
+        ],
+        "dominantFraction": 0.13525390625,
+        "pixelHash": "477fe18e",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "sea-112",
+      "stage": "sailing",
+      "frame": 1439,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          146.99951171875,
+          149.89274088541666,
+          136.52701822916666
+        ],
+        "sd": [
+          44.3292439395391,
+          30.403242390016445,
+          24.605803361763954
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "12,11,9",
+          1241
+        ],
+        "dominantFraction": 0.20198567708333334,
+        "pixelHash": "0b4792b5",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "sea-147",
+      "stage": "sailing",
+      "frame": 2039,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          153.75260416666666,
+          153.32373046875,
+          135.97428385416666
+        ],
+        "sd": [
+          44.499667086647825,
+          30.30631675579124,
+          23.700228608089013
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "6,7,7",
+          1200
+        ],
+        "dominantFraction": 0.1953125,
+        "pixelHash": "e11d05d6",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "11-dawn",
+      "stage": "dawn",
+      "frame": 2110,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          157.47509765625,
+          155.52067057291666,
+          137.11946614583334
+        ],
+        "sd": [
+          43.09467191035077,
+          28.747597767725185,
+          21.40544520935814
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "6,7,7",
+          1131
+        ],
+        "dominantFraction": 0.18408203125,
+        "pixelHash": "0a93b3db",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "12-ceremonial-ending",
+      "stage": "complete",
+      "frame": 2295,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          158.46695963541666,
+          156.32649739583334,
+          137.84977213541666
+        ],
+        "sd": [
+          42.32560976132117,
+          28.115151766005276,
+          20.913443657110186
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "7,8,7",
+          870
+        ],
+        "dominantFraction": 0.1416015625,
+        "pixelHash": "a66891c7",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    },
+    {
+      "name": "13-open-sea",
+      "stage": "complete",
+      "frame": 2524,
+      "pixels": {
+        "canvas": true,
+        "width": 1440,
+        "height": 900,
+        "samplePixels": 6144,
+        "mean": [
+          157.53548177083334,
+          155.77864583333334,
+          137.52604166666666
+        ],
+        "sd": [
+          42.848324171116694,
+          27.781932401434837,
+          19.917194439267735
+        ],
+        "pink": 0,
+        "magenta": 0,
+        "opaque": 1,
+        "transparent": 0,
+        "allZero": 0,
+        "alphaMean": 255,
+        "dominant": [
+          "6,7,7",
+          879
+        ],
+        "dominantFraction": 0.14306640625,
+        "pixelHash": "7db6841f",
+        "contextLost": false,
+        "glError": 0,
+        "gpu": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "loading": false,
+        "failure": false,
+        "failureText": ""
+      },
+      "pixelCheck": {
+        "valid": true,
+        "reasons": []
+      }
+    }
+  ],
+  "final": {
+    "render": {
+      "lifecycle": {
+        "phase": "ready",
+        "blocked": false,
+        "contextLost": false,
+        "needsReload": false,
+        "lossCount": 0,
+        "statusMessage": "",
+        "saveAttempted": false,
+        "saveSucceeded": null,
+        "callbackErrors": []
+      },
+      "size": {
+        "width": 1440,
+        "height": 900,
+        "pixelRatio": 1,
+        "bufferWidth": 1440,
+        "bufferHeight": 900,
+        "limited": false
+      },
+      "failure": null,
+      "blocked": false
+    },
+    "state": {
+      "version": 1,
+      "started": true,
+      "playedSeconds": 351.3093000000335,
+      "bloom": 0.82,
+      "player": {
+        "x": -0.07482610163034331,
+        "z": -50.13812392222002,
+        "safe": "finale"
+      },
+      "p1": {
+        "solved": true,
+        "hold": 0.8,
+        "broken": false,
+        "ink": 0
+      },
+      "wind": {
+        "x": 3,
+        "z": -2,
+        "vx": 0,
+        "vz": 0,
+        "touched": true,
+        "solved": true,
+        "hold": 0.8,
+        "returns": 0,
+        "time": 0
+      },
+      "companion": {
+        "trust": 1,
+        "awakened": true
+      },
+      "bridge": {
+        "platform": "F",
+        "support": null,
+        "structure": "bridge_mf",
+        "solved": true
+      },
+      "cores": [
+        "memory",
+        "season"
+      ],
+      "deliveryCarried": null,
+      "ending": "memory+season",
+      "discoveries": [
+        "leaf",
+        "echo",
+        "protocol"
+      ],
+      "story": {
+        "introSeen": true,
+        "branches": {
+          "rhythm": false,
+          "light": false,
+          "memory": false
+        },
+        "motif": [],
+        "lightFound": [
+          false,
+          false,
+          false
+        ],
+        "lightHold": [
+          0,
+          0,
+          0
+        ],
+        "memorySeen": {
+          "closed": false,
+          "open": false
+        },
+        "memoryHold": {
+          "closed": 0,
+          "open": 0
+        },
+        "memoryBloom": 0.5,
+        "seenChapters": [
+          3
+        ]
+      },
+      "exploration": {
+        "version": 1,
+        "rain": {
+          "done": false,
+          "rounds": 0,
+          "mask": 0,
+          "travel": 0,
+          "lastAngle": null,
+          "gap": 0,
+          "clock": 0,
+          "best": 0,
+          "flash": 0
+        },
+        "wind": {
+          "done": false,
+          "rounds": 0,
+          "stage": 0,
+          "seed": {
+            "x": -1.18,
+            "z": 1.05,
+            "vx": 0,
+            "vz": 0
+          },
+          "touched": false,
+          "catching": false,
+          "hold": 0,
+          "rest": 0,
+          "bumps": 0,
+          "clock": 0,
+          "best": 0,
+          "flash": 0
+        },
+        "tide": {
+          "done": false,
+          "rounds": 0,
+          "index": 0,
+          "hold": 0,
+          "lastX": null,
+          "lastZ": null,
+          "pulse": 0,
+          "clock": 0,
+          "flash": 0
+        },
+        "seen": []
+      },
+      "letters": {
+        "version": 1,
+        "entries": {
+          "rain": {
+            "turns": {
+              "a": 0,
+              "b": 0,
+              "c": 0,
+              "d": 0,
+              "e": 2,
+              "f": 0
+            },
+            "choice": "tree",
+            "moves": 0,
+            "read": true,
+            "edition": 2,
+            "artwork": {
+              "version": 1,
+              "positions": {
+                "tree": {
+                  "x": -0.6500034210551662,
+                  "y": 2.080003702630422
+                },
+                "window": {
+                  "x": 0.5200004443520421,
+                  "y": 1.770000016540218
+                },
+                "bloom": {
+                  "x": 0.07956639567392054,
+                  "y": 1.0949173131142986
+                }
+              },
+              "selected": "bloom"
+            }
+          },
+          "wind": {
+            "turns": {
+              "a": 0,
+              "b": 0,
+              "c": 3,
+              "d": 1,
+              "e": 0,
+              "f": 2,
+              "g": 0,
+              "h": 2,
+              "i": 1,
+              "j": 1,
+              "k": 0
+            },
+            "choice": "lamp",
+            "moves": 0,
+            "read": true,
+            "edition": 2,
+            "artwork": {
+              "version": 1,
+              "distance": 73,
+              "x": -0.005831114654363076,
+              "y": 2.0499994924987957,
+              "vx": 0,
+              "vy": 0,
+              "gate": 5,
+              "checkpoint": 5,
+              "launched": false,
+              "completed": true,
+              "misses": 0,
+              "elapsed": 30.00749999999995,
+              "recover": 0,
+              "lastMiss": null
+            }
+          },
+          "tide": {
+            "turns": {
+              "a": 0,
+              "b": 0,
+              "c": 0,
+              "d": 1,
+              "e": 0,
+              "f": 0,
+              "g": 3,
+              "h": 0,
+              "i": 2,
+              "j": 0
+            },
+            "choice": "new",
+            "moves": 0,
+            "read": true,
+            "edition": 2,
+            "artwork": {
+              "version": 1,
+              "notes": [
+                [
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  true
+                ],
+                [
+                  false,
+                  false,
+                  true,
+                  false,
+                  false,
+                  false,
+                  true,
+                  false
+                ],
+                [
+                  false,
+                  false,
+                  false,
+                  false,
+                  true,
+                  false,
+                  false,
+                  false
+                ]
+              ],
+              "selectedVoice": 0,
+              "selectedBeat": 7,
+              "heardSignature": "10000001:00100010:00001000",
+              "playCount": 1
+            }
+          }
+        }
+      },
+      "lettersSent": {
+        "version": 1,
+        "entries": {
+          "rain": {
+            "turns": {
+              "a": 0,
+              "b": 0,
+              "c": 0,
+              "d": 0,
+              "e": 2,
+              "f": 0
+            },
+            "choice": "tree",
+            "moves": 0,
+            "read": true,
+            "edition": 2,
+            "artwork": {
+              "version": 1,
+              "positions": {
+                "tree": {
+                  "x": -0.6500034210551662,
+                  "y": 2.080003702630422
+                },
+                "window": {
+                  "x": 0.5200004443520421,
+                  "y": 1.770000016540218
+                },
+                "bloom": {
+                  "x": 0.07956639567392054,
+                  "y": 1.0949173131142986
+                }
+              },
+              "selected": "bloom"
+            }
+          },
+          "wind": {
+            "turns": {
+              "a": 0,
+              "b": 0,
+              "c": 3,
+              "d": 1,
+              "e": 0,
+              "f": 2,
+              "g": 0,
+              "h": 2,
+              "i": 1,
+              "j": 1,
+              "k": 0
+            },
+            "choice": "lamp",
+            "moves": 0,
+            "read": true,
+            "edition": 2,
+            "artwork": {
+              "version": 1,
+              "distance": 73,
+              "x": -0.005831114654363076,
+              "y": 2.0499994924987957,
+              "vx": 0,
+              "vy": 0,
+              "gate": 5,
+              "checkpoint": 5,
+              "launched": false,
+              "completed": true,
+              "misses": 0,
+              "elapsed": 30.00749999999995,
+              "recover": 0,
+              "lastMiss": null
+            }
+          },
+          "tide": {
+            "turns": {
+              "a": 0,
+              "b": 0,
+              "c": 0,
+              "d": 1,
+              "e": 0,
+              "f": 0,
+              "g": 3,
+              "h": 0,
+              "i": 2,
+              "j": 0
+            },
+            "choice": "new",
+            "moves": 0,
+            "read": true,
+            "edition": 2,
+            "artwork": {
+              "version": 1,
+              "notes": [
+                [
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  true
+                ],
+                [
+                  false,
+                  false,
+                  true,
+                  false,
+                  false,
+                  false,
+                  true,
+                  false
+                ],
+                [
+                  false,
+                  false,
+                  false,
+                  false,
+                  true,
+                  false,
+                  false,
+                  false
+                ]
+              ],
+              "selectedVoice": 0,
+              "selectedBeat": 7,
+              "heardSignature": "10000001:00100010:00001000",
+              "playCount": 1
+            }
+          }
+        }
+      },
+      "moments": {
+        "version": 1,
+        "entries": {
+          "rain": {
+            "draft": {
+              "version": 1,
+              "positions": {
+                "tree": {
+                  "x": -0.6500034210551662,
+                  "y": 2.080003702630422
+                },
+                "window": {
+                  "x": 0.5200004443520421,
+                  "y": 1.770000016540218
+                },
+                "bloom": {
+                  "x": 0.07956639567392054,
+                  "y": 1.0949173131142986
+                }
+              },
+              "selected": "bloom"
+            },
+            "completed": true
+          },
+          "wind": {
+            "draft": {
+              "version": 1,
+              "distance": 73,
+              "x": -0.005831114654363076,
+              "y": 2.0499994924987957,
+              "vx": 0,
+              "vy": 0,
+              "gate": 5,
+              "checkpoint": 5,
+              "launched": false,
+              "completed": true,
+              "misses": 0,
+              "elapsed": 30.00749999999995,
+              "recover": 0,
+              "lastMiss": null
+            },
+            "completed": true
+          },
+          "tide": {
+            "draft": {
+              "version": 1,
+              "notes": [
+                [
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  true
+                ],
+                [
+                  false,
+                  false,
+                  true,
+                  false,
+                  false,
+                  false,
+                  true,
+                  false
+                ],
+                [
+                  false,
+                  false,
+                  false,
+                  false,
+                  true,
+                  false,
+                  false,
+                  false
+                ]
+              ],
+              "selectedVoice": 0,
+              "selectedBeat": 7,
+              "heardSignature": "10000001:00100010:00001000",
+              "playCount": 1
+            },
+            "completed": true
+          }
+        }
+      },
+      "voyage": {
+        "version": 1,
+        "stage": "complete",
+        "letter": {
+          "recipient": "一位未曾谋面的收信人",
+          "body": "今天，花窗重新透进了光。\n我把一段自己的春声，和一封旧信，带向远方。",
+          "sealKind": "lily",
+          "sealed": true
+        },
+        "predecessor": true,
+        "oldRead": true,
+        "player": {
+          "x": 5.07137909797036,
+          "z": -179
+        },
+        "checkpoint": 11,
+        "elapsed": 97.4656999999981,
+        "tideClock": 0,
+        "boat": {
+          "x": 5.07137909797036,
+          "z": -179,
+          "heading": -0.010790000000000258,
+          "speed": 0
+        },
+        "ropes": [
+          true,
+          true
+        ],
+        "sail": 1,
+        "trim": 1,
+        "distance": 150,
+        "flowers": [
+          {
+            "x": 6.449999999999999,
+            "z": -29.989394772637237,
+            "kind": "lily",
+            "age": 40.40440000000008
+          },
+          {
+            "x": 9.49,
+            "z": -31.897847407831048,
+            "kind": "lotus",
+            "age": 39.90410000000007
+          },
+          {
+            "x": 5.808141593084374,
+            "z": -33.754878959089076,
+            "kind": "iris",
+            "age": 39.42010000000007
+          },
+          {
+            "x": 9.992973155843108,
+            "z": -37.62885781861304,
+            "kind": "lily",
+            "age": 38.86940000000008
+          },
+          {
+            "x": 4.153677332088025,
+            "z": -38.209343890804554,
+            "kind": "lotus",
+            "age": 38.30190000000008
+          },
+          {
+            "x": 7.930922076768499,
+            "z": -39.11067572574548,
+            "kind": "lily",
+            "age": 38.101600000000076
+          },
+          {
+            "x": 4.869017581112202,
+            "z": -41.124269722999166,
+            "kind": "lily",
+            "age": 37.75100000000007
+          },
+          {
+            "x": 8.585337369249904,
+            "z": -41.48540225000464,
+            "kind": "lily",
+            "age": 37.601000000000056
+          },
+          {
+            "x": 4.171612160870856,
+            "z": -42.733645087959815,
+            "kind": "iris",
+            "age": 37.217100000000016
+          },
+          {
+            "x": 9.238073792151889,
+            "z": -44.01571769227005,
+            "kind": "lily",
+            "age": 37.066800000000015
+          },
+          {
+            "x": 5.164192113761768,
+            "z": -45.280295676449214,
+            "kind": "lotus",
+            "age": 36.683
+          },
+          {
+            "x": 8.201191984719332,
+            "z": -45.574733022265384,
+            "kind": "lily",
+            "age": 36.549499999999995
+          },
+          {
+            "x": 4.456684002664525,
+            "z": -47.825935989258305,
+            "kind": "lily",
+            "age": 36.148999999999994
+          },
+          {
+            "x": 8.822581130497454,
+            "z": -51.010151392078804,
+            "kind": "lotus",
+            "age": 35.0308999999999
+          },
+          {
+            "x": 3.721806834126494,
+            "z": -52.907998479384695,
+            "kind": "iris",
+            "age": 34.480199999999876
+          },
+          {
+            "x": 7.751241922286558,
+            "z": -55.76249976600374,
+            "kind": "lily",
+            "age": 33.96269999999984
+          },
+          {
+            "x": 4.690509682003908,
+            "z": -57.66745522012819,
+            "kind": "lotus",
+            "age": 33.4454999999998
+          },
+          {
+            "x": 8.389232921217964,
+            "z": -59.659344561858994,
+            "kind": "iris",
+            "age": 32.928099999999766
+          },
+          {
+            "x": 3.958625050655218,
+            "z": -62.472184897098245,
+            "kind": "lily",
+            "age": 32.41059999999973
+          },
+          {
+            "x": 9.01712566686293,
+            "z": -64.49204305465992,
+            "kind": "lotus",
+            "age": 31.89329999999967
+          },
+          {
+            "x": 4.93612137529262,
+            "z": -66.41670785658097,
+            "kind": "iris",
+            "age": 31.37599999999968
+          },
+          {
+            "x": 7.944968508281624,
+            "z": -69.32019482312786,
+            "kind": "lily",
+            "age": 30.85849999999968
+          },
+          {
+            "x": 4.203936292753569,
+            "z": -71.24928179030276,
+            "kind": "lotus",
+            "age": 30.341199999999695
+          },
+          {
+            "x": 8.582455265435769,
+            "z": -73.26377012949987,
+            "kind": "iris",
+            "age": 29.82379999999971
+          },
+          {
+            "x": 3.4718700079880738,
+            "z": -76.07084616302232,
+            "kind": "lily",
+            "age": 29.30649999999973
+          },
+          {
+            "x": 7.510529681462575,
+            "z": -78.07046076533723,
+            "kind": "lotus",
+            "age": 28.78909999999973
+          },
+          {
+            "x": 4.449693644322319,
+            "z": -79.98503557343953,
+            "kind": "iris",
+            "age": 28.271699999999743
+          },
+          {
+            "x": 8.138863363599574,
+            "z": -82.86229555285388,
+            "kind": "lily",
+            "age": 27.75429999999976
+          },
+          {
+            "x": 3.718344538472578,
+            "z": -84.74013552695308,
+            "kind": "lotus",
+            "age": 27.236899999999768
+          },
+          {
+            "x": 8.777422949637756,
+            "z": -86.70644664705375,
+            "kind": "iris",
+            "age": 26.719599999999776
+          },
+          {
+            "x": 4.686715051643082,
+            "z": -89.53039132326202,
+            "kind": "lily",
+            "age": 26.185499999999777
+          },
+          {
+            "x": 7.7054937984995195,
+            "z": -91.51346786923098,
+            "kind": "lotus",
+            "age": 25.651499999999782
+          },
+          {
+            "x": 3.964858819707351,
+            "z": -93.40574099768519,
+            "kind": "iris",
+            "age": 25.117399999999787
+          },
+          {
+            "x": 8.33425284530354,
+            "z": -96.26588206737476,
+            "kind": "lily",
+            "age": 24.583399999999788
+          },
+          {
+            "x": 3.2333413407034635,
+            "z": -98.17644490113973,
+            "kind": "lotus",
+            "age": 24.031599999999784
+          },
+          {
+            "x": 7.272228026702867,
+            "z": -100.15502116101476,
+            "kind": "iris",
+            "age": 23.481899999999793
+          },
+          {
+            "x": 4.202011431184583,
+            "z": -102.93893742733563,
+            "kind": "lily",
+            "age": 22.931099999999812
+          },
+          {
+            "x": 7.9006479903228,
+            "z": -104.93885982855959,
+            "kind": "lotus",
+            "age": 22.363699999999817
+          },
+          {
+            "x": 3.480014275331378,
+            "z": -106.82734719892765,
+            "kind": "iris",
+            "age": 21.79619999999984
+          },
+          {
+            "x": 8.529381971743012,
+            "z": -109.69359695636652,
+            "kind": "lily",
+            "age": 21.228799999999843
+          },
+          {
+            "x": 4.448553662908293,
+            "z": -111.60195259183773,
+            "kind": "lotus",
+            "age": 20.64459999999987
+          },
+          {
+            "x": 7.467585850186407,
+            "z": -113.56154159507446,
+            "kind": "iris",
+            "age": 20.060599999999877
+          },
+          {
+            "x": 3.71755010931279,
+            "z": -116.32502855610821,
+            "kind": "lily",
+            "age": 19.476399999999895
+          },
+          {
+            "x": 8.096335303132738,
+            "z": -118.31484490214991,
+            "kind": "lotus",
+            "age": 18.875599999999913
+          },
+          {
+            "x": 2.9959261546680205,
+            "z": -120.17885197690171,
+            "kind": "iris",
+            "age": 18.274899999999924
+          },
+          {
+            "x": 7.024846344847901,
+            "z": -123.08107133561069,
+            "kind": "lily",
+            "age": 17.657299999999932
+          },
+          {
+            "x": 3.9641233869248738,
+            "z": -124.98516654882752,
+            "kind": "lotus",
+            "age": 17.03969999999994
+          },
+          {
+            "x": 7.663225621096684,
+            "z": -126.94193260514668,
+            "kind": "iris",
+            "age": 16.42219999999995
+          },
+          {
+            "x": 3.232650301069343,
+            "z": -129.7517563257268,
+            "kind": "lily",
+            "age": 15.78809999999997
+          },
+          {
+            "x": 8.291415007333502,
+            "z": -131.74713998768584,
+            "kind": "lotus",
+            "age": 15.15389999999998
+          },
+          {
+            "x": 4.210874231788878,
+            "z": -133.62884853034828,
+            "kind": "iris",
+            "age": 14.519699999999983
+          },
+          {
+            "x": 7.22034866603118,
+            "z": -136.47420047291197,
+            "kind": "lily",
+            "age": 13.885499999999988
+          },
+          {
+            "x": 3.480043054881353,
+            "z": -138.33594951794373,
+            "kind": "lotus",
+            "age": 13.2513
+          },
+          {
+            "x": 7.858734082683523,
+            "z": -140.3344926817196,
+            "kind": "iris",
+            "age": 12.600400000000002
+          },
+          {
+            "x": 2.748339872798334,
+            "z": -143.1238634188312,
+            "kind": "lily",
+            "age": 11.949599999999995
+          },
+          {
+            "x": 6.78716409615301,
+            "z": -145.10822839239103,
+            "kind": "lotus",
+            "age": 11.298699999999995
+          },
+          {
+            "x": 3.7264182917901376,
+            "z": -147.01444089506234,
+            "kind": "iris",
+            "age": 10.647799999999997
+          },
+          {
+            "x": 7.415554379386129,
+            "z": -149.89481768412182,
+            "kind": "lily",
+            "age": 9.996799999999997
+          },
+          {
+            "x": 2.9948446582181814,
+            "z": -151.79034891240042,
+            "kind": "lotus",
+            "age": 9.346000000000004
+          },
+          {
+            "x": 8.0535199081594,
+            "z": -153.79402292202343,
+            "kind": "iris",
+            "age": 8.69520000000001
+          },
+          {
+            "x": 3.9629157839315874,
+            "z": -156.6083503841838,
+            "kind": "lily",
+            "age": 8.044100000000027
+          },
+          {
+            "x": 6.982134791971128,
+            "z": -158.550625808994,
+            "kind": "lotus",
+            "age": 7.410000000000022
+          },
+          {
+            "x": 3.2416107945542643,
+            "z": -160.4326137596632,
+            "kind": "iris",
+            "age": 6.775800000000014
+          },
+          {
+            "x": 7.610751532916295,
+            "z": -163.3162281754606,
+            "kind": "lily",
+            "age": 6.141700000000009
+          },
+          {
+            "x": 2.509969564182678,
+            "z": -165.21478629751232,
+            "kind": "lotus",
+            "age": 5.507400000000002
+          },
+          {
+            "x": 6.549112354451072,
+            "z": -167.169628143114,
+            "kind": "iris",
+            "age": 4.8900000000000015
+          },
+          {
+            "x": 3.4787385384009295,
+            "z": -169.96811479223325,
+            "kind": "lily",
+            "age": 4.272299999999993
+          },
+          {
+            "x": 7.17746863075623,
+            "z": -171.9593690204063,
+            "kind": "lotus",
+            "age": 3.6548999999999876
+          },
+          {
+            "x": 2.757092783989725,
+            "z": -173.82395850222196,
+            "kind": "iris",
+            "age": 3.0540999999999956
+          },
+          {
+            "x": 7.8062117083990525,
+            "z": -176.71326315751782,
+            "kind": "lily",
+            "age": 2.4532999999999934
+          }
+        ],
+        "recoveries": 0,
+        "recover": 0,
+        "scatterCooldown": 0,
+        "flowerSerial": 70,
+        "flowerDistance": 150,
+        "paused": false
+      },
+      "atlas": {
+        "version": 1,
+        "location": null,
+        "player": {
+          "x": 0,
+          "y": 0,
+          "z": 10,
+          "vy": 0,
+          "grounded": true,
+          "gliding": false
+        },
+        "visited": [
+          "conservatory",
+          "observatory",
+          "meadow"
+        ],
+        "completed": [
+          "conservatory",
+          "observatory",
+          "meadow"
+        ],
+        "blooms": [
+          1,
+          1,
+          1
+        ],
+        "butterfly": {
+          "x": -4.772666515852344,
+          "y": 1.1,
+          "z": -24.471120654792482,
+          "trust": 0.9919920000000001
+        },
+        "stars": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          5,
+          2
+        ],
+        "stargazing": false,
+        "meadowCheckpoint": 4,
+        "notes": {
+          "conservatory": [],
+          "observatory": [],
+          "meadow": []
+        },
+        "positions": {
+          "conservatory": {
+            "x": -4.8473435707139485,
+            "y": 0,
+            "z": -24.68491893659243,
+            "vy": 0,
+            "grounded": true,
+            "gliding": false
+          },
+          "observatory": {
+            "x": 0,
+            "y": 1.7700749999999659,
+            "z": -17.866999999999848,
+            "vy": 0,
+            "grounded": true,
+            "gliding": false
+          },
+          "meadow": {
+            "x": -0.06002298654257463,
+            "y": 2.8,
+            "z": -35.79708822048836,
+            "vy": 0,
+            "grounded": true,
+            "gliding": false
+          }
+        },
+        "jumpHeld": false,
+        "calling": false,
+        "elapsed": 80.39309999999968,
+        "recoveries": 0
+      },
+      "settings": {
+        "muted": false,
+        "quality": "balanced",
+        "reducedMotion": false,
+        "autoCamera": true,
+        "flowerForm": "lily",
+        "flowerSeries": "lily",
+        "musicVolume": 0.25,
+        "sfxVolume": 0.65,
+        "ambienceVolume": 0.85
+      }
+    },
+    "mode": "play",
+    "focus": "voyage",
+    "galleryKind": "flower",
+    "displayBloom": 0.82,
+    "scatter": 0,
+    "material": "lily",
+    "flowerForm": "lily",
+    "flowerCycle": {
+      "phase": "solid",
+      "dispersion": 0,
+      "flow": 0,
+      "age": 0,
+      "remaining": 0,
+      "cycles": 0
+    },
+    "travel": {
+      "basis": 0,
+      "heading": 0,
+      "movingTime": 0,
+      "manualRemaining": 0,
+      "recentering": false
+    },
+    "night": false,
+    "dustView": 0,
+    "opening": null,
+    "branch": null,
+    "camera": [
+      9.211225767660535,
+      5.229130341088489,
+      -166.5884519548293
+    ],
+    "fov": 47.98716414486344,
+    "cameraLook": [
+      5.069102720657254,
+      1.1002817145215051,
+      -186.643616640553
+    ],
+    "view": {
+      "key": null
+    },
+    "gesture": {
+      "active": false,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "velocity": [
+        0,
+        0,
+        0
+      ],
+      "strength": 0,
+      "motionEnergy": 0
+    },
+    "penMode": false,
+    "weaver": {
+      "available": false,
+      "origin": null,
+      "status": "blocked",
+      "shape": null,
+      "target": null,
+      "progress": 0,
+      "hint": "走到一座固定石台，再开始织桥。",
+      "fade": 1,
+      "anchors": []
+    },
+    "depthPass": false,
+    "delivery": null,
+    "carried": null,
+    "exploration": {
+      "nearTarget": null,
+      "key": null,
+      "title": "",
+      "completed": 0,
+      "total": 3,
+      "progress": 0,
+      "objective": "为三座失联春庭递出春信",
+      "hint": "岔路上的悬花与风铃，正等一位愿意绕远的送信人。",
+      "touchHint": "用屏幕方向键走向岔路，关闭风笔时可单指环看。"
+    },
+    "outdoorEnvironment": true,
+    "landscapeTextures": true,
+    "stoneTextures": true,
+    "reflection": false,
+    "presentation": {
+      "memoryBloom": 0.5,
+      "actor": [
+        -0.07482610163034331,
+        0.35,
+        -50.13812392222002
+      ],
+      "companionVisible": true
+    },
+    "renderer": {
+      "calls": 136,
+      "triangles": 635990,
+      "points": 220,
+      "renderer": "WebKit WebGL"
+    },
+    "memory": {
+      "geometries": 373,
+      "textures": 71,
+      "programs": 149
+    },
+    "audio": {
+      "state": "running",
+      "muted": false,
+      "paused": false,
+      "disposed": false,
+      "loaded": true,
+      "loadedSamples": [
+        "harpLow",
+        "harp",
+        "piano",
+        "flute",
+        "cello",
+        "pizz",
+        "triangle"
+      ],
+      "loadedFoley": [
+        "grass0",
+        "grass1",
+        "grass2",
+        "stone0",
+        "stone1",
+        "stone2",
+        "stoneTurn",
+        "birds",
+        "river"
+      ],
+      "loadErrors": [],
+      "persistentNodes": 18,
+      "persistentSources": 3,
+      "voices": 4,
+      "voiceLimit": 48,
+      "queuedNotes": 0,
+      "bar": 1,
+      "musicTitle": "春天已经上路",
+      "mix": {
+        "music": 0.25,
+        "sfx": 0.65,
+        "ambience": 0.85
+      },
+      "scheduledNotes": 4,
+      "eventCount": 0,
+      "foleyEvents": 0,
+      "lastFoley": null,
+      "fallbackNotes": 0,
+      "fallbackInstruments": [],
+      "missedSchedules": 0,
+      "hasOutput": true,
+      "scene": {
+        "zone": "finale",
+        "atlas": null,
+        "atlasProgress": 0,
+        "voyage": "complete",
+        "voyageSpeed": 0,
+        "groundMaterial": "stone",
+        "nearWater": 0.25,
+        "challengeActive": false,
+        "flowerPhase": "solid",
+        "composing": false
+      }
+    },
+    "gardenSurfaces": {
+      "loaded": true,
+      "materials": 13,
+      "textures": 4
+    },
+    "resonance": {
+      "active": false,
+      "context": {
+        "active": false,
+        "near": false,
+        "id": null,
+        "title": "",
+        "objective": "",
+        "hint": "",
+        "progress": 0
+      },
+      "records": {
+        "dawn": {
+          "best": 0,
+          "completions": 0,
+          "grade": 0,
+          "most": 0
+        },
+        "crosswind": {
+          "best": 0,
+          "completions": 0,
+          "grade": 0,
+          "most": 0
+        },
+        "homeward": {
+          "best": 0,
+          "completions": 0,
+          "grade": 0,
+          "most": 0
+        }
+      },
+      "run": null,
+      "escort": null,
+      "result": null,
+      "nodes": [],
+      "hazards": [],
+      "stations": [
+        {
+          "id": "dawn",
+          "title": "第一阵春风",
+          "x": 3,
+          "z": 4,
+          "unlocked": true,
+          "completed": false
+        },
+        {
+          "id": "crosswind",
+          "title": "穿过回旋的风",
+          "x": 3,
+          "z": -12,
+          "unlocked": true,
+          "completed": false
+        },
+        {
+          "id": "homeward",
+          "title": "把远方带回来",
+          "x": 3,
+          "z": -42,
+          "unlocked": true,
+          "completed": false
+        }
+      ],
+      "resources": {
+        "geometries": 4,
+        "materials": 4,
+        "textures": 1
+      }
+    },
+    "letters": {
+      "activeId": null,
+      "nearId": null,
+      "trackedId": "rain",
+      "selectedId": null,
+      "completed": [
+        "rain",
+        "wind",
+        "tide"
+      ],
+      "stages": {
+        "rain": {
+          "ready": true,
+          "progress": 1,
+          "aligned": 3,
+          "phase": "garden",
+          "hint": "三片花影合成了一扇春窗。枝叶已经长出纸面，留下你想照料的那一处。",
+          "status": "窗里的春天已经醒来。看看你想把什么留在信里。",
+          "selected": "bloom",
+          "selectedLabel": "花冠花笺",
+          "dragging": false,
+          "undoCount": 0,
+          "controls": [
+            {
+              "id": "select",
+              "value": "tree",
+              "label": "枝叶花笺",
+              "selected": false
+            },
+            {
+              "id": "select",
+              "value": "window",
+              "label": "窗影花笺",
+              "selected": false
+            },
+            {
+              "id": "select",
+              "value": "bloom",
+              "label": "花冠花笺",
+              "selected": true
+            },
+            {
+              "id": "left",
+              "label": "← 左移"
+            },
+            {
+              "id": "up",
+              "label": "↑ 上移"
+            },
+            {
+              "id": "down",
+              "label": "↓ 下移"
+            },
+            {
+              "id": "right",
+              "label": "右移 →"
+            },
+            {
+              "id": "undo",
+              "label": "撤回 Z",
+              "disabled": true
+            },
+            {
+              "id": "reset",
+              "label": "重新布置 R"
+            }
+          ],
+          "draft": {
+            "version": 1,
+            "positions": {
+              "tree": {
+                "x": -0.6500034210551662,
+                "y": 2.080003702630422
+              },
+              "window": {
+                "x": 0.5200004443520421,
+                "y": 1.770000016540218
+              },
+              "bloom": {
+                "x": 0.07956639567392054,
+                "y": 1.0949173131142986
+              }
+            },
+            "selected": "bloom"
+          },
+          "next": null,
+          "panes": [
+            {
+              "id": "tree",
+              "name": "枝叶花笺",
+              "shape": "分叉的枝叶",
+              "position": [
+                -0.6500034210551662,
+                2.080003702630422,
+                0.45
+              ],
+              "target": [
+                -0.65,
+                2.08,
+                0.45
+              ],
+              "worldPosition": [
+                -12.650003421055166,
+                3.980003702630422,
+                -0.55
+              ],
+              "worldTarget": [
+                -12.65,
+                3.98,
+                -0.55
+              ],
+              "aligned": true,
+              "distance": 0.000005041139800724587
+            },
+            {
+              "id": "window",
+              "name": "窗影花笺",
+              "shape": "带拱顶的小窗",
+              "position": [
+                0.5200004443520421,
+                1.770000016540218,
+                0.6
+              ],
+              "target": [
+                0.52,
+                1.77,
+                0.6
+              ],
+              "worldPosition": [
+                -11.479999555647957,
+                3.670000016540218,
+                -0.4
+              ],
+              "worldTarget": [
+                -11.48,
+                3.67,
+                -0.4
+              ],
+              "aligned": true,
+              "distance": 4.4465977565856715e-7
+            },
+            {
+              "id": "bloom",
+              "name": "花冠花笺",
+              "shape": "六瓣的小花",
+              "position": [
+                0.07956639567392054,
+                1.0949173131142986,
+                0.75
+              ],
+              "target": [
+                0.08,
+                1.14,
+                0.75
+              ],
+              "worldPosition": [
+                -11.92043360432608,
+                2.9949173131142985,
+                -0.25
+              ],
+              "worldTarget": [
+                -11.92,
+                3.04,
+                -0.25
+              ],
+              "aligned": true,
+              "distance": 0.04508477203608527
+            }
+          ],
+          "growth": [
+            1,
+            1,
+            1
+          ],
+          "outcome": {
+            "choice": "tree",
+            "blend": {
+              "tree": 1,
+              "shoot": 0
+            },
+            "plants": [
+              {
+                "position": [
+                  -1.55,
+                  0.38,
+                  -0.33
+                ],
+                "scale": [
+                  1.45,
+                  1.55,
+                  1.25
+                ]
+              },
+              {
+                "position": [
+                  -0.52,
+                  0.38,
+                  -0.25
+                ],
+                "scale": [
+                  1.1400000000000001,
+                  1.28,
+                  1
+                ]
+              },
+              {
+                "position": [
+                  0.71,
+                  0.38,
+                  0.1
+                ],
+                "scale": [
+                  0.52,
+                  0.65,
+                  0.65
+                ]
+              }
+            ]
+          },
+          "disposed": false
+        },
+        "wind": {
+          "ready": true,
+          "progress": 1,
+          "selected": null,
+          "status": "春信抵岸",
+          "hint": "纸翼记住了这一路。现在可以决定，把渡口的春风先留给谁。",
+          "controls": [
+            {
+              "id": "restart",
+              "label": "再飞一程",
+              "disabled": false
+            },
+            {
+              "id": "land",
+              "label": "落回安全风段",
+              "disabled": true
+            },
+            {
+              "id": "left",
+              "label": "← 向左",
+              "disabled": true
+            },
+            {
+              "id": "right",
+              "label": "向右 →",
+              "disabled": true
+            },
+            {
+              "id": "up",
+              "label": "↑ 抬翼",
+              "disabled": true
+            },
+            {
+              "id": "down",
+              "label": "↓ 俯冲",
+              "disabled": true
+            },
+            {
+              "id": "brake",
+              "label": "缓行",
+              "active": false,
+              "disabled": true
+            }
+          ],
+          "draft": {
+            "version": 1,
+            "distance": 73,
+            "x": -0.005831114654363076,
+            "y": 2.0499994924987957,
+            "vx": 0,
+            "vy": 0,
+            "gate": 5,
+            "checkpoint": 5,
+            "launched": false,
+            "completed": true,
+            "misses": 0,
+            "elapsed": 30.00749999999995,
+            "recover": 0,
+            "lastMiss": null
+          },
+          "flight": {
+            "version": 1,
+            "distance": 73,
+            "x": -0.005831114654363076,
+            "y": 2.0499994924987957,
+            "vx": 0,
+            "vy": 0,
+            "gate": 5,
+            "checkpoint": 5,
+            "launched": false,
+            "completed": true,
+            "misses": 0,
+            "elapsed": 30.00749999999995,
+            "recover": 0,
+            "lastMiss": null,
+            "world": [
+              11.994168885345637,
+              4.849999492498796,
+              -14.95
+            ]
+          },
+          "currentGate": null,
+          "gates": [
+            {
+              "id": "petal",
+              "name": "初绽花环",
+              "distance": 12,
+              "x": -1.05,
+              "y": 1.55,
+              "rx": 1,
+              "ry": 1.05,
+              "kind": "petal",
+              "passed": true,
+              "world": [
+                10.95,
+                4.35,
+                2.1300000000000026
+              ],
+              "controlWorld": [
+                10.95,
+                4.35,
+                -14.95
+              ]
+            },
+            {
+              "id": "lift",
+              "name": "高处的风铃",
+              "distance": 28,
+              "x": 0.8,
+              "y": 3.1,
+              "rx": 1.05,
+              "ry": 0.92,
+              "kind": "spiral",
+              "passed": true,
+              "world": [
+                12.8,
+                5.9,
+                -2.349999999999998
+              ],
+              "controlWorld": [
+                12.8,
+                5.9,
+                -14.95
+              ]
+            },
+            {
+              "id": "weave",
+              "name": "斜风纸窗",
+              "distance": 43,
+              "x": -1.2,
+              "y": 2.45,
+              "rx": 1.05,
+              "ry": 1.06,
+              "kind": "diamond",
+              "passed": true,
+              "world": [
+                10.8,
+                5.25,
+                -6.549999999999999
+              ],
+              "controlWorld": [
+                10.8,
+                5.25,
+                -14.95
+              ]
+            },
+            {
+              "id": "shelter",
+              "name": "低处的帆影",
+              "distance": 58,
+              "x": 1.15,
+              "y": 1.3,
+              "rx": 1.12,
+              "ry": 0.82,
+              "kind": "sail",
+              "passed": true,
+              "world": [
+                13.15,
+                4.1,
+                -10.75
+              ],
+              "controlWorld": [
+                13.15,
+                4.1,
+                -14.95
+              ]
+            },
+            {
+              "id": "harbour",
+              "name": "渡口的回光",
+              "distance": 72,
+              "x": 0,
+              "y": 2.05,
+              "rx": 1.3,
+              "ry": 1.15,
+              "kind": "harbour",
+              "passed": true,
+              "world": [
+                12,
+                4.85,
+                -14.67
+              ],
+              "controlWorld": [
+                12,
+                4.85,
+                -14.95
+              ]
+            }
+          ],
+          "input": {
+            "dragging": false,
+            "held": [],
+            "brake": false
+          },
+          "presentation": {
+            "choice": "lamp",
+            "harbourVisible": true,
+            "lampVisible": true,
+            "sailVisible": false
+          },
+          "resources": {
+            "owned": 76,
+            "meshCount": 33
+          },
+          "disposed": false
+        },
+        "tide": {
+          "kind": "tide",
+          "ready": true,
+          "progress": 1,
+          "hint": "你的回应已完整响过。可以再改一笔，或将这一版收进春信。",
+          "status": "这一封，已经有你的声音",
+          "selected": "cup:7",
+          "playing": false,
+          "playhead": -1,
+          "noteCount": 5,
+          "voiceCount": 3,
+          "canUndo": false,
+          "controls": [
+            {
+              "id": "voice-cup",
+              "label": "杯声 1",
+              "pressed": true
+            },
+            {
+              "id": "voice-harp",
+              "label": "弦声 2",
+              "pressed": false
+            },
+            {
+              "id": "voice-wind",
+              "label": "风声 3",
+              "pressed": false
+            },
+            {
+              "id": "play",
+              "label": "听一遍",
+              "disabled": false
+            },
+            {
+              "id": "undo",
+              "label": "收回一笔",
+              "disabled": true
+            },
+            {
+              "id": "clear",
+              "label": "重新留白",
+              "disabled": false
+            }
+          ],
+          "draft": {
+            "version": 1,
+            "notes": [
+              [
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                true
+              ],
+              [
+                false,
+                false,
+                true,
+                false,
+                false,
+                false,
+                true,
+                false
+              ],
+              [
+                false,
+                false,
+                false,
+                false,
+                true,
+                false,
+                false,
+                false
+              ]
+            ],
+            "selectedVoice": 0,
+            "selectedBeat": 7,
+            "heardSignature": "10000001:00100010:00001000",
+            "playCount": 1
+          },
+          "targets": [
+            {
+              "voice": 0,
+              "beat": 0,
+              "id": "cup:0",
+              "shape": "cup",
+              "local": [
+                -3.025,
+                0.68,
+                -0.32671562499999995
+              ],
+              "position": [
+                -15.025,
+                2.08,
+                -29.326715625
+              ],
+              "active": true
+            },
+            {
+              "voice": 0,
+              "beat": 1,
+              "id": "cup:1",
+              "shape": "cup",
+              "local": [
+                -2.0838077423978496,
+                0.773256291816938,
+                -0.5493018414293028
+              ],
+              "position": [
+                -14.08380774239785,
+                2.173256291816938,
+                -29.5493018414293
+              ],
+              "active": false
+            },
+            {
+              "voice": 0,
+              "beat": 2,
+              "id": "cup:2",
+              "shape": "cup",
+              "local": [
+                -1.1767026258663145,
+                0.8099445683953957,
+                -0.6897911687161127
+              ],
+              "position": [
+                -13.176702625866314,
+                2.2099445683953958,
+                -29.689791168716113
+              ],
+              "active": false
+            },
+            {
+              "voice": 0,
+              "beat": 3,
+              "id": "cup:3",
+              "shape": "cup",
+              "local": [
+                -0.30052109929501375,
+                0.7678102134716496,
+                -0.7689241799561415
+              ],
+              "position": [
+                -12.300521099295013,
+                2.1678102134716495,
+                -29.76892417995614
+              ],
+              "active": false
+            },
+            {
+              "voice": 0,
+              "beat": 4,
+              "id": "cup:4",
+              "shape": "cup",
+              "local": [
+                0.5816939274138669,
+                0.6724113613544146,
+                -0.7896155398544068
+              ],
+              "position": [
+                -11.418306072586134,
+                2.0724113613544146,
+                -29.789615539854406
+              ],
+              "active": false
+            },
+            {
+              "voice": 0,
+              "beat": 5,
+              "id": "cup:5",
+              "shape": "cup",
+              "local": [
+                1.5003060886050361,
+                0.5816156756099694,
+                -0.7290004000270314
+              ],
+              "position": [
+                -10.499693911394964,
+                1.9816156756099694,
+                -29.729000400027033
+              ],
+              "active": false
+            },
+            {
+              "voice": 0,
+              "beat": 6,
+              "id": "cup:6",
+              "shape": "cup",
+              "local": [
+                2.4459039477229685,
+                0.5504986008513408,
+                -0.5576178885251091
+              ],
+              "position": [
+                -9.554096052277032,
+                1.9504986008513407,
+                -29.557617888525108
+              ],
+              "active": false
+            },
+            {
+              "voice": 0,
+              "beat": 7,
+              "id": "cup:7",
+              "shape": "cup",
+              "local": [
+                3.3795858881856953,
+                0.5979353370765983,
+                -0.2656713771612673
+              ],
+              "position": [
+                -8.620414111814306,
+                1.9979353370765982,
+                -29.26567137716127
+              ],
+              "active": true
+            },
+            {
+              "voice": 1,
+              "beat": 0,
+              "id": "harp:0",
+              "shape": "lyre",
+              "local": [
+                -3.2955485155317237,
+                1.6781084648984999,
+                -0.4779691849852025
+              ],
+              "position": [
+                -15.295548515531724,
+                3.0781084648984995,
+                -29.477969184985202
+              ],
+              "active": false
+            },
+            {
+              "voice": 1,
+              "beat": 1,
+              "id": "harp:1",
+              "shape": "lyre",
+              "local": [
+                -2.3847876721672896,
+                1.6551045324965468,
+                -0.7527451140479302
+              ],
+              "position": [
+                -14.38478767216729,
+                3.0551045324965465,
+                -29.75274511404793
+              ],
+              "active": false
+            },
+            {
+              "voice": 1,
+              "beat": 2,
+              "id": "harp:2",
+              "shape": "lyre",
+              "local": [
+                -1.5070430950199651,
+                1.5683456010477828,
+                -0.9611800543005705
+              ],
+              "position": [
+                -13.507043095019965,
+                2.9683456010477824,
+                -29.96118005430057
+              ],
+              "active": true
+            },
+            {
+              "voice": 1,
+              "beat": 3,
+              "id": "harp:3",
+              "shape": "lyre",
+              "local": [
+                -0.6270658077862309,
+                1.4704584741774465,
+                -1.1056706229406332
+              ],
+              "position": [
+                -12.62706580778623,
+                2.8704584741774464,
+                -30.105670622940632
+              ],
+              "active": false
+            },
+            {
+              "voice": 1,
+              "beat": 4,
+              "id": "harp:4",
+              "shape": "lyre",
+              "local": [
+                0.2879532429355405,
+                1.4208201695276497,
+                -1.1652103240548364
+              ],
+              "position": [
+                -11.71204675706446,
+                2.8208201695276496,
+                -30.165210324054836
+              ],
+              "active": false
+            },
+            {
+              "voice": 1,
+              "beat": 5,
+              "id": "harp:5",
+              "shape": "lyre",
+              "local": [
+                1.2325291995830736,
+                1.4495406166177216,
+                -1.1099874051178622
+              ],
+              "position": [
+                -10.767470800416927,
+                2.8495406166177215,
+                -30.109987405117863
+              ],
+              "active": false
+            },
+            {
+              "voice": 1,
+              "beat": 6,
+              "id": "harp:6",
+              "shape": "lyre",
+              "local": [
+                2.168877188521102,
+                1.5391983776337257,
+                -0.928702998383014
+              ],
+              "position": [
+                -9.831122811478899,
+                2.9391983776337254,
+                -29.928702998383013
+              ],
+              "active": true
+            },
+            {
+              "voice": 1,
+              "beat": 7,
+              "id": "harp:7",
+              "shape": "lyre",
+              "local": [
+                3.0682039230528764,
+                1.6354082578334426,
+                -0.636538840974927
+              ],
+              "position": [
+                -8.931796076947123,
+                3.0354082578334425,
+                -29.63653884097493
+              ],
+              "active": false
+            },
+            {
+              "voice": 2,
+              "beat": 0,
+              "id": "wind:0",
+              "shape": "reed",
+              "local": [
+                -3.1231745900611014,
+                2.4635484595202675,
+                -0.8344135936561475
+              ],
+              "position": [
+                -15.123174590061101,
+                3.8635484595202674,
+                -29.834413593656148
+              ],
+              "active": false
+            },
+            {
+              "voice": 2,
+              "beat": 1,
+              "id": "wind:1",
+              "shape": "reed",
+              "local": [
+                -2.243544676814835,
+                2.362472342371669,
+                -1.1253782083572712
+              ],
+              "position": [
+                -14.243544676814835,
+                3.762472342371669,
+                -30.125378208357272
+              ],
+              "active": false
+            },
+            {
+              "voice": 2,
+              "beat": 2,
+              "id": "wind:2",
+              "shape": "reed",
+              "local": [
+                -1.3655051520344756,
+                2.296291730394363,
+                -1.3440569340189454
+              ],
+              "position": [
+                -13.365505152034476,
+                3.6962917303943628,
+                -30.344056934018944
+              ],
+              "active": false
+            },
+            {
+              "voice": 2,
+              "beat": 3,
+              "id": "wind:3",
+              "shape": "reed",
+              "local": [
+                -0.4541293604778366,
+                2.30515089475638,
+                -1.4718451710365459
+              ],
+              "position": [
+                -12.454129360477836,
+                3.70515089475638,
+                -30.471845171036545
+              ],
+              "active": false
+            },
+            {
+              "voice": 2,
+              "beat": 4,
+              "id": "wind:4",
+              "shape": "reed",
+              "local": [
+                0.4890792221697673,
+                2.3836759852341394,
+                -1.4815947828686293
+              ],
+              "position": [
+                -11.510920777830233,
+                3.7836759852341393,
+                -30.48159478286863
+              ],
+              "active": true
+            },
+            {
+              "voice": 2,
+              "beat": 5,
+              "id": "wind:5",
+              "shape": "reed",
+              "local": [
+                1.427829999187116,
+                2.4842347356480188,
+                -1.363731703300248
+              ],
+              "position": [
+                -10.572170000812884,
+                3.8842347356480187,
+                -30.36373170330025
+              ],
+              "active": false
+            },
+            {
+              "voice": 2,
+              "beat": 6,
+              "id": "wind:6",
+              "shape": "reed",
+              "local": [
+                2.3307038984255937,
+                2.545829557364093,
+                -1.136630874765643
+              ],
+              "position": [
+                -9.669296101574407,
+                3.945829557364093,
+                -30.136630874765643
+              ],
+              "active": false
+            },
+            {
+              "voice": 2,
+              "beat": 7,
+              "id": "wind:7",
+              "shape": "reed",
+              "local": [
+                3.205488378075617,
+                2.5310978580514765,
+                -0.8272678495059853
+              ],
+              "position": [
+                -8.794511621924382,
+                3.9310978580514764,
+                -29.827267849505986
+              ],
+              "active": false
+            }
+          ],
+          "presentation": {
+            "reply": "new",
+            "echoes": 0,
+            "trailCapacity": 144
+          },
+          "history": 0,
+          "disposed": false
+        }
+      }
+    },
+    "voyage": {
+      "active": true,
+      "stage": "complete",
+      "state": {
+        "version": 1,
+        "stage": "complete",
+        "letter": {
+          "recipient": "一位未曾谋面的收信人",
+          "body": "今天，花窗重新透进了光。\n我把一段自己的春声，和一封旧信，带向远方。",
+          "sealKind": "lily",
+          "sealed": true
+        },
+        "predecessor": true,
+        "oldRead": true,
+        "player": {
+          "x": 5.07137909797036,
+          "z": -179
+        },
+        "checkpoint": 11,
+        "elapsed": 97.4656999999981,
+        "tideClock": 0,
+        "boat": {
+          "x": 5.07137909797036,
+          "z": -179,
+          "heading": -0.010790000000000258,
+          "speed": 0
+        },
+        "ropes": [
+          true,
+          true
+        ],
+        "sail": 1,
+        "trim": 1,
+        "distance": 150,
+        "flowers": [
+          {
+            "x": 6.449999999999999,
+            "z": -29.989394772637237,
+            "kind": "lily",
+            "age": 40.40440000000008
+          },
+          {
+            "x": 9.49,
+            "z": -31.897847407831048,
+            "kind": "lotus",
+            "age": 39.90410000000007
+          },
+          {
+            "x": 5.808141593084374,
+            "z": -33.754878959089076,
+            "kind": "iris",
+            "age": 39.42010000000007
+          },
+          {
+            "x": 9.992973155843108,
+            "z": -37.62885781861304,
+            "kind": "lily",
+            "age": 38.86940000000008
+          },
+          {
+            "x": 4.153677332088025,
+            "z": -38.209343890804554,
+            "kind": "lotus",
+            "age": 38.30190000000008
+          },
+          {
+            "x": 7.930922076768499,
+            "z": -39.11067572574548,
+            "kind": "lily",
+            "age": 38.101600000000076
+          },
+          {
+            "x": 4.869017581112202,
+            "z": -41.124269722999166,
+            "kind": "lily",
+            "age": 37.75100000000007
+          },
+          {
+            "x": 8.585337369249904,
+            "z": -41.48540225000464,
+            "kind": "lily",
+            "age": 37.601000000000056
+          },
+          {
+            "x": 4.171612160870856,
+            "z": -42.733645087959815,
+            "kind": "iris",
+            "age": 37.217100000000016
+          },
+          {
+            "x": 9.238073792151889,
+            "z": -44.01571769227005,
+            "kind": "lily",
+            "age": 37.066800000000015
+          },
+          {
+            "x": 5.164192113761768,
+            "z": -45.280295676449214,
+            "kind": "lotus",
+            "age": 36.683
+          },
+          {
+            "x": 8.201191984719332,
+            "z": -45.574733022265384,
+            "kind": "lily",
+            "age": 36.549499999999995
+          },
+          {
+            "x": 4.456684002664525,
+            "z": -47.825935989258305,
+            "kind": "lily",
+            "age": 36.148999999999994
+          },
+          {
+            "x": 8.822581130497454,
+            "z": -51.010151392078804,
+            "kind": "lotus",
+            "age": 35.0308999999999
+          },
+          {
+            "x": 3.721806834126494,
+            "z": -52.907998479384695,
+            "kind": "iris",
+            "age": 34.480199999999876
+          },
+          {
+            "x": 7.751241922286558,
+            "z": -55.76249976600374,
+            "kind": "lily",
+            "age": 33.96269999999984
+          },
+          {
+            "x": 4.690509682003908,
+            "z": -57.66745522012819,
+            "kind": "lotus",
+            "age": 33.4454999999998
+          },
+          {
+            "x": 8.389232921217964,
+            "z": -59.659344561858994,
+            "kind": "iris",
+            "age": 32.928099999999766
+          },
+          {
+            "x": 3.958625050655218,
+            "z": -62.472184897098245,
+            "kind": "lily",
+            "age": 32.41059999999973
+          },
+          {
+            "x": 9.01712566686293,
+            "z": -64.49204305465992,
+            "kind": "lotus",
+            "age": 31.89329999999967
+          },
+          {
+            "x": 4.93612137529262,
+            "z": -66.41670785658097,
+            "kind": "iris",
+            "age": 31.37599999999968
+          },
+          {
+            "x": 7.944968508281624,
+            "z": -69.32019482312786,
+            "kind": "lily",
+            "age": 30.85849999999968
+          },
+          {
+            "x": 4.203936292753569,
+            "z": -71.24928179030276,
+            "kind": "lotus",
+            "age": 30.341199999999695
+          },
+          {
+            "x": 8.582455265435769,
+            "z": -73.26377012949987,
+            "kind": "iris",
+            "age": 29.82379999999971
+          },
+          {
+            "x": 3.4718700079880738,
+            "z": -76.07084616302232,
+            "kind": "lily",
+            "age": 29.30649999999973
+          },
+          {
+            "x": 7.510529681462575,
+            "z": -78.07046076533723,
+            "kind": "lotus",
+            "age": 28.78909999999973
+          },
+          {
+            "x": 4.449693644322319,
+            "z": -79.98503557343953,
+            "kind": "iris",
+            "age": 28.271699999999743
+          },
+          {
+            "x": 8.138863363599574,
+            "z": -82.86229555285388,
+            "kind": "lily",
+            "age": 27.75429999999976
+          },
+          {
+            "x": 3.718344538472578,
+            "z": -84.74013552695308,
+            "kind": "lotus",
+            "age": 27.236899999999768
+          },
+          {
+            "x": 8.777422949637756,
+            "z": -86.70644664705375,
+            "kind": "iris",
+            "age": 26.719599999999776
+          },
+          {
+            "x": 4.686715051643082,
+            "z": -89.53039132326202,
+            "kind": "lily",
+            "age": 26.185499999999777
+          },
+          {
+            "x": 7.7054937984995195,
+            "z": -91.51346786923098,
+            "kind": "lotus",
+            "age": 25.651499999999782
+          },
+          {
+            "x": 3.964858819707351,
+            "z": -93.40574099768519,
+            "kind": "iris",
+            "age": 25.117399999999787
+          },
+          {
+            "x": 8.33425284530354,
+            "z": -96.26588206737476,
+            "kind": "lily",
+            "age": 24.583399999999788
+          },
+          {
+            "x": 3.2333413407034635,
+            "z": -98.17644490113973,
+            "kind": "lotus",
+            "age": 24.031599999999784
+          },
+          {
+            "x": 7.272228026702867,
+            "z": -100.15502116101476,
+            "kind": "iris",
+            "age": 23.481899999999793
+          },
+          {
+            "x": 4.202011431184583,
+            "z": -102.93893742733563,
+            "kind": "lily",
+            "age": 22.931099999999812
+          },
+          {
+            "x": 7.9006479903228,
+            "z": -104.93885982855959,
+            "kind": "lotus",
+            "age": 22.363699999999817
+          },
+          {
+            "x": 3.480014275331378,
+            "z": -106.82734719892765,
+            "kind": "iris",
+            "age": 21.79619999999984
+          },
+          {
+            "x": 8.529381971743012,
+            "z": -109.69359695636652,
+            "kind": "lily",
+            "age": 21.228799999999843
+          },
+          {
+            "x": 4.448553662908293,
+            "z": -111.60195259183773,
+            "kind": "lotus",
+            "age": 20.64459999999987
+          },
+          {
+            "x": 7.467585850186407,
+            "z": -113.56154159507446,
+            "kind": "iris",
+            "age": 20.060599999999877
+          },
+          {
+            "x": 3.71755010931279,
+            "z": -116.32502855610821,
+            "kind": "lily",
+            "age": 19.476399999999895
+          },
+          {
+            "x": 8.096335303132738,
+            "z": -118.31484490214991,
+            "kind": "lotus",
+            "age": 18.875599999999913
+          },
+          {
+            "x": 2.9959261546680205,
+            "z": -120.17885197690171,
+            "kind": "iris",
+            "age": 18.274899999999924
+          },
+          {
+            "x": 7.024846344847901,
+            "z": -123.08107133561069,
+            "kind": "lily",
+            "age": 17.657299999999932
+          },
+          {
+            "x": 3.9641233869248738,
+            "z": -124.98516654882752,
+            "kind": "lotus",
+            "age": 17.03969999999994
+          },
+          {
+            "x": 7.663225621096684,
+            "z": -126.94193260514668,
+            "kind": "iris",
+            "age": 16.42219999999995
+          },
+          {
+            "x": 3.232650301069343,
+            "z": -129.7517563257268,
+            "kind": "lily",
+            "age": 15.78809999999997
+          },
+          {
+            "x": 8.291415007333502,
+            "z": -131.74713998768584,
+            "kind": "lotus",
+            "age": 15.15389999999998
+          },
+          {
+            "x": 4.210874231788878,
+            "z": -133.62884853034828,
+            "kind": "iris",
+            "age": 14.519699999999983
+          },
+          {
+            "x": 7.22034866603118,
+            "z": -136.47420047291197,
+            "kind": "lily",
+            "age": 13.885499999999988
+          },
+          {
+            "x": 3.480043054881353,
+            "z": -138.33594951794373,
+            "kind": "lotus",
+            "age": 13.2513
+          },
+          {
+            "x": 7.858734082683523,
+            "z": -140.3344926817196,
+            "kind": "iris",
+            "age": 12.600400000000002
+          },
+          {
+            "x": 2.748339872798334,
+            "z": -143.1238634188312,
+            "kind": "lily",
+            "age": 11.949599999999995
+          },
+          {
+            "x": 6.78716409615301,
+            "z": -145.10822839239103,
+            "kind": "lotus",
+            "age": 11.298699999999995
+          },
+          {
+            "x": 3.7264182917901376,
+            "z": -147.01444089506234,
+            "kind": "iris",
+            "age": 10.647799999999997
+          },
+          {
+            "x": 7.415554379386129,
+            "z": -149.89481768412182,
+            "kind": "lily",
+            "age": 9.996799999999997
+          },
+          {
+            "x": 2.9948446582181814,
+            "z": -151.79034891240042,
+            "kind": "lotus",
+            "age": 9.346000000000004
+          },
+          {
+            "x": 8.0535199081594,
+            "z": -153.79402292202343,
+            "kind": "iris",
+            "age": 8.69520000000001
+          },
+          {
+            "x": 3.9629157839315874,
+            "z": -156.6083503841838,
+            "kind": "lily",
+            "age": 8.044100000000027
+          },
+          {
+            "x": 6.982134791971128,
+            "z": -158.550625808994,
+            "kind": "lotus",
+            "age": 7.410000000000022
+          },
+          {
+            "x": 3.2416107945542643,
+            "z": -160.4326137596632,
+            "kind": "iris",
+            "age": 6.775800000000014
+          },
+          {
+            "x": 7.610751532916295,
+            "z": -163.3162281754606,
+            "kind": "lily",
+            "age": 6.141700000000009
+          },
+          {
+            "x": 2.509969564182678,
+            "z": -165.21478629751232,
+            "kind": "lotus",
+            "age": 5.507400000000002
+          },
+          {
+            "x": 6.549112354451072,
+            "z": -167.169628143114,
+            "kind": "iris",
+            "age": 4.8900000000000015
+          },
+          {
+            "x": 3.4787385384009295,
+            "z": -169.96811479223325,
+            "kind": "lily",
+            "age": 4.272299999999993
+          },
+          {
+            "x": 7.17746863075623,
+            "z": -171.9593690204063,
+            "kind": "lotus",
+            "age": 3.6548999999999876
+          },
+          {
+            "x": 2.757092783989725,
+            "z": -173.82395850222196,
+            "kind": "iris",
+            "age": 3.0540999999999956
+          },
+          {
+            "x": 7.8062117083990525,
+            "z": -176.71326315751782,
+            "kind": "lily",
+            "age": 2.4532999999999934
+          }
+        ],
+        "recoveries": 0,
+        "recover": 0,
+        "scatterCooldown": 0,
+        "flowerSerial": 70,
+        "flowerDistance": 150,
+        "paused": false
+      },
+      "info": {
+        "stage": "complete",
+        "title": "有些春天，送出去才属于我们",
+        "hint": "你的信和岑的旧信，在同一条船上继续向远方。",
+        "target": null,
+        "tideLevel": 0,
+        "distance": 150,
+        "progress": 1
+      },
+      "reading": false,
+      "bagOpen": false,
+      "endingOpen": true,
+      "held": [],
+      "touchHeld": [],
+      "drag": null,
+      "view": {
+        "stage": "complete",
+        "player": {
+          "x": 5.07137909797036,
+          "z": -179
+        },
+        "boat": {
+          "x": 5.07137909797036,
+          "z": -179,
+          "heading": -0.010790000000000258,
+          "speed": 0
+        },
+        "tide": 0,
+        "sail": 1,
+        "ropes": [
+          true,
+          true
+        ],
+        "trim": 1,
+        "progress": 1,
+        "blooms": [
+          {
+            "x": 6.449999999999999,
+            "z": -29.989394772637237,
+            "kind": "lily",
+            "age": 40.40440000000008
+          },
+          {
+            "x": 9.49,
+            "z": -31.897847407831048,
+            "kind": "lotus",
+            "age": 39.90410000000007
+          },
+          {
+            "x": 5.808141593084374,
+            "z": -33.754878959089076,
+            "kind": "iris",
+            "age": 39.42010000000007
+          },
+          {
+            "x": 9.992973155843108,
+            "z": -37.62885781861304,
+            "kind": "lily",
+            "age": 38.86940000000008
+          },
+          {
+            "x": 4.153677332088025,
+            "z": -38.209343890804554,
+            "kind": "lotus",
+            "age": 38.30190000000008
+          },
+          {
+            "x": 7.930922076768499,
+            "z": -39.11067572574548,
+            "kind": "lily",
+            "age": 38.101600000000076
+          },
+          {
+            "x": 4.869017581112202,
+            "z": -41.124269722999166,
+            "kind": "lily",
+            "age": 37.75100000000007
+          },
+          {
+            "x": 8.585337369249904,
+            "z": -41.48540225000464,
+            "kind": "lily",
+            "age": 37.601000000000056
+          },
+          {
+            "x": 4.171612160870856,
+            "z": -42.733645087959815,
+            "kind": "iris",
+            "age": 37.217100000000016
+          },
+          {
+            "x": 9.238073792151889,
+            "z": -44.01571769227005,
+            "kind": "lily",
+            "age": 37.066800000000015
+          },
+          {
+            "x": 5.164192113761768,
+            "z": -45.280295676449214,
+            "kind": "lotus",
+            "age": 36.683
+          },
+          {
+            "x": 8.201191984719332,
+            "z": -45.574733022265384,
+            "kind": "lily",
+            "age": 36.549499999999995
+          },
+          {
+            "x": 4.456684002664525,
+            "z": -47.825935989258305,
+            "kind": "lily",
+            "age": 36.148999999999994
+          },
+          {
+            "x": 8.822581130497454,
+            "z": -51.010151392078804,
+            "kind": "lotus",
+            "age": 35.0308999999999
+          },
+          {
+            "x": 3.721806834126494,
+            "z": -52.907998479384695,
+            "kind": "iris",
+            "age": 34.480199999999876
+          },
+          {
+            "x": 7.751241922286558,
+            "z": -55.76249976600374,
+            "kind": "lily",
+            "age": 33.96269999999984
+          },
+          {
+            "x": 4.690509682003908,
+            "z": -57.66745522012819,
+            "kind": "lotus",
+            "age": 33.4454999999998
+          },
+          {
+            "x": 8.389232921217964,
+            "z": -59.659344561858994,
+            "kind": "iris",
+            "age": 32.928099999999766
+          },
+          {
+            "x": 3.958625050655218,
+            "z": -62.472184897098245,
+            "kind": "lily",
+            "age": 32.41059999999973
+          },
+          {
+            "x": 9.01712566686293,
+            "z": -64.49204305465992,
+            "kind": "lotus",
+            "age": 31.89329999999967
+          },
+          {
+            "x": 4.93612137529262,
+            "z": -66.41670785658097,
+            "kind": "iris",
+            "age": 31.37599999999968
+          },
+          {
+            "x": 7.944968508281624,
+            "z": -69.32019482312786,
+            "kind": "lily",
+            "age": 30.85849999999968
+          },
+          {
+            "x": 4.203936292753569,
+            "z": -71.24928179030276,
+            "kind": "lotus",
+            "age": 30.341199999999695
+          },
+          {
+            "x": 8.582455265435769,
+            "z": -73.26377012949987,
+            "kind": "iris",
+            "age": 29.82379999999971
+          },
+          {
+            "x": 3.4718700079880738,
+            "z": -76.07084616302232,
+            "kind": "lily",
+            "age": 29.30649999999973
+          },
+          {
+            "x": 7.510529681462575,
+            "z": -78.07046076533723,
+            "kind": "lotus",
+            "age": 28.78909999999973
+          },
+          {
+            "x": 4.449693644322319,
+            "z": -79.98503557343953,
+            "kind": "iris",
+            "age": 28.271699999999743
+          },
+          {
+            "x": 8.138863363599574,
+            "z": -82.86229555285388,
+            "kind": "lily",
+            "age": 27.75429999999976
+          },
+          {
+            "x": 3.718344538472578,
+            "z": -84.74013552695308,
+            "kind": "lotus",
+            "age": 27.236899999999768
+          },
+          {
+            "x": 8.777422949637756,
+            "z": -86.70644664705375,
+            "kind": "iris",
+            "age": 26.719599999999776
+          },
+          {
+            "x": 4.686715051643082,
+            "z": -89.53039132326202,
+            "kind": "lily",
+            "age": 26.185499999999777
+          },
+          {
+            "x": 7.7054937984995195,
+            "z": -91.51346786923098,
+            "kind": "lotus",
+            "age": 25.651499999999782
+          },
+          {
+            "x": 3.964858819707351,
+            "z": -93.40574099768519,
+            "kind": "iris",
+            "age": 25.117399999999787
+          },
+          {
+            "x": 8.33425284530354,
+            "z": -96.26588206737476,
+            "kind": "lily",
+            "age": 24.583399999999788
+          },
+          {
+            "x": 3.2333413407034635,
+            "z": -98.17644490113973,
+            "kind": "lotus",
+            "age": 24.031599999999784
+          },
+          {
+            "x": 7.272228026702867,
+            "z": -100.15502116101476,
+            "kind": "iris",
+            "age": 23.481899999999793
+          },
+          {
+            "x": 4.202011431184583,
+            "z": -102.93893742733563,
+            "kind": "lily",
+            "age": 22.931099999999812
+          },
+          {
+            "x": 7.9006479903228,
+            "z": -104.93885982855959,
+            "kind": "lotus",
+            "age": 22.363699999999817
+          },
+          {
+            "x": 3.480014275331378,
+            "z": -106.82734719892765,
+            "kind": "iris",
+            "age": 21.79619999999984
+          },
+          {
+            "x": 8.529381971743012,
+            "z": -109.69359695636652,
+            "kind": "lily",
+            "age": 21.228799999999843
+          },
+          {
+            "x": 4.448553662908293,
+            "z": -111.60195259183773,
+            "kind": "lotus",
+            "age": 20.64459999999987
+          },
+          {
+            "x": 7.467585850186407,
+            "z": -113.56154159507446,
+            "kind": "iris",
+            "age": 20.060599999999877
+          },
+          {
+            "x": 3.71755010931279,
+            "z": -116.32502855610821,
+            "kind": "lily",
+            "age": 19.476399999999895
+          },
+          {
+            "x": 8.096335303132738,
+            "z": -118.31484490214991,
+            "kind": "lotus",
+            "age": 18.875599999999913
+          },
+          {
+            "x": 2.9959261546680205,
+            "z": -120.17885197690171,
+            "kind": "iris",
+            "age": 18.274899999999924
+          },
+          {
+            "x": 7.024846344847901,
+            "z": -123.08107133561069,
+            "kind": "lily",
+            "age": 17.657299999999932
+          },
+          {
+            "x": 3.9641233869248738,
+            "z": -124.98516654882752,
+            "kind": "lotus",
+            "age": 17.03969999999994
+          },
+          {
+            "x": 7.663225621096684,
+            "z": -126.94193260514668,
+            "kind": "iris",
+            "age": 16.42219999999995
+          },
+          {
+            "x": 3.232650301069343,
+            "z": -129.7517563257268,
+            "kind": "lily",
+            "age": 15.78809999999997
+          },
+          {
+            "x": 8.291415007333502,
+            "z": -131.74713998768584,
+            "kind": "lotus",
+            "age": 15.15389999999998
+          },
+          {
+            "x": 4.210874231788878,
+            "z": -133.62884853034828,
+            "kind": "iris",
+            "age": 14.519699999999983
+          },
+          {
+            "x": 7.22034866603118,
+            "z": -136.47420047291197,
+            "kind": "lily",
+            "age": 13.885499999999988
+          },
+          {
+            "x": 3.480043054881353,
+            "z": -138.33594951794373,
+            "kind": "lotus",
+            "age": 13.2513
+          },
+          {
+            "x": 7.858734082683523,
+            "z": -140.3344926817196,
+            "kind": "iris",
+            "age": 12.600400000000002
+          },
+          {
+            "x": 2.748339872798334,
+            "z": -143.1238634188312,
+            "kind": "lily",
+            "age": 11.949599999999995
+          },
+          {
+            "x": 6.78716409615301,
+            "z": -145.10822839239103,
+            "kind": "lotus",
+            "age": 11.298699999999995
+          },
+          {
+            "x": 3.7264182917901376,
+            "z": -147.01444089506234,
+            "kind": "iris",
+            "age": 10.647799999999997
+          },
+          {
+            "x": 7.415554379386129,
+            "z": -149.89481768412182,
+            "kind": "lily",
+            "age": 9.996799999999997
+          },
+          {
+            "x": 2.9948446582181814,
+            "z": -151.79034891240042,
+            "kind": "lotus",
+            "age": 9.346000000000004
+          },
+          {
+            "x": 8.0535199081594,
+            "z": -153.79402292202343,
+            "kind": "iris",
+            "age": 8.69520000000001
+          },
+          {
+            "x": 3.9629157839315874,
+            "z": -156.6083503841838,
+            "kind": "lily",
+            "age": 8.044100000000027
+          },
+          {
+            "x": 6.982134791971128,
+            "z": -158.550625808994,
+            "kind": "lotus",
+            "age": 7.410000000000022
+          },
+          {
+            "x": 3.2416107945542643,
+            "z": -160.4326137596632,
+            "kind": "iris",
+            "age": 6.775800000000014
+          },
+          {
+            "x": 7.610751532916295,
+            "z": -163.3162281754606,
+            "kind": "lily",
+            "age": 6.141700000000009
+          },
+          {
+            "x": 2.509969564182678,
+            "z": -165.21478629751232,
+            "kind": "lotus",
+            "age": 5.507400000000002
+          },
+          {
+            "x": 6.549112354451072,
+            "z": -167.169628143114,
+            "kind": "iris",
+            "age": 4.8900000000000015
+          },
+          {
+            "x": 3.4787385384009295,
+            "z": -169.96811479223325,
+            "kind": "lily",
+            "age": 4.272299999999993
+          },
+          {
+            "x": 7.17746863075623,
+            "z": -171.9593690204063,
+            "kind": "lotus",
+            "age": 3.6548999999999876
+          },
+          {
+            "x": 2.757092783989725,
+            "z": -173.82395850222196,
+            "kind": "iris",
+            "age": 3.0540999999999956
+          },
+          {
+            "x": 7.8062117083990525,
+            "z": -176.71326315751782,
+            "kind": "lily",
+            "age": 2.4532999999999934
+          }
+        ],
+        "quality": "balanced",
+        "reducedMotion": false,
+        "sealed": true,
+        "predecessor": true,
+        "letterSeal": "lily",
+        "departureAge": 1.6023000000000005,
+        "purposes": [
+          "memory",
+          "season"
+        ]
+      },
+      "cameraYaw": 0,
+      "interactables": [
+        {
+          "id": "seal",
+          "position": [
+            0.78,
+            1.83,
+            1.25
+          ],
+          "radius": 0.35
+        },
+        {
+          "id": "old-letter",
+          "position": [
+            0,
+            1.81,
+            -13
+          ],
+          "radius": 0.5
+        },
+        {
+          "id": "rope-left",
+          "position": [
+            4.3453522551668184,
+            0.6654508364086298,
+            -178.19946064634274
+          ],
+          "radius": 0.4
+        },
+        {
+          "id": "rope-right",
+          "position": [
+            5.7450683991065175,
+            0.6907810516173298,
+            -178.1870874255793
+          ],
+          "radius": 0.4
+        },
+        {
+          "id": "halyard",
+          "position": [
+            5.0837311997910035,
+            2.4262095581977703,
+            -180.47221783922083
+          ],
+          "radius": 0.5
+        }
+      ],
+      "world": {
+        "stage": "complete",
+        "time": 2.520300000000001,
+        "meshes": 141,
+        "triangles": 646712,
+        "flowerSpecies": 4,
+        "flowers": 87,
+        "palette": [
+          "dec1cd",
+          "e7e4d6",
+          "a9b9cf",
+          "d7caab"
+        ],
+        "floralMood": "memory+season",
+        "boat": [
+          5.07137909797036,
+          0.017472258128688217,
+          -179.80115
+        ],
+        "tideStones": [
+          {
+            "x": 0,
+            "z": -2.8,
+            "r": 1.65,
+            "high": true
+          },
+          {
+            "x": 0.45,
+            "z": -4.8,
+            "r": 1.3,
+            "high": false
+          },
+          {
+            "x": -0.35,
+            "z": -6.8,
+            "r": 1.3,
+            "high": false
+          },
+          {
+            "x": 0.25,
+            "z": -8.8,
+            "r": 1.65,
+            "high": true
+          },
+          {
+            "x": -0.45,
+            "z": -10.8,
+            "r": 1.3,
+            "high": false
+          },
+          {
+            "x": 0,
+            "z": -13,
+            "r": 2.1,
+            "high": true
+          },
+          {
+            "x": 0.45,
+            "z": -15.2,
+            "r": 1.3,
+            "high": false
+          },
+          {
+            "x": -0.35,
+            "z": -17.3,
+            "r": 1.3,
+            "high": false
+          },
+          {
+            "x": 0.25,
+            "z": -19.4,
+            "r": 1.65,
+            "high": true
+          },
+          {
+            "x": -0.35,
+            "z": -21.5,
+            "r": 1.3,
+            "high": false
+          },
+          {
+            "x": 0,
+            "z": -23.5,
+            "r": 1.65,
+            "high": true
+          }
+        ],
+        "interactables": [
+          {
+            "id": "seal",
+            "position": [
+              0.78,
+              1.83,
+              1.25
+            ],
+            "radius": 0.35
+          },
+          {
+            "id": "old-letter",
+            "position": [
+              0,
+              1.81,
+              -13
+            ],
+            "radius": 0.5
+          },
+          {
+            "id": "rope-left",
+            "position": [
+              4.3453522551668184,
+              0.6654508364086298,
+              -178.19946064634274
+            ],
+            "radius": 0.4
+          },
+          {
+            "id": "rope-right",
+            "position": [
+              5.7450683991065175,
+              0.6907810516173298,
+              -178.1870874255793
+            ],
+            "radius": 0.4
+          },
+          {
+            "id": "halyard",
+            "position": [
+              5.0837311997910035,
+              2.4262095581977703,
+              -180.47221783922083
+            ],
+            "radius": 0.5
+          }
+        ]
+      }
+    },
+    "atlas": {
+      "active": false,
+      "state": {
+        "version": 1,
+        "location": null,
+        "player": {
+          "x": 0,
+          "y": 0,
+          "z": 10,
+          "vy": 0,
+          "grounded": true,
+          "gliding": false
+        },
+        "visited": [
+          "conservatory",
+          "observatory",
+          "meadow"
+        ],
+        "completed": [
+          "conservatory",
+          "observatory",
+          "meadow"
+        ],
+        "blooms": [
+          1,
+          1,
+          1
+        ],
+        "butterfly": {
+          "x": -4.772666515852344,
+          "y": 1.1,
+          "z": -24.471120654792482,
+          "trust": 0.9919920000000001
+        },
+        "stars": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          5,
+          2
+        ],
+        "stargazing": false,
+        "meadowCheckpoint": 4,
+        "notes": {
+          "conservatory": [],
+          "observatory": [],
+          "meadow": []
+        },
+        "positions": {
+          "conservatory": {
+            "x": -4.8473435707139485,
+            "y": 0,
+            "z": -24.68491893659243,
+            "vy": 0,
+            "grounded": true,
+            "gliding": false
+          },
+          "observatory": {
+            "x": 0,
+            "y": 1.7700749999999659,
+            "z": -17.866999999999848,
+            "vy": 0,
+            "grounded": true,
+            "gliding": false
+          },
+          "meadow": {
+            "x": -0.06002298654257463,
+            "y": 2.8,
+            "z": -35.79708822048836,
+            "vy": 0,
+            "grounded": true,
+            "gliding": false
+          }
+        },
+        "jumpHeld": false,
+        "calling": false,
+        "elapsed": 80.39309999999968,
+        "recoveries": 0
+      },
+      "status": {
+        "location": null,
+        "title": "远方的三处驿路",
+        "objective": "在地图选择一处新的风景。",
+        "hint": "花香、星路与远风，都可以慢慢寻找。",
+        "progress": 0,
+        "complete": false,
+        "target": null,
+        "nextStar": null,
+        "canStudy": false
+      },
+      "camera": {
+        "yaw": 0,
+        "pitch": 0.42,
+        "radius": 12
+      },
+      "held": [],
+      "touch": [],
+      "world": {
+        "location": null,
+        "visibleLocations": [],
+        "landmarks": [],
+        "meshes": 0,
+        "triangles": 0,
+        "objects": 0,
+        "instances": 0,
+        "player": [
+          0,
+          0,
+          0
+        ],
+        "parasol": false,
+        "tracedSegments": 0,
+        "disposed": false,
+        "maps": [
+          {
+            "id": "conservatory",
+            "title": "雨幕温室",
+            "landmarks": [
+              "conservatory-amber-ribbed-hall",
+              "conservatory-rainforest-depth",
+              "conservatory-forest-post-gate",
+              "conservatory-inscription-沿林间小径 · 往星台去",
+              "conservatory-entrance-portal",
+              "conservatory-giant-tree-ferns",
+              "conservatory-timber-nursery-shelves",
+              "conservatory-orchid-bed-amber",
+              "conservatory-inscription-灯笼兰",
+              "conservatory-orchid-bed-rose",
+              "conservatory-inscription-雨蝶兰",
+              "conservatory-orchid-bed-ivory",
+              "conservatory-inscription-月白兰",
+              "conservatory-last-gardeners-bench",
+              "conservatory-rain-catcher",
+              "conservatory-inscription-一张褪色的植物标签",
+              "conservatory-inscription-铜椅下的旧花签",
+              "conservatory-butterflies"
+            ]
+          },
+          {
+            "id": "observatory",
+            "title": "沉星天文台",
+            "landmarks": [
+              "observatory-broken-horseshoe-colonnade",
+              "observatory-star-reading-dais",
+              "observatory-great-brass-armillary",
+              "observatory-cratered-moon",
+              "observatory-inscription-断柱上的刻痕",
+              "observatory-inscription-无名航海者的星图",
+              "observatory-envelope-constellation"
+            ]
+          },
+          {
+            "id": "meadow",
+            "title": "云海花甸",
+            "landmarks": [
+              "meadow-floating-island-0",
+              "meadow-floating-island-1",
+              "meadow-floating-island-2",
+              "meadow-floating-island-3",
+              "meadow-floating-island-4",
+              "meadow-flower-wind-sculpture",
+              "meadow-letter-tree",
+              "meadow-postmark-stone",
+              "meadow-inscription-缝补过的风旗",
+              "meadow-inscription-树梢的一句留言",
+              "meadow-cloud-ocean"
+            ]
+          }
+        ]
+      }
+    },
+    "saveStatus": {
+      "temporary": false,
+      "status": "ready",
+      "lastResult": {
+        "ok": true,
+        "code": "unchanged"
+      }
+    },
+    "dash": {
+      "energy": 1,
+      "active": false,
+      "exhausted": false,
+      "speed": 0,
+      "moving": false
+    },
+    "particles": {
+      "backend": "gpu-spring",
+      "activeCount": 65536,
+      "sourceCount": 65536,
+      "quality": "standard",
+      "simulationWidth": 256,
+      "simulationHeight": 256,
+      "simulationTexels": 65536,
+      "fallbackReason": null,
+      "disposed": false,
+      "gestureActive": false,
+      "gestureStrength": 0,
+      "gestureMode": "weave",
+      "flowShape": "petal-streams-drifting-filaments",
+      "flow": 0
+    },
+    "environment": true,
+    "errors": [],
+    "frameNumber": 148,
+    "frameTiming": {
+      "longestMs": 116.69999999999982,
+      "over50": 1,
+      "over100": 1,
+      "over1000": 0
+    },
+    "loadingTiming": {
+      "totalMs": 1617.800000000745,
+      "warmupMs": 618.2000000011176,
+      "overlayHiddenMs": 2277.5
+    },
+    "shaderPreparing": false,
+    "warmedSeries": [
+      "lily"
+    ]
+  },
+  "captures": [
+    "moments-cover.png",
+    "moments-rain-start.png",
+    "moments-rain-reply.png",
+    "moments-wind-start.png",
+    "moments-wind-gate-petal.png",
+    "moments-wind-gate-lift.png",
+    "moments-wind-gate-weave.png",
+    "moments-wind-gate-shelter.png",
+    "moments-wind-gate-harbour.png",
+    "moments-wind-finish.png",
+    "moments-wind-reply.png",
+    "moments-tide-start.png",
+    "moments-tide-played.png",
+    "moments-tide-reply.png",
+    "moments-leaf-bridge-no-green-wall.png",
+    "moments-terminal.png",
+    "moments-garden-to-rainforest.png",
+    "moments-coastal-desk.png"
+  ],
+  "route": [
+    {
+      "target": [
+        -5,
+        1
+      ],
+      "actual": [
+        -4.787348373520829,
+        1.0123641752060828
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        -7.5,
+        2
+      ],
+      "actual": [
+        -7.4254372765598475,
+        1.9714735440681772
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        -10,
+        2.2
+      ],
+      "actual": [
+        -9.831217100137152,
+        2.1150913881491062
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        -12,
+        -1
+      ],
+      "actual": [
+        -11.931964061106026,
+        -0.8191065642754483
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        -10,
+        2.2
+      ],
+      "actual": [
+        -10.060072220590873,
+        2.1115382172338073
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        -7.5,
+        2
+      ],
+      "actual": [
+        -7.661989936225963,
+        2.1115382172338073
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        -5,
+        1
+      ],
+      "actual": [
+        -5.1317969928623945,
+        0.9566107489165113
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        0
+      ],
+      "actual": [
+        -0.1274107140962329,
+        0.042173318580957804
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -6
+      ],
+      "actual": [
+        -0.045422672168256406,
+        -5.860327558827427
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -11
+      ],
+      "actual": [
+        -0.045422672168256406,
+        -10.801636439009947
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -16
+      ],
+      "actual": [
+        -0.045422672168256406,
+        -15.880406957245393
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        4.5,
+        -15
+      ],
+      "actual": [
+        4.350731537330925,
+        -15.06054158948174
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        7,
+        -12
+      ],
+      "actual": [
+        6.907550289216384,
+        -12.113101229836138
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        10,
+        -12.7
+      ],
+      "actual": [
+        9.840837007340738,
+        -12.644174270214462
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        12,
+        -16
+      ],
+      "actual": [
+        11.906397839886852,
+        -15.802965501573853
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        12,
+        -16
+      ],
+      "actual": [
+        11.906397839886852,
+        -15.802965501573853
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        10,
+        -12.7
+      ],
+      "actual": [
+        10.069856719126442,
+        -12.843906251702009
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        7,
+        -12
+      ],
+      "actual": [
+        7.206746697339049,
+        -12.053391834789805
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        4.5,
+        -15
+      ],
+      "actual": [
+        4.5763493989949735,
+        -14.897009979841322
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -16
+      ],
+      "actual": [
+        0.1778868379286556,
+        -15.931586884438397
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -22
+      ],
+      "actual": [
+        0.040356076754936104,
+        -21.853883010189218
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -26
+      ],
+      "actual": [
+        0.040356076754936104,
+        -25.80981897510699
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        -5,
+        -29
+      ],
+      "actual": [
+        -4.86751858190819,
+        -28.965473211127474
+      ],
+      "platform": "R",
+      "support": null
+    },
+    {
+      "target": [
+        -7,
+        -29
+      ],
+      "actual": [
+        -6.877624630292693,
+        -28.965473211127474
+      ],
+      "platform": "R",
+      "support": null
+    },
+    {
+      "target": [
+        -8.6,
+        -31
+      ],
+      "actual": [
+        -8.545381761267533,
+        -30.779299830061692
+      ],
+      "platform": "R",
+      "support": null
+    },
+    {
+      "target": [
+        -12,
+        -29
+      ],
+      "actual": [
+        -11.83443252919493,
+        -29.08837749601346
+      ],
+      "platform": "R",
+      "support": null
+    },
+    {
+      "target": [
+        -8.6,
+        -31
+      ],
+      "actual": [
+        -8.804939283734925,
+        -30.90420166333226
+      ],
+      "platform": "R",
+      "support": null
+    },
+    {
+      "target": [
+        -7,
+        -29
+      ],
+      "actual": [
+        -7.086563497093381,
+        -29.14937943104206
+      ],
+      "platform": "R",
+      "support": null
+    },
+    {
+      "target": [
+        -5,
+        -29
+      ],
+      "actual": [
+        -5.178645388852022,
+        -29.056438144770286
+      ],
+      "platform": "R",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -32
+      ],
+      "actual": [
+        -0.21708243130686583,
+        -31.92919828159744
+      ],
+      "platform": "M",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -38
+      ],
+      "actual": [
+        -0.07483821230609831,
+        -37.87587861249356
+      ],
+      "platform": "F",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -43
+      ],
+      "actual": [
+        -0.07483821230609831,
+        -42.82332502142406
+      ],
+      "platform": "F",
+      "support": null
+    },
+    {
+      "target": [
+        -3,
+        -46
+      ],
+      "actual": [
+        -2.9243830776850546,
+        -45.78706495568803
+      ],
+      "platform": "F",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -43
+      ],
+      "actual": [
+        -0.16135596470764296,
+        -43.05160983989329
+      ],
+      "platform": "F",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -48
+      ],
+      "actual": [
+        -0.07482610163034331,
+        -47.813906579991766
+      ],
+      "platform": "F",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -50.25
+      ],
+      "actual": [
+        -0.07482610163034331,
+        -50.13812392222002
+      ],
+      "platform": "F",
+      "support": null
+    }
+  ],
+  "finished": "2026-11-23T04:59:49.666Z"
+}
