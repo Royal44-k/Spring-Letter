@@ -1,0 +1,7115 @@
+{
+  "bank": {
+    "harpLow": {
+      "file": "harp-low.wav",
+      "root": 48
+    },
+    "harp": {
+      "file": "harp-high.wav",
+      "root": 72
+    },
+    "piano": {
+      "file": "piano.wav",
+      "root": 60
+    },
+    "flute": {
+      "file": "flute.wav",
+      "root": 72
+    },
+    "cello": {
+      "file": "cello.wav",
+      "root": 60
+    },
+    "pizz": {
+      "file": "pizz.wav",
+      "root": 60
+    },
+    "triangle": {
+      "file": "triangle.wav",
+      "root": 72
+    }
+  },
+  "sections": [
+    {
+      "name": "garden",
+      "scene": {},
+      "bars": [
+        {
+          "index": 0,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 73,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 49,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 71,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 0.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 69,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 73,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 52,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 52,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 79,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 67,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 71,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 71,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 1,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 67,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 73,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 69,
+              "beat": 2,
+              "duration": 0.87,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 81,
+              "beat": 2,
+              "duration": 2.8,
+              "gain": 0.16,
+              "pan": 0.42
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "flute",
+              "midi": 81,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 40,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 40,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 52,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 52,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 67,
+              "beat": 2,
+              "duration": 0.87,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 69,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 73,
+              "beat": 1,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 71,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "flute",
+              "midi": 69,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 73,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 81,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "beats": 3,
+          "zone": "garden",
+          "bpm": 76,
+          "title": "花庭晨光",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 86,
+              "beat": 2,
+              "duration": 2.8,
+              "gain": 0.16,
+              "pan": 0.42
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "wind",
+      "scene": {
+        "zone": "wind",
+        "challengeActive": true
+      },
+      "bars": [
+        {
+          "index": 0,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 47,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "triangle",
+              "midi": 72,
+              "beat": 0,
+              "duration": 1.5,
+              "gain": 0.09,
+              "pan": 0.45
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "pizz",
+              "midi": 66,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 47,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 43,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 62,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 43,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "pizz",
+              "midi": 45,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "triangle",
+              "midi": 72,
+              "beat": 0,
+              "duration": 1.5,
+              "gain": 0.09,
+              "pan": 0.45
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 0.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 64,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "flute",
+              "midi": 69,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 45,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 47,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "pizz",
+              "midi": 66,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 73,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 47,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 52,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 52,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 79,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 52,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "triangle",
+              "midi": 72,
+              "beat": 0,
+              "duration": 1.5,
+              "gain": 0.09,
+              "pan": 0.45
+            },
+            {
+              "instrument": "piano",
+              "midi": 67,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 71,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 71,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 67,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 1,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 71,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 71,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 52,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 67,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 73,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 45,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "pizz",
+              "midi": 64,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "flute",
+              "midi": 69,
+              "beat": 2,
+              "duration": 0.87,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 45,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 43,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "triangle",
+              "midi": 72,
+              "beat": 0,
+              "duration": 1.5,
+              "gain": 0.09,
+              "pan": 0.45
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 62,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "flute",
+              "midi": 81,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 43,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 50,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "pizz",
+              "midi": 69,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 50,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 40,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 40,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 52,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 52,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 40,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "triangle",
+              "midi": 72,
+              "beat": 0,
+              "duration": 1.5,
+              "gain": 0.09,
+              "pan": 0.45
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "pizz",
+              "midi": 59,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "flute",
+              "midi": 67,
+              "beat": 2,
+              "duration": 0.87,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 40,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 69,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 45,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 73,
+              "beat": 1,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 64,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 71,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 45,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 47,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "triangle",
+              "midi": 72,
+              "beat": 0,
+              "duration": 1.5,
+              "gain": 0.09,
+              "pan": 0.45
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "pizz",
+              "midi": 66,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 47,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 43,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "pizz",
+              "midi": 62,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "flute",
+              "midi": 69,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 43,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 73,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 45,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "triangle",
+              "midi": 72,
+              "beat": 0,
+              "duration": 1.5,
+              "gain": 0.09,
+              "pan": 0.45
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 64,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "flute",
+              "midi": 81,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 45,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 50,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 69,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "pizz",
+              "midi": 50,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 50,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "triangle",
+              "midi": 72,
+              "beat": 0,
+              "duration": 1.5,
+              "gain": 0.09,
+              "pan": 0.45
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 1,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 69,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 73,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "flute",
+              "midi": 81,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "flute",
+              "midi": 83,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 50,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "beats": 3,
+          "zone": "wind",
+          "bpm": 100,
+          "title": "逐风的回声",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 49,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0
+            },
+            {
+              "instrument": "pizz",
+              "midi": 49,
+              "beat": 0,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 81,
+              "beat": 0.5,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 1,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "pizz",
+              "midi": 69,
+              "beat": 1,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 71,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.26135114048991015
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 2,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": -0.3357127691736582
+            },
+            {
+              "instrument": "flute",
+              "midi": 73,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "pizz",
+              "midi": 49,
+              "beat": 2,
+              "duration": 0.52,
+              "gain": 0.24,
+              "pan": -0.25
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 2.5,
+              "duration": 1.6,
+              "gain": 0.2,
+              "pan": 0.0817455954733699
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pool",
+      "scene": {
+        "zone": "pool",
+        "night": 1
+      },
+      "bars": [
+        {
+          "index": 0,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 40,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 40,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 52,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 52,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 71,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 78,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "piano",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 71,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 74,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "piano",
+              "midi": 71,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 73,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "piano",
+              "midi": 76,
+              "beat": 1,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "piano",
+              "midi": 81,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 78,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "piano",
+              "midi": 76,
+              "beat": 1,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "piano",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 86,
+              "beat": 2,
+              "duration": 2.8,
+              "gain": 0.16,
+              "pan": 0.42
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 74,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "piano",
+              "midi": 78,
+              "beat": 1,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 73,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "piano",
+              "midi": 81,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 83,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 49,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "piano",
+              "midi": 81,
+              "beat": 0.5,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 71,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "piano",
+              "midi": 76,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 73,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 78,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "piano",
+              "midi": 76,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 74,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 71,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "piano",
+              "midi": 74,
+              "beat": 1,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "piano",
+              "midi": 78,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "piano",
+              "midi": 76,
+              "beat": 0.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "piano",
+              "midi": 74,
+              "beat": 1,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 71,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 73,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "piano",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 78,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 52,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 52,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 79,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 67,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 71,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 71,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "piano",
+              "midi": 78,
+              "beat": 1,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "piano",
+              "midi": 76,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 74,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 67,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "beats": 3,
+          "zone": "pool",
+          "bpm": 70,
+          "title": "水下的旧信",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 73,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 2,
+              "duration": 0.87,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 81,
+              "beat": 2,
+              "duration": 2.8,
+              "gain": 0.16,
+              "pan": 0.42
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "finale",
+      "scene": {
+        "zone": "finale",
+        "ended": true
+      },
+      "bars": [
+        {
+          "index": 0,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "flute",
+              "midi": 69,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 73,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 81,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 1,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 73,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 81,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "flute",
+              "midi": 83,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 49,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "flute",
+              "midi": 81,
+              "beat": 0.5,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 71,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "flute",
+              "midi": 73,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 78,
+              "beat": 2,
+              "duration": 2.8,
+              "gain": 0.16,
+              "pan": 0.42
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 0.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 69,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 47,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 73,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 52,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 52,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 79,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 67,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 71,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 71,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 1,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 67,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 73,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 69,
+              "beat": 2,
+              "duration": 0.87,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 43,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 1,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "flute",
+              "midi": 81,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 50,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 62,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 62,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 78,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 66,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 69,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 69,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 74,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 1.5,
+              "duration": 0.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "flute",
+              "midi": 74,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 40,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "harpLow",
+              "midi": 40,
+              "beat": 0,
+              "duration": 3.8,
+              "gain": 0.13,
+              "pan": -0.2
+            },
+            {
+              "instrument": "piano",
+              "midi": 52,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 52,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 71,
+              "beat": 0,
+              "duration": 1.62,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 55,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 59,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 59,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "harp",
+              "midi": 66,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 67,
+              "beat": 2,
+              "duration": 0.87,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 55,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "beats": 3,
+          "zone": "finale",
+          "bpm": 68,
+          "title": "把春天寄往远方",
+          "notes": [
+            {
+              "instrument": "cello",
+              "midi": 45,
+              "beat": 0,
+              "duration": 3.35,
+              "gain": 0.12,
+              "pan": -0.15
+            },
+            {
+              "instrument": "piano",
+              "midi": 57,
+              "beat": 0,
+              "duration": 3.7,
+              "gain": 0.12,
+              "pan": -0.32
+            },
+            {
+              "instrument": "harp",
+              "midi": 57,
+              "beat": 0,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0
+            },
+            {
+              "instrument": "flute",
+              "midi": 69,
+              "beat": 0,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "piano",
+              "midi": 61,
+              "beat": 0.035,
+              "duration": 3.7,
+              "gain": 0.134,
+              "pan": -0.12
+            },
+            {
+              "instrument": "piano",
+              "midi": 64,
+              "beat": 0.07,
+              "duration": 3.7,
+              "gain": 0.148,
+              "pan": 0.08000000000000002
+            },
+            {
+              "instrument": "harp",
+              "midi": 64,
+              "beat": 0.75,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.36615211045853335
+            },
+            {
+              "instrument": "flute",
+              "midi": 73,
+              "beat": 1,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 71,
+              "beat": 1.5,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": 0.1958905212921564
+            },
+            {
+              "instrument": "flute",
+              "midi": 76,
+              "beat": 2,
+              "duration": 1.12,
+              "gain": 0.085,
+              "pan": 0.24
+            },
+            {
+              "instrument": "harp",
+              "midi": 83,
+              "beat": 2,
+              "duration": 2.8,
+              "gain": 0.16,
+              "pan": 0.42
+            },
+            {
+              "instrument": "harp",
+              "midi": 61,
+              "beat": 2.25,
+              "duration": 1.6,
+              "gain": 0.18,
+              "pan": -0.26135114048991015
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "audioBytes": 1809982,
+  "totalPackBytesIncludingProvenance": 1835913,
+  "budgetBytes": 2000000,
+  "kenneyZipCrcVerified": true,
+  "sourcePageEvidenceHashesVerified": true,
+  "originals": [
+    {
+      "file": "birds-isaiah658_0.ogg",
+      "bytes": 544669,
+      "sha256": "359e4e3f9da9d75aac64cede511c7e3ef8b461f9d9f8c230f8f80e44c4b3e35f",
+      "completeDecode": true,
+      "sampleFrames": 1473036,
+      "sampleRate": 48000,
+      "decodedDurationSeconds": 30.68825
+    },
+    {
+      "file": "park_ambience_river.wav",
+      "bytes": 99072736,
+      "sha256": "da0c0c9b1249a83a1611cc116d5737b0864a8db9f45f1ae8dcc079d0f7c0bbbf",
+      "completeDecode": true,
+      "sampleFrames": 24768000,
+      "sampleRate": 48000,
+      "decodedDurationSeconds": 516.0
+    }
+  ],
+  "processed": [
+    {
+      "file": "grass-0.wav",
+      "hashVerified": true,
+      "sampleFrames": 3312,
+      "clippedSamples": 0
+    },
+    {
+      "file": "grass-1.wav",
+      "hashVerified": true,
+      "sampleFrames": 3556,
+      "clippedSamples": 0
+    },
+    {
+      "file": "grass-2.wav",
+      "hashVerified": true,
+      "sampleFrames": 3628,
+      "clippedSamples": 0
+    },
+    {
+      "file": "stone-0.wav",
+      "hashVerified": true,
+      "sampleFrames": 2272,
+      "clippedSamples": 0
+    },
+    {
+      "file": "stone-1.wav",
+      "hashVerified": true,
+      "sampleFrames": 2310,
+      "clippedSamples": 0
+    },
+    {
+      "file": "stone-2.wav",
+      "hashVerified": true,
+      "sampleFrames": 2423,
+      "clippedSamples": 0
+    },
+    {
+      "file": "stone-turn.wav",
+      "hashVerified": true,
+      "sampleFrames": 5292,
+      "clippedSamples": 0
+    },
+    {
+      "file": "birds-loop.wav",
+      "hashVerified": true,
+      "sampleFrames": 441000,
+      "clippedSamples": 0
+    },
+    {
+      "file": "river-loop.wav",
+      "hashVerified": true,
+      "sampleFrames": 441000,
+      "clippedSamples": 0
+    }
+  ],
+  "humanListening": false,
+  "browserOrGpuUsed": false
+}

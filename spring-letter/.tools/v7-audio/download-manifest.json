@@ -1,0 +1,65 @@
+[
+  {
+    "file": "triangle.wav",
+    "path": "Percussion/temp/Triangle6-Hit_v1_rr1_Sum.wav",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Percussion/temp/Triangle6-Hit_v1_rr1_Sum.wav",
+    "bytes": 286328,
+    "sha256": "1cbc1beaeadae499b86ab0a7dc221b4ae28b6f5d6faeb668cee107e784bff22b"
+  },
+  {
+    "file": "harp-high.wav",
+    "path": "Strings/Harp/KSHarp_C5_mf.wav",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Harp/KSHarp_C5_mf.wav",
+    "bytes": 1237142,
+    "sha256": "7c8b862f6fd3f1442ed87537af976d84bda8c05a5b4900e8907d570b5202a517"
+  },
+  {
+    "file": "pizz.wav",
+    "path": "Strings/Cello Section/pizzT/pizzT_C3_v1_RR1.wav",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Cello%20Section/pizzT/pizzT_C3_v1_RR1.wav",
+    "bytes": 704396,
+    "sha256": "63353870ad00cebe9882b96abcceae12480d37b78b62ded6228fb638871e8a81"
+  },
+  {
+    "file": "LICENSE.txt",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/LICENSE",
+    "bytes": 6555,
+    "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673"
+  },
+  {
+    "file": "cello.wav",
+    "path": "Strings/Cello Section/susvib/susvib_C3_v1_1.wav",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Cello%20Section/susvib/susvib_C3_v1_1.wav",
+    "bytes": 2444174,
+    "sha256": "a614ee7ca821b44660236e47b89620cf914ec6ad27a99bc0d9764f47dbe512e1"
+  },
+  {
+    "file": "piano.wav",
+    "path": "Keys/Upright Nr1/UR1_C4_pp_RR1.wav",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Keys/Upright%20Nr1/UR1_C4_pp_RR1.wav",
+    "bytes": 1948154,
+    "sha256": "0354bf405b644eb16b0d1223e304de93b4abef4e2191c552665563784d40f1ea"
+  },
+  {
+    "file": "README.txt",
+    "path": "Readme.txt",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Readme.txt",
+    "bytes": 1838,
+    "sha256": "101ddb88eb013900cc911834ecbdfbd49497bcd913bf09417160b9677952bb38"
+  },
+  {
+    "file": "flute.wav",
+    "path": "Woodwinds/Flute/susvib/LDFlute_susvib_C4_v1_1.wav",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Flute/susvib/LDFlute_susvib_C4_v1_1.wav",
+    "bytes": 2009832,
+    "sha256": "e88a0ff35e6b8c29fd88bc778a4c817d955b2c3a2934def97a7d093b72e2ae97"
+  },
+  {
+    "file": "harp-low.wav",
+    "path": "Strings/Harp/KSHarp_C3_mf.wav",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Harp/KSHarp_C3_mf.wav",
+    "bytes": 1586172,
+    "sha256": "e5d232771704e140959819de8cf2a3e0ba49d021ca77354c42664ce4fce6d9f3"
+  }
+]
