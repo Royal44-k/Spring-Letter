@@ -1,0 +1,913 @@
+{
+  "date": "2026-11-19T12:19:29.078Z",
+  "url": "http://127.0.0.1:5194",
+  "success": true,
+  "runId": "2026-11-19T12-16-27-898Z-356002a9",
+  "retainedDirectory": "evidence/v6-record-runs/2026-11-19T12-16-27-898Z-356002a9",
+  "candidate": {
+    "candidate": "candidate-g",
+    "manifestFile": "evidence/v6-build-candidate-g.json",
+    "manifestSha256": "27e97bdec2601056ddbe036248ce6e7d1e2388f970521685d7decfd3ba3aabef",
+    "indexSha256": "a6af89894eae7c567c912bd46bcec93b0dc5f223162c40a11b31aa6a6c3f4aff",
+    "entry": "/assets/index-BAJMaxNn.js",
+    "styleBuild": "/assets/index-B12KydA1.css",
+    "entrySha256": "2f1312b822af74a328c5dfb230bb4563db48878406892113c48a0d56c6ea1636",
+    "styleSha256": "7f31d38c2af641ffc4c177dc989f088db7954f56355f5b5ed81e43b243ace20f"
+  },
+  "recordingRuntime": {
+    "playwrightVersion": "1.65.1",
+    "browsersPath": "D:\\AI Game\\spring-letter\\.tools\\playwright",
+    "ffmpegPath": "D:\\AI Game\\spring-letter\\.tools\\playwright\\ffmpeg-1013\\ffmpeg-win64.exe",
+    "ffmpegSha256": "7ccd7bbff94976033f130c802c5aa40801f640d0e7dfb7de12984e88133f329b",
+    "ffmpegVersion": "ffmpeg version n7.0.1-playwright-build-1013 Copyright (c) 2000-2024 the FFmpeg developers"
+  },
+  "build": {
+    "entry": "/assets/index-BAJMaxNn.js",
+    "finalEntry": "/assets/index-BAJMaxNn.js",
+    "entrySha256": "2f1312b822af74a328c5dfb230bb4563db48878406892113c48a0d56c6ea1636",
+    "styleBuild": "/assets/index-B12KydA1.css",
+    "finalStyleBuild": "/assets/index-B12KydA1.css",
+    "styleSha256": "7f31d38c2af641ffc4c177dc989f088db7954f56355f5b5ed81e43b243ace20f"
+  },
+  "viewport": [
+    1440,
+    900
+  ],
+  "file": "spring-letter-v6-uncut-silent.webm",
+  "fileBytes": 68597088,
+  "fileSha256": "f57d147521215ae407c83c0e21e6486bf56166fce393e8481261aef5d67ac978",
+  "audioRecorded": false,
+  "uncut": true,
+  "wallElapsedMs": 176622,
+  "mediaDurationSeconds": 175.88,
+  "openingElapsedMs": 48251,
+  "checks": [
+    "fresh save and all six automatically advancing opening scenes",
+    "flower burst, wind writing and automatic gradual restoration",
+    "seed follows held wind around stone and completes only after deliberate release",
+    "two hand-drawn bridges and actual walking reach the terminal shore",
+    "two individually carried seeds planted at two distinct futures",
+    "explicit confirmation commits one complete ending and letter"
+  ],
+  "milestones": [
+    {
+      "name": "00-cover",
+      "wallMs": 27938,
+      "mode": "cover",
+      "focus": null,
+      "opening": null,
+      "flowerPhase": "solid",
+      "player": {
+        "x": 0,
+        "z": 6,
+        "safe": "garden"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "01-opening-1",
+      "wallMs": 29822,
+      "mode": "opening",
+      "focus": null,
+      "opening": 0,
+      "flowerPhase": "solid",
+      "player": {
+        "x": 0,
+        "z": 6,
+        "safe": "garden"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "01-opening-2",
+      "wallMs": 37822,
+      "mode": "opening",
+      "focus": null,
+      "opening": 1,
+      "flowerPhase": "solid",
+      "player": {
+        "x": 0,
+        "z": 6,
+        "safe": "garden"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "01-opening-3",
+      "wallMs": 45932,
+      "mode": "opening",
+      "focus": null,
+      "opening": 2,
+      "flowerPhase": "solid",
+      "player": {
+        "x": 0,
+        "z": 6,
+        "safe": "garden"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "01-opening-4",
+      "wallMs": 53954,
+      "mode": "opening",
+      "focus": null,
+      "opening": 3,
+      "flowerPhase": "solid",
+      "player": {
+        "x": 0,
+        "z": 6,
+        "safe": "garden"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "01-opening-5",
+      "wallMs": 61900,
+      "mode": "opening",
+      "focus": null,
+      "opening": 4,
+      "flowerPhase": "solid",
+      "player": {
+        "x": 0,
+        "z": 6,
+        "safe": "garden"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "01-opening-6",
+      "wallMs": 70166,
+      "mode": "opening",
+      "focus": null,
+      "opening": 5,
+      "flowerPhase": "solid",
+      "player": {
+        "x": 0,
+        "z": 6,
+        "safe": "garden"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "02-first-garden",
+      "wallMs": 79675,
+      "mode": "play",
+      "focus": null,
+      "opening": null,
+      "flowerPhase": "solid",
+      "player": {
+        "x": 0,
+        "z": 6,
+        "safe": "garden"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "03-flower-close",
+      "wallMs": 81883,
+      "mode": "play",
+      "focus": "flower",
+      "opening": null,
+      "flowerPhase": "solid",
+      "player": {
+        "x": 0,
+        "z": 6,
+        "safe": "garden"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "04-flower-wind",
+      "wallMs": 85979,
+      "mode": "play",
+      "focus": "flower",
+      "opening": null,
+      "flowerPhase": "drifting",
+      "player": {
+        "x": 0,
+        "z": 6,
+        "safe": "garden"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "05-flower-return",
+      "wallMs": 95765,
+      "mode": "play",
+      "focus": "flower",
+      "opening": null,
+      "flowerPhase": "solid",
+      "player": {
+        "x": 0,
+        "z": 6,
+        "safe": "garden"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "06-wind-entry",
+      "wallMs": 107901,
+      "mode": "play",
+      "focus": "wind",
+      "opening": null,
+      "flowerPhase": "solid",
+      "player": {
+        "x": 0,
+        "z": -10.618800000000018,
+        "safe": "wind"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "07-wind-arrival",
+      "wallMs": 116140,
+      "mode": "play",
+      "focus": "wind",
+      "opening": null,
+      "flowerPhase": "solid",
+      "player": {
+        "x": 0,
+        "z": -10.618800000000018,
+        "safe": "wind"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "08-first-bridge",
+      "wallMs": 130832,
+      "mode": "play",
+      "focus": null,
+      "opening": null,
+      "flowerPhase": "solid",
+      "player": {
+        "x": 0,
+        "z": -25.833899999999982,
+        "safe": "pool"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "09-second-bridge",
+      "wallMs": 139594,
+      "mode": "play",
+      "focus": null,
+      "opening": null,
+      "flowerPhase": "solid",
+      "player": {
+        "x": 0,
+        "z": -31.79010000000008,
+        "safe": "pool"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "10-terminal",
+      "wallMs": 146869,
+      "mode": "play",
+      "focus": null,
+      "opening": null,
+      "flowerPhase": "solid",
+      "player": {
+        "x": 0,
+        "z": -42.960900000000414,
+        "safe": "finale"
+      },
+      "cores": [
+        null,
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "11-memory-planted",
+      "wallMs": 151069,
+      "mode": "play",
+      "focus": null,
+      "opening": null,
+      "flowerPhase": "solid",
+      "player": {
+        "x": -2.871427680571157,
+        "z": -45.98082768057144,
+        "safe": "finale"
+      },
+      "cores": [
+        "memory",
+        null
+      ],
+      "ending": null
+    },
+    {
+      "name": "12-season-planted",
+      "wallMs": 157757,
+      "mode": "play",
+      "focus": null,
+      "opening": null,
+      "flowerPhase": "solid",
+      "player": {
+        "x": -0.009311601590285976,
+        "z": -47.873111601590814,
+        "safe": "finale"
+      },
+      "cores": [
+        "memory",
+        "season"
+      ],
+      "ending": null
+    },
+    {
+      "name": "13-consequence-preview",
+      "wallMs": 160285,
+      "mode": "play",
+      "focus": null,
+      "opening": null,
+      "flowerPhase": "solid",
+      "player": {
+        "x": -0.009311601590285976,
+        "z": -50.02441160159099,
+        "safe": "finale"
+      },
+      "cores": [
+        "memory",
+        "season"
+      ],
+      "ending": null
+    },
+    {
+      "name": "14-farewell",
+      "wallMs": 165778,
+      "mode": "play",
+      "focus": null,
+      "opening": null,
+      "flowerPhase": "solid",
+      "player": {
+        "x": -0.009311601590285976,
+        "z": -50.02441160159099,
+        "safe": "finale"
+      },
+      "cores": [
+        "memory",
+        "season"
+      ],
+      "ending": "memory+season"
+    },
+    {
+      "name": "15-spring-letter",
+      "wallMs": 171599,
+      "mode": "play",
+      "focus": null,
+      "opening": null,
+      "flowerPhase": "solid",
+      "player": {
+        "x": -0.009311601590285976,
+        "z": -50.02441160159099,
+        "safe": "finale"
+      },
+      "cores": [
+        "memory",
+        "season"
+      ],
+      "ending": "memory+season"
+    }
+  ],
+  "route": [
+    {
+      "target": [
+        0,
+        2
+      ],
+      "actual": [
+        0,
+        2.0451000000000352
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -5
+      ],
+      "actual": [
+        0,
+        -4.962900000000051
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -10.7
+      ],
+      "actual": [
+        0,
+        -10.618800000000018
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -21
+      ],
+      "actual": [
+        0,
+        -20.78070000000001
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -26
+      ],
+      "actual": [
+        0,
+        -25.833899999999982
+      ],
+      "platform": "A",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -29
+      ],
+      "actual": [
+        0,
+        -28.886700000000104
+      ],
+      "platform": "A",
+      "support": "bridge_am"
+    },
+    {
+      "target": [
+        0,
+        -32
+      ],
+      "actual": [
+        0,
+        -31.79010000000008
+      ],
+      "platform": "M",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -35
+      ],
+      "actual": [
+        0,
+        -34.84530000000009
+      ],
+      "platform": "M",
+      "support": "bridge_mf"
+    },
+    {
+      "target": [
+        0,
+        -38
+      ],
+      "actual": [
+        0,
+        -37.950900000000225
+      ],
+      "platform": "F",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -43
+      ],
+      "actual": [
+        0,
+        -42.960900000000414
+      ],
+      "platform": "F",
+      "support": null
+    },
+    {
+      "target": [
+        -3,
+        -46
+      ],
+      "actual": [
+        -2.871427680571157,
+        -45.98082768057144
+      ],
+      "platform": "F",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -43
+      ],
+      "actual": [
+        -0.009311601590285976,
+        -43.06561160159059
+      ],
+      "platform": "F",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -48
+      ],
+      "actual": [
+        -0.009311601590285976,
+        -47.873111601590814
+      ],
+      "platform": "F",
+      "support": null
+    },
+    {
+      "target": [
+        0,
+        -50.25
+      ],
+      "actual": [
+        -0.009311601590285976,
+        -50.02441160159099
+      ],
+      "platform": "F",
+      "support": null
+    }
+  ],
+  "captures": [
+    "v6-record-00-cover.png",
+    "v6-record-01-opening-1.png",
+    "v6-record-01-opening-2.png",
+    "v6-record-01-opening-3.png",
+    "v6-record-01-opening-4.png",
+    "v6-record-01-opening-5.png",
+    "v6-record-01-opening-6.png",
+    "v6-record-02-first-garden.png",
+    "v6-record-03-flower-close.png",
+    "v6-record-04-flower-wind.png",
+    "v6-record-05-flower-return.png",
+    "v6-record-06-wind-entry.png",
+    "v6-record-07-wind-arrival.png",
+    "v6-record-08-first-bridge.png",
+    "v6-record-09-second-bridge.png",
+    "v6-record-10-terminal.png",
+    "v6-record-11-memory-planted.png",
+    "v6-record-12-season-planted.png",
+    "v6-record-13-consequence-preview.png",
+    "v6-record-14-farewell.png",
+    "v6-record-15-spring-letter.png"
+  ],
+  "errors": [],
+  "requestsFailed": [],
+  "storageExport": "v6-record-real-play-storage.json",
+  "failure": null,
+  "final": {
+    "state": {
+      "version": 1,
+      "started": true,
+      "bloom": 0.82,
+      "player": {
+        "x": -0.009311601590285976,
+        "z": -50.02441160159099,
+        "safe": "finale"
+      },
+      "p1": {
+        "solved": true,
+        "hold": 0.8,
+        "broken": true,
+        "ink": 1.2
+      },
+      "wind": {
+        "x": 3,
+        "z": -2,
+        "vx": 0,
+        "vz": 0,
+        "touched": true,
+        "solved": true,
+        "hold": 0.7,
+        "returns": 0,
+        "time": 9.428999999999998,
+        "catching": true
+      },
+      "companion": {
+        "trust": 1,
+        "awakened": true
+      },
+      "bridge": {
+        "platform": "F",
+        "support": null,
+        "structure": "bridge_mf",
+        "solved": true
+      },
+      "cores": [
+        "memory",
+        "season"
+      ],
+      "deliveryCarried": null,
+      "ending": "memory+season",
+      "discoveries": [
+        "leaf",
+        "echo",
+        "protocol"
+      ],
+      "story": {
+        "introSeen": true,
+        "branches": {
+          "rhythm": false,
+          "light": false,
+          "memory": false
+        },
+        "motif": [],
+        "lightFound": [
+          false,
+          false,
+          false
+        ],
+        "lightHold": [
+          0,
+          0,
+          0
+        ],
+        "memorySeen": {
+          "closed": false,
+          "open": false
+        },
+        "memoryHold": {
+          "closed": 0,
+          "open": 0
+        },
+        "memoryBloom": 0.5,
+        "seenChapters": [
+          3
+        ]
+      },
+      "exploration": {
+        "version": 1,
+        "rain": {
+          "done": false,
+          "rounds": 0,
+          "mask": 0,
+          "travel": 0,
+          "lastAngle": null,
+          "gap": 0,
+          "clock": 0,
+          "best": 0,
+          "flash": 0
+        },
+        "wind": {
+          "done": false,
+          "rounds": 0,
+          "stage": 0,
+          "seed": {
+            "x": -1.18,
+            "z": 1.05,
+            "vx": 0,
+            "vz": 0
+          },
+          "touched": false,
+          "catching": false,
+          "hold": 0,
+          "rest": 0,
+          "bumps": 0,
+          "clock": 0,
+          "best": 0,
+          "flash": 0
+        },
+        "tide": {
+          "done": false,
+          "rounds": 0,
+          "index": 0,
+          "hold": 0,
+          "lastX": null,
+          "lastZ": null,
+          "pulse": 0,
+          "clock": 0,
+          "flash": 0
+        },
+        "seen": []
+      },
+      "settings": {
+        "muted": false,
+        "quality": "balanced",
+        "reducedMotion": false,
+        "autoCamera": true,
+        "flowerForm": "lily",
+        "flowerSeries": "silver"
+      }
+    },
+    "mode": "play",
+    "focus": null,
+    "galleryKind": "flower",
+    "displayBloom": 0.8200000000000001,
+    "scatter": 1.9895574797075735e-120,
+    "material": "silver",
+    "flowerForm": "lily",
+    "flowerCycle": {
+      "phase": "solid",
+      "dispersion": 0,
+      "flow": 0,
+      "age": 0,
+      "remaining": 0,
+      "cycles": 1
+    },
+    "travel": {
+      "basis": 0,
+      "heading": 0,
+      "movingTime": 0,
+      "manualRemaining": 0,
+      "recentering": false
+    },
+    "night": false,
+    "dustView": 0,
+    "opening": null,
+    "branch": null,
+    "camera": [
+      6.799999999999995,
+      6.999999999999997,
+      -56.199999999999974
+    ],
+    "fov": 48,
+    "cameraLook": [
+      -2.234544715155846e-18,
+      0.8000000000000004,
+      -46.00000000000002
+    ],
+    "view": {
+      "azimuth": 2.5535900500422257,
+      "elevation": 0.4682418477260504,
+      "radius": 13.737539808859516,
+      "key": "farewell"
+    },
+    "gesture": {
+      "active": false,
+      "position": [
+        -1.873064536079917e-92,
+        0.3999999999999999,
+        -37.99999969404384
+      ],
+      "velocity": [
+        0,
+        0,
+        0
+      ],
+      "strength": 2.1069313576448156e-49,
+      "motionEnergy": 0
+    },
+    "penMode": false,
+    "weaver": {
+      "available": false,
+      "origin": null,
+      "status": "blocked",
+      "shape": null,
+      "target": null,
+      "progress": 0,
+      "hint": "走到一座固定石台，再开始织桥。",
+      "fade": 1,
+      "anchors": []
+    },
+    "depthPass": true,
+    "delivery": null,
+    "carried": null,
+    "exploration": {
+      "nearTarget": null,
+      "key": null,
+      "title": "",
+      "completed": 0,
+      "total": 3,
+      "progress": 0,
+      "objective": "为三座失联春庭递出春信",
+      "hint": "岔路上的悬花与风铃，正等一位愿意绕远的送信人。",
+      "touchHint": "用屏幕方向键走向岔路，关闭风笔时可单指环看。"
+    },
+    "outdoorEnvironment": true,
+    "landscapeTextures": true,
+    "stoneTextures": true,
+    "reflection": true,
+    "presentation": {
+      "memoryBloom": 0.5,
+      "actor": [
+        -0.009311601590285976,
+        0.35,
+        -50.02441160159099
+      ],
+      "companionVisible": true
+    },
+    "renderer": {
+      "calls": 0,
+      "triangles": 0,
+      "points": 0,
+      "renderer": "WebKit WebGL"
+    },
+    "memory": {
+      "geometries": 232,
+      "textures": 54,
+      "programs": 108
+    },
+    "audio": {
+      "state": "suspended",
+      "muted": false,
+      "paused": true,
+      "disposed": false,
+      "persistentNodes": 14,
+      "persistentSources": 4,
+      "voices": 0
+    },
+    "particles": {
+      "backend": "gpu-spring",
+      "activeCount": 65536,
+      "sourceCount": 65536,
+      "quality": "standard",
+      "simulationWidth": 256,
+      "simulationHeight": 256,
+      "simulationTexels": 65536,
+      "fallbackReason": null,
+      "disposed": false,
+      "gestureActive": false,
+      "gestureStrength": 1.5206764539523172e-79,
+      "gestureMode": "weave",
+      "flowShape": "petal-streams-drifting-filaments",
+      "flow": 0
+    },
+    "environment": true,
+    "errors": [],
+    "frameNumber": 7560,
+    "frameTiming": {
+      "longestMs": 834.5,
+      "over50": 15,
+      "over100": 3,
+      "over1000": 0
+    },
+    "loadingTiming": {
+      "totalMs": 24872.39999999851,
+      "warmupMs": 19960.09999999404,
+      "overlayHiddenMs": 25529.39999999851
+    }
+  },
+  "clockScope": "Milestones use elapsed wall time after page creation. WebM begins at browser capture and may use a different origin. No claim of exact video-to-milestone synchronization.",
+  "scope": "One fresh journey through ordinary visible keyboard/mouse/UI input. Read-only snapshot/project navigation. Complete six-scene automatic opening, flower natural cycle, main wind, two bridges, two seed identities and one confirmed ending. No progress writes or injected storage. Silent Playwright capture, uncut, no speed changes or replacement frames. Recording overhead is not a performance benchmark. Video SHA256 is computed immediately after export; an independent decoder must verify these same bytes."
+}
