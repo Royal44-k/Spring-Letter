@@ -1,0 +1,58 @@
+{
+  "id": "meadow",
+  "version": "0.9.1",
+  "source": "earned-clouds.json",
+  "events": [
+    {
+      "label": "start",
+      "sec": 0.020100000001490117,
+      "frame": 217,
+      "flower": "solid",
+      "material": "lily",
+      "form": "lily",
+      "map": "meadow",
+      "stars": 8,
+      "checkpoint": 2,
+      "coast": "idle",
+      "distance": 0,
+      "flowers": 0
+    },
+    {
+      "label": "landed",
+      "sec": 3.937,
+      "frame": 439,
+      "flower": "solid",
+      "material": "lily",
+      "form": "lily",
+      "map": "meadow",
+      "stars": 8,
+      "checkpoint": 3,
+      "coast": "idle",
+      "distance": 0,
+      "flowers": 0
+    },
+    {
+      "label": "end",
+      "sec": 5.388,
+      "frame": 522,
+      "flower": "solid",
+      "material": "lily",
+      "form": "lily",
+      "map": "meadow",
+      "stars": 8,
+      "checkpoint": 3,
+      "coast": "idle",
+      "distance": 0,
+      "flowers": 0
+    }
+  ],
+  "errors": [],
+  "entry": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+  "record": {
+    "width": 960,
+    "height": 1280,
+    "t": 6455.39999999851,
+    "rate": 48000
+  },
+  "ok": true
+}

@@ -1,0 +1,58 @@
+{
+  "id": "sea",
+  "version": "0.9.1",
+  "source": "earned-sailing.json",
+  "events": [
+    {
+      "label": "start",
+      "sec": 0.03529999999701977,
+      "frame": 183,
+      "flower": "solid",
+      "material": "lily",
+      "form": "lily",
+      "map": null,
+      "stars": 8,
+      "checkpoint": 4,
+      "coast": "sailing",
+      "distance": 26.808320248242126,
+      "flowers": 15
+    },
+    {
+      "label": "sowed-wake",
+      "sec": 4.695199999999255,
+      "frame": 445,
+      "flower": "solid",
+      "material": "lily",
+      "form": "lily",
+      "map": null,
+      "stars": 8,
+      "checkpoint": 4,
+      "coast": "sailing",
+      "distance": 45.34563632949815,
+      "flowers": 30
+    },
+    {
+      "label": "end",
+      "sec": 10.13039999999851,
+      "frame": 754,
+      "flower": "solid",
+      "material": "lily",
+      "form": "lily",
+      "map": null,
+      "stars": 8,
+      "checkpoint": 4,
+      "coast": "sailing",
+      "distance": 68.43114576674836,
+      "flowers": 40
+    }
+  ],
+  "errors": [],
+  "entry": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+  "record": {
+    "width": 960,
+    "height": 1280,
+    "t": 5266.5,
+    "rate": 48000
+  },
+  "ok": true
+}

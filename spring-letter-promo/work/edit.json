@@ -1,0 +1,97 @@
+{
+  "fps": 30,
+  "size": [
+    1080,
+    1440
+  ],
+  "seconds": 35.0,
+  "video": [
+    {
+      "file": "flower",
+      "in": 0.28,
+      "start_frame": 0,
+      "frames": 105,
+      "caption": "轻轻一碰，花就散了。"
+    },
+    {
+      "file": "flower",
+      "in": 10.77,
+      "start_frame": 105,
+      "frames": 108,
+      "caption": "松手以后，它又开回来。"
+    },
+    {
+      "file": "palette",
+      "in": 0.47,
+      "start_frame": 213,
+      "frames": 126,
+      "caption": "让重莲开成青釉色。"
+    },
+    {
+      "file": "observatory",
+      "in": 0.32,
+      "start_frame": 339,
+      "frames": 183,
+      "caption": "用星星，连一只信封。"
+    },
+    {
+      "file": "meadow",
+      "in": 0.24,
+      "start_frame": 522,
+      "frames": 126,
+      "caption": "撑开花伞，去下一座岛。"
+    },
+    {
+      "file": "writing",
+      "in": 0.2,
+      "start_frame": 648,
+      "frames": 156,
+      "caption": ""
+    },
+    {
+      "file": "sea",
+      "in": 0.3,
+      "start_frame": 804,
+      "frames": 246,
+      "caption": "两封信，一起出海。"
+    }
+  ],
+  "audio": "Parallel tap of the same local game audio graph for each shot. No added music.",
+  "audio_levels": [
+    {
+      "scene": "flower",
+      "input_rms": 0.0528993085026741,
+      "gain_db": 4.711827754974365
+    },
+    {
+      "scene": "flower",
+      "input_rms": 0.05564134195446968,
+      "gain_db": 4.272875785827637
+    },
+    {
+      "scene": "palette",
+      "input_rms": 0.0629291757941246,
+      "gain_db": 3.203786849975586
+    },
+    {
+      "scene": "observatory",
+      "input_rms": 0.009134880267083645,
+      "gain_db": 18.169700377572994
+    },
+    {
+      "scene": "meadow",
+      "input_rms": 0.017664385959506035,
+      "gain_db": 14.23885726928711
+    },
+    {
+      "scene": "writing",
+      "input_rms": 0.012803597375750542,
+      "gain_db": 17.03418731689453
+    },
+    {
+      "scene": "sea",
+      "input_rms": 0.02744387462735176,
+      "gain_db": 10.411919593811035
+    }
+  ]
+}

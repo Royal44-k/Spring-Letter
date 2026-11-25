@@ -1,0 +1,41 @@
+{
+  "duration": 35,
+  "width": 1080,
+  "height": 1440,
+  "played": 0.294389,
+  "checks": [
+    {
+      "at": 1,
+      "ready": 4
+    },
+    {
+      "at": 6,
+      "ready": 4
+    },
+    {
+      "at": 11,
+      "ready": 4
+    },
+    {
+      "at": 17,
+      "ready": 4
+    },
+    {
+      "at": 22,
+      "ready": 4
+    },
+    {
+      "at": 25,
+      "ready": 4
+    },
+    {
+      "at": 29,
+      "ready": 4
+    },
+    {
+      "at": 34.4,
+      "ready": 4
+    }
+  ],
+  "error": null
+}

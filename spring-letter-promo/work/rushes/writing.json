@@ -1,0 +1,65 @@
+{
+  "id": "writing",
+  "version": "0.9.1",
+  "source": "earned-three-maps.json",
+  "events": [
+    {
+      "label": "start",
+      "sec": 0.037,
+      "frame": 175,
+      "flower": "solid",
+      "material": "lily",
+      "form": "lily",
+      "map": null,
+      "stars": 8,
+      "checkpoint": 4,
+      "coast": "writing",
+      "distance": 0,
+      "flowers": 0
+    },
+    {
+      "label": "sealed",
+      "sec": 4.036199999999255,
+      "frame": 402,
+      "flower": "solid",
+      "material": "lily",
+      "form": "lily",
+      "map": null,
+      "stars": 8,
+      "checkpoint": 4,
+      "coast": "writing",
+      "distance": 0,
+      "flowers": 0
+    },
+    {
+      "label": "end",
+      "sec": 5.72260000000149,
+      "frame": 497,
+      "flower": "solid",
+      "material": "lily",
+      "form": "lily",
+      "map": null,
+      "stars": 8,
+      "checkpoint": 4,
+      "coast": "writing",
+      "distance": 0,
+      "flowers": 0
+    }
+  ],
+  "errors": [],
+  "entry": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+  "record": {
+    "width": 960,
+    "height": 1280,
+    "t": 6472.300000000745,
+    "rate": 48000
+  },
+  "captureEpoch": 1795423797.9824,
+  "editor": {
+    "x": 568.609375,
+    "y": 386.171875,
+    "w": 322,
+    "h": 153
+  },
+  "ok": true
+}

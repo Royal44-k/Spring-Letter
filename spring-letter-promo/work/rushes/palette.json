@@ -1,0 +1,72 @@
+{
+  "id": "palette",
+  "version": "0.9.1",
+  "source": "fresh",
+  "events": [
+    {
+      "label": "start",
+      "sec": 0.03430000000074506,
+      "frame": 185,
+      "flower": "solid",
+      "material": "amber",
+      "form": "iris",
+      "map": null,
+      "stars": 0,
+      "checkpoint": 0,
+      "coast": "idle",
+      "distance": 0,
+      "flowers": 0
+    },
+    {
+      "label": "lotus",
+      "sec": 2.5595,
+      "frame": 313,
+      "flower": "solid",
+      "material": "amber",
+      "form": "lotus",
+      "map": null,
+      "stars": 0,
+      "checkpoint": 0,
+      "coast": "idle",
+      "distance": 0,
+      "flowers": 0
+    },
+    {
+      "label": "celadon",
+      "sec": 3.18460000000149,
+      "frame": 346,
+      "flower": "solid",
+      "material": "celadon",
+      "form": "lotus",
+      "map": null,
+      "stars": 0,
+      "checkpoint": 0,
+      "coast": "idle",
+      "distance": 0,
+      "flowers": 0
+    },
+    {
+      "label": "end",
+      "sec": 5.726199999999255,
+      "frame": 484,
+      "flower": "solid",
+      "material": "celadon",
+      "form": "lotus",
+      "map": null,
+      "stars": 0,
+      "checkpoint": 0,
+      "coast": "idle",
+      "distance": 0,
+      "flowers": 0
+    }
+  ],
+  "errors": [],
+  "entry": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+  "record": {
+    "width": 1664,
+    "height": 1152,
+    "t": 11030.800000000745,
+    "rate": 48000
+  },
+  "ok": true
+}

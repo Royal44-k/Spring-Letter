@@ -1,0 +1,72 @@
+{
+  "id": "observatory",
+  "version": "0.9.1",
+  "source": "earned-stars.json",
+  "events": [
+    {
+      "label": "start",
+      "sec": 0.027100000001490116,
+      "frame": 131,
+      "flower": "solid",
+      "material": "lily",
+      "form": "lily",
+      "map": "observatory",
+      "stars": 3,
+      "checkpoint": 0,
+      "coast": "idle",
+      "distance": 0,
+      "flowers": 0
+    },
+    {
+      "label": "sky",
+      "sec": 2.65110000000149,
+      "frame": 280,
+      "flower": "solid",
+      "material": "lily",
+      "form": "lily",
+      "map": "observatory",
+      "stars": 3,
+      "checkpoint": 0,
+      "coast": "idle",
+      "distance": 0,
+      "flowers": 0
+    },
+    {
+      "label": "constellation",
+      "sec": 6.10439999999851,
+      "frame": 476,
+      "flower": "solid",
+      "material": "lily",
+      "form": "lily",
+      "map": "observatory",
+      "stars": 8,
+      "checkpoint": 0,
+      "coast": "idle",
+      "distance": 0,
+      "flowers": 0
+    },
+    {
+      "label": "end",
+      "sec": 6.726800000000745,
+      "frame": 512,
+      "flower": "solid",
+      "material": "lily",
+      "form": "lily",
+      "map": "observatory",
+      "stars": 8,
+      "checkpoint": 0,
+      "coast": "idle",
+      "distance": 0,
+      "flowers": 0
+    }
+  ],
+  "errors": [],
+  "entry": "748c26fc01ced696a69638d76d0b07922c0f6da8153b70a595f68f38eaa04fb4",
+  "record": {
+    "width": 960,
+    "height": 1280,
+    "t": 5716.300000000745,
+    "rate": 48000
+  },
+  "ok": true
+}
